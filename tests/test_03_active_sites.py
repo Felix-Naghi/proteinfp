@@ -216,3 +216,221 @@ class TestConservationProxy:
         # C=1, H=2 should have higher scores than A=3
         assert proxy[1] > proxy[3]   # C > A
         assert proxy[2] > proxy[3]   # H > A
+
+
+# ── PDB fixtures for new motif tests ──────────────────────────────────────────
+
+# DFG loop: ASP-1, PHE-2, GLY-3 placed close together in 3D and consecutively
+DFG_PDB = """\
+ATOM      1  N   ASP A   1       1.000   1.000   1.000  1.00 90.00           N
+ATOM      2  CA  ASP A   1       1.500   1.500   1.500  1.00 90.00           C
+ATOM      3  N   PHE A   2       2.500   1.500   1.500  1.00 90.00           N
+ATOM      4  CA  PHE A   2       3.000   2.000   2.000  1.00 90.00           C
+ATOM      5  N   GLY A   3       4.000   2.000   2.000  1.00 90.00           N
+ATOM      6  CA  GLY A   3       4.500   2.500   2.500  1.00 90.00           C
+ATOM      7  N   ALA A   4       6.000   3.000   3.000  1.00 85.00           N
+ATOM      8  CA  ALA A   4       6.500   3.500   3.500  1.00 85.00           C
+END
+"""
+
+# P-loop / Walker A: GLY-1, ALA-2, GLY-3, ALA-4, ALA-5, GLY-6, LYS-7
+# Two glycines separated by 4-6 residues → GxxxxGK pattern
+PLOOP_PDB = """\
+ATOM      1  N   GLY A   1       1.000   1.000   1.000  1.00 88.00           N
+ATOM      2  CA  GLY A   1       1.500   1.500   1.500  1.00 88.00           C
+ATOM      3  N   ALA A   2       2.000   2.000   2.000  1.00 85.00           N
+ATOM      4  CA  ALA A   2       2.500   2.500   2.500  1.00 85.00           C
+ATOM      5  N   ALA A   3       3.000   3.000   3.000  1.00 85.00           N
+ATOM      6  CA  ALA A   3       3.500   3.500   3.500  1.00 85.00           C
+ATOM      7  N   ALA A   4       4.000   4.000   4.000  1.00 85.00           N
+ATOM      8  CA  ALA A   4       4.500   4.500   4.500  1.00 85.00           C
+ATOM      9  N   ALA A   5       5.000   5.000   5.000  1.00 85.00           N
+ATOM     10  CA  ALA A   5       5.500   5.500   5.500  1.00 85.00           C
+ATOM     11  N   GLY A   6       6.000   5.500   5.500  1.00 88.00           N
+ATOM     12  CA  GLY A   6       6.500   6.000   6.000  1.00 88.00           C
+ATOM     13  N   LYS A   7       7.000   6.500   6.500  1.00 88.00           N
+ATOM     14  CA  LYS A   7       7.500   7.000   7.000  1.00 88.00           C
+END
+"""
+
+# Zinc finger: CYS-CYS-HIS-CYS (C3H1 / RING-like structural zinc)
+# All four residues within ~7Å of each other
+ZINC_FINGER_PDB = """\
+ATOM      1  N   ALA A   1       1.000   1.000   1.000  1.00 85.00           N
+ATOM      2  CA  ALA A   1       1.500   1.500   1.500  1.00 85.00           C
+ATOM      3  N   CYS A   2       5.000   5.000   5.000  1.00 88.00           N
+ATOM      4  CA  CYS A   2       5.500   5.500   5.500  1.00 88.00           C
+ATOM      5  N   CYS A   3       7.000   5.000   5.000  1.00 88.00           N
+ATOM      6  CA  CYS A   3       7.500   5.500   5.500  1.00 88.00           C
+ATOM      7  N   HIS A   4       6.000   7.000   5.000  1.00 88.00           N
+ATOM      8  CA  HIS A   4       6.500   7.500   5.500  1.00 88.00           C
+ATOM      9  N   CYS A   5       5.000   6.000   7.000  1.00 88.00           N
+ATOM     10  CA  CYS A   5       5.500   6.500   7.500  1.00 88.00           C
+ATOM     11  N   ALA A   6      10.000  10.000  10.000  1.00 85.00           N
+ATOM     12  CA  ALA A   6      10.500  10.500  10.500  1.00 85.00           C
+END
+"""
+
+
+# ── Tests for new motifs ───────────────────────────────────────────────────────
+
+class TestDFGLoopDetection:
+
+    @pytest.fixture
+    def dfg_structure(self, tmp_path):
+        from utils.pdb_parser import parse_pdb
+        p = tmp_path / "PDFG.pdb"
+        p.write_text(DFG_PDB)
+        return parse_pdb(p, "PDFG", plddt_threshold=70.0)
+
+    def test_dfg_loop_detected(self, dfg_structure):
+        from pipeline.active_sites import _detect_motifs
+        coord_map = {
+            r.residue_number: (r.one_letter, r.coords, r.chain_id)
+            for r in dfg_structure.residues
+        }
+        motifs = _detect_motifs(coord_map)
+        types  = [m.motif_type for m in motifs]
+        assert "dfg_loop" in types, (
+            "DFG loop should be detected for sequential D-F-G within 2 residues"
+        )
+
+    def test_dfg_residues_are_d_f_g(self, dfg_structure):
+        from pipeline.active_sites import _detect_motifs
+        coord_map = {
+            r.residue_number: (r.one_letter, r.coords, r.chain_id)
+            for r in dfg_structure.residues
+        }
+        motifs  = _detect_motifs(coord_map)
+        dfg     = [m for m in motifs if m.motif_type == "dfg_loop"]
+        assert dfg, "Expected at least one dfg_loop motif"
+        letters = dfg[0].residue_letters
+        # The DFG motif letters should include D, F, G
+        assert "D" in letters
+        assert "F" in letters
+        assert "G" in letters
+
+
+class TestPLoopDetection:
+
+    @pytest.fixture
+    def ploop_structure(self, tmp_path):
+        from utils.pdb_parser import parse_pdb
+        p = tmp_path / "PPLOOP.pdb"
+        p.write_text(PLOOP_PDB)
+        return parse_pdb(p, "PPLOOP", plddt_threshold=70.0)
+
+    def test_ploop_detected(self, ploop_structure):
+        from pipeline.active_sites import _detect_motifs
+        coord_map = {
+            r.residue_number: (r.one_letter, r.coords, r.chain_id)
+            for r in ploop_structure.residues
+        }
+        motifs = _detect_motifs(coord_map)
+        types  = [m.motif_type for m in motifs]
+        assert "p_loop_walker_a" in types, (
+            "P-loop should be detected for GxxxxGK pattern"
+        )
+
+    def test_ploop_confidence_is_medium(self, ploop_structure):
+        from pipeline.active_sites import _detect_motifs
+        coord_map = {
+            r.residue_number: (r.one_letter, r.coords, r.chain_id)
+            for r in ploop_structure.residues
+        }
+        motifs = _detect_motifs(coord_map)
+        ploop  = [m for m in motifs if m.motif_type == "p_loop_walker_a"]
+        assert ploop, "Expected p_loop_walker_a motif"
+        assert ploop[0].confidence == "MEDIUM"
+
+
+class TestZincTypeClassification:
+
+    def test_classify_zinc_structural_c4(self):
+        from pipeline.active_sites import _classify_zinc_type
+        # Cys4 pattern (classic zinc finger) → structural
+        assert _classify_zinc_type(["C", "C", "C", "C"]) == "structural"
+
+    def test_classify_zinc_structural_c3h1(self):
+        from pipeline.active_sites import _classify_zinc_type
+        # Cys3His1 (RING domain) → structural
+        assert _classify_zinc_type(["C", "C", "C", "H"]) == "structural"
+
+    def test_classify_zinc_catalytic_h2e1(self):
+        from pipeline.active_sites import _classify_zinc_type
+        # His2Glu (metallopeptidase active site) → catalytic
+        assert _classify_zinc_type(["H", "H", "E"]) == "catalytic"
+
+    def test_zinc_finger_not_metallopeptidase_in_ec(self, tmp_path):
+        """Structural zinc (C3H1) must NOT contribute EC 3.4.24 prediction."""
+        from pipeline.clean_ec import predict_ec_number, ENZYMATIC_MOTIFS
+        # Synthesise an active_result with a C3H1 zinc cluster (structural)
+        active_result = {
+            "catalytic_motifs": [
+                {
+                    "motif_type":      "zinc_binding_cluster",
+                    "residue_numbers": [2, 3, 4, 5],
+                    "residue_letters": ["C", "C", "H", "C"],
+                    "mean_distance":   5.0,
+                    "confidence":      "HIGH",
+                    "zinc_type":       "structural",
+                }
+            ],
+            "n_high_confidence": 4,
+        }
+        result = predict_ec_number(
+            uniprot_id="TEST",
+            sequence="ACCHCA",
+            active_result=active_result,
+            go_result=None,
+            homology_result=None,
+        )
+        # Should NOT predict metallopeptidase (EC 3.4.24) from structural zinc
+        assert result.specific_ec != "3.4.24", (
+            "Structural zinc (C3H1) should not produce EC 3.4.24 prediction"
+        )
+
+    def test_ring_domain_ubiquitin_ligase_from_go(self):
+        """RING domain protein with GO:0061630 should get EC 2.3.2 (transferase)."""
+        from pipeline.clean_ec import predict_ec_number
+        active_result = {
+            "catalytic_motifs": [
+                {
+                    "motif_type":      "zinc_binding_cluster",
+                    "residue_numbers": [305, 308, 311, 319],
+                    "residue_letters": ["C", "C", "C", "H"],
+                    "mean_distance":   5.5,
+                    "confidence":      "HIGH",
+                    "zinc_type":       "structural",
+                }
+            ],
+            "n_high_confidence": 4,
+        }
+        go_result = {
+            "mf_predictions": [
+                {
+                    "go_id":    "GO:0061630",
+                    "go_name":  "ubiquitin protein ligase activity",
+                    "score":    0.88,
+                    "evidence": ["domain_annotation"],
+                }
+            ],
+            "bp_predictions": [],
+        }
+        result = predict_ec_number(
+            uniprot_id="TEST",
+            sequence="ACCHCAAACCHC",
+            active_result=active_result,
+            go_result=go_result,
+            homology_result=None,
+        )
+        assert result.is_enzyme, "Ubiquitin ligase should be classified as enzyme"
+        # EC class should be 2 (transferase) not 3 (hydrolase/metallopeptidase)
+        if result.top_prediction:
+            assert result.top_prediction.ec_class == "2", (
+                f"Ubiquitin ligase should be EC class 2, got {result.top_prediction.ec_class}"
+            )
+        # Specific EC should point to ubiquitin ligase sub-class
+        assert result.specific_ec.startswith("2.3.2"), (
+            f"Expected specific EC 2.3.2.x, got {result.specific_ec}"
+        )

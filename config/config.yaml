@@ -58,6 +58,10 @@ compute:
   cuda_device_id:    0
   # esm2_t33_650M_UR50D fits comfortably in RTX 5060 VRAM
   esm2_model:        "esm2_t33_650M_UR50D"
+  # Set to true to store full per-residue embeddings (L×1280) — ~18MB for EGFR.
+  # When false (default), only every 4th residue is stored (~4.5MB), plus the
+  # 1280-dim protein-level embedding, which is sufficient for all downstream uses.
+  store_full_residue_embeddings: false
 
 # Elastic network model (Module 05 -- allostery)
 # Uses MDAnalysis instead of ProDy (ProDy broken on Python 3.12)

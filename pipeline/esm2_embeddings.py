@@ -195,6 +195,9 @@ def compute_esm2_embeddings(
         elapsed = time.time() - start_time
         log.info(f"  Done in {elapsed:.1f}s")
 
+        store_full = cfg.get("compute", "store_full_residue_embeddings", default=False)
+        res_emb_stored = res_emb.tolist() if store_full else res_emb[::4].tolist()
+
         result = ESM2Result(
             uniprot_id=uniprot_id,
             sequence_length=len(sequence),
@@ -203,9 +206,7 @@ def compute_esm2_embeddings(
             gpu_used=gpu_used,
             compute_time_sec=round(elapsed, 2),
             protein_embedding=prot_emb.tolist(),
-            # Store every 4th residue to reduce file size (still captures functional signal)
-            # Full embeddings kept in memory for downstream modules in the same session
-            residue_embeddings=res_emb[::4].tolist(),
+            residue_embeddings=res_emb_stored,
             contact_map=contacts.tolist(),
             predicted_functional_residues=functional_res,
             embedding_norm=round(float(np.linalg.norm(prot_emb)), 4),

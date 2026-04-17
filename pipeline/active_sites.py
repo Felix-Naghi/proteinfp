@@ -110,6 +110,7 @@ class ActiveResidue:
     evidence_score:   int          # sum of evidence points
     confidence:       str          # HIGH / MEDIUM / LOW
     coords:           list[float]  # CA [x, y, z]
+    domain_context:   str = ""     # structural region (from InterPro annotations)
 
     def to_dict(self) -> dict:
         return asdict(self)
@@ -123,6 +124,7 @@ class CatalyticMotif:
     residue_letters:  list[str]
     mean_distance:    float        # mean pairwise CA distance
     confidence:       str
+    zinc_type:        str = ""     # "catalytic" or "structural" (zinc motifs only)
 
     def to_dict(self) -> dict:
         return asdict(self)
@@ -389,9 +391,6 @@ def _detect_motifs(
     log.debug(f"    Detected {len(motifs)} catalytic motif(s)")
     return motifs
 
-    log.debug(f"    Detected {len(motifs)} catalytic motif(s)")
-    return motifs
-
 
 def _dist(a: list[float], b: list[float]) -> float:
     return float(np.linalg.norm(np.array(a) - np.array(b)))
@@ -439,6 +438,29 @@ def _find_dyad(
     return motifs
 
 
+def _classify_zinc_type(letters: list[str]) -> str:
+    """
+    Distinguish structural zinc from catalytic zinc by coordination geometry.
+
+    Catalytic zinc (metallopeptidase active site): His-His-Glu pattern (H2E1).
+      - Coordination by 2+ His and 1+ Glu with no Cys
+    Structural zinc (zinc finger, RING domain): Cys-rich patterns (C4 or C3H1).
+      - 3+ Cys residues → structural (RING domains, zinc fingers, etc.)
+
+    Structural zinc should NOT drive EC class prediction.
+    """
+    cys_count = letters.count("C")
+    his_count = letters.count("H")
+    glu_count = letters.count("E")
+
+    if cys_count >= 3:
+        return "structural"
+    if his_count >= 2 and glu_count >= 1 and cys_count == 0:
+        return "catalytic"
+    # Mixed or ambiguous — err on the side of structural (conservative)
+    return "structural"
+
+
 def _find_zinc_cluster(
     candidates: dict,
     coord_map:  dict,
@@ -467,6 +489,7 @@ def _find_zinc_cluster(
         dists   = [_dist(coords[a], coords[b])
                    for a, b in combinations(range(len(coords)), 2)]
         mean_d  = float(np.mean(dists)) if dists else 0.0
+        zinc_type = _classify_zinc_type(letters)
 
         motifs.append(CatalyticMotif(
             motif_type="zinc_binding_cluster",
@@ -474,6 +497,7 @@ def _find_zinc_cluster(
             residue_letters=letters,
             mean_distance=round(mean_d, 2),
             confidence="HIGH" if len(cluster) >= 4 else "MEDIUM",
+            zinc_type=zinc_type,
         ))
     return motifs
 
@@ -676,6 +700,7 @@ def _score_residues(
             evidence_score=score,
             confidence=confidence,
             coords=res.coords,
+            domain_context="",
         ))
 
     # Sort by evidence score descending

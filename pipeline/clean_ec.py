@@ -73,10 +73,23 @@ GO_TO_EC: dict[str, str] = {
     "GO:0016874": "6",   # ligase activity
     "GO:0016879": "6",   # ligase activity, forming C-N bonds
     "GO:0016817": "3",   # hydrolase activity, acting on acid anhydrides
-    "GO:0003924": "3",   # GTPase activity → hydrolase (correct class)
-    "GO:0005525": "3",   # GTP binding → hydrolase context
-    "GO:0061630": "2",   # ubiquitin protein ligase → transferase
+    "GO:0003924": "3",   # GTPase activity → EC 3.6.5 (phosphoric monoester hydrolase)
+    "GO:0005525": "3",   # GTP binding → GTPase context
+    "GO:0016887": "3",   # ATPase activity → EC 3.6.3
+    "GO:0061630": "2",   # ubiquitin protein ligase → EC 2.3.2
     "GO:0004842": "2",   # ubiquitin-protein transferase activity
+    "GO:0008237": "3",   # metallopeptidase activity
+    "GO:0008241": "3",   # peptidyl-dipeptidase activity
+}
+
+# GO terms that map to specific EC sub-numbers (beyond just class digit)
+GO_TO_SPECIFIC_EC: dict[str, tuple[str, str]] = {
+    "GO:0003924": ("3.6.5", "GTPase"),
+    "GO:0016887": ("3.6.3", "ATPase"),
+    "GO:0061630": ("2.3.2", "Ubiquitin-protein ligase"),
+    "GO:0004842": ("2.3.2", "Ubiquitin-protein transferase"),
+    "GO:0008237": ("3.4.24", "Metallopeptidase"),
+    "GO:0004252": ("3.4.21", "Serine-type endopeptidase"),
 }
 
 # Active site motif types that indicate enzymatic function
@@ -195,14 +208,19 @@ def predict_ec_number(
     # ── Step 1: GO term evidence ──────────────────────────────────────────────
     log.info("  [1/3] Analysing GO term evidence...")
     if go_result:
-        n_go = _add_go_evidence(ec_scores, go_result)
+        n_go, go_spec_ec, go_spec_name = _add_go_evidence(ec_scores, go_result)
         log.info(f"    {n_go} GO terms processed")
+        # GO-derived specific EC (e.g. GTPase → 3.6.5) takes precedence when present
+        if go_spec_ec:
+            specific_ec      = go_spec_ec
+            specific_ec_name = go_spec_name
 
     # ── Step 2: Active site motif evidence ───────────────────────────────────
     log.info("  [2/3] Analysing active site motif evidence...")
     if active_result:
         spec_ec, spec_name = _add_motif_evidence(ec_scores, active_result)
-        if spec_ec:
+        # Motif evidence only overrides GO-derived specific EC if GO gave nothing
+        if spec_ec and not specific_ec:
             specific_ec      = spec_ec
             specific_ec_name = spec_name
 
@@ -270,9 +288,16 @@ def predict_ec_number(
 
 # ── Evidence helpers ───────────────────────────────────────────────────────────
 
-def _add_go_evidence(ec_scores: dict, go_result: dict) -> int:
-    """Map GO terms to EC classes."""
+def _add_go_evidence(
+    ec_scores: dict,
+    go_result: dict,
+) -> tuple[int, str, str]:
+    """Map GO terms to EC classes. Returns (n_mapped, specific_ec, specific_name)."""
     n = 0
+    specific_ec   = ""
+    specific_name = ""
+    best_score    = 0.0
+
     all_preds = (
         go_result.get("mf_predictions", []) +
         go_result.get("bp_predictions", [])
@@ -289,7 +314,11 @@ def _add_go_evidence(ec_scores: dict, go_result: dict) -> int:
             if src not in ec_scores[ec_class]["evidence"]:
                 ec_scores[ec_class]["evidence"].append(src)
             n += 1
-    return n
+        # Derive specific EC from GO when available and high-confidence
+        if go_id in GO_TO_SPECIFIC_EC and score > best_score:
+            best_score = score
+            specific_ec, specific_name = GO_TO_SPECIFIC_EC[go_id]
+    return n, specific_ec, specific_name
 
 
 def _add_motif_evidence(
@@ -301,9 +330,32 @@ def _add_motif_evidence(
     specific_name = ""
 
     for motif in active_result.get("catalytic_motifs", []):
-        mtype = motif.get("motif_type", "")
-        conf  = motif.get("confidence", "LOW")
-        score = 0.85 if conf == "HIGH" else 0.65
+        mtype     = motif.get("motif_type", "")
+        conf      = motif.get("confidence", "LOW")
+        zinc_type = motif.get("zinc_type", "")
+        score     = 0.85 if conf == "HIGH" else 0.65
+
+        # Structural zinc (RING domains, zinc fingers — Cys4/Cys3His1 pattern)
+        # must NOT drive EC prediction toward metallopeptidase (EC 3.4.24).
+        # Only catalytic zinc (His2Glu pattern) is indicative of enzymatic activity.
+        if mtype == "zinc_binding_cluster":
+            if not zinc_type:
+                # Infer from residue_letters when zinc_type is not stored
+                letters = motif.get("residue_letters", [])
+                if letters:
+                    cys_count = letters.count("C")
+                    his_count = letters.count("H")
+                    glu_count = letters.count("E")
+                    if cys_count >= 3:
+                        zinc_type = "structural"
+                    elif his_count >= 2 and glu_count >= 1 and cys_count == 0:
+                        zinc_type = "catalytic"
+                    else:
+                        zinc_type = "structural"
+                # If residue_letters missing, assume catalytic (backward compat)
+                # so old-format motif data still contributes to EC predictions
+            if zinc_type == "structural":
+                continue  # structural zinc does not indicate metallopeptidase
 
         if mtype in ENZYMATIC_MOTIFS:
             ec_sub, ec_name = ENZYMATIC_MOTIFS[mtype]

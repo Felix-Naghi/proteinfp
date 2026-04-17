@@ -105,6 +105,83 @@ CC_TERMS = {
 
 CONFIDENCE_THRESHOLD = 0.3
 
+# Reference protein GO annotations for embedding-based transfer.
+# Used by _embedding_based_go_inference when reference ESM-2 embeddings exist.
+# Keys are UniProt IDs; values are lists of (go_id, go_name, namespace, base_score).
+REFERENCE_PROTEIN_GO: dict[str, list[tuple[str, str, str, float]]] = {
+    "P04637": [  # TP53 — transcription factor, DNA binding, apoptosis
+        ("GO:0003677", "DNA binding", "MF", 0.85),
+        ("GO:0003700", "DNA-binding transcription factor activity", "MF", 0.80),
+        ("GO:0046872", "metal ion binding", "MF", 0.70),
+        ("GO:0006915", "apoptotic process", "BP", 0.75),
+        ("GO:0006974", "cellular response to DNA damage stimulus", "BP", 0.70),
+        ("GO:0005634", "nucleus", "CC", 0.90),
+        ("GO:0043234", "protein complex", "CC", 0.65),
+    ],
+    "P00533": [  # EGFR — receptor tyrosine kinase, membrane
+        ("GO:0004672", "protein kinase activity", "MF", 0.90),
+        ("GO:0004714", "receptor protein tyrosine kinase activity", "MF", 0.85),
+        ("GO:0007173", "epidermal growth factor receptor signaling pathway", "BP", 0.75),
+        ("GO:0018108", "peptidyl-tyrosine phosphorylation", "BP", 0.70),
+        ("GO:0008283", "cell population proliferation", "BP", 0.65),
+        ("GO:0005887", "integral component of plasma membrane", "CC", 0.85),
+        ("GO:0016020", "membrane", "CC", 0.80),
+    ],
+    "P00441": [  # SOD1 — oxidoreductase, superoxide dismutase
+        ("GO:0004784", "superoxide dismutase activity", "MF", 0.90),
+        ("GO:0005507", "copper ion binding", "MF", 0.85),
+        ("GO:0008270", "zinc ion binding", "MF", 0.80),
+        ("GO:0019430", "removal of superoxide radicals", "BP", 0.85),
+        ("GO:0006801", "superoxide metabolic process", "BP", 0.75),
+        ("GO:0005737", "cytoplasm", "CC", 0.75),
+    ],
+    "P00918": [  # CA2 — lyase, zinc metalloenzyme
+        ("GO:0004089", "carbonate dehydratase activity", "MF", 0.90),
+        ("GO:0008270", "zinc ion binding", "MF", 0.85),
+        ("GO:0046872", "metal ion binding", "MF", 0.80),
+        ("GO:0015701", "bicarbonate transport", "BP", 0.70),
+        ("GO:0005737", "cytoplasm", "CC", 0.75),
+    ],
+    "P00734": [  # F2 — serine protease, coagulation
+        ("GO:0004252", "serine-type endopeptidase activity", "MF", 0.90),
+        ("GO:0008233", "peptidase activity", "MF", 0.85),
+        ("GO:0005172", "vascular endothelial growth factor receptor binding", "MF", 0.60),
+        ("GO:0007596", "blood coagulation", "BP", 0.80),
+        ("GO:0005576", "extracellular space", "CC", 0.75),
+    ],
+    "P68871": [  # HBB — oxygen transport, haem binding
+        ("GO:0020037", "heme binding", "MF", 0.85),
+        ("GO:0019825", "oxygen binding", "MF", 0.80),
+        ("GO:0015671", "oxygen transport", "BP", 0.85),
+        ("GO:0005833", "hemoglobin complex", "CC", 0.85),
+    ],
+    "P01116": [  # KRAS — GTPase, membrane signalling
+        ("GO:0005525", "GTP binding", "MF", 0.90),
+        ("GO:0003924", "GTPase activity", "MF", 0.85),
+        ("GO:0019003", "GDP binding", "MF", 0.75),
+        ("GO:0007165", "signal transduction", "BP", 0.75),
+        ("GO:0008283", "cell population proliferation", "BP", 0.65),
+        ("GO:0016020", "membrane", "CC", 0.75),
+        ("GO:0005737", "cytoplasm", "CC", 0.65),
+    ],
+    "Q00987": [  # MDM2 — ubiquitin ligase, p53 regulation
+        ("GO:0061630", "ubiquitin protein ligase activity", "MF", 0.90),
+        ("GO:0042802", "identical protein binding", "MF", 0.70),
+        ("GO:0043066", "negative regulation of apoptotic process", "BP", 0.80),
+        ("GO:0051726", "regulation of cell cycle", "BP", 0.70),
+        ("GO:0005634", "nucleus", "CC", 0.85),
+        ("GO:0005737", "cytoplasm", "CC", 0.65),
+    ],
+    "Q9BYF1": [  # ACE2 — metallopeptidase, membrane receptor
+        ("GO:0008237", "metallopeptidase activity", "MF", 0.90),
+        ("GO:0008241", "peptidyl-dipeptidase activity", "MF", 0.85),
+        ("GO:0046872", "metal ion binding", "MF", 0.80),
+        ("GO:0006508", "proteolysis", "BP", 0.75),
+        ("GO:0016020", "membrane", "CC", 0.85),
+        ("GO:0005615", "extracellular space", "CC", 0.65),
+    ],
+}
+
 
 # ── Data classes ───────────────────────────────────────────────────────────────
 
@@ -212,6 +289,12 @@ def predict_go_terms(
     if active_result:
         _add_active_site_evidence(go_evidence, active_result, sequence)
         log.info("    Active site evidence added")
+
+    # From ESM-2 embedding similarity to reference proteins (novel protein support)
+    if esm2_result and esm2_result.get("protein_embedding"):
+        n_ref = _embedding_based_go_inference(go_evidence, esm2_result)
+        if n_ref:
+            log.info(f"    Embedding similarity: {n_ref} reference protein(s) matched")
 
     # Sequence-based baseline predictions
     _add_sequence_baseline(go_evidence, sequence)
@@ -408,6 +491,67 @@ def _add_active_site_evidence(
                       0.65, "structural_motif", "BP")
         _add_evidence(go_evidence, "GO:0005507", "copper ion binding",
                       0.65, "structural_motif", "MF")
+
+
+def _embedding_based_go_inference(
+    go_evidence: dict,
+    esm2_result: dict,
+) -> int:
+    """
+    Transfer GO terms from reference proteins with similar ESM-2 embeddings.
+
+    Proteins with cosine similarity > 0.85 to a reference protein share
+    functional features captured in the embedding space. This is particularly
+    valuable for novel proteins with no BLAST homologs — ESM-2 embeddings
+    encode evolutionary signals that work even without sequence similarity.
+
+    Returns the number of reference proteins that matched (similarity > 0.85).
+    """
+    current_emb = np.array(esm2_result.get("protein_embedding", []), dtype=np.float32)
+    if len(current_emb) == 0:
+        return 0
+
+    current_norm = float(np.linalg.norm(current_emb))
+    if current_norm < 1e-6:
+        return 0
+
+    inter_dir = Path(cfg.paths["intermediate"])
+    n_matched = 0
+
+    for ref_uid, ref_go_terms in REFERENCE_PROTEIN_GO.items():
+        ref_esm2_path = inter_dir / f"{ref_uid}_esm2.json"
+        if not ref_esm2_path.exists():
+            continue
+
+        try:
+            with open(ref_esm2_path) as f:
+                ref_esm2 = json.load(f)
+        except Exception:
+            continue
+
+        ref_emb_list = ref_esm2.get("protein_embedding", [])
+        if not ref_emb_list:
+            continue
+
+        ref_emb  = np.array(ref_emb_list, dtype=np.float32)
+        ref_norm = float(np.linalg.norm(ref_emb))
+        if ref_norm < 1e-6:
+            continue
+
+        similarity = float(np.dot(current_emb, ref_emb) / (current_norm * ref_norm))
+        if similarity <= 0.85:
+            continue
+
+        n_matched += 1
+        log.debug(f"      Embedding match: {ref_uid} similarity={similarity:.3f}")
+
+        # Transfer GO terms weighted by similarity
+        for go_id, go_name, namespace, base_score in ref_go_terms:
+            transfer_score = base_score * similarity
+            _add_evidence(go_evidence, go_id, go_name, transfer_score,
+                          "embedding_similarity", namespace)
+
+    return n_matched
 
 
 def _add_sequence_baseline(

@@ -332,7 +332,7 @@ def build_consensus_report(uniprot_id: str) -> ConsensusReport:
             ec_number = top_pred.get("ec_full", "")
 
     # ── Subcellular location ──────────────────────────────────────────────────
-    location = _extract_location(modules_data)
+    location = _extract_location(modules_data, modules_data.get("physico"))
 
     # ── Active sites ──────────────────────────────────────────────────────────
     log.info("  [2/5] Extracting site predictions...")
@@ -341,12 +341,60 @@ def build_consensus_report(uniprot_id: str) -> ConsensusReport:
         r for r in active_data.get("active_residues", [])
         if r.get("confidence") in ("HIGH", "MEDIUM")
     ]
-    # Prioritise residues that are in kinase/functional motifs
+
+    # Annotate residues with domain context from InterPro (ISSUE 4)
+    hom_data  = modules_data.get("homology", {})
+    domains   = hom_data.get("interpro_domains", [])
+    catalytic_domain_keywords = {
+        "kinase", "protease", "peptidase", "catalytic", "active", "enzyme",
+        "hydrolase", "transferase", "lyase", "oxidoreductase", "isomerase",
+        "ligase", "phosphatase", "dehydrogenase", "reductase",
+    }
+    structural_domain_keywords = {
+        "egf", "fibronectin", "immunoglobulin", "zinc finger", "ring finger",
+        "cadherin", "lectin", "coiled", "armadillo", "ankyrin", "wd40",
+    }
+
+    # Build domain map: residue_number → domain_name
+    domain_map: dict[int, str] = {}
+    for dom in domains:
+        start = dom.get("start", 0)
+        end   = dom.get("end", 0)
+        name  = dom.get("name", "").lower()
+        if start and end:
+            for rn in range(start, end + 1):
+                domain_map[rn] = name
+
+    for r in all_active:
+        rn = r.get("residue_number", 0)
+        if rn in domain_map:
+            r["domain_context"] = domain_map[rn]
+
+    # Prioritise residues in catalytic domains when domains are annotated
+    if domain_map:
+        catalytic_res = [
+            r for r in all_active
+            if any(kw in r.get("domain_context", "") for kw in catalytic_domain_keywords)
+        ]
+        structural_res = [
+            r for r in all_active
+            if any(kw in r.get("domain_context", "") for kw in structural_domain_keywords)
+        ]
+        no_domain_res = [
+            r for r in all_active
+            if r not in catalytic_res and r not in structural_res
+        ]
+        # Put catalytic domain residues first, structural last
+        ordered = catalytic_res + no_domain_res + structural_res
+    else:
+        ordered = all_active
+
+    # Further prioritise residues in enzymatic motifs
     motif_priority = {"dfg_loop", "hrd_catalytic_loop", "p_loop_walker_a",
-                    "zinc_binding_cluster", "serine_protease_triad"}
-    priority = [r for r in all_active
+                      "serine_protease_triad", "cysteine_protease_dyad"}
+    priority = [r for r in ordered
                 if any(m in motif_priority for m in r.get("motifs", []))]
-    others   = [r for r in all_active if r not in priority]
+    others   = [r for r in ordered if r not in priority]
     active_sites = (priority + others)[:30]
 
     # ── Binding pockets ───────────────────────────────────────────────────────
@@ -578,18 +626,56 @@ def _extract_top_function(modules_data: dict) -> str:
     return "Function not determined"
 
 
-def _extract_location(modules_data: dict) -> str:
-    """Extract subcellular location from GO CC terms, prioritising membrane."""
+def _extract_location(modules_data: dict, physico_data: Optional[dict] = None) -> str:
+    """
+    Extract subcellular location using protein features + GO CC terms.
+
+    Priority order:
+      1. Transmembrane signal (high hydrophobicity in top residues) → membrane
+      2. Signal peptide (high hydrophobicity in first 30 residues) → extracellular
+      3. GO CC terms prioritising membrane/extracellular over nucleus
+      4. Fall back to top CC term
+
+    Nucleus tends to accumulate false-positive scores from BLAST homologs
+    with nuclear functions. Physical features are a more reliable signal.
+    """
+    # ── Step 1: Feature-based detection from physicochemical data ────────────
+    if physico_data:
+        residues = physico_data.get("residues", [])
+        if residues:
+            hydros = sorted(
+                [r.get("hydrophobicity", 0.0) for r in residues], reverse=True
+            )
+            # Transmembrane signal: mean of top-20 hydrophobic residues > 2.5
+            top20_mean = sum(hydros[:20]) / min(20, len(hydros))
+            if top20_mean > 2.5:
+                # Membrane protein — check GO for more precise term
+                go_data  = modules_data.get("go", {})
+                cc_terms = go_data.get("cc_predictions", [])
+                for term in cc_terms:
+                    name = term.get("go_name", "").lower()
+                    if any(kw in name for kw in ["membrane", "plasma membrane",
+                                                  "cell surface"]):
+                        return term.get("go_name", "membrane")
+                return "membrane"
+
+            # Signal peptide: first 30 residues with mean hydrophobicity > 1.5
+            sorted_res = sorted(residues, key=lambda r: r.get("residue_number", 0))
+            first30    = sorted_res[:30]
+            if first30:
+                sp_mean = sum(r.get("hydrophobicity", 0.0) for r in first30) / len(first30)
+                if sp_mean > 1.5:
+                    return "extracellular space"
+
+    # ── Step 2: GO CC terms with membrane/extracellular priority ─────────────
     go_data  = modules_data.get("go", {})
     cc_terms = go_data.get("cc_predictions", [])
 
     if not cc_terms:
         return "unknown"
 
-    # Prioritise membrane/extracellular over nucleus — nucleus is often
-    # a false positive from distant homologs with nuclear functions
     priority_keywords = ["membrane", "extracellular", "plasma membrane",
-                         "cell surface", "cytoplasm", "mitochondria"]
+                         "cell surface", "cytoplasm", "mitochondria", "cytosol"]
     for term in cc_terms:
         name = term.get("go_name", "").lower()
         name = name[2:].strip() if name.startswith(("c:", "f:", "p:")) else name
@@ -690,7 +776,7 @@ def _generate_validation_suggestions(
         if "binding" in top_mf.go_name.lower():
             suggestions.append(
                 f"EMSA or fluorescence polarisation assay to confirm "
-                f"'{top_mf.go_name}' (GO:{top_mf.go_id})"
+                f"'{top_mf.go_name}' ({top_mf.go_id})"
             )
 
     # Localisation validation
