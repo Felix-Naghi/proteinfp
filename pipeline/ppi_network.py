@@ -407,16 +407,37 @@ def _predict_interface(
 def _sequence_interface(sequence: str) -> tuple[list[int], list[str]]:
     """
     Fallback interface prediction from sequence alone.
-    Returns exposed charged/hydrophobic residues likely on the surface.
+
+    Scores residues by their likelihood of forming a protein-protein interface:
+    - Excludes terminal residues (first/last 5) — always artefactual
+    - Charged residues (K, R, E, D, H) are preferred interface contacts
+    - Aromatic residues (F, W, Y) form hot-spot interactions
+    Returns top 15 candidates sorted by interface score.
     """
+    L          = len(sequence)
+    # Adaptive margin: 5 residues for real proteins (≥20 aa), smaller for short seqs
+    margin     = min(5, L // 4)
     candidates = []
+
     for i, aa in enumerate(sequence):
-        if aa in {"K", "R", "E", "D", "F", "W", "Y", "L", "I"}:
-            candidates.append((i + 1, aa))
-    return (
-        [c[0] for c in candidates[:15]],
-        [c[1] for c in candidates[:15]],
-    )
+        pos = i + 1
+        if pos <= margin or pos > L - margin:
+            continue  # exclude termini
+
+        if aa in {"K", "R", "H"}:
+            score = 2.5   # positively charged — frequent interface contacts
+        elif aa in {"E", "D"}:
+            score = 2.0   # negatively charged
+        elif aa in {"W", "F", "Y"}:
+            score = 1.8   # aromatic hot spots
+        else:
+            continue
+
+        candidates.append((pos, aa, score))
+
+    candidates.sort(key=lambda x: x[2], reverse=True)
+    top = candidates[:15]
+    return [c[0] for c in top], [c[1] for c in top]
 
 
 # ── CLI entry point ────────────────────────────────────────────────────────────
