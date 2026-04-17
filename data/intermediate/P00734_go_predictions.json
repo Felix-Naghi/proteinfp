@@ -1,0 +1,922 @@
+{
+  "uniprot_id": "P00734",
+  "sequence_length": 622,
+  "mf_predictions": [
+    {
+      "go_id": "GO:0004252",
+      "go_name": "serine-type endopeptidase activity",
+      "namespace": "MF",
+      "score": 0.85,
+      "evidence": [
+        "experimental_homolog",
+        "domain_annotation",
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        1,
+        5,
+        6,
+        11,
+        13,
+        14,
+        15,
+        17,
+        18,
+        29,
+        33,
+        34,
+        37,
+        50,
+        54,
+        55,
+        60,
+        74,
+        122,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0003677",
+      "go_name": "DNA binding",
+      "namespace": "MF",
+      "score": 0.85,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        1,
+        5,
+        6,
+        11,
+        13,
+        14,
+        15,
+        17,
+        18,
+        29,
+        33,
+        34,
+        37,
+        50,
+        54,
+        55,
+        60,
+        74,
+        122,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0008233",
+      "go_name": "F:peptidase activity",
+      "namespace": "MF",
+      "score": 0.8,
+      "evidence": [
+        "experimental_homolog",
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        1,
+        5,
+        6,
+        11,
+        13,
+        14,
+        15,
+        17,
+        18,
+        29,
+        33,
+        34,
+        37,
+        50,
+        54,
+        55,
+        60,
+        74,
+        122,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0008270",
+      "go_name": "zinc ion binding",
+      "namespace": "MF",
+      "score": 0.8,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        1,
+        5,
+        6,
+        11,
+        13,
+        14,
+        15,
+        17,
+        18,
+        29,
+        33,
+        34,
+        37,
+        50,
+        54,
+        55,
+        60,
+        74,
+        122,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0006508",
+      "go_name": "proteolysis",
+      "namespace": "MF",
+      "score": 0.75,
+      "evidence": [
+        "experimental_homolog",
+        "domain_annotation"
+      ],
+      "saliency_residues": [
+        1,
+        5,
+        6,
+        11,
+        13,
+        14,
+        15,
+        17,
+        18,
+        29,
+        33,
+        34,
+        37,
+        50,
+        54,
+        55,
+        60,
+        74,
+        122,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0005509",
+      "go_name": "calcium ion binding",
+      "namespace": "MF",
+      "score": 0.75,
+      "evidence": [
+        "experimental_homolog",
+        "domain_annotation"
+      ],
+      "saliency_residues": [
+        1,
+        5,
+        6,
+        11,
+        13,
+        14,
+        15,
+        17,
+        18,
+        29,
+        33,
+        34,
+        37,
+        50,
+        54,
+        55,
+        60,
+        74,
+        122,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0007596",
+      "go_name": "blood coagulation",
+      "namespace": "MF",
+      "score": 0.75,
+      "evidence": [
+        "experimental_homolog",
+        "domain_annotation"
+      ],
+      "saliency_residues": [
+        1,
+        5,
+        6,
+        11,
+        13,
+        14,
+        15,
+        17,
+        18,
+        29,
+        33,
+        34,
+        37,
+        50,
+        54,
+        55,
+        60,
+        74,
+        122,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0046872",
+      "go_name": "metal ion binding",
+      "namespace": "MF",
+      "score": 0.75,
+      "evidence": [
+        "structural_motif",
+        "sequence_composition"
+      ],
+      "saliency_residues": [
+        1,
+        5,
+        6,
+        11,
+        13,
+        14,
+        15,
+        17,
+        18,
+        29,
+        33,
+        34,
+        37,
+        50,
+        54,
+        55,
+        60,
+        74,
+        122,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0005102",
+      "go_name": "F:signaling receptor binding",
+      "namespace": "MF",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        1,
+        5,
+        6,
+        11,
+        13,
+        14,
+        15,
+        17,
+        18,
+        29,
+        33,
+        34,
+        37,
+        50,
+        54,
+        55,
+        60,
+        74,
+        122,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0008201",
+      "go_name": "F:heparin binding",
+      "namespace": "MF",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        1,
+        5,
+        6,
+        11,
+        13,
+        14,
+        15,
+        17,
+        18,
+        29,
+        33,
+        34,
+        37,
+        50,
+        54,
+        55,
+        60,
+        74,
+        122,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0001530",
+      "go_name": "F:lipopolysaccharide binding",
+      "namespace": "MF",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        1,
+        5,
+        6,
+        11,
+        13,
+        14,
+        15,
+        17,
+        18,
+        29,
+        33,
+        34,
+        37,
+        50,
+        54,
+        55,
+        60,
+        74,
+        122,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0048018",
+      "go_name": "F:receptor ligand activity",
+      "namespace": "MF",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        1,
+        5,
+        6,
+        11,
+        13,
+        14,
+        15,
+        17,
+        18,
+        29,
+        33,
+        34,
+        37,
+        50,
+        54,
+        55,
+        60,
+        74,
+        122,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0070053",
+      "go_name": "F:thrombospondin receptor activity",
+      "namespace": "MF",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        1,
+        5,
+        6,
+        11,
+        13,
+        14,
+        15,
+        17,
+        18,
+        29,
+        33,
+        34,
+        37,
+        50,
+        54,
+        55,
+        60,
+        74,
+        122,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0007166",
+      "go_name": "P:cell surface receptor signaling pathway",
+      "namespace": "MF",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        1,
+        5,
+        6,
+        11,
+        13,
+        14,
+        15,
+        17,
+        18,
+        29,
+        33,
+        34,
+        37,
+        50,
+        54,
+        55,
+        60,
+        74,
+        122,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0030168",
+      "go_name": "P:platelet activation",
+      "namespace": "MF",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        1,
+        5,
+        6,
+        11,
+        13,
+        14,
+        15,
+        17,
+        18,
+        29,
+        33,
+        34,
+        37,
+        50,
+        54,
+        55,
+        60,
+        74,
+        122,
+        127
+      ]
+    }
+  ],
+  "bp_predictions": [
+    {
+      "go_id": "GO:0006953",
+      "go_name": "P:acute-phase response",
+      "namespace": "BP",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        1,
+        5,
+        6,
+        11,
+        13,
+        14,
+        15,
+        17,
+        18,
+        29,
+        33,
+        34,
+        37,
+        50,
+        54,
+        55,
+        60,
+        74,
+        122,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0061844",
+      "go_name": "P:antimicrobial humoral immune response mediated by antimicrobial peptide",
+      "namespace": "BP",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        1,
+        5,
+        6,
+        11,
+        13,
+        14,
+        15,
+        17,
+        18,
+        29,
+        33,
+        34,
+        37,
+        50,
+        54,
+        55,
+        60,
+        74,
+        122,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0030194",
+      "go_name": "P:positive regulation of blood coagulation",
+      "namespace": "BP",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        1,
+        5,
+        6,
+        11,
+        13,
+        14,
+        15,
+        17,
+        18,
+        29,
+        33,
+        34,
+        37,
+        50,
+        54,
+        55,
+        60,
+        74,
+        122,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0030195",
+      "go_name": "P:negative regulation of blood coagulation",
+      "namespace": "BP",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        1,
+        5,
+        6,
+        11,
+        13,
+        14,
+        15,
+        17,
+        18,
+        29,
+        33,
+        34,
+        37,
+        50,
+        54,
+        55,
+        60,
+        74,
+        122,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0050819",
+      "go_name": "P:negative regulation of coagulation",
+      "namespace": "BP",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        1,
+        5,
+        6,
+        11,
+        13,
+        14,
+        15,
+        17,
+        18,
+        29,
+        33,
+        34,
+        37,
+        50,
+        54,
+        55,
+        60,
+        74,
+        122,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0050728",
+      "go_name": "P:negative regulation of inflammatory response",
+      "namespace": "BP",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        1,
+        5,
+        6,
+        11,
+        13,
+        14,
+        15,
+        17,
+        18,
+        29,
+        33,
+        34,
+        37,
+        50,
+        54,
+        55,
+        60,
+        74,
+        122,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:1903142",
+      "go_name": "P:positive regulation of establishment of endothelial barrier",
+      "namespace": "BP",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        1,
+        5,
+        6,
+        11,
+        13,
+        14,
+        15,
+        17,
+        18,
+        29,
+        33,
+        34,
+        37,
+        50,
+        54,
+        55,
+        60,
+        74,
+        122,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0006351",
+      "go_name": "DNA-templated transcription",
+      "namespace": "BP",
+      "score": 0.65,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        1,
+        5,
+        6,
+        11,
+        13,
+        14,
+        15,
+        17,
+        18,
+        29,
+        33,
+        34,
+        37,
+        50,
+        54,
+        55,
+        60,
+        74,
+        122,
+        127
+      ]
+    }
+  ],
+  "cc_predictions": [
+    {
+      "go_id": "GO:0005634",
+      "go_name": "nucleus",
+      "namespace": "CC",
+      "score": 0.8,
+      "evidence": [
+        "ai_esm2",
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        1,
+        5,
+        6,
+        11,
+        13,
+        14,
+        15,
+        17,
+        18,
+        29,
+        33,
+        34,
+        37,
+        50,
+        54,
+        55,
+        60,
+        74,
+        122,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0005576",
+      "go_name": "extracellular region",
+      "namespace": "CC",
+      "score": 0.75,
+      "evidence": [
+        "experimental_homolog",
+        "domain_annotation"
+      ],
+      "saliency_residues": [
+        1,
+        5,
+        6,
+        11,
+        13,
+        14,
+        15,
+        17,
+        18,
+        29,
+        33,
+        34,
+        37,
+        50,
+        54,
+        55,
+        60,
+        74,
+        122,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0005615",
+      "go_name": "C:extracellular space",
+      "namespace": "CC",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        1,
+        5,
+        6,
+        11,
+        13,
+        14,
+        15,
+        17,
+        18,
+        29,
+        33,
+        34,
+        37,
+        50,
+        54,
+        55,
+        60,
+        74,
+        122,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0009897",
+      "go_name": "C:external side of plasma membrane",
+      "namespace": "CC",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        1,
+        5,
+        6,
+        11,
+        13,
+        14,
+        15,
+        17,
+        18,
+        29,
+        33,
+        34,
+        37,
+        50,
+        54,
+        55,
+        60,
+        74,
+        122,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0031012",
+      "go_name": "C:extracellular matrix",
+      "namespace": "CC",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        1,
+        5,
+        6,
+        11,
+        13,
+        14,
+        15,
+        17,
+        18,
+        29,
+        33,
+        34,
+        37,
+        50,
+        54,
+        55,
+        60,
+        74,
+        122,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0005737",
+      "go_name": "cytoplasm",
+      "namespace": "CC",
+      "score": 0.45,
+      "evidence": [
+        "sequence_baseline"
+      ],
+      "saliency_residues": [
+        1,
+        5,
+        6,
+        11,
+        13,
+        14,
+        15,
+        17,
+        18,
+        29,
+        33,
+        34,
+        37,
+        50,
+        54,
+        55,
+        60,
+        74,
+        122,
+        127
+      ]
+    }
+  ],
+  "top_mf": "serine-type endopeptidase activity",
+  "top_bp": "P:acute-phase response",
+  "top_cc": "nucleus",
+  "n_predictions": 29
+}

@@ -1,0 +1,91 @@
+======================================================================
+  ProteinFP Prediction Report
+  Generated: 2026-04-16 21:50:41
+======================================================================
+
+  Protein    : Ribosyldihydronicotinamide dehydrogenase [quinone]
+  Gene       : NQO2
+  UniProt    : P16083
+  Organism   : Homo sapiens
+  Length     : 231 aa
+  Mean pLDDT : 98.1
+  Confidence : VERY HIGH
+
+──────────────────────────────────────────────────────────────────────
+  FUNCTIONAL PREDICTION
+──────────────────────────────────────────────────────────────────────
+  Top function     : The enzyme apparently serves as a quinone reductase in connection with conjugation reactions of hydroquinones involved in detoxification pathways as well as in biosynthetic processes such as the vitam
+  Enzyme           : yes — 3.4.24
+  Location         : C:nucleus
+  Evidence sources : 12
+
+──────────────────────────────────────────────────────────────────────
+  GENE ONTOLOGY PREDICTIONS
+──────────────────────────────────────────────────────────────────────
+
+  Molecular Function:
+    [HIGH  ] GO:0008270 F:zinc ion binding (score=7.0, 2 sources)
+    [HIGH  ] GO:0003955 F:NAD(P)H dehydrogenase (quinone) activity (score=5.1, 1 sources)
+    [HIGH  ] GO:0050136 F:NADH dehydrogenase (quinone) (non-electroge (score=5.1, 1 sources)
+    [HIGH  ] GO:0008753 F:NADPH dehydrogenase (quinone) activity (score=5.1, 1 sources)
+    [HIGH  ] GO:0001512 F:dihydronicotinamide riboside quinone reduct (score=5.1, 1 sources)
+
+  Biological Process:
+    [HIGH  ] GO:0034599 P:cellular response to oxidative stress (score=5.1, 1 sources)
+    [HIGH  ] GO:0110076 P:negative regulation of ferroptosis (score=5.1, 1 sources)
+    [HIGH  ] GO:0042177 P:negative regulation of protein catabolic pr (score=5.1, 1 sources)
+    [HIGH  ] GO:0043525 P:positive regulation of neuron apoptotic pro (score=5.1, 1 sources)
+    [HIGH  ] GO:0045087 P:innate immune response (score=5.1, 1 sources)
+
+  Cellular Component:
+    [HIGH  ] GO:0005634 C:nucleus (score=8.4, 3 sources)
+    [HIGH  ] GO:0005737 C:cytoplasm (score=6.5, 2 sources)
+    [HIGH  ] GO:0005829 C:cytosol (score=5.1, 1 sources)
+
+──────────────────────────────────────────────────────────────────────
+  ACTIVE SITES
+──────────────────────────────────────────────────────────────────────
+  C122 [HIGH  ] motifs: zinc_binding_cluster
+  C180 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
+  C223 [HIGH  ] motifs: zinc_binding_cluster
+  H12 [HIGH  ] motifs: serine_protease_triad, acid_base_pair
+  H73 [HIGH  ] motifs: zinc_binding_cluster, zinc_binding_cluster
+
+──────────────────────────────────────────────────────────────────────
+  BINDING POCKETS
+──────────────────────────────────────────────────────────────────────
+  P1: vol=460Å³  druggability=0.99 (high)
+  P2: vol=1620Å³  druggability=0.98 (high)
+  P3: vol=1380Å³  druggability=0.97 (high)
+  P4: vol=1360Å³  druggability=0.97 (high)
+  P5: vol=940Å³  druggability=0.97 (high)
+
+──────────────────────────────────────────────────────────────────────
+  ALLOSTERIC SITES
+──────────────────────────────────────────────────────────────────────
+  A1 [HIGH  ] corr=0.65 residues=[64, 65]
+
+──────────────────────────────────────────────────────────────────────
+  PROTEIN INTERACTIONS (top 8)
+──────────────────────────────────────────────────────────────────────
+  CRYZ            STRING=652  type=unknown
+  CYP19A1         STRING=640  type=unknown
+  TMCO3           STRING=589  type=unknown
+  JMJD7-PLA2G4B   STRING=564  type=unknown
+  ABL1            STRING=541  type=unknown
+  IYD             STRING=539  type=unknown
+  LRRC7           STRING=536  type=unknown
+  PALB2           STRING=503  type=unknown
+
+──────────────────────────────────────────────────────────────────────
+  VALIDATION SUGGESTIONS
+──────────────────────────────────────────────────────────────────────
+  1. Alanine scanning mutagenesis of predicted active site residues (C122, C180, C223) to confirm functional importance
+  2. Thermal shift assay or SPR binding assay against pocket P1 (vol=460Å³, druggability=0.99)
+  3. Enzyme activity assay consistent with EC 3.4.24 using appropriate substrate panel
+  4. EMSA or fluorescence polarisation assay to confirm 'F:zinc ion binding' (GO:GO:0008270)
+  5. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+
+──────────────────────────────────────────────────────────────────────
+  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi
+======================================================================

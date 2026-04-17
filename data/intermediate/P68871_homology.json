@@ -1,0 +1,165 @@
+{
+  "uniprot_id": "P68871",
+  "sequence_length": 147,
+  "blast_hits": [],
+  "interpro_domains": [
+    {
+      "accession": "cd08925",
+      "name": "Hemoglobin beta, gamma, delta, epsilon, and related Hb subunits",
+      "database": "CDD",
+      "start": 8,
+      "end": 146,
+      "go_terms": [],
+      "go_names": [],
+      "e_value": 0.0
+    },
+    {
+      "accession": "G3DSA:1.10.490.10",
+      "name": "Globins",
+      "database": "CATHGENE3D",
+      "start": 2,
+      "end": 147,
+      "go_terms": [],
+      "go_names": [],
+      "e_value": 0.0
+    },
+    {
+      "accession": "IPR000971",
+      "name": "Globin",
+      "database": "INTERPRO",
+      "start": 3,
+      "end": 147,
+      "go_terms": [
+        "GO:0020037"
+      ],
+      "go_names": [
+        "heme binding"
+      ],
+      "e_value": 0.0
+    },
+    {
+      "accession": "IPR002337",
+      "name": "Hemoglobin, beta-type",
+      "database": "INTERPRO",
+      "start": 8,
+      "end": 146,
+      "go_terms": [
+        "GO:0020037",
+        "GO:0015671",
+        "GO:0005833"
+      ],
+      "go_names": [
+        "heme binding",
+        "oxygen transport",
+        "hemoglobin complex"
+      ],
+      "e_value": 0.0
+    },
+    {
+      "accession": "IPR009050",
+      "name": "Globin-like superfamily",
+      "database": "INTERPRO",
+      "start": 2,
+      "end": 147,
+      "go_terms": [],
+      "go_names": [],
+      "e_value": 0.0
+    },
+    {
+      "accession": "IPR012292",
+      "name": "Globin/Protoglobin",
+      "database": "INTERPRO",
+      "start": 2,
+      "end": 147,
+      "go_terms": [
+        "GO:0019825",
+        "GO:0020037"
+      ],
+      "go_names": [
+        "oxygen binding",
+        "heme binding"
+      ],
+      "e_value": 0.0
+    },
+    {
+      "accession": "IPR050056",
+      "name": "Hemoglobin and related oxygen transporters",
+      "database": "INTERPRO",
+      "start": 1,
+      "end": 147,
+      "go_terms": [],
+      "go_names": [],
+      "e_value": 0.0
+    },
+    {
+      "accession": "PF00042",
+      "name": "Globin",
+      "database": "PFAM",
+      "start": 27,
+      "end": 142,
+      "go_terms": [],
+      "go_names": [],
+      "e_value": 0.0
+    },
+    {
+      "accession": "PR00814",
+      "name": "BETAHAEM",
+      "database": "PRINTS",
+      "start": 30,
+      "end": 46,
+      "go_terms": [],
+      "go_names": [],
+      "e_value": 0.0
+    },
+    {
+      "accession": "PS01033",
+      "name": "Globin domain profile",
+      "database": "PROFILE",
+      "start": 3,
+      "end": 147,
+      "go_terms": [],
+      "go_names": [],
+      "e_value": 0.0
+    },
+    {
+      "accession": "PTHR11442",
+      "name": "Hemoglobin and related oxygen transporters",
+      "database": "PANTHER",
+      "start": 1,
+      "end": 147,
+      "go_terms": [],
+      "go_names": [],
+      "e_value": 0.0
+    },
+    {
+      "accession": "SSF46458",
+      "name": "Globin-like",
+      "database": "SSF",
+      "start": 2,
+      "end": 147,
+      "go_terms": [],
+      "go_names": [],
+      "e_value": 0.0
+    }
+  ],
+  "all_go_terms": [
+    "GO:0020037",
+    "GO:0015671",
+    "GO:0005833",
+    "GO:0019825"
+  ],
+  "all_go_names": [
+    "heme binding",
+    "oxygen transport",
+    "hemoglobin complex",
+    "oxygen binding"
+  ],
+  "protein_families": [
+    "Globin",
+    "Hemoglobin and related oxygen transporters"
+  ],
+  "top_function": "",
+  "blast_available": false,
+  "interpro_available": true,
+  "n_experimental_hits": 0
+}

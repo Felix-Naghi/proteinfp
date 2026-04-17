@@ -1,0 +1,26 @@
+
+# ProteinFP dependencies -- Python 3.12 compatible
+# PyTorch already installed separately via cu128
+
+biopython==1.84
+numpy==2.4.3
+pandas==2.2.2
+scipy==1.13.1
+requests==2.32.3
+aiohttp==3.9.5
+freesasa==2.2.1
+MDAnalysis==2.7.0
+networkx==3.6.1
+fair-esm==2.0.0
+jinja2==3.1.6
+matplotlib==3.9.0
+pyyaml==6.0.1
+tqdm==4.66.4
+colorlog==6.8.2
+click==8.1.7
+pydantic==2.7.1
+fastapi==0.111.0
+uvicorn==0.30.1
+pytest==8.2.2
+pytest-asyncio==0.23.7
+pydssp

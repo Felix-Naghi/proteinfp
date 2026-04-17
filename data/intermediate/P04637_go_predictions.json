@@ -1,0 +1,922 @@
+{
+  "uniprot_id": "P04637",
+  "sequence_length": 393,
+  "mf_predictions": [
+    {
+      "go_id": "GO:0003677",
+      "go_name": "DNA binding",
+      "namespace": "MF",
+      "score": 0.85,
+      "evidence": [
+        "experimental_homolog",
+        "domain_annotation",
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        2,
+        15,
+        19,
+        23,
+        30,
+        59,
+        60,
+        73,
+        76,
+        78,
+        81,
+        109,
+        111,
+        112,
+        113,
+        114,
+        124,
+        125,
+        126,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0004252",
+      "go_name": "serine-type endopeptidase activity",
+      "namespace": "MF",
+      "score": 0.85,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        2,
+        15,
+        19,
+        23,
+        30,
+        59,
+        60,
+        73,
+        76,
+        78,
+        81,
+        109,
+        111,
+        112,
+        113,
+        114,
+        124,
+        125,
+        126,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0008270",
+      "go_name": "zinc ion binding",
+      "namespace": "MF",
+      "score": 0.8,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        2,
+        15,
+        19,
+        23,
+        30,
+        59,
+        60,
+        73,
+        76,
+        78,
+        81,
+        109,
+        111,
+        112,
+        113,
+        114,
+        124,
+        125,
+        126,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0008233",
+      "go_name": "peptidase activity",
+      "namespace": "MF",
+      "score": 0.8,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        2,
+        15,
+        19,
+        23,
+        30,
+        59,
+        60,
+        73,
+        76,
+        78,
+        81,
+        109,
+        111,
+        112,
+        113,
+        114,
+        124,
+        125,
+        126,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0003700",
+      "go_name": "DNA-binding transcription factor activity",
+      "namespace": "MF",
+      "score": 0.75,
+      "evidence": [
+        "domain_annotation",
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        2,
+        15,
+        19,
+        23,
+        30,
+        59,
+        60,
+        73,
+        76,
+        78,
+        81,
+        109,
+        111,
+        112,
+        113,
+        114,
+        124,
+        125,
+        126,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0051262",
+      "go_name": "protein tetramerization",
+      "namespace": "MF",
+      "score": 0.75,
+      "evidence": [
+        "domain_annotation"
+      ],
+      "saliency_residues": [
+        2,
+        15,
+        19,
+        23,
+        30,
+        59,
+        60,
+        73,
+        76,
+        78,
+        81,
+        109,
+        111,
+        112,
+        113,
+        114,
+        124,
+        125,
+        126,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0000976",
+      "go_name": "transcription cis-regulatory region binding",
+      "namespace": "MF",
+      "score": 0.75,
+      "evidence": [
+        "domain_annotation"
+      ],
+      "saliency_residues": [
+        2,
+        15,
+        19,
+        23,
+        30,
+        59,
+        60,
+        73,
+        76,
+        78,
+        81,
+        109,
+        111,
+        112,
+        113,
+        114,
+        124,
+        125,
+        126,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0005515",
+      "go_name": "protein binding",
+      "namespace": "MF",
+      "score": 0.75,
+      "evidence": [
+        "domain_annotation",
+        "ai_esm2"
+      ],
+      "saliency_residues": [
+        2,
+        15,
+        19,
+        23,
+        30,
+        59,
+        60,
+        73,
+        76,
+        78,
+        81,
+        109,
+        111,
+        112,
+        113,
+        114,
+        124,
+        125,
+        126,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0046872",
+      "go_name": "metal ion binding",
+      "namespace": "MF",
+      "score": 0.75,
+      "evidence": [
+        "structural_motif",
+        "sequence_composition"
+      ],
+      "saliency_residues": [
+        2,
+        15,
+        19,
+        23,
+        30,
+        59,
+        60,
+        73,
+        76,
+        78,
+        81,
+        109,
+        111,
+        112,
+        113,
+        114,
+        124,
+        125,
+        126,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0005813",
+      "go_name": "C:centrosome",
+      "namespace": "MF",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        2,
+        15,
+        19,
+        23,
+        30,
+        59,
+        60,
+        73,
+        76,
+        78,
+        81,
+        109,
+        111,
+        112,
+        113,
+        114,
+        124,
+        125,
+        126,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0005783",
+      "go_name": "C:endoplasmic reticulum",
+      "namespace": "MF",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        2,
+        15,
+        19,
+        23,
+        30,
+        59,
+        60,
+        73,
+        76,
+        78,
+        81,
+        109,
+        111,
+        112,
+        113,
+        114,
+        124,
+        125,
+        126,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0005739",
+      "go_name": "C:mitochondrion",
+      "namespace": "MF",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        2,
+        15,
+        19,
+        23,
+        30,
+        59,
+        60,
+        73,
+        76,
+        78,
+        81,
+        109,
+        111,
+        112,
+        113,
+        114,
+        124,
+        125,
+        126,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0016605",
+      "go_name": "C:PML body",
+      "namespace": "MF",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        2,
+        15,
+        19,
+        23,
+        30,
+        59,
+        60,
+        73,
+        76,
+        78,
+        81,
+        109,
+        111,
+        112,
+        113,
+        114,
+        124,
+        125,
+        126,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0005730",
+      "go_name": "C:nucleolus",
+      "namespace": "MF",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        2,
+        15,
+        19,
+        23,
+        30,
+        59,
+        60,
+        73,
+        76,
+        78,
+        81,
+        109,
+        111,
+        112,
+        113,
+        114,
+        124,
+        125,
+        126,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0036310",
+      "go_name": "F:ATP-dependent DNA/DNA annealing activity",
+      "namespace": "MF",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        2,
+        15,
+        19,
+        23,
+        30,
+        59,
+        60,
+        73,
+        76,
+        78,
+        81,
+        109,
+        111,
+        112,
+        113,
+        114,
+        124,
+        125,
+        126,
+        127
+      ]
+    }
+  ],
+  "bp_predictions": [
+    {
+      "go_id": "GO:0006355",
+      "go_name": "regulation of DNA-templated transcription",
+      "namespace": "BP",
+      "score": 0.75,
+      "evidence": [
+        "domain_annotation"
+      ],
+      "saliency_residues": [
+        2,
+        15,
+        19,
+        23,
+        30,
+        59,
+        60,
+        73,
+        76,
+        78,
+        81,
+        109,
+        111,
+        112,
+        113,
+        114,
+        124,
+        125,
+        126,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0006915",
+      "go_name": "apoptotic process",
+      "namespace": "BP",
+      "score": 0.75,
+      "evidence": [
+        "domain_annotation"
+      ],
+      "saliency_residues": [
+        2,
+        15,
+        19,
+        23,
+        30,
+        59,
+        60,
+        73,
+        76,
+        78,
+        81,
+        109,
+        111,
+        112,
+        113,
+        114,
+        124,
+        125,
+        126,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0097190",
+      "go_name": "P:apoptotic signaling pathway",
+      "namespace": "BP",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        2,
+        15,
+        19,
+        23,
+        30,
+        59,
+        60,
+        73,
+        76,
+        78,
+        81,
+        109,
+        111,
+        112,
+        113,
+        114,
+        124,
+        125,
+        126,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0071456",
+      "go_name": "P:cellular response to hypoxia",
+      "namespace": "BP",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        2,
+        15,
+        19,
+        23,
+        30,
+        59,
+        60,
+        73,
+        76,
+        78,
+        81,
+        109,
+        111,
+        112,
+        113,
+        114,
+        124,
+        125,
+        126,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0006974",
+      "go_name": "P:DNA damage response",
+      "namespace": "BP",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        2,
+        15,
+        19,
+        23,
+        30,
+        59,
+        60,
+        73,
+        76,
+        78,
+        81,
+        109,
+        111,
+        112,
+        113,
+        114,
+        124,
+        125,
+        126,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0006351",
+      "go_name": "DNA-templated transcription",
+      "namespace": "BP",
+      "score": 0.65,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        2,
+        15,
+        19,
+        23,
+        30,
+        59,
+        60,
+        73,
+        76,
+        78,
+        81,
+        109,
+        111,
+        112,
+        113,
+        114,
+        124,
+        125,
+        126,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0045944",
+      "go_name": "positive regulation of transcription by RNA pol II",
+      "namespace": "BP",
+      "score": 0.6,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        2,
+        15,
+        19,
+        23,
+        30,
+        59,
+        60,
+        73,
+        76,
+        78,
+        81,
+        109,
+        111,
+        112,
+        113,
+        114,
+        124,
+        125,
+        126,
+        127
+      ]
+    }
+  ],
+  "cc_predictions": [
+    {
+      "go_id": "GO:0005634",
+      "go_name": "nucleus",
+      "namespace": "CC",
+      "score": 0.8,
+      "evidence": [
+        "experimental_homolog",
+        "domain_annotation",
+        "ai_esm2",
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        2,
+        15,
+        19,
+        23,
+        30,
+        59,
+        60,
+        73,
+        76,
+        78,
+        81,
+        109,
+        111,
+        112,
+        113,
+        114,
+        124,
+        125,
+        126,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0005737",
+      "go_name": "C:cytoplasm",
+      "namespace": "CC",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog",
+        "sequence_baseline"
+      ],
+      "saliency_residues": [
+        2,
+        15,
+        19,
+        23,
+        30,
+        59,
+        60,
+        73,
+        76,
+        78,
+        81,
+        109,
+        111,
+        112,
+        113,
+        114,
+        124,
+        125,
+        126,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0005759",
+      "go_name": "C:mitochondrial matrix",
+      "namespace": "CC",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        2,
+        15,
+        19,
+        23,
+        30,
+        59,
+        60,
+        73,
+        76,
+        78,
+        81,
+        109,
+        111,
+        112,
+        113,
+        114,
+        124,
+        125,
+        126,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0005829",
+      "go_name": "C:cytosol",
+      "namespace": "CC",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        2,
+        15,
+        19,
+        23,
+        30,
+        59,
+        60,
+        73,
+        76,
+        78,
+        81,
+        109,
+        111,
+        112,
+        113,
+        114,
+        124,
+        125,
+        126,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0043073",
+      "go_name": "C:germ cell nucleus",
+      "namespace": "CC",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        2,
+        15,
+        19,
+        23,
+        30,
+        59,
+        60,
+        73,
+        76,
+        78,
+        81,
+        109,
+        111,
+        112,
+        113,
+        114,
+        124,
+        125,
+        126,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0017053",
+      "go_name": "C:transcription repressor complex",
+      "namespace": "CC",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        2,
+        15,
+        19,
+        23,
+        30,
+        59,
+        60,
+        73,
+        76,
+        78,
+        81,
+        109,
+        111,
+        112,
+        113,
+        114,
+        124,
+        125,
+        126,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0043234",
+      "go_name": "protein complex",
+      "namespace": "CC",
+      "score": 0.55,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        2,
+        15,
+        19,
+        23,
+        30,
+        59,
+        60,
+        73,
+        76,
+        78,
+        81,
+        109,
+        111,
+        112,
+        113,
+        114,
+        124,
+        125,
+        126,
+        127
+      ]
+    }
+  ],
+  "top_mf": "DNA binding",
+  "top_bp": "regulation of DNA-templated transcription",
+  "top_cc": "nucleus",
+  "n_predictions": 29
+}

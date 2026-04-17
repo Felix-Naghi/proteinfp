@@ -1,0 +1,88 @@
+======================================================================
+  ProteinFP Prediction Report
+  Generated: 2026-04-16 21:50:44
+======================================================================
+
+  Protein    : Carbonic anhydrase 2
+  Gene       : CA2
+  UniProt    : P00918
+  Organism   : Homo sapiens
+  Length     : 260 aa
+  Mean pLDDT : 97.4
+  Confidence : VERY HIGH
+
+──────────────────────────────────────────────────────────────────────
+  FUNCTIONAL PREDICTION
+──────────────────────────────────────────────────────────────────────
+  Top function     : Catalyzes the reversible hydration of carbon dioxide (PubMed:11327835, PubMed:11802772, PubMed:11831900, PubMed:12056894, PubMed:12171926, PubMed:1336460, PubMed:14736236, PubMed:15300855, PubMed:1545
+  Enzyme           : yes — 3.4.24
+  Location         : nucleus
+  Evidence sources : 12
+
+──────────────────────────────────────────────────────────────────────
+  GENE ONTOLOGY PREDICTIONS
+──────────────────────────────────────────────────────────────────────
+
+  Molecular Function:
+    [HIGH  ] GO:0008270 zinc ion binding (score=14.8, 3 sources)
+    [HIGH  ] GO:0004089 carbonate dehydratase activity (score=13.0, 2 sources)
+    [HIGH  ] GO:0015670 P:carbon dioxide transport (score=5.1, 1 sources)
+    [HIGH  ] GO:0045177 C:apical part of cell (score=5.1, 1 sources)
+    [HIGH  ] GO:0018820 F:cyanamide hydratase activity (score=5.1, 1 sources)
+
+  Biological Process:
+    [HIGH  ] GO:0038166 P:angiotensin-activated signaling pathway (score=5.1, 1 sources)
+    [HIGH  ] GO:0051453 P:regulation of intracellular pH (score=5.1, 1 sources)
+    [HIGH  ] GO:2001150 P:positive regulation of dipeptide transmembr (score=5.1, 1 sources)
+    [HIGH  ] GO:0044070 P:regulation of monoatomic anion transport (score=5.1, 1 sources)
+    [HIGH  ] GO:0006885 P:regulation of pH (score=5.1, 1 sources)
+
+  Cellular Component:
+    [HIGH  ] GO:0005737 C:cytoplasm (score=6.5, 2 sources)
+    [HIGH  ] GO:0005886 C:plasma membrane (score=5.1, 1 sources)
+    [HIGH  ] GO:0005829 C:cytosol (score=5.1, 1 sources)
+
+──────────────────────────────────────────────────────────────────────
+  ACTIVE SITES
+──────────────────────────────────────────────────────────────────────
+  H96 [HIGH  ] motifs: serine_protease_triad, zinc_binding_cluster
+  H107 [HIGH  ] motifs: serine_protease_triad, zinc_binding_cluster
+  H119 [HIGH  ] motifs: zinc_binding_cluster, zinc_binding_cluster
+  C205 [HIGH  ] motifs: zinc_binding_cluster
+  H4 [HIGH  ] motifs: zinc_binding_cluster
+
+──────────────────────────────────────────────────────────────────────
+  BINDING POCKETS
+──────────────────────────────────────────────────────────────────────
+  P1: vol=1600Å³  druggability=0.99 (high)
+  P2: vol=1240Å³  druggability=0.99 (high)
+  P3: vol=820Å³  druggability=0.99 (high)
+  P4: vol=1020Å³  druggability=0.98 (high)
+  P5: vol=1420Å³  druggability=0.98 (high)
+
+──────────────────────────────────────────────────────────────────────
+  PROTEIN INTERACTIONS (top 8)
+──────────────────────────────────────────────────────────────────────
+  SLC9A1          STRING=954  type=unknown
+  SLC4A1          STRING=919  type=unknown
+  SLC4A4          STRING=893  type=unknown
+  TCIRG1          STRING=871  type=unknown
+  ATP6V1B1        STRING=841  type=unknown
+  CA1             STRING=833  type=unknown
+  CBSL            STRING=819  type=unknown
+  CBS             STRING=819  type=unknown
+
+──────────────────────────────────────────────────────────────────────
+  VALIDATION SUGGESTIONS
+──────────────────────────────────────────────────────────────────────
+  1. Alanine scanning mutagenesis of predicted active site residues (H96, H107, H119) to confirm functional importance
+  2. Thermal shift assay or SPR binding assay against pocket P1 (vol=1600Å³, druggability=0.99)
+  3. Co-immunoprecipitation with SLC9A1 (unknown interaction, predicted interface: [1, 260, 186])
+  4. Co-immunoprecipitation with SLC4A1 (unknown interaction, predicted interface: [1, 260, 186])
+  5. Enzyme activity assay consistent with EC 3.4.24 using appropriate substrate panel
+  6. EMSA or fluorescence polarisation assay to confirm 'zinc ion binding' (GO:GO:0008270)
+  7. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+
+──────────────────────────────────────────────────────────────────────
+  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi
+======================================================================

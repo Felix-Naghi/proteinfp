@@ -1,0 +1,83 @@
+======================================================================
+  ProteinFP Prediction Report
+  Generated: 2026-04-16 21:50:43
+======================================================================
+
+  Protein    : Hemoglobin subunit beta
+  Gene       : HBB
+  UniProt    : P68871
+  Organism   : Homo sapiens
+  Length     : 147 aa
+  Mean pLDDT : 97.2
+  Confidence : HIGH
+
+──────────────────────────────────────────────────────────────────────
+  FUNCTIONAL PREDICTION
+──────────────────────────────────────────────────────────────────────
+  Top function     : serine-type endopeptidase activity
+  Enzyme           : no (non-enzyme)
+  Location         : nucleus
+  Evidence sources : 12
+
+──────────────────────────────────────────────────────────────────────
+  GENE ONTOLOGY PREDICTIONS
+──────────────────────────────────────────────────────────────────────
+
+  Molecular Function:
+    [HIGH  ] GO:0020037 heme binding (score=13.9, 2 sources)
+    [HIGH  ] GO:0015671 oxygen transport (score=6.9, 2 sources)
+    [HIGH  ] GO:0019825 oxygen binding (score=6.9, 2 sources)
+    [LOW   ] GO:0004252 serine-type endopeptidase activity (score=1.7, 1 sources)
+    [LOW   ] GO:0003677 DNA binding (score=1.7, 1 sources)
+
+  Biological Process:
+    [LOW   ] GO:0006351 DNA-templated transcription (score=1.3, 1 sources)
+
+  Cellular Component:
+    [HIGH  ] GO:0005833 hemoglobin complex (score=6.9, 2 sources)
+    [MEDIUM] GO:0005634 nucleus (score=3.0, 2 sources)
+    [LOW   ] GO:0005737 cytoplasm (score=0.9, 1 sources)
+
+──────────────────────────────────────────────────────────────────────
+  ACTIVE SITES
+──────────────────────────────────────────────────────────────────────
+  C94 [HIGH  ] motifs: cysteine_protease_dyad, cysteine_protease_dyad
+  H78 [HIGH  ] motifs: zinc_binding_cluster, acid_base_pair
+  H93 [HIGH  ] motifs: serine_protease_triad, cysteine_protease_dyad
+  H98 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
+  C113 [HIGH  ] motifs: zinc_binding_cluster
+
+──────────────────────────────────────────────────────────────────────
+  BINDING POCKETS
+──────────────────────────────────────────────────────────────────────
+  P1: vol=1120Å³  druggability=0.95 (high)
+  P2: vol=1280Å³  druggability=0.95 (high)
+  P3: vol=1200Å³  druggability=0.95 (high)
+  P4: vol=1120Å³  druggability=0.94 (high)
+  P5: vol=780Å³  druggability=0.94 (high)
+
+──────────────────────────────────────────────────────────────────────
+  PROTEIN INTERACTIONS (top 8)
+──────────────────────────────────────────────────────────────────────
+  HBA2            STRING=999  type=unknown
+  HBA1            STRING=999  type=unknown
+  HBZ             STRING=997  type=unknown
+  HP              STRING=995  type=unknown
+  AHSP            STRING=955  type=unknown
+  HBQ1            STRING=950  type=unknown
+  HPR             STRING=935  type=unknown
+  HBM             STRING=932  type=unknown
+
+──────────────────────────────────────────────────────────────────────
+  VALIDATION SUGGESTIONS
+──────────────────────────────────────────────────────────────────────
+  1. Alanine scanning mutagenesis of predicted active site residues (C94, H78, H93) to confirm functional importance
+  2. Thermal shift assay or SPR binding assay against pocket P1 (vol=1120Å³, druggability=0.95)
+  3. Co-immunoprecipitation with HBA2 (unknown interaction, predicted interface: [121, 147, 96])
+  4. Co-immunoprecipitation with HBA1 (unknown interaction, predicted interface: [121, 147, 96])
+  5. EMSA or fluorescence polarisation assay to confirm 'heme binding' (GO:GO:0020037)
+  6. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+
+──────────────────────────────────────────────────────────────────────
+  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi
+======================================================================

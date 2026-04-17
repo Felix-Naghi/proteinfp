@@ -1,0 +1,71 @@
+# -- ProteinFP Configuration ---------------------------------------------------
+# Edit paths here -- everything else in the pipeline reads from this file.
+
+project:
+  name: "ProteinFP"
+  version: "0.1.0"
+
+paths:
+  input_sequences:   "data/input"
+  structures:        "data/structures"
+  intermediate:      "data/intermediate"
+  reports:           "data/reports"
+  logs:              "logs"
+
+# AlphaFold Database REST API
+afdb:
+  base_url:          "https://alphafold.ebi.ac.uk/api"
+  structure_url:     "https://alphafold.ebi.ac.uk/files"
+  model_version:     4
+  plddt_threshold:   70.0
+  max_retries:       3
+  retry_delay_sec:   2.0
+  timeout_sec:       30
+
+# UniProt REST API
+uniprot:
+  base_url:          "https://rest.uniprot.org/uniprotkb"
+  timeout_sec:       20
+
+# NCBI BLAST (Module 07)
+blast:
+  base_url:          "https://blast.ncbi.nlm.nih.gov/blast/Blast.cgi"
+  database:          "swissprot"
+  program:           "blastp"
+  e_value_threshold: 0.001
+  max_hits:          50
+
+# STRING DB (Module 12 -- PPI)
+string_db:
+  base_url:          "https://string-db.org/api"
+  species:           9606
+  min_score:         400
+  limit:             20
+
+# Consensus scoring weights
+consensus_weights:
+  experimental_homolog:    3.0
+  structural_homolog:      2.5
+  ai_deepfri:              2.0
+  ai_esm2:                 1.8
+  sequence_homolog:        1.5
+  string_interaction:      1.2
+  domain_annotation:       1.0
+
+# GPU settings
+compute:
+  device:            "cuda"
+  cuda_device_id:    0
+  # esm2_t33_650M_UR50D fits comfortably in RTX 5060 VRAM
+  esm2_model:        "esm2_t33_650M_UR50D"
+
+# Elastic network model (Module 05 -- allostery)
+# Uses MDAnalysis instead of ProDy (ProDy broken on Python 3.12)
+enm:
+  n_modes:           20        # number of normal modes to compute
+  cutoff_angstrom:   7.0       # CA-CA distance cutoff for ENM springs
+
+# Logging
+logging:
+  level:             "INFO"
+  log_to_file:       true
