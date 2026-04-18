@@ -1,38 +1,44 @@
 ======================================================================
   ProteinFP Validation Report
-  Date: 2026-04-16 21:50
-  Proteins tested: 10
+  Date: 2026-04-17 22:27
+  Proteins tested: 13
 ======================================================================
 
-  Mean GO term recall    : 58.9%
-  Mean active site recall: 96.7%
-  Enzyme classification  : 90.0%
-  PPI partner recall     : 64.7%
-  Overall accuracy score : 75.7/100
+  Mean GO term recall    : 75.2%
+  Mean active site recall: 97.4%
+  Enzyme classification  : 61.5%
+  PPI partner recall     : 72.8%
+  Overall accuracy score : 77.6/100
 
 ──────────────────────────────────────────────────────────────────────
   Per-protein breakdown:
 ──────────────────────────────────────────────────────────────────────
-  P04637 TP53     [transcription_factor] GO=89% AS=100% Enz=Y PPI=80% [OK]
-  P00533 EGFR     [kinase              ] GO=72% AS=100% Enz=Y PPI=75% [OK]
-  P00441 SOD1     [oxidoreductase      ] GO=100% AS=100% Enz=Y PPI=50% [OK]
-  P07900 HSP90AA1 [chaperone           ] GO=56% AS=100% Enz=N PPI=25% [OK]
-  P06213 INSR     [kinase              ] GO=33% AS=100% Enz=Y PPI=100% [OK]
+  P04637 TP53     [transcription_factor] GO=100% AS=100% Enz=Y PPI=80% [OK]
+  P00533 EGFR     [kinase              ] GO=100% AS=100% Enz=Y PPI=75% [OK]
+  P00441 SOD1     [oxidoreductase      ] GO=100% AS=100% Enz=N PPI=50% [OK]
+  P07900 HSP90AA1 [chaperone           ] GO=72% AS=100% Enz=Y PPI=25% [OK]
+  P06213 INSR     [kinase              ] GO=50% AS=100% Enz=N PPI=100% [OK]
   P38398 BRCA1    [dna_repair          ] GO=39% AS=100% Enz=Y PPI=50% [OK]
   P16083 NQO2     [oxidoreductase      ] GO=50% AS=100% Enz=Y PPI=0% [OK]
-  P00734 F2       [serine_protease     ] GO=33% AS=67% Enz=Y PPI=67% [OK]
-  P68871 HBB      [oxygen_transport    ] GO=50% AS=100% Enz=Y PPI=100% [OK]
+  P00734 F2       [serine_protease     ] GO=50% AS=67% Enz=N PPI=67% [OK]
+  P68871 HBB      [oxygen_transport    ] GO=83% AS=100% Enz=Y PPI=100% [OK]
   P00918 CA2      [lyase               ] GO=67% AS=100% Enz=Y PPI=100% [OK]
+  P01116 KRAS     [gtpase              ] GO=100% AS=100% Enz=Y PPI=100% [OK]
+  Q00987 MDM2     [ubiquitin_ligase    ] GO=100% AS=100% Enz=N PPI=100% [OK]
+  Q9BYF1 ACE2     [metallopeptidase    ] GO=67% AS=100% Enz=N PPI=100% [OK]
 
 ──────────────────────────────────────────────────────────────────────
   Category breakdown:
 ──────────────────────────────────────────────────────────────────────
-  chaperone                : 49.4/100 (1 proteins)
+  chaperone                : 75.3/100 (1 proteins)
   dna_repair               : 68.6/100 (1 proteins)
-  kinase                   : 81.0/100 (2 proteins)
+  gtpase                   : 100.0/100 (1 proteins)
+  kinase                   : 78.8/100 (2 proteins)
   lyase                    : 88.3/100 (1 proteins)
-  oxidoreductase           : 76.2/100 (2 proteins)
-  oxygen_transport         : 82.5/100 (1 proteins)
-  serine_protease          : 61.7/100 (1 proteins)
-  transcription_factor     : 92.1/100 (1 proteins)
+  metallopeptidase         : 68.3/100 (1 proteins)
+  oxidoreductase           : 66.2/100 (2 proteins)
+  oxygen_transport         : 94.2/100 (1 proteins)
+  serine_protease          : 47.5/100 (1 proteins)
+  transcription_factor     : 96.0/100 (1 proteins)
+  ubiquitin_ligase         : 80.0/100 (1 proteins)
 ======================================================================

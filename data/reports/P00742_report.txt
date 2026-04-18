@@ -1,21 +1,21 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-17 22:27:09
+  Generated: 2026-04-17 22:19:47
 ======================================================================
 
-  Protein    : Breast cancer type 1 susceptibility protein
-  Gene       : BRCA1
-  UniProt    : P38398
+  Protein    : Coagulation factor X
+  Gene       : F10
+  UniProt    : P00742
   Organism   : Homo sapiens
-  Length     : 1863 aa
-  Mean pLDDT : 41.6
+  Length     : 488 aa
+  Mean pLDDT : 80.2
   Confidence : VERY HIGH
 
 ──────────────────────────────────────────────────────────────────────
   FUNCTIONAL PREDICTION
 ──────────────────────────────────────────────────────────────────────
-  Top function     : E3 ubiquitin-protein ligase that specifically mediates the formation of 'Lys-6'-linked polyubiquitin chains and plays a central role in DNA repair by facilitating cellular responses to DNA damage (Pub
-  Enzyme           : no (non-enzyme)
+  Top function     : Factor Xa is a vitamin K-dependent glycoprotein that converts prothrombin to thrombin in the presence of factor Va, calcium and phospholipid during blood clotting (PubMed:22409427, PubMed:39880037). F
+  Enzyme           : yes — 3.4.21
   Location         : membrane
   Evidence sources : 12
 
@@ -24,70 +24,70 @@
 ──────────────────────────────────────────────────────────────────────
 
   Molecular Function:
-    [HIGH  ] GO:0003677 DNA binding (score=13.3, 4 sources)
-    [HIGH  ] GO:0008270 zinc ion binding (score=11.3, 3 sources)
-    [HIGH  ] GO:0004842 ubiquitin-protein transferase activity (score=9.5, 2 sources)
-    [HIGH  ] GO:0046872 metal ion binding (score=8.8, 4 sources)
-    [HIGH  ] GO:0061630 F:ubiquitin protein ligase activity (score=7.3, 2 sources)
+    [HIGH  ] GO:0004252 serine-type endopeptidase activity (score=20.6, 4 sources)
+    [HIGH  ] GO:0005509 calcium ion binding (score=20.5, 2 sources)
+    [HIGH  ] GO:0006508 proteolysis (score=10.0, 2 sources)
+    [MEDIUM] GO:0046872 metal ion binding (score=4.6, 3 sources)
+    [MEDIUM] GO:0003677 DNA binding (score=3.4, 2 sources)
 
   Biological Process:
-    [HIGH  ] GO:0006281 DNA repair (score=7.8, 1 sources)
-    [HIGH  ] GO:0045944 P:positive regulation of transcription by RNA (score=6.5, 2 sources)
-    [HIGH  ] GO:0006974 DNA damage response (score=5.8, 2 sources)
-    [HIGH  ] GO:0000724 P:double-strand break repair via homologous r (score=5.1, 1 sources)
-    [HIGH  ] GO:0006633 P:fatty acid biosynthetic process (score=5.1, 1 sources)
+    [HIGH  ] GO:0007596 blood coagulation (score=11.2, 3 sources)
+    [HIGH  ] GO:0032008 P:positive regulation of TOR signaling (score=5.1, 1 sources)
+    [HIGH  ] GO:0044469 P:venom-mediated blood coagulation (score=5.1, 1 sources)
+    [HIGH  ] GO:0030335 P:positive regulation of cell migration (score=5.1, 1 sources)
+    [HIGH  ] GO:0051239 P:regulation of multicellular organismal proc (score=5.1, 1 sources)
 
   Cellular Component:
-    [HIGH  ] GO:0005634 nucleus (score=14.6, 5 sources)
-    [HIGH  ] GO:0005737 C:cytoplasm (score=7.9, 3 sources)
-    [HIGH  ] GO:0070531 C:BRCA1-A complex (score=5.1, 1 sources)
+    [HIGH  ] GO:0005576 extracellular region (score=14.5, 3 sources)
+    [HIGH  ] GO:0005615 C:extracellular space (score=6.5, 2 sources)
+    [HIGH  ] GO:0009897 C:external side of plasma membrane (score=5.1, 1 sources)
 
 ──────────────────────────────────────────────────────────────────────
   ACTIVE SITES
 ──────────────────────────────────────────────────────────────────────
-  C39 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
-  H41 [HIGH  ] motifs: serine_protease_triad, cysteine_protease_dyad
-  H399 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
-  H692 [HIGH  ] motifs: serine_protease_triad, zinc_binding_cluster
-  H1141 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  C140 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
+  C172 [HIGH  ] motifs: p_loop_walker_a
+  C277 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
+  H311 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H423 [HIGH  ] motifs: serine_protease_triad, hrd_catalytic_loop
 
 ──────────────────────────────────────────────────────────────────────
   BINDING POCKETS
 ──────────────────────────────────────────────────────────────────────
-  P1: vol=1720Å³  druggability=0.97 (high)
-  P2: vol=1420Å³  druggability=0.97 (high)
-  P3: vol=1120Å³  druggability=0.96 (high)
-  P4: vol=400Å³  druggability=0.96 (high)
-  P5: vol=1160Å³  druggability=0.96 (high)
+  P1: vol=2040Å³  druggability=1.00 (high)
+  P2: vol=1620Å³  druggability=1.00 (high)
+  P3: vol=1680Å³  druggability=0.99 (high)
+  P4: vol=1760Å³  druggability=0.99 (high)
+  P5: vol=1620Å³  druggability=0.99 (high)
 
 ──────────────────────────────────────────────────────────────────────
   ALLOSTERIC SITES
 ──────────────────────────────────────────────────────────────────────
-  A1 [HIGH  ] corr=0.87 residues=[1644, 1645, 1646, 1647]
-  A2 [HIGH  ] corr=0.80 residues=[1641, 1642, 1643]
-  A3 [HIGH  ] corr=0.72 residues=[1638, 1639, 1640]
-  A4 [HIGH  ] corr=0.68 residues=[856, 857, 858, 859]
+  A1 [HIGH  ] corr=0.90 residues=[36, 37, 38]
+  A2 [HIGH  ] corr=0.90 residues=[43, 44]
+  A3 [HIGH  ] corr=0.88 residues=[31, 32, 33, 34]
+  A4 [HIGH  ] corr=0.87 residues=[26, 27, 28, 29]
 
 ──────────────────────────────────────────────────────────────────────
   PROTEIN INTERACTIONS (top 8)
 ──────────────────────────────────────────────────────────────────────
-  MDC1            STRING=999  type=unknown
-  PALB2           STRING=999  type=unknown
-  BRCA2           STRING=999  type=cooperative
-  RAD50           STRING=999  type=cooperative
-  BARD1           STRING=999  type=unknown
-  TP53            STRING=999  type=unknown
-  MRE11           STRING=999  type=unknown
-  ABRAXAS1        STRING=999  type=unknown
+  F2              STRING=999  type=unknown
+  TFPI            STRING=999  type=unknown
+  F3              STRING=999  type=unknown
+  SERPINC1        STRING=998  type=unknown
+  F8              STRING=997  type=unknown
+  F5              STRING=995  type=unknown
+  F7              STRING=988  type=unknown
+  VWF             STRING=978  type=unknown
 
 ──────────────────────────────────────────────────────────────────────
   VALIDATION SUGGESTIONS
 ──────────────────────────────────────────────────────────────────────
-  1. Alanine scanning mutagenesis of predicted active site residues (C39, H41, H399) to confirm functional importance
-  2. Thermal shift assay or SPR binding assay against pocket P1 (vol=1720Å³, druggability=0.97)
-  3. Co-immunoprecipitation with MDC1 (unknown interaction, predicted interface: [1863, 1508, 1076])
-  4. Co-immunoprecipitation with PALB2 (unknown interaction, predicted interface: [1863, 1508, 1076])
-  5. EMSA or fluorescence polarisation assay to confirm 'DNA binding' (GO:0003677)
+  1. Alanine scanning mutagenesis of predicted active site residues (C140, C172, C277) to confirm functional importance
+  2. Thermal shift assay or SPR binding assay against pocket P1 (vol=2040Å³, druggability=1.00)
+  3. Co-immunoprecipitation with F2 (unknown interaction, predicted interface: [488, 227, 1])
+  4. Co-immunoprecipitation with TFPI (unknown interaction, predicted interface: [488, 227, 1])
+  5. Enzyme activity assay consistent with EC 3.4.21 using appropriate substrate panel
   6. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────

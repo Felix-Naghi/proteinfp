@@ -1,7 +1,7 @@
 {
   "uniprot_id": "Q9BYF1",
   "sequence_length": 805,
-  "is_enzyme": true,
+  "is_enzyme": false,
   "enzyme_confidence": 0.85,
   "top_prediction": {
     "ec_class": "3",
@@ -27,9 +27,19 @@
         "sequence_composition",
         "homology_inference"
       ]
+    },
+    {
+      "ec_class": "2",
+      "ec_name": "Transferase",
+      "ec_full": "EC 2.x.x.x",
+      "score": 0.744,
+      "evidence": [
+        "go_prediction",
+        "sequence_composition"
+      ]
     }
   ],
   "specific_ec": "3.4.24",
   "specific_ec_name": "Metallopeptidase",
-  "non_enzyme_score": 0.3
+  "non_enzyme_score": 0.7
 }

@@ -1,12 +1,12 @@
 {
   "uniprot_id": "P00734",
   "sequence_length": 622,
-  "is_enzyme": true,
+  "is_enzyme": false,
   "enzyme_confidence": 0.85,
   "top_prediction": {
     "ec_class": "3",
     "ec_name": "Hydrolase",
-    "ec_full": "EC 3.4.24",
+    "ec_full": "EC 3.4.21",
     "score": 0.85,
     "evidence": [
       "go_prediction",
@@ -19,13 +19,23 @@
     {
       "ec_class": "3",
       "ec_name": "Hydrolase",
-      "ec_full": "EC 3.4.24",
+      "ec_full": "EC 3.4.21",
       "score": 0.85,
       "evidence": [
         "go_prediction",
         "structural_motif",
         "sequence_composition",
         "homology_inference"
+      ]
+    },
+    {
+      "ec_class": "2",
+      "ec_name": "Transferase",
+      "ec_full": "EC 2.x.x.x",
+      "score": 0.766,
+      "evidence": [
+        "go_prediction",
+        "sequence_composition"
       ]
     },
     {
@@ -47,7 +57,7 @@
       ]
     }
   ],
-  "specific_ec": "3.4.24",
-  "specific_ec_name": "Metallopeptidase",
-  "non_enzyme_score": 0.3
+  "specific_ec": "3.4.21",
+  "specific_ec_name": "Serine-type endopeptidase",
+  "non_enzyme_score": 0.7
 }

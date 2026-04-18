@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-16 21:50:35
+  Generated: 2026-04-17 22:27:20
 ======================================================================
 
   Protein    : Epidermal growth factor receptor
@@ -15,8 +15,8 @@
   FUNCTIONAL PREDICTION
 ──────────────────────────────────────────────────────────────────────
   Top function     : Receptor tyrosine kinase binding ligands of the EGF family and activating several signaling cascades to convert extracellular cues into appropriate cellular responses (PubMed:10805725, PubMed:27153536
-  Enzyme           : yes — 3.4.24
-  Location         : C:nucleus
+  Enzyme           : yes — 3.4.21
+  Location         : integral component of plasma membrane
   Evidence sources : 12
 
 ──────────────────────────────────────────────────────────────────────
@@ -24,32 +24,32 @@
 ──────────────────────────────────────────────────────────────────────
 
   Molecular Function:
-    [HIGH  ] GO:0006468 protein phosphorylation (score=25.3, 3 sources)
     [HIGH  ] GO:0005524 ATP binding (score=18.0, 3 sources)
-    [HIGH  ] GO:0004672 protein kinase activity (score=13.1, 2 sources)
+    [HIGH  ] GO:0004672 protein kinase activity (score=15.0, 3 sources)
     [HIGH  ] GO:0004713 protein tyrosine kinase activity (score=13.0, 2 sources)
     [HIGH  ] GO:0043235 C:receptor complex (score=5.1, 1 sources)
+    [HIGH  ] GO:0005006 F:epidermal growth factor receptor activity (score=5.1, 1 sources)
 
   Biological Process:
-    [LOW   ] GO:0018108 peptidyl-tyrosine phosphorylation (score=1.4, 1 sources)
-    [LOW   ] GO:0006351 DNA-templated transcription (score=1.3, 1 sources)
-    [LOW   ] GO:0045944 positive regulation of transcription by RNA p (score=1.2, 1 sources)
-    [LOW   ] GO:0007173 epidermal growth factor receptor signaling pa (score=1.2, 1 sources)
-    [LOW   ] GO:0008283 cell population proliferation (score=1.2, 1 sources)
+    [HIGH  ] GO:0006468 protein phosphorylation (score=25.3, 3 sources)
+    [MEDIUM] GO:0007169 cell surface receptor protein tyrosine kinase (score=4.2, 1 sources)
+    [MEDIUM] GO:0007173 epidermal growth factor receptor signaling pa (score=3.0, 2 sources)
+    [MEDIUM] GO:0007165 signal transduction (score=3.0, 2 sources)
+    [MEDIUM] GO:0018108 peptidyl-tyrosine phosphorylation (score=2.8, 2 sources)
 
   Cellular Component:
-    [HIGH  ] GO:0016020 membrane (score=11.0, 3 sources)
-    [HIGH  ] GO:0005634 C:nucleus (score=8.4, 3 sources)
-    [HIGH  ] GO:0005737 C:cytoplasm (score=6.5, 2 sources)
+    [HIGH  ] GO:0016020 membrane (score=12.9, 4 sources)
+    [HIGH  ] GO:0005737 C:cytoplasm (score=7.9, 3 sources)
+    [HIGH  ] GO:0005634 C:nucleus (score=7.8, 3 sources)
 
 ──────────────────────────────────────────────────────────────────────
   ACTIVE SITES
 ──────────────────────────────────────────────────────────────────────
-  C31 [HIGH  ] motifs: zinc_binding_cluster
-  H47 [HIGH  ] motifs: serine_protease_triad, zinc_binding_cluster
-  C58 [HIGH  ] motifs: zinc_binding_cluster, zinc_binding_cluster
-  C157 [HIGH  ] motifs: zinc_binding_cluster, zinc_binding_cluster
-  C194 [HIGH  ] motifs: zinc_binding_cluster, zinc_binding_cluster
+  C510 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
+  C558 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
+  C562 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
+  C591 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
+  C617 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
 
 ──────────────────────────────────────────────────────────────────────
   BINDING POCKETS
@@ -83,12 +83,13 @@
 ──────────────────────────────────────────────────────────────────────
   VALIDATION SUGGESTIONS
 ──────────────────────────────────────────────────────────────────────
-  1. Alanine scanning mutagenesis of predicted active site residues (C31, H47, C58) to confirm functional importance
+  1. Alanine scanning mutagenesis of predicted active site residues (C510, C558, C562) to confirm functional importance
   2. Thermal shift assay or SPR binding assay against pocket P1 (vol=440Å³, druggability=1.00)
   3. Co-immunoprecipitation with PTPN11 (unknown interaction, predicted interface: [1, 1121, 2])
   4. Co-immunoprecipitation with HBEGF (unknown interaction, predicted interface: [1, 1121, 2])
-  5. Enzyme activity assay consistent with EC 3.4.24 using appropriate substrate panel
-  6. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+  5. Enzyme activity assay consistent with EC 3.4.21 using appropriate substrate panel
+  6. EMSA or fluorescence polarisation assay to confirm 'ATP binding' (GO:0005524)
+  7. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
   Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi

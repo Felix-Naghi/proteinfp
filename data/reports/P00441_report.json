@@ -4,22 +4,23 @@
   "protein_name": "Superoxide dismutase [Cu-Zn]",
   "organism": "Homo sapiens",
   "sequence_length": 154,
-  "generated_at": "2026-04-16 21:50:36",
+  "generated_at": "2026-04-17 22:27:29",
   "top_function": "Destroys radicals which are normally produced within the cells and which are toxic to biological systems (PubMed:24140062). Catalyzes the oxidation of hydrogen sulfide (H2S) to sulfate, playing an imp",
-  "is_enzyme": true,
-  "ec_number": "3.4.24",
-  "subcellular_location": "C:nucleus",
+  "is_enzyme": false,
+  "ec_number": "3.4.21",
+  "subcellular_location": "membrane",
   "go_terms_mf": [
     {
       "go_id": "GO:0005507",
       "go_name": "copper ion binding",
       "namespace": "MF",
-      "weighted_score": 11.0,
-      "n_sources": 3,
+      "weighted_score": 13.3,
+      "n_sources": 4,
       "sources": [
         "experimental_homolog",
         "domain_annotation",
-        "structural_motif"
+        "structural_motif",
+        "embedding_similarity"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -28,11 +29,12 @@
       "go_id": "GO:0046872",
       "go_name": "metal ion binding",
       "namespace": "MF",
-      "weighted_score": 10.75,
-      "n_sources": 3,
+      "weighted_score": 12.25,
+      "n_sources": 4,
       "sources": [
         "domain_annotation",
         "structural_motif",
+        "embedding_similarity",
         "sequence_composition"
       ],
       "confidence": "HIGH",
@@ -42,11 +44,12 @@
       "go_id": "GO:0008270",
       "go_name": "F:zinc ion binding",
       "namespace": "MF",
-      "weighted_score": 7.0,
-      "n_sources": 2,
+      "weighted_score": 8.6,
+      "n_sources": 3,
       "sources": [
         "experimental_homolog",
-        "structural_motif"
+        "structural_motif",
+        "embedding_similarity"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -55,11 +58,11 @@
       "go_id": "GO:0004784",
       "go_name": "F:superoxide dismutase activity",
       "namespace": "MF",
-      "weighted_score": 6.5,
+      "weighted_score": 7.5,
       "n_sources": 2,
       "sources": [
         "experimental_homolog",
-        "structural_motif"
+        "embedding_similarity"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -89,104 +92,107 @@
       "top_evidence": "experimental_homolog"
     },
     {
+      "go_id": "GO:0004252",
+      "go_name": "serine-type endopeptidase activity",
+      "namespace": "MF",
+      "weighted_score": 3.4,
+      "n_sources": 2,
+      "sources": [
+        "structural_motif",
+        "embedding_similarity"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "embedding_similarity"
+    },
+    {
+      "go_id": "GO:0003677",
+      "go_name": "DNA binding",
+      "namespace": "MF",
+      "weighted_score": 3.4,
+      "n_sources": 2,
+      "sources": [
+        "structural_motif",
+        "embedding_similarity"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "embedding_similarity"
+    },
+    {
+      "go_id": "GO:0008233",
+      "go_name": "peptidase activity",
+      "namespace": "MF",
+      "weighted_score": 3.2,
+      "n_sources": 2,
+      "sources": [
+        "structural_motif",
+        "embedding_similarity"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "embedding_similarity"
+    },
+    {
       "go_id": "GO:0030346",
       "go_name": "F:protein phosphatase 2B binding",
       "namespace": "MF",
-      "weighted_score": 5.1,
+      "weighted_score": 3.0,
       "n_sources": 1,
       "sources": [
         "experimental_homolog"
       ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0051087",
-      "go_name": "F:protein-folding chaperone binding",
-      "namespace": "MF",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "top_evidence": "experimental_homolog"
     },
     {
       "go_id": "GO:0005777",
       "go_name": "C:peroxisome",
       "namespace": "MF",
-      "weighted_score": 5.1,
+      "weighted_score": 3.0,
       "n_sources": 1,
       "sources": [
         "experimental_homolog"
       ],
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "top_evidence": "experimental_homolog"
     },
     {
       "go_id": "GO:0060088",
       "go_name": "P:auditory receptor cell stereocilium organization",
       "namespace": "MF",
-      "weighted_score": 5.1,
+      "weighted_score": 3.0,
       "n_sources": 1,
       "sources": [
         "experimental_homolog"
       ],
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "top_evidence": "experimental_homolog"
     },
     {
       "go_id": "GO:0007566",
       "go_name": "P:embryo implantation",
       "namespace": "MF",
-      "weighted_score": 5.1,
+      "weighted_score": 3.0,
       "n_sources": 1,
       "sources": [
         "experimental_homolog"
       ],
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "top_evidence": "experimental_homolog"
     },
     {
       "go_id": "GO:0060047",
       "go_name": "P:heart contraction",
       "namespace": "MF",
-      "weighted_score": 5.1,
+      "weighted_score": 3.0,
       "n_sources": 1,
       "sources": [
         "experimental_homolog"
       ],
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "top_evidence": "experimental_homolog"
     },
     {
       "go_id": "GO:0006879",
       "go_name": "P:intracellular iron ion homeostasis",
-      "namespace": "MF",
-      "weighted_score": 3.0,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "MEDIUM",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0005654",
-      "go_name": "C:nucleoplasm",
-      "namespace": "MF",
-      "weighted_score": 3.0,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "MEDIUM",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0007626",
-      "go_name": "P:locomotory behavior",
       "namespace": "MF",
       "weighted_score": 3.0,
       "n_sources": 1,
@@ -202,13 +208,26 @@
       "go_id": "GO:0006801",
       "go_name": "superoxide metabolic process",
       "namespace": "BP",
-      "weighted_score": 7.75,
-      "n_sources": 1,
+      "weighted_score": 9.25,
+      "n_sources": 2,
       "sources": [
-        "domain_annotation"
+        "domain_annotation",
+        "embedding_similarity"
       ],
       "confidence": "HIGH",
-      "top_evidence": "domain_annotation"
+      "top_evidence": "embedding_similarity"
+    },
+    {
+      "go_id": "GO:0051087",
+      "go_name": "F:protein-folding chaperone binding",
+      "namespace": "BP",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
     },
     {
       "go_id": "GO:0006749",
@@ -235,6 +254,79 @@
       "top_evidence": "experimental_homolog"
     },
     {
+      "go_id": "GO:0019430",
+      "go_name": "removal of superoxide radicals",
+      "namespace": "BP",
+      "weighted_score": 3.4,
+      "n_sources": 2,
+      "sources": [
+        "structural_motif",
+        "embedding_similarity"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "embedding_similarity"
+    },
+    {
+      "go_id": "GO:0015671",
+      "go_name": "oxygen transport",
+      "namespace": "BP",
+      "weighted_score": 1.57,
+      "n_sources": 1,
+      "sources": [
+        "embedding_similarity"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "embedding_similarity"
+    },
+    {
+      "go_id": "GO:0007596",
+      "go_name": "blood coagulation",
+      "namespace": "BP",
+      "weighted_score": 1.44,
+      "n_sources": 1,
+      "sources": [
+        "embedding_similarity"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "embedding_similarity"
+    },
+    {
+      "go_id": "GO:0006508",
+      "go_name": "proteolysis",
+      "namespace": "BP",
+      "weighted_score": 1.39,
+      "n_sources": 1,
+      "sources": [
+        "embedding_similarity"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "embedding_similarity"
+    },
+    {
+      "go_id": "GO:0006915",
+      "go_name": "apoptotic process",
+      "namespace": "BP",
+      "weighted_score": 1.35,
+      "n_sources": 1,
+      "sources": [
+        "embedding_similarity"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "embedding_similarity"
+    },
+    {
+      "go_id": "GO:0015701",
+      "go_name": "bicarbonate transport",
+      "namespace": "BP",
+      "weighted_score": 1.31,
+      "n_sources": 1,
+      "sources": [
+        "embedding_similarity"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "embedding_similarity"
+    },
+    {
       "go_id": "GO:0006351",
       "go_name": "DNA-templated transcription",
       "namespace": "BP",
@@ -247,16 +339,16 @@
       "top_evidence": "structural_motif"
     },
     {
-      "go_id": "GO:0019430",
-      "go_name": "removal of superoxide radicals",
+      "go_id": "GO:0006974",
+      "go_name": "cellular response to DNA damage stimulus",
       "namespace": "BP",
-      "weighted_score": 1.3,
+      "weighted_score": 1.26,
       "n_sources": 1,
       "sources": [
-        "structural_motif"
+        "embedding_similarity"
       ],
       "confidence": "LOW",
-      "top_evidence": "structural_motif"
+      "top_evidence": "embedding_similarity"
     },
     {
       "go_id": "GO:0045944",
@@ -276,12 +368,13 @@
       "go_id": "GO:0005634",
       "go_name": "C:nucleus",
       "namespace": "CC",
-      "weighted_score": 8.44,
-      "n_sources": 3,
+      "weighted_score": 10.13,
+      "n_sources": 4,
       "sources": [
         "experimental_homolog",
         "ai_esm2",
-        "structural_motif"
+        "structural_motif",
+        "embedding_similarity"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -290,11 +383,25 @@
       "go_id": "GO:0005737",
       "go_name": "C:cytoplasm",
       "namespace": "CC",
+      "weighted_score": 8.25,
+      "n_sources": 3,
+      "sources": [
+        "experimental_homolog",
+        "embedding_similarity",
+        "sequence_baseline"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005615",
+      "go_name": "C:extracellular space",
+      "namespace": "CC",
       "weighted_score": 6.5,
       "n_sources": 2,
       "sources": [
         "experimental_homolog",
-        "sequence_baseline"
+        "embedding_similarity"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -360,144 +467,31 @@
       "top_evidence": "experimental_homolog"
     },
     {
-      "go_id": "GO:0005615",
-      "go_name": "C:extracellular space",
-      "namespace": "CC",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0005576",
-      "go_name": "C:extracellular region",
-      "namespace": "CC",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
       "go_id": "GO:0005886",
       "go_name": "C:plasma membrane",
       "namespace": "CC",
-      "weighted_score": 5.1,
+      "weighted_score": 3.0,
       "n_sources": 1,
       "sources": [
         "experimental_homolog"
       ],
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005758",
+      "go_name": "C:mitochondrial intermembrane space",
+      "namespace": "CC",
+      "weighted_score": 3.0,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "MEDIUM",
       "top_evidence": "experimental_homolog"
     }
   ],
   "active_sites": [
-    {
-      "residue_number": 44,
-      "chain_id": "A",
-      "one_letter": "H",
-      "three_letter": "HIS",
-      "conservation": 7.0,
-      "is_conserved": true,
-      "is_buried": true,
-      "sasa": 2.08,
-      "plddt": 98.88,
-      "motifs": [
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "acid_base_pair",
-        "acid_base_pair"
-      ],
-      "evidence_score": 9,
-      "confidence": "HIGH",
-      "coords": [
-        -10.08,
-        -1.37,
-        4.485
-      ]
-    },
-    {
-      "residue_number": 47,
-      "chain_id": "A",
-      "one_letter": "H",
-      "three_letter": "HIS",
-      "conservation": 7.0,
-      "is_conserved": true,
-      "is_buried": true,
-      "sasa": 0.0,
-      "plddt": 98.88,
-      "motifs": [
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "acid_base_pair"
-      ],
-      "evidence_score": 9,
-      "confidence": "HIGH",
-      "coords": [
-        -5.966,
-        1.557,
-        -4.017
-      ]
-    },
-    {
-      "residue_number": 49,
-      "chain_id": "A",
-      "one_letter": "H",
-      "three_letter": "HIS",
-      "conservation": 7.0,
-      "is_conserved": true,
-      "is_buried": true,
-      "sasa": 2.67,
-      "plddt": 98.88,
-      "motifs": [
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "acid_base_pair"
-      ],
-      "evidence_score": 9,
-      "confidence": "HIGH",
-      "coords": [
-        -7.07,
-        5.589,
-        -8.507
-      ]
-    },
-    {
-      "residue_number": 64,
-      "chain_id": "A",
-      "one_letter": "H",
-      "three_letter": "HIS",
-      "conservation": 7.0,
-      "is_conserved": true,
-      "is_buried": true,
-      "sasa": 6.65,
-      "plddt": 98.81,
-      "motifs": [
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "acid_base_pair"
-      ],
-      "evidence_score": 9,
-      "confidence": "HIGH",
-      "coords": [
-        -8.604,
-        2.093,
-        -10.019
-      ]
-    },
     {
       "residue_number": 72,
       "chain_id": "A",
@@ -523,7 +517,8 @@
         -9.416,
         -6.176,
         -10.251
-      ]
+      ],
+      "domain_context": "cu,zn superoxide dismutase-like"
     },
     {
       "residue_number": 81,
@@ -549,30 +544,8 @@
         -5.039,
         -3.478,
         -11.696
-      ]
-    },
-    {
-      "residue_number": 121,
-      "chain_id": "A",
-      "one_letter": "H",
-      "three_letter": "HIS",
-      "conservation": 7.0,
-      "is_conserved": true,
-      "is_buried": true,
-      "sasa": 6.51,
-      "plddt": 98.81,
-      "motifs": [
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "acid_base_pair"
       ],
-      "evidence_score": 9,
-      "confidence": "HIGH",
-      "coords": [
-        -12.18,
-        2.55,
-        1.425
-      ]
+      "domain_context": "cu,zn superoxide dismutase-like"
     },
     {
       "residue_number": 111,
@@ -597,7 +570,8 @@
         3.064,
         2.258,
         -14.064
-      ]
+      ],
+      "domain_context": "cu,zn superoxide dismutase-like"
     },
     {
       "residue_number": 112,
@@ -619,7 +593,8 @@
         3.911,
         5.655,
         -12.461
-      ]
+      ],
+      "domain_context": "cu,zn superoxide dismutase-like"
     },
     {
       "residue_number": 84,
@@ -649,7 +624,8 @@
         -4.712,
         -2.695,
         -6.449
-      ]
+      ],
+      "domain_context": "cu,zn superoxide dismutase-like"
     },
     {
       "residue_number": 106,
@@ -670,31 +646,8 @@
         6.202,
         2.302,
         -9.866
-      ]
-    },
-    {
-      "residue_number": 125,
-      "chain_id": "A",
-      "one_letter": "D",
-      "three_letter": "ASP",
-      "conservation": 6.5,
-      "is_conserved": false,
-      "is_buried": true,
-      "sasa": 5.16,
-      "plddt": 98.75,
-      "motifs": [
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "acid_base_pair",
-        "acid_base_pair"
       ],
-      "evidence_score": 5,
-      "confidence": "MEDIUM",
-      "coords": [
-        -11.501,
-        -5.297,
-        -0.577
-      ]
+      "domain_context": "cu,zn superoxide dismutase-like"
     },
     {
       "residue_number": 135,
@@ -715,55 +668,8 @@
         -15.756,
         -7.745,
         -7.207
-      ]
-    },
-    {
-      "residue_number": 41,
-      "chain_id": "A",
-      "one_letter": "E",
-      "three_letter": "GLU",
-      "conservation": 6.0,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 112.22,
-      "plddt": 98.69,
-      "motifs": [
-        "zinc_binding_cluster",
-        "acid_base_pair"
       ],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        -11.583,
-        -1.749,
-        13.377
-      ]
-    },
-    {
-      "residue_number": 50,
-      "chain_id": "A",
-      "one_letter": "E",
-      "three_letter": "GLU",
-      "conservation": 6.0,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 60.23,
-      "plddt": 98.81,
-      "motifs": [
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "acid_base_pair",
-        "acid_base_pair",
-        "acid_base_pair"
-      ],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        -6.472,
-        6.798,
-        -12.071
-      ]
+      "domain_context": "cu,zn superoxide dismutase-like"
     },
     {
       "residue_number": 69,
@@ -784,126 +690,8 @@
         -7.014,
         -3.217,
         -18.868
-      ]
-    },
-    {
-      "residue_number": 77,
-      "chain_id": "A",
-      "one_letter": "D",
-      "three_letter": "ASP",
-      "conservation": 6.5,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 44.84,
-      "plddt": 98.19,
-      "motifs": [
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "acid_base_pair",
-        "acid_base_pair"
       ],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        -2.546,
-        -11.968,
-        -8.067
-      ]
-    },
-    {
-      "residue_number": 78,
-      "chain_id": "A",
-      "one_letter": "E",
-      "three_letter": "GLU",
-      "conservation": 6.0,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 151.95,
-      "plddt": 97.69,
-      "motifs": [
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "acid_base_pair",
-        "acid_base_pair"
-      ],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        -1.202,
-        -11.806,
-        -11.666
-      ]
-    },
-    {
-      "residue_number": 79,
-      "chain_id": "A",
-      "one_letter": "E",
-      "three_letter": "GLU",
-      "conservation": 6.0,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 85.95,
-      "plddt": 98.38,
-      "motifs": [
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "acid_base_pair",
-        "acid_base_pair",
-        "acid_base_pair",
-        "acid_base_pair"
-      ],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        -4.672,
-        -10.598,
-        -12.773
-      ]
-    },
-    {
-      "residue_number": 91,
-      "chain_id": "A",
-      "one_letter": "D",
-      "three_letter": "ASP",
-      "conservation": 6.5,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 70.14,
-      "plddt": 98.56,
-      "motifs": [
-        "zinc_binding_cluster",
-        "acid_base_pair"
-      ],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        -6.791,
-        -1.759,
-        15.14
-      ]
-    },
-    {
-      "residue_number": 93,
-      "chain_id": "A",
-      "one_letter": "D",
-      "three_letter": "ASP",
-      "conservation": 6.5,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 125.78,
-      "plddt": 98.25,
-      "motifs": [
-        "zinc_binding_cluster",
-        "acid_base_pair"
-      ],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        -7.931,
-        2.548,
-        18.273
-      ]
+      "domain_context": "cu,zn superoxide dismutase-like"
     },
     {
       "residue_number": 108,
@@ -924,7 +712,8 @@
         8.309,
         6.199,
         -12.872
-      ]
+      ],
+      "domain_context": "cu,zn superoxide dismutase-like"
     },
     {
       "residue_number": 110,
@@ -948,55 +737,137 @@
         3.988,
         3.551,
         -17.579
-      ]
+      ],
+      "domain_context": "cu,zn superoxide dismutase-like"
     },
     {
-      "residue_number": 122,
+      "residue_number": 44,
       "chain_id": "A",
-      "one_letter": "E",
-      "three_letter": "GLU",
-      "conservation": 6.0,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 71.27,
-      "plddt": 98.62,
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 2.08,
+      "plddt": 98.88,
       "motifs": [
         "zinc_binding_cluster",
         "zinc_binding_cluster",
-        "acid_base_pair",
-        "acid_base_pair",
+        "zinc_binding_cluster",
         "acid_base_pair",
         "acid_base_pair"
       ],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
+      "evidence_score": 9,
+      "confidence": "HIGH",
       "coords": [
-        -15.146,
-        1.891,
-        3.769
-      ]
+        -10.08,
+        -1.37,
+        4.485
+      ],
+      "domain_context": "cu,zn superoxide dismutase-like"
     },
     {
-      "residue_number": 126,
+      "residue_number": 47,
       "chain_id": "A",
-      "one_letter": "D",
-      "three_letter": "ASP",
-      "conservation": 6.5,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 39.24,
-      "plddt": 98.56,
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 0.0,
+      "plddt": 98.88,
       "motifs": [
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
         "zinc_binding_cluster",
         "acid_base_pair"
       ],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
+      "evidence_score": 9,
+      "confidence": "HIGH",
       "coords": [
-        -12.545,
-        -8.887,
-        -1.52
-      ]
+        -5.966,
+        1.557,
+        -4.017
+      ],
+      "domain_context": "cu,zn superoxide dismutase-like"
+    },
+    {
+      "residue_number": 49,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 2.67,
+      "plddt": 98.88,
+      "motifs": [
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "acid_base_pair"
+      ],
+      "evidence_score": 9,
+      "confidence": "HIGH",
+      "coords": [
+        -7.07,
+        5.589,
+        -8.507
+      ],
+      "domain_context": "cu,zn superoxide dismutase-like"
+    },
+    {
+      "residue_number": 64,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 6.65,
+      "plddt": 98.81,
+      "motifs": [
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "acid_base_pair"
+      ],
+      "evidence_score": 9,
+      "confidence": "HIGH",
+      "coords": [
+        -8.604,
+        2.093,
+        -10.019
+      ],
+      "domain_context": "cu,zn superoxide dismutase-like"
+    },
+    {
+      "residue_number": 121,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 6.51,
+      "plddt": 98.81,
+      "motifs": [
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "acid_base_pair"
+      ],
+      "evidence_score": 9,
+      "confidence": "HIGH",
+      "coords": [
+        -12.18,
+        2.55,
+        1.425
+      ],
+      "domain_context": "cu,zn superoxide dismutase-like"
     },
     {
       "residue_number": 7,
@@ -1015,7 +886,8 @@
         0.383,
         11.193,
         0.006
-      ]
+      ],
+      "domain_context": "cu,zn superoxide dismutase-like"
     },
     {
       "residue_number": 58,
@@ -1034,7 +906,8 @@
         -12.458,
         11.433,
         -3.632
-      ]
+      ],
+      "domain_context": "cu,zn superoxide dismutase-like"
     },
     {
       "residue_number": 147,
@@ -1053,7 +926,8 @@
         -7.927,
         10.266,
         -0.431
-      ]
+      ],
+      "domain_context": "cu,zn superoxide dismutase-like"
     },
     {
       "residue_number": 80,
@@ -1079,7 +953,8 @@
         -4.965,
         -7.192,
         -11.02
-      ]
+      ],
+      "domain_context": "cu,zn superoxide dismutase-like"
     },
     {
       "residue_number": 102,
@@ -1100,7 +975,219 @@
         4.606,
         -3.927,
         -4.171
-      ]
+      ],
+      "domain_context": "cu,zn superoxide dismutase-like"
+    },
+    {
+      "residue_number": 125,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 5.16,
+      "plddt": 98.75,
+      "motifs": [
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        -11.501,
+        -5.297,
+        -0.577
+      ],
+      "domain_context": "cu,zn superoxide dismutase-like"
+    },
+    {
+      "residue_number": 4,
+      "chain_id": "A",
+      "one_letter": "K",
+      "three_letter": "LYS",
+      "conservation": 6.0,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 77.37,
+      "plddt": 98.44,
+      "motifs": [
+        "acid_base_pair"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        10.293,
+        9.069,
+        -3.285
+      ],
+      "domain_context": "cu,zn superoxide dismutase-like"
+    },
+    {
+      "residue_number": 5,
+      "chain_id": "A",
+      "one_letter": "A",
+      "three_letter": "ALA",
+      "conservation": 3.0,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 1.44,
+      "plddt": 98.75,
+      "motifs": [],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        6.657,
+        10.101,
+        -3.106
+      ],
+      "domain_context": "cu,zn superoxide dismutase-like"
+    },
+    {
+      "residue_number": 9,
+      "chain_id": "A",
+      "one_letter": "L",
+      "three_letter": "LEU",
+      "conservation": 3.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 0.22,
+      "plddt": 98.88,
+      "motifs": [],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -5.024,
+        11.25,
+        3.0
+      ],
+      "domain_context": "cu,zn superoxide dismutase-like"
+    },
+    {
+      "residue_number": 15,
+      "chain_id": "A",
+      "one_letter": "V",
+      "three_letter": "VAL",
+      "conservation": 3.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 7.73,
+      "plddt": 98.75,
+      "motifs": [],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -10.152,
+        9.542,
+        8.456
+      ],
+      "domain_context": "cu,zn superoxide dismutase-like"
+    },
+    {
+      "residue_number": 17,
+      "chain_id": "A",
+      "one_letter": "G",
+      "three_letter": "GLY",
+      "conservation": 4.0,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 9.4,
+      "plddt": 98.81,
+      "motifs": [],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -3.191,
+        9.7,
+        7.2
+      ],
+      "domain_context": "cu,zn superoxide dismutase-like"
+    },
+    {
+      "residue_number": 19,
+      "chain_id": "A",
+      "one_letter": "I",
+      "three_letter": "ILE",
+      "conservation": 3.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 0.0,
+      "plddt": 98.88,
+      "motifs": [],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        1.604,
+        7.438,
+        3.324
+      ],
+      "domain_context": "cu,zn superoxide dismutase-like"
+    },
+    {
+      "residue_number": 21,
+      "chain_id": "A",
+      "one_letter": "F",
+      "three_letter": "PHE",
+      "conservation": 4.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 0.89,
+      "plddt": 98.81,
+      "motifs": [],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        6.578,
+        5.666,
+        -1.074
+      ],
+      "domain_context": "cu,zn superoxide dismutase-like"
+    },
+    {
+      "residue_number": 22,
+      "chain_id": "A",
+      "one_letter": "E",
+      "three_letter": "GLU",
+      "conservation": 6.0,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 42.12,
+      "plddt": 98.56,
+      "motifs": [
+        "acid_base_pair",
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        10.213,
+        4.765,
+        -1.893
+      ],
+      "domain_context": "cu,zn superoxide dismutase-like"
+    },
+    {
+      "residue_number": 23,
+      "chain_id": "A",
+      "one_letter": "Q",
+      "three_letter": "GLN",
+      "conservation": 4.0,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 4.52,
+      "plddt": 98.31,
+      "motifs": [],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        11.66,
+        3.056,
+        -4.966
+      ],
+      "domain_context": "cu,zn superoxide dismutase-like"
     }
   ],
   "binding_pockets": [
@@ -2486,12 +2573,11 @@
   "n_evidence_sources": 12,
   "overall_confidence": "VERY HIGH",
   "validation_suggestions": [
-    "Alanine scanning mutagenesis of predicted active site residues (H44, H47, H49) to confirm functional importance",
+    "Alanine scanning mutagenesis of predicted active site residues (H72, H81, H111) to confirm functional importance",
     "Thermal shift assay or SPR binding assay against pocket P1 (vol=1580\u00c5\u00b3, druggability=0.99)",
     "Co-immunoprecipitation with CCS (unknown interaction, predicted interface: [1, 154, 76])",
     "Co-immunoprecipitation with BCL2 (apoptotic interaction, predicted interface: [1, 154, 76])",
-    "Enzyme activity assay consistent with EC 3.4.24 using appropriate substrate panel",
-    "EMSA or fluorescence polarisation assay to confirm 'copper ion binding' (GO:GO:0005507)",
+    "EMSA or fluorescence polarisation assay to confirm 'copper ion binding' (GO:0005507)",
     "GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation"
   ],
   "modules_run": [

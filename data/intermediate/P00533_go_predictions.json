@@ -6,10 +6,11 @@
       "go_id": "GO:0004672",
       "go_name": "protein kinase activity",
       "namespace": "MF",
-      "score": 0.85,
+      "score": 0.9,
       "evidence": [
         "domain_annotation",
-        "structural_motif"
+        "structural_motif",
+        "embedding_similarity"
       ],
       "saliency_residues": [
         1,
@@ -97,14 +98,13 @@
       ]
     },
     {
-      "go_id": "GO:0006468",
-      "go_name": "protein phosphorylation",
+      "go_id": "GO:0004714",
+      "go_name": "receptor protein tyrosine kinase activity",
       "namespace": "MF",
-      "score": 0.8,
+      "score": 0.85,
       "evidence": [
-        "experimental_homolog",
-        "domain_annotation",
-        "structural_motif"
+        "structural_motif",
+        "embedding_similarity"
       ],
       "saliency_residues": [
         1,
@@ -197,7 +197,8 @@
       "namespace": "MF",
       "score": 0.8,
       "evidence": [
-        "structural_motif"
+        "structural_motif",
+        "embedding_similarity"
       ],
       "saliency_residues": [
         1,
@@ -288,37 +289,6 @@
       ]
     },
     {
-      "go_id": "GO:0007169",
-      "go_name": "cell surface receptor protein tyrosine kinase signaling pathway",
-      "namespace": "MF",
-      "score": 0.75,
-      "evidence": [
-        "domain_annotation"
-      ],
-      "saliency_residues": [
-        1,
-        12,
-        15,
-        16,
-        18,
-        47,
-        48,
-        55,
-        56,
-        58,
-        60,
-        61,
-        62,
-        63,
-        65,
-        67,
-        68,
-        69,
-        70,
-        71
-      ]
-    },
-    {
       "go_id": "GO:0046872",
       "go_name": "metal ion binding",
       "namespace": "MF",
@@ -351,43 +321,13 @@
       ]
     },
     {
-      "go_id": "GO:0004714",
-      "go_name": "receptor protein tyrosine kinase activity",
-      "namespace": "MF",
-      "score": 0.75,
-      "evidence": [
-        "structural_motif"
-      ],
-      "saliency_residues": [
-        1,
-        12,
-        15,
-        16,
-        18,
-        47,
-        48,
-        55,
-        56,
-        58,
-        60,
-        61,
-        62,
-        63,
-        65,
-        67,
-        68,
-        69,
-        70,
-        71
-      ]
-    },
-    {
       "go_id": "GO:0003924",
       "go_name": "GTPase activity",
       "namespace": "MF",
       "score": 0.75,
       "evidence": [
-        "structural_motif"
+        "structural_motif",
+        "embedding_similarity"
       ],
       "saliency_residues": [
         1,
@@ -473,16 +413,238 @@
         70,
         71
       ]
+    },
+    {
+      "go_id": "GO:0031594",
+      "go_name": "C:neuromuscular junction",
+      "namespace": "MF",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        1,
+        12,
+        15,
+        16,
+        18,
+        47,
+        48,
+        55,
+        56,
+        58,
+        60,
+        61,
+        62,
+        63,
+        65,
+        67,
+        68,
+        69,
+        70,
+        71
+      ]
+    },
+    {
+      "go_id": "GO:0098978",
+      "go_name": "C:glutamatergic synapse",
+      "namespace": "MF",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        1,
+        12,
+        15,
+        16,
+        18,
+        47,
+        48,
+        55,
+        56,
+        58,
+        60,
+        61,
+        62,
+        63,
+        65,
+        67,
+        68,
+        69,
+        70,
+        71
+      ]
     }
   ],
   "bp_predictions": [
+    {
+      "go_id": "GO:0006468",
+      "go_name": "protein phosphorylation",
+      "namespace": "BP",
+      "score": 0.8,
+      "evidence": [
+        "experimental_homolog",
+        "domain_annotation",
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        1,
+        12,
+        15,
+        16,
+        18,
+        47,
+        48,
+        55,
+        56,
+        58,
+        60,
+        61,
+        62,
+        63,
+        65,
+        67,
+        68,
+        69,
+        70,
+        71
+      ]
+    },
+    {
+      "go_id": "GO:0007169",
+      "go_name": "cell surface receptor protein tyrosine kinase signaling pathway",
+      "namespace": "BP",
+      "score": 0.75,
+      "evidence": [
+        "domain_annotation"
+      ],
+      "saliency_residues": [
+        1,
+        12,
+        15,
+        16,
+        18,
+        47,
+        48,
+        55,
+        56,
+        58,
+        60,
+        61,
+        62,
+        63,
+        65,
+        67,
+        68,
+        69,
+        70,
+        71
+      ]
+    },
+    {
+      "go_id": "GO:0007173",
+      "go_name": "epidermal growth factor receptor signaling pathway",
+      "namespace": "BP",
+      "score": 0.75,
+      "evidence": [
+        "structural_motif",
+        "embedding_similarity"
+      ],
+      "saliency_residues": [
+        1,
+        12,
+        15,
+        16,
+        18,
+        47,
+        48,
+        55,
+        56,
+        58,
+        60,
+        61,
+        62,
+        63,
+        65,
+        67,
+        68,
+        69,
+        70,
+        71
+      ]
+    },
+    {
+      "go_id": "GO:0007165",
+      "go_name": "signal transduction",
+      "namespace": "BP",
+      "score": 0.75,
+      "evidence": [
+        "structural_motif",
+        "embedding_similarity"
+      ],
+      "saliency_residues": [
+        1,
+        12,
+        15,
+        16,
+        18,
+        47,
+        48,
+        55,
+        56,
+        58,
+        60,
+        61,
+        62,
+        63,
+        65,
+        67,
+        68,
+        69,
+        70,
+        71
+      ]
+    },
+    {
+      "go_id": "GO:0006281",
+      "go_name": "DNA repair",
+      "namespace": "BP",
+      "score": 0.7,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        1,
+        12,
+        15,
+        16,
+        18,
+        47,
+        48,
+        55,
+        56,
+        58,
+        60,
+        61,
+        62,
+        63,
+        65,
+        67,
+        68,
+        69,
+        70,
+        71
+      ]
+    },
     {
       "go_id": "GO:0018108",
       "go_name": "peptidyl-tyrosine phosphorylation",
       "namespace": "BP",
       "score": 0.7,
       "evidence": [
-        "structural_motif"
+        "structural_motif",
+        "embedding_similarity"
       ],
       "saliency_residues": [
         1,
@@ -539,6 +701,38 @@
       ]
     },
     {
+      "go_id": "GO:0008283",
+      "go_name": "cell population proliferation",
+      "namespace": "BP",
+      "score": 0.65,
+      "evidence": [
+        "structural_motif",
+        "embedding_similarity"
+      ],
+      "saliency_residues": [
+        1,
+        12,
+        15,
+        16,
+        18,
+        47,
+        48,
+        55,
+        56,
+        58,
+        60,
+        61,
+        62,
+        63,
+        65,
+        67,
+        68,
+        69,
+        70,
+        71
+      ]
+    },
+    {
       "go_id": "GO:0045944",
       "go_name": "positive regulation of transcription by RNA pol II",
       "namespace": "BP",
@@ -570,8 +764,8 @@
       ]
     },
     {
-      "go_id": "GO:0007173",
-      "go_name": "epidermal growth factor receptor signaling pathway",
+      "go_id": "GO:0045739",
+      "go_name": "positive regulation of DNA repair",
       "namespace": "BP",
       "score": 0.6,
       "evidence": [
@@ -601,10 +795,72 @@
       ]
     },
     {
-      "go_id": "GO:0008283",
-      "go_name": "cell population proliferation",
+      "go_id": "GO:0038127",
+      "go_name": "ERBB signaling pathway",
       "namespace": "BP",
       "score": 0.6,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        1,
+        12,
+        15,
+        16,
+        18,
+        47,
+        48,
+        55,
+        56,
+        58,
+        60,
+        61,
+        62,
+        63,
+        65,
+        67,
+        68,
+        69,
+        70,
+        71
+      ]
+    },
+    {
+      "go_id": "GO:0007131",
+      "go_name": "reciprocal meiotic recombination",
+      "namespace": "BP",
+      "score": 0.55,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        1,
+        12,
+        15,
+        16,
+        18,
+        47,
+        48,
+        55,
+        56,
+        58,
+        60,
+        61,
+        62,
+        63,
+        65,
+        67,
+        68,
+        69,
+        70,
+        71
+      ]
+    },
+    {
+      "go_id": "GO:0010369",
+      "go_name": "chromatin assembly",
+      "namespace": "BP",
+      "score": 0.5,
       "evidence": [
         "structural_motif"
       ],
@@ -634,14 +890,13 @@
   ],
   "cc_predictions": [
     {
-      "go_id": "GO:0005634",
-      "go_name": "C:nucleus",
+      "go_id": "GO:0005887",
+      "go_name": "integral component of plasma membrane",
       "namespace": "CC",
-      "score": 0.8,
+      "score": 0.85,
       "evidence": [
-        "experimental_homolog",
-        "ai_esm2",
-        "structural_motif"
+        "structural_motif",
+        "embedding_similarity"
       ],
       "saliency_residues": [
         1,
@@ -670,11 +925,12 @@
       "go_id": "GO:0016020",
       "go_name": "membrane",
       "namespace": "CC",
-      "score": 0.75,
+      "score": 0.8,
       "evidence": [
         "experimental_homolog",
         "domain_annotation",
-        "structural_motif"
+        "structural_motif",
+        "embedding_similarity"
       ],
       "saliency_residues": [
         1,
@@ -737,6 +993,39 @@
       "score": 0.7,
       "evidence": [
         "experimental_homolog"
+      ],
+      "saliency_residues": [
+        1,
+        12,
+        15,
+        16,
+        18,
+        47,
+        48,
+        55,
+        56,
+        58,
+        60,
+        61,
+        62,
+        63,
+        65,
+        67,
+        68,
+        69,
+        70,
+        71
+      ]
+    },
+    {
+      "go_id": "GO:0005634",
+      "go_name": "C:nucleus",
+      "namespace": "CC",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog",
+        "ai_esm2",
+        "structural_motif"
       ],
       "saliency_residues": [
         1,
@@ -861,6 +1150,7 @@
       "score": 0.7,
       "evidence": [
         "experimental_homolog",
+        "embedding_similarity",
         "sequence_baseline"
       ],
       "saliency_residues": [
@@ -916,41 +1206,10 @@
         70,
         71
       ]
-    },
-    {
-      "go_id": "GO:0045211",
-      "go_name": "C:postsynaptic membrane",
-      "namespace": "CC",
-      "score": 0.7,
-      "evidence": [
-        "experimental_homolog"
-      ],
-      "saliency_residues": [
-        1,
-        12,
-        15,
-        16,
-        18,
-        47,
-        48,
-        55,
-        56,
-        58,
-        60,
-        61,
-        62,
-        63,
-        65,
-        67,
-        68,
-        69,
-        70,
-        71
-      ]
     }
   ],
   "top_mf": "protein kinase activity",
-  "top_bp": "peptidyl-tyrosine phosphorylation",
-  "top_cc": "C:nucleus",
-  "n_predictions": 30
+  "top_bp": "protein phosphorylation",
+  "top_cc": "integral component of plasma membrane",
+  "n_predictions": 38
 }

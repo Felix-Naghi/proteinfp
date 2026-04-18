@@ -1,12 +1,12 @@
 {
-  "uniprot_id": "P01116",
-  "sequence_length": 189,
+  "uniprot_id": "P00742",
+  "sequence_length": 488,
   "is_enzyme": true,
   "enzyme_confidence": 0.85,
   "top_prediction": {
     "ec_class": "3",
     "ec_name": "Hydrolase",
-    "ec_full": "EC 3.6.5",
+    "ec_full": "EC 3.4.21",
     "score": 0.85,
     "evidence": [
       "go_prediction",
@@ -19,7 +19,7 @@
     {
       "ec_class": "3",
       "ec_name": "Hydrolase",
-      "ec_full": "EC 3.6.5",
+      "ec_full": "EC 3.4.21",
       "score": 0.85,
       "evidence": [
         "go_prediction",
@@ -32,18 +32,19 @@
       "ec_class": "2",
       "ec_name": "Transferase",
       "ec_full": "EC 2.x.x.x",
-      "score": 0.692,
+      "score": 0.765,
       "evidence": [
         "go_prediction",
         "sequence_composition"
       ]
     },
     {
-      "ec_class": "4",
-      "ec_name": "Lyase",
-      "ec_full": "EC 4.x.x.x",
-      "score": 0.24,
+      "ec_class": "1",
+      "ec_name": "Oxidoreductase",
+      "ec_full": "EC 1.x.x.x",
+      "score": 0.65,
       "evidence": [
+        "structural_motif",
         "sequence_composition"
       ]
     },
@@ -55,9 +56,18 @@
       "evidence": [
         "sequence_composition"
       ]
+    },
+    {
+      "ec_class": "6",
+      "ec_name": "Ligase",
+      "ec_full": "EC 6.x.x.x",
+      "score": 0.24,
+      "evidence": [
+        "sequence_composition"
+      ]
     }
   ],
-  "specific_ec": "3.6.5",
-  "specific_ec_name": "GTPase",
+  "specific_ec": "3.4.21",
+  "specific_ec_name": "Serine-type endopeptidase",
   "non_enzyme_score": 0.3
 }
