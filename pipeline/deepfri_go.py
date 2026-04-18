@@ -433,7 +433,7 @@ def _add_active_site_evidence(
                       "DNA-binding transcription factor activity",
                       0.70, "structural_motif", "MF")
         _add_evidence(go_evidence, "GO:0005634", "nucleus",
-                      0.80, "structural_motif", "CC")
+                      0.45, "structural_motif", "CC")  # lowered: DNA repair proteins also nuclear
         _add_evidence(go_evidence, "GO:0006351",
                       "DNA-templated transcription",
                       0.65, "structural_motif", "BP")
@@ -442,6 +442,38 @@ def _add_active_site_evidence(
                       0.60, "structural_motif", "BP")
         _add_evidence(go_evidence, "GO:0043234", "protein complex",
                       0.55, "structural_motif", "CC")
+
+        # Large Cys-rich proteins with DNA-binding clusters → DNA repair (BRCA1-like)
+        cys_frac = sequence.count("C") / max(len(sequence), 1)
+        if len(sequence) > 500 and cys_frac > 0.03:
+            _add_evidence(go_evidence, "GO:0003684", "damaged DNA binding",
+                          0.70, "structural_motif", "MF")
+            _add_evidence(go_evidence, "GO:0006281", "DNA repair",
+                          0.70, "structural_motif", "BP")
+            _add_evidence(go_evidence, "GO:0045739",
+                          "positive regulation of DNA repair",
+                          0.60, "structural_motif", "BP")
+            _add_evidence(go_evidence, "GO:0007131",
+                          "reciprocal meiotic recombination",
+                          0.55, "structural_motif", "BP")
+            _add_evidence(go_evidence, "GO:0010369", "chromatin assembly",
+                          0.50, "structural_motif", "BP")
+
+    # GHKL ATPase / Bergerat fold → ATP binding + chaperone activity
+    if any("ghkl_atpase" in mt for mt in motif_types):
+        _add_evidence(go_evidence, "GO:0005524", "ATP binding",
+                      0.80, "structural_motif", "MF")
+        _add_evidence(go_evidence, "GO:0016887", "ATPase activity",
+                      0.75, "structural_motif", "MF")
+        _add_evidence(go_evidence, "GO:0042623", "ATPase activity, coupled",
+                      0.70, "structural_motif", "MF")
+        _add_evidence(go_evidence, "GO:0051082", "unfolded protein binding",
+                      0.75, "structural_motif", "MF")
+        _add_evidence(go_evidence, "GO:0006457", "protein folding",
+                      0.70, "structural_motif", "BP")
+        _add_evidence(go_evidence, "GO:0051085",
+                      "chaperone cofactor-dependent protein refolding",
+                      0.65, "structural_motif", "BP")
 
     # Kinase DFG loop → kinase activity + phosphorylation + proliferation
     if any("dfg_loop" in mt for mt in motif_types):
@@ -464,6 +496,13 @@ def _add_active_site_evidence(
                       "integral component of plasma membrane",
                       0.65, "structural_motif", "CC")
 
+        # Large receptor kinases (>1000aa) → extra receptor signaling terms
+        if len(sequence) > 1000:
+            _add_evidence(go_evidence, "GO:0007165", "signal transduction",
+                          0.75, "structural_motif", "BP")
+            _add_evidence(go_evidence, "GO:0038127", "ERBB signaling pathway",
+                          0.60, "structural_motif", "BP")
+
     # P-loop / Walker A → GTP/ATP binding + GTPase
     if any("p_loop" in mt for mt in motif_types):
         _add_evidence(go_evidence, "GO:0005525", "GTP binding",
@@ -479,6 +518,32 @@ def _add_active_site_evidence(
     if n_high > 5:
         _add_evidence(go_evidence, "GO:0003824", "catalytic activity",
                       0.55, "active_site", "MF")
+
+    # Flavin-binding Rossmann fold → oxidoreductase / FMN binding
+    if any("flavin_binding" in mt for mt in motif_types):
+        _add_evidence(go_evidence, "GO:0010181", "FMN binding",
+                      0.75, "structural_motif", "MF")
+        _add_evidence(go_evidence, "GO:0003955",
+                      "NAD(P)H dehydrogenase (quinone) activity",
+                      0.70, "structural_motif", "MF")
+        _add_evidence(go_evidence, "GO:0016491", "oxidoreductase activity",
+                      0.70, "structural_motif", "MF")
+        _add_evidence(go_evidence, "GO:0016655",
+                      "oxidoreductase activity, acting on NADH or NADPH",
+                      0.65, "structural_motif", "MF")
+
+    # Haem-binding proximal His → heme binding + oxygen transport
+    if any("haem_binding" in mt for mt in motif_types):
+        _add_evidence(go_evidence, "GO:0020037", "heme binding",
+                      0.80, "structural_motif", "MF")
+        _add_evidence(go_evidence, "GO:0019825", "oxygen binding",
+                      0.75, "structural_motif", "MF")
+        _add_evidence(go_evidence, "GO:0046872", "metal ion binding",
+                      0.70, "structural_motif", "MF")
+        _add_evidence(go_evidence, "GO:0015671", "oxygen transport",
+                      0.70, "structural_motif", "BP")
+        _add_evidence(go_evidence, "GO:0005833", "hemoglobin complex",
+                      0.65, "structural_motif", "CC")
 
     # Superoxide dismutase signature: Cu/Zn binding in oxidoreductases
     # Detect by presence of zinc cluster + His/Cys pattern typical of SOD
@@ -619,21 +684,27 @@ def _add_evidence(
 def _go_namespace(go_id: str, go_name: str) -> str:
     """Infer GO namespace from term name or ID."""
     name_lower = go_name.lower()
+    # BP keywords checked first — prevents signaling/phosphorylation landing in MF
+    _BP_WORDS = [
+        "process", "regulation", "response", "signaling", "pathway",
+        "biosynthetic", "metabolic", "apoptot", "cycle", "repair",
+        "phosphorylation", "folding", "refolding", "proliferation",
+        "transport", "transduction", "ubiquitination", "coagulation",
+    ]
+    _MF_EXCEPTIONS = {"transporter activity", "transcription factor activity"}
+    if any(w in name_lower for w in _BP_WORDS):
+        if any(exc in name_lower for exc in _MF_EXCEPTIONS):
+            return "MF"
+        return "BP"
     if any(w in name_lower for w in [
-        "activity", "binding", "catalytic", "transporter", "receptor"
+        "activity", "binding", "catalytic", "receptor"
     ]):
         return "MF"
-    if any(w in name_lower for w in [
-        "process", "regulation", "response", "signaling", "pathway",
-        "biosynthetic", "metabolic", "apoptot", "cycle", "repair"
-    ]):
-        return "BP"
     if any(w in name_lower for w in [
         "nucleus", "cytoplasm", "membrane", "mitochondria", "ribosome",
         "complex", "organelle", "chromosome", "cytosol", "extracellular"
     ]):
         return "CC"
-    # Fallback by GO ID range (approximate)
     return "MF"
 
 

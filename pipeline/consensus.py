@@ -575,11 +575,20 @@ def _infer_ns(go_name: str) -> str:
     name = (go_name or "").lower()
     if name.startswith(("f:", "c:", "p:")):
         name = name[2:].strip()
-    if any(w in name for w in ["activity", "binding", "catalytic", "transporter"]):
-        return "MF"
-    if any(w in name for w in ["process", "regulation", "response", "cycle",
-                                "repair", "apoptot", "transcription"]):
+    # BP keywords checked first to avoid signaling/phosphorylation landing in MF
+    _BP_WORDS = [
+        "process", "regulation", "response", "cycle", "repair", "apoptot",
+        "transcription", "signaling", "phosphorylation", "ubiquitination",
+        "coagulation", "recombination", "folding", "refolding",
+        "proliferation", "transport", "transduction",
+    ]
+    _MF_EXCEPTIONS = {"transporter activity", "transcription factor activity"}
+    if any(w in name for w in _BP_WORDS):
+        if any(exc in name for exc in _MF_EXCEPTIONS):
+            return "MF"
         return "BP"
+    if any(w in name for w in ["activity", "binding", "catalytic"]):
+        return "MF"
     if any(w in name for w in ["nucleus", "cytoplasm", "membrane", "complex",
                                 "organelle", "chromosome", "cytosol"]):
         return "CC"
