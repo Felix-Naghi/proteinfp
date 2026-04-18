@@ -76,16 +76,21 @@ GO_TO_EC: dict[str, str] = {
     "GO:0003924": "3",   # GTPase activity → EC 3.6.5 (phosphoric monoester hydrolase)
     "GO:0005525": "3",   # GTP binding → GTPase context
     "GO:0016887": "3",   # ATPase activity → EC 3.6.3
+    "GO:0005524": "3",   # ATP binding → ATPase context
+    "GO:0042623": "3",   # ATPase activity, coupled → EC 3.6.1
     "GO:0061630": "2",   # ubiquitin protein ligase → EC 2.3.2
     "GO:0004842": "2",   # ubiquitin-protein transferase activity
     "GO:0008237": "3",   # metallopeptidase activity
     "GO:0008241": "3",   # peptidyl-dipeptidase activity
+    "GO:0003955": "1",   # NAD(P)H dehydrogenase (quinone) activity → oxidoreductase
+    "GO:0010181": "1",   # FMN binding → flavoenzyme / oxidoreductase context
 }
 
 # GO terms that map to specific EC sub-numbers (beyond just class digit)
 GO_TO_SPECIFIC_EC: dict[str, tuple[str, str]] = {
     "GO:0003924": ("3.6.5", "GTPase"),
-    "GO:0016887": ("3.6.3", "ATPase"),
+    "GO:0016887": ("3.6.1", "ATPase"),
+    "GO:0042623": ("3.6.1", "ATPase, coupled"),
     "GO:0061630": ("2.3.2", "Ubiquitin-protein ligase"),
     "GO:0004842": ("2.3.2", "Ubiquitin-protein transferase"),
     "GO:0008237": ("3.4.24", "Metallopeptidase"),
@@ -97,7 +102,9 @@ ENZYMATIC_MOTIFS = {
     "serine_protease_triad":  ("3.4.21", "Serine protease"),
     "cysteine_protease_dyad": ("3.4.22", "Cysteine protease"),
     "zinc_binding_cluster":   ("3.4.24", "Metallopeptidase"),
-    "p_loop_walker_a": ("3.6.5", "GTPase/ATPase"),
+    "p_loop_walker_a":        ("3.6.5",  "GTPase/ATPase"),
+    "ghkl_atpase":            ("3.6.1",  "ATPase/Chaperone"),
+    "flavin_binding":         ("1.6.5",  "NADH dehydrogenase"),
 }
 
 # Amino acid composition features correlated with EC class
@@ -241,10 +248,18 @@ def predict_ec_number(
         all_go = go_result.get("mf_predictions", []) + \
                  go_result.get("bp_predictions", [])
         for pred in all_go:
-            if "DNA binding" in pred.get("go_name", ""):
+            go_name = pred.get("go_name", "")
+            go_id   = pred.get("go_id", "")
+            if "DNA binding" in go_name:
                 non_enzyme_score += 0.3
-            if "transcription factor" in pred.get("go_name", ""):
+            if "transcription factor" in go_name:
                 non_enzyme_score += 0.4
+            # Chaperones are ATPases but function primarily as non-enzymes;
+            # soften the enzyme classification when chaperone GO terms are present
+            if go_id == "GO:0051082" or "unfolded protein binding" in go_name:
+                non_enzyme_score += 0.5
+            if go_id == "GO:0042623":
+                non_enzyme_score += 0.2
     # Strong non-enzyme signals override structural motif evidence
     # Transcription factors with DNA-binding clusters are NOT enzymes
     # even if they have zinc-coordinating residues (structural zinc, not catalytic)

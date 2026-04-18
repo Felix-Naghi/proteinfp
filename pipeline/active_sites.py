@@ -73,6 +73,9 @@ MOTIF_RESIDUES = {
     "acid_base":        {"D", "E", "R", "K", "H"},
     "dna_binding":      {"R", "K"},
     "phosphate_binding":{"R", "K", "S", "T"},
+    "ghkl_atpase":      {"N", "D", "G"},
+    "flavin_binding":   {"G", "Y", "F"},
+    "haem_binding":     {"H"},
 }
 
 # Evidence point values for confidence scoring
@@ -125,6 +128,7 @@ class CatalyticMotif:
     mean_distance:    float        # mean pairwise CA distance
     confidence:       str
     zinc_type:        str = ""     # "catalytic" or "structural" (zinc motifs only)
+    long_range:       bool = False # True when triad residues span >20 seq positions
 
     def to_dict(self) -> dict:
         return asdict(self)
@@ -352,8 +356,13 @@ def _detect_motifs(
     glu_res  = {n: c for n, (aa, c, _) in coord_map.items() if aa == "E"}
     arg_res  = {n: c for n, (aa, c, _) in coord_map.items() if aa == "R"}
     lys_res  = {n: c for n, (aa, c, _) in coord_map.items() if aa == "K"}
+    phe_res  = {n: c for n, (aa, c, _) in coord_map.items() if aa == "F"}
+    gly_res  = {n: c for n, (aa, c, _) in coord_map.items() if aa == "G"}
+    asn_res  = {n: c for n, (aa, c, _) in coord_map.items() if aa == "N"}
+    tyr_res  = {n: c for n, (aa, c, _) in coord_map.items() if aa == "Y"}
 
     # 1. Serine protease triad: Ser + His + Asp all within TRIAD_CUTOFF
+    #    (also detects long-range triads like thrombin H363-D419-S521)
     motifs += _find_triad(ser_res, his_res, asp_res,
                           "serine_protease_triad", TRIAD_CUTOFF)
 
@@ -370,14 +379,11 @@ def _detect_motifs(
     motifs += _find_dna_binding_cluster(dna_candidates, coord_map, DNA_CUTOFF)
 
     # 5. Acid-base pairs: Asp/Glu near Arg/Lys/His
-# 5. Acid-base pairs: Asp/Glu near Arg/Lys/His
     acid_res = {**asp_res, **glu_res}
     base_res = {**arg_res, **lys_res, **his_res}
     motifs += _find_acid_base_pairs(acid_res, base_res, ACIDBASE_CUTOFF)
 
-# 6. Kinase DFG loop
-    phe_res  = {n: c for n, (aa, c, _) in coord_map.items() if aa == "F"}
-    gly_res  = {n: c for n, (aa, c, _) in coord_map.items() if aa == "G"}
+    # 6. Kinase DFG loop
     motifs += _find_sequential_triad(asp_res, phe_res, gly_res,
                                      coord_map, "dfg_loop")
 
@@ -387,6 +393,15 @@ def _detect_motifs(
 
     # 8. P-loop / Walker A (Gly-x-Gly-x-x-Gly — ATP binding)
     motifs += _find_ploop(gly_res, coord_map)
+
+    # 9. GHKL ATPase / Bergerat fold (HSP90, MutL, GyrB)
+    motifs += _find_ghkl_atpase(asn_res, asp_res, gly_res, coord_map)
+
+    # 10. Flavin-binding Rossmann fold (NQO1, NQO2, oxidoreductases)
+    motifs += _find_flavin_binding(gly_res, tyr_res, phe_res, coord_map)
+
+    # 11. Haem-binding proximal His (haemoglobins, myoglobins, cytochromes)
+    motifs += _find_haem_binding(his_res, cys_res, coord_map)
 
     log.debug(f"    Detected {len(motifs)} catalytic motif(s)")
     return motifs
@@ -401,6 +416,9 @@ def _find_triad(
     motif_type: str, cutoff: float
 ) -> list[CatalyticMotif]:
     motifs = []
+    seen: set[tuple] = set()
+
+    # Primary pass: standard cutoff
     for sn, sc in ser.items():
         for hn, hc in his.items():
             if _dist(sc, hc) > cutoff:
@@ -408,14 +426,49 @@ def _find_triad(
             for dn, dc in asp.items():
                 if _dist(hc, dc) > cutoff:
                     continue
+                key = tuple(sorted([sn, hn, dn]))
+                if key in seen:
+                    continue
+                seen.add(key)
                 mean_d = (_dist(sc, hc) + _dist(hc, dc) + _dist(sc, dc)) / 3
+                max_gap = max(abs(sn - hn), abs(hn - dn), abs(sn - dn))
                 motifs.append(CatalyticMotif(
                     motif_type=motif_type,
                     residue_numbers=[sn, hn, dn],
                     residue_letters=["S", "H", "D"],
                     mean_distance=round(mean_d, 2),
                     confidence="HIGH" if mean_d < 6.0 else "MEDIUM",
+                    long_range=max_gap > 20,
                 ))
+
+    # Secondary pass: long-range triad (12Å, requires seq gap >20 between some pair).
+    # Captures serine proteases like thrombin where the catalytic Ser/His/Asp
+    # are far apart in sequence but converge in 3D (e.g. H363-D419-S521 in thrombin).
+    long_cutoff = 12.0
+    for sn, sc in ser.items():
+        for hn, hc in his.items():
+            if _dist(sc, hc) > long_cutoff:
+                continue
+            for dn, dc in asp.items():
+                max_gap = max(abs(sn - hn), abs(hn - dn), abs(sn - dn))
+                if max_gap <= 20:
+                    continue  # not long-range; already handled above
+                if _dist(hc, dc) > long_cutoff:
+                    continue
+                key = tuple(sorted([sn, hn, dn]))
+                if key in seen:
+                    continue
+                seen.add(key)
+                mean_d = (_dist(sc, hc) + _dist(hc, dc) + _dist(sc, dc)) / 3
+                motifs.append(CatalyticMotif(
+                    motif_type=motif_type,
+                    residue_numbers=[sn, hn, dn],
+                    residue_letters=["S", "H", "D"],
+                    mean_distance=round(mean_d, 2),
+                    confidence="MEDIUM",
+                    long_range=True,
+                ))
+
     return motifs
 
 
@@ -601,6 +654,146 @@ def _find_sequential_triad(
                     mean_distance=round(mean_d, 2),
                     confidence="HIGH",
                 ))
+    return motifs[:3]
+
+
+def _find_ghkl_atpase(
+    asn_res:   dict,
+    asp_res:   dict,
+    gly_res:   dict,
+    coord_map: dict,
+) -> list[CatalyticMotif]:
+    """
+    Detect GHKL ATPase / Bergerat fold (HSP90, MutL, GyrB, histidine kinases).
+    Key residues: catalytic Asn + Asp within 12Å, with a GxG dinucleotide motif
+    within 15 residues of the Asn in sequence and within 15Å in 3D.
+    """
+    motifs = []
+    seen: set[tuple] = set()
+
+    # Build GxG pairs (gap 1-3 in sequence)
+    gly_keys = sorted(gly_res.keys())
+    gg_pairs: list[tuple[int, int]] = []
+    for i, g1 in enumerate(gly_keys):
+        for g2 in gly_keys[i + 1:]:
+            gap = g2 - g1
+            if gap > 3:
+                break
+            gg_pairs.append((g1, g2))
+
+    for nn, nc in asn_res.items():
+        for dn, dc in asp_res.items():
+            if nn == dn:
+                continue
+            if _dist(nc, dc) > 12.0:
+                continue
+            # Find a GxG pair near the Asn in sequence + 3D
+            found_gg = -1
+            for g1, g2 in gg_pairs:
+                if abs(nn - g1) <= 15 and _dist(gly_res[g1], nc) <= 15.0:
+                    found_gg = g1
+                    break
+            if found_gg < 0:
+                continue
+            key = (min(nn, dn), max(nn, dn), found_gg)
+            if key in seen:
+                continue
+            seen.add(key)
+            motifs.append(CatalyticMotif(
+                motif_type="ghkl_atpase",
+                residue_numbers=[nn, dn, found_gg],
+                residue_letters=["N", "D", "G"],
+                mean_distance=round(_dist(nc, dc), 2),
+                confidence="MEDIUM",
+            ))
+
+    return motifs[:2]
+
+
+def _find_flavin_binding(
+    gly_res:   dict,
+    tyr_res:   dict,
+    phe_res:   dict,
+    coord_map: dict,
+) -> list[CatalyticMotif]:
+    """
+    Detect flavin (FMN/FAD) binding Rossmann fold (NQO1, NQO2, oxidoreductases).
+    Key: GxG dinucleotide motif (gap 1-4) + aromatic residue (Tyr/Phe) within 12Å
+    for isoalloxazine ring stacking.
+    """
+    motifs = []
+    seen: set[tuple] = set()
+    gly_keys = sorted(gly_res.keys())
+    aromatic = {**tyr_res, **phe_res}
+
+    for i, g1 in enumerate(gly_keys):
+        for g2 in gly_keys[i + 1:]:
+            gap = g2 - g1
+            if gap > 4:
+                break
+            if gap < 1:
+                continue
+            d_gg = _dist(gly_res[g1], gly_res[g2])
+            if d_gg > 10.0:
+                continue
+            for an, ac in aromatic.items():
+                if _dist(gly_res[g1], ac) > 12.0:
+                    continue
+                key = (g1, g2, an)
+                if key in seen:
+                    continue
+                seen.add(key)
+                aa = coord_map[an][0]
+                mean_d = (_dist(gly_res[g1], ac) +
+                          _dist(gly_res[g2], ac) + d_gg) / 3
+                motifs.append(CatalyticMotif(
+                    motif_type="flavin_binding",
+                    residue_numbers=[g1, g2, an],
+                    residue_letters=["G", "G", aa],
+                    mean_distance=round(mean_d, 2),
+                    confidence="MEDIUM",
+                ))
+                break  # one aromatic per GG pair
+
+    return motifs[:2]
+
+
+def _find_haem_binding(
+    his_res:   dict,
+    cys_res:   dict,
+    coord_map: dict,
+) -> list[CatalyticMotif]:
+    """
+    Detect haem-binding His (proximal histidine coordination in Hb, Mb, cytochromes).
+    Key: isolated His with 3+ hydrophobic neighbours within 8Å, NOT adjacent to Cys
+    (which would indicate zinc coordination rather than haem binding).
+    """
+    HYDROPHOBIC = {"V", "I", "L", "M", "F", "W", "A"}
+    motifs = []
+    seen: set[int] = set()
+
+    for hn, hc in his_res.items():
+        # Negative signal: Cys within 7Å → zinc context, not haem
+        if any(_dist(hc, cc) <= 7.0 for cc in cys_res.values()):
+            continue
+        # Count hydrophobic neighbours
+        hydrophobic_count = sum(
+            1 for nn, (aa, nc, _) in coord_map.items()
+            if nn != hn and aa in HYDROPHOBIC and _dist(hc, nc) <= 8.0
+        )
+        if hydrophobic_count < 3:
+            continue
+        if hn in seen:
+            continue
+        seen.add(hn)
+        motifs.append(CatalyticMotif(
+            motif_type="haem_binding",
+            residue_numbers=[hn],
+            residue_letters=["H"],
+            mean_distance=0.0,
+            confidence="MEDIUM",
+        ))
+
     return motifs[:3]
 
 

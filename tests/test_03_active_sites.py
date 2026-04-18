@@ -390,6 +390,31 @@ class TestZincTypeClassification:
             "Structural zinc (C3H1) should not produce EC 3.4.24 prediction"
         )
 
+    def test_long_range_triad_detected(self):
+        """Long-range serine protease triads (seq gap >20) must be found."""
+        from pipeline.active_sites import _find_triad
+        # Mimic thrombin-like geometry: S at 1, H at 50, D at 80 — far in seq, close in 3D
+        ser = {1:  [0.0, 0.0, 0.0]}
+        his = {50: [5.0, 0.0, 0.0]}   # 5Å from S
+        asp = {80: [3.0, 4.0, 0.0]}   # ~6.4Å from H, ~5Å from S
+        motifs = _find_triad(ser, his, asp, "serine_protease_triad", 8.0)
+        long_range = [m for m in motifs if m.long_range]
+        assert long_range, "Long-range triad (seq gap 49) within 12Å should be detected"
+        assert long_range[0].motif_type == "serine_protease_triad"
+
+    def test_short_range_triad_not_long_range_flagged(self):
+        """Short-range triads (seq gap <=20) must NOT be flagged as long_range."""
+        from pipeline.active_sites import _find_triad
+        ser = {1: [0.0, 0.0, 0.0]}
+        his = {5: [4.0, 0.0, 0.0]}
+        asp = {9: [7.0, 0.0, 0.0]}
+        motifs = _find_triad(ser, his, asp, "serine_protease_triad", 8.0)
+        short = [m for m in motifs if not m.long_range]
+        assert short, "Short-range triad should be found"
+        assert all(not m.long_range for m in motifs), (
+            "Short-range triad (gap <20) must not be flagged long_range"
+        )
+
     def test_ring_domain_ubiquitin_ligase_from_go(self):
         """RING domain protein with GO:0061630 should get EC 2.3.2 (transferase)."""
         from pipeline.clean_ec import predict_ec_number
@@ -433,4 +458,180 @@ class TestZincTypeClassification:
         # Specific EC should point to ubiquitin ligase sub-class
         assert result.specific_ec.startswith("2.3.2"), (
             f"Expected specific EC 2.3.2.x, got {result.specific_ec}"
+        )
+
+
+# ── PDB fixtures for GHKL / flavin / haem motif tests ─────────────────────────
+
+# GHKL ATPase: ASN-1, ASP-10, GLY-3, GLY-5 (GxG near Asn; Asn/Asp within 12Å)
+GHKL_PDB = """\
+ATOM      1  N   ASN A   1       1.000   1.000   1.000  1.00 90.00           N
+ATOM      2  CA  ASN A   1       1.500   1.500   1.500  1.00 90.00           C
+ATOM      3  N   ALA A   2       3.000   1.500   1.500  1.00 85.00           N
+ATOM      4  CA  ALA A   2       3.500   2.000   2.000  1.00 85.00           C
+ATOM      5  N   GLY A   3       5.000   2.000   2.000  1.00 88.00           N
+ATOM      6  CA  GLY A   3       5.500   2.500   2.500  1.00 88.00           C
+ATOM      7  N   ALA A   4       7.000   2.500   2.500  1.00 85.00           N
+ATOM      8  CA  ALA A   4       7.500   3.000   3.000  1.00 85.00           C
+ATOM      9  N   GLY A   5       9.000   3.000   3.000  1.00 88.00           N
+ATOM     10  CA  GLY A   5       9.500   3.500   3.500  1.00 88.00           C
+ATOM     11  N   ASP A  10       4.000   4.000   4.000  1.00 88.00           N
+ATOM     12  CA  ASP A  10       4.500   4.500   4.500  1.00 88.00           C
+END
+"""
+
+# Flavin-binding: GLY-1, GLY-3 (GxG), TYR-6 within 12Å
+FLAVIN_PDB = """\
+ATOM      1  N   GLY A   1       0.000   0.000   0.000  1.00 88.00           N
+ATOM      2  CA  GLY A   1       0.500   0.500   0.500  1.00 88.00           C
+ATOM      3  N   ALA A   2       2.000   0.500   0.500  1.00 85.00           N
+ATOM      4  CA  ALA A   2       2.500   1.000   1.000  1.00 85.00           C
+ATOM      5  N   GLY A   3       4.000   1.000   1.000  1.00 88.00           N
+ATOM      6  CA  GLY A   3       4.500   1.500   1.500  1.00 88.00           C
+ATOM      7  N   ALA A   4       6.000   1.500   1.500  1.00 85.00           N
+ATOM      8  CA  ALA A   4       6.500   2.000   2.000  1.00 85.00           C
+ATOM      9  N   TYR A   6       8.000   2.000   2.000  1.00 88.00           N
+ATOM     10  CA  TYR A   6       8.500   2.500   2.500  1.00 88.00           C
+END
+"""
+
+# Haem-binding: HIS-5 surrounded by hydrophobic residues, no adjacent Cys
+HAEM_PDB = """\
+ATOM      1  N   VAL A   1       0.000   0.000   0.000  1.00 88.00           N
+ATOM      2  CA  VAL A   1       0.500   0.500   0.500  1.00 88.00           C
+ATOM      3  N   LEU A   2       3.000   0.500   0.500  1.00 88.00           N
+ATOM      4  CA  LEU A   2       3.500   1.000   1.000  1.00 88.00           C
+ATOM      5  N   ILE A   3       6.000   1.000   1.000  1.00 88.00           N
+ATOM      6  CA  ILE A   3       6.500   1.500   1.500  1.00 88.00           C
+ATOM      7  N   PHE A   4       5.000   5.000   5.000  1.00 88.00           N
+ATOM      8  CA  PHE A   4       5.500   5.500   5.500  1.00 88.00           C
+ATOM      9  N   HIS A   5       4.000   4.000   4.000  1.00 90.00           N
+ATOM     10  CA  HIS A   5       4.500   4.500   4.500  1.00 90.00           C
+ATOM     11  N   VAL A   6       2.000   5.000   5.000  1.00 88.00           N
+ATOM     12  CA  VAL A   6       2.500   5.500   5.500  1.00 88.00           C
+ATOM     13  N   LEU A   7       6.000   3.000   3.000  1.00 88.00           N
+ATOM     14  CA  LEU A   7       6.500   3.500   3.500  1.00 88.00           C
+END
+"""
+
+# Haem-PDB with Cys adjacent to His → should NOT produce haem_binding motif
+HAEM_ZINC_PDB = """\
+ATOM      1  N   CYS A   1       3.000   3.000   3.000  1.00 88.00           N
+ATOM      2  CA  CYS A   1       3.500   3.500   3.500  1.00 88.00           C
+ATOM      3  N   VAL A   2       0.000   0.000   0.000  1.00 88.00           N
+ATOM      4  CA  VAL A   2       0.500   0.500   0.500  1.00 88.00           C
+ATOM      5  N   VAL A   3       6.000   1.000   1.000  1.00 88.00           N
+ATOM      6  CA  VAL A   3       6.500   1.500   1.500  1.00 88.00           C
+ATOM      7  N   HIS A   4       4.000   4.000   4.000  1.00 90.00           N
+ATOM      8  CA  HIS A   4       4.500   4.500   4.500  1.00 90.00           C
+ATOM      9  N   VAL A   5       2.000   5.000   5.000  1.00 88.00           N
+ATOM     10  CA  VAL A   5       2.500   5.500   5.500  1.00 88.00           C
+ATOM     11  N   VAL A   6       6.000   3.000   3.000  1.00 88.00           N
+ATOM     12  CA  VAL A   6       6.500   3.500   3.500  1.00 88.00           C
+END
+"""
+
+
+class TestNewMotifs:
+
+    @pytest.fixture
+    def ghkl_coord_map(self, tmp_path):
+        from utils.pdb_parser import parse_pdb
+        p = tmp_path / "GHKL.pdb"
+        p.write_text(GHKL_PDB)
+        s = parse_pdb(p, "GHKL", plddt_threshold=70.0)
+        return {r.residue_number: (r.one_letter, r.coords, r.chain_id)
+                for r in s.residues}
+
+    @pytest.fixture
+    def flavin_coord_map(self, tmp_path):
+        from utils.pdb_parser import parse_pdb
+        p = tmp_path / "FLAVIN.pdb"
+        p.write_text(FLAVIN_PDB)
+        s = parse_pdb(p, "FLAVIN", plddt_threshold=70.0)
+        return {r.residue_number: (r.one_letter, r.coords, r.chain_id)
+                for r in s.residues}
+
+    @pytest.fixture
+    def haem_coord_map(self, tmp_path):
+        from utils.pdb_parser import parse_pdb
+        p = tmp_path / "HAEM.pdb"
+        p.write_text(HAEM_PDB)
+        s = parse_pdb(p, "HAEM", plddt_threshold=70.0)
+        return {r.residue_number: (r.one_letter, r.coords, r.chain_id)
+                for r in s.residues}
+
+    @pytest.fixture
+    def haem_zinc_coord_map(self, tmp_path):
+        from utils.pdb_parser import parse_pdb
+        p = tmp_path / "HAEMZINC.pdb"
+        p.write_text(HAEM_ZINC_PDB)
+        s = parse_pdb(p, "HAEMZINC", plddt_threshold=70.0)
+        return {r.residue_number: (r.one_letter, r.coords, r.chain_id)
+                for r in s.residues}
+
+    # ── GHKL ATPase tests ──────────────────────────────────────────────────────
+
+    def test_ghkl_atpase_detected(self, ghkl_coord_map):
+        from pipeline.active_sites import _find_ghkl_atpase
+        asn_res = {n: c for n, (aa, c, _) in ghkl_coord_map.items() if aa == "N"}
+        asp_res = {n: c for n, (aa, c, _) in ghkl_coord_map.items() if aa == "D"}
+        gly_res = {n: c for n, (aa, c, _) in ghkl_coord_map.items() if aa == "G"}
+        motifs  = _find_ghkl_atpase(asn_res, asp_res, gly_res, ghkl_coord_map)
+        assert motifs, "GHKL ATPase motif should be detected (Asn+Asp within 12Å + GxG near Asn)"
+        assert motifs[0].motif_type == "ghkl_atpase"
+
+    def test_ghkl_letters_are_n_d_g(self, ghkl_coord_map):
+        from pipeline.active_sites import _find_ghkl_atpase
+        asn_res = {n: c for n, (aa, c, _) in ghkl_coord_map.items() if aa == "N"}
+        asp_res = {n: c for n, (aa, c, _) in ghkl_coord_map.items() if aa == "D"}
+        gly_res = {n: c for n, (aa, c, _) in ghkl_coord_map.items() if aa == "G"}
+        motifs  = _find_ghkl_atpase(asn_res, asp_res, gly_res, ghkl_coord_map)
+        assert motifs
+        letters = motifs[0].residue_letters
+        assert "N" in letters
+        assert "D" in letters
+        assert "G" in letters
+
+    # ── Flavin-binding tests ───────────────────────────────────────────────────
+
+    def test_flavin_binding_detected(self, flavin_coord_map):
+        from pipeline.active_sites import _find_flavin_binding
+        gly_res = {n: c for n, (aa, c, _) in flavin_coord_map.items() if aa == "G"}
+        tyr_res = {n: c for n, (aa, c, _) in flavin_coord_map.items() if aa == "Y"}
+        phe_res = {n: c for n, (aa, c, _) in flavin_coord_map.items() if aa == "F"}
+        motifs  = _find_flavin_binding(gly_res, tyr_res, phe_res, flavin_coord_map)
+        assert motifs, "Flavin-binding motif should be detected (GxG + aromatic within 12Å)"
+        assert motifs[0].motif_type == "flavin_binding"
+
+    def test_flavin_has_gg_and_aromatic(self, flavin_coord_map):
+        from pipeline.active_sites import _find_flavin_binding
+        gly_res = {n: c for n, (aa, c, _) in flavin_coord_map.items() if aa == "G"}
+        tyr_res = {n: c for n, (aa, c, _) in flavin_coord_map.items() if aa == "Y"}
+        phe_res = {n: c for n, (aa, c, _) in flavin_coord_map.items() if aa == "F"}
+        motifs  = _find_flavin_binding(gly_res, tyr_res, phe_res, flavin_coord_map)
+        assert motifs
+        letters = motifs[0].residue_letters
+        assert letters.count("G") >= 2
+        assert any(aa in letters for aa in ("Y", "F"))
+
+    # ── Haem-binding tests ─────────────────────────────────────────────────────
+
+    def test_haem_binding_detected(self, haem_coord_map):
+        from pipeline.active_sites import _find_haem_binding
+        his_res = {n: c for n, (aa, c, _) in haem_coord_map.items() if aa == "H"}
+        cys_res = {n: c for n, (aa, c, _) in haem_coord_map.items() if aa == "C"}
+        motifs  = _find_haem_binding(his_res, cys_res, haem_coord_map)
+        assert motifs, "Haem-binding His should be detected when surrounded by hydrophobics"
+        assert motifs[0].motif_type == "haem_binding"
+        assert motifs[0].residue_letters == ["H"]
+
+    def test_haem_not_detected_near_cys(self, haem_zinc_coord_map):
+        """His adjacent to Cys (zinc context) must NOT produce a haem_binding motif."""
+        from pipeline.active_sites import _find_haem_binding
+        his_res = {n: c for n, (aa, c, _) in haem_zinc_coord_map.items() if aa == "H"}
+        cys_res = {n: c for n, (aa, c, _) in haem_zinc_coord_map.items() if aa == "C"}
+        motifs  = _find_haem_binding(his_res, cys_res, haem_zinc_coord_map)
+        assert not motifs, (
+            "His adjacent to Cys within 7Å (zinc context) must not produce haem_binding"
         )
