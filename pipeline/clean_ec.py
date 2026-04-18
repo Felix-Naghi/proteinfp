@@ -244,27 +244,21 @@ def predict_ec_number(
     enzyme_conf  = float(max_ec_score)
 
     # Non-enzyme indicators: transcription factors, structural proteins
+# Non-enzyme indicators
     if go_result:
         all_go = go_result.get("mf_predictions", []) + \
-                 go_result.get("bp_predictions", [])
-        all_go_ids = {p.get("go_id") for p in all_go}
+                go_result.get("bp_predictions", [])
         for pred in all_go:
-            go_name = pred.get("go_name", "")
-            # Only penalise on TF-specific terms — generic DNA binding is found
-            # in kinases, proteases, etc. and must not suppress enzyme calls
-            if "transcription factor activity" in go_name.lower():
-                non_enzyme_score += 0.5
-            elif "DNA-binding transcription" in go_name:
+            go_name = pred.get("go_name", "").lower()
+            go_id   = pred.get("go_id", "")
+            # Only the most specific transcription factor signal
+            # Generic DNA binding does NOT indicate non-enzyme
+            if "dna-binding transcription factor activity" in go_name:
                 non_enzyme_score += 0.4
-        # Chaperone suppression requires BOTH unfolded-protein binding AND protein
-        # folding to be predicted — prevents false suppression of kinases/proteases
-        # that pick up GO:0051082 via GHKL motif or embedding similarity alone
-        if "GO:0051082" in all_go_ids and "GO:0006457" in all_go_ids:
-            non_enzyme_score += 0.5
-    # Strong non-enzyme signals override structural motif evidence
-    # Transcription factors with DNA-binding clusters are NOT enzymes
-    # even if they have zinc-coordinating residues (structural zinc, not catalytic)
-    if non_enzyme_score >= 0.5:
+            elif go_id == "GO:0003700":
+                non_enzyme_score += 0.1  # very weak signal only
+
+    if non_enzyme_score >= 0.35:
         is_enzyme = False
     else:
         is_enzyme = enzyme_conf > 0.4 and enzyme_conf > non_enzyme_score
