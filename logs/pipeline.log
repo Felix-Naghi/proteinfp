@@ -34049,3 +34049,1381 @@ UnicodeEncodeError: 'charmap' codec can't encode characters in position 392-461:
 2026-04-18 02:03:03 [utils.pdb_parser] INFO    → 5 residues | mean pLDDT: 85.0 | disordered: 0 residues in 0 region(s)
 2026-04-18 02:03:03 [utils.pdb_parser] INFO  Parsing structure: P00000.pdb
 2026-04-18 02:03:03 [utils.pdb_parser] INFO    → 5 residues | mean pLDDT: 85.0 | disordered: 0 residues in 0 region(s)
+2026-04-17 22:18:14 [__main__] INFO  ── Module 01: Fetching structure for P00742 ──
+2026-04-17 22:18:14 [__main__] INFO    [1/4] Querying AlphaFold DB...
+2026-04-17 22:18:14 [__main__] INFO    [2/4] Downloading .pdb...
+2026-04-17 22:18:14 [__main__] INFO      Saved: C:\Users\adria\Documents\proteinFP\data\structures\P00742.pdb (309.8 KB)
+2026-04-17 22:18:14 [__main__] INFO    [3/4] Fetching UniProt metadata...
+2026-04-17 22:18:14 [__main__] INFO    [4/4] Parsing structure...
+2026-04-17 22:18:14 [utils.pdb_parser] INFO  Parsing structure: P00742.pdb
+2026-04-17 22:18:15 [utils.pdb_parser] INFO    → 488 residues | mean pLDDT: 80.2 | disordered: 118 residues in 7 region(s)
+2026-04-17 22:18:15 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  Protein    : Coagulation factor X
+  Gene       : F10
+  UniProt    : P00742  (Swiss-Prot (reviewed))
+  Organism   : Homo sapiens
+  Length     : 488 aa
+  Mean pLDDT : 80.2
+  High-conf  : 75.8% of residues
+  Disordered : 118 residues in 7 region(s)
+  .pdb saved : C:\Users\adria\Documents\proteinFP\data\structures\P00742.pdb
+────────────────────────────────────────────────────────────
+2026-04-17 22:18:23 [utils.pdb_parser] INFO  Parsing structure: P00742.pdb
+2026-04-17 22:18:23 [utils.pdb_parser] INFO    → 488 residues | mean pLDDT: 80.2 | disordered: 118 residues in 7 region(s)
+2026-04-17 22:18:23 [__main__] INFO  ── Module 02: Physicochemical analysis for P00742 ──
+2026-04-17 22:18:23 [__main__] INFO    [1/4] Computing SASA (freesasa)...
+2026-04-17 22:18:23 [__main__] INFO    [2/4] Assigning secondary structure (DSSP)...
+2026-04-17 22:18:32 [__main__] INFO    [3/4] Building per-residue physicochemical profile...
+2026-04-17 22:18:32 [__main__] INFO    [4/4] Detecting surface patches...
+2026-04-17 22:18:32 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  Physicochemical profile: P00742
+  Total SASA      : 35713.6 Å²
+  Exposed residues: 358/488 (73.4%)
+  Net charge (pH7): -8.1 (negative)
+  Mean hydrophob. : -0.58
+  2° structure    : helix 18% | strand 22% | coil 60%
+  Hydrophob. patches: 11
+  Positive patches  : 2
+  Negative patches  : 2
+────────────────────────────────────────────────────────────
+2026-04-17 22:18:34 [utils.pdb_parser] INFO  Parsing structure: P00742.pdb
+2026-04-17 22:18:34 [utils.pdb_parser] INFO    → 488 residues | mean pLDDT: 80.2 | disordered: 118 residues in 7 region(s)
+2026-04-17 22:18:34 [__main__] INFO    Loading SASA from Module 02 output...
+2026-04-17 22:18:34 [__main__] INFO    Loaded SASA for 488 residues
+2026-04-17 22:18:34 [__main__] INFO  ── Module 03: Active site prediction for P00742 ──
+2026-04-17 22:18:34 [__main__] INFO    [1/3] Querying ConSurf conservation scores...
+2026-04-17 22:18:36 [__main__] INFO      ConSurf API unavailable — using residue-type conservation proxy
+2026-04-17 22:18:36 [__main__] INFO    [2/3] Detecting catalytic motifs...
+2026-04-17 22:18:36 [__main__] INFO    [3/3] Scoring residues...
+2026-04-17 22:18:36 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  Active site prediction: P00742
+  ConSurf conservation : no (API unavailable)
+  Active residues found: 375
+    HIGH confidence    : 32
+    MEDIUM confidence  : 185
+    LOW confidence     : 158
+  Catalytic motifs     : 155
+  Top residues         : C57, C62, C95, C110, C121, C136, C140, C149, C164, C172
+    [serine_protease_triad] S438-H276-D322 (confidence: MEDIUM)
+    [serine_protease_triad] S130-H141-D347 (confidence: MEDIUM)
+    [serine_protease_triad] S146-H141-D347 (confidence: MEDIUM)
+    [serine_protease_triad] S150-H141-D347 (confidence: MEDIUM)
+    [serine_protease_triad] S351-H141-D135 (confidence: MEDIUM)
+    [serine_protease_triad] S351-H141-D347 (confidence: MEDIUM)
+    [serine_protease_triad] S362-H423-D418 (confidence: MEDIUM)
+    [serine_protease_triad] S374-H368-D413 (confidence: MEDIUM)
+    [serine_protease_triad] S419-H276-D320 (confidence: MEDIUM)
+    [serine_protease_triad] S419-H276-D322 (confidence: MEDIUM)
+    [serine_protease_triad] S438-H276-D320 (confidence: MEDIUM)
+    [serine_protease_triad] S465-H311-D320 (confidence: MEDIUM)
+    [serine_protease_triad] S465-H311-D322 (confidence: MEDIUM)
+    [cysteine_protease_dyad] C140-H141 (confidence: HIGH)
+    [cysteine_protease_dyad] C277-H276 (confidence: HIGH)
+    [zinc_binding_cluster] H52-E54-E56 (confidence: MEDIUM)
+    [zinc_binding_cluster] C129-C140-H141-E142-E143-C149 (confidence: HIGH)
+    [zinc_binding_cluster] H276-C277-D322 (confidence: MEDIUM)
+    [zinc_binding_cluster] H368-E369-C443 (confidence: MEDIUM)
+    [zinc_binding_cluster] E54-E56-C57-E59-E60-C62 (confidence: HIGH)
+    [zinc_binding_cluster] E56-C57-E60-C62-E66 (confidence: HIGH)
+    [zinc_binding_cluster] D88-C90-E91-C101-D103 (confidence: HIGH)
+    [zinc_binding_cluster] C95-C101-C110-C121 (confidence: HIGH)
+    [zinc_binding_cluster] C90-C95-C101-D103-C110 (confidence: HIGH)
+    [zinc_binding_cluster] C95-C101-C110-C112-C121 (confidence: HIGH)
+    [zinc_binding_cluster] C110-C112-E114-E117-C121 (confidence: HIGH)
+    [zinc_binding_cluster] C95-C110-C112-E117-C121-E122 (confidence: HIGH)
+    [zinc_binding_cluster] C129-D132-C140-H141-E142 (confidence: HIGH)
+    [zinc_binding_cluster] D135-C136-D137-C140-C149 (confidence: HIGH)
+    [zinc_binding_cluster] C129-C136-C140-H141-E142-C149 (confidence: HIGH)
+    [zinc_binding_cluster] C136-C140-H141-C149 (confidence: HIGH)
+    [zinc_binding_cluster] D137-C151-C164 (confidence: MEDIUM)
+    [zinc_binding_cluster] E240-C241-D243-E245-C246 (confidence: HIGH)
+    [zinc_binding_cluster] C241-E245-C246 (confidence: MEDIUM)
+    [zinc_binding_cluster] C261-C277-D418 (confidence: MEDIUM)
+    [zinc_binding_cluster] C261-H276-C277 (confidence: MEDIUM)
+    [zinc_binding_cluster] D386-C390-C404 (confidence: MEDIUM)
+    [zinc_binding_cluster] D413-C415-D418-C443 (confidence: HIGH)
+    [zinc_binding_cluster] H368-E369-D413-C415-E441-C443 (confidence: HIGH)
+    [zinc_binding_cluster] E72-D73-D75 (confidence: MEDIUM)
+    [zinc_binding_cluster] D73-D75-E79 (confidence: MEDIUM)
+    [zinc_binding_cluster] D88-C90-E91-D103 (confidence: HIGH)
+    [zinc_binding_cluster] D88-C90-C101-D103-E107 (confidence: HIGH)
+    [zinc_binding_cluster] C129-D132-D135 (confidence: MEDIUM)
+    [zinc_binding_cluster] D132-D135-C136-D137 (confidence: HIGH)
+    [zinc_binding_cluster] D135-C136-D137-C164 (confidence: HIGH)
+    [zinc_binding_cluster] C241-D243-E245 (confidence: MEDIUM)
+    [zinc_binding_cluster] H276-D320-D322 (confidence: MEDIUM)
+    [zinc_binding_cluster] E345-D347-E350 (confidence: MEDIUM)
+    [zinc_binding_cluster] E412-D413-C415-C443 (confidence: HIGH)
+    [zinc_binding_cluster] C261-C415-D418 (confidence: MEDIUM)
+    [zinc_binding_cluster] H52-E54-E56-C57-E59 (confidence: HIGH)
+    [zinc_binding_cluster] H52-E54-E56-C57-E59-E60-C62 (confidence: HIGH)
+    [zinc_binding_cluster] E54-E56-C57-E59-E60 (confidence: HIGH)
+    [zinc_binding_cluster] E56-C57-E59-E60-C62 (confidence: HIGH)
+    [zinc_binding_cluster] E65-E66-E69 (confidence: MEDIUM)
+    [zinc_binding_cluster] C62-E65-E66-E69 (confidence: HIGH)
+    [zinc_binding_cluster] E65-E66-E69-E72 (confidence: HIGH)
+    [zinc_binding_cluster] E69-E72-D73 (confidence: MEDIUM)
+    [zinc_binding_cluster] D88-C90-E91 (confidence: MEDIUM)
+    [zinc_binding_cluster] C112-E117-C121-E122 (confidence: HIGH)
+    [zinc_binding_cluster] E117-C121-E122 (confidence: MEDIUM)
+    [zinc_binding_cluster] C129-C140-H141-E142-E143 (confidence: HIGH)
+    [zinc_binding_cluster] H141-E142-E143 (confidence: MEDIUM)
+    [zinc_binding_cluster] C241-D243-E245-C246 (confidence: HIGH)
+    [zinc_binding_cluster] E255-E256-E258 (confidence: MEDIUM)
+    [zinc_binding_cluster] E296-E297-E300 (confidence: MEDIUM)
+    [zinc_binding_cluster] D290-E296-E297-E300 (confidence: HIGH)
+    [zinc_binding_cluster] H303-E304-E306 (confidence: MEDIUM)
+    [dna_binding_cluster] R179-R180-K181 (confidence: MEDIUM)
+    [dna_binding_cluster] R179-R180-K181-R182 (confidence: MEDIUM)
+    [dna_binding_cluster] R180-K181-R182 (confidence: MEDIUM)
+    [dna_binding_cluster] K282-R283-K285 (confidence: MEDIUM)
+    [dna_binding_cluster] R366-K370-R372 (confidence: MEDIUM)
+    [dna_binding_cluster] R291-R376-K378 (confidence: MEDIUM)
+    [dna_binding_cluster] R445-K446-K448 (confidence: MEDIUM)
+    [dna_binding_cluster] K460-R464-K467 (confidence: MEDIUM)
+    [dna_binding_cluster] R283-K285-R287 (confidence: MEDIUM)
+    [dna_binding_cluster] K410-R445-K446-K448 (confidence: MEDIUM)
+    [dna_binding_cluster] R464-K467-R469 (confidence: MEDIUM)
+    [acid_base_pair] D/E73-R/K/H68 (confidence: MEDIUM)
+    [acid_base_pair] D/E73-R/K/H76 (confidence: MEDIUM)
+    [acid_base_pair] D/E75-R/K/H76 (confidence: MEDIUM)
+    [acid_base_pair] D/E86-R/K/H83 (confidence: MEDIUM)
+    [acid_base_pair] D/E86-R/K/H85 (confidence: MEDIUM)
+    [acid_base_pair] D/E88-R/K/H83 (confidence: MEDIUM)
+    [acid_base_pair] D/E103-R/K/H102 (confidence: MEDIUM)
+    [acid_base_pair] D/E135-R/K/H162 (confidence: MEDIUM)
+    [acid_base_pair] D/E137-R/K/H162 (confidence: MEDIUM)
+    [acid_base_pair] D/E229-R/K/H227 (confidence: MEDIUM)
+    [acid_base_pair] D/E243-R/K/H242 (confidence: MEDIUM)
+    [acid_base_pair] D/E290-R/K/H287 (confidence: MEDIUM)
+    [acid_base_pair] D/E290-R/K/H291 (confidence: MEDIUM)
+    [acid_base_pair] D/E322-R/K/H276 (confidence: MEDIUM)
+    [acid_base_pair] D/E347-R/K/H346 (confidence: MEDIUM)
+    [acid_base_pair] D/E386-R/K/H387 (confidence: MEDIUM)
+    [acid_base_pair] D/E408-R/K/H410 (confidence: MEDIUM)
+    [acid_base_pair] D/E408-R/K/H446 (confidence: MEDIUM)
+    [acid_base_pair] D/E408-R/K/H448 (confidence: MEDIUM)
+    [acid_base_pair] D/E429-R/K/H426 (confidence: MEDIUM)
+    [acid_base_pair] D/E429-R/K/H174 (confidence: MEDIUM)
+    [acid_base_pair] D/E429-R/K/H428 (confidence: MEDIUM)
+    [acid_base_pair] D/E463-R/K/H464 (confidence: MEDIUM)
+    [acid_base_pair] D/E463-R/K/H460 (confidence: MEDIUM)
+    [acid_base_pair] D/E463-R/K/H467 (confidence: MEDIUM)
+    [acid_base_pair] D/E29-R/K/H27 (confidence: MEDIUM)
+    [acid_base_pair] D/E29-R/K/H28 (confidence: MEDIUM)
+    [acid_base_pair] D/E46-R/K/H49 (confidence: MEDIUM)
+    [acid_base_pair] D/E47-R/K/H49 (confidence: MEDIUM)
+    [acid_base_pair] D/E54-R/K/H55 (confidence: MEDIUM)
+    [acid_base_pair] D/E54-R/K/H52 (confidence: MEDIUM)
+    [acid_base_pair] D/E56-R/K/H55 (confidence: MEDIUM)
+    [acid_base_pair] D/E56-R/K/H52 (confidence: MEDIUM)
+    [acid_base_pair] D/E59-R/K/H55 (confidence: MEDIUM)
+    [acid_base_pair] D/E60-R/K/H55 (confidence: MEDIUM)
+    [acid_base_pair] D/E65-R/K/H68 (confidence: MEDIUM)
+    [acid_base_pair] D/E66-R/K/H68 (confidence: MEDIUM)
+    [acid_base_pair] D/E69-R/K/H68 (confidence: MEDIUM)
+    [acid_base_pair] D/E72-R/K/H68 (confidence: MEDIUM)
+    [acid_base_pair] D/E79-R/K/H76 (confidence: MEDIUM)
+    [acid_base_pair] D/E79-R/K/H83 (confidence: MEDIUM)
+    [acid_base_pair] D/E142-R/K/H141 (confidence: MEDIUM)
+    [acid_base_pair] D/E143-R/K/H141 (confidence: MEDIUM)
+    [acid_base_pair] D/E178-R/K/H179 (confidence: MEDIUM)
+    [acid_base_pair] D/E178-R/K/H180 (confidence: MEDIUM)
+    [acid_base_pair] D/E226-R/K/H227 (confidence: MEDIUM)
+    [acid_base_pair] D/E240-R/K/H242 (confidence: MEDIUM)
+    [acid_base_pair] D/E240-R/K/H378 (confidence: MEDIUM)
+    [acid_base_pair] D/E245-R/K/H242 (confidence: MEDIUM)
+    [acid_base_pair] D/E255-R/K/H283 (confidence: MEDIUM)
+    [acid_base_pair] D/E300-R/K/H287 (confidence: MEDIUM)
+    [acid_base_pair] D/E304-R/K/H285 (confidence: MEDIUM)
+    [acid_base_pair] D/E304-R/K/H329 (confidence: MEDIUM)
+    [acid_base_pair] D/E304-R/K/H303 (confidence: MEDIUM)
+    [acid_base_pair] D/E306-R/K/H327 (confidence: MEDIUM)
+    [acid_base_pair] D/E306-R/K/H329 (confidence: MEDIUM)
+    [acid_base_pair] D/E317-R/K/H316 (confidence: MEDIUM)
+    [acid_base_pair] D/E345-R/K/H346 (confidence: MEDIUM)
+    [acid_base_pair] D/E350-R/K/H346 (confidence: MEDIUM)
+    [acid_base_pair] D/E369-R/K/H366 (confidence: MEDIUM)
+    [acid_base_pair] D/E369-R/K/H370 (confidence: MEDIUM)
+    [acid_base_pair] D/E369-R/K/H368 (confidence: MEDIUM)
+    [acid_base_pair] D/E412-R/K/H410 (confidence: MEDIUM)
+    [acid_base_pair] D/E441-R/K/H448 (confidence: MEDIUM)
+    [dfg_loop] D429-F432-G435 (confidence: HIGH)
+    [hrd_catalytic_loop] H423-R426-D429 (confidence: HIGH)
+    [p_loop_walker_a] G16-L17-L18-L19-L20-G21-E22 (confidence: MEDIUM)
+    [p_loop_walker_a] G168-P169-Y170-P171-C172-G173-K174 (confidence: MEDIUM)
+    [ghkl_atpase] N231-D229-G237 (confidence: MEDIUM)
+    [ghkl_atpase] N292-D243-G298 (confidence: MEDIUM)
+    [flavin_binding] G104-G106-Y84 (confidence: MEDIUM)
+    [flavin_binding] G237-G238-Y407 (confidence: MEDIUM)
+    [haem_binding] H6 (confidence: MEDIUM)
+    [haem_binding] H303 (confidence: MEDIUM)
+    [haem_binding] H311 (confidence: MEDIUM)
+────────────────────────────────────────────────────────────
+2026-04-17 22:18:39 [utils.pdb_parser] INFO  Parsing structure: P00742.pdb
+2026-04-17 22:18:39 [utils.pdb_parser] INFO    → 488 residues | mean pLDDT: 80.2 | disordered: 118 residues in 7 region(s)
+2026-04-17 22:18:39 [__main__] INFO    Loaded SASA for 488 residues from Module 02
+2026-04-17 22:18:39 [__main__] INFO    Loaded 217 active site residues from Module 03
+2026-04-17 22:18:39 [__main__] INFO  ── Module 04: Binding pocket detection for P00742 ──
+2026-04-17 22:18:39 [__main__] INFO    [1/3] Finding buried pocket candidate points (488 residues)...
+2026-04-17 22:18:39 [__main__] INFO      Testing 3,832 residue pairs...
+2026-04-17 22:18:39 [__main__] INFO      Candidate pocket points: 3481
+2026-04-17 22:18:39 [__main__] INFO    [2/3] Clustering candidates into pockets...
+2026-04-17 22:18:39 [__main__] INFO      Pocket clusters found: 146
+2026-04-17 22:18:39 [__main__] INFO    [3/3] Scoring pockets...
+2026-04-17 22:18:39 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  Binding pocket detection: P00742
+  Pockets found    : 10
+  Druggable (>0.5) : 10
+  [P1] vol≈2040Å³  drug=1.00 (high)  lining=17 residues  *active site*
+  [P2] vol≈1620Å³  drug=1.00 (high)  lining=18 residues  *active site*
+  [P3] vol≈1680Å³  drug=0.99 (high)  lining=18 residues  *active site*
+  [P4] vol≈1760Å³  drug=0.99 (high)  lining=18 residues  *active site*
+  [P5] vol≈1620Å³  drug=0.99 (high)  lining=18 residues  *active site*
+  [P6] vol≈1780Å³  drug=0.99 (high)  lining=16 residues  *active site*
+  [P7] vol≈980Å³  drug=0.98 (high)  lining=14 residues  *active site*
+  [P8] vol≈1860Å³  drug=0.98 (high)  lining=17 residues  *active site*
+  [P9] vol≈840Å³  drug=0.98 (high)  lining=15 residues  *active site*
+  [P10] vol≈1140Å³  drug=0.98 (high)  lining=15 residues  *active site*
+────────────────────────────────────────────────────────────
+2026-04-17 22:18:40 [utils.pdb_parser] INFO  Parsing structure: P00742.pdb
+2026-04-17 22:18:40 [utils.pdb_parser] INFO    → 488 residues | mean pLDDT: 80.2 | disordered: 118 residues in 7 region(s)
+2026-04-17 22:18:40 [__main__] INFO    Loaded SASA for 488 residues from Module 02
+2026-04-17 22:18:40 [__main__] INFO    Loaded 217 active site residues from Module 03
+2026-04-17 22:18:40 [__main__] INFO  ── Module 05: Allosteric site prediction for P00742 ──
+2026-04-17 22:18:40 [__main__] INFO    [1/4] Building elastic network contact map...
+2026-04-17 22:18:40 [__main__] INFO      Contacts: 2153 pairs within 8.0Å
+2026-04-17 22:18:40 [__main__] INFO    [2/4] Computing GNM correlation matrix (pseudo-inverse)...
+2026-04-17 22:18:41 [__main__] INFO      Correlation matrix: (488, 488)
+2026-04-17 22:18:41 [__main__] INFO    [3/4] Scoring allosteric coupling to active site...
+2026-04-17 22:18:41 [__main__] INFO    [4/4] Clustering allosteric candidates into sites...
+2026-04-17 22:18:41 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  Allosteric prediction: P00742
+  ENM contacts used  : 2153
+  Allosteric residues: 34
+  Allosteric sites   : 8
+  [A1] V36, A37, R38  corr=0.90  dist_active=13.1Å  (HIGH)
+  [A2] S43, F44  corr=0.90  dist_active=10.0Å  (HIGH)
+  [A3] L31, A32, N33, N34, I35  corr=0.88  dist_active=15.7Å  (HIGH)
+  [A4] Q26, I27, R28, R29, E30  corr=0.87  dist_active=16.9Å  (HIGH)
+  [A5] S21, G22, E23, L24, F25  corr=0.83  dist_active=25.9Å  (HIGH)
+  [A6] L17, L18, L19, L20  corr=0.79  dist_active=19.8Å  (HIGH)
+  [A7] A13, S14, L15, G16  corr=0.79  dist_active=13.0Å  (HIGH)
+  [A8] R179, R180  corr=0.38  dist_active=11.1Å  (LOW)
+────────────────────────────────────────────────────────────
+2026-04-17 22:18:41 [utils.pdb_parser] INFO  Parsing structure: P00742.pdb
+2026-04-17 22:18:41 [utils.pdb_parser] INFO    → 488 residues | mean pLDDT: 80.2 | disordered: 118 residues in 7 region(s)
+2026-04-17 22:18:41 [__main__] INFO  ── Module 06: Chemical environment mapping for P00742 ──
+2026-04-17 22:18:41 [__main__] INFO    Mapping active site chemical environments...
+2026-04-17 22:18:41 [__main__] INFO      Active core: hydrophobic+pi | charge=+0.8 | HBD/HBA=32/8
+2026-04-17 22:18:41 [__main__] INFO    Mapping binding pocket chemical environments...
+2026-04-17 22:18:41 [__main__] INFO      P1: hydrophobic+pi | charge=+0.1 | logP≈12.7
+2026-04-17 22:18:41 [__main__] INFO      P2: metal | charge=-1.0 | logP≈12.2
+2026-04-17 22:18:41 [__main__] INFO      P3: h-bond heavy | charge=-0.9 | logP≈6.3
+2026-04-17 22:18:41 [__main__] INFO      P4: hydrophobic | charge=+1.0 | logP≈15.8
+2026-04-17 22:18:41 [__main__] INFO      P5: hydrophobic+pi | charge=+0.1 | logP≈10.3
+2026-04-17 22:18:41 [__main__] INFO    Mapping allosteric site chemical environments...
+2026-04-17 22:18:41 [__main__] INFO      A1: hydrophobic | charge=+1.0 | aromatic=0
+2026-04-17 22:18:41 [__main__] INFO      A2: hydrophobic | charge=+0.0 | aromatic=1
+2026-04-17 22:18:41 [__main__] INFO      A3: hydrophobic | charge=+0.0 | aromatic=0
+2026-04-17 22:18:41 [__main__] INFO      A4: h-bond heavy | charge=+1.0 | aromatic=0
+2026-04-17 22:18:41 [__main__] INFO      A5: h-bond heavy | charge=-1.0 | aromatic=1
+2026-04-17 22:18:41 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  Chemical environment: P00742
+  Sites mapped: 16
+  [Active active_core] charge=+0.8 (neutral)  HBD/HBA=32/8  hydro=+1.07  aromatic=8  mode=hydrophobic+pi
+  [Active motif_serine_prote] charge=-0.9 (mixed)  HBD/HBA=2/4  hydro=-2.50  aromatic=1  mode=h-bond heavy
+  [Active motif_serine_prote] charge=-0.9 (mixed)  HBD/HBA=2/4  hydro=-2.50  aromatic=1  mode=h-bond heavy
+  [Pocket P1] charge=+0.1 (neutral)  HBD/HBA=6/5  hydro=+0.80  aromatic=3  mode=hydrophobic+pi
+  [Pocket P2] charge=-1.0 (neutral)  HBD/HBA=5/5  hydro=+1.10  aromatic=0  mode=metal
+  [Pocket P3] charge=-0.9 (mixed)  HBD/HBA=6/7  hydro=+0.19  aromatic=1  mode=h-bond heavy
+  [Allo A1] charge=+1.0 (neutral)  HBD/HBA=3/0  hydro=+0.50  aromatic=0  mode=hydrophobic
+  [Allo A2] charge=+0.0 (neutral)  HBD/HBA=1/1  hydro=+1.00  aromatic=1  mode=hydrophobic
+  [Allo A3] charge=+0.0 (neutral)  HBD/HBA=2/2  hydro=+0.62  aromatic=0  mode=hydrophobic
+────────────────────────────────────────────────────────────
+2026-04-17 22:18:42 [utils.pdb_parser] INFO  Parsing structure: P00742.pdb
+2026-04-17 22:18:42 [utils.pdb_parser] INFO    → 488 residues | mean pLDDT: 80.2 | disordered: 118 residues in 7 region(s)
+2026-04-17 22:18:42 [__main__] INFO    Sequence length: 488 aa
+2026-04-17 22:18:42 [__main__] INFO    Note: BLAST against Swiss-Prot takes 2-7 minutes.
+2026-04-17 22:18:42 [__main__] INFO  ── Module 07: Homology analysis for P00742 ──
+2026-04-17 22:18:42 [__main__] INFO    [1/3] Running NCBI BLAST vs Swiss-Prot...
+2026-04-17 22:18:42 [__main__] INFO      BLAST job submitted: RID=Y5UG38SF014
+2026-04-17 22:18:53 [__main__] INFO      BLAST: results ready (10s)
+2026-04-17 22:18:57 [__main__] INFO      30 hits (10 experimental)
+2026-04-17 22:18:57 [__main__] INFO    [2/3] Running InterProScan domain annotation...
+2026-04-17 22:19:01 [__main__] INFO      InterPro direct lookup: 44 domains
+2026-04-17 22:19:01 [__main__] INFO      44 domains found
+2026-04-17 22:19:01 [__main__] INFO    [3/3] Aggregating GO terms and functional annotations...
+2026-04-17 22:19:01 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  Homology analysis: P00742
+  BLAST hits       : 30 (10 experimental Swiss-Prot)
+  InterPro domains : 44
+  GO terms         : 18 unique
+  Protein families : EGF-like domain, Trypsin, Vitamin K-dependent carboxylation/gamma-carboxyglutamic (GLA) domain
+  Top function     : Factor Xa is a vitamin K-dependent glycoprotein that converts prothrombin to thr
+  [SwissProt] P00742 Homo sapiens id=100% e=0.0e+00
+  [SwissProt] O88947 Mus musculus id=77% e=0.0e+00
+  [SwissProt] Q63207 Rattus norvegicus id=74% e=0.0e+00
+  [SwissProt] P00743 Bos taurus id=70% e=0.0e+00
+  [SwissProt] O19045 Oryctolagus cuniculu id=74% e=0.0e+00
+  [CDD] cd00054 EGF_CA pos=86-122
+  [CDD] cd00190 Tryp_SPc pos=235-464
+  [CATHGENE3D] G3DSA:2.10.25.10 Laminin pos=86-125
+  [CATHGENE3D] G3DSA:2.40.10.10 Trypsin-like serine proteases pos=236-456
+  [CATHGENE3D] G3DSA:4.10.740.10 Coagulation Factor IX pos=41-85
+────────────────────────────────────────────────────────────
+2026-04-17 22:19:02 [utils.pdb_parser] INFO  Parsing structure: P00742.pdb
+2026-04-17 22:19:02 [utils.pdb_parser] INFO    → 488 residues | mean pLDDT: 80.2 | disordered: 118 residues in 7 region(s)
+2026-04-17 22:19:02 [__main__] INFO  ── Module 08: ESM-2 embeddings for P00742 ──
+2026-04-17 22:19:04 [__main__] INFO    Loading esm2_t33_650M_UR50D on cuda...
+2026-04-17 22:19:11 [__main__] INFO    Model loaded. Computing embeddings...
+2026-04-17 22:19:12 [__main__] INFO    Done in 10.8s
+2026-04-17 22:19:12 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  ESM-2 embeddings: P00742
+  Model           : esm2_t33_650M_UR50D
+  Sequence length : 488 aa
+  Embedding dim   : 1280
+  Device          : GPU
+  Compute time    : 10.8s
+  Embedding norm  : 6.76
+  Functional res. : 130 high-attention positions
+────────────────────────────────────────────────────────────
+2026-04-17 22:19:14 [utils.pdb_parser] INFO  Parsing structure: P00742.pdb
+2026-04-17 22:19:14 [utils.pdb_parser] INFO    → 488 residues | mean pLDDT: 80.2 | disordered: 118 residues in 7 region(s)
+2026-04-17 22:19:15 [__main__] INFO  ── Module 09: GO term prediction for P00742 ──
+2026-04-17 22:19:15 [__main__] INFO    [1/3] Collecting GO evidence from all sources...
+2026-04-17 22:19:15 [__main__] INFO      Homology GO terms: 18
+2026-04-17 22:19:15 [__main__] INFO      ESM-2 embedding evidence added
+2026-04-17 22:19:15 [__main__] INFO      Active site evidence added
+2026-04-17 22:19:17 [__main__] INFO      Embedding similarity: 7 reference protein(s) matched
+2026-04-17 22:19:17 [__main__] INFO    [2/3] Scoring and filtering predictions...
+2026-04-17 22:19:17 [__main__] INFO    [3/3] Computing residue saliency maps...
+2026-04-17 22:19:17 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  GO term predictions: P00742
+  MF predictions: 15
+  BP predictions: 15
+  CC predictions: 10
+  Top MF: serine-type endopeptidase activity
+  Top BP: protein phosphorylation
+  Top CC: nucleus
+  [MF] GO:0004252 serine-type endopeptidase activity score=0.89
+  [MF] GO:0008237 metallopeptidase activity score=0.86
+  [MF] GO:0003677 DNA binding score=0.85
+  [MF] GO:0004672 protein kinase activity score=0.85
+  [MF] GO:0061630 ubiquitin protein ligase activity score=0.84
+  [MF] GO:0008233 peptidase activity score=0.84
+  [MF] GO:0004784 superoxide dismutase activity score=0.82
+  [MF] GO:0008241 peptidyl-dipeptidase activity score=0.81
+────────────────────────────────────────────────────────────
+2026-04-17 22:19:17 [utils.pdb_parser] INFO  Parsing structure: P00742.pdb
+2026-04-17 22:19:17 [utils.pdb_parser] INFO    → 488 residues | mean pLDDT: 80.2 | disordered: 118 residues in 7 region(s)
+2026-04-17 22:19:17 [__main__] INFO  ── Module 10: EC number prediction for P00742 ──
+2026-04-17 22:19:17 [__main__] INFO    [1/3] Analysing GO term evidence...
+2026-04-17 22:19:17 [__main__] INFO      8 GO terms processed
+2026-04-17 22:19:17 [__main__] INFO    [2/3] Analysing active site motif evidence...
+2026-04-17 22:19:17 [__main__] INFO    [3/3] Analysing sequence composition...
+2026-04-17 22:19:17 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  EC prediction: P00742
+  Is enzyme    : yes (confidence=0.85)
+  Top EC class : EC 3.x.x.x — Hydrolase (score=0.85)
+  Specific EC  : 3.4.21 — Serine-type endopeptidase
+  EC 3 Hydrolase score=0.85 evidence=go_prediction,structural_motif
+  EC 2 Transferase score=0.77 evidence=go_prediction,sequence_composition
+  EC 1 Oxidoreductase score=0.65 evidence=structural_motif,sequence_composition
+  EC 5 Isomerase score=0.24 evidence=sequence_composition
+  EC 6 Ligase score=0.24 evidence=sequence_composition
+────────────────────────────────────────────────────────────
+2026-04-17 22:19:18 [__main__] INFO  ── Module 11: Foldseek structural search for P00742 ──
+2026-04-17 22:19:18 [__main__] INFO    [1/3] Submitting structure to Foldseek API...
+2026-04-17 22:19:19 [__main__] INFO      Ticket: RwMSSdU1uwRUbydp33VJM1_pHgnYTnOepyE_Aw
+2026-04-17 22:19:19 [__main__] INFO    [2/3] Waiting for results...
+2026-04-17 22:19:45 [__main__] INFO      Got 1854 hits
+2026-04-17 22:19:45 [__main__] INFO    [3/3] Parsing 1854 hits...
+2026-04-17 22:19:45 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  Foldseek structural search: P00742
+  API available  : yes
+  Total hits     : 50
+  Same fold (≥0.5): 50
+  Novel hits     : 4 (same fold, low seq identity)
+  [afdb50] AF-P00743-F1-model_v6 Coagulation factor X TM=1.00 RMSD=0.0Å id=69% Bos taurus
+  [afdb50] AF-A0A452DK32-F1-model_v6 Coagulation factor X TM=1.00 RMSD=0.0Å id=67% Capra hircus
+  [afdb50] AF-A0A836D2H0-F1-model_v6 Coagulation factor X TM=1.00 RMSD=0.0Å id=68% Ovis aries
+  [afdb50] AF-S7QD05-F1-model_v6 Coagulation factor X TM=1.00 RMSD=0.0Å id=72% Myotis brandtii
+  [afdb50] AF-A0A8C8VJG9-F1-model_v6 coagulation factor Xa TM=1.00 RMSD=0.0Å id=51% Pelusios castaneus
+  Inferred functions:
+    - AF-P00743-F1-model_v6 Coagulation factor X
+    - AF-A0A452DK32-F1-model_v6 Coagulation factor X
+    - AF-A0A836D2H0-F1-model_v6 Coagulation factor X
+────────────────────────────────────────────────────────────
+2026-04-17 22:19:46 [utils.pdb_parser] INFO  Parsing structure: P00742.pdb
+2026-04-17 22:19:46 [utils.pdb_parser] INFO    → 488 residues | mean pLDDT: 80.2 | disordered: 118 residues in 7 region(s)
+2026-04-17 22:19:46 [__main__] INFO    Loaded SASA for 488 residues
+2026-04-17 22:19:46 [__main__] INFO  ── Module 12: PPI network for P00742 ──
+2026-04-17 22:19:46 [__main__] INFO    [1/3] Resolving STRING ID...
+2026-04-17 22:19:46 [__main__] INFO      STRING ID: 9606.ENSP00000364709
+2026-04-17 22:19:46 [__main__] INFO    [2/3] Querying STRING DB for interaction partners...
+2026-04-17 22:19:47 [__main__] INFO      20 partners returned
+2026-04-17 22:19:47 [__main__] INFO    [3/3] Predicting binding interfaces...
+2026-04-17 22:19:47 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  PPI network: P00742
+  STRING ID      : 9606.ENSP00000364709
+  API available  : yes
+  Partners found : 20
+    High conf (≥700): 20
+    Medium conf    : 0
+  F2                   score= 999 (high  ) unknown      iface=15 res
+  TFPI                 score= 999 (high  ) unknown      iface=15 res
+  F3                   score= 999 (high  ) unknown      iface=15 res
+  SERPINC1             score= 998 (high  ) unknown      iface=15 res
+  F8                   score= 997 (high  ) unknown      iface=15 res
+  F5                   score= 995 (high  ) unknown      iface=15 res
+  F7                   score= 988 (high  ) unknown      iface=15 res
+  VWF                  score= 978 (high  ) unknown      iface=15 res
+────────────────────────────────────────────────────────────
+2026-04-17 22:19:47 [__main__] INFO  ── Module 13: Consensus scoring for P00742 ──
+2026-04-17 22:19:47 [__main__] INFO    Loaded: P00742_structure.json
+2026-04-17 22:19:47 [__main__] INFO    Loaded: P00742_physicochemical.json
+2026-04-17 22:19:47 [__main__] INFO    Loaded: P00742_active_sites.json
+2026-04-17 22:19:47 [__main__] INFO    Loaded: P00742_binding_pockets.json
+2026-04-17 22:19:47 [__main__] INFO    Loaded: P00742_allosteric.json
+2026-04-17 22:19:47 [__main__] INFO    Loaded: P00742_chemical_env.json
+2026-04-17 22:19:47 [__main__] INFO    Loaded: P00742_homology.json
+2026-04-17 22:19:47 [__main__] INFO    Loaded: P00742_esm2.json
+2026-04-17 22:19:47 [__main__] INFO    Loaded: P00742_go_predictions.json
+2026-04-17 22:19:47 [__main__] INFO    Loaded: P00742_ec_prediction.json
+2026-04-17 22:19:47 [__main__] INFO    Loaded: P00742_foldseek.json
+2026-04-17 22:19:47 [__main__] INFO    Loaded: P00742_ppi.json
+2026-04-17 22:19:47 [__main__] INFO    12/12 modules available
+2026-04-17 22:19:47 [__main__] INFO    [1/5] Aggregating GO evidence...
+2026-04-17 22:19:47 [__main__] INFO    [2/5] Extracting site predictions...
+2026-04-17 22:19:47 [__main__] INFO    [3/5] Generating validation suggestions...
+2026-04-17 22:19:47 [__main__] INFO    [4/5] Computing overall confidence...
+2026-04-17 22:19:47 [__main__] INFO    [5/5] Assembling final report...
+2026-04-17 22:24:56 [__main__] INFO  Running full validation (10 proteins)...
+2026-04-17 22:24:56 [__main__] INFO  Note: Each protein takes ~10-15 min (mostly BLAST).
+2026-04-17 22:24:56 [__main__] INFO        Use --score-only if reports already exist.
+2026-04-17 22:24:56 [__main__] INFO  Starting validation on 13 proteins...
+2026-04-17 22:24:56 [__main__] INFO  
+[1/13] P04637 — TP53
+2026-04-17 22:24:56 [__main__] INFO    GO=89%  AS=100%  Enz=Y  PPI=80%  Overall=92.1/100
+2026-04-17 22:24:56 [__main__] INFO  
+[2/13] P00533 — EGFR
+2026-04-17 22:24:56 [__main__] INFO    GO=72%  AS=100%  Enz=Y  PPI=75%  Overall=85.3/100
+2026-04-17 22:24:56 [__main__] INFO  
+[3/13] P00441 — SOD1
+2026-04-17 22:24:56 [__main__] INFO    GO=100%  AS=100%  Enz=Y  PPI=50%  Overall=90.0/100
+2026-04-17 22:24:56 [__main__] INFO  
+[4/13] P07900 — HSP90AA1
+2026-04-17 22:24:56 [__main__] INFO    GO=56%  AS=100%  Enz=N  PPI=25%  Overall=49.4/100
+2026-04-17 22:24:56 [__main__] INFO  
+[5/13] P06213 — INSR
+2026-04-17 22:24:56 [__main__] INFO    GO=33%  AS=100%  Enz=Y  PPI=100%  Overall=76.7/100
+2026-04-17 22:24:56 [__main__] INFO  
+[6/13] P38398 — BRCA1
+2026-04-17 22:24:56 [__main__] INFO    GO=39%  AS=100%  Enz=Y  PPI=50%  Overall=68.6/100
+2026-04-17 22:24:56 [__main__] INFO  
+[7/13] P16083 — NQO2
+2026-04-17 22:24:56 [__main__] INFO    GO=50%  AS=100%  Enz=Y  PPI=0%  Overall=62.5/100
+2026-04-17 22:24:56 [__main__] INFO  
+[8/13] P00734 — F2
+2026-04-17 22:24:56 [__main__] INFO    GO=33%  AS=67%  Enz=Y  PPI=67%  Overall=61.7/100
+2026-04-17 22:24:56 [__main__] INFO  
+[9/13] P68871 — HBB
+2026-04-17 22:24:56 [__main__] INFO    GO=50%  AS=100%  Enz=Y  PPI=100%  Overall=82.5/100
+2026-04-17 22:24:56 [__main__] INFO  
+[10/13] P00918 — CA2
+2026-04-17 22:24:56 [__main__] INFO    GO=67%  AS=100%  Enz=Y  PPI=100%  Overall=88.3/100
+2026-04-17 22:24:56 [__main__] INFO  
+[11/13] P01116 — KRAS
+2026-04-17 22:24:56 [__main__] INFO    GO=67%  AS=100%  Enz=Y  PPI=100%  Overall=88.3/100
+2026-04-17 22:24:56 [__main__] INFO  
+[12/13] Q00987 — MDM2
+2026-04-17 22:24:56 [__main__] INFO    GO=100%  AS=100%  Enz=Y  PPI=100%  Overall=100.0/100
+2026-04-17 22:24:56 [__main__] INFO  
+[13/13] Q9BYF1 — ACE2
+2026-04-17 22:24:56 [__main__] INFO    GO=67%  AS=100%  Enz=Y  PPI=100%  Overall=88.3/100
+2026-04-17 22:26:55 [utils.pdb_parser] INFO  Parsing structure: P00734.pdb
+2026-04-17 22:26:55 [utils.pdb_parser] INFO    → 622 residues | mean pLDDT: 83.9 | disordered: 103 residues in 5 region(s)
+2026-04-17 22:26:55 [__main__] INFO  ── Module 09: GO term prediction for P00734 ──
+2026-04-17 22:26:55 [__main__] INFO    [1/3] Collecting GO evidence from all sources...
+2026-04-17 22:26:55 [__main__] INFO      Homology GO terms: 30
+2026-04-17 22:26:55 [__main__] INFO      ESM-2 embedding evidence added
+2026-04-17 22:26:55 [__main__] INFO      Active site evidence added
+2026-04-17 22:26:57 [__main__] INFO      Embedding similarity: 7 reference protein(s) matched
+2026-04-17 22:26:57 [__main__] INFO    [2/3] Scoring and filtering predictions...
+2026-04-17 22:26:57 [__main__] INFO    [3/3] Computing residue saliency maps...
+2026-04-17 22:26:57 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  GO term predictions: P00734
+  MF predictions: 15
+  BP predictions: 15
+  CC predictions: 9
+  Top MF: serine-type endopeptidase activity
+  Top BP: blood coagulation
+  Top CC: nucleus
+  [MF] GO:0004252 serine-type endopeptidase activity score=0.90
+  [MF] GO:0008237 metallopeptidase activity score=0.86
+  [MF] GO:0061630 ubiquitin protein ligase activity score=0.85
+  [MF] GO:0008233 F:peptidase activity score=0.85
+  [MF] GO:0003677 DNA binding score=0.85
+  [MF] GO:0008241 peptidyl-dipeptidase activity score=0.81
+  [MF] GO:0004784 superoxide dismutase activity score=0.81
+  [MF] GO:0008270 zinc ion binding score=0.80
+────────────────────────────────────────────────────────────
+2026-04-17 22:26:58 [utils.pdb_parser] INFO  Parsing structure: P00734.pdb
+2026-04-17 22:26:58 [utils.pdb_parser] INFO    → 622 residues | mean pLDDT: 83.9 | disordered: 103 residues in 5 region(s)
+2026-04-17 22:26:58 [__main__] INFO  ── Module 10: EC number prediction for P00734 ──
+2026-04-17 22:26:58 [__main__] INFO    [1/3] Analysing GO term evidence...
+2026-04-17 22:26:58 [__main__] INFO      5 GO terms processed
+2026-04-17 22:26:58 [__main__] INFO    [2/3] Analysing active site motif evidence...
+2026-04-17 22:26:58 [__main__] INFO    [3/3] Analysing sequence composition...
+2026-04-17 22:26:58 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  EC prediction: P00734
+  Is enzyme    : no (confidence=0.85)
+  Top EC class : EC 3.x.x.x — Hydrolase (score=0.85)
+  Specific EC  : 3.4.21 — Serine-type endopeptidase
+  EC 3 Hydrolase score=0.85 evidence=go_prediction,structural_motif
+  EC 2 Transferase score=0.77 evidence=go_prediction,sequence_composition
+  EC 4 Lyase score=0.24 evidence=sequence_composition
+  EC 5 Isomerase score=0.24 evidence=sequence_composition
+────────────────────────────────────────────────────────────
+2026-04-17 22:26:58 [__main__] INFO  ── Module 13: Consensus scoring for P00734 ──
+2026-04-17 22:26:58 [__main__] INFO    Loaded: P00734_structure.json
+2026-04-17 22:26:58 [__main__] INFO    Loaded: P00734_physicochemical.json
+2026-04-17 22:26:58 [__main__] INFO    Loaded: P00734_active_sites.json
+2026-04-17 22:26:58 [__main__] INFO    Loaded: P00734_binding_pockets.json
+2026-04-17 22:26:58 [__main__] INFO    Loaded: P00734_allosteric.json
+2026-04-17 22:26:58 [__main__] INFO    Loaded: P00734_chemical_env.json
+2026-04-17 22:26:58 [__main__] INFO    Loaded: P00734_homology.json
+2026-04-17 22:26:59 [__main__] INFO    Loaded: P00734_esm2.json
+2026-04-17 22:26:59 [__main__] INFO    Loaded: P00734_go_predictions.json
+2026-04-17 22:26:59 [__main__] INFO    Loaded: P00734_ec_prediction.json
+2026-04-17 22:26:59 [__main__] INFO    Loaded: P00734_foldseek.json
+2026-04-17 22:26:59 [__main__] INFO    Loaded: P00734_ppi.json
+2026-04-17 22:26:59 [__main__] INFO    12/12 modules available
+2026-04-17 22:26:59 [__main__] INFO    [1/5] Aggregating GO evidence...
+2026-04-17 22:26:59 [__main__] INFO    [2/5] Extracting site predictions...
+2026-04-17 22:26:59 [__main__] INFO    [3/5] Generating validation suggestions...
+2026-04-17 22:26:59 [__main__] INFO    [4/5] Computing overall confidence...
+2026-04-17 22:26:59 [__main__] INFO    [5/5] Assembling final report...
+2026-04-17 22:26:59 [utils.pdb_parser] INFO  Parsing structure: P07900.pdb
+2026-04-17 22:26:59 [utils.pdb_parser] INFO    → 732 residues | mean pLDDT: 85.2 | disordered: 107 residues in 4 region(s)
+2026-04-17 22:27:00 [__main__] INFO  ── Module 09: GO term prediction for P07900 ──
+2026-04-17 22:27:00 [__main__] INFO    [1/3] Collecting GO evidence from all sources...
+2026-04-17 22:27:00 [__main__] INFO      Homology GO terms: 30
+2026-04-17 22:27:00 [__main__] INFO      ESM-2 embedding evidence added
+2026-04-17 22:27:00 [__main__] INFO      Active site evidence added
+2026-04-17 22:27:02 [__main__] INFO      Embedding similarity: 7 reference protein(s) matched
+2026-04-17 22:27:02 [__main__] INFO    [2/3] Scoring and filtering predictions...
+2026-04-17 22:27:02 [__main__] INFO    [3/3] Computing residue saliency maps...
+2026-04-17 22:27:02 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  GO term predictions: P07900
+  MF predictions: 15
+  BP predictions: 15
+  CC predictions: 10
+  Top MF: metallopeptidase activity
+  Top BP: oxygen transport
+  Top CC: C:nucleus
+  [MF] GO:0008237 metallopeptidase activity score=0.87
+  [MF] GO:0004252 serine-type endopeptidase activity score=0.85
+  [MF] GO:0003677 DNA binding score=0.85
+  [MF] GO:0061630 ubiquitin protein ligase activity score=0.83
+  [MF] GO:0004784 superoxide dismutase activity score=0.83
+  [MF] GO:0008241 peptidyl-dipeptidase activity score=0.82
+  [MF] GO:0008233 peptidase activity score=0.81
+  [MF] GO:0008270 zinc ion binding score=0.80
+────────────────────────────────────────────────────────────
+2026-04-17 22:27:03 [utils.pdb_parser] INFO  Parsing structure: P07900.pdb
+2026-04-17 22:27:03 [utils.pdb_parser] INFO    → 732 residues | mean pLDDT: 85.2 | disordered: 107 residues in 4 region(s)
+2026-04-17 22:27:03 [__main__] INFO  ── Module 10: EC number prediction for P07900 ──
+2026-04-17 22:27:03 [__main__] INFO    [1/3] Analysing GO term evidence...
+2026-04-17 22:27:03 [__main__] INFO      7 GO terms processed
+2026-04-17 22:27:03 [__main__] INFO    [2/3] Analysing active site motif evidence...
+2026-04-17 22:27:03 [__main__] INFO    [3/3] Analysing sequence composition...
+2026-04-17 22:27:03 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  EC prediction: P07900
+  Is enzyme    : no (confidence=0.85)
+  Top EC class : EC 3.x.x.x — Hydrolase (score=0.85)
+  Specific EC  : 3.4.24 — Metallopeptidase
+  EC 3 Hydrolase score=0.85 evidence=go_prediction,structural_motif
+  EC 2 Transferase score=0.75 evidence=go_prediction,sequence_composition
+  EC 4 Lyase score=0.24 evidence=sequence_composition
+────────────────────────────────────────────────────────────
+2026-04-17 22:27:03 [__main__] INFO  ── Module 13: Consensus scoring for P07900 ──
+2026-04-17 22:27:03 [__main__] INFO    Loaded: P07900_structure.json
+2026-04-17 22:27:03 [__main__] INFO    Loaded: P07900_physicochemical.json
+2026-04-17 22:27:03 [__main__] INFO    Loaded: P07900_active_sites.json
+2026-04-17 22:27:03 [__main__] INFO    Loaded: P07900_binding_pockets.json
+2026-04-17 22:27:03 [__main__] INFO    Loaded: P07900_allosteric.json
+2026-04-17 22:27:03 [__main__] INFO    Loaded: P07900_chemical_env.json
+2026-04-17 22:27:03 [__main__] INFO    Loaded: P07900_homology.json
+2026-04-17 22:27:04 [__main__] INFO    Loaded: P07900_esm2.json
+2026-04-17 22:27:04 [__main__] INFO    Loaded: P07900_go_predictions.json
+2026-04-17 22:27:04 [__main__] INFO    Loaded: P07900_ec_prediction.json
+2026-04-17 22:27:04 [__main__] INFO    Loaded: P07900_foldseek.json
+2026-04-17 22:27:04 [__main__] INFO    Loaded: P07900_ppi.json
+2026-04-17 22:27:04 [__main__] INFO    12/12 modules available
+2026-04-17 22:27:04 [__main__] INFO    [1/5] Aggregating GO evidence...
+2026-04-17 22:27:04 [__main__] INFO    [2/5] Extracting site predictions...
+2026-04-17 22:27:04 [__main__] INFO    [3/5] Generating validation suggestions...
+2026-04-17 22:27:04 [__main__] INFO    [4/5] Computing overall confidence...
+2026-04-17 22:27:04 [__main__] INFO    [5/5] Assembling final report...
+2026-04-17 22:27:04 [utils.pdb_parser] INFO  Parsing structure: P38398.pdb
+2026-04-17 22:27:05 [utils.pdb_parser] INFO    → 1863 residues | mean pLDDT: 41.6 | disordered: 1539 residues in 6 region(s)
+2026-04-17 22:27:05 [__main__] INFO  ── Module 09: GO term prediction for P38398 ──
+2026-04-17 22:27:05 [__main__] INFO    [1/3] Collecting GO evidence from all sources...
+2026-04-17 22:27:05 [__main__] INFO      Homology GO terms: 30
+2026-04-17 22:27:05 [__main__] INFO      ESM-2 embedding evidence added
+2026-04-17 22:27:05 [__main__] INFO      Active site evidence added
+2026-04-17 22:27:07 [__main__] INFO      Embedding similarity: 4 reference protein(s) matched
+2026-04-17 22:27:07 [__main__] INFO    [2/3] Scoring and filtering predictions...
+2026-04-17 22:27:07 [__main__] INFO    [3/3] Computing residue saliency maps...
+2026-04-17 22:27:08 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  GO term predictions: P38398
+  MF predictions: 15
+  BP predictions: 15
+  CC predictions: 10
+  Top MF: F:ubiquitin protein ligase activity
+  Top BP: negative regulation of apoptotic process
+  Top CC: nucleus
+  [MF] GO:0061630 F:ubiquitin protein ligase activity score=0.87
+  [MF] GO:0003677 DNA binding score=0.85
+  [MF] GO:0004252 serine-type endopeptidase activity score=0.85
+  [MF] GO:0008270 zinc ion binding score=0.80
+  [MF] GO:0008233 peptidase activity score=0.80
+  [MF] GO:0008237 metallopeptidase activity score=0.77
+  [MF] GO:0004842 ubiquitin-protein transferase activ score=0.75
+  [MF] GO:0046872 metal ion binding score=0.75
+────────────────────────────────────────────────────────────
+2026-04-17 22:27:08 [utils.pdb_parser] INFO  Parsing structure: P38398.pdb
+2026-04-17 22:27:08 [utils.pdb_parser] INFO    → 1863 residues | mean pLDDT: 41.6 | disordered: 1539 residues in 6 region(s)
+2026-04-17 22:27:08 [__main__] INFO  ── Module 10: EC number prediction for P38398 ──
+2026-04-17 22:27:08 [__main__] INFO    [1/3] Analysing GO term evidence...
+2026-04-17 22:27:08 [__main__] INFO      6 GO terms processed
+2026-04-17 22:27:08 [__main__] INFO    [2/3] Analysing active site motif evidence...
+2026-04-17 22:27:08 [__main__] INFO    [3/3] Analysing sequence composition...
+2026-04-17 22:27:08 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  EC prediction: P38398
+  Is enzyme    : no (confidence=0.85)
+  Top EC class : EC 3.x.x.x — Hydrolase (score=0.85)
+  Specific EC  : 2.3.2 — Ubiquitin-protein ligase
+  EC 3 Hydrolase score=0.85 evidence=go_prediction,structural_motif
+  EC 2 Transferase score=0.78 evidence=go_prediction,sequence_composition
+────────────────────────────────────────────────────────────
+2026-04-17 22:27:08 [__main__] INFO  ── Module 13: Consensus scoring for P38398 ──
+2026-04-17 22:27:08 [__main__] INFO    Loaded: P38398_structure.json
+2026-04-17 22:27:09 [__main__] INFO    Loaded: P38398_physicochemical.json
+2026-04-17 22:27:09 [__main__] INFO    Loaded: P38398_active_sites.json
+2026-04-17 22:27:09 [__main__] INFO    Loaded: P38398_binding_pockets.json
+2026-04-17 22:27:09 [__main__] INFO    Loaded: P38398_allosteric.json
+2026-04-17 22:27:09 [__main__] INFO    Loaded: P38398_chemical_env.json
+2026-04-17 22:27:09 [__main__] INFO    Loaded: P38398_homology.json
+2026-04-17 22:27:09 [__main__] INFO    Loaded: P38398_esm2.json
+2026-04-17 22:27:09 [__main__] INFO    Loaded: P38398_go_predictions.json
+2026-04-17 22:27:09 [__main__] INFO    Loaded: P38398_ec_prediction.json
+2026-04-17 22:27:09 [__main__] INFO    Loaded: P38398_foldseek.json
+2026-04-17 22:27:09 [__main__] INFO    Loaded: P38398_ppi.json
+2026-04-17 22:27:09 [__main__] INFO    12/12 modules available
+2026-04-17 22:27:09 [__main__] INFO    [1/5] Aggregating GO evidence...
+2026-04-17 22:27:09 [__main__] INFO    [2/5] Extracting site predictions...
+2026-04-17 22:27:09 [__main__] INFO    [3/5] Generating validation suggestions...
+2026-04-17 22:27:09 [__main__] INFO    [4/5] Computing overall confidence...
+2026-04-17 22:27:09 [__main__] INFO    [5/5] Assembling final report...
+2026-04-17 22:27:10 [utils.pdb_parser] INFO  Parsing structure: P16083.pdb
+2026-04-17 22:27:10 [utils.pdb_parser] INFO    → 231 residues | mean pLDDT: 98.1 | disordered: 2 residues in 0 region(s)
+2026-04-17 22:27:10 [__main__] INFO  ── Module 09: GO term prediction for P16083 ──
+2026-04-17 22:27:10 [__main__] INFO    [1/3] Collecting GO evidence from all sources...
+2026-04-17 22:27:10 [__main__] INFO      Homology GO terms: 30
+2026-04-17 22:27:10 [__main__] INFO      ESM-2 embedding evidence added
+2026-04-17 22:27:10 [__main__] INFO      Active site evidence added
+2026-04-17 22:27:11 [__main__] INFO      Embedding similarity: 9 reference protein(s) matched
+2026-04-17 22:27:11 [__main__] INFO    [2/3] Scoring and filtering predictions...
+2026-04-17 22:27:11 [__main__] INFO    [3/3] Computing residue saliency maps...
+2026-04-17 22:27:11 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  GO term predictions: P16083
+  MF predictions: 15
+  BP predictions: 15
+  CC predictions: 9
+  Top MF: serine-type endopeptidase activity
+  Top BP: oxygen transport
+  Top CC: C:nucleus
+  [MF] GO:0004252 serine-type endopeptidase activity score=0.85
+  [MF] GO:0003677 DNA binding score=0.85
+  [MF] GO:0008237 metallopeptidase activity score=0.84
+  [MF] GO:0004089 carbonate dehydratase activity score=0.83
+  [MF] GO:0004784 superoxide dismutase activity score=0.83
+  [MF] GO:0008270 F:zinc ion binding score=0.80
+  [MF] GO:0008233 peptidase activity score=0.80
+  [MF] GO:0008241 peptidyl-dipeptidase activity score=0.79
+────────────────────────────────────────────────────────────
+2026-04-17 22:27:12 [utils.pdb_parser] INFO  Parsing structure: P16083.pdb
+2026-04-17 22:27:12 [utils.pdb_parser] INFO    → 231 residues | mean pLDDT: 98.1 | disordered: 2 residues in 0 region(s)
+2026-04-17 22:27:12 [__main__] INFO  ── Module 10: EC number prediction for P16083 ──
+2026-04-17 22:27:12 [__main__] INFO    [1/3] Analysing GO term evidence...
+2026-04-17 22:27:12 [__main__] INFO      7 GO terms processed
+2026-04-17 22:27:12 [__main__] INFO    [2/3] Analysing active site motif evidence...
+2026-04-17 22:27:12 [__main__] INFO    [3/3] Analysing sequence composition...
+2026-04-17 22:27:12 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  EC prediction: P16083
+  Is enzyme    : yes (confidence=0.77)
+  Top EC class : EC 3.x.x.x — Hydrolase (score=0.77)
+  Specific EC  : 3.4.21 — Serine-type endopeptidase
+  EC 3 Hydrolase score=0.77 evidence=go_prediction,structural_motif
+  EC 1 Oxidoreductase score=0.70 evidence=sequence_composition,homology_inference
+  EC 2 Transferase score=0.70 evidence=go_prediction,sequence_composition
+────────────────────────────────────────────────────────────
+2026-04-17 22:27:12 [__main__] INFO  ── Module 13: Consensus scoring for P16083 ──
+2026-04-17 22:27:12 [__main__] INFO    Loaded: P16083_structure.json
+2026-04-17 22:27:12 [__main__] INFO    Loaded: P16083_physicochemical.json
+2026-04-17 22:27:12 [__main__] INFO    Loaded: P16083_active_sites.json
+2026-04-17 22:27:12 [__main__] INFO    Loaded: P16083_binding_pockets.json
+2026-04-17 22:27:12 [__main__] INFO    Loaded: P16083_allosteric.json
+2026-04-17 22:27:12 [__main__] INFO    Loaded: P16083_chemical_env.json
+2026-04-17 22:27:12 [__main__] INFO    Loaded: P16083_homology.json
+2026-04-17 22:27:12 [__main__] INFO    Loaded: P16083_esm2.json
+2026-04-17 22:27:12 [__main__] INFO    Loaded: P16083_go_predictions.json
+2026-04-17 22:27:12 [__main__] INFO    Loaded: P16083_ec_prediction.json
+2026-04-17 22:27:12 [__main__] INFO    Loaded: P16083_foldseek.json
+2026-04-17 22:27:12 [__main__] INFO    Loaded: P16083_ppi.json
+2026-04-17 22:27:12 [__main__] INFO    12/12 modules available
+2026-04-17 22:27:12 [__main__] INFO    [1/5] Aggregating GO evidence...
+2026-04-17 22:27:12 [__main__] INFO    [2/5] Extracting site predictions...
+2026-04-17 22:27:12 [__main__] INFO    [3/5] Generating validation suggestions...
+2026-04-17 22:27:12 [__main__] INFO    [4/5] Computing overall confidence...
+2026-04-17 22:27:12 [__main__] INFO    [5/5] Assembling final report...
+2026-04-17 22:27:13 [utils.pdb_parser] INFO  Parsing structure: P68871.pdb
+2026-04-17 22:27:13 [utils.pdb_parser] INFO    → 147 residues | mean pLDDT: 97.2 | disordered: 1 residues in 0 region(s)
+2026-04-17 22:27:13 [__main__] INFO  ── Module 09: GO term prediction for P68871 ──
+2026-04-17 22:27:13 [__main__] INFO    [1/3] Collecting GO evidence from all sources...
+2026-04-17 22:27:13 [__main__] INFO      Homology GO terms: 4
+2026-04-17 22:27:13 [__main__] INFO      ESM-2 embedding evidence added
+2026-04-17 22:27:13 [__main__] INFO      Active site evidence added
+2026-04-17 22:27:15 [__main__] INFO      Embedding similarity: 6 reference protein(s) matched
+2026-04-17 22:27:15 [__main__] INFO    [2/3] Scoring and filtering predictions...
+2026-04-17 22:27:15 [__main__] INFO    [3/3] Computing residue saliency maps...
+2026-04-17 22:27:15 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  GO term predictions: P68871
+  MF predictions: 15
+  BP predictions: 10
+  CC predictions: 7
+  Top MF: heme binding
+  Top BP: oxygen transport
+  Top CC: hemoglobin complex
+  [MF] GO:0020037 heme binding score=0.85
+  [MF] GO:0004252 serine-type endopeptidase activity score=0.85
+  [MF] GO:0003677 DNA binding score=0.85
+  [MF] GO:0008237 metallopeptidase activity score=0.85
+  [MF] GO:0004784 superoxide dismutase activity score=0.83
+  [MF] GO:0004089 carbonate dehydratase activity score=0.81
+  [MF] GO:0019825 oxygen binding score=0.80
+  [MF] GO:0008270 zinc ion binding score=0.80
+────────────────────────────────────────────────────────────
+2026-04-17 22:27:15 [utils.pdb_parser] INFO  Parsing structure: P68871.pdb
+2026-04-17 22:27:15 [utils.pdb_parser] INFO    → 147 residues | mean pLDDT: 97.2 | disordered: 1 residues in 0 region(s)
+2026-04-17 22:27:15 [__main__] INFO  ── Module 10: EC number prediction for P68871 ──
+2026-04-17 22:27:15 [__main__] INFO    [1/3] Analysing GO term evidence...
+2026-04-17 22:27:15 [__main__] INFO      4 GO terms processed
+2026-04-17 22:27:15 [__main__] INFO    [2/3] Analysing active site motif evidence...
+2026-04-17 22:27:15 [__main__] INFO    [3/3] Analysing sequence composition...
+2026-04-17 22:27:15 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  EC prediction: P68871
+  Is enzyme    : no (confidence=0.85)
+  Top EC class : EC 3.x.x.x — Hydrolase (score=0.85)
+  Specific EC  : 3.4.21 — Serine-type endopeptidase
+  EC 3 Hydrolase score=0.85 evidence=go_prediction,structural_motif
+────────────────────────────────────────────────────────────
+2026-04-17 22:27:16 [__main__] INFO  ── Module 13: Consensus scoring for P68871 ──
+2026-04-17 22:27:16 [__main__] INFO    Loaded: P68871_structure.json
+2026-04-17 22:27:16 [__main__] INFO    Loaded: P68871_physicochemical.json
+2026-04-17 22:27:16 [__main__] INFO    Loaded: P68871_active_sites.json
+2026-04-17 22:27:16 [__main__] INFO    Loaded: P68871_binding_pockets.json
+2026-04-17 22:27:16 [__main__] INFO    Loaded: P68871_allosteric.json
+2026-04-17 22:27:16 [__main__] INFO    Loaded: P68871_chemical_env.json
+2026-04-17 22:27:16 [__main__] INFO    Loaded: P68871_homology.json
+2026-04-17 22:27:16 [__main__] INFO    Loaded: P68871_esm2.json
+2026-04-17 22:27:16 [__main__] INFO    Loaded: P68871_go_predictions.json
+2026-04-17 22:27:16 [__main__] INFO    Loaded: P68871_ec_prediction.json
+2026-04-17 22:27:16 [__main__] INFO    Loaded: P68871_foldseek.json
+2026-04-17 22:27:16 [__main__] INFO    Loaded: P68871_ppi.json
+2026-04-17 22:27:16 [__main__] INFO    12/12 modules available
+2026-04-17 22:27:16 [__main__] INFO    [1/5] Aggregating GO evidence...
+2026-04-17 22:27:16 [__main__] INFO    [2/5] Extracting site predictions...
+2026-04-17 22:27:16 [__main__] INFO    [3/5] Generating validation suggestions...
+2026-04-17 22:27:16 [__main__] INFO    [4/5] Computing overall confidence...
+2026-04-17 22:27:16 [__main__] INFO    [5/5] Assembling final report...
+2026-04-17 22:27:16 [utils.pdb_parser] INFO  Parsing structure: P00533.pdb
+2026-04-17 22:27:16 [utils.pdb_parser] INFO    → 1210 residues | mean pLDDT: 76.0 | disordered: 355 residues in 8 region(s)
+2026-04-17 22:27:17 [__main__] INFO  ── Module 09: GO term prediction for P00533 ──
+2026-04-17 22:27:17 [__main__] INFO    [1/3] Collecting GO evidence from all sources...
+2026-04-17 22:27:17 [__main__] INFO      Homology GO terms: 30
+2026-04-17 22:27:17 [__main__] INFO      ESM-2 embedding evidence added
+2026-04-17 22:27:17 [__main__] INFO      Active site evidence added
+2026-04-17 22:27:19 [__main__] INFO      Embedding similarity: 2 reference protein(s) matched
+2026-04-17 22:27:19 [__main__] INFO    [2/3] Scoring and filtering predictions...
+2026-04-17 22:27:19 [__main__] INFO    [3/3] Computing residue saliency maps...
+2026-04-17 22:27:19 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  GO term predictions: P00533
+  MF predictions: 15
+  BP predictions: 13
+  CC predictions: 10
+  Top MF: protein kinase activity
+  Top BP: protein phosphorylation
+  Top CC: integral component of plasma membrane
+  [MF] GO:0004672 protein kinase activity score=0.90
+  [MF] GO:0004252 serine-type endopeptidase activity score=0.85
+  [MF] GO:0003677 DNA binding score=0.85
+  [MF] GO:0004714 receptor protein tyrosine kinase ac score=0.85
+  [MF] GO:0008270 zinc ion binding score=0.80
+  [MF] GO:0008233 peptidase activity score=0.80
+  [MF] GO:0005525 GTP binding score=0.80
+  [MF] GO:0005524 ATP binding score=0.75
+────────────────────────────────────────────────────────────
+2026-04-17 22:27:19 [utils.pdb_parser] INFO  Parsing structure: P00533.pdb
+2026-04-17 22:27:19 [utils.pdb_parser] INFO    → 1210 residues | mean pLDDT: 76.0 | disordered: 355 residues in 8 region(s)
+2026-04-17 22:27:19 [__main__] INFO  ── Module 10: EC number prediction for P00533 ──
+2026-04-17 22:27:19 [__main__] INFO    [1/3] Analysing GO term evidence...
+2026-04-17 22:27:19 [__main__] INFO      6 GO terms processed
+2026-04-17 22:27:19 [__main__] INFO    [2/3] Analysing active site motif evidence...
+2026-04-17 22:27:19 [__main__] INFO    [3/3] Analysing sequence composition...
+2026-04-17 22:27:19 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  EC prediction: P00533
+  Is enzyme    : yes (confidence=0.85)
+  Top EC class : EC 3.x.x.x — Hydrolase (score=0.85)
+  Specific EC  : 3.4.21 — Serine-type endopeptidase
+  EC 3 Hydrolase score=0.85 evidence=go_prediction,structural_motif
+  EC 2 Transferase score=0.81 evidence=go_prediction,sequence_composition
+  EC 5 Isomerase score=0.24 evidence=sequence_composition
+────────────────────────────────────────────────────────────
+2026-04-17 22:27:19 [__main__] INFO  ── Module 13: Consensus scoring for P00533 ──
+2026-04-17 22:27:19 [__main__] INFO    Loaded: P00533_structure.json
+2026-04-17 22:27:19 [__main__] INFO    Loaded: P00533_physicochemical.json
+2026-04-17 22:27:19 [__main__] INFO    Loaded: P00533_active_sites.json
+2026-04-17 22:27:19 [__main__] INFO    Loaded: P00533_binding_pockets.json
+2026-04-17 22:27:19 [__main__] INFO    Loaded: P00533_allosteric.json
+2026-04-17 22:27:19 [__main__] INFO    Loaded: P00533_chemical_env.json
+2026-04-17 22:27:19 [__main__] INFO    Loaded: P00533_homology.json
+2026-04-17 22:27:20 [__main__] INFO    Loaded: P00533_esm2.json
+2026-04-17 22:27:20 [__main__] INFO    Loaded: P00533_go_predictions.json
+2026-04-17 22:27:20 [__main__] INFO    Loaded: P00533_ec_prediction.json
+2026-04-17 22:27:20 [__main__] INFO    Loaded: P00533_foldseek.json
+2026-04-17 22:27:20 [__main__] INFO    Loaded: P00533_ppi.json
+2026-04-17 22:27:20 [__main__] INFO    12/12 modules available
+2026-04-17 22:27:20 [__main__] INFO    [1/5] Aggregating GO evidence...
+2026-04-17 22:27:20 [__main__] INFO    [2/5] Extracting site predictions...
+2026-04-17 22:27:20 [__main__] INFO    [3/5] Generating validation suggestions...
+2026-04-17 22:27:20 [__main__] INFO    [4/5] Computing overall confidence...
+2026-04-17 22:27:20 [__main__] INFO    [5/5] Assembling final report...
+2026-04-17 22:27:21 [utils.pdb_parser] INFO  Parsing structure: P06213.pdb
+2026-04-17 22:27:21 [utils.pdb_parser] INFO    → 1382 residues | mean pLDDT: 77.6 | disordered: 358 residues in 16 region(s)
+2026-04-17 22:27:21 [__main__] INFO  ── Module 09: GO term prediction for P06213 ──
+2026-04-17 22:27:21 [__main__] INFO    [1/3] Collecting GO evidence from all sources...
+2026-04-17 22:27:21 [__main__] INFO      Homology GO terms: 30
+2026-04-17 22:27:21 [__main__] INFO      ESM-2 embedding evidence added
+2026-04-17 22:27:21 [__main__] INFO      Active site evidence added
+2026-04-17 22:27:24 [__main__] INFO      Embedding similarity: 7 reference protein(s) matched
+2026-04-17 22:27:24 [__main__] INFO    [2/3] Scoring and filtering predictions...
+2026-04-17 22:27:24 [__main__] INFO    [3/3] Computing residue saliency maps...
+2026-04-17 22:27:24 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  GO term predictions: P06213
+  MF predictions: 15
+  BP predictions: 15
+  CC predictions: 10
+  Top MF: serine-type endopeptidase activity
+  Top BP: protein phosphorylation
+  Top CC: nucleus
+  [MF] GO:0004252 serine-type endopeptidase activity score=0.88
+  [MF] GO:0008237 metallopeptidase activity score=0.87
+  [MF] GO:0061630 ubiquitin protein ligase activity score=0.85
+  [MF] GO:0004672 protein kinase activity score=0.85
+  [MF] GO:0003677 DNA binding score=0.85
+  [MF] GO:0008233 peptidase activity score=0.83
+  [MF] GO:0008241 peptidyl-dipeptidase activity score=0.82
+  [MF] GO:0004784 superoxide dismutase activity score=0.82
+────────────────────────────────────────────────────────────
+2026-04-17 22:27:24 [utils.pdb_parser] INFO  Parsing structure: P06213.pdb
+2026-04-17 22:27:24 [utils.pdb_parser] INFO    → 1382 residues | mean pLDDT: 77.6 | disordered: 358 residues in 16 region(s)
+2026-04-17 22:27:24 [__main__] INFO  ── Module 10: EC number prediction for P06213 ──
+2026-04-17 22:27:24 [__main__] INFO    [1/3] Analysing GO term evidence...
+2026-04-17 22:27:24 [__main__] INFO      7 GO terms processed
+2026-04-17 22:27:24 [__main__] INFO    [2/3] Analysing active site motif evidence...
+2026-04-17 22:27:24 [__main__] INFO    [3/3] Analysing sequence composition...
+2026-04-17 22:27:24 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  EC prediction: P06213
+  Is enzyme    : no (confidence=0.85)
+  Top EC class : EC 3.x.x.x — Hydrolase (score=0.85)
+  Specific EC  : 3.4.21 — Serine-type endopeptidase
+  EC 3 Hydrolase score=0.85 evidence=go_prediction,structural_motif
+  EC 2 Transferase score=0.77 evidence=go_prediction,sequence_composition
+  EC 1 Oxidoreductase score=0.24 evidence=sequence_composition
+  EC 5 Isomerase score=0.24 evidence=sequence_composition
+────────────────────────────────────────────────────────────
+2026-04-17 22:27:25 [__main__] INFO  ── Module 13: Consensus scoring for P06213 ──
+2026-04-17 22:27:25 [__main__] INFO    Loaded: P06213_structure.json
+2026-04-17 22:27:25 [__main__] INFO    Loaded: P06213_physicochemical.json
+2026-04-17 22:27:25 [__main__] INFO    Loaded: P06213_active_sites.json
+2026-04-17 22:27:25 [__main__] INFO    Loaded: P06213_binding_pockets.json
+2026-04-17 22:27:25 [__main__] INFO    Loaded: P06213_allosteric.json
+2026-04-17 22:27:25 [__main__] INFO    Loaded: P06213_chemical_env.json
+2026-04-17 22:27:25 [__main__] INFO    Loaded: P06213_homology.json
+2026-04-17 22:27:25 [__main__] INFO    Loaded: P06213_esm2.json
+2026-04-17 22:27:25 [__main__] INFO    Loaded: P06213_go_predictions.json
+2026-04-17 22:27:25 [__main__] INFO    Loaded: P06213_ec_prediction.json
+2026-04-17 22:27:25 [__main__] INFO    Loaded: P06213_foldseek.json
+2026-04-17 22:27:25 [__main__] INFO    Loaded: P06213_ppi.json
+2026-04-17 22:27:25 [__main__] INFO    12/12 modules available
+2026-04-17 22:27:25 [__main__] INFO    [1/5] Aggregating GO evidence...
+2026-04-17 22:27:25 [__main__] INFO    [2/5] Extracting site predictions...
+2026-04-17 22:27:25 [__main__] INFO    [3/5] Generating validation suggestions...
+2026-04-17 22:27:25 [__main__] INFO    [4/5] Computing overall confidence...
+2026-04-17 22:27:25 [__main__] INFO    [5/5] Assembling final report...
+2026-04-17 22:27:26 [utils.pdb_parser] INFO  Parsing structure: P00441.pdb
+2026-04-17 22:27:26 [utils.pdb_parser] INFO    → 154 residues | mean pLDDT: 97.9 | disordered: 0 residues in 0 region(s)
+2026-04-17 22:27:26 [__main__] INFO  ── Module 09: GO term prediction for P00441 ──
+2026-04-17 22:27:26 [__main__] INFO    [1/3] Collecting GO evidence from all sources...
+2026-04-17 22:27:26 [__main__] INFO      Homology GO terms: 30
+2026-04-17 22:27:26 [__main__] INFO      ESM-2 embedding evidence added
+2026-04-17 22:27:26 [__main__] INFO      Active site evidence added
+2026-04-17 22:27:28 [__main__] INFO      Embedding similarity: 6 reference protein(s) matched
+2026-04-17 22:27:28 [__main__] INFO    [2/3] Scoring and filtering predictions...
+2026-04-17 22:27:28 [__main__] INFO    [3/3] Computing residue saliency maps...
+2026-04-17 22:27:28 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  GO term predictions: P00441
+  MF predictions: 15
+  BP predictions: 13
+  CC predictions: 10
+  Top MF: F:superoxide dismutase activity
+  Top BP: removal of superoxide radicals
+  Top CC: C:nucleus
+  [MF] GO:0004784 F:superoxide dismutase activity score=0.90
+  [MF] GO:0005507 copper ion binding score=0.85
+  [MF] GO:0004252 serine-type endopeptidase activity score=0.85
+  [MF] GO:0003677 DNA binding score=0.85
+  [MF] GO:0004089 carbonate dehydratase activity score=0.84
+  [MF] GO:0008237 metallopeptidase activity score=0.83
+  [MF] GO:0008270 F:zinc ion binding score=0.80
+  [MF] GO:0008233 peptidase activity score=0.80
+────────────────────────────────────────────────────────────
+2026-04-17 22:27:29 [utils.pdb_parser] INFO  Parsing structure: P00441.pdb
+2026-04-17 22:27:29 [utils.pdb_parser] INFO    → 154 residues | mean pLDDT: 97.9 | disordered: 0 residues in 0 region(s)
+2026-04-17 22:27:29 [__main__] INFO  ── Module 10: EC number prediction for P00441 ──
+2026-04-17 22:27:29 [__main__] INFO    [1/3] Analysing GO term evidence...
+2026-04-17 22:27:29 [__main__] INFO      4 GO terms processed
+2026-04-17 22:27:29 [__main__] INFO    [2/3] Analysing active site motif evidence...
+2026-04-17 22:27:29 [__main__] INFO    [3/3] Analysing sequence composition...
+2026-04-17 22:27:29 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  EC prediction: P00441
+  Is enzyme    : no (confidence=0.85)
+  Top EC class : EC 3.x.x.x — Hydrolase (score=0.85)
+  Specific EC  : 3.4.21 — Serine-type endopeptidase
+  EC 3 Hydrolase score=0.85 evidence=go_prediction,structural_motif
+  EC 4 Lyase score=0.24 evidence=sequence_composition
+────────────────────────────────────────────────────────────
+2026-04-17 22:27:29 [__main__] INFO  ── Module 13: Consensus scoring for P00441 ──
+2026-04-17 22:27:29 [__main__] INFO    Loaded: P00441_structure.json
+2026-04-17 22:27:29 [__main__] INFO    Loaded: P00441_physicochemical.json
+2026-04-17 22:27:29 [__main__] INFO    Loaded: P00441_active_sites.json
+2026-04-17 22:27:29 [__main__] INFO    Loaded: P00441_binding_pockets.json
+2026-04-17 22:27:29 [__main__] INFO    Loaded: P00441_allosteric.json
+2026-04-17 22:27:29 [__main__] INFO    Loaded: P00441_chemical_env.json
+2026-04-17 22:27:29 [__main__] INFO    Loaded: P00441_homology.json
+2026-04-17 22:27:29 [__main__] INFO    Loaded: P00441_esm2.json
+2026-04-17 22:27:29 [__main__] INFO    Loaded: P00441_go_predictions.json
+2026-04-17 22:27:29 [__main__] INFO    Loaded: P00441_ec_prediction.json
+2026-04-17 22:27:29 [__main__] INFO    Loaded: P00441_foldseek.json
+2026-04-17 22:27:29 [__main__] INFO    Loaded: P00441_ppi.json
+2026-04-17 22:27:29 [__main__] INFO    12/12 modules available
+2026-04-17 22:27:29 [__main__] INFO    [1/5] Aggregating GO evidence...
+2026-04-17 22:27:29 [__main__] INFO    [2/5] Extracting site predictions...
+2026-04-17 22:27:29 [__main__] INFO    [3/5] Generating validation suggestions...
+2026-04-17 22:27:29 [__main__] INFO    [4/5] Computing overall confidence...
+2026-04-17 22:27:29 [__main__] INFO    [5/5] Assembling final report...
+2026-04-17 22:27:30 [utils.pdb_parser] INFO  Parsing structure: P01116.pdb
+2026-04-17 22:27:30 [utils.pdb_parser] INFO    → 189 residues | mean pLDDT: 91.5 | disordered: 14 residues in 1 region(s)
+2026-04-17 22:27:30 [__main__] INFO  ── Module 09: GO term prediction for P01116 ──
+2026-04-17 22:27:30 [__main__] INFO    [1/3] Collecting GO evidence from all sources...
+2026-04-17 22:27:30 [__main__] INFO      Homology GO terms: 30
+2026-04-17 22:27:30 [__main__] INFO      ESM-2 embedding evidence added
+2026-04-17 22:27:30 [__main__] INFO      Active site evidence added
+2026-04-17 22:27:31 [__main__] INFO      Embedding similarity: 3 reference protein(s) matched
+2026-04-17 22:27:31 [__main__] INFO    [2/3] Scoring and filtering predictions...
+2026-04-17 22:27:31 [__main__] INFO    [3/3] Computing residue saliency maps...
+2026-04-17 22:27:31 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  GO term predictions: P01116
+  MF predictions: 15
+  BP predictions: 9
+  CC predictions: 10
+  Top MF: GTP binding
+  Top BP: signal transduction
+  Top CC: membrane
+  [MF] GO:0005525 GTP binding score=0.90
+  [MF] GO:0003924 GTPase activity score=0.85
+  [MF] GO:0003677 DNA binding score=0.85
+  [MF] GO:0008270 zinc ion binding score=0.80
+  [MF] GO:0004089 carbonate dehydratase activity score=0.78
+  [MF] GO:0004672 protein kinase activity score=0.77
+  [MF] GO:0019003 F:GDP binding score=0.75
+  [MF] GO:0046872 metal ion binding score=0.75
+────────────────────────────────────────────────────────────
+2026-04-17 22:27:32 [utils.pdb_parser] INFO  Parsing structure: P01116.pdb
+2026-04-17 22:27:32 [utils.pdb_parser] INFO    → 189 residues | mean pLDDT: 91.5 | disordered: 14 residues in 1 region(s)
+2026-04-17 22:27:32 [__main__] INFO  ── Module 10: EC number prediction for P01116 ──
+2026-04-17 22:27:32 [__main__] INFO    [1/3] Analysing GO term evidence...
+2026-04-17 22:27:32 [__main__] INFO      3 GO terms processed
+2026-04-17 22:27:32 [__main__] INFO    [2/3] Analysing active site motif evidence...
+2026-04-17 22:27:32 [__main__] INFO    [3/3] Analysing sequence composition...
+2026-04-17 22:27:32 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  EC prediction: P01116
+  Is enzyme    : yes (confidence=0.85)
+  Top EC class : EC 3.x.x.x — Hydrolase (score=0.85)
+  Specific EC  : 3.6.5 — GTPase
+  EC 3 Hydrolase score=0.85 evidence=go_prediction,structural_motif
+  EC 2 Transferase score=0.69 evidence=go_prediction,sequence_composition
+  EC 4 Lyase score=0.24 evidence=sequence_composition
+  EC 5 Isomerase score=0.24 evidence=sequence_composition
+────────────────────────────────────────────────────────────
+2026-04-17 22:27:32 [__main__] INFO  ── Module 13: Consensus scoring for P01116 ──
+2026-04-17 22:27:32 [__main__] INFO    Loaded: P01116_structure.json
+2026-04-17 22:27:32 [__main__] INFO    Loaded: P01116_physicochemical.json
+2026-04-17 22:27:32 [__main__] INFO    Loaded: P01116_active_sites.json
+2026-04-17 22:27:32 [__main__] INFO    Loaded: P01116_binding_pockets.json
+2026-04-17 22:27:32 [__main__] INFO    Loaded: P01116_allosteric.json
+2026-04-17 22:27:32 [__main__] INFO    Loaded: P01116_chemical_env.json
+2026-04-17 22:27:32 [__main__] INFO    Loaded: P01116_homology.json
+2026-04-17 22:27:32 [__main__] INFO    Loaded: P01116_esm2.json
+2026-04-17 22:27:32 [__main__] INFO    Loaded: P01116_go_predictions.json
+2026-04-17 22:27:32 [__main__] INFO    Loaded: P01116_ec_prediction.json
+2026-04-17 22:27:32 [__main__] INFO    Loaded: P01116_foldseek.json
+2026-04-17 22:27:32 [__main__] INFO    Loaded: P01116_ppi.json
+2026-04-17 22:27:32 [__main__] INFO    12/12 modules available
+2026-04-17 22:27:32 [__main__] INFO    [1/5] Aggregating GO evidence...
+2026-04-17 22:27:32 [__main__] INFO    [2/5] Extracting site predictions...
+2026-04-17 22:27:32 [__main__] INFO    [3/5] Generating validation suggestions...
+2026-04-17 22:27:32 [__main__] INFO    [4/5] Computing overall confidence...
+2026-04-17 22:27:32 [__main__] INFO    [5/5] Assembling final report...
+2026-04-17 22:27:33 [utils.pdb_parser] INFO  Parsing structure: Q00987.pdb
+2026-04-17 22:27:33 [utils.pdb_parser] INFO    → 491 residues | mean pLDDT: 62.6 | disordered: 304 residues in 6 region(s)
+2026-04-17 22:27:33 [__main__] INFO  ── Module 09: GO term prediction for Q00987 ──
+2026-04-17 22:27:33 [__main__] INFO    [1/3] Collecting GO evidence from all sources...
+2026-04-17 22:27:33 [__main__] INFO      Homology GO terms: 30
+2026-04-17 22:27:33 [__main__] INFO      ESM-2 embedding evidence added
+2026-04-17 22:27:33 [__main__] INFO      Active site evidence added
+2026-04-17 22:27:35 [__main__] INFO      Embedding similarity: 4 reference protein(s) matched
+2026-04-17 22:27:35 [__main__] INFO    [2/3] Scoring and filtering predictions...
+2026-04-17 22:27:35 [__main__] INFO    [3/3] Computing residue saliency maps...
+2026-04-17 22:27:35 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  GO term predictions: Q00987
+  MF predictions: 15
+  BP predictions: 15
+  CC predictions: 10
+  Top MF: ubiquitin protein ligase activity
+  Top BP: negative regulation of apoptotic process
+  Top CC: nucleus
+  [MF] GO:0061630 ubiquitin protein ligase activity score=0.90
+  [MF] GO:0004252 serine-type endopeptidase activity score=0.85
+  [MF] GO:0003677 DNA binding score=0.85
+  [MF] GO:0004672 protein kinase activity score=0.85
+  [MF] GO:0008237 metallopeptidase activity score=0.83
+  [MF] GO:0008233 peptidase activity score=0.80
+  [MF] GO:0008270 F:zinc ion binding score=0.80
+  [MF] GO:0005525 GTP binding score=0.80
+────────────────────────────────────────────────────────────
+2026-04-17 22:27:35 [utils.pdb_parser] INFO  Parsing structure: Q00987.pdb
+2026-04-17 22:27:35 [utils.pdb_parser] INFO    → 491 residues | mean pLDDT: 62.6 | disordered: 304 residues in 6 region(s)
+2026-04-17 22:27:35 [__main__] INFO  ── Module 10: EC number prediction for Q00987 ──
+2026-04-17 22:27:35 [__main__] INFO    [1/3] Analysing GO term evidence...
+2026-04-17 22:27:35 [__main__] INFO      8 GO terms processed
+2026-04-17 22:27:35 [__main__] INFO    [2/3] Analysing active site motif evidence...
+2026-04-17 22:27:35 [__main__] INFO    [3/3] Analysing sequence composition...
+2026-04-17 22:27:35 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  EC prediction: Q00987
+  Is enzyme    : no (confidence=0.85)
+  Top EC class : EC 3.x.x.x — Hydrolase (score=0.85)
+  Specific EC  : 2.3.2 — Ubiquitin-protein ligase
+  EC 3 Hydrolase score=0.85 evidence=go_prediction,structural_motif
+  EC 2 Transferase score=0.81 evidence=go_prediction,sequence_composition
+  EC 6 Ligase score=0.70 evidence=sequence_composition,homology_inference
+  EC 4 Lyase score=0.24 evidence=sequence_composition
+────────────────────────────────────────────────────────────
+2026-04-17 22:27:35 [__main__] INFO  ── Module 13: Consensus scoring for Q00987 ──
+2026-04-17 22:27:35 [__main__] INFO    Loaded: Q00987_structure.json
+2026-04-17 22:27:35 [__main__] INFO    Loaded: Q00987_physicochemical.json
+2026-04-17 22:27:35 [__main__] INFO    Loaded: Q00987_active_sites.json
+2026-04-17 22:27:36 [__main__] INFO    Loaded: Q00987_binding_pockets.json
+2026-04-17 22:27:36 [__main__] INFO    Loaded: Q00987_allosteric.json
+2026-04-17 22:27:36 [__main__] INFO    Loaded: Q00987_chemical_env.json
+2026-04-17 22:27:36 [__main__] INFO    Loaded: Q00987_homology.json
+2026-04-17 22:27:36 [__main__] INFO    Loaded: Q00987_esm2.json
+2026-04-17 22:27:36 [__main__] INFO    Loaded: Q00987_go_predictions.json
+2026-04-17 22:27:36 [__main__] INFO    Loaded: Q00987_ec_prediction.json
+2026-04-17 22:27:36 [__main__] INFO    Loaded: Q00987_foldseek.json
+2026-04-17 22:27:36 [__main__] INFO    Loaded: Q00987_ppi.json
+2026-04-17 22:27:36 [__main__] INFO    12/12 modules available
+2026-04-17 22:27:36 [__main__] INFO    [1/5] Aggregating GO evidence...
+2026-04-17 22:27:36 [__main__] INFO    [2/5] Extracting site predictions...
+2026-04-17 22:27:36 [__main__] INFO    [3/5] Generating validation suggestions...
+2026-04-17 22:27:36 [__main__] INFO    [4/5] Computing overall confidence...
+2026-04-17 22:27:36 [__main__] INFO    [5/5] Assembling final report...
+2026-04-17 22:27:36 [utils.pdb_parser] INFO  Parsing structure: Q9BYF1.pdb
+2026-04-17 22:27:36 [utils.pdb_parser] INFO    → 805 residues | mean pLDDT: 90.7 | disordered: 63 residues in 3 region(s)
+2026-04-17 22:27:37 [__main__] INFO  ── Module 09: GO term prediction for Q9BYF1 ──
+2026-04-17 22:27:37 [__main__] INFO    [1/3] Collecting GO evidence from all sources...
+2026-04-17 22:27:37 [__main__] INFO      Homology GO terms: 30
+2026-04-17 22:27:37 [__main__] INFO      ESM-2 embedding evidence added
+2026-04-17 22:27:37 [__main__] INFO      Active site evidence added
+2026-04-17 22:27:39 [__main__] INFO      Embedding similarity: 7 reference protein(s) matched
+2026-04-17 22:27:39 [__main__] INFO    [2/3] Scoring and filtering predictions...
+2026-04-17 22:27:39 [__main__] INFO    [3/3] Computing residue saliency maps...
+2026-04-17 22:27:39 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  GO term predictions: Q9BYF1
+  MF predictions: 15
+  BP predictions: 13
+  CC predictions: 10
+  Top MF: metallopeptidase activity
+  Top BP: oxygen transport
+  Top CC: nucleus
+  [MF] GO:0008237 metallopeptidase activity score=0.90
+  [MF] GO:0004252 serine-type endopeptidase activity score=0.86
+  [MF] GO:0008241 peptidyl-dipeptidase activity score=0.85
+  [MF] GO:0003677 DNA binding score=0.85
+  [MF] GO:0004784 superoxide dismutase activity score=0.83
+  [MF] GO:0061630 ubiquitin protein ligase activity score=0.83
+  [MF] GO:0008233 F:peptidase activity score=0.81
+  [MF] GO:0004089 carbonate dehydratase activity score=0.81
+────────────────────────────────────────────────────────────
+2026-04-17 22:27:39 [utils.pdb_parser] INFO  Parsing structure: Q9BYF1.pdb
+2026-04-17 22:27:39 [utils.pdb_parser] INFO    → 805 residues | mean pLDDT: 90.7 | disordered: 63 residues in 3 region(s)
+2026-04-17 22:27:39 [__main__] INFO  ── Module 10: EC number prediction for Q9BYF1 ──
+2026-04-17 22:27:39 [__main__] INFO    [1/3] Analysing GO term evidence...
+2026-04-17 22:27:39 [__main__] INFO      6 GO terms processed
+2026-04-17 22:27:39 [__main__] INFO    [2/3] Analysing active site motif evidence...
+2026-04-17 22:27:39 [__main__] INFO    [3/3] Analysing sequence composition...
+2026-04-17 22:27:39 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  EC prediction: Q9BYF1
+  Is enzyme    : no (confidence=0.85)
+  Top EC class : EC 3.x.x.x — Hydrolase (score=0.85)
+  Specific EC  : 3.4.24 — Metallopeptidase
+  EC 3 Hydrolase score=0.85 evidence=go_prediction,structural_motif
+  EC 2 Transferase score=0.74 evidence=go_prediction,sequence_composition
+────────────────────────────────────────────────────────────
+2026-04-17 22:27:39 [__main__] INFO  ── Module 13: Consensus scoring for Q9BYF1 ──
+2026-04-17 22:27:39 [__main__] INFO    Loaded: Q9BYF1_structure.json
+2026-04-17 22:27:39 [__main__] INFO    Loaded: Q9BYF1_physicochemical.json
+2026-04-17 22:27:39 [__main__] INFO    Loaded: Q9BYF1_active_sites.json
+2026-04-17 22:27:39 [__main__] INFO    Loaded: Q9BYF1_binding_pockets.json
+2026-04-17 22:27:39 [__main__] INFO    Loaded: Q9BYF1_allosteric.json
+2026-04-17 22:27:39 [__main__] INFO    Loaded: Q9BYF1_chemical_env.json
+2026-04-17 22:27:39 [__main__] INFO    Loaded: Q9BYF1_homology.json
+2026-04-17 22:27:40 [__main__] INFO    Loaded: Q9BYF1_esm2.json
+2026-04-17 22:27:40 [__main__] INFO    Loaded: Q9BYF1_go_predictions.json
+2026-04-17 22:27:40 [__main__] INFO    Loaded: Q9BYF1_ec_prediction.json
+2026-04-17 22:27:40 [__main__] INFO    Loaded: Q9BYF1_foldseek.json
+2026-04-17 22:27:40 [__main__] INFO    Loaded: Q9BYF1_ppi.json
+2026-04-17 22:27:40 [__main__] INFO    12/12 modules available
+2026-04-17 22:27:40 [__main__] INFO    [1/5] Aggregating GO evidence...
+2026-04-17 22:27:40 [__main__] INFO    [2/5] Extracting site predictions...
+2026-04-17 22:27:40 [__main__] INFO    [3/5] Generating validation suggestions...
+2026-04-17 22:27:40 [__main__] INFO    [4/5] Computing overall confidence...
+2026-04-17 22:27:40 [__main__] INFO    [5/5] Assembling final report...
+2026-04-17 22:27:40 [utils.pdb_parser] INFO  Parsing structure: P04637.pdb
+2026-04-17 22:27:40 [utils.pdb_parser] INFO    → 393 residues | mean pLDDT: 75.0 | disordered: 158 residues in 4 region(s)
+2026-04-17 22:27:40 [__main__] INFO  ── Module 09: GO term prediction for P04637 ──
+2026-04-17 22:27:40 [__main__] INFO    [1/3] Collecting GO evidence from all sources...
+2026-04-17 22:27:40 [__main__] INFO      Homology GO terms: 30
+2026-04-17 22:27:40 [__main__] INFO      ESM-2 embedding evidence added
+2026-04-17 22:27:40 [__main__] INFO      Active site evidence added
+2026-04-17 22:27:42 [__main__] INFO      Embedding similarity: 7 reference protein(s) matched
+2026-04-17 22:27:42 [__main__] INFO    [2/3] Scoring and filtering predictions...
+2026-04-17 22:27:42 [__main__] INFO    [3/3] Computing residue saliency maps...
+2026-04-17 22:27:42 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  GO term predictions: P04637
+  MF predictions: 15
+  BP predictions: 15
+  CC predictions: 10
+  Top MF: ubiquitin protein ligase activity
+  Top BP: oxygen transport
+  Top CC: nucleus
+  [MF] GO:0061630 ubiquitin protein ligase activity score=0.86
+  [MF] GO:0004252 serine-type endopeptidase activity score=0.86
+  [MF] GO:0008237 metallopeptidase activity score=0.86
+  [MF] GO:0003677 DNA binding score=0.85
+  [MF] GO:0004784 superoxide dismutase activity score=0.81
+  [MF] GO:0008233 peptidase activity score=0.81
+  [MF] GO:0008241 peptidyl-dipeptidase activity score=0.81
+  [MF] GO:0003700 DNA-binding transcription factor ac score=0.80
+────────────────────────────────────────────────────────────
+2026-04-17 22:27:42 [utils.pdb_parser] INFO  Parsing structure: P04637.pdb
+2026-04-17 22:27:42 [utils.pdb_parser] INFO    → 393 residues | mean pLDDT: 75.0 | disordered: 158 residues in 4 region(s)
+2026-04-17 22:27:42 [__main__] INFO  ── Module 10: EC number prediction for P04637 ──
+2026-04-17 22:27:42 [__main__] INFO    [1/3] Analysing GO term evidence...
+2026-04-17 22:27:42 [__main__] INFO      5 GO terms processed
+2026-04-17 22:27:42 [__main__] INFO    [2/3] Analysing active site motif evidence...
+2026-04-17 22:27:42 [__main__] INFO    [3/3] Analysing sequence composition...
+2026-04-17 22:27:42 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  EC prediction: P04637
+  Is enzyme    : no (confidence=0.85)
+  Top EC class : EC 3.x.x.x — Hydrolase (score=0.85)
+  Specific EC  : 2.3.2 — Ubiquitin-protein ligase
+  EC 3 Hydrolase score=0.85 evidence=go_prediction,structural_motif
+  EC 2 Transferase score=0.77 evidence=go_prediction,sequence_composition
+  EC 5 Isomerase score=0.24 evidence=sequence_composition
+────────────────────────────────────────────────────────────
+2026-04-17 22:27:43 [__main__] INFO  ── Module 13: Consensus scoring for P04637 ──
+2026-04-17 22:27:43 [__main__] INFO    Loaded: P04637_structure.json
+2026-04-17 22:27:43 [__main__] INFO    Loaded: P04637_physicochemical.json
+2026-04-17 22:27:43 [__main__] INFO    Loaded: P04637_active_sites.json
+2026-04-17 22:27:43 [__main__] INFO    Loaded: P04637_binding_pockets.json
+2026-04-17 22:27:43 [__main__] INFO    Loaded: P04637_allosteric.json
+2026-04-17 22:27:43 [__main__] INFO    Loaded: P04637_chemical_env.json
+2026-04-17 22:27:43 [__main__] INFO    Loaded: P04637_homology.json
+2026-04-17 22:27:43 [__main__] INFO    Loaded: P04637_esm2.json
+2026-04-17 22:27:43 [__main__] INFO    Loaded: P04637_go_predictions.json
+2026-04-17 22:27:43 [__main__] INFO    Loaded: P04637_ec_prediction.json
+2026-04-17 22:27:43 [__main__] INFO    Loaded: P04637_foldseek.json
+2026-04-17 22:27:43 [__main__] INFO    Loaded: P04637_ppi.json
+2026-04-17 22:27:43 [__main__] INFO    12/12 modules available
+2026-04-17 22:27:43 [__main__] INFO    [1/5] Aggregating GO evidence...
+2026-04-17 22:27:43 [__main__] INFO    [2/5] Extracting site predictions...
+2026-04-17 22:27:43 [__main__] INFO    [3/5] Generating validation suggestions...
+2026-04-17 22:27:43 [__main__] INFO    [4/5] Computing overall confidence...
+2026-04-17 22:27:43 [__main__] INFO    [5/5] Assembling final report...
+2026-04-17 22:27:44 [utils.pdb_parser] INFO  Parsing structure: P00918.pdb
+2026-04-17 22:27:44 [utils.pdb_parser] INFO    → 260 residues | mean pLDDT: 97.4 | disordered: 3 residues in 1 region(s)
+2026-04-17 22:27:44 [__main__] INFO  ── Module 09: GO term prediction for P00918 ──
+2026-04-17 22:27:44 [__main__] INFO    [1/3] Collecting GO evidence from all sources...
+2026-04-17 22:27:44 [__main__] INFO      Homology GO terms: 30
+2026-04-17 22:27:44 [__main__] INFO      ESM-2 embedding evidence added
+2026-04-17 22:27:44 [__main__] INFO      Active site evidence added
+2026-04-17 22:27:45 [__main__] INFO      Embedding similarity: 7 reference protein(s) matched
+2026-04-17 22:27:45 [__main__] INFO    [2/3] Scoring and filtering predictions...
+2026-04-17 22:27:45 [__main__] INFO    [3/3] Computing residue saliency maps...
+2026-04-17 22:27:45 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  GO term predictions: P00918
+  MF predictions: 15
+  BP predictions: 15
+  CC predictions: 10
+  Top MF: carbonate dehydratase activity
+  Top BP: removal of superoxide radicals
+  Top CC: nucleus
+  [MF] GO:0004089 carbonate dehydratase activity score=0.90
+  [MF] GO:0008270 zinc ion binding score=0.85
+  [MF] GO:0004252 serine-type endopeptidase activity score=0.85
+  [MF] GO:0003677 DNA binding score=0.85
+  [MF] GO:0004784 superoxide dismutase activity score=0.84
+  [MF] GO:0008237 metallopeptidase activity score=0.81
+  [MF] GO:0046872 metal ion binding score=0.80
+  [MF] GO:0008233 peptidase activity score=0.80
+────────────────────────────────────────────────────────────
+2026-04-17 22:27:46 [utils.pdb_parser] INFO  Parsing structure: P00918.pdb
+2026-04-17 22:27:46 [utils.pdb_parser] INFO    → 260 residues | mean pLDDT: 97.4 | disordered: 3 residues in 1 region(s)
+2026-04-17 22:27:46 [__main__] INFO  ── Module 10: EC number prediction for P00918 ──
+2026-04-17 22:27:46 [__main__] INFO    [1/3] Analysing GO term evidence...
+2026-04-17 22:27:46 [__main__] INFO      6 GO terms processed
+2026-04-17 22:27:46 [__main__] INFO    [2/3] Analysing active site motif evidence...
+2026-04-17 22:27:46 [__main__] INFO    [3/3] Analysing sequence composition...
+2026-04-17 22:27:46 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  EC prediction: P00918
+  Is enzyme    : yes (confidence=0.85)
+  Top EC class : EC 3.x.x.x — Hydrolase (score=0.85)
+  Specific EC  : 3.4.21 — Serine-type endopeptidase
+  EC 3 Hydrolase score=0.85 evidence=go_prediction,structural_motif
+  EC 4 Lyase score=0.24 evidence=sequence_composition
+────────────────────────────────────────────────────────────
+2026-04-17 22:27:46 [__main__] INFO  ── Module 13: Consensus scoring for P00918 ──
+2026-04-17 22:27:46 [__main__] INFO    Loaded: P00918_structure.json
+2026-04-17 22:27:46 [__main__] INFO    Loaded: P00918_physicochemical.json
+2026-04-17 22:27:46 [__main__] INFO    Loaded: P00918_active_sites.json
+2026-04-17 22:27:46 [__main__] INFO    Loaded: P00918_binding_pockets.json
+2026-04-17 22:27:46 [__main__] INFO    Loaded: P00918_allosteric.json
+2026-04-17 22:27:46 [__main__] INFO    Loaded: P00918_chemical_env.json
+2026-04-17 22:27:46 [__main__] INFO    Loaded: P00918_homology.json
+2026-04-17 22:27:46 [__main__] INFO    Loaded: P00918_esm2.json
+2026-04-17 22:27:46 [__main__] INFO    Loaded: P00918_go_predictions.json
+2026-04-17 22:27:46 [__main__] INFO    Loaded: P00918_ec_prediction.json
+2026-04-17 22:27:46 [__main__] INFO    Loaded: P00918_foldseek.json
+2026-04-17 22:27:46 [__main__] INFO    Loaded: P00918_ppi.json
+2026-04-17 22:27:46 [__main__] INFO    12/12 modules available
+2026-04-17 22:27:46 [__main__] INFO    [1/5] Aggregating GO evidence...
+2026-04-17 22:27:46 [__main__] INFO    [2/5] Extracting site predictions...
+2026-04-17 22:27:46 [__main__] INFO    [3/5] Generating validation suggestions...
+2026-04-17 22:27:46 [__main__] INFO    [4/5] Computing overall confidence...
+2026-04-17 22:27:46 [__main__] INFO    [5/5] Assembling final report...
+2026-04-17 22:27:47 [__main__] INFO  Running full validation (10 proteins)...
+2026-04-17 22:27:47 [__main__] INFO  Note: Each protein takes ~10-15 min (mostly BLAST).
+2026-04-17 22:27:47 [__main__] INFO        Use --score-only if reports already exist.
+2026-04-17 22:27:47 [__main__] INFO  Starting validation on 13 proteins...
+2026-04-17 22:27:47 [__main__] INFO  
+[1/13] P04637 — TP53
+2026-04-17 22:27:47 [__main__] INFO    GO=100%  AS=100%  Enz=Y  PPI=80%  Overall=96.0/100
+2026-04-17 22:27:47 [__main__] INFO  
+[2/13] P00533 — EGFR
+2026-04-17 22:27:47 [__main__] INFO    GO=100%  AS=100%  Enz=Y  PPI=75%  Overall=95.0/100
+2026-04-17 22:27:47 [__main__] INFO  
+[3/13] P00441 — SOD1
+2026-04-17 22:27:47 [__main__] INFO    GO=100%  AS=100%  Enz=N  PPI=50%  Overall=70.0/100
+2026-04-17 22:27:47 [__main__] INFO  
+[4/13] P07900 — HSP90AA1
+2026-04-17 22:27:47 [__main__] INFO    GO=72%  AS=100%  Enz=Y  PPI=25%  Overall=75.3/100
+2026-04-17 22:27:47 [__main__] INFO  
+[5/13] P06213 — INSR
+2026-04-17 22:27:47 [__main__] INFO    GO=50%  AS=100%  Enz=N  PPI=100%  Overall=62.5/100
+2026-04-17 22:27:47 [__main__] INFO  
+[6/13] P38398 — BRCA1
+2026-04-17 22:27:47 [__main__] INFO    GO=39%  AS=100%  Enz=Y  PPI=50%  Overall=68.6/100
+2026-04-17 22:27:47 [__main__] INFO  
+[7/13] P16083 — NQO2
+2026-04-17 22:27:47 [__main__] INFO    GO=50%  AS=100%  Enz=Y  PPI=0%  Overall=62.5/100
+2026-04-17 22:27:47 [__main__] INFO  
+[8/13] P00734 — F2
+2026-04-17 22:27:47 [__main__] INFO    GO=50%  AS=67%  Enz=N  PPI=67%  Overall=47.5/100
+2026-04-17 22:27:47 [__main__] INFO  
+[9/13] P68871 — HBB
+2026-04-17 22:27:47 [__main__] INFO    GO=83%  AS=100%  Enz=Y  PPI=100%  Overall=94.2/100
+2026-04-17 22:27:47 [__main__] INFO  
+[10/13] P00918 — CA2
+2026-04-17 22:27:47 [__main__] INFO    GO=67%  AS=100%  Enz=Y  PPI=100%  Overall=88.3/100
+2026-04-17 22:27:47 [__main__] INFO  
+[11/13] P01116 — KRAS
+2026-04-17 22:27:47 [__main__] INFO    GO=100%  AS=100%  Enz=Y  PPI=100%  Overall=100.0/100
+2026-04-17 22:27:47 [__main__] INFO  
+[12/13] Q00987 — MDM2
+2026-04-17 22:27:47 [__main__] INFO    GO=100%  AS=100%  Enz=N  PPI=100%  Overall=80.0/100
+2026-04-17 22:27:47 [__main__] INFO  
+[13/13] Q9BYF1 — ACE2
+2026-04-17 22:27:47 [__main__] INFO    GO=67%  AS=100%  Enz=N  PPI=100%  Overall=68.3/100

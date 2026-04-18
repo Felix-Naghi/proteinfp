@@ -3,12 +3,46 @@
   "sequence_length": 491,
   "mf_predictions": [
     {
+      "go_id": "GO:0061630",
+      "go_name": "ubiquitin protein ligase activity",
+      "namespace": "MF",
+      "score": 0.9,
+      "evidence": [
+        "experimental_homolog",
+        "domain_annotation",
+        "embedding_similarity"
+      ],
+      "saliency_residues": [
+        29,
+        35,
+        37,
+        38,
+        40,
+        43,
+        44,
+        46,
+        47,
+        48,
+        53,
+        54,
+        56,
+        57,
+        58,
+        60,
+        61,
+        66,
+        67,
+        68
+      ]
+    },
+    {
       "go_id": "GO:0004252",
       "go_name": "serine-type endopeptidase activity",
       "namespace": "MF",
-      "score": 0.85,
+      "score": 0.851,
       "evidence": [
-        "structural_motif"
+        "structural_motif",
+        "embedding_similarity"
       ],
       "saliency_residues": [
         29,
@@ -39,7 +73,8 @@
       "namespace": "MF",
       "score": 0.85,
       "evidence": [
-        "structural_motif"
+        "structural_motif",
+        "embedding_similarity"
       ],
       "saliency_residues": [
         29,
@@ -71,6 +106,69 @@
       "score": 0.85,
       "evidence": [
         "structural_motif"
+      ],
+      "saliency_residues": [
+        29,
+        35,
+        37,
+        38,
+        40,
+        43,
+        44,
+        46,
+        47,
+        48,
+        53,
+        54,
+        56,
+        57,
+        58,
+        60,
+        61,
+        66,
+        67,
+        68
+      ]
+    },
+    {
+      "go_id": "GO:0008237",
+      "go_name": "metallopeptidase activity",
+      "namespace": "MF",
+      "score": 0.827,
+      "evidence": [
+        "embedding_similarity"
+      ],
+      "saliency_residues": [
+        29,
+        35,
+        37,
+        38,
+        40,
+        43,
+        44,
+        46,
+        47,
+        48,
+        53,
+        54,
+        56,
+        57,
+        58,
+        60,
+        61,
+        66,
+        67,
+        68
+      ]
+    },
+    {
+      "go_id": "GO:0008233",
+      "go_name": "peptidase activity",
+      "namespace": "MF",
+      "score": 0.804,
+      "evidence": [
+        "structural_motif",
+        "embedding_similarity"
       ],
       "saliency_residues": [
         29,
@@ -128,37 +226,6 @@
       ]
     },
     {
-      "go_id": "GO:0008233",
-      "go_name": "peptidase activity",
-      "namespace": "MF",
-      "score": 0.8,
-      "evidence": [
-        "structural_motif"
-      ],
-      "saliency_residues": [
-        29,
-        35,
-        37,
-        38,
-        40,
-        43,
-        44,
-        46,
-        47,
-        48,
-        53,
-        54,
-        56,
-        57,
-        58,
-        60,
-        61,
-        66,
-        67,
-        68
-      ]
-    },
-    {
       "go_id": "GO:0005525",
       "go_name": "GTP binding",
       "namespace": "MF",
@@ -190,13 +257,12 @@
       ]
     },
     {
-      "go_id": "GO:0042802",
-      "go_name": "identical protein binding",
+      "go_id": "GO:0008241",
+      "go_name": "peptidyl-dipeptidase activity",
       "namespace": "MF",
-      "score": 0.75,
+      "score": 0.781,
       "evidence": [
-        "experimental_homolog",
-        "domain_annotation"
+        "embedding_similarity"
       ],
       "saliency_residues": [
         29,
@@ -222,13 +288,46 @@
       ]
     },
     {
-      "go_id": "GO:0061630",
-      "go_name": "ubiquitin protein ligase activity",
+      "go_id": "GO:0003700",
+      "go_name": "DNA-binding transcription factor activity",
+      "namespace": "MF",
+      "score": 0.764,
+      "evidence": [
+        "structural_motif",
+        "embedding_similarity"
+      ],
+      "saliency_residues": [
+        29,
+        35,
+        37,
+        38,
+        40,
+        43,
+        44,
+        46,
+        47,
+        48,
+        53,
+        54,
+        56,
+        57,
+        58,
+        60,
+        61,
+        66,
+        67,
+        68
+      ]
+    },
+    {
+      "go_id": "GO:0042802",
+      "go_name": "identical protein binding",
       "namespace": "MF",
       "score": 0.75,
       "evidence": [
         "experimental_homolog",
-        "domain_annotation"
+        "domain_annotation",
+        "embedding_similarity"
       ],
       "saliency_residues": [
         29,
@@ -260,6 +359,7 @@
       "score": 0.75,
       "evidence": [
         "structural_motif",
+        "embedding_similarity",
         "sequence_composition"
       ],
       "saliency_residues": [
@@ -377,102 +477,42 @@
         67,
         68
       ]
-    },
-    {
-      "go_id": "GO:0005654",
-      "go_name": "C:nucleoplasm",
-      "namespace": "MF",
-      "score": 0.7,
-      "evidence": [
-        "experimental_homolog"
-      ],
-      "saliency_residues": [
-        29,
-        35,
-        37,
-        38,
-        40,
-        43,
-        44,
-        46,
-        47,
-        48,
-        53,
-        54,
-        56,
-        57,
-        58,
-        60,
-        61,
-        66,
-        67,
-        68
-      ]
-    },
-    {
-      "go_id": "GO:0002039",
-      "go_name": "F:p53 binding",
-      "namespace": "MF",
-      "score": 0.7,
-      "evidence": [
-        "experimental_homolog"
-      ],
-      "saliency_residues": [
-        29,
-        35,
-        37,
-        38,
-        40,
-        43,
-        44,
-        46,
-        47,
-        48,
-        53,
-        54,
-        56,
-        57,
-        58,
-        60,
-        61,
-        66,
-        67,
-        68
-      ]
-    },
-    {
-      "go_id": "GO:0016567",
-      "go_name": "P:protein ubiquitination",
-      "namespace": "MF",
-      "score": 0.7,
-      "evidence": [
-        "experimental_homolog"
-      ],
-      "saliency_residues": [
-        29,
-        35,
-        37,
-        38,
-        40,
-        43,
-        44,
-        46,
-        47,
-        48,
-        53,
-        54,
-        56,
-        57,
-        58,
-        60,
-        61,
-        66,
-        67,
-        68
-      ]
     }
   ],
   "bp_predictions": [
+    {
+      "go_id": "GO:0043066",
+      "go_name": "negative regulation of apoptotic process",
+      "namespace": "BP",
+      "score": 0.8,
+      "evidence": [
+        "experimental_homolog",
+        "domain_annotation",
+        "embedding_similarity"
+      ],
+      "saliency_residues": [
+        29,
+        35,
+        37,
+        38,
+        40,
+        43,
+        44,
+        46,
+        47,
+        48,
+        53,
+        54,
+        56,
+        57,
+        58,
+        60,
+        61,
+        66,
+        67,
+        68
+      ]
+    },
     {
       "go_id": "GO:0006468",
       "go_name": "protein phosphorylation",
@@ -505,13 +545,12 @@
       ]
     },
     {
-      "go_id": "GO:0043066",
-      "go_name": "negative regulation of apoptotic process",
+      "go_id": "GO:0007596",
+      "go_name": "blood coagulation",
       "namespace": "BP",
-      "score": 0.75,
+      "score": 0.756,
       "evidence": [
-        "experimental_homolog",
-        "domain_annotation"
+        "embedding_similarity"
       ],
       "saliency_residues": [
         29,
@@ -543,7 +582,8 @@
       "score": 0.75,
       "evidence": [
         "experimental_homolog",
-        "domain_annotation"
+        "domain_annotation",
+        "embedding_similarity"
       ],
       "saliency_residues": [
         29,
@@ -571,6 +611,38 @@
     {
       "go_id": "GO:0006915",
       "go_name": "P:apoptotic process",
+      "namespace": "BP",
+      "score": 0.716,
+      "evidence": [
+        "experimental_homolog",
+        "embedding_similarity"
+      ],
+      "saliency_residues": [
+        29,
+        35,
+        37,
+        38,
+        40,
+        43,
+        44,
+        46,
+        47,
+        48,
+        53,
+        54,
+        56,
+        57,
+        58,
+        60,
+        61,
+        66,
+        67,
+        68
+      ]
+    },
+    {
+      "go_id": "GO:0016567",
+      "go_name": "P:protein ubiquitination",
       "namespace": "BP",
       "score": 0.7,
       "evidence": [
@@ -786,103 +858,72 @@
       ]
     },
     {
+      "go_id": "GO:0006508",
+      "go_name": "proteolysis",
+      "namespace": "BP",
+      "score": 0.689,
+      "evidence": [
+        "embedding_similarity"
+      ],
+      "saliency_residues": [
+        29,
+        35,
+        37,
+        38,
+        40,
+        43,
+        44,
+        46,
+        47,
+        48,
+        53,
+        54,
+        56,
+        57,
+        58,
+        60,
+        61,
+        66,
+        67,
+        68
+      ]
+    },
+    {
+      "go_id": "GO:0006974",
+      "go_name": "cellular response to DNA damage stimulus",
+      "namespace": "BP",
+      "score": 0.668,
+      "evidence": [
+        "embedding_similarity"
+      ],
+      "saliency_residues": [
+        29,
+        35,
+        37,
+        38,
+        40,
+        43,
+        44,
+        46,
+        47,
+        48,
+        53,
+        54,
+        56,
+        57,
+        58,
+        60,
+        61,
+        66,
+        67,
+        68
+      ]
+    },
+    {
       "go_id": "GO:0006351",
       "go_name": "DNA-templated transcription",
       "namespace": "BP",
       "score": 0.65,
-      "evidence": [
-        "structural_motif"
-      ],
-      "saliency_residues": [
-        29,
-        35,
-        37,
-        38,
-        40,
-        43,
-        44,
-        46,
-        47,
-        48,
-        53,
-        54,
-        56,
-        57,
-        58,
-        60,
-        61,
-        66,
-        67,
-        68
-      ]
-    },
-    {
-      "go_id": "GO:0045944",
-      "go_name": "positive regulation of transcription by RNA pol II",
-      "namespace": "BP",
-      "score": 0.6,
-      "evidence": [
-        "structural_motif"
-      ],
-      "saliency_residues": [
-        29,
-        35,
-        37,
-        38,
-        40,
-        43,
-        44,
-        46,
-        47,
-        48,
-        53,
-        54,
-        56,
-        57,
-        58,
-        60,
-        61,
-        66,
-        67,
-        68
-      ]
-    },
-    {
-      "go_id": "GO:0007173",
-      "go_name": "epidermal growth factor receptor signaling pathway",
-      "namespace": "BP",
-      "score": 0.6,
-      "evidence": [
-        "structural_motif"
-      ],
-      "saliency_residues": [
-        29,
-        35,
-        37,
-        38,
-        40,
-        43,
-        44,
-        46,
-        47,
-        48,
-        53,
-        54,
-        56,
-        57,
-        58,
-        60,
-        61,
-        66,
-        67,
-        68
-      ]
-    },
-    {
-      "go_id": "GO:0008283",
-      "go_name": "cell population proliferation",
-      "namespace": "BP",
-      "score": 0.6,
       "evidence": [
         "structural_motif"
       ],
@@ -915,12 +956,76 @@
       "go_id": "GO:0005634",
       "go_name": "nucleus",
       "namespace": "CC",
-      "score": 0.8,
+      "score": 0.859,
       "evidence": [
         "experimental_homolog",
         "domain_annotation",
         "ai_esm2",
-        "structural_motif"
+        "structural_motif",
+        "embedding_similarity"
+      ],
+      "saliency_residues": [
+        29,
+        35,
+        37,
+        38,
+        40,
+        43,
+        44,
+        46,
+        47,
+        48,
+        53,
+        54,
+        56,
+        57,
+        58,
+        60,
+        61,
+        66,
+        67,
+        68
+      ]
+    },
+    {
+      "go_id": "GO:0016020",
+      "go_name": "membrane",
+      "namespace": "CC",
+      "score": 0.781,
+      "evidence": [
+        "structural_motif",
+        "embedding_similarity"
+      ],
+      "saliency_residues": [
+        29,
+        35,
+        37,
+        38,
+        40,
+        43,
+        44,
+        46,
+        47,
+        48,
+        53,
+        54,
+        56,
+        57,
+        58,
+        60,
+        61,
+        66,
+        67,
+        68
+      ]
+    },
+    {
+      "go_id": "GO:0005576",
+      "go_name": "extracellular space",
+      "namespace": "CC",
+      "score": 0.709,
+      "evidence": [
+        "embedding_similarity"
       ],
       "saliency_residues": [
         29,
@@ -952,6 +1057,7 @@
       "score": 0.7,
       "evidence": [
         "experimental_homolog",
+        "embedding_similarity",
         "sequence_baseline"
       ],
       "saliency_residues": [
@@ -1136,40 +1242,10 @@
       "go_id": "GO:0043234",
       "go_name": "protein complex",
       "namespace": "CC",
-      "score": 0.55,
+      "score": 0.621,
       "evidence": [
-        "structural_motif"
-      ],
-      "saliency_residues": [
-        29,
-        35,
-        37,
-        38,
-        40,
-        43,
-        44,
-        46,
-        47,
-        48,
-        53,
-        54,
-        56,
-        57,
-        58,
-        60,
-        61,
-        66,
-        67,
-        68
-      ]
-    },
-    {
-      "go_id": "GO:0016020",
-      "go_name": "membrane",
-      "namespace": "CC",
-      "score": 0.55,
-      "evidence": [
-        "structural_motif"
+        "structural_motif",
+        "embedding_similarity"
       ],
       "saliency_residues": [
         29,
@@ -1195,8 +1271,8 @@
       ]
     }
   ],
-  "top_mf": "serine-type endopeptidase activity",
-  "top_bp": "protein phosphorylation",
+  "top_mf": "ubiquitin protein ligase activity",
+  "top_bp": "negative regulation of apoptotic process",
   "top_cc": "nucleus",
-  "n_predictions": 38
+  "n_predictions": 40
 }

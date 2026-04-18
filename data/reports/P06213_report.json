@@ -4,69 +4,56 @@
   "protein_name": "Insulin receptor",
   "organism": "Homo sapiens",
   "sequence_length": 1382,
-  "generated_at": "2026-04-16 21:50:39",
+  "generated_at": "2026-04-17 22:27:25",
   "top_function": "Receptor tyrosine kinase which mediates the pleiotropic actions of insulin. Binding of insulin leads to phosphorylation of several intracellular substrates, including, insulin receptor substrates (IRS",
-  "is_enzyme": true,
-  "ec_number": "3.4.24",
-  "subcellular_location": "nucleus",
+  "is_enzyme": false,
+  "ec_number": "3.4.21",
+  "subcellular_location": "membrane",
   "go_terms_mf": [
-    {
-      "go_id": "GO:0006468",
-      "go_name": "protein phosphorylation",
-      "namespace": "MF",
-      "weighted_score": 23.5,
-      "n_sources": 2,
-      "sources": [
-        "experimental_homolog",
-        "domain_annotation"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
     {
       "go_id": "GO:0005524",
       "go_name": "ATP binding",
       "namespace": "MF",
-      "weighted_score": 20.0,
+      "weighted_score": 17.0,
       "n_sources": 2,
       "sources": [
         "experimental_homolog",
         "domain_annotation"
       ],
       "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0004714",
-      "go_name": "transmembrane receptor protein tyrosine kinase activity",
-      "namespace": "MF",
-      "weighted_score": 13.0,
-      "n_sources": 2,
-      "sources": [
-        "experimental_homolog",
-        "domain_annotation"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0007169",
-      "go_name": "cell surface receptor protein tyrosine kinase signaling pathway",
-      "namespace": "MF",
-      "weighted_score": 13.0,
-      "n_sources": 2,
-      "sources": [
-        "experimental_homolog",
-        "domain_annotation"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
+      "top_evidence": "domain_annotation"
     },
     {
       "go_id": "GO:0004672",
       "go_name": "protein kinase activity",
       "namespace": "MF",
-      "weighted_score": 11.25,
+      "weighted_score": 13.05,
+      "n_sources": 2,
+      "sources": [
+        "domain_annotation",
+        "structural_motif"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0004714",
+      "go_name": "transmembrane receptor protein tyrosine kinase activity",
+      "namespace": "MF",
+      "weighted_score": 10.0,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "domain_annotation"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "domain_annotation"
+    },
+    {
+      "go_id": "GO:0005515",
+      "go_name": "protein binding",
+      "namespace": "MF",
+      "weighted_score": 7.0,
       "n_sources": 1,
       "sources": [
         "domain_annotation"
@@ -78,66 +65,119 @@
       "go_id": "GO:0043560",
       "go_name": "insulin receptor substrate binding",
       "namespace": "MF",
-      "weighted_score": 9.5,
+      "weighted_score": 6.5,
       "n_sources": 2,
       "sources": [
         "experimental_homolog",
         "domain_annotation"
       ],
       "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
+      "top_evidence": "domain_annotation"
     },
     {
       "go_id": "GO:0043548",
       "go_name": "phosphatidylinositol 3-kinase binding",
       "namespace": "MF",
-      "weighted_score": 9.5,
+      "weighted_score": 6.5,
       "n_sources": 2,
       "sources": [
         "experimental_homolog",
         "domain_annotation"
       ],
       "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0046777",
-      "go_name": "protein autophosphorylation",
-      "namespace": "MF",
-      "weighted_score": 9.5,
-      "n_sources": 2,
-      "sources": [
-        "experimental_homolog",
-        "domain_annotation"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
+      "top_evidence": "domain_annotation"
     },
     {
       "go_id": "GO:0004713",
       "go_name": "protein tyrosine kinase activity",
       "namespace": "MF",
-      "weighted_score": 9.5,
+      "weighted_score": 6.5,
       "n_sources": 2,
       "sources": [
         "experimental_homolog",
         "domain_annotation"
       ],
       "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
+      "top_evidence": "domain_annotation"
     },
     {
-      "go_id": "GO:0005515",
-      "go_name": "protein binding",
+      "go_id": "GO:0046872",
+      "go_name": "metal ion binding",
       "namespace": "MF",
-      "weighted_score": 9.1,
+      "weighted_score": 4.66,
+      "n_sources": 3,
+      "sources": [
+        "structural_motif",
+        "embedding_similarity",
+        "sequence_composition"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "sequence_composition"
+    },
+    {
+      "go_id": "GO:0004252",
+      "go_name": "serine-type endopeptidase activity",
+      "namespace": "MF",
+      "weighted_score": 3.52,
       "n_sources": 2,
       "sources": [
-        "domain_annotation",
-        "ai_esm2"
+        "structural_motif",
+        "embedding_similarity"
       ],
-      "confidence": "HIGH",
-      "top_evidence": "ai_esm2"
+      "confidence": "MEDIUM",
+      "top_evidence": "embedding_similarity"
+    },
+    {
+      "go_id": "GO:0003677",
+      "go_name": "DNA binding",
+      "namespace": "MF",
+      "weighted_score": 3.4,
+      "n_sources": 2,
+      "sources": [
+        "structural_motif",
+        "embedding_similarity"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "embedding_similarity"
+    },
+    {
+      "go_id": "GO:0008233",
+      "go_name": "peptidase activity",
+      "namespace": "MF",
+      "weighted_score": 3.33,
+      "n_sources": 2,
+      "sources": [
+        "structural_motif",
+        "embedding_similarity"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "embedding_similarity"
+    },
+    {
+      "go_id": "GO:0008270",
+      "go_name": "zinc ion binding",
+      "namespace": "MF",
+      "weighted_score": 3.2,
+      "n_sources": 2,
+      "sources": [
+        "structural_motif",
+        "embedding_similarity"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "embedding_similarity"
+    },
+    {
+      "go_id": "GO:0003700",
+      "go_name": "DNA-binding transcription factor activity",
+      "namespace": "MF",
+      "weighted_score": 3.1,
+      "n_sources": 2,
+      "sources": [
+        "structural_motif",
+        "embedding_similarity"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "embedding_similarity"
     },
     {
       "go_id": "GO:0030424",
@@ -162,56 +202,192 @@
       ],
       "confidence": "MEDIUM",
       "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0005901",
-      "go_name": "C:caveola",
-      "namespace": "MF",
-      "weighted_score": 3.0,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "MEDIUM",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0043559",
-      "go_name": "F:insulin binding",
-      "namespace": "MF",
-      "weighted_score": 3.0,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "MEDIUM",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0042802",
-      "go_name": "F:identical protein binding",
-      "namespace": "MF",
-      "weighted_score": 3.0,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "MEDIUM",
-      "top_evidence": "experimental_homolog"
     }
   ],
   "go_terms_bp": [
     {
-      "go_id": "GO:0006351",
-      "go_name": "DNA-templated transcription",
+      "go_id": "GO:0006468",
+      "go_name": "protein phosphorylation",
       "namespace": "BP",
-      "weighted_score": 1.3,
+      "weighted_score": 25.3,
+      "n_sources": 3,
+      "sources": [
+        "experimental_homolog",
+        "domain_annotation",
+        "structural_motif"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0007169",
+      "go_name": "cell surface receptor protein tyrosine kinase signaling pathway",
+      "namespace": "BP",
+      "weighted_score": 13.0,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "domain_annotation"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0046777",
+      "go_name": "protein autophosphorylation",
+      "namespace": "BP",
+      "weighted_score": 9.5,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "domain_annotation"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0008286",
+      "go_name": "P:insulin receptor signaling pathway",
+      "namespace": "BP",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0007596",
+      "go_name": "blood coagulation",
+      "namespace": "BP",
+      "weighted_score": 1.57,
+      "n_sources": 1,
+      "sources": [
+        "embedding_similarity"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "embedding_similarity"
+    },
+    {
+      "go_id": "GO:0015671",
+      "go_name": "oxygen transport",
+      "namespace": "BP",
+      "weighted_score": 1.55,
+      "n_sources": 1,
+      "sources": [
+        "embedding_similarity"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "embedding_similarity"
+    },
+    {
+      "go_id": "GO:0019430",
+      "go_name": "removal of superoxide radicals",
+      "namespace": "BP",
+      "weighted_score": 1.55,
+      "n_sources": 1,
+      "sources": [
+        "embedding_similarity"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "embedding_similarity"
+    },
+    {
+      "go_id": "GO:0043066",
+      "go_name": "negative regulation of apoptotic process",
+      "namespace": "BP",
+      "weighted_score": 1.52,
+      "n_sources": 1,
+      "sources": [
+        "embedding_similarity"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "embedding_similarity"
+    },
+    {
+      "go_id": "GO:0007165",
+      "go_name": "signal transduction",
+      "namespace": "BP",
+      "weighted_score": 1.5,
       "n_sources": 1,
       "sources": [
         "structural_motif"
       ],
       "confidence": "LOW",
       "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0006508",
+      "go_name": "proteolysis",
+      "namespace": "BP",
+      "weighted_score": 1.45,
+      "n_sources": 1,
+      "sources": [
+        "embedding_similarity"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "embedding_similarity"
+    },
+    {
+      "go_id": "GO:0006915",
+      "go_name": "apoptotic process",
+      "namespace": "BP",
+      "weighted_score": 1.45,
+      "n_sources": 1,
+      "sources": [
+        "embedding_similarity"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "embedding_similarity"
+    },
+    {
+      "go_id": "GO:0006281",
+      "go_name": "DNA repair",
+      "namespace": "BP",
+      "weighted_score": 1.4,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0018108",
+      "go_name": "peptidyl-tyrosine phosphorylation",
+      "namespace": "BP",
+      "weighted_score": 1.4,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0006801",
+      "go_name": "superoxide metabolic process",
+      "namespace": "BP",
+      "weighted_score": 1.37,
+      "n_sources": 1,
+      "sources": [
+        "embedding_similarity"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "embedding_similarity"
+    },
+    {
+      "go_id": "GO:0006974",
+      "go_name": "cellular response to DNA damage stimulus",
+      "namespace": "BP",
+      "weighted_score": 1.35,
+      "n_sources": 1,
+      "sources": [
+        "embedding_similarity"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "embedding_similarity"
     }
   ],
   "go_terms_cc": [
@@ -219,11 +395,13 @@
       "go_id": "GO:0016020",
       "go_name": "membrane",
       "namespace": "CC",
-      "weighted_score": 13.0,
-      "n_sources": 2,
+      "weighted_score": 16.59,
+      "n_sources": 4,
       "sources": [
         "experimental_homolog",
-        "domain_annotation"
+        "domain_annotation",
+        "structural_motif",
+        "embedding_similarity"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -304,13 +482,14 @@
       "go_id": "GO:0005634",
       "go_name": "nucleus",
       "namespace": "CC",
-      "weighted_score": 3.04,
-      "n_sources": 2,
+      "weighted_score": 5.05,
+      "n_sources": 3,
       "sources": [
         "ai_esm2",
-        "structural_motif"
+        "structural_motif",
+        "embedding_similarity"
       ],
-      "confidence": "MEDIUM",
+      "confidence": "HIGH",
       "top_evidence": "ai_esm2"
     },
     {
@@ -340,65 +519,90 @@
   ],
   "active_sites": [
     {
-      "residue_number": 35,
+      "residue_number": 654,
       "chain_id": "A",
-      "one_letter": "C",
-      "three_letter": "CYS",
-      "conservation": 7.5,
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
       "is_conserved": true,
       "is_buried": true,
-      "sasa": 15.15,
-      "plddt": 93.06,
-      "motifs": [
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster"
-      ],
-      "evidence_score": 9,
-      "confidence": "HIGH",
-      "coords": [
-        14.292,
-        35.546,
-        -3.776
-      ]
-    },
-    {
-      "residue_number": 53,
-      "chain_id": "A",
-      "one_letter": "C",
-      "three_letter": "CYS",
-      "conservation": 7.5,
-      "is_conserved": true,
-      "is_buried": true,
-      "sasa": 0.45,
-      "plddt": 94.12,
-      "motifs": [
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster"
-      ],
-      "evidence_score": 9,
-      "confidence": "HIGH",
-      "coords": [
-        16.158,
-        37.633,
-        -8.658
-      ]
-    },
-    {
-      "residue_number": 153,
-      "chain_id": "A",
-      "one_letter": "C",
-      "three_letter": "CYS",
-      "conservation": 7.5,
-      "is_conserved": true,
-      "is_buried": true,
-      "sasa": 18.63,
+      "sasa": 5.47,
       "plddt": 94.56,
       "motifs": [
+        "cysteine_protease_dyad",
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 9,
+      "confidence": "HIGH",
+      "coords": [
+        4.299,
+        -30.147,
+        5.912
+      ],
+      "domain_context": "receptor tyrosine kinase"
+    },
+    {
+      "residue_number": 825,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 0.0,
+      "plddt": 93.12,
+      "motifs": [
+        "cysteine_protease_dyad",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 9,
+      "confidence": "HIGH",
+      "coords": [
+        -1.098,
+        -30.907,
+        5.692
+      ],
+      "domain_context": "receptor tyrosine kinase"
+    },
+    {
+      "residue_number": 868,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 11.88,
+      "plddt": 95.06,
+      "motifs": [
+        "cysteine_protease_dyad",
         "zinc_binding_cluster",
         "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "acid_base_pair"
+      ],
+      "evidence_score": 9,
+      "confidence": "HIGH",
+      "coords": [
+        18.766,
+        -44.368,
+        -51.272
+      ],
+      "domain_context": "receptor tyrosine kinase"
+    },
+    {
+      "residue_number": 911,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 0.37,
+      "plddt": 93.38,
+      "motifs": [
+        "cysteine_protease_dyad",
         "zinc_binding_cluster",
         "zinc_binding_cluster",
         "zinc_binding_cluster"
@@ -406,10 +610,391 @@
       "evidence_score": 9,
       "confidence": "HIGH",
       "coords": [
-        10.295,
-        20.144,
-        -30.739
-      ]
+        15.001,
+        -41.578,
+        -48.029
+      ],
+      "domain_context": "receptor tyrosine kinase"
+    },
+    {
+      "residue_number": 1083,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 9.94,
+      "plddt": 87.69,
+      "motifs": [
+        "cysteine_protease_dyad",
+        "cysteine_protease_dyad",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 9,
+      "confidence": "HIGH",
+      "coords": [
+        -42.895,
+        10.66,
+        -20.864
+      ],
+      "domain_context": "protein kinase-like (pk-like)"
+    },
+    {
+      "residue_number": 1085,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 0.99,
+      "plddt": 95.0,
+      "motifs": [
+        "serine_protease_triad",
+        "cysteine_protease_dyad",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 9,
+      "confidence": "HIGH",
+      "coords": [
+        -44.56,
+        7.716,
+        -16.429
+      ],
+      "domain_context": "protein kinase-like (pk-like)"
+    },
+    {
+      "residue_number": 1157,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 14.03,
+      "plddt": 85.56,
+      "motifs": [
+        "zinc_binding_cluster",
+        "acid_base_pair",
+        "acid_base_pair",
+        "hrd_catalytic_loop"
+      ],
+      "evidence_score": 9,
+      "confidence": "HIGH",
+      "coords": [
+        -32.511,
+        0.923,
+        -16.67
+      ],
+      "domain_context": "protein kinase-like (pk-like)"
+    },
+    {
+      "residue_number": 339,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 20.18,
+      "plddt": 86.31,
+      "motifs": [
+        "cysteine_protease_dyad",
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        0.903,
+        22.267,
+        20.632
+      ],
+      "domain_context": "receptor tyrosine kinase"
+    },
+    {
+      "residue_number": 340,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 127.06,
+      "plddt": 84.31,
+      "motifs": [
+        "cysteine_protease_dyad",
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        -0.467,
+        25.811,
+        21.069
+      ],
+      "domain_context": "receptor tyrosine kinase"
+    },
+    {
+      "residue_number": 444,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 21.9,
+      "plddt": 91.38,
+      "motifs": [
+        "serine_protease_triad",
+        "acid_base_pair"
+      ],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        -3.969,
+        5.108,
+        34.92
+      ],
+      "domain_context": "receptor tyrosine kinase"
+    },
+    {
+      "residue_number": 1084,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 49.56,
+      "plddt": 92.56,
+      "motifs": [
+        "cysteine_protease_dyad",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        -45.667,
+        10.964,
+        -18.224
+      ],
+      "domain_context": "protein kinase-like (pk-like)"
+    },
+    {
+      "residue_number": 1295,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 106.69,
+      "plddt": 89.44,
+      "motifs": [
+        "serine_protease_triad"
+      ],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        -58.407,
+        3.57,
+        -15.457
+      ],
+      "domain_context": "protein kinase domain profile"
+    },
+    {
+      "residue_number": 1145,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 0.0,
+      "plddt": 96.69,
+      "motifs": [
+        "serine_protease_triad",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "acid_base_pair"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        -45.388,
+        2.282,
+        -20.17
+      ],
+      "domain_context": "protein kinase-like (pk-like)"
+    },
+    {
+      "residue_number": 1159,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 2.12,
+      "plddt": 85.94,
+      "motifs": [
+        "zinc_binding_cluster",
+        "acid_base_pair",
+        "acid_base_pair",
+        "hrd_catalytic_loop"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        -32.046,
+        -1.463,
+        -11.703
+      ],
+      "domain_context": "protein kinase-like (pk-like)"
+    },
+    {
+      "residue_number": 1179,
+      "chain_id": "A",
+      "one_letter": "G",
+      "three_letter": "GLY",
+      "conservation": 4.0,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 3.65,
+      "plddt": 50.5,
+      "motifs": [
+        "dfg_loop"
+      ],
+      "evidence_score": 4,
+      "confidence": "MEDIUM",
+      "coords": [
+        -28.112,
+        6.813,
+        -10.573
+      ],
+      "domain_context": "protein kinase-like (pk-like)"
+    },
+    {
+      "residue_number": 440,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 48.48,
+      "plddt": 85.88,
+      "motifs": [
+        "serine_protease_triad",
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -8.729,
+        2.008,
+        33.913
+      ],
+      "domain_context": "receptor tyrosine kinase"
+    },
+    {
+      "residue_number": 442,
+      "chain_id": "A",
+      "one_letter": "S",
+      "three_letter": "SER",
+      "conservation": 4.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 98.22,
+      "plddt": 85.31,
+      "motifs": [
+        "serine_protease_triad"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -5.861,
+        0.204,
+        38.161
+      ],
+      "domain_context": "receptor tyrosine kinase"
+    },
+    {
+      "residue_number": 1158,
+      "chain_id": "A",
+      "one_letter": "R",
+      "three_letter": "ARG",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 118.78,
+      "plddt": 84.38,
+      "motifs": [
+        "acid_base_pair",
+        "acid_base_pair",
+        "hrd_catalytic_loop"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -30.383,
+        -1.968,
+        -15.156
+      ],
+      "domain_context": "protein kinase-like (pk-like)"
+    },
+    {
+      "residue_number": 1293,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 42.17,
+      "plddt": 89.62,
+      "motifs": [
+        "serine_protease_triad",
+        "acid_base_pair"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -58.516,
+        -3.318,
+        -16.847
+      ],
+      "domain_context": "receptor tyrosine kinase"
+    },
+    {
+      "residue_number": 1297,
+      "chain_id": "A",
+      "one_letter": "S",
+      "three_letter": "SER",
+      "conservation": 4.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 47.98,
+      "plddt": 90.0,
+      "motifs": [
+        "serine_protease_triad"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -57.566,
+        8.391,
+        -18.173
+      ],
+      "domain_context": "protein kinase domain profile"
     },
     {
       "residue_number": 186,
@@ -436,31 +1021,8 @@
         20.609,
         22.861,
         -35.524
-      ]
-    },
-    {
-      "residue_number": 196,
-      "chain_id": "A",
-      "one_letter": "C",
-      "three_letter": "CYS",
-      "conservation": 7.5,
-      "is_conserved": true,
-      "is_buried": true,
-      "sasa": 12.54,
-      "plddt": 88.69,
-      "motifs": [
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster"
       ],
-      "evidence_score": 9,
-      "confidence": "HIGH",
-      "coords": [
-        27.305,
-        22.635,
-        -32.84
-      ]
+      "domain_context": "growth factor receptor domain"
     },
     {
       "residue_number": 209,
@@ -487,7 +1049,8 @@
         21.083,
         22.22,
         -29.905
-      ]
+      ],
+      "domain_context": "growth factor receptor domain"
     },
     {
       "residue_number": 223,
@@ -513,33 +1076,8 @@
         36.317,
         19.807,
         -16.785
-      ]
-    },
-    {
-      "residue_number": 228,
-      "chain_id": "A",
-      "one_letter": "C",
-      "three_letter": "CYS",
-      "conservation": 7.5,
-      "is_conserved": true,
-      "is_buried": true,
-      "sasa": 19.78,
-      "plddt": 94.56,
-      "motifs": [
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster"
       ],
-      "evidence_score": 9,
-      "confidence": "HIGH",
-      "coords": [
-        34.356,
-        25.845,
-        -19.185
-      ]
+      "domain_context": "growth factor receptor domain"
     },
     {
       "residue_number": 235,
@@ -570,7 +1108,8 @@
         36.327,
         26.409,
         -14.449
-      ]
+      ],
+      "domain_context": "growth factor receptor domain"
     },
     {
       "residue_number": 239,
@@ -600,126 +1139,8 @@
         32.193,
         26.023,
         -9.927
-      ]
-    },
-    {
-      "residue_number": 243,
-      "chain_id": "A",
-      "one_letter": "C",
-      "three_letter": "CYS",
-      "conservation": 7.5,
-      "is_conserved": true,
-      "is_buried": true,
-      "sasa": 8.91,
-      "plddt": 94.81,
-      "motifs": [
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster"
       ],
-      "evidence_score": 9,
-      "confidence": "HIGH",
-      "coords": [
-        32.473,
-        30.654,
-        -15.235
-      ]
-    },
-    {
-      "residue_number": 252,
-      "chain_id": "A",
-      "one_letter": "C",
-      "three_letter": "CYS",
-      "conservation": 7.5,
-      "is_conserved": true,
-      "is_buried": true,
-      "sasa": 5.18,
-      "plddt": 95.0,
-      "motifs": [
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster"
-      ],
-      "evidence_score": 9,
-      "confidence": "HIGH",
-      "coords": [
-        31.895,
-        30.829,
-        -11.273
-      ]
-    },
-    {
-      "residue_number": 255,
-      "chain_id": "A",
-      "one_letter": "C",
-      "three_letter": "CYS",
-      "conservation": 7.5,
-      "is_conserved": true,
-      "is_buried": true,
-      "sasa": 2.69,
-      "plddt": 95.69,
-      "motifs": [
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster"
-      ],
-      "evidence_score": 9,
-      "confidence": "HIGH",
-      "coords": [
-        28.671,
-        27.151,
-        -6.946
-      ]
-    },
-    {
-      "residue_number": 264,
-      "chain_id": "A",
-      "one_letter": "C",
-      "three_letter": "CYS",
-      "conservation": 7.5,
-      "is_conserved": true,
-      "is_buried": true,
-      "sasa": 2.38,
-      "plddt": 96.5,
-      "motifs": [
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster"
-      ],
-      "evidence_score": 9,
-      "confidence": "HIGH",
-      "coords": [
-        32.445,
-        29.096,
-        -3.932
-      ]
-    },
-    {
-      "residue_number": 268,
-      "chain_id": "A",
-      "one_letter": "C",
-      "three_letter": "CYS",
-      "conservation": 7.5,
-      "is_conserved": true,
-      "is_buried": true,
-      "sasa": 9.46,
-      "plddt": 94.62,
-      "motifs": [
-        "zinc_binding_cluster",
-        "zinc_binding_cluster"
-      ],
-      "evidence_score": 9,
-      "confidence": "HIGH",
-      "coords": [
-        30.841,
-        26.279,
-        5.367
-      ]
+      "domain_context": "growth factor receptor domain"
     },
     {
       "residue_number": 280,
@@ -742,31 +1163,8 @@
         26.658,
         29.623,
         4.157
-      ]
-    },
-    {
-      "residue_number": 286,
-      "chain_id": "A",
-      "one_letter": "C",
-      "three_letter": "CYS",
-      "conservation": 7.5,
-      "is_conserved": true,
-      "is_buried": true,
-      "sasa": 0.0,
-      "plddt": 90.69,
-      "motifs": [
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster"
       ],
-      "evidence_score": 9,
-      "confidence": "HIGH",
-      "coords": [
-        19.576,
-        31.858,
-        11.747
-      ]
+      "domain_context": "growth factor receptor domain"
     },
     {
       "residue_number": 290,
@@ -793,31 +1191,8 @@
         13.894,
         32.125,
         14.625
-      ]
-    },
-    {
-      "residue_number": 311,
-      "chain_id": "A",
-      "one_letter": "C",
-      "three_letter": "CYS",
-      "conservation": 7.5,
-      "is_conserved": true,
-      "is_buried": true,
-      "sasa": 3.13,
-      "plddt": 93.38,
-      "motifs": [
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster"
       ],
-      "evidence_score": 9,
-      "confidence": "HIGH",
-      "coords": [
-        20.578,
-        26.071,
-        9.964
-      ]
+      "domain_context": "growth factor receptor domain"
     },
     {
       "residue_number": 328,
@@ -841,241 +1216,62 @@
         18.964,
         20.721,
         18.736
-      ]
+      ],
+      "domain_context": "growth factor receptor domain"
     },
     {
-      "residue_number": 360,
+      "residue_number": 293,
       "chain_id": "A",
       "one_letter": "C",
       "three_letter": "CYS",
       "conservation": 7.5,
       "is_conserved": true,
       "is_buried": true,
-      "sasa": 0.42,
-      "plddt": 90.31,
+      "sasa": 18.54,
+      "plddt": 70.94,
       "motifs": [
-        "zinc_binding_cluster"
-      ],
-      "evidence_score": 9,
-      "confidence": "HIGH",
-      "coords": [
-        1.352,
-        16.457,
-        20.676
-      ]
-    },
-    {
-      "residue_number": 462,
-      "chain_id": "A",
-      "one_letter": "C",
-      "three_letter": "CYS",
-      "conservation": 7.5,
-      "is_conserved": true,
-      "is_buried": true,
-      "sasa": 17.56,
-      "plddt": 89.62,
-      "motifs": [
+        "cysteine_protease_dyad",
+        "cysteine_protease_dyad",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
         "zinc_binding_cluster",
         "zinc_binding_cluster",
         "zinc_binding_cluster"
       ],
-      "evidence_score": 9,
+      "evidence_score": 8,
       "confidence": "HIGH",
       "coords": [
-        -21.29,
-        4.166,
-        37.221
-      ]
+        8.335,
+        33.379,
+        13.952
+      ],
+      "domain_context": "growth factor receptor domain"
     },
     {
-      "residue_number": 654,
+      "residue_number": 212,
       "chain_id": "A",
       "one_letter": "H",
       "three_letter": "HIS",
       "conservation": 7.0,
       "is_conserved": true,
-      "is_buried": true,
-      "sasa": 5.47,
-      "plddt": 94.56,
-      "motifs": [
-        "cysteine_protease_dyad",
-        "zinc_binding_cluster"
-      ],
-      "evidence_score": 9,
-      "confidence": "HIGH",
-      "coords": [
-        4.299,
-        -30.147,
-        5.912
-      ]
-    },
-    {
-      "residue_number": 825,
-      "chain_id": "A",
-      "one_letter": "C",
-      "three_letter": "CYS",
-      "conservation": 7.5,
-      "is_conserved": true,
-      "is_buried": true,
-      "sasa": 0.0,
-      "plddt": 93.12,
-      "motifs": [
-        "cysteine_protease_dyad",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster"
-      ],
-      "evidence_score": 9,
-      "confidence": "HIGH",
-      "coords": [
-        -1.098,
-        -30.907,
-        5.692
-      ]
-    },
-    {
-      "residue_number": 868,
-      "chain_id": "A",
-      "one_letter": "H",
-      "three_letter": "HIS",
-      "conservation": 7.0,
-      "is_conserved": true,
-      "is_buried": true,
-      "sasa": 11.88,
-      "plddt": 95.06,
-      "motifs": [
-        "cysteine_protease_dyad",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "acid_base_pair"
-      ],
-      "evidence_score": 9,
-      "confidence": "HIGH",
-      "coords": [
-        18.766,
-        -44.368,
-        -51.272
-      ]
-    },
-    {
-      "residue_number": 911,
-      "chain_id": "A",
-      "one_letter": "C",
-      "three_letter": "CYS",
-      "conservation": 7.5,
-      "is_conserved": true,
-      "is_buried": true,
-      "sasa": 0.37,
-      "plddt": 93.38,
-      "motifs": [
-        "cysteine_protease_dyad",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster"
-      ],
-      "evidence_score": 9,
-      "confidence": "HIGH",
-      "coords": [
-        15.001,
-        -41.578,
-        -48.029
-      ]
-    },
-    {
-      "residue_number": 1083,
-      "chain_id": "A",
-      "one_letter": "C",
-      "three_letter": "CYS",
-      "conservation": 7.5,
-      "is_conserved": true,
-      "is_buried": true,
-      "sasa": 9.94,
-      "plddt": 87.69,
-      "motifs": [
-        "cysteine_protease_dyad",
-        "cysteine_protease_dyad",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster"
-      ],
-      "evidence_score": 9,
-      "confidence": "HIGH",
-      "coords": [
-        -42.895,
-        10.66,
-        -20.864
-      ]
-    },
-    {
-      "residue_number": 1085,
-      "chain_id": "A",
-      "one_letter": "H",
-      "three_letter": "HIS",
-      "conservation": 7.0,
-      "is_conserved": true,
-      "is_buried": true,
-      "sasa": 0.99,
-      "plddt": 95.0,
+      "is_buried": false,
+      "sasa": 105.56,
+      "plddt": 91.06,
       "motifs": [
         "serine_protease_triad",
         "cysteine_protease_dyad",
         "zinc_binding_cluster",
         "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "acid_base_pair",
-        "acid_base_pair"
-      ],
-      "evidence_score": 9,
-      "confidence": "HIGH",
-      "coords": [
-        -44.56,
-        7.716,
-        -16.429
-      ]
-    },
-    {
-      "residue_number": 1157,
-      "chain_id": "A",
-      "one_letter": "H",
-      "three_letter": "HIS",
-      "conservation": 7.0,
-      "is_conserved": true,
-      "is_buried": true,
-      "sasa": 14.03,
-      "plddt": 85.56,
-      "motifs": [
-        "zinc_binding_cluster",
-        "acid_base_pair",
-        "acid_base_pair",
-        "hrd_catalytic_loop"
-      ],
-      "evidence_score": 9,
-      "confidence": "HIGH",
-      "coords": [
-        -32.511,
-        0.923,
-        -16.67
-      ]
-    },
-    {
-      "residue_number": 1165,
-      "chain_id": "A",
-      "one_letter": "C",
-      "three_letter": "CYS",
-      "conservation": 7.5,
-      "is_conserved": true,
-      "is_buried": true,
-      "sasa": 0.02,
-      "plddt": 94.25,
-      "motifs": [
         "zinc_binding_cluster"
       ],
-      "evidence_score": 9,
+      "evidence_score": 7,
       "confidence": "HIGH",
       "coords": [
-        -40.414,
-        3.578,
-        -8.892
-      ]
+        17.539,
+        26.782,
+        -34.37
+      ],
+      "domain_context": "growth factor receptor domain"
     }
   ],
   "binding_pockets": [
@@ -2709,11 +2905,11 @@
   "n_evidence_sources": 12,
   "overall_confidence": "VERY HIGH",
   "validation_suggestions": [
-    "Alanine scanning mutagenesis of predicted active site residues (C35, C53, C153) to confirm functional importance",
+    "Alanine scanning mutagenesis of predicted active site residues (H654, C825, H868) to confirm functional importance",
     "Thermal shift assay or SPR binding assay against pocket P1 (vol=1460\u00c5\u00b3, druggability=1.00)",
     "Co-immunoprecipitation with IRS1 (unknown interaction, predicted interface: [7, 1, 297])",
     "Co-immunoprecipitation with IRS2 (unknown interaction, predicted interface: [7, 1, 297])",
-    "Enzyme activity assay consistent with EC 3.4.24 using appropriate substrate panel",
+    "EMSA or fluorescence polarisation assay to confirm 'ATP binding' (GO:0005524)",
     "GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation"
   ],
   "modules_run": [

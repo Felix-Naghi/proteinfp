@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-16 21:50:37
+  Generated: 2026-04-17 22:27:04
 ======================================================================
 
   Protein    : Heat shock protein HSP 90-alpha
@@ -15,8 +15,8 @@
   FUNCTIONAL PREDICTION
 ──────────────────────────────────────────────────────────────────────
   Top function     : Molecular chaperone that promotes the maturation, structural maintenance and proper regulation of specific target proteins involved for instance in cell cycle control and signal transduction. Undergoe
-  Enzyme           : yes — 3.4.24
-  Location         : C:nucleus
+  Enzyme           : no (non-enzyme)
+  Location         : membrane
   Evidence sources : 12
 
 ──────────────────────────────────────────────────────────────────────
@@ -25,31 +25,31 @@
 
   Molecular Function:
     [HIGH  ] GO:0005524 ATP binding (score=13.0, 2 sources)
-    [HIGH  ] GO:0051082 unfolded protein binding (score=13.0, 2 sources)
+    [HIGH  ] GO:0051082 unfolded protein binding (score=10.0, 2 sources)
     [HIGH  ] GO:0016887 ATP hydrolysis activity (score=9.5, 2 sources)
-    [HIGH  ] GO:0140662 ATP-dependent protein folding chaperone (score=9.5, 2 sources)
-    [HIGH  ] GO:0006457 protein folding (score=7.8, 1 sources)
+    [MEDIUM] GO:0046872 metal ion binding (score=4.6, 3 sources)
+    [MEDIUM] GO:0004252 serine-type endopeptidase activity (score=3.4, 2 sources)
 
   Biological Process:
+    [HIGH  ] GO:0140662 ATP-dependent protein folding chaperone (score=9.5, 2 sources)
+    [HIGH  ] GO:0006457 protein folding (score=7.8, 1 sources)
     [HIGH  ] GO:0002218 P:activation of innate immune response (score=5.1, 1 sources)
     [HIGH  ] GO:0034605 P:cellular response to heat (score=5.1, 1 sources)
-    [HIGH  ] GO:0098586 P:cellular response to virus (score=5.1, 1 sources)
-    [HIGH  ] GO:0002230 P:positive regulation of defense response to  (score=5.1, 1 sources)
-    [LOW   ] GO:0006351 DNA-templated transcription (score=1.3, 1 sources)
+    [HIGH  ] GO:0101031 C:protein folding chaperone complex (score=5.1, 1 sources)
 
   Cellular Component:
-    [HIGH  ] GO:0005634 C:nucleus (score=8.4, 3 sources)
-    [HIGH  ] GO:0005737 C:cytoplasm (score=6.5, 2 sources)
+    [HIGH  ] GO:0005634 C:nucleus (score=10.6, 4 sources)
+    [HIGH  ] GO:0005737 C:cytoplasm (score=7.9, 3 sources)
     [HIGH  ] GO:0005829 C:cytosol (score=5.1, 1 sources)
 
 ──────────────────────────────────────────────────────────────────────
   ACTIVE SITES
 ──────────────────────────────────────────────────────────────────────
-  H323 [HIGH  ] motifs: zinc_binding_cluster, zinc_binding_cluster
-  C420 [HIGH  ] motifs: zinc_binding_cluster
   C529 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
-  C597 [HIGH  ] motifs: zinc_binding_cluster, zinc_binding_cluster
-  C598 [HIGH  ] motifs: zinc_binding_cluster, zinc_binding_cluster
+  H450 [HIGH  ] motifs: serine_protease_triad, cysteine_protease_dyad
+  H640 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  D452 [MEDIUM] motifs: serine_protease_triad, zinc_binding_cluster
+  S453 [MEDIUM] motifs: serine_protease_triad
 
 ──────────────────────────────────────────────────────────────────────
   BINDING POCKETS
@@ -83,13 +83,12 @@
 ──────────────────────────────────────────────────────────────────────
   VALIDATION SUGGESTIONS
 ──────────────────────────────────────────────────────────────────────
-  1. Alanine scanning mutagenesis of predicted active site residues (H323, C420, C529) to confirm functional importance
+  1. Alanine scanning mutagenesis of predicted active site residues (C529, H450, H640) to confirm functional importance
   2. Thermal shift assay or SPR binding assay against pocket P1 (vol=560Å³, druggability=0.98)
   3. Co-immunoprecipitation with STUB1 (unknown interaction, predicted interface: [1, 727, 355])
   4. Co-immunoprecipitation with HDAC6 (unknown interaction, predicted interface: [1, 727, 355])
-  5. Enzyme activity assay consistent with EC 3.4.24 using appropriate substrate panel
-  6. EMSA or fluorescence polarisation assay to confirm 'ATP binding' (GO:GO:0005524)
-  7. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+  5. EMSA or fluorescence polarisation assay to confirm 'ATP binding' (GO:0005524)
+  6. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
   Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi

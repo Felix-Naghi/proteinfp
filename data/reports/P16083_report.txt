@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-16 21:50:41
+  Generated: 2026-04-17 22:27:12
 ======================================================================
 
   Protein    : Ribosyldihydronicotinamide dehydrogenase [quinone]
@@ -15,8 +15,8 @@
   FUNCTIONAL PREDICTION
 ──────────────────────────────────────────────────────────────────────
   Top function     : The enzyme apparently serves as a quinone reductase in connection with conjugation reactions of hydroquinones involved in detoxification pathways as well as in biosynthetic processes such as the vitam
-  Enzyme           : yes — 3.4.24
-  Location         : C:nucleus
+  Enzyme           : yes — 3.4.21
+  Location         : membrane
   Evidence sources : 12
 
 ──────────────────────────────────────────────────────────────────────
@@ -24,11 +24,11 @@
 ──────────────────────────────────────────────────────────────────────
 
   Molecular Function:
-    [HIGH  ] GO:0008270 F:zinc ion binding (score=7.0, 2 sources)
-    [HIGH  ] GO:0003955 F:NAD(P)H dehydrogenase (quinone) activity (score=5.1, 1 sources)
-    [HIGH  ] GO:0050136 F:NADH dehydrogenase (quinone) (non-electroge (score=5.1, 1 sources)
-    [HIGH  ] GO:0008753 F:NADPH dehydrogenase (quinone) activity (score=5.1, 1 sources)
-    [HIGH  ] GO:0001512 F:dihydronicotinamide riboside quinone reduct (score=5.1, 1 sources)
+    [HIGH  ] GO:0008270 F:zinc ion binding (score=8.6, 3 sources)
+    [HIGH  ] GO:0019430 P:removal of superoxide radicals (score=6.9, 2 sources)
+    [MEDIUM] GO:0046872 metal ion binding (score=4.5, 3 sources)
+    [MEDIUM] GO:0004252 serine-type endopeptidase activity (score=3.4, 2 sources)
+    [MEDIUM] GO:0003677 DNA binding (score=3.4, 2 sources)
 
   Biological Process:
     [HIGH  ] GO:0034599 P:cellular response to oxidative stress (score=5.1, 1 sources)
@@ -38,18 +38,18 @@
     [HIGH  ] GO:0045087 P:innate immune response (score=5.1, 1 sources)
 
   Cellular Component:
-    [HIGH  ] GO:0005634 C:nucleus (score=8.4, 3 sources)
-    [HIGH  ] GO:0005737 C:cytoplasm (score=6.5, 2 sources)
+    [HIGH  ] GO:0005634 C:nucleus (score=10.1, 4 sources)
+    [HIGH  ] GO:0005737 C:cytoplasm (score=7.9, 3 sources)
     [HIGH  ] GO:0005829 C:cytosol (score=5.1, 1 sources)
 
 ──────────────────────────────────────────────────────────────────────
   ACTIVE SITES
 ──────────────────────────────────────────────────────────────────────
-  C122 [HIGH  ] motifs: zinc_binding_cluster
   C180 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
-  C223 [HIGH  ] motifs: zinc_binding_cluster
   H12 [HIGH  ] motifs: serine_protease_triad, acid_base_pair
-  H73 [HIGH  ] motifs: zinc_binding_cluster, zinc_binding_cluster
+  H178 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
+  S17 [MEDIUM] motifs: serine_protease_triad
+  D41 [MEDIUM] motifs: serine_protease_triad
 
 ──────────────────────────────────────────────────────────────────────
   BINDING POCKETS
@@ -80,10 +80,10 @@
 ──────────────────────────────────────────────────────────────────────
   VALIDATION SUGGESTIONS
 ──────────────────────────────────────────────────────────────────────
-  1. Alanine scanning mutagenesis of predicted active site residues (C122, C180, C223) to confirm functional importance
+  1. Alanine scanning mutagenesis of predicted active site residues (C180, H12, H178) to confirm functional importance
   2. Thermal shift assay or SPR binding assay against pocket P1 (vol=460Å³, druggability=0.99)
-  3. Enzyme activity assay consistent with EC 3.4.24 using appropriate substrate panel
-  4. EMSA or fluorescence polarisation assay to confirm 'F:zinc ion binding' (GO:GO:0008270)
+  3. Enzyme activity assay consistent with EC 3.4.21 using appropriate substrate panel
+  4. EMSA or fluorescence polarisation assay to confirm 'F:zinc ion binding' (GO:0008270)
   5. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────

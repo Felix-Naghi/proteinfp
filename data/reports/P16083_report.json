@@ -4,184 +4,191 @@
   "protein_name": "Ribosyldihydronicotinamide dehydrogenase [quinone]",
   "organism": "Homo sapiens",
   "sequence_length": 231,
-  "generated_at": "2026-04-16 21:50:41",
+  "generated_at": "2026-04-17 22:27:12",
   "top_function": "The enzyme apparently serves as a quinone reductase in connection with conjugation reactions of hydroquinones involved in detoxification pathways as well as in biosynthetic processes such as the vitam",
   "is_enzyme": true,
-  "ec_number": "3.4.24",
-  "subcellular_location": "C:nucleus",
+  "ec_number": "3.4.21",
+  "subcellular_location": "membrane",
   "go_terms_mf": [
     {
       "go_id": "GO:0008270",
       "go_name": "F:zinc ion binding",
       "namespace": "MF",
-      "weighted_score": 7.0,
-      "n_sources": 2,
+      "weighted_score": 8.6,
+      "n_sources": 3,
       "sources": [
         "experimental_homolog",
-        "structural_motif"
+        "structural_motif",
+        "embedding_similarity"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
     },
     {
+      "go_id": "GO:0019430",
+      "go_name": "P:removal of superoxide radicals",
+      "namespace": "MF",
+      "weighted_score": 6.91,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "embedding_similarity"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0046872",
+      "go_name": "metal ion binding",
+      "namespace": "MF",
+      "weighted_score": 4.5,
+      "n_sources": 3,
+      "sources": [
+        "structural_motif",
+        "embedding_similarity",
+        "sequence_composition"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "sequence_composition"
+    },
+    {
+      "go_id": "GO:0004252",
+      "go_name": "serine-type endopeptidase activity",
+      "namespace": "MF",
+      "weighted_score": 3.4,
+      "n_sources": 2,
+      "sources": [
+        "structural_motif",
+        "embedding_similarity"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "embedding_similarity"
+    },
+    {
+      "go_id": "GO:0003677",
+      "go_name": "DNA binding",
+      "namespace": "MF",
+      "weighted_score": 3.4,
+      "n_sources": 2,
+      "sources": [
+        "structural_motif",
+        "embedding_similarity"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "embedding_similarity"
+    },
+    {
+      "go_id": "GO:0008233",
+      "go_name": "peptidase activity",
+      "namespace": "MF",
+      "weighted_score": 3.2,
+      "n_sources": 2,
+      "sources": [
+        "structural_motif",
+        "embedding_similarity"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "embedding_similarity"
+    },
+    {
       "go_id": "GO:0003955",
       "go_name": "F:NAD(P)H dehydrogenase (quinone) activity",
       "namespace": "MF",
-      "weighted_score": 5.1,
+      "weighted_score": 3.0,
       "n_sources": 1,
       "sources": [
         "experimental_homolog"
       ],
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "top_evidence": "experimental_homolog"
     },
     {
       "go_id": "GO:0050136",
       "go_name": "F:NADH dehydrogenase (quinone) (non-electrogenic) activity",
       "namespace": "MF",
-      "weighted_score": 5.1,
+      "weighted_score": 3.0,
       "n_sources": 1,
       "sources": [
         "experimental_homolog"
       ],
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "top_evidence": "experimental_homolog"
     },
     {
       "go_id": "GO:0008753",
       "go_name": "F:NADPH dehydrogenase (quinone) activity",
       "namespace": "MF",
-      "weighted_score": 5.1,
+      "weighted_score": 3.0,
       "n_sources": 1,
       "sources": [
         "experimental_homolog"
       ],
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "top_evidence": "experimental_homolog"
     },
     {
       "go_id": "GO:0001512",
       "go_name": "F:dihydronicotinamide riboside quinone reductase activity",
       "namespace": "MF",
-      "weighted_score": 5.1,
+      "weighted_score": 3.0,
       "n_sources": 1,
       "sources": [
         "experimental_homolog"
       ],
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "top_evidence": "experimental_homolog"
     },
     {
       "go_id": "GO:0042802",
       "go_name": "F:identical protein binding",
       "namespace": "MF",
-      "weighted_score": 5.1,
+      "weighted_score": 3.0,
       "n_sources": 1,
       "sources": [
         "experimental_homolog"
       ],
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "top_evidence": "experimental_homolog"
     },
     {
       "go_id": "GO:0045454",
       "go_name": "P:cell redox homeostasis",
       "namespace": "MF",
-      "weighted_score": 5.1,
+      "weighted_score": 3.0,
       "n_sources": 1,
       "sources": [
         "experimental_homolog"
       ],
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "top_evidence": "experimental_homolog"
     },
     {
       "go_id": "GO:0005654",
       "go_name": "C:nucleoplasm",
       "namespace": "MF",
-      "weighted_score": 5.1,
+      "weighted_score": 3.0,
       "n_sources": 1,
       "sources": [
         "experimental_homolog"
       ],
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "top_evidence": "experimental_homolog"
     },
     {
       "go_id": "GO:0031404",
       "go_name": "F:chloride ion binding",
       "namespace": "MF",
-      "weighted_score": 5.1,
+      "weighted_score": 3.0,
       "n_sources": 1,
       "sources": [
         "experimental_homolog"
       ],
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "top_evidence": "experimental_homolog"
     },
     {
       "go_id": "GO:0009055",
       "go_name": "F:electron transfer activity",
-      "namespace": "MF",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0071949",
-      "go_name": "F:FAD binding",
-      "namespace": "MF",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:1904408",
-      "go_name": "F:melatonin binding",
-      "namespace": "MF",
-      "weighted_score": 3.0,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "MEDIUM",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0016491",
-      "go_name": "F:oxidoreductase activity",
-      "namespace": "MF",
-      "weighted_score": 3.0,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "MEDIUM",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0016661",
-      "go_name": "F:oxidoreductase activity, acting on other nitrogenous compounds as donors",
-      "namespace": "MF",
-      "weighted_score": 3.0,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "MEDIUM",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0042803",
-      "go_name": "F:protein homodimerization activity",
       "namespace": "MF",
       "weighted_score": 3.0,
       "n_sources": 1,
@@ -314,16 +321,64 @@
       "top_evidence": "experimental_homolog"
     },
     {
-      "go_id": "GO:0006351",
-      "go_name": "DNA-templated transcription",
+      "go_id": "GO:0015671",
+      "go_name": "oxygen transport",
       "namespace": "BP",
-      "weighted_score": 1.3,
+      "weighted_score": 1.57,
       "n_sources": 1,
       "sources": [
-        "structural_motif"
+        "embedding_similarity"
       ],
       "confidence": "LOW",
-      "top_evidence": "structural_motif"
+      "top_evidence": "embedding_similarity"
+    },
+    {
+      "go_id": "GO:0007596",
+      "go_name": "blood coagulation",
+      "namespace": "BP",
+      "weighted_score": 1.45,
+      "n_sources": 1,
+      "sources": [
+        "embedding_similarity"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "embedding_similarity"
+    },
+    {
+      "go_id": "GO:0006508",
+      "go_name": "proteolysis",
+      "namespace": "BP",
+      "weighted_score": 1.4,
+      "n_sources": 1,
+      "sources": [
+        "embedding_similarity"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "embedding_similarity"
+    },
+    {
+      "go_id": "GO:0006801",
+      "go_name": "superoxide metabolic process",
+      "namespace": "BP",
+      "weighted_score": 1.38,
+      "n_sources": 1,
+      "sources": [
+        "embedding_similarity"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "embedding_similarity"
+    },
+    {
+      "go_id": "GO:0043066",
+      "go_name": "negative regulation of apoptotic process",
+      "namespace": "BP",
+      "weighted_score": 1.36,
+      "n_sources": 1,
+      "sources": [
+        "embedding_similarity"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "embedding_similarity"
     }
   ],
   "go_terms_cc": [
@@ -331,12 +386,13 @@
       "go_id": "GO:0005634",
       "go_name": "C:nucleus",
       "namespace": "CC",
-      "weighted_score": 8.44,
-      "n_sources": 3,
+      "weighted_score": 10.13,
+      "n_sources": 4,
       "sources": [
         "experimental_homolog",
         "ai_esm2",
-        "structural_motif"
+        "structural_motif",
+        "embedding_similarity"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -345,10 +401,11 @@
       "go_id": "GO:0005737",
       "go_name": "C:cytoplasm",
       "namespace": "CC",
-      "weighted_score": 6.5,
-      "n_sources": 2,
+      "weighted_score": 7.9,
+      "n_sources": 3,
       "sources": [
         "experimental_homolog",
+        "embedding_similarity",
         "sequence_baseline"
       ],
       "confidence": "HIGH",
@@ -365,30 +422,82 @@
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0043234",
+      "go_name": "protein complex",
+      "namespace": "CC",
+      "weighted_score": 2.34,
+      "n_sources": 2,
+      "sources": [
+        "structural_motif",
+        "embedding_similarity"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "embedding_similarity"
+    },
+    {
+      "go_id": "GO:0016020",
+      "go_name": "membrane",
+      "namespace": "CC",
+      "weighted_score": 1.58,
+      "n_sources": 1,
+      "sources": [
+        "embedding_similarity"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "embedding_similarity"
+    },
+    {
+      "go_id": "GO:0005833",
+      "go_name": "hemoglobin complex",
+      "namespace": "CC",
+      "weighted_score": 1.57,
+      "n_sources": 1,
+      "sources": [
+        "embedding_similarity"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "embedding_similarity"
+    },
+    {
+      "go_id": "GO:0005887",
+      "go_name": "integral component of plasma membrane",
+      "namespace": "CC",
+      "weighted_score": 1.46,
+      "n_sources": 1,
+      "sources": [
+        "embedding_similarity"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "embedding_similarity"
+    },
+    {
+      "go_id": "GO:0005576",
+      "go_name": "extracellular space",
+      "namespace": "CC",
+      "weighted_score": 1.35,
+      "n_sources": 1,
+      "sources": [
+        "embedding_similarity"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "embedding_similarity"
+    },
+    {
+      "go_id": "GO:0005615",
+      "go_name": "extracellular space",
+      "namespace": "CC",
+      "weighted_score": 1.21,
+      "n_sources": 1,
+      "sources": [
+        "embedding_similarity"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "embedding_similarity"
     }
   ],
   "active_sites": [
-    {
-      "residue_number": 122,
-      "chain_id": "A",
-      "one_letter": "C",
-      "three_letter": "CYS",
-      "conservation": 7.5,
-      "is_conserved": true,
-      "is_buried": true,
-      "sasa": 7.17,
-      "plddt": 98.75,
-      "motifs": [
-        "zinc_binding_cluster"
-      ],
-      "evidence_score": 9,
-      "confidence": "HIGH",
-      "coords": [
-        -1.727,
-        6.879,
-        14.507
-      ]
-    },
     {
       "residue_number": 180,
       "chain_id": "A",
@@ -409,28 +518,8 @@
         0.976,
         -1.865,
         11.904
-      ]
-    },
-    {
-      "residue_number": 223,
-      "chain_id": "A",
-      "one_letter": "C",
-      "three_letter": "CYS",
-      "conservation": 7.5,
-      "is_conserved": true,
-      "is_buried": true,
-      "sasa": 8.54,
-      "plddt": 98.5,
-      "motifs": [
-        "zinc_binding_cluster"
       ],
-      "evidence_score": 9,
-      "confidence": "HIGH",
-      "coords": [
-        8.527,
-        -9.427,
-        5.777
-      ]
+      "domain_context": "flavoproteins"
     },
     {
       "residue_number": 12,
@@ -452,7 +541,180 @@
         0.363,
         10.944,
         -8.549
-      ]
+      ],
+      "domain_context": "flavoproteins"
+    },
+    {
+      "residue_number": 178,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 29.87,
+      "plddt": 98.88,
+      "motifs": [
+        "cysteine_protease_dyad",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        4.291,
+        -4.793,
+        8.881
+      ],
+      "domain_context": "flavoproteins"
+    },
+    {
+      "residue_number": 17,
+      "chain_id": "A",
+      "one_letter": "S",
+      "three_letter": "SER",
+      "conservation": 4.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 17.04,
+      "plddt": 98.75,
+      "motifs": [
+        "serine_protease_triad"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        0.544,
+        9.142,
+        -16.107
+      ],
+      "domain_context": "flavoproteins"
+    },
+    {
+      "residue_number": 41,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 35.0,
+      "plddt": 98.88,
+      "motifs": [
+        "serine_protease_triad"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -6.491,
+        10.161,
+        -4.806
+      ],
+      "domain_context": "flavoproteins"
+    },
+    {
+      "residue_number": 228,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 0.92,
+      "plddt": 98.69,
+      "motifs": [],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        15.08,
+        -7.634,
+        2.284
+      ],
+      "domain_context": "nad(p)h dehydrogenase (quinone)"
+    },
+    {
+      "residue_number": 226,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 139.0,
+      "plddt": 98.62,
+      "motifs": [],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        16.432,
+        -11.855,
+        5.626
+      ],
+      "domain_context": "nad(p)h dehydrogenase (quinone)"
+    },
+    {
+      "residue_number": 122,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 7.17,
+      "plddt": 98.75,
+      "motifs": [
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 9,
+      "confidence": "HIGH",
+      "coords": [
+        -1.727,
+        6.879,
+        14.507
+      ],
+      "domain_context": "flavoproteins"
+    },
+    {
+      "residue_number": 223,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 8.54,
+      "plddt": 98.5,
+      "motifs": [
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 9,
+      "confidence": "HIGH",
+      "coords": [
+        8.527,
+        -9.427,
+        5.777
+      ],
+      "domain_context": "flavoproteins"
+    },
+    {
+      "residue_number": 35,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 11.87,
+      "plddt": 98.19,
+      "motifs": [],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        -14.648,
+        -6.342,
+        -5.167
+      ],
+      "domain_context": "flavoproteins"
     },
     {
       "residue_number": 73,
@@ -476,7 +738,8 @@
         -3.379,
         8.894,
         20.451
-      ]
+      ],
+      "domain_context": "flavoproteins"
     },
     {
       "residue_number": 174,
@@ -498,51 +761,52 @@
         8.732,
         -3.605,
         7.446
-      ]
-    },
-    {
-      "residue_number": 178,
-      "chain_id": "A",
-      "one_letter": "H",
-      "three_letter": "HIS",
-      "conservation": 7.0,
-      "is_conserved": true,
-      "is_buried": false,
-      "sasa": 29.87,
-      "plddt": 98.88,
-      "motifs": [
-        "cysteine_protease_dyad",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster"
       ],
-      "evidence_score": 7,
-      "confidence": "HIGH",
-      "coords": [
-        4.291,
-        -4.793,
-        8.881
-      ]
+      "domain_context": "flavoproteins"
     },
     {
-      "residue_number": 17,
+      "residue_number": 29,
       "chain_id": "A",
-      "one_letter": "S",
-      "three_letter": "SER",
-      "conservation": 4.5,
+      "one_letter": "E",
+      "three_letter": "GLU",
+      "conservation": 6.0,
       "is_conserved": false,
       "is_buried": true,
-      "sasa": 17.04,
-      "plddt": 98.75,
+      "sasa": 12.39,
+      "plddt": 98.5,
       "motifs": [
-        "serine_protease_triad"
+        "acid_base_pair"
       ],
       "evidence_score": 5,
       "confidence": "MEDIUM",
       "coords": [
-        0.544,
-        9.142,
-        -16.107
-      ]
+        -9.875,
+        -5.657,
+        -12.762
+      ],
+      "domain_context": "flavoproteins"
+    },
+    {
+      "residue_number": 55,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 2.17,
+      "plddt": 98.75,
+      "motifs": [
+        "acid_base_pair"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        -4.976,
+        17.211,
+        13.432
+      ],
+      "domain_context": "flavoproteins"
     },
     {
       "residue_number": 71,
@@ -565,7 +829,8 @@
         -2.052,
         14.119,
         21.346
-      ]
+      ],
+      "domain_context": "flavoproteins"
     },
     {
       "residue_number": 88,
@@ -588,245 +853,8 @@
         -9.019,
         7.67,
         5.752
-      ]
-    },
-    {
-      "residue_number": 41,
-      "chain_id": "A",
-      "one_letter": "D",
-      "three_letter": "ASP",
-      "conservation": 6.5,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 35.0,
-      "plddt": 98.88,
-      "motifs": [
-        "serine_protease_triad"
       ],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        -6.491,
-        10.161,
-        -4.806
-      ]
-    },
-    {
-      "residue_number": 74,
-      "chain_id": "A",
-      "one_letter": "E",
-      "three_letter": "GLU",
-      "conservation": 6.0,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 49.22,
-      "plddt": 98.31,
-      "motifs": [
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "acid_base_pair",
-        "acid_base_pair"
-      ],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        -5.662,
-        10.65,
-        23.002
-      ]
-    },
-    {
-      "residue_number": 84,
-      "chain_id": "A",
-      "one_letter": "D",
-      "three_letter": "ASP",
-      "conservation": 6.5,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 51.48,
-      "plddt": 98.75,
-      "motifs": [
-        "zinc_binding_cluster"
-      ],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        -9.805,
-        14.027,
-        6.882
-      ]
-    },
-    {
-      "residue_number": 87,
-      "chain_id": "A",
-      "one_letter": "D",
-      "three_letter": "ASP",
-      "conservation": 6.5,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 80.52,
-      "plddt": 98.88,
-      "motifs": [
-        "zinc_binding_cluster",
-        "acid_base_pair",
-        "acid_base_pair"
-      ],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        -12.275,
-        9.45,
-        6.773
-      ]
-    },
-    {
-      "residue_number": 198,
-      "chain_id": "A",
-      "one_letter": "E",
-      "three_letter": "GLU",
-      "conservation": 6.0,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 100.97,
-      "plddt": 98.62,
-      "motifs": [
-        "zinc_binding_cluster",
-        "acid_base_pair",
-        "acid_base_pair"
-      ],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        5.741,
-        1.37,
-        -25.713
-      ]
-    },
-    {
-      "residue_number": 199,
-      "chain_id": "A",
-      "one_letter": "E",
-      "three_letter": "GLU",
-      "conservation": 6.0,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 143.87,
-      "plddt": 98.62,
-      "motifs": [
-        "zinc_binding_cluster",
-        "acid_base_pair",
-        "acid_base_pair"
-      ],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        5.629,
-        -2.468,
-        -25.921
-      ]
-    },
-    {
-      "residue_number": 200,
-      "chain_id": "A",
-      "one_letter": "E",
-      "three_letter": "GLU",
-      "conservation": 6.0,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 102.41,
-      "plddt": 98.62,
-      "motifs": [
-        "zinc_binding_cluster",
-        "acid_base_pair",
-        "acid_base_pair"
-      ],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        7.499,
-        -2.847,
-        -22.576
-      ]
-    },
-    {
-      "residue_number": 35,
-      "chain_id": "A",
-      "one_letter": "C",
-      "three_letter": "CYS",
-      "conservation": 7.5,
-      "is_conserved": true,
-      "is_buried": true,
-      "sasa": 11.87,
-      "plddt": 98.19,
-      "motifs": [],
-      "evidence_score": 7,
-      "confidence": "HIGH",
-      "coords": [
-        -14.648,
-        -6.342,
-        -5.167
-      ]
-    },
-    {
-      "residue_number": 228,
-      "chain_id": "A",
-      "one_letter": "H",
-      "three_letter": "HIS",
-      "conservation": 7.0,
-      "is_conserved": true,
-      "is_buried": true,
-      "sasa": 0.92,
-      "plddt": 98.69,
-      "motifs": [],
-      "evidence_score": 7,
-      "confidence": "HIGH",
-      "coords": [
-        15.08,
-        -7.634,
-        2.284
-      ]
-    },
-    {
-      "residue_number": 29,
-      "chain_id": "A",
-      "one_letter": "E",
-      "three_letter": "GLU",
-      "conservation": 6.0,
-      "is_conserved": false,
-      "is_buried": true,
-      "sasa": 12.39,
-      "plddt": 98.5,
-      "motifs": [
-        "acid_base_pair"
-      ],
-      "evidence_score": 5,
-      "confidence": "MEDIUM",
-      "coords": [
-        -9.875,
-        -5.657,
-        -12.762
-      ]
-    },
-    {
-      "residue_number": 55,
-      "chain_id": "A",
-      "one_letter": "D",
-      "three_letter": "ASP",
-      "conservation": 6.5,
-      "is_conserved": false,
-      "is_buried": true,
-      "sasa": 2.17,
-      "plddt": 98.75,
-      "motifs": [
-        "acid_base_pair"
-      ],
-      "evidence_score": 5,
-      "confidence": "MEDIUM",
-      "coords": [
-        -4.976,
-        17.211,
-        13.432
-      ]
+      "domain_context": "flavoproteins"
     },
     {
       "residue_number": 119,
@@ -847,26 +875,8 @@
         -1.331,
         11.271,
         10.041
-      ]
-    },
-    {
-      "residue_number": 226,
-      "chain_id": "A",
-      "one_letter": "H",
-      "three_letter": "HIS",
-      "conservation": 7.0,
-      "is_conserved": true,
-      "is_buried": false,
-      "sasa": 139.0,
-      "plddt": 98.62,
-      "motifs": [],
-      "evidence_score": 5,
-      "confidence": "MEDIUM",
-      "coords": [
-        16.432,
-        -11.855,
-        5.626
-      ]
+      ],
+      "domain_context": "flavoproteins"
     },
     {
       "residue_number": 4,
@@ -887,7 +897,8 @@
         -13.71,
         -8.305,
         -0.683
-      ]
+      ],
+      "domain_context": "flavoproteins"
     },
     {
       "residue_number": 5,
@@ -909,7 +920,8 @@
         -12.93,
         -4.598,
         -0.022
-      ]
+      ],
+      "domain_context": "flavoproteins"
     },
     {
       "residue_number": 6,
@@ -928,7 +940,8 @@
         -9.937,
         -2.77,
         -1.567
-      ]
+      ],
+      "domain_context": "flavoproteins"
     },
     {
       "residue_number": 7,
@@ -947,7 +960,8 @@
         -8.527,
         0.647,
         -0.709
-      ]
+      ],
+      "domain_context": "flavoproteins"
     },
     {
       "residue_number": 8,
@@ -966,7 +980,8 @@
         -6.222,
         2.183,
         -3.354
-      ]
+      ],
+      "domain_context": "flavoproteins"
     },
     {
       "residue_number": 9,
@@ -985,7 +1000,8 @@
         -4.086,
         5.013,
         -1.889
-      ]
+      ],
+      "domain_context": "flavoproteins"
     },
     {
       "residue_number": 10,
@@ -1004,7 +1020,133 @@
         -2.969,
         6.802,
         -5.078
-      ]
+      ],
+      "domain_context": "flavoproteins"
+    },
+    {
+      "residue_number": 11,
+      "chain_id": "A",
+      "one_letter": "A",
+      "three_letter": "ALA",
+      "conservation": 3.0,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 0.15,
+      "plddt": 98.94,
+      "motifs": [],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -0.189,
+        9.429,
+        -5.075
+      ],
+      "domain_context": "flavoproteins"
+    },
+    {
+      "residue_number": 14,
+      "chain_id": "A",
+      "one_letter": "E",
+      "three_letter": "GLU",
+      "conservation": 6.0,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 84.85,
+      "plddt": 98.69,
+      "motifs": [
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -1.336,
+        13.531,
+        -13.601
+      ],
+      "domain_context": "flavoproteins"
+    },
+    {
+      "residue_number": 16,
+      "chain_id": "A",
+      "one_letter": "K",
+      "three_letter": "LYS",
+      "conservation": 6.0,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 188.99,
+      "plddt": 98.5,
+      "motifs": [
+        "acid_base_pair"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -2.734,
+        10.207,
+        -17.783
+      ],
+      "domain_context": "flavoproteins"
+    },
+    {
+      "residue_number": 19,
+      "chain_id": "A",
+      "one_letter": "N",
+      "three_letter": "ASN",
+      "conservation": 4.0,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 4.76,
+      "plddt": 98.88,
+      "motifs": [],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        0.774,
+        5.556,
+        -12.316
+      ],
+      "domain_context": "flavoproteins"
+    },
+    {
+      "residue_number": 20,
+      "chain_id": "A",
+      "one_letter": "G",
+      "three_letter": "GLY",
+      "conservation": 4.0,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 0.0,
+      "plddt": 98.81,
+      "motifs": [],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -2.749,
+        6.728,
+        -13.317
+      ],
+      "domain_context": "flavoproteins"
+    },
+    {
+      "residue_number": 22,
+      "chain_id": "A",
+      "one_letter": "L",
+      "three_letter": "LEU",
+      "conservation": 3.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 0.48,
+      "plddt": 98.94,
+      "motifs": [],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -1.8,
+        1.226,
+        -13.184
+      ],
+      "domain_context": "flavoproteins"
     }
   ],
   "binding_pockets": [
@@ -2377,10 +2519,10 @@
   "n_evidence_sources": 12,
   "overall_confidence": "VERY HIGH",
   "validation_suggestions": [
-    "Alanine scanning mutagenesis of predicted active site residues (C122, C180, C223) to confirm functional importance",
+    "Alanine scanning mutagenesis of predicted active site residues (C180, H12, H178) to confirm functional importance",
     "Thermal shift assay or SPR binding assay against pocket P1 (vol=460\u00c5\u00b3, druggability=0.99)",
-    "Enzyme activity assay consistent with EC 3.4.24 using appropriate substrate panel",
-    "EMSA or fluorescence polarisation assay to confirm 'F:zinc ion binding' (GO:GO:0008270)",
+    "Enzyme activity assay consistent with EC 3.4.21 using appropriate substrate panel",
+    "EMSA or fluorescence polarisation assay to confirm 'F:zinc ion binding' (GO:0008270)",
     "GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation"
   ],
   "modules_run": [

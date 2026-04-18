@@ -3,12 +3,46 @@
   "sequence_length": 147,
   "mf_predictions": [
     {
+      "go_id": "GO:0020037",
+      "go_name": "heme binding",
+      "namespace": "MF",
+      "score": 0.85,
+      "evidence": [
+        "sequence_homolog",
+        "domain_annotation",
+        "embedding_similarity"
+      ],
+      "saliency_residues": [
+        4,
+        15,
+        16,
+        25,
+        30,
+        33,
+        39,
+        46,
+        47,
+        55,
+        56,
+        58,
+        62,
+        69,
+        75,
+        76,
+        84,
+        85,
+        86,
+        105
+      ]
+    },
+    {
       "go_id": "GO:0004252",
       "go_name": "serine-type endopeptidase activity",
       "namespace": "MF",
       "score": 0.85,
       "evidence": [
-        "structural_motif"
+        "structural_motif",
+        "embedding_similarity"
       ],
       "saliency_residues": [
         4,
@@ -39,7 +73,134 @@
       "namespace": "MF",
       "score": 0.85,
       "evidence": [
-        "structural_motif"
+        "structural_motif",
+        "embedding_similarity"
+      ],
+      "saliency_residues": [
+        4,
+        15,
+        16,
+        25,
+        30,
+        33,
+        39,
+        46,
+        47,
+        55,
+        56,
+        58,
+        62,
+        69,
+        75,
+        76,
+        84,
+        85,
+        86,
+        105
+      ]
+    },
+    {
+      "go_id": "GO:0008237",
+      "go_name": "metallopeptidase activity",
+      "namespace": "MF",
+      "score": 0.846,
+      "evidence": [
+        "embedding_similarity"
+      ],
+      "saliency_residues": [
+        4,
+        15,
+        16,
+        25,
+        30,
+        33,
+        39,
+        46,
+        47,
+        55,
+        56,
+        58,
+        62,
+        69,
+        75,
+        76,
+        84,
+        85,
+        86,
+        105
+      ]
+    },
+    {
+      "go_id": "GO:0004784",
+      "go_name": "superoxide dismutase activity",
+      "namespace": "MF",
+      "score": 0.832,
+      "evidence": [
+        "embedding_similarity"
+      ],
+      "saliency_residues": [
+        4,
+        15,
+        16,
+        25,
+        30,
+        33,
+        39,
+        46,
+        47,
+        55,
+        56,
+        58,
+        62,
+        69,
+        75,
+        76,
+        84,
+        85,
+        86,
+        105
+      ]
+    },
+    {
+      "go_id": "GO:0004089",
+      "go_name": "carbonate dehydratase activity",
+      "namespace": "MF",
+      "score": 0.814,
+      "evidence": [
+        "embedding_similarity"
+      ],
+      "saliency_residues": [
+        4,
+        15,
+        16,
+        25,
+        30,
+        33,
+        39,
+        46,
+        47,
+        55,
+        56,
+        58,
+        62,
+        69,
+        75,
+        76,
+        84,
+        85,
+        86,
+        105
+      ]
+    },
+    {
+      "go_id": "GO:0019825",
+      "go_name": "oxygen binding",
+      "namespace": "MF",
+      "score": 0.8,
+      "evidence": [
+        "sequence_homolog",
+        "domain_annotation",
+        "embedding_similarity"
       ],
       "saliency_residues": [
         4,
@@ -70,7 +231,8 @@
       "namespace": "MF",
       "score": 0.8,
       "evidence": [
-        "structural_motif"
+        "structural_motif",
+        "embedding_similarity"
       ],
       "saliency_residues": [
         4,
@@ -101,7 +263,8 @@
       "namespace": "MF",
       "score": 0.8,
       "evidence": [
-        "structural_motif"
+        "structural_motif",
+        "embedding_similarity"
       ],
       "saliency_residues": [
         4,
@@ -127,13 +290,12 @@
       ]
     },
     {
-      "go_id": "GO:0020037",
-      "go_name": "heme binding",
+      "go_id": "GO:0008241",
+      "go_name": "peptidyl-dipeptidase activity",
       "namespace": "MF",
-      "score": 0.75,
+      "score": 0.799,
       "evidence": [
-        "sequence_homolog",
-        "domain_annotation"
+        "embedding_similarity"
       ],
       "saliency_residues": [
         4,
@@ -159,45 +321,13 @@
       ]
     },
     {
-      "go_id": "GO:0015671",
-      "go_name": "oxygen transport",
+      "go_id": "GO:0005507",
+      "go_name": "copper ion binding",
       "namespace": "MF",
-      "score": 0.75,
+      "score": 0.785,
       "evidence": [
-        "sequence_homolog",
-        "domain_annotation"
-      ],
-      "saliency_residues": [
-        4,
-        15,
-        16,
-        25,
-        30,
-        33,
-        39,
-        46,
-        47,
-        55,
-        56,
-        58,
-        62,
-        69,
-        75,
-        76,
-        84,
-        85,
-        86,
-        105
-      ]
-    },
-    {
-      "go_id": "GO:0019825",
-      "go_name": "oxygen binding",
-      "namespace": "MF",
-      "score": 0.75,
-      "evidence": [
-        "sequence_homolog",
-        "domain_annotation"
+        "structural_motif",
+        "embedding_similarity"
       ],
       "saliency_residues": [
         4,
@@ -226,9 +356,10 @@
       "go_id": "GO:0046872",
       "go_name": "metal ion binding",
       "namespace": "MF",
-      "score": 0.75,
+      "score": 0.752,
       "evidence": [
-        "structural_motif"
+        "structural_motif",
+        "embedding_similarity"
       ],
       "saliency_residues": [
         4,
@@ -257,9 +388,10 @@
       "go_id": "GO:0003700",
       "go_name": "DNA-binding transcription factor activity",
       "namespace": "MF",
-      "score": 0.7,
+      "score": 0.732,
       "evidence": [
-        "structural_motif"
+        "structural_motif",
+        "embedding_similarity"
       ],
       "saliency_residues": [
         4,
@@ -345,14 +477,18 @@
         86,
         105
       ]
-    },
+    }
+  ],
+  "bp_predictions": [
     {
-      "go_id": "GO:0005488",
-      "go_name": "binding",
-      "namespace": "MF",
-      "score": 0.55,
+      "go_id": "GO:0015671",
+      "go_name": "oxygen transport",
+      "namespace": "BP",
+      "score": 0.85,
       "evidence": [
-        "sequence_composition"
+        "sequence_homolog",
+        "domain_annotation",
+        "embedding_similarity"
       ],
       "saliency_residues": [
         4,
@@ -376,9 +512,163 @@
         86,
         105
       ]
-    }
-  ],
-  "bp_predictions": [
+    },
+    {
+      "go_id": "GO:0019430",
+      "go_name": "removal of superoxide radicals",
+      "namespace": "BP",
+      "score": 0.785,
+      "evidence": [
+        "structural_motif",
+        "embedding_similarity"
+      ],
+      "saliency_residues": [
+        4,
+        15,
+        16,
+        25,
+        30,
+        33,
+        39,
+        46,
+        47,
+        55,
+        56,
+        58,
+        62,
+        69,
+        75,
+        76,
+        84,
+        85,
+        86,
+        105
+      ]
+    },
+    {
+      "go_id": "GO:0007596",
+      "go_name": "blood coagulation",
+      "namespace": "BP",
+      "score": 0.716,
+      "evidence": [
+        "embedding_similarity"
+      ],
+      "saliency_residues": [
+        4,
+        15,
+        16,
+        25,
+        30,
+        33,
+        39,
+        46,
+        47,
+        55,
+        56,
+        58,
+        62,
+        69,
+        75,
+        76,
+        84,
+        85,
+        86,
+        105
+      ]
+    },
+    {
+      "go_id": "GO:0006508",
+      "go_name": "proteolysis",
+      "namespace": "BP",
+      "score": 0.705,
+      "evidence": [
+        "embedding_similarity"
+      ],
+      "saliency_residues": [
+        4,
+        15,
+        16,
+        25,
+        30,
+        33,
+        39,
+        46,
+        47,
+        55,
+        56,
+        58,
+        62,
+        69,
+        75,
+        76,
+        84,
+        85,
+        86,
+        105
+      ]
+    },
+    {
+      "go_id": "GO:0006801",
+      "go_name": "superoxide metabolic process",
+      "namespace": "BP",
+      "score": 0.693,
+      "evidence": [
+        "embedding_similarity"
+      ],
+      "saliency_residues": [
+        4,
+        15,
+        16,
+        25,
+        30,
+        33,
+        39,
+        46,
+        47,
+        55,
+        56,
+        58,
+        62,
+        69,
+        75,
+        76,
+        84,
+        85,
+        86,
+        105
+      ]
+    },
+    {
+      "go_id": "GO:0006915",
+      "go_name": "apoptotic process",
+      "namespace": "BP",
+      "score": 0.687,
+      "evidence": [
+        "embedding_similarity"
+      ],
+      "saliency_residues": [
+        4,
+        15,
+        16,
+        25,
+        30,
+        33,
+        39,
+        46,
+        47,
+        55,
+        56,
+        58,
+        62,
+        69,
+        75,
+        76,
+        84,
+        85,
+        86,
+        105
+      ]
+    },
     {
       "go_id": "GO:0006351",
       "go_name": "DNA-templated transcription",
@@ -409,17 +699,14 @@
         86,
         105
       ]
-    }
-  ],
-  "cc_predictions": [
+    },
     {
-      "go_id": "GO:0005634",
-      "go_name": "nucleus",
-      "namespace": "CC",
-      "score": 0.8,
+      "go_id": "GO:0006974",
+      "go_name": "cellular response to DNA damage stimulus",
+      "namespace": "BP",
+      "score": 0.641,
       "evidence": [
-        "ai_esm2",
-        "structural_motif"
+        "embedding_similarity"
       ],
       "saliency_residues": [
         4,
@@ -445,13 +732,142 @@
       ]
     },
     {
+      "go_id": "GO:0015701",
+      "go_name": "bicarbonate transport",
+      "namespace": "BP",
+      "score": 0.633,
+      "evidence": [
+        "embedding_similarity"
+      ],
+      "saliency_residues": [
+        4,
+        15,
+        16,
+        25,
+        30,
+        33,
+        39,
+        46,
+        47,
+        55,
+        56,
+        58,
+        62,
+        69,
+        75,
+        76,
+        84,
+        85,
+        86,
+        105
+      ]
+    },
+    {
+      "go_id": "GO:0045944",
+      "go_name": "positive regulation of transcription by RNA pol II",
+      "namespace": "BP",
+      "score": 0.6,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        4,
+        15,
+        16,
+        25,
+        30,
+        33,
+        39,
+        46,
+        47,
+        55,
+        56,
+        58,
+        62,
+        69,
+        75,
+        76,
+        84,
+        85,
+        86,
+        105
+      ]
+    }
+  ],
+  "cc_predictions": [
+    {
       "go_id": "GO:0005833",
       "go_name": "hemoglobin complex",
       "namespace": "CC",
-      "score": 0.75,
+      "score": 0.85,
       "evidence": [
         "sequence_homolog",
-        "domain_annotation"
+        "domain_annotation",
+        "embedding_similarity"
+      ],
+      "saliency_residues": [
+        4,
+        15,
+        16,
+        25,
+        30,
+        33,
+        39,
+        46,
+        47,
+        55,
+        56,
+        58,
+        62,
+        69,
+        75,
+        76,
+        84,
+        85,
+        86,
+        105
+      ]
+    },
+    {
+      "go_id": "GO:0005634",
+      "go_name": "nucleus",
+      "namespace": "CC",
+      "score": 0.824,
+      "evidence": [
+        "ai_esm2",
+        "structural_motif",
+        "embedding_similarity"
+      ],
+      "saliency_residues": [
+        4,
+        15,
+        16,
+        25,
+        30,
+        33,
+        39,
+        46,
+        47,
+        55,
+        56,
+        58,
+        62,
+        69,
+        75,
+        76,
+        84,
+        85,
+        86,
+        105
+      ]
+    },
+    {
+      "go_id": "GO:0016020",
+      "go_name": "membrane",
+      "namespace": "CC",
+      "score": 0.799,
+      "evidence": [
+        "embedding_similarity"
       ],
       "saliency_residues": [
         4,
@@ -480,9 +896,104 @@
       "go_id": "GO:0005737",
       "go_name": "cytoplasm",
       "namespace": "CC",
-      "score": 0.45,
+      "score": 0.693,
       "evidence": [
+        "embedding_similarity",
         "sequence_baseline"
+      ],
+      "saliency_residues": [
+        4,
+        15,
+        16,
+        25,
+        30,
+        33,
+        39,
+        46,
+        47,
+        55,
+        56,
+        58,
+        62,
+        69,
+        75,
+        76,
+        84,
+        85,
+        86,
+        105
+      ]
+    },
+    {
+      "go_id": "GO:0005576",
+      "go_name": "extracellular space",
+      "namespace": "CC",
+      "score": 0.671,
+      "evidence": [
+        "embedding_similarity"
+      ],
+      "saliency_residues": [
+        4,
+        15,
+        16,
+        25,
+        30,
+        33,
+        39,
+        46,
+        47,
+        55,
+        56,
+        58,
+        62,
+        69,
+        75,
+        76,
+        84,
+        85,
+        86,
+        105
+      ]
+    },
+    {
+      "go_id": "GO:0005615",
+      "go_name": "extracellular space",
+      "namespace": "CC",
+      "score": 0.611,
+      "evidence": [
+        "embedding_similarity"
+      ],
+      "saliency_residues": [
+        4,
+        15,
+        16,
+        25,
+        30,
+        33,
+        39,
+        46,
+        47,
+        55,
+        56,
+        58,
+        62,
+        69,
+        75,
+        76,
+        84,
+        85,
+        86,
+        105
+      ]
+    },
+    {
+      "go_id": "GO:0043234",
+      "go_name": "protein complex",
+      "namespace": "CC",
+      "score": 0.595,
+      "evidence": [
+        "structural_motif",
+        "embedding_similarity"
       ],
       "saliency_residues": [
         4,
@@ -508,8 +1019,8 @@
       ]
     }
   ],
-  "top_mf": "serine-type endopeptidase activity",
-  "top_bp": "DNA-templated transcription",
-  "top_cc": "nucleus",
-  "n_predictions": 16
+  "top_mf": "heme binding",
+  "top_bp": "oxygen transport",
+  "top_cc": "hemoglobin complex",
+  "n_predictions": 32
 }

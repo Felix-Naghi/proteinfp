@@ -3,6 +3,74 @@
   "sequence_length": 189,
   "mf_predictions": [
     {
+      "go_id": "GO:0005525",
+      "go_name": "GTP binding",
+      "namespace": "MF",
+      "score": 0.9,
+      "evidence": [
+        "experimental_homolog",
+        "domain_annotation",
+        "structural_motif",
+        "embedding_similarity"
+      ],
+      "saliency_residues": [
+        2,
+        5,
+        6,
+        7,
+        8,
+        12,
+        19,
+        21,
+        22,
+        30,
+        46,
+        50,
+        51,
+        52,
+        53,
+        54,
+        56,
+        65,
+        66,
+        69
+      ]
+    },
+    {
+      "go_id": "GO:0003924",
+      "go_name": "GTPase activity",
+      "namespace": "MF",
+      "score": 0.85,
+      "evidence": [
+        "experimental_homolog",
+        "domain_annotation",
+        "structural_motif",
+        "embedding_similarity"
+      ],
+      "saliency_residues": [
+        2,
+        5,
+        6,
+        7,
+        8,
+        12,
+        19,
+        21,
+        22,
+        30,
+        46,
+        50,
+        51,
+        52,
+        53,
+        54,
+        56,
+        65,
+        66,
+        69
+      ]
+    },
+    {
       "go_id": "GO:0003677",
       "go_name": "DNA binding",
       "namespace": "MF",
@@ -39,7 +107,8 @@
       "namespace": "MF",
       "score": 0.8,
       "evidence": [
-        "structural_motif"
+        "structural_motif",
+        "embedding_similarity"
       ],
       "saliency_residues": [
         2,
@@ -65,13 +134,12 @@
       ]
     },
     {
-      "go_id": "GO:0005525",
-      "go_name": "GTP binding",
+      "go_id": "GO:0004089",
+      "go_name": "carbonate dehydratase activity",
       "namespace": "MF",
-      "score": 0.75,
+      "score": 0.778,
       "evidence": [
-        "experimental_homolog",
-        "domain_annotation"
+        "embedding_similarity"
       ],
       "saliency_residues": [
         2,
@@ -97,13 +165,12 @@
       ]
     },
     {
-      "go_id": "GO:0007165",
-      "go_name": "signal transduction",
+      "go_id": "GO:0004672",
+      "go_name": "protein kinase activity",
       "namespace": "MF",
-      "score": 0.75,
+      "score": 0.769,
       "evidence": [
-        "experimental_homolog",
-        "domain_annotation"
+        "embedding_similarity"
       ],
       "saliency_residues": [
         2,
@@ -129,13 +196,13 @@
       ]
     },
     {
-      "go_id": "GO:0003924",
-      "go_name": "GTPase activity",
+      "go_id": "GO:0019003",
+      "go_name": "F:GDP binding",
       "namespace": "MF",
       "score": 0.75,
       "evidence": [
         "experimental_homolog",
-        "domain_annotation"
+        "embedding_similarity"
       ],
       "saliency_residues": [
         2,
@@ -167,7 +234,39 @@
       "score": 0.75,
       "evidence": [
         "structural_motif",
+        "embedding_similarity",
         "sequence_composition"
+      ],
+      "saliency_residues": [
+        2,
+        5,
+        6,
+        7,
+        8,
+        12,
+        19,
+        21,
+        22,
+        30,
+        46,
+        50,
+        51,
+        52,
+        53,
+        54,
+        56,
+        65,
+        66,
+        69
+      ]
+    },
+    {
+      "go_id": "GO:0004714",
+      "go_name": "receptor protein tyrosine kinase activity",
+      "namespace": "MF",
+      "score": 0.727,
+      "evidence": [
+        "embedding_similarity"
       ],
       "saliency_residues": [
         2,
@@ -195,37 +294,6 @@
     {
       "go_id": "GO:0003925",
       "go_name": "F:G protein activity",
-      "namespace": "MF",
-      "score": 0.7,
-      "evidence": [
-        "experimental_homolog"
-      ],
-      "saliency_residues": [
-        2,
-        5,
-        6,
-        7,
-        8,
-        12,
-        19,
-        21,
-        22,
-        30,
-        46,
-        50,
-        51,
-        52,
-        53,
-        54,
-        56,
-        65,
-        66,
-        69
-      ]
-    },
-    {
-      "go_id": "GO:0019003",
-      "go_name": "F:GDP binding",
       "namespace": "MF",
       "score": 0.7,
       "evidence": [
@@ -408,14 +476,18 @@
         66,
         69
       ]
-    },
+    }
+  ],
+  "bp_predictions": [
     {
-      "go_id": "GO:0030036",
-      "go_name": "P:actin cytoskeleton organization",
-      "namespace": "MF",
-      "score": 0.7,
+      "go_id": "GO:0007165",
+      "go_name": "signal transduction",
+      "namespace": "BP",
+      "score": 0.75,
       "evidence": [
-        "experimental_homolog"
+        "experimental_homolog",
+        "domain_annotation",
+        "embedding_similarity"
       ],
       "saliency_residues": [
         2,
@@ -443,7 +515,7 @@
     {
       "go_id": "GO:0060038",
       "go_name": "P:cardiac muscle cell proliferation",
-      "namespace": "MF",
+      "namespace": "BP",
       "score": 0.7,
       "evidence": [
         "experimental_homolog"
@@ -470,9 +542,7 @@
         66,
         69
       ]
-    }
-  ],
-  "bp_predictions": [
+    },
     {
       "go_id": "GO:0019221",
       "go_name": "P:cytokine-mediated signaling pathway",
@@ -534,16 +604,106 @@
         66,
         69
       ]
-    }
-  ],
-  "cc_predictions": [
+    },
     {
-      "go_id": "GO:0005634",
-      "go_name": "nucleus",
-      "namespace": "CC",
-      "score": 0.8,
+      "go_id": "GO:0008283",
+      "go_name": "cell population proliferation",
+      "namespace": "BP",
+      "score": 0.65,
       "evidence": [
-        "ai_esm2",
+        "embedding_similarity"
+      ],
+      "saliency_residues": [
+        2,
+        5,
+        6,
+        7,
+        8,
+        12,
+        19,
+        21,
+        22,
+        30,
+        46,
+        50,
+        51,
+        52,
+        53,
+        54,
+        56,
+        65,
+        66,
+        69
+      ]
+    },
+    {
+      "go_id": "GO:0007173",
+      "go_name": "epidermal growth factor receptor signaling pathway",
+      "namespace": "BP",
+      "score": 0.641,
+      "evidence": [
+        "embedding_similarity"
+      ],
+      "saliency_residues": [
+        2,
+        5,
+        6,
+        7,
+        8,
+        12,
+        19,
+        21,
+        22,
+        30,
+        46,
+        50,
+        51,
+        52,
+        53,
+        54,
+        56,
+        65,
+        66,
+        69
+      ]
+    },
+    {
+      "go_id": "GO:0015701",
+      "go_name": "bicarbonate transport",
+      "namespace": "BP",
+      "score": 0.605,
+      "evidence": [
+        "embedding_similarity"
+      ],
+      "saliency_residues": [
+        2,
+        5,
+        6,
+        7,
+        8,
+        12,
+        19,
+        21,
+        22,
+        30,
+        46,
+        50,
+        51,
+        52,
+        53,
+        54,
+        56,
+        65,
+        66,
+        69
+      ]
+    },
+    {
+      "go_id": "GO:0045944",
+      "go_name": "positive regulation of transcription by RNA pol II",
+      "namespace": "BP",
+      "score": 0.6,
+      "evidence": [
         "structural_motif"
       ],
       "saliency_residues": [
@@ -570,13 +730,79 @@
       ]
     },
     {
+      "go_id": "GO:0018108",
+      "go_name": "peptidyl-tyrosine phosphorylation",
+      "namespace": "BP",
+      "score": 0.598,
+      "evidence": [
+        "embedding_similarity"
+      ],
+      "saliency_residues": [
+        2,
+        5,
+        6,
+        7,
+        8,
+        12,
+        19,
+        21,
+        22,
+        30,
+        46,
+        50,
+        51,
+        52,
+        53,
+        54,
+        56,
+        65,
+        66,
+        69
+      ]
+    }
+  ],
+  "cc_predictions": [
+    {
       "go_id": "GO:0016020",
       "go_name": "membrane",
       "namespace": "CC",
       "score": 0.75,
       "evidence": [
         "experimental_homolog",
-        "domain_annotation"
+        "domain_annotation",
+        "structural_motif",
+        "embedding_similarity"
+      ],
+      "saliency_residues": [
+        2,
+        5,
+        6,
+        7,
+        8,
+        12,
+        19,
+        21,
+        22,
+        30,
+        46,
+        50,
+        51,
+        52,
+        53,
+        54,
+        56,
+        65,
+        66,
+        69
+      ]
+    },
+    {
+      "go_id": "GO:0005887",
+      "go_name": "integral component of plasma membrane",
+      "namespace": "CC",
+      "score": 0.727,
+      "evidence": [
+        "embedding_similarity"
       ],
       "saliency_residues": [
         2,
@@ -639,6 +865,7 @@
       "score": 0.7,
       "evidence": [
         "experimental_homolog",
+        "embedding_similarity",
         "sequence_baseline"
       ],
       "saliency_residues": [
@@ -851,8 +1078,8 @@
       ]
     }
   ],
-  "top_mf": "DNA binding",
-  "top_bp": "P:cytokine-mediated signaling pathway",
-  "top_cc": "nucleus",
-  "n_predictions": 27
+  "top_mf": "GTP binding",
+  "top_bp": "signal transduction",
+  "top_cc": "membrane",
+  "n_predictions": 34
 }
