@@ -1,0 +1,104 @@
+{
+  "uniprot_id": "O15151",
+  "sequence_length": 490,
+  "mf_predictions": [
+    {
+      "go_id": "GO:0005524",
+      "go_name": "ATP binding",
+      "namespace": "MF",
+      "score": 0.8,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": []
+    },
+    {
+      "go_id": "GO:0016887",
+      "go_name": "ATPase activity",
+      "namespace": "MF",
+      "score": 0.75,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": []
+    },
+    {
+      "go_id": "GO:0051082",
+      "go_name": "unfolded protein binding",
+      "namespace": "MF",
+      "score": 0.75,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": []
+    },
+    {
+      "go_id": "GO:0042623",
+      "go_name": "ATPase activity, coupled",
+      "namespace": "MF",
+      "score": 0.7,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": []
+    },
+    {
+      "go_id": "GO:0046872",
+      "go_name": "metal ion binding",
+      "namespace": "MF",
+      "score": 0.65,
+      "evidence": [
+        "sequence_composition"
+      ],
+      "saliency_residues": []
+    },
+    {
+      "go_id": "GO:0005488",
+      "go_name": "binding",
+      "namespace": "MF",
+      "score": 0.55,
+      "evidence": [
+        "sequence_composition"
+      ],
+      "saliency_residues": []
+    }
+  ],
+  "bp_predictions": [
+    {
+      "go_id": "GO:0006457",
+      "go_name": "protein folding",
+      "namespace": "BP",
+      "score": 0.7,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": []
+    },
+    {
+      "go_id": "GO:0051085",
+      "go_name": "chaperone cofactor-dependent protein refolding",
+      "namespace": "BP",
+      "score": 0.65,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": []
+    }
+  ],
+  "cc_predictions": [
+    {
+      "go_id": "GO:0005737",
+      "go_name": "cytoplasm",
+      "namespace": "CC",
+      "score": 0.45,
+      "evidence": [
+        "sequence_baseline"
+      ],
+      "saliency_residues": []
+    }
+  ],
+  "top_mf": "ATP binding",
+  "top_bp": "protein folding",
+  "top_cc": "cytoplasm",
+  "n_predictions": 9
+}

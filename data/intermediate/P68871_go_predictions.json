@@ -10,6 +10,7 @@
       "evidence": [
         "sequence_homolog",
         "domain_annotation",
+        "structural_motif",
         "embedding_similarity"
       ],
       "saliency_residues": [
@@ -136,6 +137,7 @@
       "namespace": "MF",
       "score": 0.832,
       "evidence": [
+        "structural_motif",
         "embedding_similarity"
       ],
       "saliency_residues": [
@@ -200,6 +202,7 @@
       "evidence": [
         "sequence_homolog",
         "domain_annotation",
+        "structural_motif",
         "embedding_similarity"
       ],
       "saliency_residues": [
@@ -265,6 +268,68 @@
       "evidence": [
         "structural_motif",
         "embedding_similarity"
+      ],
+      "saliency_residues": [
+        4,
+        15,
+        16,
+        25,
+        30,
+        33,
+        39,
+        46,
+        47,
+        55,
+        56,
+        58,
+        62,
+        69,
+        75,
+        76,
+        84,
+        85,
+        86,
+        105
+      ]
+    },
+    {
+      "go_id": "GO:0005524",
+      "go_name": "ATP binding",
+      "namespace": "MF",
+      "score": 0.8,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        4,
+        15,
+        16,
+        25,
+        30,
+        33,
+        39,
+        46,
+        47,
+        55,
+        56,
+        58,
+        62,
+        69,
+        75,
+        76,
+        84,
+        85,
+        86,
+        105
+      ]
+    },
+    {
+      "go_id": "GO:0005525",
+      "go_name": "GTP binding",
+      "namespace": "MF",
+      "score": 0.8,
+      "evidence": [
+        "structural_motif"
       ],
       "saliency_residues": [
         4,
@@ -385,75 +450,12 @@
       ]
     },
     {
-      "go_id": "GO:0003700",
-      "go_name": "DNA-binding transcription factor activity",
+      "go_id": "GO:0016887",
+      "go_name": "ATPase activity",
       "namespace": "MF",
-      "score": 0.732,
+      "score": 0.75,
       "evidence": [
-        "structural_motif",
-        "embedding_similarity"
-      ],
-      "saliency_residues": [
-        4,
-        15,
-        16,
-        25,
-        30,
-        33,
-        39,
-        46,
-        47,
-        55,
-        56,
-        58,
-        62,
-        69,
-        75,
-        76,
-        84,
-        85,
-        86,
-        105
-      ]
-    },
-    {
-      "go_id": "GO:0005515",
-      "go_name": "protein binding",
-      "namespace": "MF",
-      "score": 0.6,
-      "evidence": [
-        "ai_esm2"
-      ],
-      "saliency_residues": [
-        4,
-        15,
-        16,
-        25,
-        30,
-        33,
-        39,
-        46,
-        47,
-        55,
-        56,
-        58,
-        62,
-        69,
-        75,
-        76,
-        84,
-        85,
-        86,
-        105
-      ]
-    },
-    {
-      "go_id": "GO:0003824",
-      "go_name": "catalytic activity",
-      "namespace": "MF",
-      "score": 0.55,
-      "evidence": [
-        "active_site"
+        "structural_motif"
       ],
       "saliency_residues": [
         4,
@@ -488,6 +490,7 @@
       "evidence": [
         "sequence_homolog",
         "domain_annotation",
+        "structural_motif",
         "embedding_similarity"
       ],
       "saliency_residues": [
@@ -582,7 +585,70 @@
       "namespace": "BP",
       "score": 0.705,
       "evidence": [
+        "structural_motif",
         "embedding_similarity"
+      ],
+      "saliency_residues": [
+        4,
+        15,
+        16,
+        25,
+        30,
+        33,
+        39,
+        46,
+        47,
+        55,
+        56,
+        58,
+        62,
+        69,
+        75,
+        76,
+        84,
+        85,
+        86,
+        105
+      ]
+    },
+    {
+      "go_id": "GO:0006457",
+      "go_name": "protein folding",
+      "namespace": "BP",
+      "score": 0.7,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        4,
+        15,
+        16,
+        25,
+        30,
+        33,
+        39,
+        46,
+        47,
+        55,
+        56,
+        58,
+        62,
+        69,
+        75,
+        76,
+        84,
+        85,
+        86,
+        105
+      ]
+    },
+    {
+      "go_id": "GO:0055114",
+      "go_name": "oxidation-reduction process",
+      "namespace": "BP",
+      "score": 0.7,
+      "evidence": [
+        "structural_motif"
       ],
       "saliency_residues": [
         4,
@@ -701,6 +767,37 @@
       ]
     },
     {
+      "go_id": "GO:0051085",
+      "go_name": "chaperone cofactor-dependent protein refolding",
+      "namespace": "BP",
+      "score": 0.65,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        4,
+        15,
+        16,
+        25,
+        30,
+        33,
+        39,
+        46,
+        47,
+        55,
+        56,
+        58,
+        62,
+        69,
+        75,
+        76,
+        84,
+        85,
+        86,
+        105
+      ]
+    },
+    {
       "go_id": "GO:0006974",
       "go_name": "cellular response to DNA damage stimulus",
       "namespace": "BP",
@@ -763,10 +860,72 @@
       ]
     },
     {
+      "go_id": "GO:0030193",
+      "go_name": "regulation of blood coagulation",
+      "namespace": "BP",
+      "score": 0.6,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        4,
+        15,
+        16,
+        25,
+        30,
+        33,
+        39,
+        46,
+        47,
+        55,
+        56,
+        58,
+        62,
+        69,
+        75,
+        76,
+        84,
+        85,
+        86,
+        105
+      ]
+    },
+    {
       "go_id": "GO:0045944",
       "go_name": "positive regulation of transcription by RNA pol II",
       "namespace": "BP",
       "score": 0.6,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        4,
+        15,
+        16,
+        25,
+        30,
+        33,
+        39,
+        46,
+        47,
+        55,
+        56,
+        58,
+        62,
+        69,
+        75,
+        76,
+        84,
+        85,
+        86,
+        105
+      ]
+    },
+    {
+      "go_id": "GO:0042493",
+      "go_name": "response to drug",
+      "namespace": "BP",
+      "score": 0.55,
       "evidence": [
         "structural_motif"
       ],
@@ -803,6 +962,7 @@
       "evidence": [
         "sequence_homolog",
         "domain_annotation",
+        "structural_motif",
         "embedding_similarity"
       ],
       "saliency_residues": [
@@ -867,6 +1027,7 @@
       "namespace": "CC",
       "score": 0.799,
       "evidence": [
+        "structural_motif",
         "embedding_similarity"
       ],
       "saliency_residues": [
@@ -1017,10 +1178,72 @@
         86,
         105
       ]
+    },
+    {
+      "go_id": "GO:0031838",
+      "go_name": "haptoglobin-hemoglobin complex",
+      "namespace": "CC",
+      "score": 0.55,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        4,
+        15,
+        16,
+        25,
+        30,
+        33,
+        39,
+        46,
+        47,
+        55,
+        56,
+        58,
+        62,
+        69,
+        75,
+        76,
+        84,
+        85,
+        86,
+        105
+      ]
+    },
+    {
+      "go_id": "GO:0072562",
+      "go_name": "blood microparticle",
+      "namespace": "CC",
+      "score": 0.5,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        4,
+        15,
+        16,
+        25,
+        30,
+        33,
+        39,
+        46,
+        47,
+        55,
+        56,
+        58,
+        62,
+        69,
+        75,
+        76,
+        84,
+        85,
+        86,
+        105
+      ]
     }
   ],
   "top_mf": "heme binding",
   "top_bp": "oxygen transport",
   "top_cc": "hemoglobin complex",
-  "n_predictions": 32
+  "n_predictions": 39
 }

@@ -290,12 +290,12 @@
       ]
     },
     {
-      "go_id": "GO:0004089",
-      "go_name": "carbonate dehydratase activity",
+      "go_id": "GO:0005525",
+      "go_name": "GTP binding",
       "namespace": "MF",
-      "score": 0.788,
+      "score": 0.8,
       "evidence": [
-        "embedding_similarity"
+        "structural_motif"
       ],
       "saliency_residues": [
         2,
@@ -324,7 +324,39 @@
       "go_id": "GO:0020037",
       "go_name": "heme binding",
       "namespace": "MF",
-      "score": 0.778,
+      "score": 0.8,
+      "evidence": [
+        "structural_motif",
+        "embedding_similarity"
+      ],
+      "saliency_residues": [
+        2,
+        15,
+        19,
+        23,
+        30,
+        59,
+        60,
+        73,
+        76,
+        78,
+        81,
+        109,
+        111,
+        112,
+        113,
+        114,
+        124,
+        125,
+        126,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0004089",
+      "go_name": "carbonate dehydratase activity",
+      "namespace": "MF",
+      "score": 0.788,
       "evidence": [
         "embedding_similarity"
       ],
@@ -446,37 +478,6 @@
         126,
         127
       ]
-    },
-    {
-      "go_id": "GO:0000976",
-      "go_name": "transcription cis-regulatory region binding",
-      "namespace": "MF",
-      "score": 0.75,
-      "evidence": [
-        "domain_annotation"
-      ],
-      "saliency_residues": [
-        2,
-        15,
-        19,
-        23,
-        30,
-        59,
-        60,
-        73,
-        76,
-        78,
-        81,
-        109,
-        111,
-        112,
-        113,
-        114,
-        124,
-        125,
-        126,
-        127
-      ]
     }
   ],
   "bp_predictions": [
@@ -486,6 +487,7 @@
       "namespace": "BP",
       "score": 0.778,
       "evidence": [
+        "structural_motif",
         "embedding_similarity"
       ],
       "saliency_residues": [
@@ -517,6 +519,7 @@
       "namespace": "BP",
       "score": 0.765,
       "evidence": [
+        "structural_motif",
         "embedding_similarity"
       ],
       "saliency_residues": [
@@ -673,6 +676,7 @@
       "namespace": "BP",
       "score": 0.714,
       "evidence": [
+        "structural_motif",
         "embedding_similarity"
       ],
       "saliency_residues": [
@@ -768,6 +772,37 @@
       "evidence": [
         "experimental_homolog",
         "embedding_similarity"
+      ],
+      "saliency_residues": [
+        2,
+        15,
+        19,
+        23,
+        30,
+        59,
+        60,
+        73,
+        76,
+        78,
+        81,
+        109,
+        111,
+        112,
+        113,
+        114,
+        124,
+        125,
+        126,
+        127
+      ]
+    },
+    {
+      "go_id": "GO:0055114",
+      "go_name": "oxidation-reduction process",
+      "namespace": "BP",
+      "score": 0.7,
+      "evidence": [
+        "structural_motif"
       ],
       "saliency_residues": [
         2,
@@ -915,37 +950,6 @@
         126,
         127
       ]
-    },
-    {
-      "go_id": "GO:0045944",
-      "go_name": "positive regulation of transcription by RNA pol II",
-      "namespace": "BP",
-      "score": 0.6,
-      "evidence": [
-        "structural_motif"
-      ],
-      "saliency_residues": [
-        2,
-        15,
-        19,
-        23,
-        30,
-        59,
-        60,
-        73,
-        76,
-        78,
-        81,
-        109,
-        111,
-        112,
-        113,
-        114,
-        124,
-        125,
-        126,
-        127
-      ]
     }
   ],
   "cc_predictions": [
@@ -990,6 +994,7 @@
       "namespace": "CC",
       "score": 0.809,
       "evidence": [
+        "structural_motif",
         "embedding_similarity"
       ],
       "saliency_residues": [
@@ -1021,6 +1026,7 @@
       "namespace": "CC",
       "score": 0.778,
       "evidence": [
+        "structural_motif",
         "embedding_similarity"
       ],
       "saliency_residues": [

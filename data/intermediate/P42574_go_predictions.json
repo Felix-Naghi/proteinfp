@@ -1,0 +1,33 @@
+{
+  "uniprot_id": "P42574",
+  "sequence_length": 277,
+  "mf_predictions": [
+    {
+      "go_id": "GO:0005488",
+      "go_name": "binding",
+      "namespace": "MF",
+      "score": 0.55,
+      "evidence": [
+        "sequence_composition"
+      ],
+      "saliency_residues": []
+    }
+  ],
+  "bp_predictions": [],
+  "cc_predictions": [
+    {
+      "go_id": "GO:0005737",
+      "go_name": "cytoplasm",
+      "namespace": "CC",
+      "score": 0.45,
+      "evidence": [
+        "sequence_baseline"
+      ],
+      "saliency_residues": []
+    }
+  ],
+  "top_mf": "binding",
+  "top_bp": "",
+  "top_cc": "cytoplasm",
+  "n_predictions": 2
+}

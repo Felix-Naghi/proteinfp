@@ -223,6 +223,39 @@
       ]
     },
     {
+      "go_id": "GO:0005524",
+      "go_name": "ATP binding",
+      "namespace": "MF",
+      "score": 0.8,
+      "evidence": [
+        "experimental_homolog",
+        "domain_annotation",
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        1,
+        2,
+        5,
+        9,
+        20,
+        41,
+        45,
+        49,
+        52,
+        56,
+        63,
+        66,
+        69,
+        70,
+        73,
+        75,
+        76,
+        77,
+        78,
+        79
+      ]
+    },
+    {
       "go_id": "GO:0008270",
       "go_name": "zinc ion binding",
       "namespace": "MF",
@@ -255,11 +288,43 @@
       ]
     },
     {
+      "go_id": "GO:0005525",
+      "go_name": "GTP binding",
+      "namespace": "MF",
+      "score": 0.8,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        1,
+        2,
+        5,
+        9,
+        20,
+        41,
+        45,
+        49,
+        52,
+        56,
+        63,
+        66,
+        69,
+        70,
+        73,
+        75,
+        76,
+        77,
+        78,
+        79
+      ]
+    },
+    {
       "go_id": "GO:0020037",
       "go_name": "heme binding",
       "namespace": "MF",
-      "score": 0.794,
+      "score": 0.8,
       "evidence": [
+        "structural_motif",
         "embedding_similarity"
       ],
       "saliency_residues": [
@@ -411,70 +476,6 @@
         78,
         79
       ]
-    },
-    {
-      "go_id": "GO:0005524",
-      "go_name": "ATP binding",
-      "namespace": "MF",
-      "score": 0.75,
-      "evidence": [
-        "experimental_homolog",
-        "domain_annotation"
-      ],
-      "saliency_residues": [
-        1,
-        2,
-        5,
-        9,
-        20,
-        41,
-        45,
-        49,
-        52,
-        56,
-        63,
-        66,
-        69,
-        70,
-        73,
-        75,
-        76,
-        77,
-        78,
-        79
-      ]
-    },
-    {
-      "go_id": "GO:0016887",
-      "go_name": "ATP hydrolysis activity",
-      "namespace": "MF",
-      "score": 0.75,
-      "evidence": [
-        "experimental_homolog",
-        "domain_annotation"
-      ],
-      "saliency_residues": [
-        1,
-        2,
-        5,
-        9,
-        20,
-        41,
-        45,
-        49,
-        52,
-        56,
-        63,
-        66,
-        69,
-        70,
-        73,
-        75,
-        76,
-        77,
-        78,
-        79
-      ]
     }
   ],
   "bp_predictions": [
@@ -484,6 +485,7 @@
       "namespace": "BP",
       "score": 0.794,
       "evidence": [
+        "structural_motif",
         "embedding_similarity"
       ],
       "saliency_residues": [
@@ -515,6 +517,7 @@
       "namespace": "BP",
       "score": 0.78,
       "evidence": [
+        "structural_motif",
         "embedding_similarity"
       ],
       "saliency_residues": [
@@ -609,7 +612,8 @@
       "namespace": "BP",
       "score": 0.75,
       "evidence": [
-        "domain_annotation"
+        "domain_annotation",
+        "structural_motif"
       ],
       "saliency_residues": [
         1,
@@ -671,6 +675,7 @@
       "namespace": "BP",
       "score": 0.723,
       "evidence": [
+        "structural_motif",
         "embedding_similarity"
       ],
       "saliency_residues": [
@@ -883,12 +888,12 @@
       ]
     },
     {
-      "go_id": "GO:0006801",
-      "go_name": "superoxide metabolic process",
+      "go_id": "GO:0055114",
+      "go_name": "oxidation-reduction process",
       "namespace": "BP",
-      "score": 0.688,
+      "score": 0.7,
       "evidence": [
-        "embedding_similarity"
+        "structural_motif"
       ],
       "saliency_residues": [
         1,
@@ -914,10 +919,10 @@
       ]
     },
     {
-      "go_id": "GO:0006974",
-      "go_name": "cellular response to DNA damage stimulus",
+      "go_id": "GO:0006801",
+      "go_name": "superoxide metabolic process",
       "namespace": "BP",
-      "score": 0.674,
+      "score": 0.688,
       "evidence": [
         "embedding_similarity"
       ],
@@ -986,6 +991,7 @@
       "namespace": "CC",
       "score": 0.819,
       "evidence": [
+        "structural_motif",
         "embedding_similarity"
       ],
       "saliency_residues": [
@@ -1017,6 +1023,7 @@
       "namespace": "CC",
       "score": 0.794,
       "evidence": [
+        "structural_motif",
         "embedding_similarity"
       ],
       "saliency_residues": [

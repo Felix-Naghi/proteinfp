@@ -1,0 +1,54 @@
+======================================================================
+  ProteinFP Prediction Report
+  Generated: 2026-04-19 12:12:40
+======================================================================
+
+  Protein    : unknown
+  Gene       : unknown
+  UniProt    : P42574
+  Organism   : unknown
+  Length     : 0 aa
+  Mean pLDDT : 0.0
+  Confidence : HIGH
+
+──────────────────────────────────────────────────────────────────────
+  FUNCTIONAL PREDICTION
+──────────────────────────────────────────────────────────────────────
+  Top function     : Involved in the activation cascade of caspases responsible for apoptosis execution.
+  Enzyme           : no (non-enzyme)
+  Location         : cytoplasm
+  Evidence sources : 7
+
+──────────────────────────────────────────────────────────────────────
+  GENE ONTOLOGY PREDICTIONS
+──────────────────────────────────────────────────────────────────────
+
+  Molecular Function:
+    [HIGH  ] GO:0004197 cysteine-type endopeptidase activity (score=6.5, 2 sources)
+    [HIGH  ] GO:0008233 peptidase activity (score=6.5, 2 sources)
+    [LOW   ] GO:0005488 binding (score=1.1, 1 sources)
+
+  Biological Process:
+    [MEDIUM] GO:0006915 apoptotic process (score=3.0, 1 sources)
+    [MEDIUM] GO:0097193 intrinsic apoptotic signaling pathway (score=3.0, 1 sources)
+
+  Cellular Component:
+    [LOW   ] GO:0005737 cytoplasm (score=0.9, 1 sources)
+
+──────────────────────────────────────────────────────────────────────
+  ACTIVE SITES
+──────────────────────────────────────────────────────────────────────
+  H22 [MEDIUM] motifs: general
+  H37 [MEDIUM] motifs: general
+  H54 [MEDIUM] motifs: general
+  H121 [MEDIUM] motifs: general
+  C163 [MEDIUM] motifs: general
+
+──────────────────────────────────────────────────────────────────────
+  VALIDATION SUGGESTIONS
+──────────────────────────────────────────────────────────────────────
+  1. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+
+──────────────────────────────────────────────────────────────────────
+  Modules run: active, chem_env, homology, go, ec, foldseek, ppi
+======================================================================

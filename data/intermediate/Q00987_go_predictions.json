@@ -257,6 +257,37 @@
       ]
     },
     {
+      "go_id": "GO:0020037",
+      "go_name": "heme binding",
+      "namespace": "MF",
+      "score": 0.8,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        29,
+        35,
+        37,
+        38,
+        40,
+        43,
+        44,
+        46,
+        47,
+        48,
+        53,
+        54,
+        56,
+        57,
+        58,
+        60,
+        61,
+        66,
+        67,
+        68
+      ]
+    },
+    {
       "go_id": "GO:0008241",
       "go_name": "peptidyl-dipeptidase activity",
       "namespace": "MF",
@@ -423,37 +454,6 @@
       "score": 0.75,
       "evidence": [
         "structural_motif"
-      ],
-      "saliency_residues": [
-        29,
-        35,
-        37,
-        38,
-        40,
-        43,
-        44,
-        46,
-        47,
-        48,
-        53,
-        54,
-        56,
-        57,
-        58,
-        60,
-        61,
-        66,
-        67,
-        68
-      ]
-    },
-    {
-      "go_id": "GO:0005730",
-      "go_name": "C:nucleolus",
-      "namespace": "MF",
-      "score": 0.7,
-      "evidence": [
-        "experimental_homolog"
       ],
       "saliency_residues": [
         29,
@@ -858,74 +858,75 @@
       ]
     },
     {
+      "go_id": "GO:0055114",
+      "go_name": "oxidation-reduction process",
+      "namespace": "BP",
+      "score": 0.7,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        29,
+        35,
+        37,
+        38,
+        40,
+        43,
+        44,
+        46,
+        47,
+        48,
+        53,
+        54,
+        56,
+        57,
+        58,
+        60,
+        61,
+        66,
+        67,
+        68
+      ]
+    },
+    {
+      "go_id": "GO:0015671",
+      "go_name": "oxygen transport",
+      "namespace": "BP",
+      "score": 0.7,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        29,
+        35,
+        37,
+        38,
+        40,
+        43,
+        44,
+        46,
+        47,
+        48,
+        53,
+        54,
+        56,
+        57,
+        58,
+        60,
+        61,
+        66,
+        67,
+        68
+      ]
+    },
+    {
       "go_id": "GO:0006508",
       "go_name": "proteolysis",
       "namespace": "BP",
       "score": 0.689,
       "evidence": [
+        "structural_motif",
         "embedding_similarity"
-      ],
-      "saliency_residues": [
-        29,
-        35,
-        37,
-        38,
-        40,
-        43,
-        44,
-        46,
-        47,
-        48,
-        53,
-        54,
-        56,
-        57,
-        58,
-        60,
-        61,
-        66,
-        67,
-        68
-      ]
-    },
-    {
-      "go_id": "GO:0006974",
-      "go_name": "cellular response to DNA damage stimulus",
-      "namespace": "BP",
-      "score": 0.668,
-      "evidence": [
-        "embedding_similarity"
-      ],
-      "saliency_residues": [
-        29,
-        35,
-        37,
-        38,
-        40,
-        43,
-        44,
-        46,
-        47,
-        48,
-        53,
-        54,
-        56,
-        57,
-        58,
-        60,
-        61,
-        66,
-        67,
-        68
-      ]
-    },
-    {
-      "go_id": "GO:0006351",
-      "go_name": "DNA-templated transcription",
-      "namespace": "BP",
-      "score": 0.65,
-      "evidence": [
-        "structural_motif"
       ],
       "saliency_residues": [
         29,
@@ -1239,13 +1240,12 @@
       ]
     },
     {
-      "go_id": "GO:0043234",
-      "go_name": "protein complex",
+      "go_id": "GO:0005833",
+      "go_name": "hemoglobin complex",
       "namespace": "CC",
-      "score": 0.621,
+      "score": 0.65,
       "evidence": [
-        "structural_motif",
-        "embedding_similarity"
+        "structural_motif"
       ],
       "saliency_residues": [
         29,

@@ -1,0 +1,334 @@
+{
+  "uniprot_id": "O15151",
+  "gene_name": "unknown",
+  "protein_name": "unknown",
+  "organism": "unknown",
+  "sequence_length": 0,
+  "generated_at": "2026-04-19 12:12:40",
+  "top_function": "ATP binding",
+  "is_enzyme": false,
+  "ec_number": "3.6.1",
+  "subcellular_location": "cytoplasm",
+  "go_terms_mf": [
+    {
+      "go_id": "GO:0005524",
+      "go_name": "ATP binding",
+      "namespace": "MF",
+      "weighted_score": 1.6,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0016887",
+      "go_name": "ATPase activity",
+      "namespace": "MF",
+      "weighted_score": 1.5,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0051082",
+      "go_name": "unfolded protein binding",
+      "namespace": "MF",
+      "weighted_score": 1.5,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0042623",
+      "go_name": "ATPase activity, coupled",
+      "namespace": "MF",
+      "weighted_score": 1.4,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0046872",
+      "go_name": "metal ion binding",
+      "namespace": "MF",
+      "weighted_score": 1.3,
+      "n_sources": 1,
+      "sources": [
+        "sequence_composition"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "sequence_composition"
+    },
+    {
+      "go_id": "GO:0005488",
+      "go_name": "binding",
+      "namespace": "MF",
+      "weighted_score": 1.1,
+      "n_sources": 1,
+      "sources": [
+        "sequence_composition"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "sequence_composition"
+    }
+  ],
+  "go_terms_bp": [
+    {
+      "go_id": "GO:0006457",
+      "go_name": "protein folding",
+      "namespace": "BP",
+      "weighted_score": 1.4,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0051085",
+      "go_name": "chaperone cofactor-dependent protein refolding",
+      "namespace": "BP",
+      "weighted_score": 1.3,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    }
+  ],
+  "go_terms_cc": [
+    {
+      "go_id": "GO:0005737",
+      "go_name": "cytoplasm",
+      "namespace": "CC",
+      "weighted_score": 0.9,
+      "n_sources": 1,
+      "sources": [
+        "sequence_baseline"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "sequence_baseline"
+    }
+  ],
+  "active_sites": [
+    {
+      "residue_number": 434,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 50.0,
+      "plddt": 75.0,
+      "motifs": [],
+      "evidence_score": 4,
+      "confidence": "MEDIUM",
+      "coords": [
+        34.003,
+        -3.42,
+        651.0
+      ],
+      "domain_context": ""
+    },
+    {
+      "residue_number": 437,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 50.0,
+      "plddt": 75.0,
+      "motifs": [],
+      "evidence_score": 4,
+      "confidence": "MEDIUM",
+      "coords": [
+        36.04,
+        6.428,
+        655.5
+      ],
+      "domain_context": ""
+    },
+    {
+      "residue_number": 452,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 50.0,
+      "plddt": 75.0,
+      "motifs": [],
+      "evidence_score": 4,
+      "confidence": "MEDIUM",
+      "coords": [
+        35.803,
+        -3.42,
+        678.0
+      ],
+      "domain_context": ""
+    },
+    {
+      "residue_number": 454,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 50.0,
+      "plddt": 75.0,
+      "motifs": [],
+      "evidence_score": 4,
+      "confidence": "MEDIUM",
+      "coords": [
+        53.06,
+        6.428,
+        681.0
+      ],
+      "domain_context": ""
+    },
+    {
+      "residue_number": 457,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 50.0,
+      "plddt": 75.0,
+      "motifs": [],
+      "evidence_score": 4,
+      "confidence": "MEDIUM",
+      "coords": [
+        55.097,
+        -3.42,
+        685.5
+      ],
+      "domain_context": ""
+    },
+    {
+      "residue_number": 465,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 50.0,
+      "plddt": 75.0,
+      "motifs": [],
+      "evidence_score": 4,
+      "confidence": "MEDIUM",
+      "coords": [
+        51.5,
+        8.66,
+        697.5
+      ],
+      "domain_context": ""
+    },
+    {
+      "residue_number": 472,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 50.0,
+      "plddt": 75.0,
+      "motifs": [],
+      "evidence_score": 4,
+      "confidence": "MEDIUM",
+      "coords": [
+        54.86,
+        6.428,
+        708.0
+      ],
+      "domain_context": ""
+    },
+    {
+      "residue_number": 480,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 50.0,
+      "plddt": 75.0,
+      "motifs": [],
+      "evidence_score": 4,
+      "confidence": "MEDIUM",
+      "coords": [
+        43.0,
+        8.66,
+        720.0
+      ],
+      "domain_context": ""
+    },
+    {
+      "residue_number": 483,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 50.0,
+      "plddt": 75.0,
+      "motifs": [],
+      "evidence_score": 4,
+      "confidence": "MEDIUM",
+      "coords": [
+        53.3,
+        8.66,
+        724.5
+      ],
+      "domain_context": ""
+    }
+  ],
+  "binding_pockets": [],
+  "allosteric_sites": [],
+  "ppi_partners": [],
+  "mean_plddt": 0.0,
+  "n_evidence_sources": 7,
+  "overall_confidence": "LOW",
+  "validation_suggestions": [
+    "EMSA or fluorescence polarisation assay to confirm 'ATP binding' (GO:0005524)",
+    "GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation"
+  ],
+  "modules_run": [
+    "active",
+    "chem_env",
+    "homology",
+    "go",
+    "ec",
+    "foldseek",
+    "ppi"
+  ],
+  "modules_missing": [
+    "structure",
+    "physico",
+    "pockets",
+    "allosteric",
+    "esm2"
+  ]
+}
