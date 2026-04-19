@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-18 08:03:57
+  Generated: 2026-04-19 13:05:01
 ======================================================================
 
   Protein    : Carbonic anhydrase 2
@@ -15,8 +15,8 @@
   FUNCTIONAL PREDICTION
 ──────────────────────────────────────────────────────────────────────
   Top function     : Catalyzes the reversible hydration of carbon dioxide (PubMed:11327835, PubMed:11802772, PubMed:11831900, PubMed:12056894, PubMed:12171926, PubMed:1336460, PubMed:14736236, PubMed:15300855, PubMed:1545
-  Enzyme           : yes — 3.4.21
-  Location         : membrane
+  Enzyme           : yes — 4.2.1
+  Location         : C:plasma membrane
   Evidence sources : 12
 
 ──────────────────────────────────────────────────────────────────────
@@ -24,16 +24,16 @@
 ──────────────────────────────────────────────────────────────────────
 
   Molecular Function:
-    [HIGH  ] GO:0008270 zinc ion binding (score=16.8, 4 sources)
-    [HIGH  ] GO:0004089 carbonate dehydratase activity (score=15.4, 3 sources)
+    [HIGH  ] GO:0008270 zinc ion binding (score=24.9, 5 sources)
+    [HIGH  ] GO:0004089 carbonate dehydratase activity (score=23.0, 4 sources)
     [HIGH  ] GO:0045177 C:apical part of cell (score=5.1, 1 sources)
-    [MEDIUM] GO:0004252 serine-type endopeptidase activity (score=3.4, 2 sources)
-    [MEDIUM] GO:0003677 DNA binding (score=3.4, 2 sources)
+    [HIGH  ] GO:0018820 F:cyanamide hydratase activity (score=5.1, 1 sources)
+    [HIGH  ] GO:0043209 C:myelin sheath (score=5.1, 1 sources)
 
   Biological Process:
-    [HIGH  ] GO:0015670 P:carbon dioxide transport (score=5.1, 1 sources)
+    [HIGH  ] GO:0015670 P:carbon dioxide transport (score=9.6, 2 sources)
+    [HIGH  ] GO:0051453 P:regulation of intracellular pH (score=9.4, 2 sources)
     [HIGH  ] GO:0038166 P:angiotensin-activated signaling pathway (score=5.1, 1 sources)
-    [HIGH  ] GO:0051453 P:regulation of intracellular pH (score=5.1, 1 sources)
     [HIGH  ] GO:2001150 P:positive regulation of dipeptide transmembr (score=5.1, 1 sources)
     [HIGH  ] GO:0044070 P:regulation of monoatomic anion transport (score=5.1, 1 sources)
 
@@ -45,11 +45,11 @@
 ──────────────────────────────────────────────────────────────────────
   ACTIVE SITES
 ──────────────────────────────────────────────────────────────────────
-  H96 [HIGH  ] motifs: serine_protease_triad, zinc_binding_cluster
-  H107 [HIGH  ] motifs: serine_protease_triad, zinc_binding_cluster
+  H96 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H107 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H10 [HIGH  ] motifs: p_loop_walker_a, p_loop_walker_a
   H3 [HIGH  ] motifs: serine_protease_triad, zinc_binding_cluster
-  D32 [MEDIUM] motifs: serine_protease_triad, zinc_binding_cluster
-  S105 [MEDIUM] motifs: serine_protease_triad, serine_protease_triad
+  G6 [MEDIUM] motifs: p_loop_walker_a, ghkl_atpase
 
 ──────────────────────────────────────────────────────────────────────
   BINDING POCKETS
@@ -75,11 +75,11 @@
 ──────────────────────────────────────────────────────────────────────
   VALIDATION SUGGESTIONS
 ──────────────────────────────────────────────────────────────────────
-  1. Alanine scanning mutagenesis of predicted active site residues (H96, H107, H3) to confirm functional importance
+  1. Alanine scanning mutagenesis of predicted active site residues (H96, H107, H10) to confirm functional importance
   2. Thermal shift assay or SPR binding assay against pocket P1 (vol=1600Å³, druggability=0.99)
   3. Co-immunoprecipitation with SLC9A1 (unknown interaction, predicted interface: [1, 260, 186])
   4. Co-immunoprecipitation with SLC4A1 (unknown interaction, predicted interface: [1, 260, 186])
-  5. Enzyme activity assay consistent with EC 3.4.21 using appropriate substrate panel
+  5. Enzyme activity assay consistent with EC 4.2.1 using appropriate substrate panel
   6. EMSA or fluorescence polarisation assay to confirm 'zinc ion binding' (GO:0008270)
   7. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 

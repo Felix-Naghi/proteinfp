@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-18 08:03:46
+  Generated: 2026-04-19 13:04:43
 ======================================================================
 
   Protein    : Heat shock protein HSP 90-alpha
@@ -16,7 +16,7 @@
 ──────────────────────────────────────────────────────────────────────
   Top function     : Molecular chaperone that promotes the maturation, structural maintenance and proper regulation of specific target proteins involved for instance in cell cycle control and signal transduction. Undergoe
   Enzyme           : no (non-enzyme)
-  Location         : membrane
+  Location         : C:plasma membrane
   Evidence sources : 12
 
 ──────────────────────────────────────────────────────────────────────
@@ -24,32 +24,32 @@
 ──────────────────────────────────────────────────────────────────────
 
   Molecular Function:
-    [HIGH  ] GO:0005524 ATP binding (score=13.0, 2 sources)
-    [HIGH  ] GO:0051082 unfolded protein binding (score=10.0, 2 sources)
-    [HIGH  ] GO:0016887 ATP hydrolysis activity (score=9.5, 2 sources)
-    [MEDIUM] GO:0046872 metal ion binding (score=4.6, 3 sources)
-    [MEDIUM] GO:0004252 serine-type endopeptidase activity (score=3.4, 2 sources)
+    [HIGH  ] GO:0005524 ATP binding (score=22.1, 4 sources)
+    [HIGH  ] GO:0051082 unfolded protein binding (score=21.5, 4 sources)
+    [HIGH  ] GO:0016887 ATP hydrolysis activity (score=17.7, 4 sources)
+    [HIGH  ] GO:0042470 C:melanosome (score=9.6, 2 sources)
+    [HIGH  ] GO:0043025 C:neuronal cell body (score=5.1, 1 sources)
 
   Biological Process:
-    [HIGH  ] GO:0140662 ATP-dependent protein folding chaperone (score=9.5, 2 sources)
-    [HIGH  ] GO:0006457 protein folding (score=7.8, 1 sources)
+    [HIGH  ] GO:0140662 ATP-dependent protein folding chaperone (score=15.2, 3 sources)
+    [HIGH  ] GO:0006457 protein folding (score=11.2, 2 sources)
+    [HIGH  ] GO:0034605 P:cellular response to heat (score=9.4, 2 sources)
     [HIGH  ] GO:0002218 P:activation of innate immune response (score=5.1, 1 sources)
-    [HIGH  ] GO:0034605 P:cellular response to heat (score=5.1, 1 sources)
     [HIGH  ] GO:0101031 C:protein folding chaperone complex (score=5.1, 1 sources)
 
   Cellular Component:
-    [HIGH  ] GO:0005634 C:nucleus (score=10.6, 4 sources)
-    [HIGH  ] GO:0005737 C:cytoplasm (score=7.9, 3 sources)
-    [HIGH  ] GO:0005829 C:cytosol (score=5.1, 1 sources)
+    [HIGH  ] GO:0005737 C:cytoplasm (score=11.9, 3 sources)
+    [HIGH  ] GO:0005829 C:cytosol (score=9.5, 2 sources)
+    [HIGH  ] GO:0032991 C:protein-containing complex (score=9.4, 2 sources)
 
 ──────────────────────────────────────────────────────────────────────
   ACTIVE SITES
 ──────────────────────────────────────────────────────────────────────
-  C529 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
-  H450 [HIGH  ] motifs: serine_protease_triad, cysteine_protease_dyad
-  H640 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
-  D452 [MEDIUM] motifs: serine_protease_triad, zinc_binding_cluster
-  S453 [MEDIUM] motifs: serine_protease_triad
+  H210 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H77 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H154 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H189 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  S50 [MEDIUM] motifs: serine_protease_triad
 
 ──────────────────────────────────────────────────────────────────────
   BINDING POCKETS
@@ -83,7 +83,7 @@
 ──────────────────────────────────────────────────────────────────────
   VALIDATION SUGGESTIONS
 ──────────────────────────────────────────────────────────────────────
-  1. Alanine scanning mutagenesis of predicted active site residues (C529, H450, H640) to confirm functional importance
+  1. Alanine scanning mutagenesis of predicted active site residues (H210, H77, H154) to confirm functional importance
   2. Thermal shift assay or SPR binding assay against pocket P1 (vol=560Å³, druggability=0.98)
   3. Co-immunoprecipitation with STUB1 (unknown interaction, predicted interface: [1, 727, 355])
   4. Co-immunoprecipitation with HDAC6 (unknown interaction, predicted interface: [1, 727, 355])

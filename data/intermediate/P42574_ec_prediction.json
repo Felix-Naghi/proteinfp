@@ -2,17 +2,30 @@
   "uniprot_id": "P42574",
   "sequence_length": 277,
   "is_enzyme": false,
-  "enzyme_confidence": 0.24,
+  "enzyme_confidence": 0.7,
   "top_prediction": {
-    "ec_class": "2",
-    "ec_name": "Transferase",
-    "ec_full": "EC 2.x.x.x",
-    "score": 0.24,
+    "ec_class": "3",
+    "ec_name": "Hydrolase",
+    "ec_full": "EC 3.4.22",
+    "score": 0.7,
     "evidence": [
-      "sequence_composition"
+      "go_prediction",
+      "sequence_composition",
+      "homology_inference"
     ]
   },
   "all_predictions": [
+    {
+      "ec_class": "3",
+      "ec_name": "Hydrolase",
+      "ec_full": "EC 3.4.22",
+      "score": 0.7,
+      "evidence": [
+        "go_prediction",
+        "sequence_composition",
+        "homology_inference"
+      ]
+    },
     {
       "ec_class": "2",
       "ec_name": "Transferase",
@@ -50,7 +63,8 @@
       ]
     }
   ],
-  "specific_ec": "",
-  "specific_ec_name": "",
-  "non_enzyme_score": 0.0
+  "specific_ec": "3.4.22",
+  "specific_ec_name": "Cysteine-type endopeptidase",
+  "non_enzyme_score": 0.0,
+  "ml_enzyme_prob": 0.026
 }

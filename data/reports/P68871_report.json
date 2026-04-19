@@ -4,202 +4,199 @@
   "protein_name": "Hemoglobin subunit beta",
   "organism": "Homo sapiens",
   "sequence_length": 147,
-  "generated_at": "2026-04-18 08:03:48",
+  "generated_at": "2026-04-19 13:04:58",
   "top_function": "heme binding",
-  "is_enzyme": false,
-  "ec_number": "3.4.21",
+  "is_enzyme": true,
+  "ec_number": "1.10.99",
   "subcellular_location": "membrane",
   "go_terms_mf": [
     {
       "go_id": "GO:0020037",
       "go_name": "heme binding",
       "namespace": "MF",
-      "weighted_score": 15.82,
-      "n_sources": 3,
+      "weighted_score": 25.46,
+      "n_sources": 5,
       "sources": [
         "sequence_homolog",
         "domain_annotation",
-        "embedding_similarity"
+        "structural_motif",
+        "embedding_similarity",
+        "neural_classifier"
       ],
       "confidence": "HIGH",
-      "top_evidence": "embedding_similarity"
+      "top_evidence": "neural_classifier"
     },
     {
       "go_id": "GO:0019825",
       "go_name": "oxygen binding",
       "namespace": "MF",
-      "weighted_score": 8.6,
-      "n_sources": 3,
+      "weighted_score": 18.11,
+      "n_sources": 5,
       "sources": [
         "sequence_homolog",
         "domain_annotation",
-        "embedding_similarity"
+        "structural_motif",
+        "embedding_similarity",
+        "neural_classifier"
       ],
       "confidence": "HIGH",
-      "top_evidence": "embedding_similarity"
+      "top_evidence": "neural_classifier"
     },
     {
-      "go_id": "GO:0004252",
-      "go_name": "serine-type endopeptidase activity",
+      "go_id": "GO:0005344",
+      "go_name": "",
       "namespace": "MF",
-      "weighted_score": 3.4,
-      "n_sources": 2,
+      "weighted_score": 1.92,
+      "n_sources": 1,
       "sources": [
-        "structural_motif",
-        "embedding_similarity"
+        "neural_classifier"
       ],
-      "confidence": "MEDIUM",
-      "top_evidence": "embedding_similarity"
+      "confidence": "LOW",
+      "top_evidence": "neural_classifier"
     },
     {
       "go_id": "GO:0003677",
       "go_name": "DNA binding",
       "namespace": "MF",
-      "weighted_score": 3.4,
-      "n_sources": 2,
+      "weighted_score": 1.7,
+      "n_sources": 1,
       "sources": [
-        "structural_motif",
-        "embedding_similarity"
+        "structural_motif"
       ],
-      "confidence": "MEDIUM",
-      "top_evidence": "embedding_similarity"
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
     },
     {
       "go_id": "GO:0008270",
       "go_name": "zinc ion binding",
       "namespace": "MF",
-      "weighted_score": 3.2,
-      "n_sources": 2,
+      "weighted_score": 1.6,
+      "n_sources": 1,
       "sources": [
-        "structural_motif",
-        "embedding_similarity"
+        "structural_motif"
       ],
-      "confidence": "MEDIUM",
-      "top_evidence": "embedding_similarity"
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
     },
     {
-      "go_id": "GO:0008233",
-      "go_name": "peptidase activity",
+      "go_id": "GO:0005524",
+      "go_name": "ATP binding",
       "namespace": "MF",
-      "weighted_score": 3.2,
-      "n_sources": 2,
+      "weighted_score": 1.6,
+      "n_sources": 1,
       "sources": [
-        "structural_motif",
-        "embedding_similarity"
+        "structural_motif"
       ],
-      "confidence": "MEDIUM",
-      "top_evidence": "embedding_similarity"
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
     },
     {
-      "go_id": "GO:0005507",
-      "go_name": "copper ion binding",
+      "go_id": "GO:0005525",
+      "go_name": "GTP binding",
       "namespace": "MF",
-      "weighted_score": 3.14,
-      "n_sources": 2,
+      "weighted_score": 1.6,
+      "n_sources": 1,
       "sources": [
-        "structural_motif",
-        "embedding_similarity"
+        "structural_motif"
       ],
-      "confidence": "MEDIUM",
-      "top_evidence": "embedding_similarity"
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0003955",
+      "go_name": "NAD(P)H dehydrogenase (quinone) activity",
+      "namespace": "MF",
+      "weighted_score": 1.6,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
     },
     {
       "go_id": "GO:0046872",
       "go_name": "metal ion binding",
       "namespace": "MF",
-      "weighted_score": 3.01,
-      "n_sources": 2,
-      "sources": [
-        "structural_motif",
-        "embedding_similarity"
-      ],
-      "confidence": "MEDIUM",
-      "top_evidence": "embedding_similarity"
-    },
-    {
-      "go_id": "GO:0003700",
-      "go_name": "DNA-binding transcription factor activity",
-      "namespace": "MF",
-      "weighted_score": 2.93,
-      "n_sources": 2,
-      "sources": [
-        "structural_motif",
-        "embedding_similarity"
-      ],
-      "confidence": "MEDIUM",
-      "top_evidence": "embedding_similarity"
-    },
-    {
-      "go_id": "GO:0008237",
-      "go_name": "metallopeptidase activity",
-      "namespace": "MF",
-      "weighted_score": 1.69,
+      "weighted_score": 1.5,
       "n_sources": 1,
       "sources": [
-        "embedding_similarity"
+        "structural_motif"
       ],
       "confidence": "LOW",
-      "top_evidence": "embedding_similarity"
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0016887",
+      "go_name": "ATPase activity",
+      "namespace": "MF",
+      "weighted_score": 1.5,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0051082",
+      "go_name": "unfolded protein binding",
+      "namespace": "MF",
+      "weighted_score": 1.5,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0003924",
+      "go_name": "GTPase activity",
+      "namespace": "MF",
+      "weighted_score": 1.5,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0010181",
+      "go_name": "FMN binding",
+      "namespace": "MF",
+      "weighted_score": 1.5,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
     },
     {
       "go_id": "GO:0004784",
       "go_name": "superoxide dismutase activity",
       "namespace": "MF",
-      "weighted_score": 1.66,
+      "weighted_score": 1.5,
       "n_sources": 1,
       "sources": [
-        "embedding_similarity"
+        "structural_motif"
       ],
       "confidence": "LOW",
-      "top_evidence": "embedding_similarity"
+      "top_evidence": "structural_motif"
     },
     {
-      "go_id": "GO:0004089",
-      "go_name": "carbonate dehydratase activity",
+      "go_id": "GO:0042623",
+      "go_name": "ATPase activity, coupled",
       "namespace": "MF",
-      "weighted_score": 1.63,
+      "weighted_score": 1.4,
       "n_sources": 1,
       "sources": [
-        "embedding_similarity"
+        "structural_motif"
       ],
       "confidence": "LOW",
-      "top_evidence": "embedding_similarity"
-    },
-    {
-      "go_id": "GO:0008241",
-      "go_name": "peptidyl-dipeptidase activity",
-      "namespace": "MF",
-      "weighted_score": 1.6,
-      "n_sources": 1,
-      "sources": [
-        "embedding_similarity"
-      ],
-      "confidence": "LOW",
-      "top_evidence": "embedding_similarity"
-    },
-    {
-      "go_id": "GO:0003824",
-      "go_name": "catalytic activity",
-      "namespace": "MF",
-      "weighted_score": 1.1,
-      "n_sources": 1,
-      "sources": [
-        "active_site"
-      ],
-      "confidence": "LOW",
-      "top_evidence": "active_site"
-    },
-    {
-      "go_id": "GO:0005515",
-      "go_name": "protein binding",
-      "namespace": "MF",
-      "weighted_score": 1.08,
-      "n_sources": 1,
-      "sources": [
-        "ai_esm2"
-      ],
-      "confidence": "LOW",
-      "top_evidence": "ai_esm2"
+      "top_evidence": "structural_motif"
     }
   ],
   "go_terms_bp": [
@@ -207,76 +204,65 @@
       "go_id": "GO:0015671",
       "go_name": "oxygen transport",
       "namespace": "BP",
-      "weighted_score": 8.82,
-      "n_sources": 3,
+      "weighted_score": 18.7,
+      "n_sources": 5,
       "sources": [
         "sequence_homolog",
         "domain_annotation",
-        "embedding_similarity"
+        "structural_motif",
+        "embedding_similarity",
+        "neural_classifier"
       ],
       "confidence": "HIGH",
-      "top_evidence": "embedding_similarity"
+      "top_evidence": "neural_classifier"
+    },
+    {
+      "go_id": "GO:0015670",
+      "go_name": "",
+      "namespace": "BP",
+      "weighted_score": 1.81,
+      "n_sources": 1,
+      "sources": [
+        "neural_classifier"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "neural_classifier"
+    },
+    {
+      "go_id": "GO:0048821",
+      "go_name": "",
+      "namespace": "BP",
+      "weighted_score": 1.72,
+      "n_sources": 1,
+      "sources": [
+        "neural_classifier"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "neural_classifier"
+    },
+    {
+      "go_id": "GO:0055114",
+      "go_name": "oxidation-reduction process",
+      "namespace": "BP",
+      "weighted_score": 1.4,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
     },
     {
       "go_id": "GO:0019430",
       "go_name": "removal of superoxide radicals",
       "namespace": "BP",
-      "weighted_score": 3.14,
-      "n_sources": 2,
-      "sources": [
-        "structural_motif",
-        "embedding_similarity"
-      ],
-      "confidence": "MEDIUM",
-      "top_evidence": "embedding_similarity"
-    },
-    {
-      "go_id": "GO:0007596",
-      "go_name": "blood coagulation",
-      "namespace": "BP",
-      "weighted_score": 1.43,
+      "weighted_score": 1.4,
       "n_sources": 1,
       "sources": [
-        "embedding_similarity"
+        "structural_motif"
       ],
       "confidence": "LOW",
-      "top_evidence": "embedding_similarity"
-    },
-    {
-      "go_id": "GO:0006508",
-      "go_name": "proteolysis",
-      "namespace": "BP",
-      "weighted_score": 1.41,
-      "n_sources": 1,
-      "sources": [
-        "embedding_similarity"
-      ],
-      "confidence": "LOW",
-      "top_evidence": "embedding_similarity"
-    },
-    {
-      "go_id": "GO:0006801",
-      "go_name": "superoxide metabolic process",
-      "namespace": "BP",
-      "weighted_score": 1.39,
-      "n_sources": 1,
-      "sources": [
-        "embedding_similarity"
-      ],
-      "confidence": "LOW",
-      "top_evidence": "embedding_similarity"
-    },
-    {
-      "go_id": "GO:0006915",
-      "go_name": "apoptotic process",
-      "namespace": "BP",
-      "weighted_score": 1.37,
-      "n_sources": 1,
-      "sources": [
-        "embedding_similarity"
-      ],
-      "confidence": "LOW",
-      "top_evidence": "embedding_similarity"
+      "top_evidence": "structural_motif"
     },
     {
       "go_id": "GO:0006351",
@@ -291,34 +277,70 @@
       "top_evidence": "structural_motif"
     },
     {
-      "go_id": "GO:0006974",
-      "go_name": "cellular response to DNA damage stimulus",
+      "go_id": "GO:0051085",
+      "go_name": "chaperone cofactor-dependent protein refolding",
       "namespace": "BP",
-      "weighted_score": 1.28,
+      "weighted_score": 1.3,
       "n_sources": 1,
       "sources": [
-        "embedding_similarity"
+        "structural_motif"
       ],
       "confidence": "LOW",
-      "top_evidence": "embedding_similarity"
+      "top_evidence": "structural_motif"
     },
     {
-      "go_id": "GO:0015701",
-      "go_name": "bicarbonate transport",
+      "go_id": "GO:0030193",
+      "go_name": "regulation of blood coagulation",
       "namespace": "BP",
-      "weighted_score": 1.27,
+      "weighted_score": 1.2,
       "n_sources": 1,
       "sources": [
-        "embedding_similarity"
+        "structural_motif"
       ],
       "confidence": "LOW",
-      "top_evidence": "embedding_similarity"
+      "top_evidence": "structural_motif"
     },
     {
       "go_id": "GO:0045944",
       "go_name": "positive regulation of transcription by RNA pol II",
       "namespace": "BP",
       "weighted_score": 1.2,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0042493",
+      "go_name": "response to drug",
+      "namespace": "BP",
+      "weighted_score": 1.1,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0006508",
+      "go_name": "proteolysis",
+      "namespace": "BP",
+      "weighted_score": 1.1,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0010819",
+      "go_name": "regulation of T cell chemotaxis",
+      "namespace": "BP",
+      "weighted_score": 0.9,
       "n_sources": 1,
       "sources": [
         "structural_motif"
@@ -332,91 +354,91 @@
       "go_id": "GO:0005833",
       "go_name": "hemoglobin complex",
       "namespace": "CC",
-      "weighted_score": 8.82,
-      "n_sources": 3,
+      "weighted_score": 18.59,
+      "n_sources": 5,
       "sources": [
         "sequence_homolog",
         "domain_annotation",
-        "embedding_similarity"
+        "structural_motif",
+        "embedding_similarity",
+        "neural_classifier"
       ],
       "confidence": "HIGH",
-      "top_evidence": "embedding_similarity"
+      "top_evidence": "neural_classifier"
+    },
+    {
+      "go_id": "GO:0031838",
+      "go_name": "haptoglobin-hemoglobin complex",
+      "namespace": "CC",
+      "weighted_score": 5.22,
+      "n_sources": 2,
+      "sources": [
+        "structural_motif",
+        "neural_classifier"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "neural_classifier"
     },
     {
       "go_id": "GO:0005634",
       "go_name": "nucleus",
       "namespace": "CC",
-      "weighted_score": 4.78,
-      "n_sources": 3,
-      "sources": [
-        "ai_esm2",
-        "structural_motif",
-        "embedding_similarity"
-      ],
-      "confidence": "MEDIUM",
-      "top_evidence": "ai_esm2"
-    },
-    {
-      "go_id": "GO:0005737",
-      "go_name": "cytoplasm",
-      "namespace": "CC",
-      "weighted_score": 2.77,
+      "weighted_score": 1.9,
       "n_sources": 2,
       "sources": [
-        "embedding_similarity",
-        "sequence_baseline"
+        "ai_esm2",
+        "structural_motif"
       ],
-      "confidence": "MEDIUM",
-      "top_evidence": "sequence_baseline"
+      "confidence": "LOW",
+      "top_evidence": "ai_esm2"
     },
     {
       "go_id": "GO:0043234",
       "go_name": "protein complex",
       "namespace": "CC",
-      "weighted_score": 2.38,
-      "n_sources": 2,
+      "weighted_score": 1.1,
+      "n_sources": 1,
       "sources": [
-        "structural_motif",
-        "embedding_similarity"
+        "structural_motif"
       ],
       "confidence": "LOW",
-      "top_evidence": "embedding_similarity"
+      "top_evidence": "structural_motif"
     },
     {
       "go_id": "GO:0016020",
       "go_name": "membrane",
       "namespace": "CC",
-      "weighted_score": 1.6,
+      "weighted_score": 1.1,
       "n_sources": 1,
       "sources": [
-        "embedding_similarity"
+        "structural_motif"
       ],
       "confidence": "LOW",
-      "top_evidence": "embedding_similarity"
+      "top_evidence": "structural_motif"
     },
     {
-      "go_id": "GO:0005576",
-      "go_name": "extracellular space",
+      "go_id": "GO:0072562",
+      "go_name": "blood microparticle",
       "namespace": "CC",
-      "weighted_score": 1.34,
+      "weighted_score": 1.0,
       "n_sources": 1,
       "sources": [
-        "embedding_similarity"
+        "structural_motif"
       ],
       "confidence": "LOW",
-      "top_evidence": "embedding_similarity"
+      "top_evidence": "structural_motif"
     },
     {
-      "go_id": "GO:0005615",
-      "go_name": "extracellular space",
+      "go_id": "GO:0005737",
+      "go_name": "cytoplasm",
       "namespace": "CC",
-      "weighted_score": 1.22,
+      "weighted_score": 0.9,
       "n_sources": 1,
       "sources": [
-        "embedding_similarity"
+        "sequence_baseline"
       ],
       "confidence": "LOW",
-      "top_evidence": "embedding_similarity"
+      "top_evidence": "sequence_baseline"
     }
   ],
   "active_sites": [
@@ -502,6 +524,146 @@
       "domain_context": "globin-like"
     },
     {
+      "residue_number": 147,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 199.91,
+      "plddt": 85.38,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad"
+      ],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        -4.469,
+        6.792,
+        -21.441
+      ],
+      "domain_context": "globin-like"
+    },
+    {
+      "residue_number": 25,
+      "chain_id": "A",
+      "one_letter": "G",
+      "three_letter": "GLY",
+      "conservation": 4.0,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 0.0,
+      "plddt": 98.62,
+      "motifs": [
+        "p_loop_walker_a",
+        "ghkl_atpase",
+        "flavin_binding"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        4.254,
+        0.277,
+        4.421
+      ],
+      "domain_context": "globin-like"
+    },
+    {
+      "residue_number": 26,
+      "chain_id": "A",
+      "one_letter": "G",
+      "three_letter": "GLY",
+      "conservation": 4.0,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 4.89,
+      "plddt": 98.62,
+      "motifs": [
+        "p_loop_walker_a",
+        "p_loop_walker_a",
+        "flavin_binding"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        7.884,
+        -0.85,
+        4.201
+      ],
+      "domain_context": "globin-like"
+    },
+    {
+      "residue_number": 28,
+      "chain_id": "A",
+      "one_letter": "A",
+      "three_letter": "ALA",
+      "conservation": 3.0,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 0.0,
+      "plddt": 98.94,
+      "motifs": [
+        "p_loop_walker_a",
+        "p_loop_walker_a"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        4.026,
+        -4.379,
+        1.933
+      ],
+      "domain_context": "globin-like"
+    },
+    {
+      "residue_number": 29,
+      "chain_id": "A",
+      "one_letter": "L",
+      "three_letter": "LEU",
+      "conservation": 3.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 4.49,
+      "plddt": 98.88,
+      "motifs": [
+        "p_loop_walker_a",
+        "p_loop_walker_a"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        6.323,
+        -2.734,
+        -0.661
+      ],
+      "domain_context": "globin-like"
+    },
+    {
+      "residue_number": 30,
+      "chain_id": "A",
+      "one_letter": "G",
+      "three_letter": "GLY",
+      "conservation": 4.0,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 0.1,
+      "plddt": 98.81,
+      "motifs": [
+        "p_loop_walker_a",
+        "p_loop_walker_a"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        9.252,
+        -5.065,
+        0.213
+      ],
+      "domain_context": "globin-like"
+    },
+    {
       "residue_number": 90,
       "chain_id": "A",
       "one_letter": "S",
@@ -512,6 +674,8 @@
       "sasa": 0.05,
       "plddt": 98.38,
       "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
         "serine_protease_triad"
       ],
       "evidence_score": 5,
@@ -520,6 +684,55 @@
         -2.621,
         8.645,
         -11.175
+      ],
+      "domain_context": "globin-like"
+    },
+    {
+      "residue_number": 27,
+      "chain_id": "A",
+      "one_letter": "E",
+      "three_letter": "GLU",
+      "conservation": 6.0,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 26.1,
+      "plddt": 98.75,
+      "motifs": [
+        "zinc_binding_cluster",
+        "acid_base_pair",
+        "p_loop_walker_a",
+        "p_loop_walker_a"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        6.821,
+        -4.517,
+        4.574
+      ],
+      "domain_context": "globin-like"
+    },
+    {
+      "residue_number": 31,
+      "chain_id": "A",
+      "one_letter": "R",
+      "three_letter": "ARG",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 90.55,
+      "plddt": 98.88,
+      "motifs": [
+        "acid_base_pair",
+        "p_loop_walker_a",
+        "p_loop_walker_a"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        6.955,
+        -8.132,
+        -0.172
       ],
       "domain_context": "globin-like"
     },
@@ -534,6 +747,7 @@
       "sasa": 60.36,
       "plddt": 95.69,
       "motifs": [
+        "serine_protease_triad",
         "serine_protease_triad",
         "zinc_binding_cluster",
         "zinc_binding_cluster",
@@ -552,6 +766,75 @@
       "domain_context": "globin-like"
     },
     {
+      "residue_number": 100,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 70.47,
+      "plddt": 96.69,
+      "motifs": [
+        "serine_protease_triad",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "acid_base_pair"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        1.639,
+        -0.724,
+        -15.19
+      ],
+      "domain_context": "globin-like"
+    },
+    {
+      "residue_number": 3,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 136.96,
+      "plddt": 87.62,
+      "motifs": [
+        "haem_binding"
+      ],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        -19.216,
+        0.655,
+        -2.068
+      ],
+      "domain_context": "globin-like"
+    },
+    {
+      "residue_number": 64,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 52.72,
+      "plddt": 98.62,
+      "motifs": [
+        "haem_binding"
+      ],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        8.878,
+        4.679,
+        -0.066
+      ],
+      "domain_context": "globin-like"
+    },
+    {
       "residue_number": 78,
       "chain_id": "A",
       "one_letter": "H",
@@ -564,7 +847,8 @@
       "motifs": [
         "zinc_binding_cluster",
         "acid_base_pair",
-        "acid_base_pair"
+        "acid_base_pair",
+        "haem_binding"
       ],
       "evidence_score": 7,
       "confidence": "HIGH",
@@ -642,42 +926,24 @@
       "domain_context": "globin-like"
     },
     {
-      "residue_number": 3,
+      "residue_number": 72,
       "chain_id": "A",
-      "one_letter": "H",
-      "three_letter": "HIS",
-      "conservation": 7.0,
-      "is_conserved": true,
-      "is_buried": false,
-      "sasa": 136.96,
-      "plddt": 87.62,
-      "motifs": [],
-      "evidence_score": 5,
-      "confidence": "MEDIUM",
-      "coords": [
-        -19.216,
-        0.655,
-        -2.068
+      "one_letter": "F",
+      "three_letter": "PHE",
+      "conservation": 4.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 12.77,
+      "plddt": 98.44,
+      "motifs": [
+        "flavin_binding"
       ],
-      "domain_context": "globin-like"
-    },
-    {
-      "residue_number": 64,
-      "chain_id": "A",
-      "one_letter": "H",
-      "three_letter": "HIS",
-      "conservation": 7.0,
-      "is_conserved": true,
-      "is_buried": false,
-      "sasa": 52.72,
-      "plddt": 98.62,
-      "motifs": [],
       "evidence_score": 5,
       "confidence": "MEDIUM",
       "coords": [
-        8.878,
-        4.679,
-        -0.066
+        -3.397,
+        5.07,
+        1.321
       ],
       "domain_context": "globin-like"
     },
@@ -698,26 +964,6 @@
         -8.08,
         6.331,
         -13.479
-      ],
-      "domain_context": "globin-like"
-    },
-    {
-      "residue_number": 147,
-      "chain_id": "A",
-      "one_letter": "H",
-      "three_letter": "HIS",
-      "conservation": 7.0,
-      "is_conserved": true,
-      "is_buried": false,
-      "sasa": 199.91,
-      "plddt": 85.38,
-      "motifs": [],
-      "evidence_score": 5,
-      "confidence": "MEDIUM",
-      "coords": [
-        -4.469,
-        6.792,
-        -21.441
       ],
       "domain_context": "globin-like"
     },
@@ -849,6 +1095,28 @@
       "domain_context": "globin-like"
     },
     {
+      "residue_number": 20,
+      "chain_id": "A",
+      "one_letter": "N",
+      "three_letter": "ASN",
+      "conservation": 4.0,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 80.57,
+      "plddt": 97.94,
+      "motifs": [
+        "ghkl_atpase"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        1.836,
+        0.965,
+        12.131
+      ],
+      "domain_context": "globin-like"
+    },
+    {
       "residue_number": 22,
       "chain_id": "A",
       "one_letter": "D",
@@ -860,7 +1128,8 @@
       "plddt": 97.06,
       "motifs": [
         "zinc_binding_cluster",
-        "acid_base_pair"
+        "acid_base_pair",
+        "ghkl_atpase"
       ],
       "evidence_score": 3,
       "confidence": "MEDIUM",
@@ -868,213 +1137,6 @@
         5.577,
         3.113,
         8.576
-      ],
-      "domain_context": "globin-like"
-    },
-    {
-      "residue_number": 23,
-      "chain_id": "A",
-      "one_letter": "E",
-      "three_letter": "GLU",
-      "conservation": 6.0,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 96.73,
-      "plddt": 97.44,
-      "motifs": [
-        "zinc_binding_cluster"
-      ],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        6.344,
-        -0.584,
-        9.275
-      ],
-      "domain_context": "globin-like"
-    },
-    {
-      "residue_number": 24,
-      "chain_id": "A",
-      "one_letter": "V",
-      "three_letter": "VAL",
-      "conservation": 3.5,
-      "is_conserved": false,
-      "is_buried": true,
-      "sasa": 1.41,
-      "plddt": 98.75,
-      "motifs": [],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        3.407,
-        -2.103,
-        7.311
-      ],
-      "domain_context": "globin-like"
-    },
-    {
-      "residue_number": 25,
-      "chain_id": "A",
-      "one_letter": "G",
-      "three_letter": "GLY",
-      "conservation": 4.0,
-      "is_conserved": false,
-      "is_buried": true,
-      "sasa": 0.0,
-      "plddt": 98.62,
-      "motifs": [],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        4.254,
-        0.277,
-        4.421
-      ],
-      "domain_context": "globin-like"
-    },
-    {
-      "residue_number": 26,
-      "chain_id": "A",
-      "one_letter": "G",
-      "three_letter": "GLY",
-      "conservation": 4.0,
-      "is_conserved": false,
-      "is_buried": true,
-      "sasa": 4.89,
-      "plddt": 98.62,
-      "motifs": [],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        7.884,
-        -0.85,
-        4.201
-      ],
-      "domain_context": "globin-like"
-    },
-    {
-      "residue_number": 27,
-      "chain_id": "A",
-      "one_letter": "E",
-      "three_letter": "GLU",
-      "conservation": 6.0,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 26.1,
-      "plddt": 98.75,
-      "motifs": [
-        "zinc_binding_cluster",
-        "acid_base_pair"
-      ],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        6.821,
-        -4.517,
-        4.574
-      ],
-      "domain_context": "globin-like"
-    },
-    {
-      "residue_number": 28,
-      "chain_id": "A",
-      "one_letter": "A",
-      "three_letter": "ALA",
-      "conservation": 3.0,
-      "is_conserved": false,
-      "is_buried": true,
-      "sasa": 0.0,
-      "plddt": 98.94,
-      "motifs": [],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        4.026,
-        -4.379,
-        1.933
-      ],
-      "domain_context": "globin-like"
-    },
-    {
-      "residue_number": 29,
-      "chain_id": "A",
-      "one_letter": "L",
-      "three_letter": "LEU",
-      "conservation": 3.5,
-      "is_conserved": false,
-      "is_buried": true,
-      "sasa": 4.49,
-      "plddt": 98.88,
-      "motifs": [],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        6.323,
-        -2.734,
-        -0.661
-      ],
-      "domain_context": "globin-like"
-    },
-    {
-      "residue_number": 30,
-      "chain_id": "A",
-      "one_letter": "G",
-      "three_letter": "GLY",
-      "conservation": 4.0,
-      "is_conserved": false,
-      "is_buried": true,
-      "sasa": 0.1,
-      "plddt": 98.81,
-      "motifs": [],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        9.252,
-        -5.065,
-        0.213
-      ],
-      "domain_context": "globin-like"
-    },
-    {
-      "residue_number": 31,
-      "chain_id": "A",
-      "one_letter": "R",
-      "three_letter": "ARG",
-      "conservation": 6.5,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 90.55,
-      "plddt": 98.88,
-      "motifs": [
-        "acid_base_pair"
-      ],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        6.955,
-        -8.132,
-        -0.172
-      ],
-      "domain_context": "globin-like"
-    },
-    {
-      "residue_number": 32,
-      "chain_id": "A",
-      "one_letter": "L",
-      "three_letter": "LEU",
-      "conservation": 3.5,
-      "is_conserved": false,
-      "is_buried": true,
-      "sasa": 7.69,
-      "plddt": 98.88,
-      "motifs": [],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        5.669,
-        -6.788,
-        -3.547
       ],
       "domain_context": "globin-like"
     }
@@ -2435,6 +2497,7 @@
     "Thermal shift assay or SPR binding assay against pocket P1 (vol=1120\u00c5\u00b3, druggability=0.95)",
     "Co-immunoprecipitation with HBA2 (unknown interaction, predicted interface: [121, 147, 96])",
     "Co-immunoprecipitation with HBA1 (unknown interaction, predicted interface: [121, 147, 96])",
+    "Enzyme activity assay consistent with EC 1.10.99 using appropriate substrate panel",
     "EMSA or fluorescence polarisation assay to confirm 'heme binding' (GO:0020037)",
     "GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation"
   ],

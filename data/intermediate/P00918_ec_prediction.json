@@ -2,23 +2,34 @@
   "uniprot_id": "P00918",
   "sequence_length": 260,
   "is_enzyme": true,
-  "enzyme_confidence": 0.85,
+  "enzyme_confidence": 1.465,
   "top_prediction": {
-    "ec_class": "3",
-    "ec_name": "Hydrolase",
-    "ec_full": "EC 3.4.21",
-    "score": 0.85,
+    "ec_class": "4",
+    "ec_name": "Lyase",
+    "ec_full": "EC 4.2.1",
+    "score": 1.465,
     "evidence": [
       "go_prediction",
-      "structural_motif",
-      "sequence_composition"
+      "sequence_composition",
+      "homology_inference"
     ]
   },
   "all_predictions": [
     {
-      "ec_class": "3",
-      "ec_name": "Hydrolase",
-      "ec_full": "EC 3.4.21",
+      "ec_class": "4",
+      "ec_name": "Lyase",
+      "ec_full": "EC 4.2.1",
+      "score": 1.465,
+      "evidence": [
+        "go_prediction",
+        "sequence_composition",
+        "homology_inference"
+      ]
+    },
+    {
+      "ec_class": "2",
+      "ec_name": "Transferase",
+      "ec_full": "EC 2.x.x.x",
       "score": 0.85,
       "evidence": [
         "go_prediction",
@@ -27,16 +38,30 @@
       ]
     },
     {
-      "ec_class": "4",
-      "ec_name": "Lyase",
-      "ec_full": "EC 4.x.x.x",
-      "score": 0.24,
+      "ec_class": "3",
+      "ec_name": "Hydrolase",
+      "ec_full": "EC 3.x.x.x",
+      "score": 0.85,
       "evidence": [
+        "go_prediction",
+        "structural_motif",
+        "sequence_composition"
+      ]
+    },
+    {
+      "ec_class": "1",
+      "ec_name": "Oxidoreductase",
+      "ec_full": "EC 1.x.x.x",
+      "score": 0.72,
+      "evidence": [
+        "go_prediction",
+        "structural_motif",
         "sequence_composition"
       ]
     }
   ],
-  "specific_ec": "3.4.21",
-  "specific_ec_name": "Serine-type endopeptidase",
-  "non_enzyme_score": 0.0
+  "specific_ec": "4.2.1",
+  "specific_ec_name": "Carbonate dehydratase",
+  "non_enzyme_score": 0.4,
+  "ml_enzyme_prob": 0.634
 }

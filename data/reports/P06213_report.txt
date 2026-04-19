@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-18 08:03:51
+  Generated: 2026-04-19 13:04:47
 ======================================================================
 
   Protein    : Insulin receptor
@@ -16,7 +16,7 @@
 ──────────────────────────────────────────────────────────────────────
   Top function     : Receptor tyrosine kinase which mediates the pleiotropic actions of insulin. Binding of insulin leads to phosphorylation of several intracellular substrates, including, insulin receptor substrates (IRS
   Enzyme           : no (non-enzyme)
-  Location         : membrane
+  Location         : C:plasma membrane
   Evidence sources : 12
 
 ──────────────────────────────────────────────────────────────────────
@@ -24,28 +24,28 @@
 ──────────────────────────────────────────────────────────────────────
 
   Molecular Function:
-    [HIGH  ] GO:0005524 ATP binding (score=17.0, 2 sources)
+    [HIGH  ] GO:0005524 ATP binding (score=21.8, 3 sources)
+    [HIGH  ] GO:0004714 transmembrane receptor protein tyrosine kinas (score=14.5, 3 sources)
     [HIGH  ] GO:0004672 protein kinase activity (score=13.1, 2 sources)
-    [HIGH  ] GO:0004714 transmembrane receptor protein tyrosine kinas (score=10.0, 2 sources)
-    [HIGH  ] GO:0005515 protein binding (score=7.0, 1 sources)
-    [HIGH  ] GO:0043560 insulin receptor substrate binding (score=6.5, 2 sources)
+    [HIGH  ] GO:0043560 insulin receptor substrate binding (score=9.5, 2 sources)
+    [HIGH  ] GO:0043548 phosphatidylinositol 3-kinase binding (score=9.5, 2 sources)
 
   Biological Process:
     [HIGH  ] GO:0006468 protein phosphorylation (score=25.3, 3 sources)
     [HIGH  ] GO:0007169 cell surface receptor protein tyrosine kinase (score=13.0, 2 sources)
     [HIGH  ] GO:0046777 protein autophosphorylation (score=9.5, 2 sources)
     [HIGH  ] GO:0008286 P:insulin receptor signaling pathway (score=5.1, 1 sources)
-    [LOW   ] GO:0007596 blood coagulation (score=1.6, 1 sources)
+    [LOW   ] GO:0007165 signal transduction (score=1.5, 1 sources)
 
   Cellular Component:
-    [HIGH  ] GO:0016020 membrane (score=16.6, 4 sources)
-    [HIGH  ] GO:0005886 C:plasma membrane (score=5.1, 1 sources)
-    [HIGH  ] GO:0032590 C:dendrite membrane (score=5.1, 1 sources)
+    [HIGH  ] GO:0016020 membrane (score=14.5, 3 sources)
+    [HIGH  ] GO:0005886 C:plasma membrane (score=9.6, 2 sources)
+    [HIGH  ] GO:0009897 C:external side of plasma membrane (score=9.4, 2 sources)
 
 ──────────────────────────────────────────────────────────────────────
   ACTIVE SITES
 ──────────────────────────────────────────────────────────────────────
-  H654 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
+  H654 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
   C825 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
   H868 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
   C911 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster

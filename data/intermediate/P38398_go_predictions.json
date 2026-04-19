@@ -3,13 +3,15 @@
   "sequence_length": 1863,
   "mf_predictions": [
     {
-      "go_id": "GO:0061630",
-      "go_name": "F:ubiquitin protein ligase activity",
+      "go_id": "GO:0008270",
+      "go_name": "zinc ion binding",
       "namespace": "MF",
-      "score": 0.866,
+      "score": 1.399,
       "evidence": [
         "experimental_homolog",
-        "embedding_similarity"
+        "domain_annotation",
+        "structural_motif",
+        "neural_classifier"
       ],
       "saliency_residues": [
         1,
@@ -42,8 +44,7 @@
       "evidence": [
         "experimental_homolog",
         "domain_annotation",
-        "structural_motif",
-        "embedding_similarity"
+        "structural_motif"
       ],
       "saliency_residues": [
         1,
@@ -74,8 +75,7 @@
       "namespace": "MF",
       "score": 0.85,
       "evidence": [
-        "structural_motif",
-        "embedding_similarity"
+        "structural_motif"
       ],
       "saliency_residues": [
         1,
@@ -132,13 +132,11 @@
       ]
     },
     {
-      "go_id": "GO:0008270",
-      "go_name": "zinc ion binding",
+      "go_id": "GO:0005525",
+      "go_name": "GTP binding",
       "namespace": "MF",
       "score": 0.8,
       "evidence": [
-        "experimental_homolog",
-        "domain_annotation",
         "structural_motif"
       ],
       "saliency_residues": [
@@ -165,40 +163,8 @@
       ]
     },
     {
-      "go_id": "GO:0008233",
-      "go_name": "peptidase activity",
-      "namespace": "MF",
-      "score": 0.8,
-      "evidence": [
-        "structural_motif",
-        "embedding_similarity"
-      ],
-      "saliency_residues": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18,
-        19,
-        20
-      ]
-    },
-    {
-      "go_id": "GO:0005525",
-      "go_name": "GTP binding",
+      "go_id": "GO:0003955",
+      "go_name": "NAD(P)H dehydrogenase (quinone) activity",
       "namespace": "MF",
       "score": 0.8,
       "evidence": [
@@ -259,12 +225,12 @@
       ]
     },
     {
-      "go_id": "GO:0008237",
-      "go_name": "metallopeptidase activity",
+      "go_id": "GO:0008233",
+      "go_name": "peptidase activity",
       "namespace": "MF",
-      "score": 0.77,
+      "score": 0.799,
       "evidence": [
-        "embedding_similarity"
+        "structural_motif"
       ],
       "saliency_residues": [
         1,
@@ -329,7 +295,6 @@
       "evidence": [
         "domain_annotation",
         "structural_motif",
-        "embedding_similarity",
         "sequence_composition"
       ],
       "saliency_residues": [
@@ -478,16 +443,14 @@
         19,
         20
       ]
-    }
-  ],
-  "bp_predictions": [
+    },
     {
-      "go_id": "GO:0006468",
-      "go_name": "protein phosphorylation",
-      "namespace": "BP",
-      "score": 0.8,
+      "go_id": "GO:0070063",
+      "go_name": "F:RNA polymerase binding",
+      "namespace": "MF",
+      "score": 0.7,
       "evidence": [
-        "structural_motif"
+        "experimental_homolog"
       ],
       "saliency_residues": [
         1,
@@ -513,12 +476,169 @@
       ]
     },
     {
-      "go_id": "GO:0043066",
-      "go_name": "negative regulation of apoptotic process",
-      "namespace": "BP",
-      "score": 0.77,
+      "go_id": "GO:0003713",
+      "go_name": "F:transcription coactivator activity",
+      "namespace": "MF",
+      "score": 0.7,
       "evidence": [
-        "embedding_similarity"
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "go_id": "GO:0061630",
+      "go_name": "F:ubiquitin protein ligase activity",
+      "namespace": "MF",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "go_id": "GO:0043009",
+      "go_name": "P:chordate embryonic development",
+      "namespace": "MF",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "go_id": "GO:0000800",
+      "go_name": "C:lateral element",
+      "namespace": "MF",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "go_id": "GO:0016604",
+      "go_name": "C:nuclear body",
+      "namespace": "MF",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    }
+  ],
+  "bp_predictions": [
+    {
+      "go_id": "GO:0006468",
+      "go_name": "protein phosphorylation",
+      "namespace": "BP",
+      "score": 0.8,
+      "evidence": [
+        "structural_motif"
       ],
       "saliency_residues": [
         1,
@@ -580,8 +700,7 @@
       "namespace": "BP",
       "score": 0.75,
       "evidence": [
-        "domain_annotation",
-        "embedding_similarity"
+        "domain_annotation"
       ],
       "saliency_residues": [
         1,
@@ -613,37 +732,6 @@
       "score": 0.75,
       "evidence": [
         "structural_motif"
-      ],
-      "saliency_residues": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18,
-        19,
-        20
-      ]
-    },
-    {
-      "go_id": "GO:0007596",
-      "go_name": "blood coagulation",
-      "namespace": "BP",
-      "score": 0.719,
-      "evidence": [
-        "embedding_similarity"
       ],
       "saliency_residues": [
         1,
@@ -947,20 +1035,14 @@
         19,
         20
       ]
-    }
-  ],
-  "cc_predictions": [
+    },
     {
-      "go_id": "GO:0005634",
-      "go_name": "nucleus",
-      "namespace": "CC",
-      "score": 0.824,
+      "go_id": "GO:0055114",
+      "go_name": "oxidation-reduction process",
+      "namespace": "BP",
+      "score": 0.7,
       "evidence": [
-        "experimental_homolog",
-        "domain_annotation",
-        "ai_esm2",
-        "structural_motif",
-        "embedding_similarity"
+        "structural_motif"
       ],
       "saliency_residues": [
         1,
@@ -986,13 +1068,203 @@
       ]
     },
     {
-      "go_id": "GO:0016020",
-      "go_name": "membrane",
-      "namespace": "CC",
-      "score": 0.727,
+      "go_id": "GO:0015671",
+      "go_name": "oxygen transport",
+      "namespace": "BP",
+      "score": 0.7,
       "evidence": [
-        "structural_motif",
-        "embedding_similarity"
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "go_id": "GO:0006351",
+      "go_name": "DNA-templated transcription",
+      "namespace": "BP",
+      "score": 0.65,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "go_id": "GO:0030193",
+      "go_name": "regulation of blood coagulation",
+      "namespace": "BP",
+      "score": 0.6,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "go_id": "GO:0007173",
+      "go_name": "epidermal growth factor receptor signaling pathway",
+      "namespace": "BP",
+      "score": 0.6,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "go_id": "GO:0008283",
+      "go_name": "cell population proliferation",
+      "namespace": "BP",
+      "score": 0.6,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "go_id": "GO:0038127",
+      "go_name": "ERBB signaling pathway",
+      "namespace": "BP",
+      "score": 0.6,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    }
+  ],
+  "cc_predictions": [
+    {
+      "go_id": "GO:0005634",
+      "go_name": "nucleus",
+      "namespace": "CC",
+      "score": 0.75,
+      "evidence": [
+        "experimental_homolog",
+        "domain_annotation",
+        "ai_esm2",
+        "structural_motif"
       ],
       "saliency_residues": [
         1,
@@ -1117,7 +1389,6 @@
       "score": 0.7,
       "evidence": [
         "experimental_homolog",
-        "embedding_similarity",
         "sequence_baseline"
       ],
       "saliency_residues": [
@@ -1266,10 +1537,41 @@
         19,
         20
       ]
+    },
+    {
+      "go_id": "GO:0005886",
+      "go_name": "C:plasma membrane",
+      "namespace": "CC",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
     }
   ],
-  "top_mf": "F:ubiquitin protein ligase activity",
+  "top_mf": "zinc ion binding",
   "top_bp": "protein phosphorylation",
   "top_cc": "nucleus",
-  "n_predictions": 40
+  "n_predictions": 50
 }

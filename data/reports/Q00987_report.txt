@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-16 21:58:15
+  Generated: 2026-04-19 13:05:05
 ======================================================================
 
   Protein    : E3 ubiquitin-protein ligase Mdm2
@@ -15,8 +15,8 @@
   FUNCTIONAL PREDICTION
 ──────────────────────────────────────────────────────────────────────
   Top function     : E3 ubiquitin-protein ligase that mediates ubiquitination of p53/TP53, leading to its degradation by the proteasome (PubMed:29681526). Inhibits p53/TP53- and p73/TP73-mediated cell cycle arrest and apo
-  Enzyme           : yes — 3.4.24
-  Location         : nucleus
+  Enzyme           : yes — 2.3.2
+  Location         : C:endocytic vesicle membrane
   Evidence sources : 12
 
 ──────────────────────────────────────────────────────────────────────
@@ -24,32 +24,32 @@
 ──────────────────────────────────────────────────────────────────────
 
   Molecular Function:
-    [HIGH  ] GO:0061630 ubiquitin protein ligase activity (score=13.0, 2 sources)
-    [HIGH  ] GO:0042802 identical protein binding (score=9.5, 2 sources)
-    [HIGH  ] GO:0008270 F:zinc ion binding (score=7.0, 2 sources)
-    [HIGH  ] GO:0005730 C:nucleolus (score=5.1, 1 sources)
-    [HIGH  ] GO:0005654 C:nucleoplasm (score=5.1, 1 sources)
+    [HIGH  ] GO:0061630 ubiquitin protein ligase activity (score=15.4, 3 sources)
+    [HIGH  ] GO:0008270 F:zinc ion binding (score=13.5, 3 sources)
+    [HIGH  ] GO:0042802 identical protein binding (score=11.0, 3 sources)
+    [HIGH  ] GO:0002039 F:p53 binding (score=9.5, 2 sources)
+    [HIGH  ] GO:0019899 F:enzyme binding (score=9.4, 2 sources)
 
   Biological Process:
-    [HIGH  ] GO:0043066 negative regulation of apoptotic process (score=13.0, 2 sources)
-    [HIGH  ] GO:0051726 regulation of cell cycle (score=9.5, 2 sources)
-    [HIGH  ] GO:0006915 P:apoptotic process (score=5.1, 1 sources)
-    [HIGH  ] GO:0045931 P:positive regulation of mitotic cell cycle (score=5.1, 1 sources)
-    [HIGH  ] GO:0006511 P:ubiquitin-dependent protein catabolic proce (score=5.1, 1 sources)
+    [HIGH  ] GO:0043066 negative regulation of apoptotic process (score=21.0, 4 sources)
+    [HIGH  ] GO:0051726 regulation of cell cycle (score=11.0, 3 sources)
+    [HIGH  ] GO:0000122 P:negative regulation of transcription by RNA (score=9.8, 2 sources)
+    [HIGH  ] GO:0045892 P:negative regulation of DNA-templated transc (score=9.6, 2 sources)
+    [HIGH  ] GO:0016567 P:protein ubiquitination (score=9.3, 2 sources)
 
   Cellular Component:
-    [HIGH  ] GO:0005634 nucleus (score=12.7, 4 sources)
-    [HIGH  ] GO:0005737 C:cytoplasm (score=6.5, 2 sources)
-    [HIGH  ] GO:0005829 C:cytosol (score=5.1, 1 sources)
+    [HIGH  ] GO:0005634 nucleus (score=23.7, 6 sources)
+    [HIGH  ] GO:0032991 C:protein-containing complex (score=9.4, 2 sources)
+    [HIGH  ] GO:0005737 C:cytoplasm (score=7.9, 3 sources)
 
 ──────────────────────────────────────────────────────────────────────
   ACTIVE SITES
 ──────────────────────────────────────────────────────────────────────
-  C77 [HIGH  ] motifs: zinc_binding_cluster
-  C305 [HIGH  ] motifs: zinc_binding_cluster, zinc_binding_cluster
-  C319 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
-  C438 [HIGH  ] motifs: zinc_binding_cluster, zinc_binding_cluster
-  C461 [HIGH  ] motifs: zinc_binding_cluster, zinc_binding_cluster
+  H73 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H96 [HIGH  ] motifs: serine_protease_triad, acid_base_pair
+  C449 [HIGH  ] motifs: cysteine_protease_dyad
+  H457 [HIGH  ] motifs: cysteine_protease_dyad
+  C127 [HIGH  ] motifs: cysteine_protease_dyad
 
 ──────────────────────────────────────────────────────────────────────
   BINDING POCKETS
@@ -83,12 +83,11 @@
 ──────────────────────────────────────────────────────────────────────
   VALIDATION SUGGESTIONS
 ──────────────────────────────────────────────────────────────────────
-  1. Alanine scanning mutagenesis of predicted active site residues (C77, C305, C319) to confirm functional importance
-  2. Thermal shift assay or SPR binding as
-  say against pocket P1 (vol=740Å³, druggability=0.94)
+  1. Alanine scanning mutagenesis of predicted active site residues (H73, H96, C449) to confirm functional importance
+  2. Thermal shift assay or SPR binding assay against pocket P1 (vol=740Å³, druggability=0.94)
   3. Co-immunoprecipitation with RB1 (unknown interaction, predicted interface: [235, 1, 181])
   4. Co-immunoprecipitation with AKT1 (unknown interaction, predicted interface: [235, 1, 181])
-  5. Enzyme activity assay consistent with EC 3.4.24 using appropriate substrate panel
+  5. Enzyme activity assay consistent with EC 2.3.2 using appropriate substrate panel
   6. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
