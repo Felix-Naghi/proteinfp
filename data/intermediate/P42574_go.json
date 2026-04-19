@@ -1,0 +1,55 @@
+{
+  "uniprot_id": "P42574",
+  "sequence_length": 0,
+  "mf_predictions": [
+    {
+      "go_id": "GO:0004197",
+      "go_name": "cysteine-type endopeptidase activity",
+      "namespace": "MF",
+      "score": 0.75,
+      "evidence": [
+        "experimental_homolog",
+        "domain_annotation"
+      ],
+      "saliency_residues": []
+    },
+    {
+      "go_id": "GO:0008233",
+      "go_name": "peptidase activity",
+      "namespace": "MF",
+      "score": 0.75,
+      "evidence": [
+        "experimental_homolog",
+        "domain_annotation"
+      ],
+      "saliency_residues": []
+    }
+  ],
+  "bp_predictions": [
+    {
+      "go_id": "GO:0006915",
+      "go_name": "apoptotic process",
+      "namespace": "BP",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": []
+    },
+    {
+      "go_id": "GO:0097193",
+      "go_name": "intrinsic apoptotic signaling pathway",
+      "namespace": "BP",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": []
+    }
+  ],
+  "cc_predictions": [],
+  "top_mf": "cysteine-type endopeptidase activity",
+  "top_bp": "apoptotic process",
+  "top_cc": "",
+  "n_predictions": 4
+}

@@ -286,6 +286,39 @@
       ]
     },
     {
+      "go_id": "GO:0005524",
+      "go_name": "ATP binding",
+      "namespace": "MF",
+      "score": 0.8,
+      "evidence": [
+        "experimental_homolog",
+        "domain_annotation",
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        1,
+        4,
+        5,
+        8,
+        35,
+        38,
+        40,
+        41,
+        42,
+        47,
+        50,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61
+      ]
+    },
+    {
       "go_id": "GO:0008270",
       "go_name": "zinc ion binding",
       "namespace": "MF",
@@ -352,8 +385,9 @@
       "go_id": "GO:0020037",
       "go_name": "heme binding",
       "namespace": "MF",
-      "score": 0.777,
+      "score": 0.8,
       "evidence": [
+        "structural_motif",
         "embedding_similarity"
       ],
       "saliency_residues": [
@@ -418,38 +452,6 @@
       "namespace": "MF",
       "score": 0.775,
       "evidence": [
-        "embedding_similarity"
-      ],
-      "saliency_residues": [
-        1,
-        4,
-        5,
-        8,
-        35,
-        38,
-        40,
-        41,
-        42,
-        47,
-        50,
-        53,
-        54,
-        55,
-        56,
-        57,
-        58,
-        59,
-        60,
-        61
-      ]
-    },
-    {
-      "go_id": "GO:0003700",
-      "go_name": "DNA-binding transcription factor activity",
-      "namespace": "MF",
-      "score": 0.774,
-      "evidence": [
-        "structural_motif",
         "embedding_similarity"
       ],
       "saliency_residues": [
@@ -547,6 +549,7 @@
       "namespace": "BP",
       "score": 0.777,
       "evidence": [
+        "structural_motif",
         "embedding_similarity"
       ],
       "saliency_residues": [
@@ -578,6 +581,7 @@
       "namespace": "BP",
       "score": 0.775,
       "evidence": [
+        "structural_motif",
         "embedding_similarity"
       ],
       "saliency_residues": [
@@ -735,6 +739,7 @@
       "namespace": "BP",
       "score": 0.727,
       "evidence": [
+        "structural_motif",
         "embedding_similarity"
       ],
       "saliency_residues": [
@@ -854,6 +859,37 @@
       ]
     },
     {
+      "go_id": "GO:0006457",
+      "go_name": "protein folding",
+      "namespace": "BP",
+      "score": 0.7,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        1,
+        4,
+        5,
+        8,
+        35,
+        38,
+        40,
+        41,
+        42,
+        47,
+        50,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61
+      ]
+    },
+    {
       "go_id": "GO:0018108",
       "go_name": "peptidyl-tyrosine phosphorylation",
       "namespace": "BP",
@@ -885,43 +921,12 @@
       ]
     },
     {
-      "go_id": "GO:0006801",
-      "go_name": "superoxide metabolic process",
+      "go_id": "GO:0055114",
+      "go_name": "oxidation-reduction process",
       "namespace": "BP",
-      "score": 0.684,
+      "score": 0.7,
       "evidence": [
-        "embedding_similarity"
-      ],
-      "saliency_residues": [
-        1,
-        4,
-        5,
-        8,
-        35,
-        38,
-        40,
-        41,
-        42,
-        47,
-        50,
-        53,
-        54,
-        55,
-        56,
-        57,
-        58,
-        59,
-        60,
-        61
-      ]
-    },
-    {
-      "go_id": "GO:0006974",
-      "go_name": "cellular response to DNA damage stimulus",
-      "namespace": "BP",
-      "score": 0.677,
-      "evidence": [
-        "embedding_similarity"
+        "structural_motif"
       ],
       "saliency_residues": [
         1,
@@ -1021,6 +1026,7 @@
       "namespace": "CC",
       "score": 0.777,
       "evidence": [
+        "structural_motif",
         "embedding_similarity"
       ],
       "saliency_residues": [

@@ -52,7 +52,7 @@ log = get_logger(__name__)
 
 STRING_API       = "https://string-db.org/api"
 STRING_VERSION   = "12.0"
-MAX_PARTNERS     = 20
+MAX_PARTNERS     = 30
 MIN_SCORE        = 400      # medium confidence threshold
 
 # Interface prediction constants
@@ -240,6 +240,16 @@ def _get_string_id_by_name(uniprot_id: str) -> str:
         "P38398": "9606.ENSP00000309572",   # BRCA1
         "P06213": "9606.ENSP00000241135",   # INSR
         "P00441": "9606.ENSP00000261509",   # SOD1
+        "P07900": "9606.ENSP00000299871",   # HSP90AA1
+        "P00734": "9606.ENSP00000360458",   # F2 (Thrombin)
+        "P68871": "9606.ENSP00000333994",   # HBB
+        "P00918": "9606.ENSP00000386755",   # CA2
+        "P01116": "9606.ENSP00000308495",   # KRAS
+        "Q00987": "9606.ENSP00000258080",   # MDM2
+        "Q9BYF1": "9606.ENSP00000252519",   # ACE2
+        "P16083": "9606.ENSP00000370027",   # NQO2
+        "O15151": "9606.ENSP00000369375",   # MDM4
+        "P42574": "9606.ENSP00000311559",   # CASP3
     }
     return known.get(uniprot_id, "")
 

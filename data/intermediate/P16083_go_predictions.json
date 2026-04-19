@@ -225,12 +225,12 @@
       ]
     },
     {
-      "go_id": "GO:0008241",
-      "go_name": "peptidyl-dipeptidase activity",
+      "go_id": "GO:0005524",
+      "go_name": "ATP binding",
       "namespace": "MF",
-      "score": 0.792,
+      "score": 0.8,
       "evidence": [
-        "embedding_similarity"
+        "structural_motif"
       ],
       "saliency_residues": [
         2,
@@ -259,8 +259,9 @@
       "go_id": "GO:0005525",
       "go_name": "GTP binding",
       "namespace": "MF",
-      "score": 0.79,
+      "score": 0.8,
       "evidence": [
+        "structural_motif",
         "embedding_similarity"
       ],
       "saliency_residues": [
@@ -290,8 +291,9 @@
       "go_id": "GO:0020037",
       "go_name": "heme binding",
       "namespace": "MF",
-      "score": 0.787,
+      "score": 0.8,
       "evidence": [
+        "structural_motif",
         "embedding_similarity"
       ],
       "saliency_residues": [
@@ -318,12 +320,11 @@
       ]
     },
     {
-      "go_id": "GO:0019430",
-      "go_name": "P:removal of superoxide radicals",
+      "go_id": "GO:0008241",
+      "go_name": "peptidyl-dipeptidase activity",
       "namespace": "MF",
-      "score": 0.781,
+      "score": 0.792,
       "evidence": [
-        "experimental_homolog",
         "embedding_similarity"
       ],
       "saliency_residues": [
@@ -483,6 +484,40 @@
       "namespace": "BP",
       "score": 0.787,
       "evidence": [
+        "structural_motif",
+        "embedding_similarity"
+      ],
+      "saliency_residues": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        12,
+        20,
+        23,
+        24,
+        27,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ]
+    },
+    {
+      "go_id": "GO:0019430",
+      "go_name": "P:removal of superoxide radicals",
+      "namespace": "BP",
+      "score": 0.781,
+      "evidence": [
+        "experimental_homolog",
+        "structural_motif",
         "embedding_similarity"
       ],
       "saliency_residues": [
@@ -635,6 +670,37 @@
     {
       "go_id": "GO:0043525",
       "go_name": "P:positive regulation of neuron apoptotic process",
+      "namespace": "BP",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        12,
+        20,
+        23,
+        24,
+        27,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ]
+    },
+    {
+      "go_id": "GO:0045454",
+      "go_name": "P:cell redox homeostasis",
       "namespace": "BP",
       "score": 0.7,
       "evidence": [
@@ -850,74 +916,12 @@
       ]
     },
     {
-      "go_id": "GO:0006508",
-      "go_name": "proteolysis",
+      "go_id": "GO:0006457",
+      "go_name": "protein folding",
       "namespace": "BP",
-      "score": 0.699,
+      "score": 0.7,
       "evidence": [
-        "embedding_similarity"
-      ],
-      "saliency_residues": [
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        10,
-        12,
-        20,
-        23,
-        24,
-        27,
-        29,
-        30,
-        31,
-        32,
-        33,
-        34,
-        35
-      ]
-    },
-    {
-      "go_id": "GO:0006801",
-      "go_name": "superoxide metabolic process",
-      "namespace": "BP",
-      "score": 0.689,
-      "evidence": [
-        "embedding_similarity"
-      ],
-      "saliency_residues": [
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        10,
-        12,
-        20,
-        23,
-        24,
-        27,
-        29,
-        30,
-        31,
-        32,
-        33,
-        34,
-        35
-      ]
-    },
-    {
-      "go_id": "GO:0043066",
-      "go_name": "negative regulation of apoptotic process",
-      "namespace": "BP",
-      "score": 0.682,
-      "evidence": [
-        "embedding_similarity"
+        "structural_motif"
       ],
       "saliency_residues": [
         2,
@@ -984,6 +988,7 @@
       "namespace": "CC",
       "score": 0.792,
       "evidence": [
+        "structural_motif",
         "embedding_similarity"
       ],
       "saliency_residues": [
@@ -1015,6 +1020,7 @@
       "namespace": "CC",
       "score": 0.787,
       "evidence": [
+        "structural_motif",
         "embedding_similarity"
       ],
       "saliency_residues": [
@@ -1228,10 +1234,41 @@
         34,
         35
       ]
+    },
+    {
+      "go_id": "GO:0031838",
+      "go_name": "haptoglobin-hemoglobin complex",
+      "namespace": "CC",
+      "score": 0.55,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        12,
+        20,
+        23,
+        24,
+        27,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ]
     }
   ],
   "top_mf": "serine-type endopeptidase activity",
   "top_bp": "oxygen transport",
   "top_cc": "C:nucleus",
-  "n_predictions": 39
+  "n_predictions": 40
 }

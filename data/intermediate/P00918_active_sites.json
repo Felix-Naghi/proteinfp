@@ -15,6 +15,7 @@
       "plddt": 98.81,
       "motifs": [
         "serine_protease_triad",
+        "serine_protease_triad",
         "zinc_binding_cluster",
         "zinc_binding_cluster",
         "zinc_binding_cluster",
@@ -27,7 +28,8 @@
         4.556,
         5.389,
         -5.704
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 107,
@@ -41,6 +43,10 @@
       "plddt": 98.94,
       "motifs": [
         "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
         "zinc_binding_cluster",
         "zinc_binding_cluster",
         "zinc_binding_cluster",
@@ -53,7 +59,8 @@
         -4.652,
         9.358,
         -4.769
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 119,
@@ -76,7 +83,8 @@
         1.407,
         2.42,
         1.235
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 205,
@@ -97,7 +105,8 @@
         -9.906,
         -6.615,
         -1.361
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 4,
@@ -118,7 +127,31 @@
         3.512,
         -8.473,
         -18.454
-      ]
+      ],
+      "domain_context": ""
+    },
+    {
+      "residue_number": 10,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 151.41,
+      "plddt": 93.94,
+      "motifs": [
+        "p_loop_walker_a",
+        "p_loop_walker_a"
+      ],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        2.275,
+        -0.321,
+        -24.298
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 15,
@@ -141,7 +174,8 @@
         -3.904,
         -1.566,
         -20.987
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 17,
@@ -157,7 +191,8 @@
         "zinc_binding_cluster",
         "zinc_binding_cluster",
         "zinc_binding_cluster",
-        "acid_base_pair"
+        "acid_base_pair",
+        "haem_binding"
       ],
       "evidence_score": 7,
       "confidence": "HIGH",
@@ -165,7 +200,8 @@
         -7.814,
         -4.366,
         -18.304
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 36,
@@ -187,7 +223,30 @@
         -16.649,
         18.744,
         -0.579
-      ]
+      ],
+      "domain_context": ""
+    },
+    {
+      "residue_number": 64,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 38.7,
+      "plddt": 96.69,
+      "motifs": [
+        "haem_binding"
+      ],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        7.463,
+        -1.852,
+        -10.26
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 94,
@@ -200,7 +259,8 @@
       "sasa": 24.02,
       "plddt": 98.75,
       "motifs": [
-        "zinc_binding_cluster"
+        "zinc_binding_cluster",
+        "haem_binding"
       ],
       "evidence_score": 7,
       "confidence": "HIGH",
@@ -208,7 +268,8 @@
         6.131,
         0.542,
         -0.69
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 122,
@@ -227,7 +288,8 @@
         -1.736,
         -5.024,
         6.111
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 3,
@@ -251,26 +313,80 @@
         1.097,
         -11.298,
         -17.58
-      ]
+      ],
+      "domain_context": ""
     },
     {
-      "residue_number": 10,
+      "residue_number": 6,
       "chain_id": "A",
-      "one_letter": "H",
-      "three_letter": "HIS",
-      "conservation": 7.0,
-      "is_conserved": true,
-      "is_buried": false,
-      "sasa": 151.41,
-      "plddt": 93.94,
-      "motifs": [],
+      "one_letter": "G",
+      "three_letter": "GLY",
+      "conservation": 4.0,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 8.23,
+      "plddt": 95.81,
+      "motifs": [
+        "p_loop_walker_a",
+        "ghkl_atpase",
+        "flavin_binding"
+      ],
       "evidence_score": 5,
       "confidence": "MEDIUM",
       "coords": [
-        2.275,
-        -0.321,
-        -24.298
-      ]
+        4.188,
+        -1.808,
+        -16.306
+      ],
+      "domain_context": ""
+    },
+    {
+      "residue_number": 12,
+      "chain_id": "A",
+      "one_letter": "G",
+      "three_letter": "GLY",
+      "conservation": 4.0,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 0.55,
+      "plddt": 97.06,
+      "motifs": [
+        "p_loop_walker_a",
+        "p_loop_walker_a",
+        "flavin_binding"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        0.539,
+        0.889,
+        -18.787
+      ],
+      "domain_context": ""
+    },
+    {
+      "residue_number": 29,
+      "chain_id": "A",
+      "one_letter": "S",
+      "three_letter": "SER",
+      "conservation": 4.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 0.0,
+      "plddt": 98.94,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        -8.258,
+        2.365,
+        -6.623
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 32,
@@ -283,6 +399,7 @@
       "sasa": 17.64,
       "plddt": 98.81,
       "motifs": [
+        "serine_protease_triad",
         "serine_protease_triad",
         "zinc_binding_cluster",
         "zinc_binding_cluster",
@@ -297,26 +414,8 @@
         -9.784,
         11.407,
         -6.126
-      ]
-    },
-    {
-      "residue_number": 64,
-      "chain_id": "A",
-      "one_letter": "H",
-      "three_letter": "HIS",
-      "conservation": 7.0,
-      "is_conserved": true,
-      "is_buried": false,
-      "sasa": 38.7,
-      "plddt": 96.69,
-      "motifs": [],
-      "evidence_score": 5,
-      "confidence": "MEDIUM",
-      "coords": [
-        7.463,
-        -1.852,
-        -10.26
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 105,
@@ -330,6 +429,7 @@
       "plddt": 98.81,
       "motifs": [
         "serine_protease_triad",
+        "serine_protease_triad",
         "serine_protease_triad"
       ],
       "evidence_score": 5,
@@ -338,7 +438,8 @@
         0.724,
         10.255,
         -5.585
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 106,
@@ -365,7 +466,8 @@
         -1.855,
         7.722,
         -6.773
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 117,
@@ -391,7 +493,30 @@
         2.483,
         8.186,
         -1.817
-      ]
+      ],
+      "domain_context": ""
+    },
+    {
+      "residue_number": 124,
+      "chain_id": "A",
+      "one_letter": "N",
+      "three_letter": "ASN",
+      "conservation": 4.0,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 0.12,
+      "plddt": 98.75,
+      "motifs": [
+        "ghkl_atpase"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        -6.743,
+        -9.339,
+        8.153
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 245,
@@ -412,45 +537,126 @@
         -1.981,
         4.53,
         -11.5
-      ]
+      ],
+      "domain_context": ""
     },
     {
-      "residue_number": 6,
+      "residue_number": 7,
+      "chain_id": "A",
+      "one_letter": "Y",
+      "three_letter": "TYR",
+      "conservation": 5.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 36.9,
+      "plddt": 96.69,
+      "motifs": [
+        "p_loop_walker_a",
+        "flavin_binding",
+        "flavin_binding"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        3.781,
+        1.993,
+        -16.607
+      ],
+      "domain_context": ""
+    },
+    {
+      "residue_number": 8,
       "chain_id": "A",
       "one_letter": "G",
       "three_letter": "GLY",
       "conservation": 4.0,
       "is_conserved": false,
-      "is_buried": true,
-      "sasa": 8.23,
-      "plddt": 95.81,
-      "motifs": [],
+      "is_buried": false,
+      "sasa": 30.49,
+      "plddt": 93.56,
+      "motifs": [
+        "p_loop_walker_a",
+        "p_loop_walker_a",
+        "flavin_binding",
+        "flavin_binding"
+      ],
       "evidence_score": 3,
       "confidence": "MEDIUM",
       "coords": [
-        4.188,
-        -1.808,
-        -16.306
-      ]
+        5.093,
+        2.349,
+        -20.199
+      ],
+      "domain_context": ""
     },
     {
-      "residue_number": 12,
+      "residue_number": 9,
       "chain_id": "A",
-      "one_letter": "G",
-      "three_letter": "GLY",
-      "conservation": 4.0,
+      "one_letter": "K",
+      "three_letter": "LYS",
+      "conservation": 6.0,
       "is_conserved": false,
-      "is_buried": true,
-      "sasa": 0.55,
-      "plddt": 97.06,
-      "motifs": [],
+      "is_buried": false,
+      "sasa": 170.93,
+      "plddt": 92.69,
+      "motifs": [
+        "p_loop_walker_a",
+        "p_loop_walker_a"
+      ],
       "evidence_score": 3,
       "confidence": "MEDIUM",
       "coords": [
-        0.539,
-        0.889,
-        -18.787
-      ]
+        3.077,
+        3.331,
+        -23.328
+      ],
+      "domain_context": ""
+    },
+    {
+      "residue_number": 11,
+      "chain_id": "A",
+      "one_letter": "N",
+      "three_letter": "ASN",
+      "conservation": 4.0,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 37.82,
+      "plddt": 95.38,
+      "motifs": [
+        "p_loop_walker_a",
+        "p_loop_walker_a",
+        "ghkl_atpase"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        1.887,
+        -2.072,
+        -20.887
+      ],
+      "domain_context": ""
+    },
+    {
+      "residue_number": 13,
+      "chain_id": "A",
+      "one_letter": "P",
+      "three_letter": "PRO",
+      "conservation": 3.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 24.68,
+      "plddt": 97.69,
+      "motifs": [
+        "p_loop_walker_a"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -2.646,
+        1.348,
+        -16.64
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 14,
@@ -472,7 +678,8 @@
         -4.824,
         1.975,
         -19.758
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 16,
@@ -491,7 +698,8 @@
         -4.081,
         -3.611,
         -17.714
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 18,
@@ -512,7 +720,8 @@
         -6.83,
         -6.687,
         -21.239
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 19,
@@ -531,7 +740,8 @@
         "zinc_binding_cluster",
         "acid_base_pair",
         "acid_base_pair",
-        "acid_base_pair"
+        "acid_base_pair",
+        "ghkl_atpase"
       ],
       "evidence_score": 3,
       "confidence": "MEDIUM",
@@ -539,7 +749,8 @@
         -5.15,
         -9.225,
         -18.896
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 23,
@@ -558,7 +769,8 @@
         -9.271,
         -3.2,
         -13.785
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 24,
@@ -579,7 +791,8 @@
         -12.806,
         -1.959,
         -14.836
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 25,
@@ -598,7 +811,8 @@
         -14.384,
         -3.211,
         -11.539
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 26,
@@ -621,7 +835,8 @@
         -16.8,
         -1.345,
         -9.231
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 27,
@@ -644,7 +859,8 @@
         -14.303,
         -0.472,
         -6.431
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 28,
@@ -663,26 +879,8 @@
         -10.992,
         0.177,
         -8.226
-      ]
-    },
-    {
-      "residue_number": 29,
-      "chain_id": "A",
-      "one_letter": "S",
-      "three_letter": "SER",
-      "conservation": 4.5,
-      "is_conserved": false,
-      "is_buried": true,
-      "sasa": 0.0,
-      "plddt": 98.94,
-      "motifs": [],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        -8.258,
-        2.365,
-        -6.623
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 30,
@@ -701,7 +899,8 @@
         -6.8,
         4.989,
         -6.42
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 31,
@@ -720,7 +919,8 @@
         -9.594,
         7.636,
         -6.346
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 33,
@@ -739,7 +939,8 @@
         -10.738,
         12.506,
         -2.59
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 34,
@@ -752,6 +953,8 @@
       "sasa": 46.9,
       "plddt": 98.31,
       "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
         "zinc_binding_cluster",
         "zinc_binding_cluster",
         "zinc_binding_cluster",
@@ -763,7 +966,8 @@
         -13.166,
         15.379,
         -3.153
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 38,
@@ -782,7 +986,8 @@
         -16.263,
         13.353,
         1.688
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 39,
@@ -803,7 +1008,8 @@
         -18.607,
         12.852,
         4.685
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 41,
@@ -825,7 +1031,8 @@
         -18.667,
         9.927,
         9.995
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 47,
@@ -844,7 +1051,8 @@
         -6.634,
         4.413,
         14.391
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 51,
@@ -863,7 +1071,8 @@
         4.65,
         -1.152,
         15.184
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 54,
@@ -882,7 +1091,8 @@
         7.939,
         -4.495,
         13.832
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 56,
@@ -901,7 +1111,8 @@
         11.867,
         -5.568,
         9.075
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 58,
@@ -923,7 +1134,8 @@
         14.605,
         -7.107,
         3.534
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 59,
@@ -942,7 +1154,8 @@
         14.283,
         -4.318,
         1.0
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 61,
@@ -961,7 +1174,8 @@
         13.268,
         -3.762,
         -6.112
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 63,
@@ -980,7 +1194,8 @@
         10.626,
         -3.918,
         -11.062
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 65,
@@ -999,7 +1214,8 @@
         8.418,
         -0.297,
         -6.886
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 66,
@@ -1018,7 +1234,8 @@
         10.78,
         -1.007,
         -4.031
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 67,
@@ -1037,7 +1254,8 @@
         9.222,
         -2.722,
         -0.988
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 68,
@@ -1056,7 +1274,8 @@
         10.331,
         -3.253,
         2.633
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 69,
@@ -1077,7 +1296,8 @@
         9.043,
         -6.611,
         3.96
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 70,
@@ -1096,7 +1316,8 @@
         8.167,
         -7.371,
         7.627
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 71,
@@ -1117,7 +1338,8 @@
         7.715,
         -10.523,
         9.738
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 72,
@@ -1131,7 +1353,8 @@
       "plddt": 97.94,
       "motifs": [
         "zinc_binding_cluster",
-        "acid_base_pair"
+        "acid_base_pair",
+        "ghkl_atpase"
       ],
       "evidence_score": 3,
       "confidence": "MEDIUM",
@@ -1139,7 +1362,8 @@
         3.915,
         -11.097,
         9.732
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 75,
@@ -1162,7 +1386,8 @@
         0.791,
         -9.838,
         15.858
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 76,
@@ -1183,7 +1408,8 @@
         4.101,
         -7.836,
         16.285
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 77,
@@ -1202,7 +1428,8 @@
         3.208,
         -5.047,
         13.808
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 78,
@@ -1221,7 +1448,8 @@
         -0.542,
         -4.383,
         13.563
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 79,
@@ -1240,7 +1468,8 @@
         -3.23,
         -1.925,
         12.511
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 82,
@@ -1259,7 +1488,8 @@
         -10.723,
         3.13,
         12.572
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 88,
@@ -1278,7 +1508,8 @@
         -4.435,
         -6.466,
         10.462
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 89,
@@ -1300,7 +1531,8 @@
         -0.717,
         -7.488,
         10.3
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 90,
@@ -1319,7 +1551,8 @@
         1.819,
         -5.269,
         8.501
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 93,
@@ -1338,7 +1571,8 @@
         5.407,
         -0.986,
         2.743
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 95,
@@ -1357,7 +1591,8 @@
         5.995,
         3.886,
         -2.538
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 97,
@@ -1376,7 +1611,8 @@
         6.332,
         8.499,
         -7.089
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 98,
@@ -1395,7 +1631,30 @@
         6.502,
         10.689,
         -10.187
-      ]
+      ],
+      "domain_context": ""
+    },
+    {
+      "residue_number": 99,
+      "chain_id": "A",
+      "one_letter": "S",
+      "three_letter": "SER",
+      "conservation": 4.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 40.14,
+      "plddt": 97.69,
+      "motifs": [
+        "serine_protease_triad"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        9.238,
+        12.147,
+        -12.376
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 104,
@@ -1414,7 +1673,8 @@
         3.534,
         11.041,
         -8.004
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 108,
@@ -1433,7 +1693,8 @@
         -5.474,
         13.029,
         -5.233
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 109,
@@ -1452,7 +1713,8 @@
         -7.125,
         15.513,
         -2.853
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 110,
@@ -1465,6 +1727,7 @@
       "sasa": 58.46,
       "plddt": 98.5,
       "motifs": [
+        "serine_protease_triad",
         "zinc_binding_cluster",
         "zinc_binding_cluster",
         "zinc_binding_cluster",
@@ -1477,7 +1740,8 @@
         -9.359,
         17.97,
         -4.772
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 111,
@@ -1500,7 +1764,8 @@
         -7.469,
         16.829,
         -7.958
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 112,
@@ -1522,7 +1787,8 @@
         -4.099,
         17.875,
         -6.391
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 113,
@@ -1543,7 +1809,8 @@
         -1.16,
         15.447,
         -6.424
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 115,
@@ -1562,7 +1829,8 @@
         5.383,
         14.091,
         -4.902
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 116,
@@ -1581,7 +1849,8 @@
         4.832,
         10.473,
         -3.793
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 118,
@@ -1600,7 +1869,8 @@
         3.492,
         5.587,
         0.805
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 120,
@@ -1619,7 +1889,8 @@
         1.716,
         0.39,
         4.45
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 121,
@@ -1638,7 +1909,8 @@
         0.005,
         -2.897,
         3.501
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 123,
@@ -1657,26 +1929,30 @@
         -3.803,
         -8.246,
         5.965
-      ]
+      ],
+      "domain_context": ""
     },
     {
-      "residue_number": 124,
+      "residue_number": 128,
       "chain_id": "A",
-      "one_letter": "N",
-      "three_letter": "ASN",
+      "one_letter": "G",
+      "three_letter": "GLY",
       "conservation": 4.0,
       "is_conserved": false,
-      "is_buried": true,
-      "sasa": 0.12,
-      "plddt": 98.75,
-      "motifs": [],
+      "is_buried": false,
+      "sasa": 56.95,
+      "plddt": 97.44,
+      "motifs": [
+        "ghkl_atpase"
+      ],
       "evidence_score": 3,
       "confidence": "MEDIUM",
       "coords": [
-        -6.743,
-        -9.339,
-        8.153
-      ]
+        -5.372,
+        -17.215,
+        8.586
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 129,
@@ -1689,7 +1965,8 @@
       "sasa": 54.25,
       "plddt": 97.06,
       "motifs": [
-        "acid_base_pair"
+        "acid_base_pair",
+        "dfg_loop"
       ],
       "evidence_score": 3,
       "confidence": "MEDIUM",
@@ -1697,7 +1974,52 @@
         -2.935,
         -16.175,
         5.784
-      ]
+      ],
+      "domain_context": ""
+    },
+    {
+      "residue_number": 130,
+      "chain_id": "A",
+      "one_letter": "F",
+      "three_letter": "PHE",
+      "conservation": 4.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 71.61,
+      "plddt": 97.56,
+      "motifs": [
+        "dfg_loop"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -2.292,
+        -13.355,
+        3.243
+      ],
+      "domain_context": ""
+    },
+    {
+      "residue_number": 131,
+      "chain_id": "A",
+      "one_letter": "G",
+      "three_letter": "GLY",
+      "conservation": 4.0,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 38.13,
+      "plddt": 97.81,
+      "motifs": [
+        "dfg_loop"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -3.233,
+        -15.609,
+        0.251
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 132,
@@ -1718,7 +2040,8 @@
         -6.742,
         -16.216,
         1.704
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 133,
@@ -1737,7 +2060,8 @@
         -7.066,
         -12.591,
         2.868
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 138,
@@ -1758,7 +2082,8 @@
         -11.913,
         -6.644,
         3.657
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 139,
@@ -1777,7 +2102,8 @@
         -8.832,
         -8.878,
         3.208
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 140,
@@ -1796,7 +2122,8 @@
         -6.404,
         -5.955,
         3.305
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 141,
@@ -1815,7 +2142,8 @@
         -6.032,
         -2.616,
         5.06
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 142,
@@ -1834,7 +2162,8 @@
         -3.743,
         -0.046,
         3.375
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 143,
@@ -1853,7 +2182,8 @@
         -2.52,
         3.033,
         5.231
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 144,
@@ -1872,7 +2202,8 @@
         -1.935,
         5.639,
         2.474
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 145,
@@ -1891,7 +2222,8 @@
         0.398,
         8.565,
         3.353
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 146,
@@ -1910,7 +2242,8 @@
         1.139,
         11.514,
         1.053
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 147,
@@ -1929,7 +2262,8 @@
         4.757,
         12.743,
         0.651
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 156,
@@ -1948,7 +2282,8 @@
         13.063,
         7.721,
         5.77
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 158,
@@ -1969,7 +2304,8 @@
         17.763,
         4.517,
         6.356
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 159,
@@ -1988,7 +2324,8 @@
         15.59,
         3.478,
         3.348
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 160,
@@ -2007,7 +2344,8 @@
         17.238,
         6.145,
         1.122
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 161,
@@ -2028,7 +2366,8 @@
         20.782,
         5.053,
         2.158
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 163,
@@ -2047,7 +2386,8 @@
         18.437,
         2.248,
         -2.429
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 164,
@@ -2068,7 +2408,8 @@
         21.746,
         2.239,
         -4.401
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 166,
@@ -2087,7 +2428,8 @@
         18.762,
         -2.395,
         -5.007
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 167,
@@ -2111,7 +2453,8 @@
         19.091,
         -0.167,
         -8.123
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 168,
@@ -2130,7 +2473,8 @@
         17.77,
         -2.822,
         -10.598
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 169,
@@ -2152,7 +2496,8 @@
         14.786,
         -5.219,
         -10.708
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 171,
@@ -2174,7 +2519,8 @@
         17.962,
         -6.913,
         -6.411
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 174,
@@ -2195,7 +2541,8 @@
         18.997,
         -7.238,
         4.185
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 175,
@@ -2214,7 +2561,8 @@
         16.976,
         -4.495,
         5.906
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 178,
@@ -2233,7 +2581,8 @@
         13.661,
         -0.347,
         10.818
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 179,
@@ -2254,7 +2603,8 @@
         10.864,
         1.386,
         12.777
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 180,
@@ -2273,7 +2623,8 @@
         7.959,
         2.214,
         10.366
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 181,
@@ -2294,7 +2645,8 @@
         6.509,
         4.708,
         12.957
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 183,
@@ -2313,7 +2665,8 @@
         7.143,
         7.255,
         8.405
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 185,
@@ -2332,7 +2685,8 @@
         2.615,
         12.028,
         10.292
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 189,
@@ -2353,7 +2707,8 @@
         -6.869,
         11.956,
         10.803
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 190,
@@ -2372,7 +2727,8 @@
         -8.02,
         9.944,
         7.773
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 191,
@@ -2391,7 +2747,8 @@
         -10.36,
         9.303,
         4.89
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 192,
@@ -2410,7 +2767,8 @@
         -11.64,
         5.752,
         4.255
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 193,
@@ -2429,7 +2787,8 @@
         -13.387,
         3.811,
         1.466
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 195,
@@ -2448,7 +2807,8 @@
         -11.113,
         -0.125,
         -2.843
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 196,
@@ -2467,7 +2827,8 @@
         -8.589,
         -2.339,
         -4.666
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 198,
@@ -2486,7 +2847,8 @@
         -3.494,
         -0.19,
         -7.386
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 200,
@@ -2505,7 +2867,8 @@
         -2.186,
         -6.008,
         -11.011
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 202,
@@ -2524,7 +2887,8 @@
         -6.083,
         -5.147,
         -8.992
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 204,
@@ -2546,7 +2910,8 @@
         -11.039,
         -5.503,
         -4.862
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 206,
@@ -2565,7 +2930,8 @@
         -8.639,
         -3.318,
         0.201
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 208,
@@ -2584,7 +2950,8 @@
         -8.251,
         2.208,
         2.252
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 209,
@@ -2603,7 +2970,8 @@
         -7.191,
         4.529,
         5.093
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 210,
@@ -2622,7 +2990,8 @@
         -5.676,
         7.696,
         3.514
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 211,
@@ -2641,7 +3010,8 @@
         -4.096,
         10.041,
         6.079
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 212,
@@ -2663,7 +3033,8 @@
         -5.053,
         13.741,
         5.803
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 213,
@@ -2684,7 +3055,8 @@
         -1.627,
         14.968,
         6.931
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 215,
@@ -2703,7 +3075,8 @@
         4.784,
         13.698,
         5.676
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 217,
@@ -2722,7 +3095,8 @@
         10.408,
         14.782,
         2.605
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 218,
@@ -2741,7 +3115,8 @@
         13.361,
         16.545,
         0.914
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 220,
@@ -2762,7 +3137,8 @@
         17.036,
         14.837,
         -2.505
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 221,
@@ -2781,7 +3157,8 @@
         15.243,
         11.946,
         -0.7
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 222,
@@ -2800,7 +3177,8 @@
         12.624,
         11.7,
         -3.527
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 224,
@@ -2823,7 +3201,8 @@
         16.956,
         8.805,
         -4.738
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 225,
@@ -2842,7 +3221,8 @@
         13.688,
         6.94,
         -5.59
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 226,
@@ -2864,7 +3244,8 @@
         13.88,
         8.233,
         -9.221
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 227,
@@ -2887,7 +3268,8 @@
         17.388,
         6.62,
         -9.573
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 228,
@@ -2906,7 +3288,8 @@
         15.959,
         3.077,
         -9.304
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 229,
@@ -2925,7 +3308,8 @@
         15.301,
         1.026,
         -12.466
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 231,
@@ -2944,7 +3328,8 @@
         14.572,
         -3.229,
         -15.552
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 232,
@@ -2963,7 +3348,8 @@
         17.1,
         -5.914,
         -14.468
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 233,
@@ -2984,7 +3370,8 @@
         20.909,
         -5.757,
         -14.212
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 235,
@@ -3006,7 +3393,8 @@
         19.211,
         -4.61,
         -19.41
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 237,
@@ -3028,7 +3416,8 @@
         18.389,
         1.526,
         -18.27
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 238,
@@ -3049,7 +3438,8 @@
         14.703,
         2.328,
         -17.658
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 240,
@@ -3068,7 +3458,8 @@
         11.625,
         3.864,
         -12.239
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 242,
@@ -3081,6 +3472,7 @@
       "sasa": 42.01,
       "plddt": 98.06,
       "motifs": [
+        "serine_protease_triad",
         "serine_protease_triad"
       ],
       "evidence_score": 3,
@@ -3089,7 +3481,8 @@
         5.825,
         7.658,
         -12.788
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 243,
@@ -3108,7 +3501,8 @@
         5.041,
         4.249,
         -11.201
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 251,
@@ -3130,7 +3524,8 @@
         -18.905,
         5.092,
         -8.868
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 253,
@@ -3151,7 +3546,8 @@
         -18.803,
         4.505,
         -3.226
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 255,
@@ -3170,7 +3566,8 @@
         -15.575,
         8.449,
         1.065
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 256,
@@ -3191,7 +3588,8 @@
         -15.877,
         8.85,
         4.864
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 257,
@@ -3210,7 +3608,8 @@
         -13.73,
         11.223,
         6.988
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 2,
@@ -3231,7 +3630,8 @@
         3.389,
         -14.293,
         -17.0
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 5,
@@ -3250,102 +3650,8 @@
         2.387,
         -5.098,
         -17.045
-      ]
-    },
-    {
-      "residue_number": 7,
-      "chain_id": "A",
-      "one_letter": "Y",
-      "three_letter": "TYR",
-      "conservation": 5.5,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 36.9,
-      "plddt": 96.69,
-      "motifs": [],
-      "evidence_score": 1,
-      "confidence": "LOW",
-      "coords": [
-        3.781,
-        1.993,
-        -16.607
-      ]
-    },
-    {
-      "residue_number": 8,
-      "chain_id": "A",
-      "one_letter": "G",
-      "three_letter": "GLY",
-      "conservation": 4.0,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 30.49,
-      "plddt": 93.56,
-      "motifs": [],
-      "evidence_score": 1,
-      "confidence": "LOW",
-      "coords": [
-        5.093,
-        2.349,
-        -20.199
-      ]
-    },
-    {
-      "residue_number": 9,
-      "chain_id": "A",
-      "one_letter": "K",
-      "three_letter": "LYS",
-      "conservation": 6.0,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 170.93,
-      "plddt": 92.69,
-      "motifs": [],
-      "evidence_score": 1,
-      "confidence": "LOW",
-      "coords": [
-        3.077,
-        3.331,
-        -23.328
-      ]
-    },
-    {
-      "residue_number": 11,
-      "chain_id": "A",
-      "one_letter": "N",
-      "three_letter": "ASN",
-      "conservation": 4.0,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 37.82,
-      "plddt": 95.38,
-      "motifs": [],
-      "evidence_score": 1,
-      "confidence": "LOW",
-      "coords": [
-        1.887,
-        -2.072,
-        -20.887
-      ]
-    },
-    {
-      "residue_number": 13,
-      "chain_id": "A",
-      "one_letter": "P",
-      "three_letter": "PRO",
-      "conservation": 3.5,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 24.68,
-      "plddt": 97.69,
-      "motifs": [],
-      "evidence_score": 1,
-      "confidence": "LOW",
-      "coords": [
-        -2.646,
-        1.348,
-        -16.64
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 20,
@@ -3364,7 +3670,8 @@
         -6.904,
         -8.153,
         -15.655
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 21,
@@ -3383,7 +3690,8 @@
         -10.62,
         -7.451,
         -16.528
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 22,
@@ -3402,7 +3710,8 @@
         -11.206,
         -6.415,
         -12.854
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 35,
@@ -3421,7 +3730,8 @@
         -13.229,
         17.177,
         0.228
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 37,
@@ -3440,7 +3750,8 @@
         -18.31,
         15.27,
         -0.917
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 40,
@@ -3459,7 +3770,8 @@
         -17.625,
         13.201,
         8.313
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 42,
@@ -3478,7 +3790,8 @@
         -18.682,
         10.289,
         13.845
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 43,
@@ -3497,7 +3810,8 @@
         -18.848,
         6.439,
         14.182
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 44,
@@ -3516,7 +3830,8 @@
         -15.255,
         6.17,
         12.833
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 45,
@@ -3535,7 +3850,8 @@
         -12.895,
         5.234,
         15.693
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 46,
@@ -3554,7 +3870,8 @@
         -9.312,
         6.49,
         16.183
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 48,
@@ -3573,7 +3890,8 @@
         -4.45,
         2.152,
         16.569
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 49,
@@ -3592,7 +3910,8 @@
         -1.004,
         1.681,
         14.988
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 50,
@@ -3611,7 +3930,8 @@
         1.258,
         -0.742,
         16.932
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 52,
@@ -3630,7 +3950,8 @@
         6.961,
         -1.07,
         18.272
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 53,
@@ -3649,7 +3970,8 @@
         7.773,
         -4.794,
         17.666
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 55,
@@ -3668,7 +3990,8 @@
         10.663,
         -6.808,
         12.475
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 57,
@@ -3687,7 +4010,8 @@
         13.413,
         -8.361,
         6.946
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 60,
@@ -3706,7 +4030,8 @@
         13.852,
         -5.278,
         -2.682
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 62,
@@ -3725,7 +4050,8 @@
         10.468,
         -5.848,
         -7.717
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 73,
@@ -3744,7 +4070,8 @@
         4.063,
         -14.569,
         11.428
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 74,
@@ -3763,7 +4090,8 @@
         2.751,
         -12.953,
         14.679
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 80,
@@ -3782,7 +4110,8 @@
         -6.538,
         -1.838,
         14.478
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 81,
@@ -3801,7 +4130,8 @@
         -9.495,
         0.502,
         15.021
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 83,
@@ -3820,7 +4150,8 @@
         -13.059,
         1.481,
         9.962
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 84,
@@ -3839,7 +4170,8 @@
         -11.454,
         -1.963,
         10.543
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 85,
@@ -3858,7 +4190,8 @@
         -13.035,
         -5.061,
         12.041
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 86,
@@ -3877,7 +4210,8 @@
         -10.284,
         -7.096,
         13.771
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 87,
@@ -3896,7 +4230,8 @@
         -6.459,
         -7.111,
         13.628
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 91,
@@ -3915,7 +4250,8 @@
         3.425,
         -7.365,
         5.707
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 92,
@@ -3934,26 +4270,8 @@
         5.208,
         -4.615,
         3.716
-      ]
-    },
-    {
-      "residue_number": 99,
-      "chain_id": "A",
-      "one_letter": "S",
-      "three_letter": "SER",
-      "conservation": 4.5,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 40.14,
-      "plddt": 97.69,
-      "motifs": [],
-      "evidence_score": 1,
-      "confidence": "LOW",
-      "coords": [
-        9.238,
-        12.147,
-        -12.376
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 100,
@@ -3972,7 +4290,8 @@
         8.627,
         15.625,
         -10.758
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 101,
@@ -3991,7 +4310,8 @@
         8.075,
         16.971,
         -7.178
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 102,
@@ -4010,7 +4330,8 @@
         4.461,
         18.076,
         -8.003
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 103,
@@ -4029,7 +4350,8 @@
         3.238,
         14.639,
         -9.254
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 114,
@@ -4048,7 +4370,8 @@
         1.749,
         15.012,
         -4.03
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 125,
@@ -4067,7 +4390,8 @@
         -5.612,
         -12.113,
         10.551
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 126,
@@ -4086,7 +4410,8 @@
         -9.165,
         -13.612,
         10.608
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 127,
@@ -4105,64 +4430,8 @@
         -8.4,
         -15.261,
         7.206
-      ]
-    },
-    {
-      "residue_number": 128,
-      "chain_id": "A",
-      "one_letter": "G",
-      "three_letter": "GLY",
-      "conservation": 4.0,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 56.95,
-      "plddt": 97.44,
-      "motifs": [],
-      "evidence_score": 1,
-      "confidence": "LOW",
-      "coords": [
-        -5.372,
-        -17.215,
-        8.586
-      ]
-    },
-    {
-      "residue_number": 130,
-      "chain_id": "A",
-      "one_letter": "F",
-      "three_letter": "PHE",
-      "conservation": 4.5,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 71.61,
-      "plddt": 97.56,
-      "motifs": [],
-      "evidence_score": 1,
-      "confidence": "LOW",
-      "coords": [
-        -2.292,
-        -13.355,
-        3.243
-      ]
-    },
-    {
-      "residue_number": 131,
-      "chain_id": "A",
-      "one_letter": "G",
-      "three_letter": "GLY",
-      "conservation": 4.0,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 38.13,
-      "plddt": 97.81,
-      "motifs": [],
-      "evidence_score": 1,
-      "confidence": "LOW",
-      "coords": [
-        -3.233,
-        -15.609,
-        0.251
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 134,
@@ -4181,7 +4450,8 @@
         -6.618,
         -11.143,
         -0.707
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 135,
@@ -4200,7 +4470,8 @@
         -9.694,
         -13.188,
         -1.825
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 136,
@@ -4219,7 +4490,8 @@
         -11.913,
         -11.264,
         0.656
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 137,
@@ -4238,7 +4510,8 @@
         -13.557,
         -7.773,
         0.326
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 148,
@@ -4257,7 +4530,8 @@
         5.154,
         16.543,
         0.259
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 149,
@@ -4276,7 +4550,8 @@
         8.476,
         18.185,
         -0.692
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 150,
@@ -4295,7 +4570,8 @@
         9.867,
         20.213,
         2.252
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 151,
@@ -4314,7 +4590,8 @@
         12.292,
         19.291,
         5.083
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 152,
@@ -4333,7 +4610,8 @@
         13.95,
         15.836,
         5.042
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 153,
@@ -4352,7 +4630,8 @@
         12.159,
         12.985,
         6.928
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 154,
@@ -4371,7 +4650,8 @@
         14.734,
         11.419,
         9.347
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 155,
@@ -4390,7 +4670,8 @@
         12.677,
         8.165,
         9.582
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 157,
@@ -4409,7 +4690,8 @@
         16.876,
         8.192,
         5.679
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 162,
@@ -4428,7 +4710,8 @@
         20.115,
         1.433,
         0.963
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 165,
@@ -4447,7 +4730,8 @@
         22.162,
         -1.509,
         -3.411
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 170,
@@ -4466,7 +4750,8 @@
         15.263,
         -8.43,
         -8.697
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 172,
@@ -4485,7 +4770,8 @@
         17.408,
         -7.187,
         -2.653
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 173,
@@ -4504,7 +4790,8 @@
         19.35,
         -6.289,
         0.506
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 176,
@@ -4523,7 +4810,8 @@
         16.714,
         -5.085,
         9.675
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 177,
@@ -4542,7 +4830,8 @@
         16.012,
         -2.76,
         12.679
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 182,
@@ -4561,7 +4850,8 @@
         9.252,
         7.044,
         11.643
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 184,
@@ -4580,7 +4870,8 @@
         3.885,
         8.392,
         10.119
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 186,
@@ -4599,7 +4890,8 @@
         1.724,
         13.601,
         13.687
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 187,
@@ -4618,7 +4910,8 @@
         -2.056,
         13.502,
         12.98
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 188,
@@ -4637,7 +4930,8 @@
         -3.732,
         10.185,
         12.168
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 194,
@@ -4656,7 +4950,8 @@
         -13.607,
         0.216,
         0.044
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 197,
@@ -4675,7 +4970,8 @@
         -4.897,
         -2.947,
         -5.091
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 199,
@@ -4694,7 +4990,8 @@
         -1.265,
         -2.758,
         -9.171
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 201,
@@ -4713,7 +5010,8 @@
         -4.018,
         -8.235,
         -10.175
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 203,
@@ -4732,7 +5030,8 @@
         -8.059,
         -7.261,
         -6.474
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 207,
@@ -4751,7 +5050,8 @@
         -10.056,
         -1.092,
         2.939
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 214,
@@ -4770,7 +5070,8 @@
         1.261,
         14.449,
         4.435
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 216,
@@ -4789,7 +5090,8 @@
         7.488,
         16.213,
         4.684
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 219,
@@ -4808,7 +5110,8 @@
         13.71,
         16.774,
         -2.893
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 223,
@@ -4827,7 +5130,8 @@
         15.402,
         12.026,
         -6.174
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 230,
@@ -4846,7 +5150,8 @@
         12.191,
         -0.875,
         -13.676
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 234,
@@ -4865,7 +5170,8 @@
         22.469,
         -5.825,
         -17.732
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 236,
@@ -4884,7 +5190,8 @@
         18.926,
         -1.092,
         -21.048
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 239,
@@ -4903,7 +5210,8 @@
         14.397,
         4.733,
         -14.704
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 241,
@@ -4922,7 +5230,8 @@
         9.59,
         7.084,
         -12.566
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 244,
@@ -4941,7 +5250,8 @@
         1.515,
         5.537,
         -10.279
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 246,
@@ -4960,7 +5270,8 @@
         -4.42,
         7.348,
         -12.511
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 247,
@@ -4979,7 +5290,8 @@
         -7.496,
         8.034,
         -10.316
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 248,
@@ -4998,7 +5310,8 @@
         -10.333,
         5.562,
         -11.041
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 249,
@@ -5017,7 +5330,8 @@
         -14.1,
         6.36,
         -11.074
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 250,
@@ -5036,7 +5350,8 @@
         -15.59,
         6.595,
         -7.542
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 252,
@@ -5055,7 +5370,8 @@
         -21.448,
         4.358,
         -6.05
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 254,
@@ -5074,7 +5390,8 @@
         -18.816,
         7.07,
         -0.395
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 258,
@@ -5093,7 +5410,8 @@
         -12.686,
         10.837,
         10.684
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 259,
@@ -5112,7 +5430,8 @@
         -12.666,
         14.674,
         10.941
-      ]
+      ],
+      "domain_context": ""
     },
     {
       "residue_number": 260,
@@ -5131,7 +5450,8 @@
         -14.962,
         17.647,
         10.206
-      ]
+      ],
+      "domain_context": ""
     }
   ],
   "catalytic_motifs": [
@@ -5148,7 +5468,9 @@
         "D"
       ],
       "mean_distance": 6.88,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
     },
     {
       "motif_type": "serine_protease_triad",
@@ -5163,7 +5485,9 @@
         "D"
       ],
       "mean_distance": 7.65,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": true
     },
     {
       "motif_type": "serine_protease_triad",
@@ -5178,7 +5502,94 @@
         "D"
       ],
       "mean_distance": 7.26,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": true
+    },
+    {
+      "motif_type": "serine_protease_triad",
+      "residue_numbers": [
+        29,
+        107,
+        32
+      ],
+      "residue_letters": [
+        "S",
+        "H",
+        "D"
+      ],
+      "mean_distance": 7.65,
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": true
+    },
+    {
+      "motif_type": "serine_protease_triad",
+      "residue_numbers": [
+        29,
+        107,
+        34
+      ],
+      "residue_letters": [
+        "S",
+        "H",
+        "D"
+      ],
+      "mean_distance": 10.99,
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": true
+    },
+    {
+      "motif_type": "serine_protease_triad",
+      "residue_numbers": [
+        29,
+        107,
+        110
+      ],
+      "residue_letters": [
+        "S",
+        "H",
+        "D"
+      ],
+      "mean_distance": 11.22,
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": true
+    },
+    {
+      "motif_type": "serine_protease_triad",
+      "residue_numbers": [
+        99,
+        96,
+        242
+      ],
+      "residue_letters": [
+        "S",
+        "H",
+        "D"
+      ],
+      "mean_distance": 7.93,
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": true
+    },
+    {
+      "motif_type": "serine_protease_triad",
+      "residue_numbers": [
+        105,
+        107,
+        34
+      ],
+      "residue_letters": [
+        "S",
+        "H",
+        "D"
+      ],
+      "mean_distance": 10.36,
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": true
     },
     {
       "motif_type": "zinc_binding_cluster",
@@ -5193,7 +5604,9 @@
         "D"
       ],
       "mean_distance": 6.41,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "structural",
+      "long_range": false
     },
     {
       "motif_type": "zinc_binding_cluster",
@@ -5208,7 +5621,9 @@
         "H"
       ],
       "mean_distance": 5.51,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "catalytic",
+      "long_range": false
     },
     {
       "motif_type": "zinc_binding_cluster",
@@ -5223,7 +5638,9 @@
         "D"
       ],
       "mean_distance": 6.37,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "structural",
+      "long_range": false
     },
     {
       "motif_type": "zinc_binding_cluster",
@@ -5238,7 +5655,9 @@
         "E"
       ],
       "mean_distance": 6.24,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "structural",
+      "long_range": false
     },
     {
       "motif_type": "zinc_binding_cluster",
@@ -5253,7 +5672,9 @@
         "H"
       ],
       "mean_distance": 6.09,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "structural",
+      "long_range": false
     },
     {
       "motif_type": "zinc_binding_cluster",
@@ -5268,7 +5689,9 @@
         "H"
       ],
       "mean_distance": 6.86,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "catalytic",
+      "long_range": false
     },
     {
       "motif_type": "zinc_binding_cluster",
@@ -5283,7 +5706,9 @@
         "C"
       ],
       "mean_distance": 5.96,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "structural",
+      "long_range": false
     },
     {
       "motif_type": "zinc_binding_cluster",
@@ -5298,7 +5723,9 @@
         "D"
       ],
       "mean_distance": 7.87,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "structural",
+      "long_range": false
     },
     {
       "motif_type": "zinc_binding_cluster",
@@ -5315,7 +5742,9 @@
         "D"
       ],
       "mean_distance": 7.28,
-      "confidence": "HIGH"
+      "confidence": "HIGH",
+      "zinc_type": "structural",
+      "long_range": false
     },
     {
       "motif_type": "zinc_binding_cluster",
@@ -5332,7 +5761,9 @@
         "D"
       ],
       "mean_distance": 7.17,
-      "confidence": "HIGH"
+      "confidence": "HIGH",
+      "zinc_type": "structural",
+      "long_range": false
     },
     {
       "motif_type": "zinc_binding_cluster",
@@ -5347,7 +5778,9 @@
         "D"
       ],
       "mean_distance": 6.7,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "structural",
+      "long_range": false
     },
     {
       "motif_type": "zinc_binding_cluster",
@@ -5362,7 +5795,9 @@
         "D"
       ],
       "mean_distance": 5.87,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "structural",
+      "long_range": false
     },
     {
       "motif_type": "zinc_binding_cluster",
@@ -5379,7 +5814,9 @@
         "E"
       ],
       "mean_distance": 6.74,
-      "confidence": "HIGH"
+      "confidence": "HIGH",
+      "zinc_type": "catalytic",
+      "long_range": false
     },
     {
       "motif_type": "zinc_binding_cluster",
@@ -5396,7 +5833,9 @@
         "H"
       ],
       "mean_distance": 7.28,
-      "confidence": "HIGH"
+      "confidence": "HIGH",
+      "zinc_type": "catalytic",
+      "long_range": false
     },
     {
       "motif_type": "zinc_binding_cluster",
@@ -5411,7 +5850,9 @@
         "E"
       ],
       "mean_distance": 6.86,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "structural",
+      "long_range": false
     },
     {
       "motif_type": "zinc_binding_cluster",
@@ -5426,7 +5867,9 @@
         "E"
       ],
       "mean_distance": 6.19,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "structural",
+      "long_range": false
     },
     {
       "motif_type": "dna_binding_cluster",
@@ -5441,7 +5884,9 @@
         "R"
       ],
       "mean_distance": 6.91,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
     },
     {
       "motif_type": "dna_binding_cluster",
@@ -5456,7 +5901,9 @@
         "K"
       ],
       "mean_distance": 4.89,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
     },
     {
       "motif_type": "dna_binding_cluster",
@@ -5471,7 +5918,9 @@
         "K"
       ],
       "mean_distance": 4.77,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
     },
     {
       "motif_type": "dna_binding_cluster",
@@ -5488,7 +5937,9 @@
         "K"
       ],
       "mean_distance": 8.83,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
     },
     {
       "motif_type": "dna_binding_cluster",
@@ -5503,7 +5954,9 @@
         "K"
       ],
       "mean_distance": 6.59,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
     },
     {
       "motif_type": "dna_binding_cluster",
@@ -5520,7 +5973,9 @@
         "K"
       ],
       "mean_distance": 6.93,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
     },
     {
       "motif_type": "acid_base_pair",
@@ -5533,7 +5988,9 @@
         "R/K/H"
       ],
       "mean_distance": 3.84,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
     },
     {
       "motif_type": "acid_base_pair",
@@ -5546,7 +6003,9 @@
         "R/K/H"
       ],
       "mean_distance": 6.71,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
     },
     {
       "motif_type": "acid_base_pair",
@@ -5559,7 +6018,9 @@
         "R/K/H"
       ],
       "mean_distance": 5.57,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
     },
     {
       "motif_type": "acid_base_pair",
@@ -5572,7 +6033,9 @@
         "R/K/H"
       ],
       "mean_distance": 6.17,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
     },
     {
       "motif_type": "acid_base_pair",
@@ -5585,7 +6048,9 @@
         "R/K/H"
       ],
       "mean_distance": 5.69,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
     },
     {
       "motif_type": "acid_base_pair",
@@ -5598,7 +6063,9 @@
         "R/K/H"
       ],
       "mean_distance": 5.48,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
     },
     {
       "motif_type": "acid_base_pair",
@@ -5611,7 +6078,9 @@
         "R/K/H"
       ],
       "mean_distance": 6.06,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
     },
     {
       "motif_type": "acid_base_pair",
@@ -5624,7 +6093,9 @@
         "R/K/H"
       ],
       "mean_distance": 5.94,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
     },
     {
       "motif_type": "acid_base_pair",
@@ -5637,7 +6108,9 @@
         "R/K/H"
       ],
       "mean_distance": 5.9,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
     },
     {
       "motif_type": "acid_base_pair",
@@ -5650,7 +6123,9 @@
         "R/K/H"
       ],
       "mean_distance": 6.22,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
     },
     {
       "motif_type": "acid_base_pair",
@@ -5663,7 +6138,9 @@
         "R/K/H"
       ],
       "mean_distance": 3.89,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
     },
     {
       "motif_type": "acid_base_pair",
@@ -5676,7 +6153,9 @@
         "R/K/H"
       ],
       "mean_distance": 3.88,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
     },
     {
       "motif_type": "acid_base_pair",
@@ -5689,7 +6168,9 @@
         "R/K/H"
       ],
       "mean_distance": 5.5,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
     },
     {
       "motif_type": "acid_base_pair",
@@ -5702,7 +6183,9 @@
         "R/K/H"
       ],
       "mean_distance": 5.58,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
     },
     {
       "motif_type": "acid_base_pair",
@@ -5715,7 +6198,9 @@
         "R/K/H"
       ],
       "mean_distance": 5.2,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
     },
     {
       "motif_type": "acid_base_pair",
@@ -5728,7 +6213,9 @@
         "R/K/H"
       ],
       "mean_distance": 5.17,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
     },
     {
       "motif_type": "acid_base_pair",
@@ -5741,7 +6228,9 @@
         "R/K/H"
       ],
       "mean_distance": 4.44,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
     },
     {
       "motif_type": "acid_base_pair",
@@ -5754,7 +6243,9 @@
         "R/K/H"
       ],
       "mean_distance": 5.48,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
     },
     {
       "motif_type": "acid_base_pair",
@@ -5767,7 +6258,9 @@
         "R/K/H"
       ],
       "mean_distance": 5.61,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
     },
     {
       "motif_type": "acid_base_pair",
@@ -5780,7 +6273,9 @@
         "R/K/H"
       ],
       "mean_distance": 3.86,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
     },
     {
       "motif_type": "acid_base_pair",
@@ -5793,7 +6288,9 @@
         "R/K/H"
       ],
       "mean_distance": 3.85,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
     },
     {
       "motif_type": "acid_base_pair",
@@ -5806,7 +6303,9 @@
         "R/K/H"
       ],
       "mean_distance": 6.91,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
     },
     {
       "motif_type": "acid_base_pair",
@@ -5819,7 +6318,9 @@
         "R/K/H"
       ],
       "mean_distance": 6.78,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
     },
     {
       "motif_type": "acid_base_pair",
@@ -5832,7 +6333,9 @@
         "R/K/H"
       ],
       "mean_distance": 5.6,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
     },
     {
       "motif_type": "acid_base_pair",
@@ -5845,7 +6348,9 @@
         "R/K/H"
       ],
       "mean_distance": 5.71,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
     },
     {
       "motif_type": "acid_base_pair",
@@ -5858,7 +6363,9 @@
         "R/K/H"
       ],
       "mean_distance": 6.91,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
     },
     {
       "motif_type": "acid_base_pair",
@@ -5871,7 +6378,9 @@
         "R/K/H"
       ],
       "mean_distance": 3.81,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
     },
     {
       "motif_type": "acid_base_pair",
@@ -5884,7 +6393,9 @@
         "R/K/H"
       ],
       "mean_distance": 5.22,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
     },
     {
       "motif_type": "acid_base_pair",
@@ -5897,7 +6408,9 @@
         "R/K/H"
       ],
       "mean_distance": 6.61,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
     },
     {
       "motif_type": "acid_base_pair",
@@ -5910,7 +6423,9 @@
         "R/K/H"
       ],
       "mean_distance": 6.2,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
     },
     {
       "motif_type": "acid_base_pair",
@@ -5923,7 +6438,9 @@
         "R/K/H"
       ],
       "mean_distance": 3.81,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
     },
     {
       "motif_type": "acid_base_pair",
@@ -5936,22 +6453,196 @@
         "R/K/H"
       ],
       "mean_distance": 6.43,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
+    },
+    {
+      "motif_type": "dfg_loop",
+      "residue_numbers": [
+        129,
+        130,
+        131
+      ],
+      "residue_letters": [
+        "D",
+        "F",
+        "G"
+      ],
+      "mean_distance": 4.43,
+      "confidence": "HIGH",
+      "zinc_type": "",
+      "long_range": false
+    },
+    {
+      "motif_type": "p_loop_walker_a",
+      "residue_numbers": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "residue_letters": [
+        "G",
+        "Y",
+        "G",
+        "K",
+        "H",
+        "N",
+        "G"
+      ],
+      "mean_distance": 5.17,
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
+    },
+    {
+      "motif_type": "p_loop_walker_a",
+      "residue_numbers": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "residue_letters": [
+        "G",
+        "K",
+        "H",
+        "N",
+        "G",
+        "P"
+      ],
+      "mean_distance": 4.99,
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
+    },
+    {
+      "motif_type": "ghkl_atpase",
+      "residue_numbers": [
+        11,
+        19,
+        6
+      ],
+      "residue_letters": [
+        "N",
+        "D",
+        "G"
+      ],
+      "mean_distance": 10.23,
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
+    },
+    {
+      "motif_type": "ghkl_atpase",
+      "residue_numbers": [
+        124,
+        72,
+        128
+      ],
+      "residue_letters": [
+        "N",
+        "D",
+        "G"
+      ],
+      "mean_distance": 10.92,
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
+    },
+    {
+      "motif_type": "flavin_binding",
+      "residue_numbers": [
+        6,
+        8,
+        7
+      ],
+      "residue_letters": [
+        "G",
+        "G",
+        "Y"
+      ],
+      "mean_distance": 4.48,
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
+    },
+    {
+      "motif_type": "flavin_binding",
+      "residue_numbers": [
+        8,
+        12,
+        7
+      ],
+      "residue_letters": [
+        "G",
+        "G",
+        "Y"
+      ],
+      "mean_distance": 4.3,
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
+    },
+    {
+      "motif_type": "haem_binding",
+      "residue_numbers": [
+        17
+      ],
+      "residue_letters": [
+        "H"
+      ],
+      "mean_distance": 0.0,
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
+    },
+    {
+      "motif_type": "haem_binding",
+      "residue_numbers": [
+        64
+      ],
+      "residue_letters": [
+        "H"
+      ],
+      "mean_distance": 0.0,
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
+    },
+    {
+      "motif_type": "haem_binding",
+      "residue_numbers": [
+        94
+      ],
+      "residue_letters": [
+        "H"
+      ],
+      "mean_distance": 0.0,
+      "confidence": "MEDIUM",
+      "zinc_type": "",
+      "long_range": false
     }
   ],
-  "n_high_confidence": 11,
-  "n_medium_confidence": 147,
-  "n_low_confidence": 101,
+  "n_high_confidence": 13,
+  "n_medium_confidence": 154,
+  "n_low_confidence": 92,
   "top_residues": [
     "H96",
     "H107",
     "H119",
     "C205",
     "H4",
+    "H10",
     "H15",
     "H17",
     "H36",
-    "H94",
-    "H122"
+    "H64"
   ]
 }

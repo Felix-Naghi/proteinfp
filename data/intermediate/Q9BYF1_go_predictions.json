@@ -325,6 +325,37 @@
       ]
     },
     {
+      "go_id": "GO:0005524",
+      "go_name": "ATP binding",
+      "namespace": "MF",
+      "score": 0.8,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        19,
+        20,
+        21,
+        22,
+        24
+      ]
+    },
+    {
       "go_id": "GO:0005525",
       "go_name": "GTP binding",
       "namespace": "MF",
@@ -359,8 +390,9 @@
       "go_id": "GO:0020037",
       "go_name": "heme binding",
       "namespace": "MF",
-      "score": 0.799,
+      "score": 0.8,
       "evidence": [
+        "structural_motif",
         "embedding_similarity"
       ],
       "saliency_residues": [
@@ -448,37 +480,6 @@
         22,
         24
       ]
-    },
-    {
-      "go_id": "GO:0019825",
-      "go_name": "oxygen binding",
-      "namespace": "MF",
-      "score": 0.752,
-      "evidence": [
-        "embedding_similarity"
-      ],
-      "saliency_residues": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        19,
-        20,
-        21,
-        22,
-        24
-      ]
     }
   ],
   "bp_predictions": [
@@ -488,6 +489,7 @@
       "namespace": "BP",
       "score": 0.799,
       "evidence": [
+        "structural_motif",
         "embedding_similarity"
       ],
       "saliency_residues": [
@@ -519,6 +521,7 @@
       "namespace": "BP",
       "score": 0.787,
       "evidence": [
+        "structural_motif",
         "embedding_similarity"
       ],
       "saliency_residues": [
@@ -550,6 +553,40 @@
       "namespace": "BP",
       "score": 0.765,
       "evidence": [
+        "embedding_similarity"
+      ],
+      "saliency_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        19,
+        20,
+        21,
+        22,
+        24
+      ]
+    },
+    {
+      "go_id": "GO:0006508",
+      "go_name": "proteolysis",
+      "namespace": "BP",
+      "score": 0.75,
+      "evidence": [
+        "experimental_homolog",
+        "domain_annotation",
+        "structural_motif",
         "embedding_similarity"
       ],
       "saliency_residues": [
@@ -700,6 +737,68 @@
       ]
     },
     {
+      "go_id": "GO:0006457",
+      "go_name": "protein folding",
+      "namespace": "BP",
+      "score": 0.7,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        19,
+        20,
+        21,
+        22,
+        24
+      ]
+    },
+    {
+      "go_id": "GO:0055114",
+      "go_name": "oxidation-reduction process",
+      "namespace": "BP",
+      "score": 0.7,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        19,
+        20,
+        21,
+        22,
+        24
+      ]
+    },
+    {
       "go_id": "GO:0006801",
       "go_name": "superoxide metabolic process",
       "namespace": "BP",
@@ -793,74 +892,43 @@
       ]
     },
     {
+      "go_id": "GO:0051085",
+      "go_name": "chaperone cofactor-dependent protein refolding",
+      "namespace": "BP",
+      "score": 0.65,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        19,
+        20,
+        21,
+        22,
+        24
+      ]
+    },
+    {
       "go_id": "GO:0051726",
       "go_name": "regulation of cell cycle",
       "namespace": "BP",
       "score": 0.643,
       "evidence": [
         "embedding_similarity"
-      ],
-      "saliency_residues": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        19,
-        20,
-        21,
-        22,
-        24
-      ]
-    },
-    {
-      "go_id": "GO:0015701",
-      "go_name": "bicarbonate transport",
-      "namespace": "BP",
-      "score": 0.631,
-      "evidence": [
-        "embedding_similarity"
-      ],
-      "saliency_residues": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        19,
-        20,
-        21,
-        22,
-        24
-      ]
-    },
-    {
-      "go_id": "GO:0045944",
-      "go_name": "positive regulation of transcription by RNA pol II",
-      "namespace": "BP",
-      "score": 0.6,
-      "evidence": [
-        "structural_motif"
       ],
       "saliency_residues": [
         1,
@@ -959,6 +1027,7 @@
       "namespace": "CC",
       "score": 0.799,
       "evidence": [
+        "structural_motif",
         "embedding_similarity"
       ],
       "saliency_residues": [
@@ -1209,5 +1278,5 @@
   "top_mf": "metallopeptidase activity",
   "top_bp": "oxygen transport",
   "top_cc": "nucleus",
-  "n_predictions": 38
+  "n_predictions": 40
 }

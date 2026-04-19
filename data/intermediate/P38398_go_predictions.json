@@ -101,6 +101,37 @@
       ]
     },
     {
+      "go_id": "GO:0004672",
+      "go_name": "protein kinase activity",
+      "namespace": "MF",
+      "score": 0.85,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
       "go_id": "GO:0008270",
       "go_name": "zinc ion binding",
       "namespace": "MF",
@@ -141,6 +172,68 @@
       "evidence": [
         "structural_motif",
         "embedding_similarity"
+      ],
+      "saliency_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "go_id": "GO:0005525",
+      "go_name": "GTP binding",
+      "namespace": "MF",
+      "score": 0.8,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "go_id": "GO:0020037",
+      "go_name": "heme binding",
+      "namespace": "MF",
+      "score": 0.8,
+      "evidence": [
+        "structural_motif"
       ],
       "saliency_residues": [
         1,
@@ -263,13 +356,12 @@
       ]
     },
     {
-      "go_id": "GO:0003700",
-      "go_name": "DNA-binding transcription factor activity",
+      "go_id": "GO:0004714",
+      "go_name": "receptor protein tyrosine kinase activity",
       "namespace": "MF",
-      "score": 0.732,
+      "score": 0.75,
       "evidence": [
-        "structural_motif",
-        "embedding_similarity"
+        "structural_motif"
       ],
       "saliency_residues": [
         1,
@@ -295,12 +387,12 @@
       ]
     },
     {
-      "go_id": "GO:0008241",
-      "go_name": "peptidyl-dipeptidase activity",
+      "go_id": "GO:0003924",
+      "go_name": "GTPase activity",
       "namespace": "MF",
-      "score": 0.727,
+      "score": 0.75,
       "evidence": [
-        "embedding_similarity"
+        "structural_motif"
       ],
       "saliency_residues": [
         1,
@@ -326,12 +418,12 @@
       ]
     },
     {
-      "go_id": "GO:0070063",
-      "go_name": "F:RNA polymerase binding",
+      "go_id": "GO:0010181",
+      "go_name": "FMN binding",
       "namespace": "MF",
-      "score": 0.7,
+      "score": 0.75,
       "evidence": [
-        "experimental_homolog"
+        "structural_motif"
       ],
       "saliency_residues": [
         1,
@@ -357,105 +449,12 @@
       ]
     },
     {
-      "go_id": "GO:0003713",
-      "go_name": "F:transcription coactivator activity",
+      "go_id": "GO:0019825",
+      "go_name": "oxygen binding",
       "namespace": "MF",
-      "score": 0.7,
+      "score": 0.75,
       "evidence": [
-        "experimental_homolog"
-      ],
-      "saliency_residues": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18,
-        19,
-        20
-      ]
-    },
-    {
-      "go_id": "GO:0043009",
-      "go_name": "P:chordate embryonic development",
-      "namespace": "MF",
-      "score": 0.7,
-      "evidence": [
-        "experimental_homolog"
-      ],
-      "saliency_residues": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18,
-        19,
-        20
-      ]
-    },
-    {
-      "go_id": "GO:0000800",
-      "go_name": "C:lateral element",
-      "namespace": "MF",
-      "score": 0.7,
-      "evidence": [
-        "experimental_homolog"
-      ],
-      "saliency_residues": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18,
-        19,
-        20
-      ]
-    },
-    {
-      "go_id": "GO:0016604",
-      "go_name": "C:nuclear body",
-      "namespace": "MF",
-      "score": 0.7,
-      "evidence": [
-        "experimental_homolog"
+        "structural_motif"
       ],
       "saliency_residues": [
         1,
@@ -482,6 +481,37 @@
     }
   ],
   "bp_predictions": [
+    {
+      "go_id": "GO:0006468",
+      "go_name": "protein phosphorylation",
+      "namespace": "BP",
+      "score": 0.8,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
     {
       "go_id": "GO:0043066",
       "go_name": "negative regulation of apoptotic process",
@@ -552,6 +582,37 @@
       "evidence": [
         "domain_annotation",
         "embedding_similarity"
+      ],
+      "saliency_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "go_id": "GO:0007165",
+      "go_name": "signal transduction",
+      "namespace": "BP",
+      "score": 0.75,
+      "evidence": [
+        "structural_motif"
       ],
       "saliency_residues": [
         1,
@@ -857,72 +918,10 @@
       ]
     },
     {
-      "go_id": "GO:0006915",
-      "go_name": "apoptotic process",
+      "go_id": "GO:0018108",
+      "go_name": "peptidyl-tyrosine phosphorylation",
       "namespace": "BP",
-      "score": 0.686,
-      "evidence": [
-        "embedding_similarity"
-      ],
-      "saliency_residues": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18,
-        19,
-        20
-      ]
-    },
-    {
-      "go_id": "GO:0051726",
-      "go_name": "regulation of cell cycle",
-      "namespace": "BP",
-      "score": 0.674,
-      "evidence": [
-        "embedding_similarity"
-      ],
-      "saliency_residues": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18,
-        19,
-        20
-      ]
-    },
-    {
-      "go_id": "GO:0006351",
-      "go_name": "DNA-templated transcription",
-      "namespace": "BP",
-      "score": 0.65,
+      "score": 0.7,
       "evidence": [
         "structural_motif"
       ],
@@ -992,6 +991,7 @@
       "namespace": "CC",
       "score": 0.727,
       "evidence": [
+        "structural_motif",
         "embedding_similarity"
       ],
       "saliency_residues": [
@@ -1269,7 +1269,7 @@
     }
   ],
   "top_mf": "F:ubiquitin protein ligase activity",
-  "top_bp": "negative regulation of apoptotic process",
+  "top_bp": "protein phosphorylation",
   "top_cc": "nucleus",
   "n_predictions": 40
 }

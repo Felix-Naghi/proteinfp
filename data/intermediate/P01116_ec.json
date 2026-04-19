@@ -1,0 +1,43 @@
+{
+  "uniprot_id": "P01116",
+  "sequence_length": 0,
+  "is_enzyme": true,
+  "enzyme_confidence": 0.85,
+  "top_prediction": {
+    "ec_class": "3",
+    "ec_name": "Hydrolase",
+    "ec_full": "EC 3.6.5",
+    "score": 0.85,
+    "evidence": [
+      "go_prediction",
+      "structural_motif",
+      "homology_inference"
+    ]
+  },
+  "all_predictions": [
+    {
+      "ec_class": "3",
+      "ec_name": "Hydrolase",
+      "ec_full": "EC 3.6.5",
+      "score": 0.85,
+      "evidence": [
+        "go_prediction",
+        "structural_motif",
+        "homology_inference"
+      ]
+    },
+    {
+      "ec_class": "1",
+      "ec_name": "Oxidoreductase",
+      "ec_full": "EC 1.x.x.x",
+      "score": 0.72,
+      "evidence": [
+        "go_prediction",
+        "structural_motif"
+      ]
+    }
+  ],
+  "specific_ec": "3.6.5",
+  "specific_ec_name": "GTPase",
+  "non_enzyme_score": 0.0
+}

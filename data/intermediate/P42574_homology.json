@@ -1,0 +1,56 @@
+{
+  "uniprot_id": "P42574",
+  "sequence_length": 277,
+  "blast_hits": [
+    {
+      "accession": "P42575",
+      "reviewed": true,
+      "function_text": "Involved in the activation cascade of caspases responsible for apoptosis execution.",
+      "go_terms": [
+        "GO:0004197",
+        "GO:0006915",
+        "GO:0008233"
+      ],
+      "go_names": [
+        "cysteine-type endopeptidase activity",
+        "apoptotic process",
+        "peptidase activity"
+      ],
+      "evidence_weight": 3.0
+    }
+  ],
+  "interpro_domains": [
+    {
+      "accession": "IPR002398",
+      "name": "Peptidase C14, caspase catalytic domain",
+      "database": "PFAM",
+      "go_terms": [
+        "GO:0004197",
+        "GO:0008233"
+      ],
+      "go_names": [
+        "cysteine-type endopeptidase activity",
+        "peptidase activity"
+      ]
+    }
+  ],
+  "all_go_terms": [
+    "GO:0004197",
+    "GO:0006915",
+    "GO:0008233",
+    "GO:0097193"
+  ],
+  "all_go_names": [
+    "cysteine-type endopeptidase activity",
+    "apoptotic process",
+    "peptidase activity",
+    "intrinsic apoptotic signaling pathway"
+  ],
+  "protein_families": [
+    "Caspase family"
+  ],
+  "top_function": "Cysteine-type endopeptidase involved in apoptosis execution.",
+  "blast_available": true,
+  "interpro_available": true,
+  "n_experimental_hits": 3
+}

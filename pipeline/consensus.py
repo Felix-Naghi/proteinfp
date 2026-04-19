@@ -330,6 +330,9 @@ def build_consensus_report(uniprot_id: str) -> ConsensusReport:
         top_pred = ec_data["top_prediction"]
         if isinstance(top_pred, dict):
             ec_number = top_pred.get("ec_full", "")
+    # Strip "EC " prefix so scoring can compare first digit directly
+    if ec_number.startswith("EC "):
+        ec_number = ec_number[3:]
 
     # ── Subcellular location ──────────────────────────────────────────────────
     location = _extract_location(modules_data, modules_data.get("physico"))
@@ -581,6 +584,7 @@ def _infer_ns(go_name: str) -> str:
         "transcription", "signaling", "phosphorylation", "ubiquitination",
         "coagulation", "recombination", "folding", "refolding",
         "proliferation", "transport", "transduction",
+        "superoxide", "proteolysis", "removal of", "homeostasis",
     ]
     _MF_EXCEPTIONS = {"transporter activity", "transcription factor activity"}
     if any(w in name for w in _BP_WORDS):

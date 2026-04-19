@@ -1,0 +1,219 @@
+{
+  "uniprot_id": "P42574",
+  "gene_name": "unknown",
+  "protein_name": "unknown",
+  "organism": "unknown",
+  "sequence_length": 0,
+  "generated_at": "2026-04-19 12:12:40",
+  "top_function": "Involved in the activation cascade of caspases responsible for apoptosis execution.",
+  "is_enzyme": false,
+  "ec_number": "2.x.x.x",
+  "subcellular_location": "cytoplasm",
+  "go_terms_mf": [
+    {
+      "go_id": "GO:0004197",
+      "go_name": "cysteine-type endopeptidase activity",
+      "namespace": "MF",
+      "weighted_score": 6.5,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "domain_annotation"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "domain_annotation"
+    },
+    {
+      "go_id": "GO:0008233",
+      "go_name": "peptidase activity",
+      "namespace": "MF",
+      "weighted_score": 6.5,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "domain_annotation"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "domain_annotation"
+    },
+    {
+      "go_id": "GO:0005488",
+      "go_name": "binding",
+      "namespace": "MF",
+      "weighted_score": 1.1,
+      "n_sources": 1,
+      "sources": [
+        "sequence_composition"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "sequence_composition"
+    }
+  ],
+  "go_terms_bp": [
+    {
+      "go_id": "GO:0006915",
+      "go_name": "apoptotic process",
+      "namespace": "BP",
+      "weighted_score": 3.0,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0097193",
+      "go_name": "intrinsic apoptotic signaling pathway",
+      "namespace": "BP",
+      "weighted_score": 3.0,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "experimental_homolog"
+    }
+  ],
+  "go_terms_cc": [
+    {
+      "go_id": "GO:0005737",
+      "go_name": "cytoplasm",
+      "namespace": "CC",
+      "weighted_score": 0.9,
+      "n_sources": 1,
+      "sources": [
+        "sequence_baseline"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "sequence_baseline"
+    }
+  ],
+  "active_sites": [
+    {
+      "residue_number": 22,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 50.0,
+      "plddt": 75.0,
+      "motifs": [],
+      "evidence_score": 4,
+      "confidence": "MEDIUM",
+      "coords": [
+        9.86,
+        6.428,
+        33.0
+      ],
+      "domain_context": ""
+    },
+    {
+      "residue_number": 37,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 50.0,
+      "plddt": 75.0,
+      "motifs": [],
+      "evidence_score": 4,
+      "confidence": "MEDIUM",
+      "coords": [
+        1.964,
+        9.848,
+        55.5
+      ],
+      "domain_context": ""
+    },
+    {
+      "residue_number": 54,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 50.0,
+      "plddt": 75.0,
+      "motifs": [],
+      "evidence_score": 4,
+      "confidence": "MEDIUM",
+      "coords": [
+        15.4,
+        0.0,
+        81.0
+      ],
+      "domain_context": ""
+    },
+    {
+      "residue_number": 121,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 50.0,
+      "plddt": 75.0,
+      "motifs": [],
+      "evidence_score": 4,
+      "confidence": "MEDIUM",
+      "coords": [
+        4.44,
+        -6.428,
+        181.5
+      ],
+      "domain_context": ""
+    },
+    {
+      "residue_number": 163,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 50.0,
+      "plddt": 75.0,
+      "motifs": [],
+      "evidence_score": 4,
+      "confidence": "MEDIUM",
+      "coords": [
+        14.564,
+        9.848,
+        244.5
+      ],
+      "domain_context": ""
+    }
+  ],
+  "binding_pockets": [],
+  "allosteric_sites": [],
+  "ppi_partners": [],
+  "mean_plddt": 0.0,
+  "n_evidence_sources": 7,
+  "overall_confidence": "HIGH",
+  "validation_suggestions": [
+    "GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation"
+  ],
+  "modules_run": [
+    "active",
+    "chem_env",
+    "homology",
+    "go",
+    "ec",
+    "foldseek",
+    "ppi"
+  ],
+  "modules_missing": [
+    "structure",
+    "physico",
+    "pockets",
+    "allosteric",
+    "esm2"
+  ]
+}

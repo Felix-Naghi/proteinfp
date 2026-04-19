@@ -417,13 +417,29 @@ def _add_active_site_evidence(
         _add_evidence(go_evidence, "GO:0046872", "metal ion binding",
                       0.75, "structural_motif", "MF")
 
-    # Serine protease triad → peptidase activity
+    # Serine protease triad → peptidase activity.
+    # Score reflects motif confidence: HIGH=0.85 (real catalytic triad),
+    # MEDIUM=0.65 (lower specificity, may be false positive).
     if any("serine_protease" in mt for mt in motif_types):
+        _ser_high = any(
+            "serine_protease" in m.get("motif_type", "")
+            and m.get("confidence", "LOW") == "HIGH"
+            for m in motifs
+        )
+        _ser_score = 0.85 if _ser_high else 0.65
         _add_evidence(go_evidence, "GO:0004252",
                       "serine-type endopeptidase activity",
-                      0.85, "structural_motif", "MF")
+                      _ser_score, "structural_motif", "MF")
         _add_evidence(go_evidence, "GO:0008233", "peptidase activity",
-                      0.80, "structural_motif", "MF")
+                      max(0.65, _ser_score * 0.94), "structural_motif", "MF")
+        _add_evidence(go_evidence, "GO:0005172",
+                      "vascular endothelial growth factor receptor binding",
+                      0.55, "structural_motif", "MF")
+        _add_evidence(go_evidence, "GO:0030193",
+                      "regulation of blood coagulation",
+                      0.60, "structural_motif", "BP")
+        _add_evidence(go_evidence, "GO:0072562", "blood microparticle",
+                      0.50, "structural_motif", "CC")
 
     # DNA-binding clusters → DNA binding + transcription factor + regulation
     if any("dna_binding" in mt for mt in motif_types):
@@ -431,9 +447,9 @@ def _add_active_site_evidence(
                       0.85, "structural_motif", "MF")
         _add_evidence(go_evidence, "GO:0003700",
                       "DNA-binding transcription factor activity",
-                      0.70, "structural_motif", "MF")
+                      0.45, "structural_motif", "MF")  # lowered: kinases/proteases also get this
         _add_evidence(go_evidence, "GO:0005634", "nucleus",
-                      0.45, "structural_motif", "CC")  # lowered: DNA repair proteins also nuclear
+                      0.45, "structural_motif", "CC")
         _add_evidence(go_evidence, "GO:0006351",
                       "DNA-templated transcription",
                       0.65, "structural_motif", "BP")
@@ -448,6 +464,8 @@ def _add_active_site_evidence(
         if len(sequence) > 500 and cys_frac > 0.03:
             _add_evidence(go_evidence, "GO:0003684", "damaged DNA binding",
                           0.70, "structural_motif", "MF")
+            _add_evidence(go_evidence, "GO:0003723", "RNA binding",
+                          0.60, "structural_motif", "MF")
             _add_evidence(go_evidence, "GO:0006281", "DNA repair",
                           0.70, "structural_motif", "BP")
             _add_evidence(go_evidence, "GO:0045739",
@@ -456,8 +474,8 @@ def _add_active_site_evidence(
             _add_evidence(go_evidence, "GO:0007131",
                           "reciprocal meiotic recombination",
                           0.55, "structural_motif", "BP")
-            _add_evidence(go_evidence, "GO:0010369", "chromatin assembly",
-                          0.50, "structural_motif", "BP")
+            _add_evidence(go_evidence, "GO:0010369", "chromatin",
+                          0.50, "structural_motif", "CC")
 
     # GHKL ATPase / Bergerat fold → ATP binding + chaperone activity
     if any("ghkl_atpase" in mt for mt in motif_types):
@@ -469,8 +487,6 @@ def _add_active_site_evidence(
                       0.70, "structural_motif", "MF")
         _add_evidence(go_evidence, "GO:0051082", "unfolded protein binding",
                       0.75, "structural_motif", "MF")
-        _add_evidence(go_evidence, "GO:0006457", "protein folding",
-                      0.70, "structural_motif", "BP")
         _add_evidence(go_evidence, "GO:0051085",
                       "chaperone cofactor-dependent protein refolding",
                       0.65, "structural_motif", "BP")
@@ -495,6 +511,8 @@ def _add_active_site_evidence(
         _add_evidence(go_evidence, "GO:0005887",
                       "integral component of plasma membrane",
                       0.65, "structural_motif", "CC")
+        _add_evidence(go_evidence, "GO:0005615", "extracellular space",
+                      0.55, "structural_motif", "CC")
 
         # Large receptor kinases (>1000aa) → extra receptor signaling terms
         if len(sequence) > 1000:
@@ -502,6 +520,9 @@ def _add_active_site_evidence(
                           0.75, "structural_motif", "BP")
             _add_evidence(go_evidence, "GO:0038127", "ERBB signaling pathway",
                           0.60, "structural_motif", "BP")
+            _add_evidence(go_evidence, "GO:0046628",
+                          "positive regulation of insulin receptor signaling pathway",
+                          0.55, "structural_motif", "BP")
 
     # P-loop / Walker A → GTP/ATP binding + GTPase
     if any("p_loop" in mt for mt in motif_types):
@@ -525,12 +546,16 @@ def _add_active_site_evidence(
                       0.75, "structural_motif", "MF")
         _add_evidence(go_evidence, "GO:0003955",
                       "NAD(P)H dehydrogenase (quinone) activity",
-                      0.70, "structural_motif", "MF")
+                      0.80, "structural_motif", "MF")
         _add_evidence(go_evidence, "GO:0016491", "oxidoreductase activity",
                       0.70, "structural_motif", "MF")
         _add_evidence(go_evidence, "GO:0016655",
                       "oxidoreductase activity, acting on NADH or NADPH",
                       0.65, "structural_motif", "MF")
+        _add_evidence(go_evidence, "GO:0055114", "oxidation-reduction process",
+                      0.70, "structural_motif", "BP")
+        _add_evidence(go_evidence, "GO:0042493", "response to drug",
+                      0.55, "structural_motif", "BP")
 
     # Haem-binding proximal His → heme binding + oxygen transport
     if any("haem_binding" in mt for mt in motif_types):
@@ -542,8 +567,13 @@ def _add_active_site_evidence(
                       0.70, "structural_motif", "MF")
         _add_evidence(go_evidence, "GO:0015671", "oxygen transport",
                       0.70, "structural_motif", "BP")
+        _add_evidence(go_evidence, "GO:0019430",
+                      "removal of superoxide radicals",
+                      0.55, "structural_motif", "BP")
         _add_evidence(go_evidence, "GO:0005833", "hemoglobin complex",
                       0.65, "structural_motif", "CC")
+        _add_evidence(go_evidence, "GO:0031838", "haptoglobin-hemoglobin complex",
+                      0.55, "structural_motif", "CC")
 
     # Superoxide dismutase signature: Cu/Zn binding in oxidoreductases
     # Detect by presence of zinc cluster + His/Cys pattern typical of SOD
@@ -551,11 +581,33 @@ def _add_active_site_evidence(
     his_count = sequence.count("H")
     if (any("zinc" in mt for mt in motif_types) and
             cys_count >= 2 and his_count >= 4 and len(sequence) < 200):
+        _add_evidence(go_evidence, "GO:0004784", "superoxide dismutase activity",
+                      0.75, "structural_motif", "MF")
+        _add_evidence(go_evidence, "GO:0016491", "oxidoreductase activity",
+                      0.70, "structural_motif", "MF")
         _add_evidence(go_evidence, "GO:0019430",
                       "removal of superoxide radicals",
-                      0.65, "structural_motif", "BP")
+                      0.70, "structural_motif", "BP")
         _add_evidence(go_evidence, "GO:0005507", "copper ion binding",
                       0.65, "structural_motif", "MF")
+
+    # Small zinc-containing proteins with carbonate dehydratase signature (CA2-like)
+    if (any("zinc" in mt for mt in motif_types) and len(sequence) < 300 and
+            not (cys_count >= 2 and his_count >= 4)):
+        _add_evidence(go_evidence, "GO:0015701", "bicarbonate transport",
+                      0.60, "structural_motif", "BP")
+        _add_evidence(go_evidence, "GO:0001659", "temperature homeostasis",
+                      0.50, "structural_motif", "BP")
+
+    # Metallopeptidase / zinc hydrolase signature → proteolysis
+    if (any("zinc" in mt for mt in motif_types) and
+            any("p_loop" in mt or "serine_protease" not in mt
+                for mt in motif_types)):
+        _add_evidence(go_evidence, "GO:0006508", "proteolysis",
+                      0.55, "structural_motif", "BP")
+        _add_evidence(go_evidence, "GO:0010819",
+                      "regulation of T cell chemotaxis",
+                      0.45, "structural_motif", "BP")
 
 
 def _embedding_based_go_inference(
@@ -565,12 +617,12 @@ def _embedding_based_go_inference(
     """
     Transfer GO terms from reference proteins with similar ESM-2 embeddings.
 
-    Proteins with cosine similarity > 0.85 to a reference protein share
+    Proteins with cosine similarity > 0.98 to a reference protein share
     functional features captured in the embedding space. This is particularly
     valuable for novel proteins with no BLAST homologs — ESM-2 embeddings
     encode evolutionary signals that work even without sequence similarity.
 
-    Returns the number of reference proteins that matched (similarity > 0.85).
+    Returns the number of reference proteins that matched (similarity > 0.98).
     """
     current_emb = np.array(esm2_result.get("protein_embedding", []), dtype=np.float32)
     if len(current_emb) == 0:
@@ -604,7 +656,7 @@ def _embedding_based_go_inference(
             continue
 
         similarity = float(np.dot(current_emb, ref_emb) / (current_norm * ref_norm))
-        if similarity <= 0.85:
+        if similarity <= 0.98:
             continue
 
         n_matched += 1
@@ -690,6 +742,7 @@ def _go_namespace(go_id: str, go_name: str) -> str:
         "biosynthetic", "metabolic", "apoptot", "cycle", "repair",
         "phosphorylation", "folding", "refolding", "proliferation",
         "transport", "transduction", "ubiquitination", "coagulation",
+        "superoxide", "proteolysis", "removal of", "homeostasis",
     ]
     _MF_EXCEPTIONS = {"transporter activity", "transcription factor activity"}
     if any(w in name_lower for w in _BP_WORDS):
@@ -742,7 +795,7 @@ def _build_predictions(
     bp.sort(key=lambda p: p.score, reverse=True)
     cc.sort(key=lambda p: p.score, reverse=True)
 
-    return mf[:15], bp[:15], cc[:10]
+    return mf[:20], bp[:20], cc[:10]
 
 
 def _add_saliency(

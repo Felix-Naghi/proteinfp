@@ -3,38 +3,6 @@
   "sequence_length": 154,
   "mf_predictions": [
     {
-      "go_id": "GO:0004784",
-      "go_name": "F:superoxide dismutase activity",
-      "namespace": "MF",
-      "score": 0.9,
-      "evidence": [
-        "experimental_homolog",
-        "embedding_similarity"
-      ],
-      "saliency_residues": [
-        2,
-        6,
-        9,
-        16,
-        19,
-        20,
-        21,
-        22,
-        23,
-        24,
-        29,
-        30,
-        31,
-        32,
-        33,
-        34,
-        36,
-        39,
-        41,
-        46
-      ]
-    },
-    {
       "go_id": "GO:0005507",
       "go_name": "copper ion binding",
       "namespace": "MF",
@@ -260,12 +228,43 @@
       ]
     },
     {
-      "go_id": "GO:0008241",
-      "go_name": "peptidyl-dipeptidase activity",
+      "go_id": "GO:0005524",
+      "go_name": "ATP binding",
       "namespace": "MF",
-      "score": 0.787,
+      "score": 0.8,
       "evidence": [
-        "embedding_similarity"
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        2,
+        6,
+        9,
+        16,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        36,
+        39,
+        41,
+        46
+      ]
+    },
+    {
+      "go_id": "GO:0005525",
+      "go_name": "GTP binding",
+      "namespace": "MF",
+      "score": 0.8,
+      "evidence": [
+        "structural_motif"
       ],
       "saliency_residues": [
         2,
@@ -294,7 +293,39 @@
       "go_id": "GO:0020037",
       "go_name": "heme binding",
       "namespace": "MF",
-      "score": 0.785,
+      "score": 0.8,
+      "evidence": [
+        "structural_motif",
+        "embedding_similarity"
+      ],
+      "saliency_residues": [
+        2,
+        6,
+        9,
+        16,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        36,
+        39,
+        41,
+        46
+      ]
+    },
+    {
+      "go_id": "GO:0008241",
+      "go_name": "peptidyl-dipeptidase activity",
+      "namespace": "MF",
+      "score": 0.787,
       "evidence": [
         "embedding_similarity"
       ],
@@ -356,12 +387,12 @@
       ]
     },
     {
-      "go_id": "GO:0019825",
-      "go_name": "oxygen binding",
+      "go_id": "GO:0016887",
+      "go_name": "ATPase activity",
       "namespace": "MF",
-      "score": 0.739,
+      "score": 0.75,
       "evidence": [
-        "embedding_similarity"
+        "structural_motif"
       ],
       "saliency_residues": [
         2,
@@ -387,13 +418,12 @@
       ]
     },
     {
-      "go_id": "GO:0003700",
-      "go_name": "DNA-binding transcription factor activity",
+      "go_id": "GO:0051082",
+      "go_name": "unfolded protein binding",
       "namespace": "MF",
-      "score": 0.72,
+      "score": 0.75,
       "evidence": [
-        "structural_motif",
-        "embedding_similarity"
+        "structural_motif"
       ],
       "saliency_residues": [
         2,
@@ -419,43 +449,12 @@
       ]
     },
     {
-      "go_id": "GO:0005739",
-      "go_name": "C:mitochondrion",
+      "go_id": "GO:0003924",
+      "go_name": "GTPase activity",
       "namespace": "MF",
-      "score": 0.7,
+      "score": 0.75,
       "evidence": [
-        "experimental_homolog"
-      ],
-      "saliency_residues": [
-        2,
-        6,
-        9,
-        16,
-        19,
-        20,
-        21,
-        22,
-        23,
-        24,
-        29,
-        30,
-        31,
-        32,
-        33,
-        34,
-        36,
-        39,
-        41,
-        46
-      ]
-    },
-    {
-      "go_id": "GO:0043025",
-      "go_name": "C:neuronal cell body",
-      "namespace": "MF",
-      "score": 0.7,
-      "evidence": [
-        "experimental_homolog"
+        "structural_motif"
       ],
       "saliency_residues": [
         2,
@@ -482,6 +481,39 @@
     }
   ],
   "bp_predictions": [
+    {
+      "go_id": "GO:0004784",
+      "go_name": "F:superoxide dismutase activity",
+      "namespace": "BP",
+      "score": 0.9,
+      "evidence": [
+        "experimental_homolog",
+        "structural_motif",
+        "embedding_similarity"
+      ],
+      "saliency_residues": [
+        2,
+        6,
+        9,
+        16,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        36,
+        39,
+        41,
+        46
+      ]
+    },
     {
       "go_id": "GO:0019430",
       "go_name": "removal of superoxide radicals",
@@ -520,6 +552,7 @@
       "namespace": "BP",
       "score": 0.785,
       "evidence": [
+        "structural_motif",
         "embedding_similarity"
       ],
       "saliency_residues": [
@@ -702,11 +735,105 @@
       ]
     },
     {
+      "go_id": "GO:0006879",
+      "go_name": "P:intracellular iron ion homeostasis",
+      "namespace": "BP",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        2,
+        6,
+        9,
+        16,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        36,
+        39,
+        41,
+        46
+      ]
+    },
+    {
+      "go_id": "GO:0006457",
+      "go_name": "protein folding",
+      "namespace": "BP",
+      "score": 0.7,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        2,
+        6,
+        9,
+        16,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        36,
+        39,
+        41,
+        46
+      ]
+    },
+    {
+      "go_id": "GO:0055114",
+      "go_name": "oxidation-reduction process",
+      "namespace": "BP",
+      "score": 0.7,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        2,
+        6,
+        9,
+        16,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        36,
+        39,
+        41,
+        46
+      ]
+    },
+    {
       "go_id": "GO:0006508",
       "go_name": "proteolysis",
       "namespace": "BP",
       "score": 0.694,
       "evidence": [
+        "structural_motif",
         "embedding_similarity"
       ],
       "saliency_residues": [
@@ -824,68 +951,6 @@
         41,
         46
       ]
-    },
-    {
-      "go_id": "GO:0006974",
-      "go_name": "cellular response to DNA damage stimulus",
-      "namespace": "BP",
-      "score": 0.63,
-      "evidence": [
-        "embedding_similarity"
-      ],
-      "saliency_residues": [
-        2,
-        6,
-        9,
-        16,
-        19,
-        20,
-        21,
-        22,
-        23,
-        24,
-        29,
-        30,
-        31,
-        32,
-        33,
-        34,
-        36,
-        39,
-        41,
-        46
-      ]
-    },
-    {
-      "go_id": "GO:0045944",
-      "go_name": "positive regulation of transcription by RNA pol II",
-      "namespace": "BP",
-      "score": 0.6,
-      "evidence": [
-        "structural_motif"
-      ],
-      "saliency_residues": [
-        2,
-        6,
-        9,
-        16,
-        19,
-        20,
-        21,
-        22,
-        23,
-        24,
-        29,
-        30,
-        31,
-        32,
-        33,
-        34,
-        36,
-        39,
-        41,
-        46
-      ]
     }
   ],
   "cc_predictions": [
@@ -929,6 +994,7 @@
       "namespace": "CC",
       "score": 0.787,
       "evidence": [
+        "structural_motif",
         "embedding_similarity"
       ],
       "saliency_residues": [
@@ -960,6 +1026,7 @@
       "namespace": "CC",
       "score": 0.785,
       "evidence": [
+        "structural_motif",
         "embedding_similarity"
       ],
       "saliency_residues": [
@@ -1206,8 +1273,8 @@
       ]
     }
   ],
-  "top_mf": "F:superoxide dismutase activity",
-  "top_bp": "removal of superoxide radicals",
+  "top_mf": "copper ion binding",
+  "top_bp": "F:superoxide dismutase activity",
   "top_cc": "C:nucleus",
-  "n_predictions": 38
+  "n_predictions": 40
 }

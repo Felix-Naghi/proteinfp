@@ -1,0 +1,41 @@
+{
+  "uniprot_id": "P68871",
+  "sequence_length": 0,
+  "is_enzyme": false,
+  "enzyme_confidence": 0.85,
+  "top_prediction": {
+    "ec_class": "3",
+    "ec_name": "Hydrolase",
+    "ec_full": "EC 3.x.x.x",
+    "score": 0.85,
+    "evidence": [
+      "go_prediction",
+      "structural_motif"
+    ]
+  },
+  "all_predictions": [
+    {
+      "ec_class": "3",
+      "ec_name": "Hydrolase",
+      "ec_full": "EC 3.x.x.x",
+      "score": 0.85,
+      "evidence": [
+        "go_prediction",
+        "structural_motif"
+      ]
+    },
+    {
+      "ec_class": "1",
+      "ec_name": "Oxidoreductase",
+      "ec_full": "EC 1.10.99",
+      "score": 0.72,
+      "evidence": [
+        "go_prediction",
+        "structural_motif"
+      ]
+    }
+  ],
+  "specific_ec": "1.10.99",
+  "specific_ec_name": "NAD(P)H dehydrogenase",
+  "non_enzyme_score": 0.5
+}
