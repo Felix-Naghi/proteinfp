@@ -1,12 +1,12 @@
 {
   "uniprot_id": "P00441",
   "sequence_length": 154,
-  "is_enzyme": false,
+  "is_enzyme": true,
   "enzyme_confidence": 0.85,
   "top_prediction": {
     "ec_class": "3",
     "ec_name": "Hydrolase",
-    "ec_full": "EC 3.4.21",
+    "ec_full": "EC 3.x.x.x",
     "score": 0.85,
     "evidence": [
       "go_prediction",
@@ -18,12 +18,24 @@
     {
       "ec_class": "3",
       "ec_name": "Hydrolase",
-      "ec_full": "EC 3.4.21",
+      "ec_full": "EC 3.x.x.x",
       "score": 0.85,
       "evidence": [
         "go_prediction",
         "structural_motif",
         "sequence_composition"
+      ]
+    },
+    {
+      "ec_class": "1",
+      "ec_name": "Oxidoreductase",
+      "ec_full": "EC 1.15.1",
+      "score": 0.81,
+      "evidence": [
+        "go_prediction",
+        "structural_motif",
+        "sequence_composition",
+        "homology_inference"
       ]
     },
     {
@@ -36,7 +48,8 @@
       ]
     }
   ],
-  "specific_ec": "3.4.21",
-  "specific_ec_name": "Serine-type endopeptidase",
-  "non_enzyme_score": 0.4
+  "specific_ec": "1.15.1",
+  "specific_ec_name": "Superoxide dismutase",
+  "non_enzyme_score": 0.4,
+  "ml_enzyme_prob": 0.783
 }

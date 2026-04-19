@@ -2,12 +2,12 @@
   "uniprot_id": "P07900",
   "sequence_length": 732,
   "is_enzyme": false,
-  "enzyme_confidence": 0.85,
+  "enzyme_confidence": 1.356,
   "top_prediction": {
     "ec_class": "3",
     "ec_name": "Hydrolase",
-    "ec_full": "EC 3.4.24",
-    "score": 0.85,
+    "ec_full": "EC 3.6.1",
+    "score": 1.356,
     "evidence": [
       "go_prediction",
       "structural_motif",
@@ -19,8 +19,8 @@
     {
       "ec_class": "3",
       "ec_name": "Hydrolase",
-      "ec_full": "EC 3.4.24",
-      "score": 0.85,
+      "ec_full": "EC 3.6.1",
+      "score": 1.356,
       "evidence": [
         "go_prediction",
         "structural_motif",
@@ -29,12 +29,22 @@
       ]
     },
     {
+      "ec_class": "1",
+      "ec_name": "Oxidoreductase",
+      "ec_full": "EC 1.x.x.x",
+      "score": 0.72,
+      "evidence": [
+        "go_prediction",
+        "structural_motif",
+        "sequence_composition"
+      ]
+    },
+    {
       "ec_class": "2",
       "ec_name": "Transferase",
       "ec_full": "EC 2.x.x.x",
-      "score": 0.748,
+      "score": 0.24,
       "evidence": [
-        "go_prediction",
         "sequence_composition"
       ]
     },
@@ -48,7 +58,8 @@
       ]
     }
   ],
-  "specific_ec": "3.4.24",
-  "specific_ec_name": "Metallopeptidase",
-  "non_enzyme_score": 0.4
+  "specific_ec": "3.6.1",
+  "specific_ec_name": "ATPase",
+  "non_enzyme_score": 0.8,
+  "ml_enzyme_prob": 0.421
 }

@@ -10,7 +10,28 @@
       "evidence": [
         "structural_motif"
       ],
-      "saliency_residues": []
+      "saliency_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
     },
     {
       "go_id": "GO:0016887",
@@ -20,7 +41,28 @@
       "evidence": [
         "structural_motif"
       ],
-      "saliency_residues": []
+      "saliency_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
     },
     {
       "go_id": "GO:0051082",
@@ -30,7 +72,28 @@
       "evidence": [
         "structural_motif"
       ],
-      "saliency_residues": []
+      "saliency_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
     },
     {
       "go_id": "GO:0042623",
@@ -40,7 +103,28 @@
       "evidence": [
         "structural_motif"
       ],
-      "saliency_residues": []
+      "saliency_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
     },
     {
       "go_id": "GO:0046872",
@@ -50,7 +134,59 @@
       "evidence": [
         "sequence_composition"
       ],
-      "saliency_residues": []
+      "saliency_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "go_id": "GO:0005515",
+      "go_name": "protein binding",
+      "namespace": "MF",
+      "score": 0.6,
+      "evidence": [
+        "ai_esm2"
+      ],
+      "saliency_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
     },
     {
       "go_id": "GO:0005488",
@@ -60,19 +196,94 @@
       "evidence": [
         "sequence_composition"
       ],
-      "saliency_residues": []
+      "saliency_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
     }
   ],
   "bp_predictions": [
     {
-      "go_id": "GO:0006457",
-      "go_name": "protein folding",
+      "go_id": "GO:0043066",
+      "go_name": "negative regulation of apoptotic process",
       "namespace": "BP",
-      "score": 0.7,
+      "score": 0.75,
       "evidence": [
-        "structural_motif"
+        "sequence_homolog",
+        "domain_annotation"
       ],
-      "saliency_residues": []
+      "saliency_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "go_id": "GO:0051726",
+      "go_name": "regulation of cell cycle",
+      "namespace": "BP",
+      "score": 0.75,
+      "evidence": [
+        "sequence_homolog",
+        "domain_annotation"
+      ],
+      "saliency_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
     },
     {
       "go_id": "GO:0051085",
@@ -82,10 +293,64 @@
       "evidence": [
         "structural_motif"
       ],
-      "saliency_residues": []
+      "saliency_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
     }
   ],
   "cc_predictions": [
+    {
+      "go_id": "GO:0005634",
+      "go_name": "nucleus",
+      "namespace": "CC",
+      "score": 0.75,
+      "evidence": [
+        "sequence_homolog",
+        "domain_annotation",
+        "ai_esm2"
+      ],
+      "saliency_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
     {
       "go_id": "GO:0005737",
       "go_name": "cytoplasm",
@@ -94,11 +359,32 @@
       "evidence": [
         "sequence_baseline"
       ],
-      "saliency_residues": []
+      "saliency_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
     }
   ],
   "top_mf": "ATP binding",
-  "top_bp": "protein folding",
-  "top_cc": "cytoplasm",
-  "n_predictions": 9
+  "top_bp": "negative regulation of apoptotic process",
+  "top_cc": "nucleus",
+  "n_predictions": 12
 }

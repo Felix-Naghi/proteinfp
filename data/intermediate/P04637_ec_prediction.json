@@ -4,21 +4,30 @@
   "is_enzyme": false,
   "enzyme_confidence": 0.85,
   "top_prediction": {
-    "ec_class": "3",
-    "ec_name": "Hydrolase",
-    "ec_full": "EC 3.x.x.x",
+    "ec_class": "2",
+    "ec_name": "Transferase",
+    "ec_full": "EC 2.x.x.x",
     "score": 0.85,
     "evidence": [
-      "go_prediction",
       "structural_motif",
       "sequence_composition"
     ]
   },
   "all_predictions": [
     {
+      "ec_class": "2",
+      "ec_name": "Transferase",
+      "ec_full": "EC 2.x.x.x",
+      "score": 0.85,
+      "evidence": [
+        "structural_motif",
+        "sequence_composition"
+      ]
+    },
+    {
       "ec_class": "3",
       "ec_name": "Hydrolase",
-      "ec_full": "EC 3.x.x.x",
+      "ec_full": "EC 3.4.21",
       "score": 0.85,
       "evidence": [
         "go_prediction",
@@ -27,12 +36,13 @@
       ]
     },
     {
-      "ec_class": "2",
-      "ec_name": "Transferase",
-      "ec_full": "EC 2.3.2",
-      "score": 0.773,
+      "ec_class": "1",
+      "ec_name": "Oxidoreductase",
+      "ec_full": "EC 1.x.x.x",
+      "score": 0.72,
       "evidence": [
         "go_prediction",
+        "structural_motif",
         "sequence_composition"
       ]
     },
@@ -46,7 +56,8 @@
       ]
     }
   ],
-  "specific_ec": "2.3.2",
-  "specific_ec_name": "Ubiquitin-protein ligase",
-  "non_enzyme_score": 0.4
+  "specific_ec": "3.4.21",
+  "specific_ec_name": "Serine-type endopeptidase",
+  "non_enzyme_score": 0.8,
+  "ml_enzyme_prob": 0.161
 }

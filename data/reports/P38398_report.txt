@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-18 08:03:47
+  Generated: 2026-04-19 13:04:51
 ======================================================================
 
   Protein    : Breast cancer type 1 susceptibility protein
@@ -15,8 +15,8 @@
   FUNCTIONAL PREDICTION
 ──────────────────────────────────────────────────────────────────────
   Top function     : E3 ubiquitin-protein ligase that specifically mediates the formation of 'Lys-6'-linked polyubiquitin chains and plays a central role in DNA repair by facilitating cellular responses to DNA damage (Pub
-  Enzyme           : no (non-enzyme)
-  Location         : membrane
+  Enzyme           : yes — 3.4.21
+  Location         : C:plasma membrane
   Evidence sources : 12
 
 ──────────────────────────────────────────────────────────────────────
@@ -24,32 +24,32 @@
 ──────────────────────────────────────────────────────────────────────
 
   Molecular Function:
-    [HIGH  ] GO:0003677 DNA binding (score=13.3, 4 sources)
-    [HIGH  ] GO:0008270 zinc ion binding (score=11.3, 3 sources)
+    [HIGH  ] GO:0008270 zinc ion binding (score=17.7, 4 sources)
+    [HIGH  ] GO:0003677 DNA binding (score=11.6, 3 sources)
     [HIGH  ] GO:0004842 ubiquitin-protein transferase activity (score=9.5, 2 sources)
-    [HIGH  ] GO:0046872 metal ion binding (score=8.8, 4 sources)
-    [HIGH  ] GO:0061630 F:ubiquitin protein ligase activity (score=7.3, 2 sources)
+    [HIGH  ] GO:0046872 metal ion binding (score=7.2, 3 sources)
+    [HIGH  ] GO:0070063 F:RNA polymerase binding (score=5.1, 1 sources)
 
   Biological Process:
     [HIGH  ] GO:0006281 DNA repair (score=7.8, 1 sources)
     [HIGH  ] GO:0045944 P:positive regulation of transcription by RNA (score=6.5, 2 sources)
-    [HIGH  ] GO:0006974 DNA damage response (score=5.8, 2 sources)
     [HIGH  ] GO:0000724 P:double-strand break repair via homologous r (score=5.1, 1 sources)
     [HIGH  ] GO:0006633 P:fatty acid biosynthetic process (score=5.1, 1 sources)
+    [HIGH  ] GO:0007095 P:mitotic G2 DNA damage checkpoint signaling (score=5.1, 1 sources)
 
   Cellular Component:
-    [HIGH  ] GO:0005634 nucleus (score=14.6, 5 sources)
-    [HIGH  ] GO:0005737 C:cytoplasm (score=7.9, 3 sources)
+    [HIGH  ] GO:0005634 nucleus (score=12.3, 4 sources)
+    [HIGH  ] GO:0005737 C:cytoplasm (score=6.5, 2 sources)
     [HIGH  ] GO:0070531 C:BRCA1-A complex (score=5.1, 1 sources)
 
 ──────────────────────────────────────────────────────────────────────
   ACTIVE SITES
 ──────────────────────────────────────────────────────────────────────
   C39 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
-  H41 [HIGH  ] motifs: serine_protease_triad, cysteine_protease_dyad
+  H41 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H1746 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
   H399 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
   H692 [HIGH  ] motifs: serine_protease_triad, zinc_binding_cluster
-  H1141 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
 
 ──────────────────────────────────────────────────────────────────────
   BINDING POCKETS
@@ -83,12 +83,13 @@
 ──────────────────────────────────────────────────────────────────────
   VALIDATION SUGGESTIONS
 ──────────────────────────────────────────────────────────────────────
-  1. Alanine scanning mutagenesis of predicted active site residues (C39, H41, H399) to confirm functional importance
+  1. Alanine scanning mutagenesis of predicted active site residues (C39, H41, H1746) to confirm functional importance
   2. Thermal shift assay or SPR binding assay against pocket P1 (vol=1720Å³, druggability=0.97)
   3. Co-immunoprecipitation with MDC1 (unknown interaction, predicted interface: [1863, 1508, 1076])
   4. Co-immunoprecipitation with PALB2 (unknown interaction, predicted interface: [1863, 1508, 1076])
-  5. EMSA or fluorescence polarisation assay to confirm 'DNA binding' (GO:0003677)
-  6. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+  5. Enzyme activity assay consistent with EC 3.4.21 using appropriate substrate panel
+  6. EMSA or fluorescence polarisation assay to confirm 'zinc ion binding' (GO:0008270)
+  7. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
   Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi

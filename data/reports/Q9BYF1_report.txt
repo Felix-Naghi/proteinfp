@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-18 08:03:55
+  Generated: 2026-04-19 13:05:08
 ======================================================================
 
   Protein    : Angiotensin-converting enzyme 2
@@ -15,8 +15,8 @@
   FUNCTIONAL PREDICTION
 ──────────────────────────────────────────────────────────────────────
   Top function     : Essential counter-regulatory carboxypeptidase of the renin-angiotensin hormone system that is a critical regulator of blood volume, systemic vascular resistance, and thus cardiovascular homeostasis (P
-  Enzyme           : no (non-enzyme)
-  Location         : membrane
+  Enzyme           : yes — 3.4.24
+  Location         : C:plasma membrane
   Evidence sources : 12
 
 ──────────────────────────────────────────────────────────────────────
@@ -24,32 +24,32 @@
 ──────────────────────────────────────────────────────────────────────
 
   Molecular Function:
-    [HIGH  ] GO:0008237 metallopeptidase activity (score=11.9, 3 sources)
+    [HIGH  ] GO:0008237 metallopeptidase activity (score=18.2, 4 sources)
     [HIGH  ] GO:0008241 peptidyl-dipeptidase activity (score=11.6, 3 sources)
     [HIGH  ] GO:0046872 F:metal ion binding (score=10.2, 4 sources)
-    [HIGH  ] GO:0008233 F:peptidase activity (score=8.7, 3 sources)
-    [HIGH  ] GO:0006508 proteolysis (score=6.5, 2 sources)
+    [HIGH  ] GO:0009986 C:cell surface (score=9.6, 2 sources)
+    [HIGH  ] GO:0002003 P:angiotensin maturation (score=9.5, 2 sources)
 
   Biological Process:
+    [HIGH  ] GO:0006508 proteolysis (score=20.5, 5 sources)
     [HIGH  ] GO:0141109 F:transporter activator activity (score=5.1, 1 sources)
     [HIGH  ] GO:0046513 P:ceramide biosynthetic process (score=5.1, 1 sources)
-    [LOW   ] GO:0015671 oxygen transport (score=1.6, 1 sources)
-    [LOW   ] GO:0019430 removal of superoxide radicals (score=1.6, 1 sources)
-    [LOW   ] GO:0007596 blood coagulation (score=1.5, 1 sources)
+    [LOW   ] GO:0055114 oxidation-reduction process (score=1.4, 1 sources)
+    [LOW   ] GO:0015671 oxygen transport (score=1.4, 1 sources)
 
   Cellular Component:
-    [HIGH  ] GO:0005737 C:cytoplasm (score=7.9, 3 sources)
+    [HIGH  ] GO:0005886 C:plasma membrane (score=9.5, 2 sources)
+    [HIGH  ] GO:0009897 C:external side of plasma membrane (score=9.5, 2 sources)
     [HIGH  ] GO:0016020 membrane (score=7.8, 3 sources)
-    [HIGH  ] GO:0005576 C:extracellular region (score=6.6, 2 sources)
 
 ──────────────────────────────────────────────────────────────────────
   ACTIVE SITES
 ──────────────────────────────────────────────────────────────────────
+  H265 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H373 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H374 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H378 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
   H417 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
-  H505 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
-  C530 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
-  H540 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
-  C542 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
 
 ──────────────────────────────────────────────────────────────────────
   BINDING POCKETS
@@ -83,11 +83,12 @@
 ──────────────────────────────────────────────────────────────────────
   VALIDATION SUGGESTIONS
 ──────────────────────────────────────────────────────────────────────
-  1. Alanine scanning mutagenesis of predicted active site residues (H417, H505, C530) to confirm functional importance
+  1. Alanine scanning mutagenesis of predicted active site residues (H265, H373, H374) to confirm functional importance
   2. Thermal shift assay or SPR binding assay against pocket P1 (vol=1540Å³, druggability=0.99)
   3. Co-immunoprecipitation with DPP4 (unknown interaction, predicted interface: [805, 1, 775])
   4. Co-immunoprecipitation with TMPRSS2 (unknown interaction, predicted interface: [805, 1, 775])
-  5. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+  5. Enzyme activity assay consistent with EC 3.4.24 using appropriate substrate panel
+  6. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
   Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi

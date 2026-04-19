@@ -99,28 +99,6 @@
       "domain_context": ""
     },
     {
-      "residue_number": 452,
-      "chain_id": "A",
-      "one_letter": "H",
-      "three_letter": "HIS",
-      "conservation": 7.0,
-      "is_conserved": true,
-      "is_buried": true,
-      "sasa": 13.27,
-      "plddt": 91.75,
-      "motifs": [
-        "haem_binding"
-      ],
-      "evidence_score": 9,
-      "confidence": "HIGH",
-      "coords": [
-        -14.074,
-        6.271,
-        14.517
-      ],
-      "domain_context": ""
-    },
-    {
       "residue_number": 461,
       "chain_id": "A",
       "one_letter": "C",
@@ -177,8 +155,7 @@
       "plddt": 94.38,
       "motifs": [
         "serine_protease_triad",
-        "serine_protease_triad",
-        "haem_binding"
+        "serine_protease_triad"
       ],
       "evidence_score": 7,
       "confidence": "HIGH",
@@ -201,8 +178,7 @@
       "plddt": 91.12,
       "motifs": [
         "serine_protease_triad",
-        "acid_base_pair",
-        "haem_binding"
+        "acid_base_pair"
       ],
       "evidence_score": 7,
       "confidence": "HIGH",
@@ -326,6 +302,26 @@
         -20.013,
         -1.296,
         13.243
+      ],
+      "domain_context": ""
+    },
+    {
+      "residue_number": 452,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 13.27,
+      "plddt": 91.75,
+      "motifs": [],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        -14.074,
+        6.271,
+        14.517
       ],
       "domain_context": ""
     },
@@ -564,7 +560,8 @@
       "plddt": 96.31,
       "motifs": [
         "dfg_loop",
-        "p_loop_walker_a"
+        "p_loop_walker_a",
+        "flavin_binding"
       ],
       "evidence_score": 5,
       "confidence": "MEDIUM",
@@ -1155,28 +1152,6 @@
         7.572,
         2.707,
         -17.631
-      ],
-      "domain_context": ""
-    },
-    {
-      "residue_number": 76,
-      "chain_id": "A",
-      "one_letter": "Y",
-      "three_letter": "TYR",
-      "conservation": 5.5,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 131.91,
-      "plddt": 97.62,
-      "motifs": [
-        "flavin_binding"
-      ],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        11.277,
-        3.745,
-        -17.661
       ],
       "domain_context": ""
     },
@@ -2982,28 +2957,6 @@
       "domain_context": ""
     },
     {
-      "residue_number": 335,
-      "chain_id": "A",
-      "one_letter": "G",
-      "three_letter": "GLY",
-      "conservation": 4.0,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 61.59,
-      "plddt": 51.78,
-      "motifs": [
-        "p_loop_walker_a"
-      ],
-      "evidence_score": 2,
-      "confidence": "LOW",
-      "coords": [
-        -6.057,
-        -32.273,
-        33.565
-      ],
-      "domain_context": ""
-    },
-    {
       "residue_number": 336,
       "chain_id": "A",
       "one_letter": "K",
@@ -3015,8 +2968,7 @@
       "plddt": 43.41,
       "motifs": [
         "dna_binding_cluster",
-        "acid_base_pair",
-        "p_loop_walker_a"
+        "acid_base_pair"
       ],
       "evidence_score": 2,
       "confidence": "LOW",
@@ -3039,8 +2991,7 @@
       "plddt": 45.22,
       "motifs": [
         "acid_base_pair",
-        "acid_base_pair",
-        "p_loop_walker_a"
+        "acid_base_pair"
       ],
       "evidence_score": 2,
       "confidence": "LOW",
@@ -3064,8 +3015,7 @@
       "motifs": [
         "dna_binding_cluster",
         "acid_base_pair",
-        "acid_base_pair",
-        "p_loop_walker_a"
+        "acid_base_pair"
       ],
       "evidence_score": 2,
       "confidence": "LOW",
@@ -3073,28 +3023,6 @@
         -12.594,
         -39.446,
         34.018
-      ],
-      "domain_context": ""
-    },
-    {
-      "residue_number": 339,
-      "chain_id": "A",
-      "one_letter": "G",
-      "three_letter": "GLY",
-      "conservation": 4.0,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 81.8,
-      "plddt": 35.69,
-      "motifs": [
-        "p_loop_walker_a"
-      ],
-      "evidence_score": 2,
-      "confidence": "LOW",
-      "coords": [
-        -16.028,
-        -38.981,
-        35.677
       ],
       "domain_context": ""
     },
@@ -3109,8 +3037,7 @@
       "sasa": 170.13,
       "plddt": 39.09,
       "motifs": [
-        "acid_base_pair",
-        "p_loop_walker_a"
+        "acid_base_pair"
       ],
       "evidence_score": 2,
       "confidence": "LOW",
@@ -4057,6 +3984,26 @@
         6.57,
         -0.999,
         -17.518
+      ],
+      "domain_context": ""
+    },
+    {
+      "residue_number": 76,
+      "chain_id": "A",
+      "one_letter": "Y",
+      "three_letter": "TYR",
+      "conservation": 5.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 131.91,
+      "plddt": 97.62,
+      "motifs": [],
+      "evidence_score": 1,
+      "confidence": "LOW",
+      "coords": [
+        11.277,
+        3.745,
+        -17.661
       ],
       "domain_context": ""
     },
@@ -6516,98 +6463,36 @@
       "long_range": false
     },
     {
-      "motif_type": "p_loop_walker_a",
-      "residue_numbers": [
-        335,
-        336,
-        337,
-        338,
-        339,
-        340
-      ],
-      "residue_letters": [
-        "G",
-        "K",
-        "D",
-        "K",
-        "G",
-        "E"
-      ],
-      "mean_distance": 12.2,
-      "confidence": "MEDIUM",
-      "zinc_type": "",
-      "long_range": false
-    },
-    {
       "motif_type": "flavin_binding",
       "residue_numbers": [
         83,
         87,
-        76
+        86
       ],
       "residue_letters": [
         "G",
         "G",
-        "Y"
+        "F"
       ],
-      "mean_distance": 8.5,
-      "confidence": "MEDIUM",
-      "zinc_type": "",
-      "long_range": false
-    },
-    {
-      "motif_type": "haem_binding",
-      "residue_numbers": [
-        73
-      ],
-      "residue_letters": [
-        "H"
-      ],
-      "mean_distance": 0.0,
-      "confidence": "MEDIUM",
-      "zinc_type": "",
-      "long_range": false
-    },
-    {
-      "motif_type": "haem_binding",
-      "residue_numbers": [
-        96
-      ],
-      "residue_letters": [
-        "H"
-      ],
-      "mean_distance": 0.0,
-      "confidence": "MEDIUM",
-      "zinc_type": "",
-      "long_range": false
-    },
-    {
-      "motif_type": "haem_binding",
-      "residue_numbers": [
-        452
-      ],
-      "residue_letters": [
-        "H"
-      ],
-      "mean_distance": 0.0,
+      "mean_distance": 4.91,
       "confidence": "MEDIUM",
       "zinc_type": "",
       "long_range": false
     }
   ],
   "n_high_confidence": 22,
-  "n_medium_confidence": 70,
-  "n_low_confidence": 156,
+  "n_medium_confidence": 69,
+  "n_low_confidence": 155,
   "top_residues": [
     "C77",
     "C305",
     "C319",
     "C438",
-    "H452",
     "C461",
     "C464",
     "H73",
     "H96",
-    "C308"
+    "C308",
+    "H318"
   ]
 }

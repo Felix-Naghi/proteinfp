@@ -4,32 +4,32 @@
   "protein_name": "Breast cancer type 1 susceptibility protein",
   "organism": "Homo sapiens",
   "sequence_length": 1863,
-  "generated_at": "2026-04-18 08:03:47",
+  "generated_at": "2026-04-19 13:04:51",
   "top_function": "E3 ubiquitin-protein ligase that specifically mediates the formation of 'Lys-6'-linked polyubiquitin chains and plays a central role in DNA repair by facilitating cellular responses to DNA damage (Pub",
-  "is_enzyme": false,
-  "ec_number": "2.3.2",
-  "subcellular_location": "membrane",
+  "is_enzyme": true,
+  "ec_number": "3.4.21",
+  "subcellular_location": "C:plasma membrane",
   "go_terms_mf": [
     {
-      "go_id": "GO:0003677",
-      "go_name": "DNA binding",
+      "go_id": "GO:0008270",
+      "go_name": "zinc ion binding",
       "namespace": "MF",
-      "weighted_score": 13.3,
+      "weighted_score": 17.69,
       "n_sources": 4,
       "sources": [
         "experimental_homolog",
         "domain_annotation",
         "structural_motif",
-        "embedding_similarity"
+        "neural_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
     },
     {
-      "go_id": "GO:0008270",
-      "go_name": "zinc ion binding",
+      "go_id": "GO:0003677",
+      "go_name": "DNA binding",
       "namespace": "MF",
-      "weighted_score": 11.3,
+      "weighted_score": 11.6,
       "n_sources": 3,
       "sources": [
         "experimental_homolog",
@@ -56,29 +56,15 @@
       "go_id": "GO:0046872",
       "go_name": "metal ion binding",
       "namespace": "MF",
-      "weighted_score": 8.75,
-      "n_sources": 4,
+      "weighted_score": 7.25,
+      "n_sources": 3,
       "sources": [
         "domain_annotation",
         "structural_motif",
-        "embedding_similarity",
         "sequence_composition"
       ],
       "confidence": "HIGH",
       "top_evidence": "sequence_composition"
-    },
-    {
-      "go_id": "GO:0061630",
-      "go_name": "F:ubiquitin protein ligase activity",
-      "namespace": "MF",
-      "weighted_score": 7.33,
-      "n_sources": 2,
-      "sources": [
-        "experimental_homolog",
-        "embedding_similarity"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
     },
     {
       "go_id": "GO:0070063",
@@ -95,6 +81,18 @@
     {
       "go_id": "GO:0003713",
       "go_name": "F:transcription coactivator activity",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0061630",
+      "go_name": "F:ubiquitin protein ligase activity",
       "namespace": "MF",
       "weighted_score": 5.1,
       "n_sources": 1,
@@ -141,32 +139,6 @@
       "top_evidence": "experimental_homolog"
     },
     {
-      "go_id": "GO:0004252",
-      "go_name": "serine-type endopeptidase activity",
-      "namespace": "MF",
-      "weighted_score": 3.4,
-      "n_sources": 2,
-      "sources": [
-        "structural_motif",
-        "embedding_similarity"
-      ],
-      "confidence": "MEDIUM",
-      "top_evidence": "embedding_similarity"
-    },
-    {
-      "go_id": "GO:0008233",
-      "go_name": "peptidase activity",
-      "namespace": "MF",
-      "weighted_score": 3.2,
-      "n_sources": 2,
-      "sources": [
-        "structural_motif",
-        "embedding_similarity"
-      ],
-      "confidence": "MEDIUM",
-      "top_evidence": "embedding_similarity"
-    },
-    {
       "go_id": "GO:0005654",
       "go_name": "C:nucleoplasm",
       "namespace": "MF",
@@ -179,29 +151,52 @@
       "top_evidence": "experimental_homolog"
     },
     {
-      "go_id": "GO:0003700",
-      "go_name": "DNA-binding transcription factor activity",
+      "go_id": "GO:0004252",
+      "go_name": "serine-type endopeptidase activity",
       "namespace": "MF",
-      "weighted_score": 2.93,
-      "n_sources": 2,
-      "sources": [
-        "structural_motif",
-        "embedding_similarity"
-      ],
-      "confidence": "MEDIUM",
-      "top_evidence": "embedding_similarity"
-    },
-    {
-      "go_id": "GO:0008237",
-      "go_name": "metallopeptidase activity",
-      "namespace": "MF",
-      "weighted_score": 1.54,
+      "weighted_score": 1.7,
       "n_sources": 1,
       "sources": [
-        "embedding_similarity"
+        "structural_motif"
       ],
       "confidence": "LOW",
-      "top_evidence": "embedding_similarity"
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0004672",
+      "go_name": "protein kinase activity",
+      "namespace": "MF",
+      "weighted_score": 1.7,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0005525",
+      "go_name": "GTP binding",
+      "namespace": "MF",
+      "weighted_score": 1.6,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0003955",
+      "go_name": "NAD(P)H dehydrogenase (quinone) activity",
+      "namespace": "MF",
+      "weighted_score": 1.6,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
     }
   ],
   "go_terms_bp": [
@@ -229,19 +224,6 @@
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0006974",
-      "go_name": "DNA damage response",
-      "namespace": "BP",
-      "weighted_score": 5.75,
-      "n_sources": 2,
-      "sources": [
-        "domain_annotation",
-        "embedding_similarity"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "embedding_similarity"
     },
     {
       "go_id": "GO:0000724",
@@ -328,58 +310,70 @@
       "top_evidence": "experimental_homolog"
     },
     {
-      "go_id": "GO:0043066",
-      "go_name": "negative regulation of apoptotic process",
+      "go_id": "GO:0006974",
+      "go_name": "DNA damage response",
       "namespace": "BP",
-      "weighted_score": 1.54,
+      "weighted_score": 4.25,
       "n_sources": 1,
       "sources": [
-        "embedding_similarity"
+        "domain_annotation"
       ],
-      "confidence": "LOW",
-      "top_evidence": "embedding_similarity"
+      "confidence": "MEDIUM",
+      "top_evidence": "domain_annotation"
     },
     {
-      "go_id": "GO:0007596",
-      "go_name": "blood coagulation",
+      "go_id": "GO:0006468",
+      "go_name": "protein phosphorylation",
       "namespace": "BP",
-      "weighted_score": 1.44,
+      "weighted_score": 1.6,
       "n_sources": 1,
       "sources": [
-        "embedding_similarity"
+        "structural_motif"
       ],
       "confidence": "LOW",
-      "top_evidence": "embedding_similarity"
+      "top_evidence": "structural_motif"
     },
     {
-      "go_id": "GO:0006915",
-      "go_name": "apoptotic process",
+      "go_id": "GO:0007165",
+      "go_name": "signal transduction",
       "namespace": "BP",
-      "weighted_score": 1.37,
+      "weighted_score": 1.5,
       "n_sources": 1,
       "sources": [
-        "embedding_similarity"
+        "structural_motif"
       ],
       "confidence": "LOW",
-      "top_evidence": "embedding_similarity"
+      "top_evidence": "structural_motif"
     },
     {
-      "go_id": "GO:0051726",
-      "go_name": "regulation of cell cycle",
+      "go_id": "GO:0018108",
+      "go_name": "peptidyl-tyrosine phosphorylation",
       "namespace": "BP",
-      "weighted_score": 1.35,
+      "weighted_score": 1.4,
       "n_sources": 1,
       "sources": [
-        "embedding_similarity"
+        "structural_motif"
       ],
       "confidence": "LOW",
-      "top_evidence": "embedding_similarity"
+      "top_evidence": "structural_motif"
     },
     {
-      "go_id": "GO:0006351",
-      "go_name": "DNA-templated transcription",
+      "go_id": "GO:0055114",
+      "go_name": "oxidation-reduction process",
       "namespace": "BP",
-      "weighted_score": 1.3,
+      "weighted_score": 1.4,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0015671",
+      "go_name": "oxygen transport",
+      "namespace": "BP",
+      "weighted_score": 1.4,
       "n_sources": 1,
       "sources": [
         "structural_motif"
@@ -393,14 +387,13 @@
       "go_id": "GO:0005634",
       "go_name": "nucleus",
       "namespace": "CC",
-      "weighted_score": 14.58,
-      "n_sources": 5,
+      "weighted_score": 12.35,
+      "n_sources": 4,
       "sources": [
         "experimental_homolog",
         "domain_annotation",
         "ai_esm2",
-        "structural_motif",
-        "embedding_similarity"
+        "structural_motif"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -409,11 +402,10 @@
       "go_id": "GO:0005737",
       "go_name": "C:cytoplasm",
       "namespace": "CC",
-      "weighted_score": 7.9,
-      "n_sources": 3,
+      "weighted_score": 6.5,
+      "n_sources": 2,
       "sources": [
         "experimental_homolog",
-        "embedding_similarity",
         "sequence_baseline"
       ],
       "confidence": "HIGH",
@@ -507,12 +499,12 @@
       "go_id": "GO:0005886",
       "go_name": "C:plasma membrane",
       "namespace": "CC",
-      "weighted_score": 3.0,
+      "weighted_score": 5.1,
       "n_sources": 1,
       "sources": [
         "experimental_homolog"
       ],
-      "confidence": "MEDIUM",
+      "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
     }
   ],
@@ -554,6 +546,8 @@
       "plddt": 90.5,
       "motifs": [
         "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
         "cysteine_protease_dyad",
         "zinc_binding_cluster",
         "zinc_binding_cluster",
@@ -567,6 +561,31 @@
         15.075
       ],
       "domain_context": "ring/u-box"
+    },
+    {
+      "residue_number": 1746,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 23.77,
+      "plddt": 94.12,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad"
+      ],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        5.433,
+        19.24,
+        -0.634
+      ],
+      "domain_context": "brct domain"
     },
     {
       "residue_number": 399,
@@ -621,6 +640,50 @@
       "domain_context": "breast cancer type 1 susceptibility protein brca1"
     },
     {
+      "residue_number": 816,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 173.43,
+      "plddt": 33.03,
+      "motifs": [
+        "p_loop_walker_a"
+      ],
+      "evidence_score": 6,
+      "confidence": "HIGH",
+      "coords": [
+        13.123,
+        -87.886,
+        -5.776
+      ],
+      "domain_context": "breast cancer type 1 susceptibility protein brca1"
+    },
+    {
+      "residue_number": 818,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 126.92,
+      "plddt": 33.62,
+      "motifs": [
+        "p_loop_walker_a"
+      ],
+      "evidence_score": 6,
+      "confidence": "HIGH",
+      "coords": [
+        11.581,
+        -85.355,
+        -12.067
+      ],
+      "domain_context": "breast cancer type 1 susceptibility protein brca1"
+    },
+    {
       "residue_number": 1141,
       "chain_id": "A",
       "one_letter": "H",
@@ -631,6 +694,7 @@
       "sasa": 115.61,
       "plddt": 27.5,
       "motifs": [
+        "serine_protease_triad",
         "serine_protease_triad",
         "serine_protease_triad",
         "serine_protease_triad",
@@ -671,6 +735,123 @@
       "domain_context": "ring/u-box"
     },
     {
+      "residue_number": 72,
+      "chain_id": "A",
+      "one_letter": "S",
+      "three_letter": "SER",
+      "conservation": 4.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 17.86,
+      "plddt": 82.5,
+      "motifs": [
+        "serine_protease_triad"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        -2.359,
+        -34.544,
+        24.18
+      ],
+      "domain_context": "ring/u-box"
+    },
+    {
+      "residue_number": 76,
+      "chain_id": "A",
+      "one_letter": "S",
+      "three_letter": "SER",
+      "conservation": 4.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 19.45,
+      "plddt": 86.31,
+      "motifs": [
+        "serine_protease_triad"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        -6.077,
+        -23.851,
+        19.954
+      ],
+      "domain_context": "ring/u-box"
+    },
+    {
+      "residue_number": 1739,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 0.17,
+      "plddt": 96.12,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        2.74,
+        11.831,
+        1.36
+      ],
+      "domain_context": "brct domain"
+    },
+    {
+      "residue_number": 1840,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 5.96,
+      "plddt": 96.88,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        7.299,
+        10.945,
+        -7.611
+      ],
+      "domain_context": "breast cancer type 1 susceptibility protein brca1"
+    },
+    {
+      "residue_number": 1841,
+      "chain_id": "A",
+      "one_letter": "S",
+      "three_letter": "SER",
+      "conservation": 4.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 0.0,
+      "plddt": 96.56,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        6.649,
+        13.555,
+        -10.438
+      ],
+      "domain_context": "breast cancer type 1 susceptibility protein brca1"
+    },
+    {
       "residue_number": 40,
       "chain_id": "A",
       "one_letter": "D",
@@ -681,6 +862,8 @@
       "sasa": 121.05,
       "plddt": 87.44,
       "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
         "serine_protease_triad",
         "zinc_binding_cluster",
         "zinc_binding_cluster",
@@ -921,7 +1104,8 @@
       "sasa": 121.28,
       "plddt": 92.0,
       "motifs": [
-        "acid_base_pair"
+        "acid_base_pair",
+        "haem_binding"
       ],
       "evidence_score": 7,
       "confidence": "HIGH",
@@ -1039,184 +1223,6 @@
         -29.541
       ],
       "domain_context": "breast cancer type 1 susceptibility protein brca1"
-    },
-    {
-      "residue_number": 1847,
-      "chain_id": "A",
-      "one_letter": "C",
-      "three_letter": "CYS",
-      "conservation": 7.5,
-      "is_conserved": true,
-      "is_buried": false,
-      "sasa": 52.59,
-      "plddt": 94.12,
-      "motifs": [
-        "zinc_binding_cluster"
-      ],
-      "evidence_score": 7,
-      "confidence": "HIGH",
-      "coords": [
-        8.385,
-        16.675,
-        -13.632
-      ],
-      "domain_context": "breast cancer type 1 susceptibility protein brca1"
-    },
-    {
-      "residue_number": 117,
-      "chain_id": "A",
-      "one_letter": "H",
-      "three_letter": "HIS",
-      "conservation": 7.0,
-      "is_conserved": true,
-      "is_buried": false,
-      "sasa": 162.6,
-      "plddt": 32.16,
-      "motifs": [
-        "acid_base_pair"
-      ],
-      "evidence_score": 6,
-      "confidence": "HIGH",
-      "coords": [
-        -18.112,
-        -12.772,
-        49.532
-      ],
-      "domain_context": "transcriptional regulator, brca1 type"
-    },
-    {
-      "residue_number": 238,
-      "chain_id": "A",
-      "one_letter": "H",
-      "three_letter": "HIS",
-      "conservation": 7.0,
-      "is_conserved": true,
-      "is_buried": false,
-      "sasa": 134.4,
-      "plddt": 32.47,
-      "motifs": [
-        "zinc_binding_cluster",
-        "acid_base_pair"
-      ],
-      "evidence_score": 6,
-      "confidence": "HIGH",
-      "coords": [
-        -73.335,
-        -31.231,
-        -1.364
-      ],
-      "domain_context": "transcriptional regulator, brca1 type"
-    },
-    {
-      "residue_number": 239,
-      "chain_id": "A",
-      "one_letter": "H",
-      "three_letter": "HIS",
-      "conservation": 7.0,
-      "is_conserved": true,
-      "is_buried": false,
-      "sasa": 149.87,
-      "plddt": 32.84,
-      "motifs": [
-        "zinc_binding_cluster"
-      ],
-      "evidence_score": 6,
-      "confidence": "HIGH",
-      "coords": [
-        -75.706,
-        -33.319,
-        -3.487
-      ],
-      "domain_context": "transcriptional regulator, brca1 type"
-    },
-    {
-      "residue_number": 257,
-      "chain_id": "A",
-      "one_letter": "H",
-      "three_letter": "HIS",
-      "conservation": 7.0,
-      "is_conserved": true,
-      "is_buried": false,
-      "sasa": 137.95,
-      "plddt": 31.69,
-      "motifs": [
-        "acid_base_pair"
-      ],
-      "evidence_score": 6,
-      "confidence": "HIGH",
-      "coords": [
-        -66.558,
-        -4.007,
-        -17.185
-      ],
-      "domain_context": "transcriptional regulator, brca1 type"
-    },
-    {
-      "residue_number": 270,
-      "chain_id": "A",
-      "one_letter": "H",
-      "three_letter": "HIS",
-      "conservation": 7.0,
-      "is_conserved": true,
-      "is_buried": false,
-      "sasa": 153.16,
-      "plddt": 27.72,
-      "motifs": [
-        "zinc_binding_cluster",
-        "acid_base_pair"
-      ],
-      "evidence_score": 6,
-      "confidence": "HIGH",
-      "coords": [
-        -70.242,
-        21.752,
-        12.564
-      ],
-      "domain_context": "transcriptional regulator, brca1 type"
-    },
-    {
-      "residue_number": 274,
-      "chain_id": "A",
-      "one_letter": "C",
-      "three_letter": "CYS",
-      "conservation": 7.5,
-      "is_conserved": true,
-      "is_buried": false,
-      "sasa": 117.78,
-      "plddt": 31.58,
-      "motifs": [
-        "zinc_binding_cluster"
-      ],
-      "evidence_score": 6,
-      "confidence": "HIGH",
-      "coords": [
-        -70.896,
-        34.462,
-        8.843
-      ],
-      "domain_context": "transcriptional regulator, brca1 type"
-    },
-    {
-      "residue_number": 285,
-      "chain_id": "A",
-      "one_letter": "H",
-      "three_letter": "HIS",
-      "conservation": 7.0,
-      "is_conserved": true,
-      "is_buried": false,
-      "sasa": 153.94,
-      "plddt": 25.64,
-      "motifs": [
-        "acid_base_pair"
-      ],
-      "evidence_score": 6,
-      "confidence": "HIGH",
-      "coords": [
-        -50.916,
-        53.909,
-        -7.608
-      ],
-      "domain_context": "transcriptional regulator, brca1 type"
     }
   ],
   "binding_pockets": [
@@ -2810,11 +2816,12 @@
   "n_evidence_sources": 12,
   "overall_confidence": "VERY HIGH",
   "validation_suggestions": [
-    "Alanine scanning mutagenesis of predicted active site residues (C39, H41, H399) to confirm functional importance",
+    "Alanine scanning mutagenesis of predicted active site residues (C39, H41, H1746) to confirm functional importance",
     "Thermal shift assay or SPR binding assay against pocket P1 (vol=1720\u00c5\u00b3, druggability=0.97)",
     "Co-immunoprecipitation with MDC1 (unknown interaction, predicted interface: [1863, 1508, 1076])",
     "Co-immunoprecipitation with PALB2 (unknown interaction, predicted interface: [1863, 1508, 1076])",
-    "EMSA or fluorescence polarisation assay to confirm 'DNA binding' (GO:0003677)",
+    "Enzyme activity assay consistent with EC 3.4.21 using appropriate substrate panel",
+    "EMSA or fluorescence polarisation assay to confirm 'zinc ion binding' (GO:0008270)",
     "GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation"
   ],
   "modules_run": [

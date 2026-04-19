@@ -4,17 +4,17 @@
   "protein_name": "Epidermal growth factor receptor",
   "organism": "Homo sapiens",
   "sequence_length": 1210,
-  "generated_at": "2026-04-18 08:03:50",
+  "generated_at": "2026-04-19 13:04:37",
   "top_function": "Receptor tyrosine kinase binding ligands of the EGF family and activating several signaling cascades to convert extracellular cues into appropriate cellular responses (PubMed:10805725, PubMed:27153536",
   "is_enzyme": true,
-  "ec_number": "3.4.21",
-  "subcellular_location": "integral component of plasma membrane",
+  "ec_number": "2.7.10",
+  "subcellular_location": "C:plasma membrane",
   "go_terms_mf": [
     {
       "go_id": "GO:0005524",
       "go_name": "ATP binding",
       "namespace": "MF",
-      "weighted_score": 18.0,
+      "weighted_score": 18.3,
       "n_sources": 3,
       "sources": [
         "experimental_homolog",
@@ -52,6 +52,19 @@
       "top_evidence": "experimental_homolog"
     },
     {
+      "go_id": "GO:0009986",
+      "go_name": "C:cell surface",
+      "namespace": "MF",
+      "weighted_score": 9.37,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "neural_classifier"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
       "go_id": "GO:0043235",
       "go_name": "C:receptor complex",
       "namespace": "MF",
@@ -76,30 +89,6 @@
       "top_evidence": "experimental_homolog"
     },
     {
-      "go_id": "GO:0031594",
-      "go_name": "C:neuromuscular junction",
-      "namespace": "MF",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0098978",
-      "go_name": "C:glutamatergic synapse",
-      "namespace": "MF",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
       "go_id": "GO:0004714",
       "go_name": "receptor protein tyrosine kinase activity",
       "namespace": "MF",
@@ -113,21 +102,20 @@
       "top_evidence": "embedding_similarity"
     },
     {
-      "go_id": "GO:0005525",
-      "go_name": "GTP binding",
+      "go_id": "GO:0031594",
+      "go_name": "C:neuromuscular junction",
       "namespace": "MF",
-      "weighted_score": 3.2,
-      "n_sources": 2,
+      "weighted_score": 3.0,
+      "n_sources": 1,
       "sources": [
-        "structural_motif",
-        "embedding_similarity"
+        "experimental_homolog"
       ],
       "confidence": "MEDIUM",
-      "top_evidence": "embedding_similarity"
+      "top_evidence": "experimental_homolog"
     },
     {
-      "go_id": "GO:0009986",
-      "go_name": "C:cell surface",
+      "go_id": "GO:0098978",
+      "go_name": "C:glutamatergic synapse",
       "namespace": "MF",
       "weighted_score": 3.0,
       "n_sources": 1,
@@ -196,6 +184,18 @@
       ],
       "confidence": "MEDIUM",
       "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0043025",
+      "go_name": "C:neuronal cell body",
+      "namespace": "MF",
+      "weighted_score": 3.0,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "experimental_homolog"
     }
   ],
   "go_terms_bp": [
@@ -239,19 +239,6 @@
       "top_evidence": "embedding_similarity"
     },
     {
-      "go_id": "GO:0007165",
-      "go_name": "signal transduction",
-      "namespace": "BP",
-      "weighted_score": 3.0,
-      "n_sources": 2,
-      "sources": [
-        "structural_motif",
-        "embedding_similarity"
-      ],
-      "confidence": "MEDIUM",
-      "top_evidence": "embedding_similarity"
-    },
-    {
       "go_id": "GO:0018108",
       "go_name": "peptidyl-tyrosine phosphorylation",
       "namespace": "BP",
@@ -278,8 +265,44 @@
       "top_evidence": "embedding_similarity"
     },
     {
+      "go_id": "GO:0007165",
+      "go_name": "signal transduction",
+      "namespace": "BP",
+      "weighted_score": 1.5,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
       "go_id": "GO:0006281",
       "go_name": "DNA repair",
+      "namespace": "BP",
+      "weighted_score": 1.4,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0055114",
+      "go_name": "oxidation-reduction process",
+      "namespace": "BP",
+      "weighted_score": 1.4,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0015671",
+      "go_name": "oxygen transport",
       "namespace": "BP",
       "weighted_score": 1.4,
       "n_sources": 1,
@@ -294,6 +317,30 @@
       "go_name": "DNA-templated transcription",
       "namespace": "BP",
       "weighted_score": 1.3,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0051085",
+      "go_name": "chaperone cofactor-dependent protein refolding",
+      "namespace": "BP",
+      "weighted_score": 1.3,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0030193",
+      "go_name": "regulation of blood coagulation",
+      "namespace": "BP",
+      "weighted_score": 1.2,
       "n_sources": 1,
       "sources": [
         "structural_motif"
@@ -336,30 +383,6 @@
       ],
       "confidence": "LOW",
       "top_evidence": "structural_motif"
-    },
-    {
-      "go_id": "GO:0007131",
-      "go_name": "reciprocal meiotic recombination",
-      "namespace": "BP",
-      "weighted_score": 1.1,
-      "n_sources": 1,
-      "sources": [
-        "structural_motif"
-      ],
-      "confidence": "LOW",
-      "top_evidence": "structural_motif"
-    },
-    {
-      "go_id": "GO:0010369",
-      "go_name": "chromatin assembly",
-      "namespace": "BP",
-      "weighted_score": 1.0,
-      "n_sources": 1,
-      "sources": [
-        "structural_motif"
-      ],
-      "confidence": "LOW",
-      "top_evidence": "structural_motif"
     }
   ],
   "go_terms_cc": [
@@ -379,15 +402,14 @@
       "top_evidence": "experimental_homolog"
     },
     {
-      "go_id": "GO:0005737",
-      "go_name": "C:cytoplasm",
+      "go_id": "GO:0005886",
+      "go_name": "C:plasma membrane",
       "namespace": "CC",
-      "weighted_score": 7.9,
-      "n_sources": 3,
+      "weighted_score": 9.42,
+      "n_sources": 2,
       "sources": [
         "experimental_homolog",
-        "embedding_similarity",
-        "sequence_baseline"
+        "neural_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -407,6 +429,19 @@
       "top_evidence": "experimental_homolog"
     },
     {
+      "go_id": "GO:0005737",
+      "go_name": "C:cytoplasm",
+      "namespace": "CC",
+      "weighted_score": 6.5,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "sequence_baseline"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
       "go_id": "GO:0009925",
       "go_name": "C:basal plasma membrane",
       "namespace": "CC",
@@ -421,18 +456,6 @@
     {
       "go_id": "GO:0016323",
       "go_name": "C:basolateral plasma membrane",
-      "namespace": "CC",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0005886",
-      "go_name": "C:plasma membrane",
       "namespace": "CC",
       "weighted_score": 5.1,
       "n_sources": 1,
@@ -493,6 +516,36 @@
     }
   ],
   "active_sites": [
+    {
+      "residue_number": 418,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 13.58,
+      "plddt": 95.88,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "zinc_binding_cluster",
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 9,
+      "confidence": "HIGH",
+      "coords": [
+        21.347,
+        -5.09,
+        -21.332
+      ],
+      "domain_context": "receptor tyrosine kinase"
+    },
     {
       "residue_number": 510,
       "chain_id": "A",
@@ -699,6 +752,12 @@
       "sasa": 0.23,
       "plddt": 89.12,
       "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
         "zinc_binding_cluster",
         "zinc_binding_cluster",
         "acid_base_pair",
@@ -726,7 +785,10 @@
       "plddt": 96.56,
       "motifs": [
         "serine_protease_triad",
-        "acid_base_pair"
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "acid_base_pair",
+        "haem_binding"
       ],
       "evidence_score": 7,
       "confidence": "HIGH",
@@ -797,6 +859,8 @@
       "sasa": 65.51,
       "plddt": 97.06,
       "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
         "cysteine_protease_dyad",
         "cysteine_protease_dyad",
         "zinc_binding_cluster",
@@ -987,6 +1051,15 @@
       "plddt": 93.44,
       "motifs": [
         "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
         "zinc_binding_cluster",
         "zinc_binding_cluster",
         "zinc_binding_cluster",
@@ -999,6 +1072,52 @@
         5.909,
         22.013,
         27.205
+      ],
+      "domain_context": "protein kinase-like (pk-like)"
+    },
+    {
+      "residue_number": 433,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 164.75,
+      "plddt": 75.06,
+      "motifs": [
+        "serine_protease_triad"
+      ],
+      "evidence_score": 6,
+      "confidence": "HIGH",
+      "coords": [
+        33.013,
+        14.011,
+        -8.761
+      ],
+      "domain_context": "receptor tyrosine kinase"
+    },
+    {
+      "residue_number": 988,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 141.12,
+      "plddt": 57.53,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad"
+      ],
+      "evidence_score": 6,
+      "confidence": "HIGH",
+      "coords": [
+        -23.761,
+        37.764,
+        35.643
       ],
       "domain_context": "protein kinase-like (pk-like)"
     },
@@ -1059,6 +1178,8 @@
       "plddt": 94.44,
       "motifs": [
         "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
         "acid_base_pair"
       ],
       "evidence_score": 5,
@@ -1071,193 +1192,120 @@
       "domain_context": "receptor tyrosine kinase"
     },
     {
-      "residue_number": 837,
-      "chain_id": "A",
-      "one_letter": "D",
-      "three_letter": "ASP",
-      "conservation": 6.5,
-      "is_conserved": false,
-      "is_buried": true,
-      "sasa": 18.31,
-      "plddt": 88.12,
-      "motifs": [
-        "zinc_binding_cluster",
-        "acid_base_pair",
-        "acid_base_pair",
-        "hrd_catalytic_loop"
-      ],
-      "evidence_score": 5,
-      "confidence": "MEDIUM",
-      "coords": [
-        2.816,
-        31.605,
-        21.679
-      ],
-      "domain_context": "protein kinase-like (pk-like)"
-    },
-    {
-      "residue_number": 895,
+      "residue_number": 437,
       "chain_id": "A",
       "one_letter": "S",
       "three_letter": "SER",
       "conservation": 4.5,
       "is_conserved": false,
       "is_buried": true,
-      "sasa": 5.17,
-      "plddt": 94.62,
+      "sasa": 0.17,
+      "plddt": 93.69,
       "motifs": [
+        "serine_protease_triad",
         "serine_protease_triad"
       ],
       "evidence_score": 5,
       "confidence": "MEDIUM",
       "coords": [
-        8.132,
-        26.788,
-        28.232
-      ],
-      "domain_context": "protein kinase-like (pk-like)"
-    },
-    {
-      "residue_number": 896,
-      "chain_id": "A",
-      "one_letter": "D",
-      "three_letter": "ASP",
-      "conservation": 6.5,
-      "is_conserved": false,
-      "is_buried": true,
-      "sasa": 1.15,
-      "plddt": 95.81,
-      "motifs": [
-        "serine_protease_triad",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "acid_base_pair",
-        "acid_base_pair",
-        "acid_base_pair"
-      ],
-      "evidence_score": 5,
-      "confidence": "MEDIUM",
-      "coords": [
-        4.359,
-        26.795,
-        27.41
-      ],
-      "domain_context": "protein kinase-like (pk-like)"
-    },
-    {
-      "residue_number": 856,
-      "chain_id": "A",
-      "one_letter": "F",
-      "three_letter": "PHE",
-      "conservation": 4.5,
-      "is_conserved": false,
-      "is_buried": true,
-      "sasa": 0.61,
-      "plddt": 65.38,
-      "motifs": [
-        "dfg_loop"
-      ],
-      "evidence_score": 4,
-      "confidence": "MEDIUM",
-      "coords": [
-        -0.582,
-        27.402,
-        17.657
-      ],
-      "domain_context": "protein kinase-like (pk-like)"
-    },
-    {
-      "residue_number": 857,
-      "chain_id": "A",
-      "one_letter": "G",
-      "three_letter": "GLY",
-      "conservation": 4.0,
-      "is_conserved": false,
-      "is_buried": true,
-      "sasa": 9.39,
-      "plddt": 51.94,
-      "motifs": [
-        "dfg_loop"
-      ],
-      "evidence_score": 4,
-      "confidence": "MEDIUM",
-      "coords": [
-        0.621,
-        27.652,
-        13.984
-      ],
-      "domain_context": "protein kinase-like (pk-like)"
-    },
-    {
-      "residue_number": 379,
-      "chain_id": "A",
-      "one_letter": "D",
-      "three_letter": "ASP",
-      "conservation": 6.5,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 38.58,
-      "plddt": 93.38,
-      "motifs": [
-        "serine_protease_triad",
-        "acid_base_pair",
-        "acid_base_pair"
-      ],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        33.528,
-        -8.069,
-        -0.132
+        26.114,
+        11.995,
+        -15.052
       ],
       "domain_context": "receptor tyrosine kinase"
     },
     {
-      "residue_number": 380,
+      "residue_number": 447,
       "chain_id": "A",
       "one_letter": "S",
       "three_letter": "SER",
       "conservation": 4.5,
       "is_conserved": false,
-      "is_buried": false,
-      "sasa": 110.42,
-      "plddt": 91.5,
+      "is_buried": true,
+      "sasa": 10.43,
+      "plddt": 97.44,
       "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
         "serine_protease_triad"
       ],
-      "evidence_score": 3,
+      "evidence_score": 5,
       "confidence": "MEDIUM",
       "coords": [
-        34.812,
-        -10.029,
-        2.892
+        28.087,
+        -2.039,
+        -27.68
       ],
       "domain_context": "receptor tyrosine kinase"
     },
     {
-      "residue_number": 836,
+      "residue_number": 452,
       "chain_id": "A",
-      "one_letter": "R",
-      "three_letter": "ARG",
-      "conservation": 6.5,
+      "one_letter": "S",
+      "three_letter": "SER",
+      "conservation": 4.5,
       "is_conserved": false,
-      "is_buried": false,
-      "sasa": 35.98,
-      "plddt": 87.62,
+      "is_buried": true,
+      "sasa": 19.6,
+      "plddt": 95.5,
       "motifs": [
-        "acid_base_pair",
-        "acid_base_pair",
-        "hrd_catalytic_loop"
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad"
       ],
-      "evidence_score": 3,
+      "evidence_score": 5,
       "confidence": "MEDIUM",
       "coords": [
-        5.192,
-        28.546,
-        21.634
+        15.724,
+        3.629,
+        -24.839
       ],
-      "domain_context": "protein kinase-like (pk-like)"
+      "domain_context": "receptor tyrosine kinase"
+    },
+    {
+      "residue_number": 460,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 16.25,
+      "plddt": 92.81,
+      "motifs": [
+        "serine_protease_triad",
+        "acid_base_pair"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        29.111,
+        15.301,
+        -18.603
+      ],
+      "domain_context": "receptor tyrosine kinase"
+    },
+    {
+      "residue_number": 511,
+      "chain_id": "A",
+      "one_letter": "S",
+      "three_letter": "SER",
+      "conservation": 4.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 18.08,
+      "plddt": 95.5,
+      "motifs": [
+        "serine_protease_triad"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        19.23,
+        7.423,
+        -39.351
+      ],
+      "domain_context": "receptor tyrosine kinase"
     }
   ],
   "binding_pockets": [
@@ -2906,11 +2954,11 @@
   "n_evidence_sources": 12,
   "overall_confidence": "VERY HIGH",
   "validation_suggestions": [
-    "Alanine scanning mutagenesis of predicted active site residues (C510, C558, C562) to confirm functional importance",
+    "Alanine scanning mutagenesis of predicted active site residues (H418, C510, C558) to confirm functional importance",
     "Thermal shift assay or SPR binding assay against pocket P1 (vol=440\u00c5\u00b3, druggability=1.00)",
     "Co-immunoprecipitation with PTPN11 (unknown interaction, predicted interface: [1, 1121, 2])",
     "Co-immunoprecipitation with HBEGF (unknown interaction, predicted interface: [1, 1121, 2])",
-    "Enzyme activity assay consistent with EC 3.4.21 using appropriate substrate panel",
+    "Enzyme activity assay consistent with EC 2.7.10 using appropriate substrate panel",
     "EMSA or fluorescence polarisation assay to confirm 'ATP binding' (GO:0005524)",
     "GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation"
   ],

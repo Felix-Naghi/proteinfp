@@ -297,7 +297,39 @@ def predict_go_terms(
             log.info(f"    Embedding similarity: {n_ref} reference protein(s) matched")
 
     # Sequence-based baseline predictions
+    # Sequence-based baseline predictions
     _add_sequence_baseline(go_evidence, sequence)
+
+    # Neural network GO predictions
+    if esm2_result and esm2_result.get("protein_embedding"):
+        try:
+            import sys
+            sys.path.insert(0, str(Path(__file__).parent.parent))
+            from train.train_go_classifier import predict_go_with_nn
+            model_path = Path(__file__).parent.parent / "models" / "go_classifier.pkl"
+            prot_emb = np.array(esm2_result["protein_embedding"], dtype=np.float32)
+            nn_preds = predict_go_with_nn(prot_emb, model_path, threshold=0.7)
+            boosted = 0
+            added = 0
+            for pred in nn_preds:
+                go_id = pred["go_id"]
+                score = pred["score"]
+                ns    = pred["namespace"]
+                if go_id in go_evidence:
+                    go_evidence[go_id]["score"] += score * 0.8
+                    if "neural_classifier" not in go_evidence[go_id]["evidence"]:
+                        go_evidence[go_id]["evidence"].append("neural_classifier")
+                    boosted += 1
+                elif score >= 0.85:
+                    _add_evidence(go_evidence, go_id, "", score,
+                                  "neural_classifier", ns)
+                    added += 1
+            log.info(f"    Neural classifier: {boosted} boosted, {added} new GO terms")
+        except Exception as e:
+            log.debug(f"    Neural classifier unavailable: {e}")
+
+    # ── Step 2: Score and filter predictions ──────────────────────────────────
+    log.info("  [2/3] Scoring and filtering predictions...")
 
     # ── Step 2: Score and filter predictions ──────────────────────────────────
     log.info("  [2/3] Scoring and filtering predictions...")

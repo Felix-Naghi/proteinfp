@@ -4,23 +4,24 @@
   "protein_name": "Carbonic anhydrase 2",
   "organism": "Homo sapiens",
   "sequence_length": 260,
-  "generated_at": "2026-04-18 08:03:57",
+  "generated_at": "2026-04-19 13:05:01",
   "top_function": "Catalyzes the reversible hydration of carbon dioxide (PubMed:11327835, PubMed:11802772, PubMed:11831900, PubMed:12056894, PubMed:12171926, PubMed:1336460, PubMed:14736236, PubMed:15300855, PubMed:1545",
   "is_enzyme": true,
-  "ec_number": "3.4.21",
-  "subcellular_location": "membrane",
+  "ec_number": "4.2.1",
+  "subcellular_location": "C:plasma membrane",
   "go_terms_mf": [
     {
       "go_id": "GO:0008270",
       "go_name": "zinc ion binding",
       "namespace": "MF",
-      "weighted_score": 16.8,
-      "n_sources": 4,
+      "weighted_score": 24.93,
+      "n_sources": 5,
       "sources": [
         "experimental_homolog",
         "domain_annotation",
         "structural_motif",
-        "embedding_similarity"
+        "embedding_similarity",
+        "neural_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -29,15 +30,16 @@
       "go_id": "GO:0004089",
       "go_name": "carbonate dehydratase activity",
       "namespace": "MF",
-      "weighted_score": 15.4,
-      "n_sources": 3,
+      "weighted_score": 23.02,
+      "n_sources": 4,
       "sources": [
         "experimental_homolog",
         "domain_annotation",
-        "embedding_similarity"
+        "embedding_similarity",
+        "neural_classifier"
       ],
       "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
+      "top_evidence": "neural_classifier"
     },
     {
       "go_id": "GO:0045177",
@@ -52,30 +54,52 @@
       "top_evidence": "experimental_homolog"
     },
     {
-      "go_id": "GO:0004252",
-      "go_name": "serine-type endopeptidase activity",
+      "go_id": "GO:0018820",
+      "go_name": "F:cyanamide hydratase activity",
       "namespace": "MF",
-      "weighted_score": 3.4,
-      "n_sources": 2,
+      "weighted_score": 5.1,
+      "n_sources": 1,
       "sources": [
-        "structural_motif",
-        "embedding_similarity"
+        "experimental_homolog"
       ],
-      "confidence": "MEDIUM",
-      "top_evidence": "embedding_similarity"
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
     },
     {
-      "go_id": "GO:0003677",
-      "go_name": "DNA binding",
+      "go_id": "GO:0043209",
+      "go_name": "C:myelin sheath",
       "namespace": "MF",
-      "weighted_score": 3.4,
-      "n_sources": 2,
+      "weighted_score": 5.1,
+      "n_sources": 1,
       "sources": [
-        "structural_motif",
-        "embedding_similarity"
+        "experimental_homolog"
       ],
-      "confidence": "MEDIUM",
-      "top_evidence": "embedding_similarity"
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0004064",
+      "go_name": "F:arylesterase activity",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0002009",
+      "go_name": "P:morphogenesis of an epithelium",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
     },
     {
       "go_id": "GO:0046872",
@@ -89,79 +113,6 @@
       ],
       "confidence": "MEDIUM",
       "top_evidence": "embedding_similarity"
-    },
-    {
-      "go_id": "GO:0008233",
-      "go_name": "peptidase activity",
-      "namespace": "MF",
-      "weighted_score": 3.2,
-      "n_sources": 2,
-      "sources": [
-        "structural_motif",
-        "embedding_similarity"
-      ],
-      "confidence": "MEDIUM",
-      "top_evidence": "embedding_similarity"
-    },
-    {
-      "go_id": "GO:0018820",
-      "go_name": "F:cyanamide hydratase activity",
-      "namespace": "MF",
-      "weighted_score": 3.0,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "MEDIUM",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0043209",
-      "go_name": "C:myelin sheath",
-      "namespace": "MF",
-      "weighted_score": 3.0,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "MEDIUM",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0004064",
-      "go_name": "F:arylesterase activity",
-      "namespace": "MF",
-      "weighted_score": 3.0,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "MEDIUM",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0002009",
-      "go_name": "P:morphogenesis of an epithelium",
-      "namespace": "MF",
-      "weighted_score": 3.0,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "MEDIUM",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0070050",
-      "go_name": "P:neuron cellular homeostasis",
-      "namespace": "MF",
-      "weighted_score": 3.0,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "MEDIUM",
-      "top_evidence": "experimental_homolog"
     },
     {
       "go_id": "GO:0030424",
@@ -198,6 +149,54 @@
       ],
       "confidence": "MEDIUM",
       "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0042475",
+      "go_name": "P:odontogenesis of dentin-containing tooth",
+      "namespace": "MF",
+      "weighted_score": 3.0,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0003677",
+      "go_name": "DNA binding",
+      "namespace": "MF",
+      "weighted_score": 1.7,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0004672",
+      "go_name": "protein kinase activity",
+      "namespace": "MF",
+      "weighted_score": 1.7,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0005524",
+      "go_name": "ATP binding",
+      "namespace": "MF",
+      "weighted_score": 1.6,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
     }
   ],
   "go_terms_bp": [
@@ -205,22 +204,11 @@
       "go_id": "GO:0015670",
       "go_name": "P:carbon dioxide transport",
       "namespace": "BP",
-      "weighted_score": 5.1,
-      "n_sources": 1,
+      "weighted_score": 9.61,
+      "n_sources": 2,
       "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0038166",
-      "go_name": "P:angiotensin-activated signaling pathway",
-      "namespace": "BP",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
+        "experimental_homolog",
+        "neural_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -228,6 +216,19 @@
     {
       "go_id": "GO:0051453",
       "go_name": "P:regulation of intracellular pH",
+      "namespace": "BP",
+      "weighted_score": 9.43,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "neural_classifier"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0038166",
+      "go_name": "P:angiotensin-activated signaling pathway",
       "namespace": "BP",
       "weighted_score": 5.1,
       "n_sources": 1,
@@ -264,6 +265,18 @@
     {
       "go_id": "GO:0006885",
       "go_name": "P:regulation of pH",
+      "namespace": "BP",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0070050",
+      "go_name": "P:neuron cellular homeostasis",
       "namespace": "BP",
       "weighted_score": 5.1,
       "n_sources": 1,
@@ -337,49 +350,38 @@
       "go_id": "GO:0071244",
       "go_name": "P:cellular response to carbon dioxide",
       "namespace": "BP",
-      "weighted_score": 3.0,
+      "weighted_score": 5.1,
       "n_sources": 1,
       "sources": [
         "experimental_homolog"
       ],
-      "confidence": "MEDIUM",
+      "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
     },
     {
-      "go_id": "GO:0019430",
-      "go_name": "removal of superoxide radicals",
+      "go_id": "GO:0015701",
+      "go_name": "bicarbonate transport",
       "namespace": "BP",
-      "weighted_score": 1.59,
-      "n_sources": 1,
+      "weighted_score": 2.8,
+      "n_sources": 2,
       "sources": [
+        "structural_motif",
         "embedding_similarity"
       ],
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "top_evidence": "embedding_similarity"
     },
     {
-      "go_id": "GO:0015671",
-      "go_name": "oxygen transport",
+      "go_id": "GO:0006468",
+      "go_name": "protein phosphorylation",
       "namespace": "BP",
-      "weighted_score": 1.54,
+      "weighted_score": 1.6,
       "n_sources": 1,
       "sources": [
-        "embedding_similarity"
+        "structural_motif"
       ],
       "confidence": "LOW",
-      "top_evidence": "embedding_similarity"
-    },
-    {
-      "go_id": "GO:0007596",
-      "go_name": "blood coagulation",
-      "namespace": "BP",
-      "weighted_score": 1.41,
-      "n_sources": 1,
-      "sources": [
-        "embedding_similarity"
-      ],
-      "confidence": "LOW",
-      "top_evidence": "embedding_similarity"
+      "top_evidence": "structural_motif"
     }
   ],
   "go_terms_cc": [
@@ -405,7 +407,7 @@
       "n_sources": 2,
       "sources": [
         "experimental_homolog",
-        "embedding_similarity"
+        "structural_motif"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -459,54 +461,52 @@
       "top_evidence": "experimental_homolog"
     },
     {
-      "go_id": "GO:0005634",
-      "go_name": "nucleus",
+      "go_id": "GO:0005887",
+      "go_name": "integral component of plasma membrane",
       "namespace": "CC",
-      "weighted_score": 4.57,
-      "n_sources": 3,
+      "weighted_score": 1.3,
+      "n_sources": 1,
       "sources": [
-        "ai_esm2",
-        "structural_motif",
-        "embedding_similarity"
+        "structural_motif"
       ],
-      "confidence": "MEDIUM",
-      "top_evidence": "ai_esm2"
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
     },
     {
       "go_id": "GO:0005833",
       "go_name": "hemoglobin complex",
       "namespace": "CC",
-      "weighted_score": 1.54,
+      "weighted_score": 1.3,
       "n_sources": 1,
       "sources": [
-        "embedding_similarity"
+        "structural_motif"
       ],
       "confidence": "LOW",
-      "top_evidence": "embedding_similarity"
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0043234",
+      "go_name": "protein complex",
+      "namespace": "CC",
+      "weighted_score": 1.1,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
     },
     {
       "go_id": "GO:0016020",
       "go_name": "membrane",
       "namespace": "CC",
-      "weighted_score": 1.53,
+      "weighted_score": 1.1,
       "n_sources": 1,
       "sources": [
-        "embedding_similarity"
+        "structural_motif"
       ],
       "confidence": "LOW",
-      "top_evidence": "embedding_similarity"
-    },
-    {
-      "go_id": "GO:0005576",
-      "go_name": "extracellular space",
-      "namespace": "CC",
-      "weighted_score": 1.33,
-      "n_sources": 1,
-      "sources": [
-        "embedding_similarity"
-      ],
-      "confidence": "LOW",
-      "top_evidence": "embedding_similarity"
+      "top_evidence": "structural_motif"
     }
   ],
   "active_sites": [
@@ -521,6 +521,7 @@
       "sasa": 2.11,
       "plddt": 98.81,
       "motifs": [
+        "serine_protease_triad",
         "serine_protease_triad",
         "zinc_binding_cluster",
         "zinc_binding_cluster",
@@ -549,6 +550,10 @@
       "plddt": 98.94,
       "motifs": [
         "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
         "zinc_binding_cluster",
         "zinc_binding_cluster",
         "zinc_binding_cluster",
@@ -561,6 +566,29 @@
         -4.652,
         9.358,
         -4.769
+      ],
+      "domain_context": "carbonic anhydrase"
+    },
+    {
+      "residue_number": 10,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 151.41,
+      "plddt": 93.94,
+      "motifs": [
+        "p_loop_walker_a",
+        "p_loop_walker_a"
+      ],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        2.275,
+        -0.321,
+        -24.298
       ],
       "domain_context": "carbonic anhydrase"
     },
@@ -590,6 +618,78 @@
       "domain_context": "carbonic anhydrase"
     },
     {
+      "residue_number": 6,
+      "chain_id": "A",
+      "one_letter": "G",
+      "three_letter": "GLY",
+      "conservation": 4.0,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 8.23,
+      "plddt": 95.81,
+      "motifs": [
+        "p_loop_walker_a",
+        "ghkl_atpase",
+        "flavin_binding"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        4.188,
+        -1.808,
+        -16.306
+      ],
+      "domain_context": "carbonic anhydrase"
+    },
+    {
+      "residue_number": 12,
+      "chain_id": "A",
+      "one_letter": "G",
+      "three_letter": "GLY",
+      "conservation": 4.0,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 0.55,
+      "plddt": 97.06,
+      "motifs": [
+        "p_loop_walker_a",
+        "p_loop_walker_a",
+        "flavin_binding"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        0.539,
+        0.889,
+        -18.787
+      ],
+      "domain_context": "carbonic anhydrase"
+    },
+    {
+      "residue_number": 29,
+      "chain_id": "A",
+      "one_letter": "S",
+      "three_letter": "SER",
+      "conservation": 4.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 0.0,
+      "plddt": 98.94,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        -8.258,
+        2.365,
+        -6.623
+      ],
+      "domain_context": "carbonic anhydrase"
+    },
+    {
       "residue_number": 32,
       "chain_id": "A",
       "one_letter": "D",
@@ -600,6 +700,7 @@
       "sasa": 17.64,
       "plddt": 98.81,
       "motifs": [
+        "serine_protease_triad",
         "serine_protease_triad",
         "zinc_binding_cluster",
         "zinc_binding_cluster",
@@ -629,6 +730,7 @@
       "plddt": 98.81,
       "motifs": [
         "serine_protease_triad",
+        "serine_protease_triad",
         "serine_protease_triad"
       ],
       "evidence_score": 5,
@@ -637,6 +739,124 @@
         0.724,
         10.255,
         -5.585
+      ],
+      "domain_context": "carbonic anhydrase"
+    },
+    {
+      "residue_number": 7,
+      "chain_id": "A",
+      "one_letter": "Y",
+      "three_letter": "TYR",
+      "conservation": 5.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 36.9,
+      "plddt": 96.69,
+      "motifs": [
+        "p_loop_walker_a",
+        "flavin_binding",
+        "flavin_binding"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        3.781,
+        1.993,
+        -16.607
+      ],
+      "domain_context": "carbonic anhydrase"
+    },
+    {
+      "residue_number": 8,
+      "chain_id": "A",
+      "one_letter": "G",
+      "three_letter": "GLY",
+      "conservation": 4.0,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 30.49,
+      "plddt": 93.56,
+      "motifs": [
+        "p_loop_walker_a",
+        "p_loop_walker_a",
+        "flavin_binding",
+        "flavin_binding"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        5.093,
+        2.349,
+        -20.199
+      ],
+      "domain_context": "carbonic anhydrase"
+    },
+    {
+      "residue_number": 9,
+      "chain_id": "A",
+      "one_letter": "K",
+      "three_letter": "LYS",
+      "conservation": 6.0,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 170.93,
+      "plddt": 92.69,
+      "motifs": [
+        "p_loop_walker_a",
+        "p_loop_walker_a"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        3.077,
+        3.331,
+        -23.328
+      ],
+      "domain_context": "carbonic anhydrase"
+    },
+    {
+      "residue_number": 11,
+      "chain_id": "A",
+      "one_letter": "N",
+      "three_letter": "ASN",
+      "conservation": 4.0,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 37.82,
+      "plddt": 95.38,
+      "motifs": [
+        "p_loop_walker_a",
+        "p_loop_walker_a",
+        "ghkl_atpase"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        1.887,
+        -2.072,
+        -20.887
+      ],
+      "domain_context": "carbonic anhydrase"
+    },
+    {
+      "residue_number": 13,
+      "chain_id": "A",
+      "one_letter": "P",
+      "three_letter": "PRO",
+      "conservation": 3.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 24.68,
+      "plddt": 97.69,
+      "motifs": [
+        "p_loop_walker_a"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -2.646,
+        1.348,
+        -16.64
       ],
       "domain_context": "carbonic anhydrase"
     },
@@ -657,7 +877,8 @@
         "zinc_binding_cluster",
         "acid_base_pair",
         "acid_base_pair",
-        "acid_base_pair"
+        "acid_base_pair",
+        "ghkl_atpase"
       ],
       "evidence_score": 3,
       "confidence": "MEDIUM",
@@ -665,6 +886,149 @@
         -5.15,
         -9.225,
         -18.896
+      ],
+      "domain_context": "carbonic anhydrase"
+    },
+    {
+      "residue_number": 34,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 46.9,
+      "plddt": 98.31,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "acid_base_pair"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -13.166,
+        15.379,
+        -3.153
+      ],
+      "domain_context": "carbonic anhydrase"
+    },
+    {
+      "residue_number": 99,
+      "chain_id": "A",
+      "one_letter": "S",
+      "three_letter": "SER",
+      "conservation": 4.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 40.14,
+      "plddt": 97.69,
+      "motifs": [
+        "serine_protease_triad"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        9.238,
+        12.147,
+        -12.376
+      ],
+      "domain_context": "carbonic anhydrase"
+    },
+    {
+      "residue_number": 110,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 58.46,
+      "plddt": 98.5,
+      "motifs": [
+        "serine_protease_triad",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -9.359,
+        17.97,
+        -4.772
+      ],
+      "domain_context": "carbonic anhydrase"
+    },
+    {
+      "residue_number": 129,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 54.25,
+      "plddt": 97.06,
+      "motifs": [
+        "acid_base_pair",
+        "dfg_loop"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -2.935,
+        -16.175,
+        5.784
+      ],
+      "domain_context": "carbonic anhydrase"
+    },
+    {
+      "residue_number": 130,
+      "chain_id": "A",
+      "one_letter": "F",
+      "three_letter": "PHE",
+      "conservation": 4.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 71.61,
+      "plddt": 97.56,
+      "motifs": [
+        "dfg_loop"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -2.292,
+        -13.355,
+        3.243
+      ],
+      "domain_context": "carbonic anhydrase"
+    },
+    {
+      "residue_number": 131,
+      "chain_id": "A",
+      "one_letter": "G",
+      "three_letter": "GLY",
+      "conservation": 4.0,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 38.13,
+      "plddt": 97.81,
+      "motifs": [
+        "dfg_loop"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -3.233,
+        -15.609,
+        0.251
       ],
       "domain_context": "carbonic anhydrase"
     },
@@ -679,6 +1043,7 @@
       "sasa": 42.01,
       "plddt": 98.06,
       "motifs": [
+        "serine_protease_triad",
         "serine_protease_triad"
       ],
       "evidence_score": 3,
@@ -796,7 +1161,8 @@
         "zinc_binding_cluster",
         "zinc_binding_cluster",
         "zinc_binding_cluster",
-        "acid_base_pair"
+        "acid_base_pair",
+        "haem_binding"
       ],
       "evidence_score": 7,
       "confidence": "HIGH",
@@ -831,6 +1197,28 @@
       "domain_context": "carbonic anhydrase"
     },
     {
+      "residue_number": 64,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 38.7,
+      "plddt": 96.69,
+      "motifs": [
+        "haem_binding"
+      ],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        7.463,
+        -1.852,
+        -10.26
+      ],
+      "domain_context": "carbonic anhydrase"
+    },
+    {
       "residue_number": 94,
       "chain_id": "A",
       "one_letter": "H",
@@ -841,7 +1229,8 @@
       "sasa": 24.02,
       "plddt": 98.75,
       "motifs": [
-        "zinc_binding_cluster"
+        "zinc_binding_cluster",
+        "haem_binding"
       ],
       "evidence_score": 7,
       "confidence": "HIGH",
@@ -849,358 +1238,6 @@
         6.131,
         0.542,
         -0.69
-      ],
-      "domain_context": "carbonic anhydrase"
-    },
-    {
-      "residue_number": 122,
-      "chain_id": "A",
-      "one_letter": "H",
-      "three_letter": "HIS",
-      "conservation": 7.0,
-      "is_conserved": true,
-      "is_buried": true,
-      "sasa": 0.0,
-      "plddt": 98.88,
-      "motifs": [],
-      "evidence_score": 7,
-      "confidence": "HIGH",
-      "coords": [
-        -1.736,
-        -5.024,
-        6.111
-      ],
-      "domain_context": "carbonic anhydrase"
-    },
-    {
-      "residue_number": 10,
-      "chain_id": "A",
-      "one_letter": "H",
-      "three_letter": "HIS",
-      "conservation": 7.0,
-      "is_conserved": true,
-      "is_buried": false,
-      "sasa": 151.41,
-      "plddt": 93.94,
-      "motifs": [],
-      "evidence_score": 5,
-      "confidence": "MEDIUM",
-      "coords": [
-        2.275,
-        -0.321,
-        -24.298
-      ],
-      "domain_context": "carbonic anhydrase"
-    },
-    {
-      "residue_number": 64,
-      "chain_id": "A",
-      "one_letter": "H",
-      "three_letter": "HIS",
-      "conservation": 7.0,
-      "is_conserved": true,
-      "is_buried": false,
-      "sasa": 38.7,
-      "plddt": 96.69,
-      "motifs": [],
-      "evidence_score": 5,
-      "confidence": "MEDIUM",
-      "coords": [
-        7.463,
-        -1.852,
-        -10.26
-      ],
-      "domain_context": "carbonic anhydrase"
-    },
-    {
-      "residue_number": 106,
-      "chain_id": "A",
-      "one_letter": "E",
-      "three_letter": "GLU",
-      "conservation": 6.0,
-      "is_conserved": false,
-      "is_buried": true,
-      "sasa": 0.58,
-      "plddt": 98.88,
-      "motifs": [
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "acid_base_pair",
-        "acid_base_pair",
-        "acid_base_pair"
-      ],
-      "evidence_score": 5,
-      "confidence": "MEDIUM",
-      "coords": [
-        -1.855,
-        7.722,
-        -6.773
-      ],
-      "domain_context": "carbonic anhydrase"
-    },
-    {
-      "residue_number": 117,
-      "chain_id": "A",
-      "one_letter": "E",
-      "three_letter": "GLU",
-      "conservation": 6.0,
-      "is_conserved": false,
-      "is_buried": true,
-      "sasa": 0.05,
-      "plddt": 98.94,
-      "motifs": [
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "acid_base_pair",
-        "acid_base_pair"
-      ],
-      "evidence_score": 5,
-      "confidence": "MEDIUM",
-      "coords": [
-        2.483,
-        8.186,
-        -1.817
-      ],
-      "domain_context": "carbonic anhydrase"
-    },
-    {
-      "residue_number": 245,
-      "chain_id": "A",
-      "one_letter": "R",
-      "three_letter": "ARG",
-      "conservation": 6.5,
-      "is_conserved": false,
-      "is_buried": true,
-      "sasa": 3.52,
-      "plddt": 98.62,
-      "motifs": [
-        "acid_base_pair"
-      ],
-      "evidence_score": 5,
-      "confidence": "MEDIUM",
-      "coords": [
-        -1.981,
-        4.53,
-        -11.5
-      ],
-      "domain_context": "carbonic anhydrase"
-    },
-    {
-      "residue_number": 6,
-      "chain_id": "A",
-      "one_letter": "G",
-      "three_letter": "GLY",
-      "conservation": 4.0,
-      "is_conserved": false,
-      "is_buried": true,
-      "sasa": 8.23,
-      "plddt": 95.81,
-      "motifs": [],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        4.188,
-        -1.808,
-        -16.306
-      ],
-      "domain_context": "carbonic anhydrase"
-    },
-    {
-      "residue_number": 12,
-      "chain_id": "A",
-      "one_letter": "G",
-      "three_letter": "GLY",
-      "conservation": 4.0,
-      "is_conserved": false,
-      "is_buried": true,
-      "sasa": 0.55,
-      "plddt": 97.06,
-      "motifs": [],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        0.539,
-        0.889,
-        -18.787
-      ],
-      "domain_context": "carbonic anhydrase"
-    },
-    {
-      "residue_number": 14,
-      "chain_id": "A",
-      "one_letter": "E",
-      "three_letter": "GLU",
-      "conservation": 6.0,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 97.48,
-      "plddt": 96.38,
-      "motifs": [
-        "zinc_binding_cluster",
-        "acid_base_pair"
-      ],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        -4.824,
-        1.975,
-        -19.758
-      ],
-      "domain_context": "carbonic anhydrase"
-    },
-    {
-      "residue_number": 16,
-      "chain_id": "A",
-      "one_letter": "W",
-      "three_letter": "TRP",
-      "conservation": 6.5,
-      "is_conserved": false,
-      "is_buried": true,
-      "sasa": 4.76,
-      "plddt": 97.62,
-      "motifs": [],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        -4.081,
-        -3.611,
-        -17.714
-      ],
-      "domain_context": "carbonic anhydrase"
-    },
-    {
-      "residue_number": 18,
-      "chain_id": "A",
-      "one_letter": "K",
-      "three_letter": "LYS",
-      "conservation": 6.0,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 140.46,
-      "plddt": 95.94,
-      "motifs": [
-        "acid_base_pair"
-      ],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        -6.83,
-        -6.687,
-        -21.239
-      ],
-      "domain_context": "carbonic anhydrase"
-    },
-    {
-      "residue_number": 23,
-      "chain_id": "A",
-      "one_letter": "A",
-      "three_letter": "ALA",
-      "conservation": 3.0,
-      "is_conserved": false,
-      "is_buried": true,
-      "sasa": 8.55,
-      "plddt": 97.75,
-      "motifs": [],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        -9.271,
-        -3.2,
-        -13.785
-      ],
-      "domain_context": "carbonic anhydrase"
-    },
-    {
-      "residue_number": 24,
-      "chain_id": "A",
-      "one_letter": "K",
-      "three_letter": "LYS",
-      "conservation": 6.0,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 140.13,
-      "plddt": 97.12,
-      "motifs": [
-        "acid_base_pair"
-      ],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        -12.806,
-        -1.959,
-        -14.836
-      ],
-      "domain_context": "carbonic anhydrase"
-    },
-    {
-      "residue_number": 25,
-      "chain_id": "A",
-      "one_letter": "G",
-      "three_letter": "GLY",
-      "conservation": 4.0,
-      "is_conserved": false,
-      "is_buried": true,
-      "sasa": 17.94,
-      "plddt": 97.62,
-      "motifs": [],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        -14.384,
-        -3.211,
-        -11.539
-      ],
-      "domain_context": "carbonic anhydrase"
-    },
-    {
-      "residue_number": 26,
-      "chain_id": "A",
-      "one_letter": "E",
-      "three_letter": "GLU",
-      "conservation": 6.0,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 109.25,
-      "plddt": 97.81,
-      "motifs": [
-        "acid_base_pair",
-        "acid_base_pair",
-        "acid_base_pair"
-      ],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        -16.8,
-        -1.345,
-        -9.231
-      ],
-      "domain_context": "carbonic anhydrase"
-    },
-    {
-      "residue_number": 27,
-      "chain_id": "A",
-      "one_letter": "R",
-      "three_letter": "ARG",
-      "conservation": 6.5,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 39.21,
-      "plddt": 98.25,
-      "motifs": [
-        "dna_binding_cluster",
-        "acid_base_pair",
-        "acid_base_pair"
-      ],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        -14.303,
-        -0.472,
-        -6.431
       ],
       "domain_context": "carbonic anhydrase"
     }
@@ -2576,11 +2613,11 @@
   "n_evidence_sources": 12,
   "overall_confidence": "VERY HIGH",
   "validation_suggestions": [
-    "Alanine scanning mutagenesis of predicted active site residues (H96, H107, H3) to confirm functional importance",
+    "Alanine scanning mutagenesis of predicted active site residues (H96, H107, H10) to confirm functional importance",
     "Thermal shift assay or SPR binding assay against pocket P1 (vol=1600\u00c5\u00b3, druggability=0.99)",
     "Co-immunoprecipitation with SLC9A1 (unknown interaction, predicted interface: [1, 260, 186])",
     "Co-immunoprecipitation with SLC4A1 (unknown interaction, predicted interface: [1, 260, 186])",
-    "Enzyme activity assay consistent with EC 3.4.21 using appropriate substrate panel",
+    "Enzyme activity assay consistent with EC 4.2.1 using appropriate substrate panel",
     "EMSA or fluorescence polarisation assay to confirm 'zinc ion binding' (GO:0008270)",
     "GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation"
   ],

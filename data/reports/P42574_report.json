@@ -1,92 +1,323 @@
 {
   "uniprot_id": "P42574",
-  "gene_name": "unknown",
-  "protein_name": "unknown",
-  "organism": "unknown",
-  "sequence_length": 0,
-  "generated_at": "2026-04-19 12:12:40",
-  "top_function": "Involved in the activation cascade of caspases responsible for apoptosis execution.",
+  "gene_name": "CASP3",
+  "protein_name": "Caspase-3",
+  "organism": "Homo sapiens",
+  "sequence_length": 277,
+  "generated_at": "2026-04-19 13:06:30",
+  "top_function": "Thiol protease that acts as a major effector caspase involved in the execution phase of apoptosis (PubMed:18723680, PubMed:20566630, PubMed:23650375, PubMed:35338844, PubMed:35446120, PubMed:7596430).",
   "is_enzyme": false,
-  "ec_number": "2.x.x.x",
-  "subcellular_location": "cytoplasm",
+  "ec_number": "3.4.22",
+  "subcellular_location": "membrane",
   "go_terms_mf": [
     {
       "go_id": "GO:0004197",
       "go_name": "cysteine-type endopeptidase activity",
       "namespace": "MF",
-      "weighted_score": 6.5,
+      "weighted_score": 20.0,
       "n_sources": 2,
       "sources": [
         "experimental_homolog",
         "domain_annotation"
       ],
       "confidence": "HIGH",
-      "top_evidence": "domain_annotation"
+      "top_evidence": "experimental_homolog"
     },
     {
       "go_id": "GO:0008233",
       "go_name": "peptidase activity",
       "namespace": "MF",
-      "weighted_score": 6.5,
+      "weighted_score": 7.6,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "structural_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0004175",
+      "go_name": "F:endopeptidase activity",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0030218",
+      "go_name": "P:erythrocyte differentiation",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0097194",
+      "go_name": "P:execution phase of apoptosis",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0030216",
+      "go_name": "P:keratinocyte differentiation",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0030182",
+      "go_name": "P:neuron differentiation",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0008047",
+      "go_name": "F:enzyme activator activity",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0051604",
+      "go_name": "P:protein maturation",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0098978",
+      "go_name": "C:glutamatergic synapse",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0014069",
+      "go_name": "C:postsynaptic density",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0004190",
+      "go_name": "F:aspartic-type endopeptidase activity",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0004861",
+      "go_name": "F:cyclin-dependent protein serine/threonine kinase inhibitor activity",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0061713",
+      "go_name": "P:anterior neural tube closure",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0043025",
+      "go_name": "C:neuronal cell body",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    }
+  ],
+  "go_terms_bp": [
+    {
+      "go_id": "GO:0006508",
+      "go_name": "proteolysis",
+      "namespace": "BP",
+      "weighted_score": 20.0,
       "n_sources": 2,
       "sources": [
         "experimental_homolog",
         "domain_annotation"
       ],
       "confidence": "HIGH",
-      "top_evidence": "domain_annotation"
-    },
-    {
-      "go_id": "GO:0005488",
-      "go_name": "binding",
-      "namespace": "MF",
-      "weighted_score": 1.1,
-      "n_sources": 1,
-      "sources": [
-        "sequence_composition"
-      ],
-      "confidence": "LOW",
-      "top_evidence": "sequence_composition"
-    }
-  ],
-  "go_terms_bp": [
-    {
-      "go_id": "GO:0006915",
-      "go_name": "apoptotic process",
-      "namespace": "BP",
-      "weighted_score": 3.0,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "MEDIUM",
       "top_evidence": "experimental_homolog"
     },
     {
-      "go_id": "GO:0097193",
-      "go_name": "intrinsic apoptotic signaling pathway",
+      "go_id": "GO:0031264",
+      "go_name": "C:death-inducing signaling complex",
       "namespace": "BP",
-      "weighted_score": 3.0,
+      "weighted_score": 5.1,
       "n_sources": 1,
       "sources": [
         "experimental_homolog"
       ],
-      "confidence": "MEDIUM",
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:1902004",
+      "go_name": "P:positive regulation of amyloid-beta formation",
+      "namespace": "BP",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0043525",
+      "go_name": "P:positive regulation of neuron apoptotic process",
+      "namespace": "BP",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0006915",
+      "go_name": "P:apoptotic process",
+      "namespace": "BP",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0031647",
+      "go_name": "P:regulation of protein stability",
+      "namespace": "BP",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0072734",
+      "go_name": "P:cellular response to staurosporine",
+      "namespace": "BP",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
     }
   ],
   "go_terms_cc": [
     {
       "go_id": "GO:0005737",
-      "go_name": "cytoplasm",
+      "go_name": "C:cytoplasm",
       "namespace": "CC",
-      "weighted_score": 0.9,
-      "n_sources": 1,
+      "weighted_score": 6.5,
+      "n_sources": 2,
       "sources": [
+        "experimental_homolog",
         "sequence_baseline"
       ],
-      "confidence": "LOW",
-      "top_evidence": "sequence_baseline"
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005634",
+      "go_name": "C:nucleus",
+      "namespace": "CC",
+      "weighted_score": 6.36,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "ai_esm2"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005829",
+      "go_name": "C:cytosol",
+      "namespace": "CC",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
     }
   ],
   "active_sites": [
@@ -98,7 +329,7 @@
       "conservation": 7.0,
       "is_conserved": true,
       "is_buried": false,
-      "sasa": 50.0,
+      "sasa": 135.19,
       "plddt": 75.0,
       "motifs": [],
       "evidence_score": 4,
@@ -108,7 +339,7 @@
         6.428,
         33.0
       ],
-      "domain_context": ""
+      "domain_context": "caspase"
     },
     {
       "residue_number": 37,
@@ -118,7 +349,7 @@
       "conservation": 7.0,
       "is_conserved": true,
       "is_buried": false,
-      "sasa": 50.0,
+      "sasa": 135.19,
       "plddt": 75.0,
       "motifs": [],
       "evidence_score": 4,
@@ -128,7 +359,7 @@
         9.848,
         55.5
       ],
-      "domain_context": ""
+      "domain_context": "caspase-like"
     },
     {
       "residue_number": 54,
@@ -138,7 +369,7 @@
       "conservation": 7.0,
       "is_conserved": true,
       "is_buried": false,
-      "sasa": 50.0,
+      "sasa": 135.19,
       "plddt": 75.0,
       "motifs": [],
       "evidence_score": 4,
@@ -148,7 +379,7 @@
         0.0,
         81.0
       ],
-      "domain_context": ""
+      "domain_context": "caspase-like"
     },
     {
       "residue_number": 121,
@@ -158,7 +389,7 @@
       "conservation": 7.0,
       "is_conserved": true,
       "is_buried": false,
-      "sasa": 50.0,
+      "sasa": 135.19,
       "plddt": 75.0,
       "motifs": [],
       "evidence_score": 4,
@@ -168,7 +399,7 @@
         -6.428,
         181.5
       ],
-      "domain_context": ""
+      "domain_context": "caspase-like"
     },
     {
       "residue_number": 163,
@@ -178,7 +409,7 @@
       "conservation": 7.5,
       "is_conserved": true,
       "is_buried": false,
-      "sasa": 50.0,
+      "sasa": 135.19,
       "plddt": 75.0,
       "motifs": [],
       "evidence_score": 4,
@@ -188,32 +419,754 @@
         9.848,
         244.5
       ],
-      "domain_context": ""
+      "domain_context": "caspase-like"
     }
   ],
   "binding_pockets": [],
   "allosteric_sites": [],
-  "ppi_partners": [],
-  "mean_plddt": 0.0,
-  "n_evidence_sources": 7,
-  "overall_confidence": "HIGH",
+  "ppi_partners": [
+    {
+      "partner_id": "9606.ENSP00000351273",
+      "partner_name": "CASP8",
+      "combined_score": 999,
+      "experimental_score": 786,
+      "database_score": 900,
+      "textmining_score": 983,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "apoptotic",
+      "interface_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "interface_letters": [
+        "M",
+        "E",
+        "N",
+        "T",
+        "E",
+        "N",
+        "S",
+        "V",
+        "D",
+        "S",
+        "K",
+        "S",
+        "I",
+        "K",
+        "N"
+      ],
+      "interface_charge": -1.0,
+      "interface_hydrophobicity": -1.42,
+      "binding_mode": "mixed"
+    },
+    {
+      "partner_id": "9606.ENSP00000360242",
+      "partner_name": "XIAP",
+      "combined_score": 999,
+      "experimental_score": 998,
+      "database_score": 900,
+      "textmining_score": 998,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "interface_letters": [
+        "M",
+        "E",
+        "N",
+        "T",
+        "E",
+        "N",
+        "S",
+        "V",
+        "D",
+        "S",
+        "K",
+        "S",
+        "I",
+        "K",
+        "N"
+      ],
+      "interface_charge": -1.0,
+      "interface_hydrophobicity": -1.42,
+      "binding_mode": "mixed"
+    },
+    {
+      "partner_id": "9606.ENSP00000355759",
+      "partner_name": "PARP1",
+      "combined_score": 999,
+      "experimental_score": 867,
+      "database_score": 900,
+      "textmining_score": 953,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "interface_letters": [
+        "M",
+        "E",
+        "N",
+        "T",
+        "E",
+        "N",
+        "S",
+        "V",
+        "D",
+        "S",
+        "K",
+        "S",
+        "I",
+        "K",
+        "N"
+      ],
+      "interface_charge": -1.0,
+      "interface_hydrophobicity": -1.42,
+      "binding_mode": "mixed"
+    },
+    {
+      "partner_id": "9606.ENSP00000330237",
+      "partner_name": "CASP9",
+      "combined_score": 999,
+      "experimental_score": 846,
+      "database_score": 900,
+      "textmining_score": 957,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "apoptotic",
+      "interface_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "interface_letters": [
+        "M",
+        "E",
+        "N",
+        "T",
+        "E",
+        "N",
+        "S",
+        "V",
+        "D",
+        "S",
+        "K",
+        "S",
+        "I",
+        "K",
+        "N"
+      ],
+      "interface_charge": -1.0,
+      "interface_hydrophobicity": -1.42,
+      "binding_mode": "mixed"
+    },
+    {
+      "partner_id": "9606.ENSP00000448165",
+      "partner_name": "APAF1",
+      "combined_score": 999,
+      "experimental_score": 794,
+      "database_score": 900,
+      "textmining_score": 986,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "interface_letters": [
+        "M",
+        "E",
+        "N",
+        "T",
+        "E",
+        "N",
+        "S",
+        "V",
+        "D",
+        "S",
+        "K",
+        "S",
+        "I",
+        "K",
+        "N"
+      ],
+      "interface_charge": -1.0,
+      "interface_hydrophobicity": -1.42,
+      "binding_mode": "mixed"
+    },
+    {
+      "partner_id": "9606.ENSP00000477613",
+      "partner_name": "BIRC2",
+      "combined_score": 997,
+      "experimental_score": 843,
+      "database_score": 900,
+      "textmining_score": 810,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "interface_letters": [
+        "M",
+        "E",
+        "N",
+        "T",
+        "E",
+        "N",
+        "S",
+        "V",
+        "D",
+        "S",
+        "K",
+        "S",
+        "I",
+        "K",
+        "N"
+      ],
+      "interface_charge": -1.0,
+      "interface_hydrophobicity": -1.42,
+      "binding_mode": "mixed"
+    },
+    {
+      "partner_id": "9606.ENSP00000307786",
+      "partner_name": "CYCS",
+      "combined_score": 997,
+      "experimental_score": 0,
+      "database_score": 900,
+      "textmining_score": 975,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "interface_letters": [
+        "M",
+        "E",
+        "N",
+        "T",
+        "E",
+        "N",
+        "S",
+        "V",
+        "D",
+        "S",
+        "K",
+        "S",
+        "I",
+        "K",
+        "N"
+      ],
+      "interface_charge": -1.0,
+      "interface_hydrophobicity": -1.42,
+      "binding_mode": "mixed"
+    },
+    {
+      "partner_id": "9606.ENSP00000263464",
+      "partner_name": "BIRC3",
+      "combined_score": 997,
+      "experimental_score": 643,
+      "database_score": 900,
+      "textmining_score": 922,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "interface_letters": [
+        "M",
+        "E",
+        "N",
+        "T",
+        "E",
+        "N",
+        "S",
+        "V",
+        "D",
+        "S",
+        "K",
+        "S",
+        "I",
+        "K",
+        "N"
+      ],
+      "interface_charge": -1.0,
+      "interface_hydrophobicity": -1.42,
+      "binding_mode": "mixed"
+    },
+    {
+      "partner_id": "9606.ENSP00000384849",
+      "partner_name": "CDKN1A",
+      "combined_score": 996,
+      "experimental_score": 828,
+      "database_score": 900,
+      "textmining_score": 806,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "interface_letters": [
+        "M",
+        "E",
+        "N",
+        "T",
+        "E",
+        "N",
+        "S",
+        "V",
+        "D",
+        "S",
+        "K",
+        "S",
+        "I",
+        "K",
+        "N"
+      ],
+      "interface_charge": -1.0,
+      "interface_hydrophobicity": -1.42,
+      "binding_mode": "mixed"
+    },
+    {
+      "partner_id": "9606.ENSP00000366237",
+      "partner_name": "DFFA",
+      "combined_score": 992,
+      "experimental_score": 629,
+      "database_score": 900,
+      "textmining_score": 826,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "interface_letters": [
+        "M",
+        "E",
+        "N",
+        "T",
+        "E",
+        "N",
+        "S",
+        "V",
+        "D",
+        "S",
+        "K",
+        "S",
+        "I",
+        "K",
+        "N"
+      ],
+      "interface_charge": -1.0,
+      "interface_hydrophobicity": -1.42,
+      "binding_mode": "mixed"
+    },
+    {
+      "partner_id": "9606.ENSP00000217169",
+      "partner_name": "BIRC7",
+      "combined_score": 992,
+      "experimental_score": 727,
+      "database_score": 900,
+      "textmining_score": 752,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "interface_letters": [
+        "M",
+        "E",
+        "N",
+        "T",
+        "E",
+        "N",
+        "S",
+        "V",
+        "D",
+        "S",
+        "K",
+        "S",
+        "I",
+        "K",
+        "N"
+      ],
+      "interface_charge": -1.0,
+      "interface_hydrophobicity": -1.42,
+      "binding_mode": "mixed"
+    },
+    {
+      "partner_id": "9606.ENSP00000494750",
+      "partner_name": "ACTB",
+      "combined_score": 989,
+      "experimental_score": 95,
+      "database_score": 900,
+      "textmining_score": 893,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "interface_letters": [
+        "M",
+        "E",
+        "N",
+        "T",
+        "E",
+        "N",
+        "S",
+        "V",
+        "D",
+        "S",
+        "K",
+        "S",
+        "I",
+        "K",
+        "N"
+      ],
+      "interface_charge": -1.0,
+      "interface_hydrophobicity": -1.42,
+      "binding_mode": "mixed"
+    },
+    {
+      "partner_id": "9606.ENSP00000381185",
+      "partner_name": "BCL2",
+      "combined_score": 987,
+      "experimental_score": 354,
+      "database_score": 0,
+      "textmining_score": 980,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "apoptotic",
+      "interface_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "interface_letters": [
+        "M",
+        "E",
+        "N",
+        "T",
+        "E",
+        "N",
+        "S",
+        "V",
+        "D",
+        "S",
+        "K",
+        "S",
+        "I",
+        "K",
+        "N"
+      ],
+      "interface_charge": -1.0,
+      "interface_hydrophobicity": -1.42,
+      "binding_mode": "mixed"
+    },
+    {
+      "partner_id": "9606.ENSP00000216341",
+      "partner_name": "GZMB",
+      "combined_score": 986,
+      "experimental_score": 515,
+      "database_score": 900,
+      "textmining_score": 735,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "interface_letters": [
+        "M",
+        "E",
+        "N",
+        "T",
+        "E",
+        "N",
+        "S",
+        "V",
+        "D",
+        "S",
+        "K",
+        "S",
+        "I",
+        "K",
+        "N"
+      ],
+      "interface_charge": -1.0,
+      "interface_hydrophobicity": -1.42,
+      "binding_mode": "mixed"
+    },
+    {
+      "partner_id": "9606.ENSP00000263025",
+      "partner_name": "MAPK3",
+      "combined_score": 985,
+      "experimental_score": 45,
+      "database_score": 900,
+      "textmining_score": 858,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "interface_letters": [
+        "M",
+        "E",
+        "N",
+        "T",
+        "E",
+        "N",
+        "S",
+        "V",
+        "D",
+        "S",
+        "K",
+        "S",
+        "I",
+        "K",
+        "N"
+      ],
+      "interface_charge": -1.0,
+      "interface_hydrophobicity": -1.42,
+      "binding_mode": "mixed"
+    }
+  ],
+  "mean_plddt": 75.0,
+  "n_evidence_sources": 12,
+  "overall_confidence": "VERY HIGH",
   "validation_suggestions": [
+    "Co-immunoprecipitation with CASP8 (apoptotic interaction, predicted interface: [1, 2, 3])",
+    "Co-immunoprecipitation with XIAP (unknown interaction, predicted interface: [1, 2, 3])",
     "GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation"
   ],
   "modules_run": [
+    "structure",
+    "physico",
     "active",
+    "pockets",
+    "allosteric",
     "chem_env",
     "homology",
+    "esm2",
     "go",
     "ec",
     "foldseek",
     "ppi"
   ],
-  "modules_missing": [
-    "structure",
-    "physico",
-    "pockets",
-    "allosteric",
-    "esm2"
-  ]
+  "modules_missing": []
 }

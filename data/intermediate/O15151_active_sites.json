@@ -11,7 +11,7 @@
       "conservation": 7.5,
       "is_conserved": true,
       "is_buried": false,
-      "sasa": 50.0,
+      "sasa": 135.19,
       "plddt": 75.0,
       "motifs": [],
       "evidence_score": 4,
@@ -31,7 +31,7 @@
       "conservation": 7.5,
       "is_conserved": true,
       "is_buried": false,
-      "sasa": 50.0,
+      "sasa": 135.19,
       "plddt": 75.0,
       "motifs": [],
       "evidence_score": 4,
@@ -51,7 +51,7 @@
       "conservation": 7.0,
       "is_conserved": true,
       "is_buried": false,
-      "sasa": 50.0,
+      "sasa": 135.19,
       "plddt": 75.0,
       "motifs": [],
       "evidence_score": 4,
@@ -71,7 +71,7 @@
       "conservation": 7.5,
       "is_conserved": true,
       "is_buried": false,
-      "sasa": 50.0,
+      "sasa": 135.19,
       "plddt": 75.0,
       "motifs": [],
       "evidence_score": 4,
@@ -91,7 +91,7 @@
       "conservation": 7.5,
       "is_conserved": true,
       "is_buried": false,
-      "sasa": 50.0,
+      "sasa": 135.19,
       "plddt": 75.0,
       "motifs": [],
       "evidence_score": 4,
@@ -111,7 +111,7 @@
       "conservation": 7.0,
       "is_conserved": true,
       "is_buried": false,
-      "sasa": 50.0,
+      "sasa": 135.19,
       "plddt": 75.0,
       "motifs": [],
       "evidence_score": 4,
@@ -131,7 +131,7 @@
       "conservation": 7.0,
       "is_conserved": true,
       "is_buried": false,
-      "sasa": 50.0,
+      "sasa": 135.19,
       "plddt": 75.0,
       "motifs": [],
       "evidence_score": 4,
@@ -151,7 +151,7 @@
       "conservation": 7.5,
       "is_conserved": true,
       "is_buried": false,
-      "sasa": 50.0,
+      "sasa": 135.19,
       "plddt": 75.0,
       "motifs": [],
       "evidence_score": 4,
@@ -171,7 +171,7 @@
       "conservation": 7.5,
       "is_conserved": true,
       "is_buried": false,
-      "sasa": 50.0,
+      "sasa": 135.19,
       "plddt": 75.0,
       "motifs": [],
       "evidence_score": 4,
@@ -182,95 +182,11 @@
         724.5
       ],
       "domain_context": ""
-    },
-    {
-      "residue_number": 40,
-      "chain_id": "A",
-      "one_letter": "G",
-      "three_letter": "GLY",
-      "conservation": 4.0,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 50.0,
-      "plddt": 75.0,
-      "motifs": [
-        "ghkl_atpase"
-      ],
-      "evidence_score": 2,
-      "confidence": "LOW",
-      "coords": [
-        11.66,
-        6.428,
-        60.0
-      ],
-      "domain_context": ""
-    },
-    {
-      "residue_number": 47,
-      "chain_id": "A",
-      "one_letter": "N",
-      "three_letter": "ASN",
-      "conservation": 4.0,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 50.0,
-      "plddt": 75.0,
-      "motifs": [
-        "ghkl_atpase"
-      ],
-      "evidence_score": 2,
-      "confidence": "LOW",
-      "coords": [
-        14.097,
-        3.42,
-        70.5
-      ],
-      "domain_context": ""
-    },
-    {
-      "residue_number": 51,
-      "chain_id": "A",
-      "one_letter": "D",
-      "three_letter": "ASP",
-      "conservation": 6.5,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 50.0,
-      "plddt": 75.0,
-      "motifs": [
-        "ghkl_atpase"
-      ],
-      "evidence_score": 2,
-      "confidence": "LOW",
-      "coords": [
-        10.1,
-        8.66,
-        76.5
-      ],
-      "domain_context": ""
     }
   ],
-  "catalytic_motifs": [
-    {
-      "motif_type": "ghkl_atpase",
-      "residue_numbers": [
-        47,
-        51,
-        40
-      ],
-      "residue_letters": [
-        "N",
-        "D",
-        "G"
-      ],
-      "mean_distance": 8.91,
-      "confidence": "MEDIUM",
-      "zinc_type": "",
-      "long_range": false
-    }
-  ],
+  "catalytic_motifs": [],
   "n_high_confidence": 0,
   "n_medium_confidence": 9,
-  "n_low_confidence": 3,
+  "n_low_confidence": 0,
   "top_residues": []
 }

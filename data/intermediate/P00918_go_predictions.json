@@ -6,11 +6,12 @@
       "go_id": "GO:0004089",
       "go_name": "carbonate dehydratase activity",
       "namespace": "MF",
-      "score": 0.9,
+      "score": 1.628,
       "evidence": [
         "experimental_homolog",
         "domain_annotation",
-        "embedding_similarity"
+        "embedding_similarity",
+        "neural_classifier"
       ],
       "saliency_residues": [
         11,
@@ -39,44 +40,13 @@
       "go_id": "GO:0008270",
       "go_name": "zinc ion binding",
       "namespace": "MF",
-      "score": 0.85,
+      "score": 1.493,
       "evidence": [
         "experimental_homolog",
         "domain_annotation",
         "structural_motif",
-        "embedding_similarity"
-      ],
-      "saliency_residues": [
-        11,
-        12,
-        32,
-        55,
-        56,
-        57,
-        58,
-        59,
-        60,
-        66,
-        68,
-        69,
-        70,
-        71,
-        77,
-        80,
-        86,
-        87,
-        89,
-        90
-      ]
-    },
-    {
-      "go_id": "GO:0004252",
-      "go_name": "serine-type endopeptidase activity",
-      "namespace": "MF",
-      "score": 0.85,
-      "evidence": [
-        "structural_motif",
-        "embedding_similarity"
+        "embedding_similarity",
+        "neural_classifier"
       ],
       "saliency_residues": [
         11,
@@ -107,8 +77,7 @@
       "namespace": "MF",
       "score": 0.85,
       "evidence": [
-        "structural_motif",
-        "embedding_similarity"
+        "structural_motif"
       ],
       "saliency_residues": [
         11,
@@ -165,102 +134,8 @@
       ]
     },
     {
-      "go_id": "GO:0004784",
-      "go_name": "superoxide dismutase activity",
-      "namespace": "MF",
-      "score": 0.843,
-      "evidence": [
-        "embedding_similarity"
-      ],
-      "saliency_residues": [
-        11,
-        12,
-        32,
-        55,
-        56,
-        57,
-        58,
-        59,
-        60,
-        66,
-        68,
-        69,
-        70,
-        71,
-        77,
-        80,
-        86,
-        87,
-        89,
-        90
-      ]
-    },
-    {
-      "go_id": "GO:0008237",
-      "go_name": "metallopeptidase activity",
-      "namespace": "MF",
-      "score": 0.811,
-      "evidence": [
-        "embedding_similarity"
-      ],
-      "saliency_residues": [
-        11,
-        12,
-        32,
-        55,
-        56,
-        57,
-        58,
-        59,
-        60,
-        66,
-        68,
-        69,
-        70,
-        71,
-        77,
-        80,
-        86,
-        87,
-        89,
-        90
-      ]
-    },
-    {
       "go_id": "GO:0046872",
       "go_name": "metal ion binding",
-      "namespace": "MF",
-      "score": 0.8,
-      "evidence": [
-        "structural_motif",
-        "embedding_similarity"
-      ],
-      "saliency_residues": [
-        11,
-        12,
-        32,
-        55,
-        56,
-        57,
-        58,
-        59,
-        60,
-        66,
-        68,
-        69,
-        70,
-        71,
-        77,
-        80,
-        86,
-        87,
-        89,
-        90
-      ]
-    },
-    {
-      "go_id": "GO:0008233",
-      "go_name": "peptidase activity",
       "namespace": "MF",
       "score": 0.8,
       "evidence": [
@@ -327,8 +202,38 @@
       "namespace": "MF",
       "score": 0.8,
       "evidence": [
-        "structural_motif",
-        "embedding_similarity"
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        11,
+        12,
+        32,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        66,
+        68,
+        69,
+        70,
+        71,
+        77,
+        80,
+        86,
+        87,
+        89,
+        90
+      ]
+    },
+    {
+      "go_id": "GO:0003955",
+      "go_name": "NAD(P)H dehydrogenase (quinone) activity",
+      "namespace": "MF",
+      "score": 0.8,
+      "evidence": [
+        "structural_motif"
       ],
       "saliency_residues": [
         11,
@@ -359,70 +264,7 @@
       "namespace": "MF",
       "score": 0.8,
       "evidence": [
-        "structural_motif",
-        "embedding_similarity"
-      ],
-      "saliency_residues": [
-        11,
-        12,
-        32,
-        55,
-        56,
-        57,
-        58,
-        59,
-        60,
-        66,
-        68,
-        69,
-        70,
-        71,
-        77,
-        80,
-        86,
-        87,
-        89,
-        90
-      ]
-    },
-    {
-      "go_id": "GO:0005507",
-      "go_name": "copper ion binding",
-      "namespace": "MF",
-      "score": 0.796,
-      "evidence": [
-        "embedding_similarity"
-      ],
-      "saliency_residues": [
-        11,
-        12,
-        32,
-        55,
-        56,
-        57,
-        58,
-        59,
-        60,
-        66,
-        68,
-        69,
-        70,
-        71,
-        77,
-        80,
-        86,
-        87,
-        89,
-        90
-      ]
-    },
-    {
-      "go_id": "GO:0008241",
-      "go_name": "peptidyl-dipeptidase activity",
-      "namespace": "MF",
-      "score": 0.766,
-      "evidence": [
-        "embedding_similarity"
+        "structural_motif"
       ],
       "saliency_residues": [
         11,
@@ -477,9 +319,383 @@
         89,
         90
       ]
+    },
+    {
+      "go_id": "GO:0051082",
+      "go_name": "unfolded protein binding",
+      "namespace": "MF",
+      "score": 0.75,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        11,
+        12,
+        32,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        66,
+        68,
+        69,
+        70,
+        71,
+        77,
+        80,
+        86,
+        87,
+        89,
+        90
+      ]
+    },
+    {
+      "go_id": "GO:0004714",
+      "go_name": "receptor protein tyrosine kinase activity",
+      "namespace": "MF",
+      "score": 0.75,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        11,
+        12,
+        32,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        66,
+        68,
+        69,
+        70,
+        71,
+        77,
+        80,
+        86,
+        87,
+        89,
+        90
+      ]
+    },
+    {
+      "go_id": "GO:0003924",
+      "go_name": "GTPase activity",
+      "namespace": "MF",
+      "score": 0.75,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        11,
+        12,
+        32,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        66,
+        68,
+        69,
+        70,
+        71,
+        77,
+        80,
+        86,
+        87,
+        89,
+        90
+      ]
+    },
+    {
+      "go_id": "GO:0010181",
+      "go_name": "FMN binding",
+      "namespace": "MF",
+      "score": 0.75,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        11,
+        12,
+        32,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        66,
+        68,
+        69,
+        70,
+        71,
+        77,
+        80,
+        86,
+        87,
+        89,
+        90
+      ]
+    },
+    {
+      "go_id": "GO:0019825",
+      "go_name": "oxygen binding",
+      "namespace": "MF",
+      "score": 0.75,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        11,
+        12,
+        32,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        66,
+        68,
+        69,
+        70,
+        71,
+        77,
+        80,
+        86,
+        87,
+        89,
+        90
+      ]
+    },
+    {
+      "go_id": "GO:0045177",
+      "go_name": "C:apical part of cell",
+      "namespace": "MF",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        11,
+        12,
+        32,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        66,
+        68,
+        69,
+        70,
+        71,
+        77,
+        80,
+        86,
+        87,
+        89,
+        90
+      ]
+    },
+    {
+      "go_id": "GO:0018820",
+      "go_name": "F:cyanamide hydratase activity",
+      "namespace": "MF",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        11,
+        12,
+        32,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        66,
+        68,
+        69,
+        70,
+        71,
+        77,
+        80,
+        86,
+        87,
+        89,
+        90
+      ]
+    },
+    {
+      "go_id": "GO:0043209",
+      "go_name": "C:myelin sheath",
+      "namespace": "MF",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        11,
+        12,
+        32,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        66,
+        68,
+        69,
+        70,
+        71,
+        77,
+        80,
+        86,
+        87,
+        89,
+        90
+      ]
+    },
+    {
+      "go_id": "GO:0004064",
+      "go_name": "F:arylesterase activity",
+      "namespace": "MF",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        11,
+        12,
+        32,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        66,
+        68,
+        69,
+        70,
+        71,
+        77,
+        80,
+        86,
+        87,
+        89,
+        90
+      ]
+    },
+    {
+      "go_id": "GO:0002009",
+      "go_name": "P:morphogenesis of an epithelium",
+      "namespace": "MF",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        11,
+        12,
+        32,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        66,
+        68,
+        69,
+        70,
+        71,
+        77,
+        80,
+        86,
+        87,
+        89,
+        90
+      ]
     }
   ],
   "bp_predictions": [
+    {
+      "go_id": "GO:0015670",
+      "go_name": "P:carbon dioxide transport",
+      "namespace": "BP",
+      "score": 1.323,
+      "evidence": [
+        "experimental_homolog",
+        "neural_classifier"
+      ],
+      "saliency_residues": [
+        11,
+        12,
+        32,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        66,
+        68,
+        69,
+        70,
+        71,
+        77,
+        80,
+        86,
+        87,
+        89,
+        90
+      ]
+    },
+    {
+      "go_id": "GO:0051453",
+      "go_name": "P:regulation of intracellular pH",
+      "namespace": "BP",
+      "score": 1.286,
+      "evidence": [
+        "experimental_homolog",
+        "neural_classifier"
+      ],
+      "saliency_residues": [
+        11,
+        12,
+        32,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        66,
+        68,
+        69,
+        70,
+        71,
+        77,
+        80,
+        86,
+        87,
+        89,
+        90
+      ]
+    },
     {
       "go_id": "GO:0006468",
       "go_name": "protein phosphorylation",
@@ -512,196 +728,8 @@
       ]
     },
     {
-      "go_id": "GO:0019430",
-      "go_name": "removal of superoxide radicals",
-      "namespace": "BP",
-      "score": 0.796,
-      "evidence": [
-        "structural_motif",
-        "embedding_similarity"
-      ],
-      "saliency_residues": [
-        11,
-        12,
-        32,
-        55,
-        56,
-        57,
-        58,
-        59,
-        60,
-        66,
-        68,
-        69,
-        70,
-        71,
-        77,
-        80,
-        86,
-        87,
-        89,
-        90
-      ]
-    },
-    {
-      "go_id": "GO:0015671",
-      "go_name": "oxygen transport",
-      "namespace": "BP",
-      "score": 0.768,
-      "evidence": [
-        "structural_motif",
-        "embedding_similarity"
-      ],
-      "saliency_residues": [
-        11,
-        12,
-        32,
-        55,
-        56,
-        57,
-        58,
-        59,
-        60,
-        66,
-        68,
-        69,
-        70,
-        71,
-        77,
-        80,
-        86,
-        87,
-        89,
-        90
-      ]
-    },
-    {
-      "go_id": "GO:0007596",
-      "go_name": "blood coagulation",
-      "namespace": "BP",
-      "score": 0.707,
-      "evidence": [
-        "embedding_similarity"
-      ],
-      "saliency_residues": [
-        11,
-        12,
-        32,
-        55,
-        56,
-        57,
-        58,
-        59,
-        60,
-        66,
-        68,
-        69,
-        70,
-        71,
-        77,
-        80,
-        86,
-        87,
-        89,
-        90
-      ]
-    },
-    {
-      "go_id": "GO:0006801",
-      "go_name": "superoxide metabolic process",
-      "namespace": "BP",
-      "score": 0.702,
-      "evidence": [
-        "embedding_similarity"
-      ],
-      "saliency_residues": [
-        11,
-        12,
-        32,
-        55,
-        56,
-        57,
-        58,
-        59,
-        60,
-        66,
-        68,
-        69,
-        70,
-        71,
-        77,
-        80,
-        86,
-        87,
-        89,
-        90
-      ]
-    },
-    {
-      "go_id": "GO:0015670",
-      "go_name": "P:carbon dioxide transport",
-      "namespace": "BP",
-      "score": 0.7,
-      "evidence": [
-        "experimental_homolog"
-      ],
-      "saliency_residues": [
-        11,
-        12,
-        32,
-        55,
-        56,
-        57,
-        58,
-        59,
-        60,
-        66,
-        68,
-        69,
-        70,
-        71,
-        77,
-        80,
-        86,
-        87,
-        89,
-        90
-      ]
-    },
-    {
       "go_id": "GO:0038166",
       "go_name": "P:angiotensin-activated signaling pathway",
-      "namespace": "BP",
-      "score": 0.7,
-      "evidence": [
-        "experimental_homolog"
-      ],
-      "saliency_residues": [
-        11,
-        12,
-        32,
-        55,
-        56,
-        57,
-        58,
-        59,
-        60,
-        66,
-        68,
-        69,
-        70,
-        71,
-        77,
-        80,
-        86,
-        87,
-        89,
-        90
-      ]
-    },
-    {
-      "go_id": "GO:0051453",
-      "go_name": "P:regulation of intracellular pH",
       "namespace": "BP",
       "score": 0.7,
       "evidence": [
@@ -946,106 +974,289 @@
         89,
         90
       ]
+    },
+    {
+      "go_id": "GO:0032230",
+      "go_name": "P:positive regulation of synaptic transmission, GABAergic",
+      "namespace": "BP",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        11,
+        12,
+        32,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        66,
+        68,
+        69,
+        70,
+        71,
+        77,
+        80,
+        86,
+        87,
+        89,
+        90
+      ]
+    },
+    {
+      "go_id": "GO:2001225",
+      "go_name": "P:regulation of chloride transport",
+      "namespace": "BP",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        11,
+        12,
+        32,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        66,
+        68,
+        69,
+        70,
+        71,
+        77,
+        80,
+        86,
+        87,
+        89,
+        90
+      ]
+    },
+    {
+      "go_id": "GO:0071244",
+      "go_name": "P:cellular response to carbon dioxide",
+      "namespace": "BP",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        11,
+        12,
+        32,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        66,
+        68,
+        69,
+        70,
+        71,
+        77,
+        80,
+        86,
+        87,
+        89,
+        90
+      ]
+    },
+    {
+      "go_id": "GO:0018108",
+      "go_name": "peptidyl-tyrosine phosphorylation",
+      "namespace": "BP",
+      "score": 0.7,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        11,
+        12,
+        32,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        66,
+        68,
+        69,
+        70,
+        71,
+        77,
+        80,
+        86,
+        87,
+        89,
+        90
+      ]
+    },
+    {
+      "go_id": "GO:0055114",
+      "go_name": "oxidation-reduction process",
+      "namespace": "BP",
+      "score": 0.7,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        11,
+        12,
+        32,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        66,
+        68,
+        69,
+        70,
+        71,
+        77,
+        80,
+        86,
+        87,
+        89,
+        90
+      ]
+    },
+    {
+      "go_id": "GO:0015671",
+      "go_name": "oxygen transport",
+      "namespace": "BP",
+      "score": 0.7,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        11,
+        12,
+        32,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        66,
+        68,
+        69,
+        70,
+        71,
+        77,
+        80,
+        86,
+        87,
+        89,
+        90
+      ]
+    },
+    {
+      "go_id": "GO:0015701",
+      "go_name": "bicarbonate transport",
+      "namespace": "BP",
+      "score": 0.7,
+      "evidence": [
+        "structural_motif",
+        "embedding_similarity"
+      ],
+      "saliency_residues": [
+        11,
+        12,
+        32,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        66,
+        68,
+        69,
+        70,
+        71,
+        77,
+        80,
+        86,
+        87,
+        89,
+        90
+      ]
+    },
+    {
+      "go_id": "GO:0006351",
+      "go_name": "DNA-templated transcription",
+      "namespace": "BP",
+      "score": 0.65,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        11,
+        12,
+        32,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        66,
+        68,
+        69,
+        70,
+        71,
+        77,
+        80,
+        86,
+        87,
+        89,
+        90
+      ]
+    },
+    {
+      "go_id": "GO:0051085",
+      "go_name": "chaperone cofactor-dependent protein refolding",
+      "namespace": "BP",
+      "score": 0.65,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        11,
+        12,
+        32,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        66,
+        68,
+        69,
+        70,
+        71,
+        77,
+        80,
+        86,
+        87,
+        89,
+        90
+      ]
     }
   ],
   "cc_predictions": [
-    {
-      "go_id": "GO:0005634",
-      "go_name": "nucleus",
-      "namespace": "CC",
-      "score": 0.788,
-      "evidence": [
-        "ai_esm2",
-        "structural_motif",
-        "embedding_similarity"
-      ],
-      "saliency_residues": [
-        11,
-        12,
-        32,
-        55,
-        56,
-        57,
-        58,
-        59,
-        60,
-        66,
-        68,
-        69,
-        70,
-        71,
-        77,
-        80,
-        86,
-        87,
-        89,
-        90
-      ]
-    },
-    {
-      "go_id": "GO:0005833",
-      "go_name": "hemoglobin complex",
-      "namespace": "CC",
-      "score": 0.768,
-      "evidence": [
-        "structural_motif",
-        "embedding_similarity"
-      ],
-      "saliency_residues": [
-        11,
-        12,
-        32,
-        55,
-        56,
-        57,
-        58,
-        59,
-        60,
-        66,
-        68,
-        69,
-        70,
-        71,
-        77,
-        80,
-        86,
-        87,
-        89,
-        90
-      ]
-    },
-    {
-      "go_id": "GO:0016020",
-      "go_name": "membrane",
-      "namespace": "CC",
-      "score": 0.766,
-      "evidence": [
-        "structural_motif",
-        "embedding_similarity"
-      ],
-      "saliency_residues": [
-        11,
-        12,
-        32,
-        55,
-        56,
-        57,
-        58,
-        59,
-        60,
-        66,
-        68,
-        69,
-        70,
-        71,
-        77,
-        80,
-        86,
-        87,
-        89,
-        90
-      ]
-    },
     {
       "go_id": "GO:0005737",
       "go_name": "C:cytoplasm",
@@ -1179,8 +1390,7 @@
       "score": 0.7,
       "evidence": [
         "experimental_homolog",
-        "structural_motif",
-        "embedding_similarity"
+        "structural_motif"
       ],
       "saliency_residues": [
         11,
@@ -1237,12 +1447,105 @@
       ]
     },
     {
-      "go_id": "GO:0005576",
-      "go_name": "extracellular space",
+      "go_id": "GO:0005887",
+      "go_name": "integral component of plasma membrane",
       "namespace": "CC",
-      "score": 0.663,
+      "score": 0.65,
       "evidence": [
-        "embedding_similarity"
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        11,
+        12,
+        32,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        66,
+        68,
+        69,
+        70,
+        71,
+        77,
+        80,
+        86,
+        87,
+        89,
+        90
+      ]
+    },
+    {
+      "go_id": "GO:0005833",
+      "go_name": "hemoglobin complex",
+      "namespace": "CC",
+      "score": 0.65,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        11,
+        12,
+        32,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        66,
+        68,
+        69,
+        70,
+        71,
+        77,
+        80,
+        86,
+        87,
+        89,
+        90
+      ]
+    },
+    {
+      "go_id": "GO:0043234",
+      "go_name": "protein complex",
+      "namespace": "CC",
+      "score": 0.55,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        11,
+        12,
+        32,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        66,
+        68,
+        69,
+        70,
+        71,
+        77,
+        80,
+        86,
+        87,
+        89,
+        90
+      ]
+    },
+    {
+      "go_id": "GO:0016020",
+      "go_name": "membrane",
+      "namespace": "CC",
+      "score": 0.55,
+      "evidence": [
+        "structural_motif"
       ],
       "saliency_residues": [
         11,
@@ -1269,7 +1572,7 @@
     }
   ],
   "top_mf": "carbonate dehydratase activity",
-  "top_bp": "protein phosphorylation",
-  "top_cc": "nucleus",
-  "n_predictions": 40
+  "top_bp": "P:carbon dioxide transport",
+  "top_cc": "C:cytoplasm",
+  "n_predictions": 50
 }

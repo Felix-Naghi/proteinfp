@@ -1,23 +1,23 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-19 12:12:40
+  Generated: 2026-04-19 13:05:11
 ======================================================================
 
-  Protein    : unknown
-  Gene       : unknown
+  Protein    : Protein Mdm4
+  Gene       : MDM4
   UniProt    : O15151
-  Organism   : unknown
-  Length     : 0 aa
-  Mean pLDDT : 0.0
-  Confidence : LOW
+  Organism   : Homo sapiens
+  Length     : 490 aa
+  Mean pLDDT : 75.0
+  Confidence : MEDIUM
 
 ──────────────────────────────────────────────────────────────────────
   FUNCTIONAL PREDICTION
 ──────────────────────────────────────────────────────────────────────
   Top function     : ATP binding
   Enzyme           : no (non-enzyme)
-  Location         : cytoplasm
-  Evidence sources : 7
+  Location         : membrane
+  Evidence sources : 12
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
@@ -31,10 +31,12 @@
     [LOW   ] GO:0046872 metal ion binding (score=1.3, 1 sources)
 
   Biological Process:
-    [LOW   ] GO:0006457 protein folding (score=1.4, 1 sources)
+    [HIGH  ] GO:0043066 negative regulation of apoptotic process (score=6.9, 2 sources)
+    [HIGH  ] GO:0051726 regulation of cell cycle (score=6.9, 2 sources)
     [LOW   ] GO:0051085 chaperone cofactor-dependent protein refoldin (score=1.3, 1 sources)
 
   Cellular Component:
+    [HIGH  ] GO:0005634 nucleus (score=8.2, 3 sources)
     [LOW   ] GO:0005737 cytoplasm (score=0.9, 1 sources)
 
 ──────────────────────────────────────────────────────────────────────
@@ -47,11 +49,25 @@
   C457 [MEDIUM] motifs: general
 
 ──────────────────────────────────────────────────────────────────────
-  VALIDATION SUGGESTIONS
+  PROTEIN INTERACTIONS (top 8)
 ──────────────────────────────────────────────────────────────────────
-  1. EMSA or fluorescence polarisation assay to confirm 'ATP binding' (GO:0005524)
-  2. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+  MDM2            STRING=999  type=inhibitory
+  TP53            STRING=999  type=unknown
+  SFN             STRING=977  type=unknown
+  USP7            STRING=973  type=unknown
+  CSNK1A1         STRING=971  type=unknown
+  RPS27A          STRING=970  type=unknown
+  UBC             STRING=967  type=inhibitory
+  CDKN2A          STRING=963  type=unknown
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: active, chem_env, homology, go, ec, foldseek, ppi
+  VALIDATION SUGGESTIONS
+──────────────────────────────────────────────────────────────────────
+  1. Co-immunoprecipitation with MDM2 (inhibitory interaction, predicted interface: [4, 10, 13])
+  2. Co-immunoprecipitation with TP53 (unknown interaction, predicted interface: [1, 2, 3])
+  3. EMSA or fluorescence polarisation assay to confirm 'ATP binding' (GO:0005524)
+  4. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+
+──────────────────────────────────────────────────────────────────────
+  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi
 ======================================================================

@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-18 08:03:52
+  Generated: 2026-04-19 13:04:39
 ======================================================================
 
   Protein    : Superoxide dismutase [Cu-Zn]
@@ -15,8 +15,8 @@
   FUNCTIONAL PREDICTION
 ──────────────────────────────────────────────────────────────────────
   Top function     : Destroys radicals which are normally produced within the cells and which are toxic to biological systems (PubMed:24140062). Catalyzes the oxidation of hydrogen sulfide (H2S) to sulfate, playing an imp
-  Enzyme           : no (non-enzyme)
-  Location         : membrane
+  Enzyme           : yes — 1.15.1
+  Location         : C:plasma membrane
   Evidence sources : 12
 
 ──────────────────────────────────────────────────────────────────────
@@ -25,31 +25,31 @@
 
   Molecular Function:
     [HIGH  ] GO:0005507 copper ion binding (score=13.3, 4 sources)
-    [HIGH  ] GO:0046872 metal ion binding (score=12.2, 4 sources)
+    [HIGH  ] GO:0046872 metal ion binding (score=10.8, 3 sources)
+    [HIGH  ] GO:0005739 C:mitochondrion (score=9.6, 2 sources)
+    [HIGH  ] GO:0043025 C:neuronal cell body (score=9.3, 2 sources)
     [HIGH  ] GO:0008270 F:zinc ion binding (score=8.6, 3 sources)
-    [HIGH  ] GO:0004784 F:superoxide dismutase activity (score=7.5, 2 sources)
-    [HIGH  ] GO:0005739 C:mitochondrion (score=5.1, 1 sources)
 
   Biological Process:
+    [HIGH  ] GO:0006749 P:glutathione metabolic process (score=9.4, 2 sources)
+    [HIGH  ] GO:0004784 F:superoxide dismutase activity (score=9.3, 3 sources)
     [HIGH  ] GO:0006801 superoxide metabolic process (score=9.2, 2 sources)
+    [HIGH  ] GO:0019430 removal of superoxide radicals (score=9.2, 3 sources)
     [HIGH  ] GO:0051087 F:protein-folding chaperone binding (score=5.1, 1 sources)
-    [HIGH  ] GO:0006749 P:glutathione metabolic process (score=5.1, 1 sources)
-    [HIGH  ] GO:0050665 P:hydrogen peroxide biosynthetic process (score=5.1, 1 sources)
-    [MEDIUM] GO:0019430 removal of superoxide radicals (score=3.4, 2 sources)
 
   Cellular Component:
-    [HIGH  ] GO:0005634 C:nucleus (score=10.1, 4 sources)
+    [HIGH  ] GO:0005615 C:extracellular space (score=9.4, 2 sources)
+    [HIGH  ] GO:0005829 C:cytosol (score=9.3, 2 sources)
     [HIGH  ] GO:0005737 C:cytoplasm (score=8.2, 3 sources)
-    [HIGH  ] GO:0005615 C:extracellular space (score=6.5, 2 sources)
 
 ──────────────────────────────────────────────────────────────────────
   ACTIVE SITES
 ──────────────────────────────────────────────────────────────────────
-  H72 [HIGH  ] motifs: serine_protease_triad, zinc_binding_cluster
+  H44 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H49 [HIGH  ] motifs: serine_protease_triad, zinc_binding_cluster
+  H64 [HIGH  ] motifs: serine_protease_triad, zinc_binding_cluster
+  H72 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
   H81 [HIGH  ] motifs: serine_protease_triad, zinc_binding_cluster
-  H111 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
-  C112 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
-  D84 [MEDIUM] motifs: serine_protease_triad, serine_protease_triad
 
 ──────────────────────────────────────────────────────────────────────
   BINDING POCKETS
@@ -75,12 +75,13 @@
 ──────────────────────────────────────────────────────────────────────
   VALIDATION SUGGESTIONS
 ──────────────────────────────────────────────────────────────────────
-  1. Alanine scanning mutagenesis of predicted active site residues (H72, H81, H111) to confirm functional importance
+  1. Alanine scanning mutagenesis of predicted active site residues (H44, H49, H64) to confirm functional importance
   2. Thermal shift assay or SPR binding assay against pocket P1 (vol=1580Å³, druggability=0.99)
   3. Co-immunoprecipitation with CCS (unknown interaction, predicted interface: [1, 154, 76])
   4. Co-immunoprecipitation with BCL2 (apoptotic interaction, predicted interface: [1, 154, 76])
-  5. EMSA or fluorescence polarisation assay to confirm 'copper ion binding' (GO:0005507)
-  6. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+  5. Enzyme activity assay consistent with EC 1.15.1 using appropriate substrate panel
+  6. EMSA or fluorescence polarisation assay to confirm 'copper ion binding' (GO:0005507)
+  7. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
   Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi

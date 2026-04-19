@@ -1,13 +1,13 @@
 {
   "uniprot_id": "P01116",
   "sequence_length": 189,
-  "is_enzyme": true,
-  "enzyme_confidence": 0.85,
+  "is_enzyme": false,
+  "enzyme_confidence": 1.456,
   "top_prediction": {
     "ec_class": "3",
     "ec_name": "Hydrolase",
     "ec_full": "EC 3.6.5",
-    "score": 0.85,
+    "score": 1.456,
     "evidence": [
       "go_prediction",
       "structural_motif",
@@ -20,7 +20,7 @@
       "ec_class": "3",
       "ec_name": "Hydrolase",
       "ec_full": "EC 3.6.5",
-      "score": 0.85,
+      "score": 1.456,
       "evidence": [
         "go_prediction",
         "structural_motif",
@@ -29,12 +29,13 @@
       ]
     },
     {
-      "ec_class": "4",
-      "ec_name": "Lyase",
-      "ec_full": "EC 4.x.x.x",
-      "score": 0.7,
+      "ec_class": "1",
+      "ec_name": "Oxidoreductase",
+      "ec_full": "EC 1.x.x.x",
+      "score": 0.72,
       "evidence": [
         "go_prediction",
+        "structural_motif",
         "sequence_composition"
       ]
     },
@@ -42,20 +43,17 @@
       "ec_class": "2",
       "ec_name": "Transferase",
       "ec_full": "EC 2.x.x.x",
-      "score": 0.692,
+      "score": 0.24,
       "evidence": [
-        "go_prediction",
         "sequence_composition"
       ]
     },
     {
-      "ec_class": "1",
-      "ec_name": "Oxidoreductase",
-      "ec_full": "EC 1.x.x.x",
-      "score": 0.675,
+      "ec_class": "4",
+      "ec_name": "Lyase",
+      "ec_full": "EC 4.x.x.x",
+      "score": 0.24,
       "evidence": [
-        "go_prediction",
-        "structural_motif",
         "sequence_composition"
       ]
     },
@@ -71,5 +69,6 @@
   ],
   "specific_ec": "3.6.5",
   "specific_ec_name": "GTPase",
-  "non_enzyme_score": 0.0
+  "non_enzyme_score": 0.4,
+  "ml_enzyme_prob": 0.124
 }

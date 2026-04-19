@@ -6,10 +6,11 @@ Module 10 — Enzyme Commission (EC) number prediction.
 Predicts whether a protein is an enzyme and, if so, what EC number class
 it belongs to. Uses a combination of:
 
-  1. Sequence-based features (amino acid composition, motifs)
-  2. Active site chemistry from Module 03
-  3. GO term predictions from Module 09
-  4. Homology-based inference from Module 07
+  1. ML enzyme classifier (ESM-2 embedding based) — most reliable
+  2. GO term predictions from Module 09
+  3. Active site chemistry from Module 03
+  4. Sequence-based features (amino acid composition)
+  5. Homology-based inference from Module 07
 
 EC number hierarchy:
   EC 1.x.x.x — Oxidoreductases  (transfer electrons)
@@ -33,6 +34,7 @@ Usage (from orchestrator):
 from __future__ import annotations
 
 import json
+import pickle
 from dataclasses import dataclass, field, asdict
 from pathlib import Path
 from typing import Optional
@@ -63,7 +65,7 @@ GO_TO_EC: dict[str, str] = {
     "GO:0016616": "1",   # oxidoreductase activity, acting on NADH
     "GO:0016746": "2",   # acyltransferase activity
     "GO:0016747": "2",   # transferase activity, acyl groups
-    "GO:0016301": "2",   # kinase activity → transferase
+    "GO:0016301": "2",   # kinase activity
     "GO:0004672": "2",   # protein kinase activity
     "GO:0016787": "3",   # hydrolase activity
     "GO:0004252": "3",   # serine-type endopeptidase
@@ -73,28 +75,35 @@ GO_TO_EC: dict[str, str] = {
     "GO:0016874": "6",   # ligase activity
     "GO:0016879": "6",   # ligase activity, forming C-N bonds
     "GO:0016817": "3",   # hydrolase activity, acting on acid anhydrides
-    "GO:0003924": "3",   # GTPase activity → EC 3.6.5 (phosphoric monoester hydrolase)
-    "GO:0005525": "3",   # GTP binding → GTPase context
-    "GO:0016887": "3",   # ATPase activity → EC 3.6.3
-    "GO:0005524": "3",   # ATP binding → ATPase context
-    "GO:0042623": "3",   # ATPase activity, coupled → EC 3.6.1
-    "GO:0061630": "2",   # ubiquitin protein ligase → EC 2.3.2
+    "GO:0003924": "3",   # GTPase activity
+    "GO:0005525": "3",   # GTP binding
+    "GO:0016887": "3",   # ATPase activity
+    "GO:0005524": "3",   # ATP binding
+    "GO:0042623": "3",   # ATPase activity, coupled
+    "GO:0061630": "2",   # ubiquitin protein ligase
     "GO:0004842": "2",   # ubiquitin-protein transferase activity
     "GO:0008237": "3",   # metallopeptidase activity
     "GO:0008241": "3",   # peptidyl-dipeptidase activity
-    "GO:0003955": "1",   # NAD(P)H dehydrogenase (quinone) activity → oxidoreductase
-    "GO:0010181": "1",   # FMN binding → flavoenzyme / oxidoreductase context
+    "GO:0003955": "1",   # NAD(P)H dehydrogenase activity
+    "GO:0010181": "1",   # FMN binding
+    "GO:0004784": "1",   # superoxide dismutase activity
+    "GO:0004089": "4",   # carbonate dehydratase activity
 }
 
-# GO terms that map to specific EC sub-numbers (beyond just class digit)
+# GO terms that map to specific EC sub-numbers
 GO_TO_SPECIFIC_EC: dict[str, tuple[str, str]] = {
-    "GO:0003924": ("3.6.5", "GTPase"),
-    "GO:0016887": ("3.6.1", "ATPase"),
-    "GO:0042623": ("3.6.1", "ATPase, coupled"),
-    "GO:0061630": ("2.3.2", "Ubiquitin-protein ligase"),
-    "GO:0004842": ("2.3.2", "Ubiquitin-protein transferase"),
+    "GO:0003924": ("3.6.5",  "GTPase"),
+    "GO:0016887": ("3.6.1",  "ATPase"),
+    "GO:0042623": ("3.6.1",  "ATPase, coupled"),
+    "GO:0061630": ("2.3.2",  "Ubiquitin-protein ligase"),
+    "GO:0004842": ("2.3.2",  "Ubiquitin-protein transferase"),
     "GO:0008237": ("3.4.24", "Metallopeptidase"),
     "GO:0004252": ("3.4.21", "Serine-type endopeptidase"),
+    "GO:0004197": ("3.4.22", "Cysteine-type endopeptidase"),
+    "GO:0004784": ("1.15.1", "Superoxide dismutase"),
+    "GO:0004089": ("4.2.1",  "Carbonate dehydratase"),
+    "GO:0004672": ("2.7.10", "Protein kinase"),
+    "GO:0003955": ("1.10.99","NAD(P)H dehydrogenase"),
 }
 
 # Active site motif types that indicate enzymatic function
@@ -105,17 +114,19 @@ ENZYMATIC_MOTIFS = {
     "p_loop_walker_a":        ("3.6.5",  "GTPase/ATPase"),
     "ghkl_atpase":            ("3.6.1",  "ATPase/Chaperone"),
     "flavin_binding":         ("1.6.5",  "NADH dehydrogenase"),
+    "dfg_loop":               ("2.7.10", "Protein kinase"),
+    "hrd_catalytic_loop":     ("2.7.10", "Protein kinase"),
+    "haem_binding":           ("1.14",   "Haem-dependent oxidoreductase"),
 }
 
 # Amino acid composition features correlated with EC class
-# (from statistical analysis of Swiss-Prot enzymes)
 EC_COMPOSITION_SIGNALS: dict[str, dict[str, float]] = {
-    "1": {"C": 0.02, "H": 0.03, "F": 0.04},   # oxidoreductases: aromatic residues
-    "2": {"K": 0.06, "R": 0.05, "D": 0.05},   # transferases: charged residues
-    "3": {"S": 0.08, "H": 0.03, "D": 0.06},   # hydrolases: Ser-His-Asp triad
-    "4": {"D": 0.07, "E": 0.06, "K": 0.05},   # lyases: charged
-    "5": {"R": 0.06, "K": 0.05, "E": 0.05},   # isomerases: charged
-    "6": {"K": 0.06, "R": 0.05, "G": 0.09},   # ligases: ATP-binding Gly-rich
+    "1": {"C": 0.02, "H": 0.03, "F": 0.04},
+    "2": {"K": 0.06, "R": 0.05, "D": 0.05},
+    "3": {"S": 0.08, "H": 0.03, "D": 0.06},
+    "4": {"D": 0.07, "E": 0.06, "K": 0.05},
+    "5": {"R": 0.06, "K": 0.05, "E": 0.05},
+    "6": {"K": 0.06, "R": 0.05, "G": 0.09},
 }
 
 
@@ -123,11 +134,10 @@ EC_COMPOSITION_SIGNALS: dict[str, dict[str, float]] = {
 
 @dataclass
 class ECPrediction:
-    """Prediction for a single EC class."""
-    ec_class:    str       # "1", "2", ... "7", or "non-enzyme"
+    ec_class:    str
     ec_name:     str
-    ec_full:     str       # e.g. "EC 3.4.21" if subclass known
-    score:       float     # 0-1 confidence
+    ec_full:     str
+    score:       float
     evidence:    list[str]
 
     def to_dict(self) -> dict:
@@ -136,16 +146,16 @@ class ECPrediction:
 
 @dataclass
 class ECResult:
-    """Full EC number prediction output. Output of Module 10."""
-    uniprot_id:       str
-    sequence_length:  int
-    is_enzyme:        bool
+    uniprot_id:        str
+    sequence_length:   int
+    is_enzyme:         bool
     enzyme_confidence: float
-    top_prediction:   Optional[ECPrediction]         = None
-    all_predictions:  list[ECPrediction]             = field(default_factory=list)
-    specific_ec:      str                            = ""  # e.g. "3.4.21.4"
-    specific_ec_name: str                            = ""
-    non_enzyme_score: float                          = 0.0
+    top_prediction:    Optional[ECPrediction]       = None
+    all_predictions:   list[ECPrediction]           = field(default_factory=list)
+    specific_ec:       str                          = ""
+    specific_ec_name:  str                          = ""
+    non_enzyme_score:  float                        = 0.0
+    ml_enzyme_prob:    float                        = -1.0   # -1 = not available
 
     def summary(self) -> str:
         lines = [
@@ -154,6 +164,8 @@ class ECResult:
             f"  Is enzyme    : {'yes' if self.is_enzyme else 'no'} "
             f"(confidence={self.enzyme_confidence:.2f})",
         ]
+        if self.ml_enzyme_prob >= 0:
+            lines.append(f"  ML enzyme prob: {self.ml_enzyme_prob:.3f}")
         if self.top_prediction:
             lines.append(
                 f"  Top EC class : EC {self.top_prediction.ec_class}.x.x.x — "
@@ -161,8 +173,9 @@ class ECResult:
                 f"(score={self.top_prediction.score:.2f})"
             )
         if self.specific_ec:
-            lines.append(f"  Specific EC  : {self.specific_ec} "
-                         f"— {self.specific_ec_name}")
+            lines.append(
+                f"  Specific EC  : {self.specific_ec} — {self.specific_ec_name}"
+            )
         for pred in self.all_predictions[:5]:
             lines.append(
                 f"  EC {pred.ec_class} {pred.ec_name[:30]} "
@@ -178,6 +191,49 @@ class ECResult:
     def to_json(self, path: str | Path) -> None:
         with open(path, "w", encoding="utf-8") as f:
             json.dump(self.to_dict(), f, indent=2)
+
+
+# ── ML enzyme classifier ───────────────────────────────────────────────────────
+
+def _load_enzyme_classifier():
+    """Load the trained enzyme classifier. Returns (clf, available_bool)."""
+    try:
+        model_path = Path(__file__).parent.parent / "models" / "enzyme_classifier.pkl"
+        if not model_path.exists():
+            return None, False
+        with open(model_path, "rb") as f:
+            package = pickle.load(f)
+        return package["classifier"], True
+    except Exception as e:
+        log.debug(f"  Enzyme classifier load failed: {e}")
+        return None, False
+
+
+def _get_ml_enzyme_prob(uniprot_id: str) -> float:
+    """
+    Get ML-based enzyme probability from ESM-2 embedding.
+    Returns probability 0-1, or -1 if classifier/embedding unavailable.
+    """
+    clf, available = _load_enzyme_classifier()
+    if not available:
+        return -1.0
+
+    try:
+        esm2_path = Path(cfg.paths["intermediate"]) / f"{uniprot_id}_esm2.json"
+        if not esm2_path.exists():
+            return -1.0
+
+        esm2_data = json.loads(esm2_path.read_text())
+        emb = np.array(esm2_data.get("protein_embedding", []), dtype=np.float32)
+        if len(emb) == 0:
+            return -1.0
+
+        prob = float(clf.predict_proba(emb.reshape(1, -1))[0][1])
+        return prob
+
+    except Exception as e:
+        log.debug(f"  ML enzyme prediction failed: {e}")
+        return -1.0
 
 
 # ── Main function ──────────────────────────────────────────────────────────────
@@ -204,6 +260,23 @@ def predict_ec_number(
     """
     log.info(f"── Module 10: EC number prediction for {uniprot_id} ──")
 
+    # ── ML enzyme classification (most reliable signal) ───────────────────────
+    ml_enzyme_prob = _get_ml_enzyme_prob(uniprot_id)
+    if ml_enzyme_prob >= 0:
+        # Use the optimal threshold found during training
+        try:
+            with open(Path(__file__).parent.parent / "models" / "enzyme_classifier.pkl", "rb") as f:
+                _pkg = pickle.load(f)
+            _thresh = _pkg.get("threshold", 0.5)
+        except:
+            _thresh = 0.5
+        
+        if ml_enzyme_prob >= _thresh:
+            is_enzyme = True
+        elif ml_enzyme_prob <= (1 - _thresh):
+            is_enzyme = False
+        # else: uncertain, fall through to rule-based
+
     ec_scores: dict[str, dict] = {
         cls: {"score": 0.0, "evidence": []}
         for cls in EC_CLASSES
@@ -217,7 +290,6 @@ def predict_ec_number(
     if go_result:
         n_go, go_spec_ec, go_spec_name = _add_go_evidence(ec_scores, go_result)
         log.info(f"    {n_go} GO terms processed")
-        # GO-derived specific EC (e.g. GTPase → 3.6.5) takes precedence when present
         if go_spec_ec:
             specific_ec      = go_spec_ec
             specific_ec_name = go_spec_name
@@ -226,7 +298,6 @@ def predict_ec_number(
     log.info("  [2/3] Analysing active site motif evidence...")
     if active_result:
         spec_ec, spec_name = _add_motif_evidence(ec_scores, active_result)
-        # Motif evidence only overrides GO-derived specific EC if GO gave nothing
         if spec_ec and not specific_ec:
             specific_ec      = spec_ec
             specific_ec_name = spec_name
@@ -243,25 +314,46 @@ def predict_ec_number(
     max_ec_score = max(v["score"] for v in ec_scores.values())
     enzyme_conf  = float(max_ec_score)
 
-    # Non-enzyme indicators: transcription factors, structural proteins
-# Non-enzyme indicators
+    # Rule-based non-enzyme signals (fallback when ML unavailable)
     if go_result:
-        all_go = go_result.get("mf_predictions", []) + \
-                go_result.get("bp_predictions", [])
+        all_go = (go_result.get("mf_predictions", []) +
+                  go_result.get("bp_predictions", []))
         for pred in all_go:
             go_name = pred.get("go_name", "").lower()
             go_id   = pred.get("go_id", "")
-            # Only the most specific transcription factor signal
-            # Generic DNA binding does NOT indicate non-enzyme
             if "dna-binding transcription factor activity" in go_name:
                 non_enzyme_score += 0.4
             elif go_id == "GO:0003700":
-                non_enzyme_score += 0.1  # very weak signal only
+                non_enzyme_score += 0.1
+            # Haem binding without enzymatic context = oxygen carrier
+            if go_id == "GO:0020037" and "GO:0016491" not in {
+                p.get("go_id") for p in all_go
+            }:
+                non_enzyme_score += 0.4
+            # Unfolded protein binding + protein folding = chaperone
+            if go_id == "GO:0051082":
+                bp_ids = {p.get("go_id") for p in go_result.get("bp_predictions", [])}
+                if "GO:0006457" in bp_ids:
+                    non_enzyme_score += 0.4
 
-    if non_enzyme_score >= 0.35:
+    # ── Final enzyme decision ─────────────────────────────────────────────────
+    if ml_enzyme_prob >= 0.5:
+        # ML classifier confident it's an enzyme
+        is_enzyme = True
+        log.info(f"  Decision: enzyme (ML prob={ml_enzyme_prob:.3f})")
+    elif ml_enzyme_prob >= 0 and ml_enzyme_prob <= 0.25:
+        # ML classifier confident it's not an enzyme
         is_enzyme = False
+        log.info(f"  Decision: non-enzyme (ML prob={ml_enzyme_prob:.3f})")
+    elif non_enzyme_score >= 0.35:
+        # Rule-based non-enzyme signal
+        is_enzyme = False
+        log.info(f"  Decision: non-enzyme (rule-based, score={non_enzyme_score:.2f})")
     else:
+        # Fall back to enzyme confidence score
         is_enzyme = enzyme_conf > 0.4 and enzyme_conf > non_enzyme_score
+        log.info(f"  Decision: {'enzyme' if is_enzyme else 'non-enzyme'} "
+                 f"(conf={enzyme_conf:.2f}, non_enz={non_enzyme_score:.2f})")
 
     # ── Build ranked predictions ───────────────────────────────────────────────
     predictions = []
@@ -272,7 +364,9 @@ def predict_ec_number(
         predictions.append(ECPrediction(
             ec_class=cls,
             ec_name=name,
-            ec_full=f"EC {specific_ec}" if specific_ec and specific_ec.startswith(cls) else f"EC {cls}.x.x.x",
+            ec_full=(f"EC {specific_ec}"
+                     if specific_ec and specific_ec.startswith(cls)
+                     else f"EC {cls}.x.x.x"),
             score=round(data["score"], 3),
             evidence=data["evidence"],
         ))
@@ -290,6 +384,7 @@ def predict_ec_number(
         specific_ec=specific_ec,
         specific_ec_name=specific_ec_name,
         non_enzyme_score=round(non_enzyme_score, 3),
+        ml_enzyme_prob=round(ml_enzyme_prob, 3),
     )
 
     log.info(result.summary())
@@ -303,7 +398,7 @@ def _add_go_evidence(
     go_result: dict,
 ) -> tuple[int, str, str]:
     """Map GO terms to EC classes. Returns (n_mapped, specific_ec, specific_name)."""
-    n = 0
+    n             = 0
     specific_ec   = ""
     specific_name = ""
     best_score    = 0.0
@@ -324,15 +419,15 @@ def _add_go_evidence(
             if src not in ec_scores[ec_class]["evidence"]:
                 ec_scores[ec_class]["evidence"].append(src)
             n += 1
-        # Derive specific EC from GO when available and high-confidence
         if go_id in GO_TO_SPECIFIC_EC and score > best_score:
-            best_score = score
+            best_score    = score
             specific_ec, specific_name = GO_TO_SPECIFIC_EC[go_id]
+
     return n, specific_ec, specific_name
 
 
 def _add_motif_evidence(
-    ec_scores: dict,
+    ec_scores:     dict,
     active_result: dict,
 ) -> tuple[str, str]:
     """Map catalytic motifs to EC classes."""
@@ -345,27 +440,21 @@ def _add_motif_evidence(
         zinc_type = motif.get("zinc_type", "")
         score     = 0.85 if conf == "HIGH" else 0.65
 
-        # Structural zinc (RING domains, zinc fingers — Cys4/Cys3His1 pattern)
-        # must NOT drive EC prediction toward metallopeptidase (EC 3.4.24).
-        # Only catalytic zinc (His2Glu pattern) is indicative of enzymatic activity.
+        # Structural zinc must NOT drive EC prediction
         if mtype == "zinc_binding_cluster":
             if not zinc_type:
-                # Infer from residue_letters when zinc_type is not stored
-                letters = motif.get("residue_letters", [])
-                if letters:
-                    cys_count = letters.count("C")
-                    his_count = letters.count("H")
-                    glu_count = letters.count("E")
-                    if cys_count >= 3:
-                        zinc_type = "structural"
-                    elif his_count >= 2 and glu_count >= 1 and cys_count == 0:
-                        zinc_type = "catalytic"
-                    else:
-                        zinc_type = "structural"
-                # If residue_letters missing, assume catalytic (backward compat)
-                # so old-format motif data still contributes to EC predictions
+                letters   = motif.get("residue_letters", [])
+                cys_count = letters.count("C")
+                his_count = letters.count("H")
+                glu_count = letters.count("E")
+                if cys_count >= 3:
+                    zinc_type = "structural"
+                elif his_count >= 2 and glu_count >= 1 and cys_count == 0:
+                    zinc_type = "catalytic"
+                else:
+                    zinc_type = "structural"
             if zinc_type == "structural":
-                continue  # structural zinc does not indicate metallopeptidase
+                continue
 
         if mtype in ENZYMATIC_MOTIFS:
             ec_sub, ec_name = ENZYMATIC_MOTIFS[mtype]
@@ -376,7 +465,8 @@ def _add_motif_evidence(
             src = "structural_motif"
             if src not in ec_scores[ec_class]["evidence"]:
                 ec_scores[ec_class]["evidence"].append(src)
-            if score >= 0.80:
+            # Only set specific EC from motif if not already set by GO
+            if score >= 0.80 and not specific_ec:
                 specific_ec   = ec_sub
                 specific_name = ec_name
 
@@ -389,7 +479,7 @@ def _add_composition_evidence(ec_scores: dict, sequence: str) -> None:
     if L == 0:
         return
 
-    comp = {}
+    comp: dict[str, float] = {}
     for aa in sequence:
         comp[aa] = comp.get(aa, 0) + 1
     for aa in comp:
@@ -398,8 +488,7 @@ def _add_composition_evidence(ec_scores: dict, sequence: str) -> None:
     for ec_class, signals in EC_COMPOSITION_SIGNALS.items():
         score = 0.0
         for aa, expected_frac in signals.items():
-            actual = comp.get(aa, 0.0)
-            if actual >= expected_frac * 0.8:
+            if comp.get(aa, 0.0) >= expected_frac * 0.8:
                 score += 0.08
         if score > 0:
             ec_scores[ec_class]["score"] = max(
