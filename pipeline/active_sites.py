@@ -685,12 +685,12 @@ def _find_ghkl_atpase(
         for dn, dc in asp_res.items():
             if nn == dn:
                 continue
-            if _dist(nc, dc) > 8.0:
+            if _dist(nc, dc) > 6.0:
                 continue
             # Find a GxG pair near the Asn in sequence + 3D
             found_gg = -1
             for g1, g2 in gg_pairs:
-                if abs(nn - g1) <= 8 and _dist(gly_res[g1], nc) <= 8.0:
+                if abs(nn - g1) <= 5 and _dist(gly_res[g1], nc) <= 6.0:
                     found_gg = g1
                     break
             if found_gg < 0:
@@ -734,10 +734,10 @@ def _find_flavin_binding(
             if gap < 1:
                 continue
             d_gg = _dist(gly_res[g1], gly_res[g2])
-            if d_gg > 6.0:
+            if d_gg > 4.0:
                 continue
             for an, ac in aromatic.items():
-                if _dist(gly_res[g1], ac) > 6.0:
+                if _dist(gly_res[g1], ac) > 5.0:
                     continue
                 key = (g1, g2, an)
                 if key in seen:
@@ -773,15 +773,15 @@ def _find_haem_binding(
     seen: set[int] = set()
 
     for hn, hc in his_res.items():
-        # Negative signal: Cys within 7Å → zinc context, not haem
-        if any(_dist(hc, cc) <= 5.0 for cc in cys_res.values()):
+        # Negative signal: Cys within 4Å → zinc context, not haem
+        if any(_dist(hc, cc) <= 4.0 for cc in cys_res.values()):
             continue
-        # Count hydrophobic neighbours
+        # Count hydrophobic neighbours within 8Å — require a deep hydrophobic pocket
         hydrophobic_count = sum(
             1 for nn, (aa, nc, _) in coord_map.items()
             if nn != hn and aa in HYDROPHOBIC and _dist(hc, nc) <= 8.0
         )
-        if hydrophobic_count < 6:
+        if hydrophobic_count < 8:
             continue
         if hn in seen:
             continue
@@ -819,7 +819,13 @@ def _find_ploop(
                 d = _dist(gly_res[g1], gly_res[g2])
                 if d > 10.0:
                     continue
-                # Check for Lys near end of loop
+                # Require a Lys within 2 positions after g2 (GxxxxGK pattern)
+                has_lys = any(
+                    coord_map.get(n, ("",))[0] == "K"
+                    for n in range(g2 + 1, g2 + 3)
+                )
+                if not has_lys:
+                    continue
                 region = [n for n in coord_map if g1 <= n <= g2 + 1]
                 letters = [coord_map[n][0] for n in region]
                 motifs.append(CatalyticMotif(
