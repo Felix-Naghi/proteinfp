@@ -1,0 +1,1527 @@
+{
+  "uniprot_id": "Q8NHZ8",
+  "gene_name": "CDC26",
+  "protein_name": "Anaphase-promoting complex subunit CDC26",
+  "organism": "Homo sapiens",
+  "sequence_length": 85,
+  "generated_at": "2026-04-19 19:01:01",
+  "top_function": "Component of the anaphase promoting complex/cyclosome (APC/C), a cell cycle-regulated E3 ubiquitin ligase that controls progression through mitosis and the G1 phase of the cell cycle (PubMed:18485873)",
+  "is_enzyme": false,
+  "ec_number": "2.x.x.x",
+  "subcellular_location": "membrane",
+  "go_terms_mf": [
+    {
+      "go_id": "GO:0051301",
+      "go_name": "P:cell division",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005654",
+      "go_name": "C:nucleoplasm",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0003677",
+      "go_name": "DNA binding",
+      "namespace": "MF",
+      "weighted_score": 1.7,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0008270",
+      "go_name": "zinc ion binding",
+      "namespace": "MF",
+      "weighted_score": 1.6,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0046872",
+      "go_name": "metal ion binding",
+      "namespace": "MF",
+      "weighted_score": 1.5,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0005488",
+      "go_name": "binding",
+      "namespace": "MF",
+      "weighted_score": 1.1,
+      "n_sources": 1,
+      "sources": [
+        "sequence_composition"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "sequence_composition"
+    },
+    {
+      "go_id": "GO:0005515",
+      "go_name": "protein binding",
+      "namespace": "MF",
+      "weighted_score": 1.08,
+      "n_sources": 1,
+      "sources": [
+        "ai_esm2"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "ai_esm2"
+    },
+    {
+      "go_id": "GO:0003700",
+      "go_name": "DNA-binding transcription factor activity",
+      "namespace": "MF",
+      "weighted_score": 0.9,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    }
+  ],
+  "go_terms_bp": [
+    {
+      "go_id": "GO:0031145",
+      "go_name": "anaphase-promoting complex-dependent catabolic process",
+      "namespace": "BP",
+      "weighted_score": 9.5,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "domain_annotation"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0070979",
+      "go_name": "P:protein K11-linked ubiquitination",
+      "namespace": "BP",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0007346",
+      "go_name": "P:regulation of mitotic cell cycle",
+      "namespace": "BP",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0141198",
+      "go_name": "P:protein branched polyubiquitination",
+      "namespace": "BP",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0070936",
+      "go_name": "P:protein K48-linked ubiquitination",
+      "namespace": "BP",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0051445",
+      "go_name": "P:regulation of meiotic cell cycle",
+      "namespace": "BP",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0000278",
+      "go_name": "P:mitotic cell cycle",
+      "namespace": "BP",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0006351",
+      "go_name": "DNA-templated transcription",
+      "namespace": "BP",
+      "weighted_score": 1.3,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0045944",
+      "go_name": "positive regulation of transcription by RNA pol II",
+      "namespace": "BP",
+      "weighted_score": 1.2,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0015701",
+      "go_name": "bicarbonate transport",
+      "namespace": "BP",
+      "weighted_score": 1.2,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0006508",
+      "go_name": "proteolysis",
+      "namespace": "BP",
+      "weighted_score": 1.1,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0001659",
+      "go_name": "temperature homeostasis",
+      "namespace": "BP",
+      "weighted_score": 1.0,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0010819",
+      "go_name": "regulation of T cell chemotaxis",
+      "namespace": "BP",
+      "weighted_score": 0.9,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    }
+  ],
+  "go_terms_cc": [
+    {
+      "go_id": "GO:0005680",
+      "go_name": "anaphase-promoting complex",
+      "namespace": "CC",
+      "weighted_score": 9.5,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "domain_annotation"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005829",
+      "go_name": "C:cytosol",
+      "namespace": "CC",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005634",
+      "go_name": "nucleus",
+      "namespace": "CC",
+      "weighted_score": 1.9,
+      "n_sources": 2,
+      "sources": [
+        "ai_esm2",
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "ai_esm2"
+    },
+    {
+      "go_id": "GO:0043234",
+      "go_name": "protein complex",
+      "namespace": "CC",
+      "weighted_score": 1.1,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0005737",
+      "go_name": "cytoplasm",
+      "namespace": "CC",
+      "weighted_score": 0.9,
+      "n_sources": 1,
+      "sources": [
+        "sequence_baseline"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "sequence_baseline"
+    }
+  ],
+  "active_sites": [
+    {
+      "residue_number": 3,
+      "chain_id": "A",
+      "one_letter": "R",
+      "three_letter": "ARG",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 224.76,
+      "plddt": 92.62,
+      "motifs": [
+        "dna_binding_cluster"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        11.527,
+        -19.59,
+        -26.121
+      ],
+      "domain_context": "anaphase-promoting complex subunit cdc26"
+    },
+    {
+      "residue_number": 4,
+      "chain_id": "A",
+      "one_letter": "R",
+      "three_letter": "ARG",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 223.96,
+      "plddt": 92.25,
+      "motifs": [
+        "dna_binding_cluster"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        10.522,
+        -15.962,
+        -25.35
+      ],
+      "domain_context": "anaphase-promoting complex subunit cdc26"
+    },
+    {
+      "residue_number": 5,
+      "chain_id": "A",
+      "one_letter": "K",
+      "three_letter": "LYS",
+      "conservation": 6.0,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 184.59,
+      "plddt": 93.12,
+      "motifs": [
+        "dna_binding_cluster"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        13.136,
+        -13.645,
+        -23.806
+      ],
+      "domain_context": "anaphase-promoting complex subunit cdc26"
+    },
+    {
+      "residue_number": 8,
+      "chain_id": "A",
+      "one_letter": "R",
+      "three_letter": "ARG",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 200.56,
+      "plddt": 95.25,
+      "motifs": [
+        "acid_base_pair"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        12.806,
+        -6.225,
+        -18.491
+      ],
+      "domain_context": "anaphase-promoting complex subunit cdc26"
+    },
+    {
+      "residue_number": 10,
+      "chain_id": "A",
+      "one_letter": "E",
+      "three_letter": "GLU",
+      "conservation": 6.0,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 126.93,
+      "plddt": 94.94,
+      "motifs": [
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        12.287,
+        0.054,
+        -17.162
+      ],
+      "domain_context": "anaphase-promoting complex subunit cdc26"
+    },
+    {
+      "residue_number": 12,
+      "chain_id": "A",
+      "one_letter": "K",
+      "three_letter": "LYS",
+      "conservation": 6.0,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 129.48,
+      "plddt": 95.31,
+      "motifs": [
+        "acid_base_pair",
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        10.598,
+        6.196,
+        -16.934
+      ],
+      "domain_context": "anaphase-promoting complex subunit cdc26"
+    },
+    {
+      "residue_number": 14,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 98.38,
+      "plddt": 94.0,
+      "motifs": [
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "acid_base_pair"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        6.613,
+        9.637,
+        -16.678
+      ],
+      "domain_context": "anaphase-promoting complex subunit cdc26"
+    },
+    {
+      "residue_number": 15,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 60.34,
+      "plddt": 94.44,
+      "motifs": [
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "acid_base_pair"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        6.36,
+        7.245,
+        -13.645
+      ],
+      "domain_context": "anaphase-promoting complex subunit cdc26"
+    },
+    {
+      "residue_number": 17,
+      "chain_id": "A",
+      "one_letter": "E",
+      "three_letter": "GLU",
+      "conservation": 6.0,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 119.36,
+      "plddt": 93.75,
+      "motifs": [
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        4.697,
+        12.481,
+        -12.83
+      ],
+      "domain_context": "anaphase-promoting complex subunit cdc26"
+    },
+    {
+      "residue_number": 18,
+      "chain_id": "A",
+      "one_letter": "E",
+      "three_letter": "GLU",
+      "conservation": 6.0,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 106.88,
+      "plddt": 94.44,
+      "motifs": [
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        2.125,
+        9.671,
+        -12.326
+      ],
+      "domain_context": "anaphase-promoting complex subunit cdc26"
+    },
+    {
+      "residue_number": 20,
+      "chain_id": "A",
+      "one_letter": "E",
+      "three_letter": "GLU",
+      "conservation": 6.0,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 78.77,
+      "plddt": 94.31,
+      "motifs": [
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        3.178,
+        13.032,
+        -7.957
+      ],
+      "domain_context": "anaphase-promoting complex subunit cdc26"
+    },
+    {
+      "residue_number": 23,
+      "chain_id": "A",
+      "one_letter": "R",
+      "three_letter": "ARG",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 130.88,
+      "plddt": 91.75,
+      "motifs": [
+        "acid_base_pair",
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        0.142,
+        11.773,
+        -4.313
+      ],
+      "domain_context": "anaphase-promoting complex subunit cdc26"
+    },
+    {
+      "residue_number": 24,
+      "chain_id": "A",
+      "one_letter": "K",
+      "three_letter": "LYS",
+      "conservation": 6.0,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 140.21,
+      "plddt": 91.62,
+      "motifs": [
+        "acid_base_pair",
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -1.534,
+        15.175,
+        -4.95
+      ],
+      "domain_context": "anaphase-promoting complex subunit cdc26"
+    },
+    {
+      "residue_number": 25,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 82.96,
+      "plddt": 88.0,
+      "motifs": [
+        "acid_base_pair",
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -4.958,
+        13.499,
+        -5.515
+      ],
+      "domain_context": "anaphase-promoting complex subunit cdc26"
+    },
+    {
+      "residue_number": 27,
+      "chain_id": "A",
+      "one_letter": "E",
+      "three_letter": "GLU",
+      "conservation": 6.0,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 79.08,
+      "plddt": 81.88,
+      "motifs": [
+        "acid_base_pair",
+        "acid_base_pair",
+        "acid_base_pair",
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -3.401,
+        14.749,
+        -0.352
+      ],
+      "domain_context": "anaphase-promoting complex subunit cdc26"
+    },
+    {
+      "residue_number": 57,
+      "chain_id": "A",
+      "one_letter": "R",
+      "three_letter": "ARG",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 110.16,
+      "plddt": 86.19,
+      "motifs": [
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -19.899,
+        -0.863,
+        10.106
+      ],
+      "domain_context": "anaphase-promoting complex subunit cdc26"
+    },
+    {
+      "residue_number": 58,
+      "chain_id": "A",
+      "one_letter": "E",
+      "three_letter": "GLU",
+      "conservation": 6.0,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 81.58,
+      "plddt": 87.62,
+      "motifs": [
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -19.579,
+        -3.506,
+        12.877
+      ],
+      "domain_context": "anaphase-promoting complex subunit cdc26"
+    },
+    {
+      "residue_number": 63,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 112.26,
+      "plddt": 89.75,
+      "motifs": [
+        "acid_base_pair"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -22.551,
+        -10.166,
+        8.391
+      ],
+      "domain_context": "anaphase-promoting complex subunit cdc26"
+    },
+    {
+      "residue_number": 64,
+      "chain_id": "A",
+      "one_letter": "R",
+      "three_letter": "ARG",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 145.65,
+      "plddt": 93.5,
+      "motifs": [
+        "acid_base_pair"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -19.546,
+        -10.285,
+        5.95
+      ],
+      "domain_context": "anaphase-promoting complex subunit cdc26"
+    }
+  ],
+  "binding_pockets": [],
+  "allosteric_sites": [],
+  "ppi_partners": [
+    {
+      "partner_id": "9606.ENSP00000426654",
+      "partner_name": "ANAPC4",
+      "combined_score": 999,
+      "experimental_score": 984,
+      "database_score": 900,
+      "textmining_score": 415,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        85,
+        1,
+        3,
+        4,
+        76,
+        80,
+        8,
+        72,
+        5,
+        45,
+        79,
+        2,
+        11,
+        68,
+        50
+      ],
+      "interface_letters": [
+        "F",
+        "M",
+        "R",
+        "R",
+        "R",
+        "F",
+        "R",
+        "K",
+        "K",
+        "E",
+        "Q",
+        "L",
+        "L",
+        "K",
+        "L"
+      ],
+      "interface_charge": 6.0,
+      "interface_hydrophobicity": -1.187,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000361540",
+      "partner_name": "CDC20",
+      "combined_score": 999,
+      "experimental_score": 998,
+      "database_score": 800,
+      "textmining_score": 703,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        85,
+        1,
+        3,
+        4,
+        76,
+        80,
+        8,
+        72,
+        5,
+        45,
+        79,
+        2,
+        11,
+        68,
+        50
+      ],
+      "interface_letters": [
+        "F",
+        "M",
+        "R",
+        "R",
+        "R",
+        "F",
+        "R",
+        "K",
+        "K",
+        "E",
+        "Q",
+        "L",
+        "L",
+        "K",
+        "L"
+      ],
+      "interface_charge": 6.0,
+      "interface_hydrophobicity": -1.187,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000261819",
+      "partner_name": "ANAPC5",
+      "combined_score": 999,
+      "experimental_score": 969,
+      "database_score": 900,
+      "textmining_score": 814,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        85,
+        1,
+        3,
+        4,
+        76,
+        80,
+        8,
+        72,
+        5,
+        45,
+        79,
+        2,
+        11,
+        68,
+        50
+      ],
+      "interface_letters": [
+        "F",
+        "M",
+        "R",
+        "R",
+        "R",
+        "F",
+        "R",
+        "K",
+        "K",
+        "E",
+        "Q",
+        "L",
+        "L",
+        "K",
+        "L"
+      ],
+      "interface_charge": 6.0,
+      "interface_hydrophobicity": -1.187,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000437360",
+      "partner_name": "ANAPC15",
+      "combined_score": 999,
+      "experimental_score": 947,
+      "database_score": 900,
+      "textmining_score": 852,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        85,
+        1,
+        3,
+        4,
+        76,
+        80,
+        8,
+        72,
+        5,
+        45,
+        79,
+        2,
+        11,
+        68,
+        50
+      ],
+      "interface_letters": [
+        "F",
+        "M",
+        "R",
+        "R",
+        "R",
+        "F",
+        "R",
+        "K",
+        "K",
+        "E",
+        "Q",
+        "L",
+        "L",
+        "K",
+        "L"
+      ],
+      "interface_charge": 6.0,
+      "interface_hydrophobicity": -1.187,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000421842",
+      "partner_name": "ANAPC13",
+      "combined_score": 999,
+      "experimental_score": 977,
+      "database_score": 900,
+      "textmining_score": 965,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        85,
+        1,
+        3,
+        4,
+        76,
+        80,
+        8,
+        72,
+        5,
+        45,
+        79,
+        2,
+        11,
+        68,
+        50
+      ],
+      "interface_letters": [
+        "F",
+        "M",
+        "R",
+        "R",
+        "R",
+        "F",
+        "R",
+        "K",
+        "K",
+        "E",
+        "Q",
+        "L",
+        "L",
+        "K",
+        "L"
+      ],
+      "interface_charge": 6.0,
+      "interface_hydrophobicity": -1.187,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000348554",
+      "partner_name": "CDC16",
+      "combined_score": 999,
+      "experimental_score": 991,
+      "database_score": 900,
+      "textmining_score": 989,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        85,
+        1,
+        3,
+        4,
+        76,
+        80,
+        8,
+        72,
+        5,
+        45,
+        79,
+        2,
+        11,
+        68,
+        50
+      ],
+      "interface_letters": [
+        "F",
+        "M",
+        "R",
+        "R",
+        "R",
+        "F",
+        "R",
+        "K",
+        "K",
+        "E",
+        "Q",
+        "L",
+        "L",
+        "K",
+        "L"
+      ],
+      "interface_charge": 6.0,
+      "interface_hydrophobicity": -1.187,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000478501",
+      "partner_name": "ANAPC10",
+      "combined_score": 999,
+      "experimental_score": 998,
+      "database_score": 900,
+      "textmining_score": 959,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        85,
+        1,
+        3,
+        4,
+        76,
+        80,
+        8,
+        72,
+        5,
+        45,
+        79,
+        2,
+        11,
+        68,
+        50
+      ],
+      "interface_letters": [
+        "F",
+        "M",
+        "R",
+        "R",
+        "R",
+        "F",
+        "R",
+        "K",
+        "K",
+        "E",
+        "Q",
+        "L",
+        "L",
+        "K",
+        "L"
+      ],
+      "interface_charge": 6.0,
+      "interface_hydrophobicity": -1.187,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000339109",
+      "partner_name": "ANAPC1",
+      "combined_score": 999,
+      "experimental_score": 989,
+      "database_score": 900,
+      "textmining_score": 586,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        85,
+        1,
+        3,
+        4,
+        76,
+        80,
+        8,
+        72,
+        5,
+        45,
+        79,
+        2,
+        11,
+        68,
+        50
+      ],
+      "interface_letters": [
+        "F",
+        "M",
+        "R",
+        "R",
+        "R",
+        "F",
+        "R",
+        "K",
+        "K",
+        "E",
+        "Q",
+        "L",
+        "L",
+        "K",
+        "L"
+      ],
+      "interface_charge": 6.0,
+      "interface_hydrophobicity": -1.187,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000477760",
+      "partner_name": "ANAPC16",
+      "combined_score": 999,
+      "experimental_score": 975,
+      "database_score": 900,
+      "textmining_score": 906,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        85,
+        1,
+        3,
+        4,
+        76,
+        80,
+        8,
+        72,
+        5,
+        45,
+        79,
+        2,
+        11,
+        68,
+        50
+      ],
+      "interface_letters": [
+        "F",
+        "M",
+        "R",
+        "R",
+        "R",
+        "F",
+        "R",
+        "K",
+        "K",
+        "E",
+        "Q",
+        "L",
+        "L",
+        "K",
+        "L"
+      ],
+      "interface_charge": 6.0,
+      "interface_hydrophobicity": -1.187,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000314004",
+      "partner_name": "ANAPC2",
+      "combined_score": 999,
+      "experimental_score": 998,
+      "database_score": 900,
+      "textmining_score": 386,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        85,
+        1,
+        3,
+        4,
+        76,
+        80,
+        8,
+        72,
+        5,
+        45,
+        79,
+        2,
+        11,
+        68,
+        50
+      ],
+      "interface_letters": [
+        "F",
+        "M",
+        "R",
+        "R",
+        "R",
+        "F",
+        "R",
+        "K",
+        "K",
+        "E",
+        "Q",
+        "L",
+        "L",
+        "K",
+        "L"
+      ],
+      "interface_charge": 6.0,
+      "interface_hydrophobicity": -1.187,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000378350",
+      "partner_name": "CDC23",
+      "combined_score": 999,
+      "experimental_score": 975,
+      "database_score": 900,
+      "textmining_score": 972,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        85,
+        1,
+        3,
+        4,
+        76,
+        80,
+        8,
+        72,
+        5,
+        45,
+        79,
+        2,
+        11,
+        68,
+        50
+      ],
+      "interface_letters": [
+        "F",
+        "M",
+        "R",
+        "R",
+        "R",
+        "F",
+        "R",
+        "K",
+        "K",
+        "E",
+        "Q",
+        "L",
+        "L",
+        "K",
+        "L"
+      ],
+      "interface_charge": 6.0,
+      "interface_hydrophobicity": -1.187,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000434614",
+      "partner_name": "CDC27",
+      "combined_score": 999,
+      "experimental_score": 998,
+      "database_score": 900,
+      "textmining_score": 873,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        85,
+        1,
+        3,
+        4,
+        76,
+        80,
+        8,
+        72,
+        5,
+        45,
+        79,
+        2,
+        11,
+        68,
+        50
+      ],
+      "interface_letters": [
+        "F",
+        "M",
+        "R",
+        "R",
+        "R",
+        "F",
+        "R",
+        "K",
+        "K",
+        "E",
+        "Q",
+        "L",
+        "L",
+        "K",
+        "L"
+      ],
+      "interface_charge": 6.0,
+      "interface_hydrophobicity": -1.187,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000394394",
+      "partner_name": "ANAPC7",
+      "combined_score": 998,
+      "experimental_score": 976,
+      "database_score": 900,
+      "textmining_score": 431,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        85,
+        1,
+        3,
+        4,
+        76,
+        80,
+        8,
+        72,
+        5,
+        45,
+        79,
+        2,
+        11,
+        68,
+        50
+      ],
+      "interface_letters": [
+        "F",
+        "M",
+        "R",
+        "R",
+        "R",
+        "F",
+        "R",
+        "K",
+        "K",
+        "E",
+        "Q",
+        "L",
+        "L",
+        "K",
+        "L"
+      ],
+      "interface_charge": 6.0,
+      "interface_hydrophobicity": -1.187,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000349957",
+      "partner_name": "ANAPC11",
+      "combined_score": 996,
+      "experimental_score": 507,
+      "database_score": 900,
+      "textmining_score": 923,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        85,
+        1,
+        3,
+        4,
+        76,
+        80,
+        8,
+        72,
+        5,
+        45,
+        79,
+        2,
+        11,
+        68,
+        50
+      ],
+      "interface_letters": [
+        "F",
+        "M",
+        "R",
+        "R",
+        "R",
+        "F",
+        "R",
+        "K",
+        "K",
+        "E",
+        "Q",
+        "L",
+        "L",
+        "K",
+        "L"
+      ],
+      "interface_charge": 6.0,
+      "interface_hydrophobicity": -1.187,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000378529",
+      "partner_name": "FZR1",
+      "combined_score": 996,
+      "experimental_score": 972,
+      "database_score": 800,
+      "textmining_score": 399,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        85,
+        1,
+        3,
+        4,
+        76,
+        80,
+        8,
+        72,
+        5,
+        45,
+        79,
+        2,
+        11,
+        68,
+        50
+      ],
+      "interface_letters": [
+        "F",
+        "M",
+        "R",
+        "R",
+        "R",
+        "F",
+        "R",
+        "K",
+        "K",
+        "E",
+        "Q",
+        "L",
+        "L",
+        "K",
+        "L"
+      ],
+      "interface_charge": 6.0,
+      "interface_hydrophobicity": -1.187,
+      "binding_mode": "electrostatic"
+    }
+  ],
+  "mean_plddt": 72.99,
+  "n_evidence_sources": 8,
+  "overall_confidence": "VERY HIGH",
+  "validation_suggestions": [
+    "Co-immunoprecipitation with ANAPC4 (unknown interaction, predicted interface: [85, 1, 3])",
+    "Co-immunoprecipitation with CDC20 (unknown interaction, predicted interface: [85, 1, 3])",
+    "GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation"
+  ],
+  "modules_run": [
+    "structure",
+    "physico",
+    "active",
+    "homology",
+    "esm2",
+    "go",
+    "ec",
+    "ppi"
+  ],
+  "modules_missing": [
+    "pockets",
+    "allosteric",
+    "chem_env",
+    "foldseek"
+  ]
+}

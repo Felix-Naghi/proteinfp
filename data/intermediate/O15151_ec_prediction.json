@@ -2,30 +2,17 @@
   "uniprot_id": "O15151",
   "sequence_length": 490,
   "is_enzyme": false,
-  "enzyme_confidence": 0.72,
+  "enzyme_confidence": 0.24,
   "top_prediction": {
-    "ec_class": "3",
-    "ec_name": "Hydrolase",
-    "ec_full": "EC 3.6.1",
-    "score": 0.72,
+    "ec_class": "2",
+    "ec_name": "Transferase",
+    "ec_full": "EC 2.x.x.x",
+    "score": 0.24,
     "evidence": [
-      "go_prediction",
-      "structural_motif",
       "sequence_composition"
     ]
   },
   "all_predictions": [
-    {
-      "ec_class": "3",
-      "ec_name": "Hydrolase",
-      "ec_full": "EC 3.6.1",
-      "score": 0.72,
-      "evidence": [
-        "go_prediction",
-        "structural_motif",
-        "sequence_composition"
-      ]
-    },
     {
       "ec_class": "2",
       "ec_name": "Transferase",
@@ -54,8 +41,8 @@
       ]
     }
   ],
-  "specific_ec": "3.6.1",
-  "specific_ec_name": "ATPase",
+  "specific_ec": "",
+  "specific_ec_name": "",
   "non_enzyme_score": 0.0,
   "ml_enzyme_prob": 0.079
 }

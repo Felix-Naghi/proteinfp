@@ -1,0 +1,76 @@
+======================================================================
+  ProteinFP Prediction Report
+  Generated: 2026-04-19 19:12:08
+======================================================================
+
+  Protein    : Tyrosine-protein phosphatase non-receptor type 2
+  Gene       : PTPN2
+  UniProt    : P17706
+  Organism   : Homo sapiens
+  Length     : 415 aa
+  Mean pLDDT : 85.9
+  Confidence : HIGH
+
+──────────────────────────────────────────────────────────────────────
+  FUNCTIONAL PREDICTION
+──────────────────────────────────────────────────────────────────────
+  Top function     : serine-type endopeptidase activity
+  Enzyme           : no (non-enzyme)
+  Location         : integral component of plasma membrane
+  Evidence sources : 8
+
+──────────────────────────────────────────────────────────────────────
+  GENE ONTOLOGY PREDICTIONS
+──────────────────────────────────────────────────────────────────────
+
+  Molecular Function:
+    [HIGH  ] GO:0004725 protein tyrosine phosphatase activity (score=10.4, 2 sources)
+    [MEDIUM] GO:0046872 metal ion binding (score=3.0, 2 sources)
+    [LOW   ] GO:0004252 serine-type endopeptidase activity (score=1.7, 1 sources)
+    [LOW   ] GO:0003677 DNA binding (score=1.7, 1 sources)
+    [LOW   ] GO:0004672 protein kinase activity (score=1.7, 1 sources)
+
+  Biological Process:
+    [HIGH  ] GO:0006470 protein dephosphorylation (score=10.4, 2 sources)
+    [HIGH  ] GO:0016311 dephosphorylation (score=10.4, 2 sources)
+    [LOW   ] GO:0006468 protein phosphorylation (score=1.6, 1 sources)
+    [LOW   ] GO:0018108 peptidyl-tyrosine phosphorylation (score=1.4, 1 sources)
+    [LOW   ] GO:0015671 oxygen transport (score=1.4, 1 sources)
+
+  Cellular Component:
+    [LOW   ] GO:0005634 nucleus (score=1.9, 2 sources)
+    [LOW   ] GO:0005887 integral component of plasma membrane (score=1.3, 1 sources)
+    [LOW   ] GO:0005833 hemoglobin complex (score=1.3, 1 sources)
+
+──────────────────────────────────────────────────────────────────────
+  ACTIVE SITES
+──────────────────────────────────────────────────────────────────────
+  C94 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
+  C95 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
+  H157 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H174 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H176 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+
+──────────────────────────────────────────────────────────────────────
+  PROTEIN INTERACTIONS (top 8)
+──────────────────────────────────────────────────────────────────────
+  STAT3           STRING=990  type=unknown
+  STAT1           STRING=978  type=unknown
+  JAK3            STRING=971  type=unknown
+  STAT4           STRING=965  type=unknown
+  JAK1            STRING=961  type=unknown
+  JAK2            STRING=957  type=unknown
+  TYK2            STRING=953  type=unknown
+  STAT6           STRING=953  type=unknown
+
+──────────────────────────────────────────────────────────────────────
+  VALIDATION SUGGESTIONS
+──────────────────────────────────────────────────────────────────────
+  1. Alanine scanning mutagenesis of predicted active site residues (C94, C95, H157) to confirm functional importance
+  2. Co-immunoprecipitation with STAT3 (unknown interaction, predicted interface: [317, 1, 313])
+  3. Co-immunoprecipitation with STAT1 (unknown interaction, predicted interface: [317, 1, 313])
+  4. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+
+──────────────────────────────────────────────────────────────────────
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+======================================================================

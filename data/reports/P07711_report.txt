@@ -1,0 +1,77 @@
+======================================================================
+  ProteinFP Prediction Report
+  Generated: 2026-04-19 15:06:00
+======================================================================
+
+  Protein    : Procathepsin L
+  Gene       : CTSL
+  UniProt    : P07711
+  Organism   : Homo sapiens
+  Length     : 333 aa
+  Mean pLDDT : 93.5
+  Confidence : VERY HIGH
+
+──────────────────────────────────────────────────────────────────────
+  FUNCTIONAL PREDICTION
+──────────────────────────────────────────────────────────────────────
+  Top function     : Thiol protease important for the overall degradation of proteins in lysosomes (Probable). Plays a critical for normal cellular functions such as general protein turnover, antigen processing and bone r
+  Enzyme           : yes — 3.4.21
+  Location         : C:apical plasma membrane
+  Evidence sources : 8
+
+──────────────────────────────────────────────────────────────────────
+  GENE ONTOLOGY PREDICTIONS
+──────────────────────────────────────────────────────────────────────
+
+  Molecular Function:
+    [HIGH  ] GO:0008234 cysteine-type peptidase activity (score=13.0, 2 sources)
+    [HIGH  ] GO:0046872 F:metal ion binding (score=8.2, 3 sources)
+    [HIGH  ] GO:0005764 C:lysosome (score=5.1, 1 sources)
+    [HIGH  ] GO:0004197 F:cysteine-type endopeptidase activity (score=5.1, 1 sources)
+    [HIGH  ] GO:0042583 C:chromaffin granule (score=5.1, 1 sources)
+
+  Biological Process:
+    [HIGH  ] GO:0006508 proteolysis (score=5.8, 2 sources)
+    [HIGH  ] GO:0051603 P:proteolysis involved in protein catabolic p (score=5.1, 1 sources)
+    [HIGH  ] GO:0048002 P:antigen processing and presentation of pept (score=5.1, 1 sources)
+    [HIGH  ] GO:0030574 P:collagen catabolic process (score=5.1, 1 sources)
+    [HIGH  ] GO:0060309 P:elastin catabolic process (score=5.1, 1 sources)
+
+  Cellular Component:
+    [HIGH  ] GO:0005634 C:nucleus (score=7.8, 3 sources)
+    [HIGH  ] GO:0005615 C:extracellular space (score=5.1, 1 sources)
+    [HIGH  ] GO:0016324 C:apical plasma membrane (score=5.1, 1 sources)
+
+──────────────────────────────────────────────────────────────────────
+  ACTIVE SITES
+──────────────────────────────────────────────────────────────────────
+  H276 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H321 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  C322 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
+  H23 [HIGH  ] motifs: serine_protease_triad, zinc_binding_cluster
+  H253 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+
+──────────────────────────────────────────────────────────────────────
+  PROTEIN INTERACTIONS (top 8)
+──────────────────────────────────────────────────────────────────────
+  CD74            STRING=993  type=unknown
+  CSTA            STRING=992  type=unknown
+  CTSB            STRING=974  type=unknown
+  CSTB            STRING=954  type=unknown
+  CST7            STRING=941  type=unknown
+  BCL2            STRING=931  type=apoptotic
+  LGMN            STRING=920  type=unknown
+  BCL2L1          STRING=919  type=apoptotic
+
+──────────────────────────────────────────────────────────────────────
+  VALIDATION SUGGESTIONS
+──────────────────────────────────────────────────────────────────────
+  1. Alanine scanning mutagenesis of predicted active site residues (H276, H321, C322) to confirm functional importance
+  2. Co-immunoprecipitation with CD74 (unknown interaction, predicted interface: [1, 101, 319])
+  3. Co-immunoprecipitation with CSTA (unknown interaction, predicted interface: [1, 101, 319])
+  4. Enzyme activity assay consistent with EC 3.4.21 using appropriate substrate panel
+  5. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+
+──────────────────────────────────────────────────────────────────────
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+======================================================================

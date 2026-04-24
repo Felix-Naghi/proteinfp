@@ -1,0 +1,77 @@
+======================================================================
+  ProteinFP Prediction Report
+  Generated: 2026-04-19 15:49:19
+======================================================================
+
+  Protein    : Transcription factor JunB
+  Gene       : JUNB
+  UniProt    : P17275
+  Organism   : Homo sapiens
+  Length     : 347 aa
+  Mean pLDDT : 59.5
+  Confidence : HIGH
+
+──────────────────────────────────────────────────────────────────────
+  FUNCTIONAL PREDICTION
+──────────────────────────────────────────────────────────────────────
+  Top function     : Transcription factor involved in regulating gene activity following the primary growth factor response. Binds to the DNA sequence 5'-TGA[GC]TCA-3'. Heterodimerizes with proteins of the FOS family to f
+  Enzyme           : no (non-enzyme)
+  Location         : membrane
+  Evidence sources : 8
+
+──────────────────────────────────────────────────────────────────────
+  GENE ONTOLOGY PREDICTIONS
+──────────────────────────────────────────────────────────────────────
+
+  Molecular Function:
+    [HIGH  ] GO:0003700 DNA-binding transcription factor activity (score=24.0, 4 sources)
+    [HIGH  ] GO:0003677 DNA binding (score=15.1, 3 sources)
+    [HIGH  ] GO:0000978 F:RNA polymerase II cis-regulatory region seq (score=9.7, 2 sources)
+    [HIGH  ] GO:0000981 F:DNA-binding transcription factor activity,  (score=9.6, 2 sources)
+    [HIGH  ] GO:0001228 F:DNA-binding transcription activator activit (score=9.4, 2 sources)
+
+  Biological Process:
+    [HIGH  ] GO:0006355 regulation of DNA-templated transcription (score=20.0, 2 sources)
+    [HIGH  ] GO:0045944 P:positive regulation of transcription by RNA (score=12.3, 3 sources)
+    [HIGH  ] GO:0051726 P:regulation of cell cycle (score=5.1, 1 sources)
+    [HIGH  ] GO:0042127 P:regulation of cell population proliferation (score=5.1, 1 sources)
+    [HIGH  ] GO:0035497 F:cAMP response element binding (score=5.1, 1 sources)
+
+  Cellular Component:
+    [HIGH  ] GO:0005634 C:nucleus (score=14.4, 4 sources)
+    [HIGH  ] GO:0005667 C:transcription regulator complex (score=5.1, 1 sources)
+    [HIGH  ] GO:0035976 C:transcription factor AP-1 complex (score=5.1, 1 sources)
+
+──────────────────────────────────────────────────────────────────────
+  ACTIVE SITES
+──────────────────────────────────────────────────────────────────────
+  H331 [HIGH  ] motifs: cysteine_protease_dyad
+  C336 [HIGH  ] motifs: cysteine_protease_dyad
+  H30 [HIGH  ] motifs: serine_protease_triad, acid_base_pair
+  H147 [HIGH  ] motifs: zinc_binding_cluster, zinc_binding_cluster
+  H11 [HIGH  ] motifs: zinc_binding_cluster, acid_base_pair
+
+──────────────────────────────────────────────────────────────────────
+  PROTEIN INTERACTIONS (top 8)
+──────────────────────────────────────────────────────────────────────
+  JUN             STRING=999  type=unknown
+  FOSL1           STRING=999  type=unknown
+  FOSB            STRING=999  type=unknown
+  JUND            STRING=999  type=unknown
+  FOSL2           STRING=999  type=unknown
+  FOS             STRING=999  type=unknown
+  BATF            STRING=997  type=unknown
+  MAPK9           STRING=979  type=unknown
+
+──────────────────────────────────────────────────────────────────────
+  VALIDATION SUGGESTIONS
+──────────────────────────────────────────────────────────────────────
+  1. Alanine scanning mutagenesis of predicted active site residues (H331, C336, H30) to confirm functional importance
+  2. Co-immunoprecipitation with JUN (unknown interaction, predicted interface: [347, 1, 113])
+  3. Co-immunoprecipitation with FOSL1 (unknown interaction, predicted interface: [347, 1, 113])
+  4. EMSA or fluorescence polarisation assay to confirm 'DNA-binding transcription factor activity' (GO:0003700)
+  5. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+
+──────────────────────────────────────────────────────────────────────
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+======================================================================

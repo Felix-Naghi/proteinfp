@@ -1,0 +1,1878 @@
+{
+  "uniprot_id": "P11166",
+  "gene_name": "SLC2A1",
+  "protein_name": "Solute carrier family 2, facilitated glucose transporter member 1",
+  "organism": "Homo sapiens",
+  "sequence_length": 492,
+  "generated_at": "2026-04-19 19:38:06",
+  "top_function": "Facilitative glucose transporter, which is responsible for constitutive or basal glucose uptake (PubMed:10227690, PubMed:10954735, PubMed:18245775, PubMed:19449892, PubMed:25982116, PubMed:27078104, P",
+  "is_enzyme": false,
+  "ec_number": "1.10.99",
+  "subcellular_location": "membrane",
+  "go_terms_mf": [
+    {
+      "go_id": "GO:0022857",
+      "go_name": "transmembrane transporter activity",
+      "namespace": "MF",
+      "weighted_score": 20.0,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "domain_annotation"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0055056",
+      "go_name": "D-glucose transmembrane transporter activity",
+      "namespace": "MF",
+      "weighted_score": 9.5,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "domain_annotation"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0030864",
+      "go_name": "C:cortical actin cytoskeleton",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0001917",
+      "go_name": "C:photoreceptor inner segment",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0030496",
+      "go_name": "C:midbody",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0098793",
+      "go_name": "C:presynapse",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0033300",
+      "go_name": "F:dehydroascorbic acid transmembrane transporter activity",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0031982",
+      "go_name": "C:vesicle",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0046323",
+      "go_name": "P:D-glucose import",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005901",
+      "go_name": "C:caveola",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0014704",
+      "go_name": "C:intercalated disc",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0042383",
+      "go_name": "C:sarcolemma",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0015150",
+      "go_name": "F:fucose transmembrane transporter activity",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0042802",
+      "go_name": "F:identical protein binding",
+      "namespace": "MF",
+      "weighted_score": 3.0,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005324",
+      "go_name": "F:long-chain fatty acid transmembrane transporter activity",
+      "namespace": "MF",
+      "weighted_score": 3.0,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "experimental_homolog"
+    }
+  ],
+  "go_terms_bp": [
+    {
+      "go_id": "GO:0055085",
+      "go_name": "transmembrane transport",
+      "namespace": "BP",
+      "weighted_score": 11.25,
+      "n_sources": 1,
+      "sources": [
+        "domain_annotation"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "domain_annotation"
+    },
+    {
+      "go_id": "GO:1904659",
+      "go_name": "D-glucose transmembrane transport",
+      "namespace": "BP",
+      "weighted_score": 9.5,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "domain_annotation"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:1990350",
+      "go_name": "C:glucose transporter complex",
+      "namespace": "BP",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0042149",
+      "go_name": "P:cellular response to glucose starvation",
+      "namespace": "BP",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0032868",
+      "go_name": "P:response to insulin",
+      "namespace": "BP",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0055114",
+      "go_name": "oxidation-reduction process",
+      "namespace": "BP",
+      "weighted_score": 1.4,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0006351",
+      "go_name": "DNA-templated transcription",
+      "namespace": "BP",
+      "weighted_score": 1.3,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0030193",
+      "go_name": "regulation of blood coagulation",
+      "namespace": "BP",
+      "weighted_score": 1.2,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0045944",
+      "go_name": "positive regulation of transcription by RNA pol II",
+      "namespace": "BP",
+      "weighted_score": 1.2,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0042493",
+      "go_name": "response to drug",
+      "namespace": "BP",
+      "weighted_score": 1.1,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0006508",
+      "go_name": "proteolysis",
+      "namespace": "BP",
+      "weighted_score": 1.1,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0010819",
+      "go_name": "regulation of T cell chemotaxis",
+      "namespace": "BP",
+      "weighted_score": 0.9,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    }
+  ],
+  "go_terms_cc": [
+    {
+      "go_id": "GO:0016020",
+      "go_name": "membrane",
+      "namespace": "CC",
+      "weighted_score": 21.5,
+      "n_sources": 3,
+      "sources": [
+        "experimental_homolog",
+        "domain_annotation",
+        "structural_motif"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005886",
+      "go_name": "C:plasma membrane",
+      "namespace": "CC",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0016324",
+      "go_name": "C:apical plasma membrane",
+      "namespace": "CC",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0016323",
+      "go_name": "C:basolateral plasma membrane",
+      "namespace": "CC",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005829",
+      "go_name": "C:cytosol",
+      "namespace": "CC",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0001939",
+      "go_name": "C:female pronucleus",
+      "namespace": "CC",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0000139",
+      "go_name": "C:Golgi membrane",
+      "namespace": "CC",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0001674",
+      "go_name": "C:female germ cell nucleus",
+      "namespace": "CC",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0045121",
+      "go_name": "C:membrane raft",
+      "namespace": "CC",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0065003",
+      "go_name": "P:protein-containing complex assembly",
+      "namespace": "CC",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    }
+  ],
+  "active_sites": [
+    {
+      "residue_number": 239,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 138.35,
+      "plddt": 89.75,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        -25.53,
+        -6.545,
+        17.807
+      ],
+      "domain_context": "sugar porter family mfs transporter"
+    },
+    {
+      "residue_number": 113,
+      "chain_id": "A",
+      "one_letter": "S",
+      "three_letter": "SER",
+      "conservation": 4.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 0.0,
+      "plddt": 97.19,
+      "motifs": [
+        "p_loop_walker_a"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        11.019,
+        23.301,
+        -7.663
+      ],
+      "domain_context": "sugar porter family mfs transporter"
+    },
+    {
+      "residue_number": 175,
+      "chain_id": "A",
+      "one_letter": "G",
+      "three_letter": "GLY",
+      "conservation": 4.0,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 4.03,
+      "plddt": 93.75,
+      "motifs": [
+        "p_loop_walker_a"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        5.358,
+        9.204,
+        -16.035
+      ],
+      "domain_context": "sugar porter family mfs transporter"
+    },
+    {
+      "residue_number": 181,
+      "chain_id": "A",
+      "one_letter": "G",
+      "three_letter": "GLY",
+      "conservation": 4.0,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 3.69,
+      "plddt": 92.75,
+      "motifs": [
+        "p_loop_walker_a"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        7.657,
+        12.472,
+        -17.809
+      ],
+      "domain_context": "sugar porter family mfs transporter"
+    },
+    {
+      "residue_number": 111,
+      "chain_id": "A",
+      "one_letter": "G",
+      "three_letter": "GLY",
+      "conservation": 4.0,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 21.23,
+      "plddt": 97.19,
+      "motifs": [
+        "p_loop_walker_a"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        5.753,
+        21.73,
+        -8.639
+      ],
+      "domain_context": "sugar porter family mfs transporter"
+    },
+    {
+      "residue_number": 112,
+      "chain_id": "A",
+      "one_letter": "F",
+      "three_letter": "PHE",
+      "conservation": 4.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 109.25,
+      "plddt": 97.62,
+      "motifs": [
+        "p_loop_walker_a"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        7.57,
+        25.022,
+        -8.115
+      ],
+      "domain_context": "sugar porter family mfs transporter"
+    },
+    {
+      "residue_number": 114,
+      "chain_id": "A",
+      "one_letter": "K",
+      "three_letter": "LYS",
+      "conservation": 6.0,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 77.64,
+      "plddt": 95.88,
+      "motifs": [
+        "p_loop_walker_a"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        11.924,
+        23.931,
+        -11.365
+      ],
+      "domain_context": "sugar porter family mfs transporter"
+    },
+    {
+      "residue_number": 115,
+      "chain_id": "A",
+      "one_letter": "L",
+      "three_letter": "LEU",
+      "conservation": 3.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 142.81,
+      "plddt": 94.69,
+      "motifs": [
+        "p_loop_walker_a"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        10.726,
+        27.586,
+        -11.225
+      ],
+      "domain_context": "sugar porter family mfs transporter"
+    },
+    {
+      "residue_number": 116,
+      "chain_id": "A",
+      "one_letter": "G",
+      "three_letter": "GLY",
+      "conservation": 4.0,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 45.37,
+      "plddt": 94.69,
+      "motifs": [
+        "p_loop_walker_a"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        12.628,
+        28.158,
+        -7.934
+      ],
+      "domain_context": "sugar porter family mfs transporter"
+    },
+    {
+      "residue_number": 117,
+      "chain_id": "A",
+      "one_letter": "K",
+      "three_letter": "LYS",
+      "conservation": 6.0,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 97.71,
+      "plddt": 95.31,
+      "motifs": [
+        "p_loop_walker_a"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        15.807,
+        26.497,
+        -9.42
+      ],
+      "domain_context": "sugar porter family mfs transporter"
+    },
+    {
+      "residue_number": 176,
+      "chain_id": "A",
+      "one_letter": "L",
+      "three_letter": "LEU",
+      "conservation": 3.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 23.5,
+      "plddt": 92.19,
+      "motifs": [
+        "p_loop_walker_a"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        5.683,
+        8.384,
+        -19.778
+      ],
+      "domain_context": "sugar porter family mfs transporter"
+    },
+    {
+      "residue_number": 177,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 101.39,
+      "plddt": 90.12,
+      "motifs": [
+        "p_loop_walker_a"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        7.87,
+        10.959,
+        -21.621
+      ],
+      "domain_context": "sugar porter family mfs transporter"
+    },
+    {
+      "residue_number": 178,
+      "chain_id": "A",
+      "one_letter": "S",
+      "three_letter": "SER",
+      "conservation": 4.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 97.8,
+      "plddt": 91.25,
+      "motifs": [
+        "p_loop_walker_a"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        5.011,
+        11.399,
+        -24.173
+      ],
+      "domain_context": "sugar porter family mfs transporter"
+    },
+    {
+      "residue_number": 179,
+      "chain_id": "A",
+      "one_letter": "I",
+      "three_letter": "ILE",
+      "conservation": 3.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 65.15,
+      "plddt": 94.19,
+      "motifs": [
+        "p_loop_walker_a"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        2.65,
+        12.52,
+        -21.307
+      ],
+      "domain_context": "sugar porter family mfs transporter"
+    },
+    {
+      "residue_number": 180,
+      "chain_id": "A",
+      "one_letter": "M",
+      "three_letter": "MET",
+      "conservation": 4.0,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 37.86,
+      "plddt": 95.06,
+      "motifs": [
+        "p_loop_walker_a"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        4.28,
+        14.302,
+        -18.301
+      ],
+      "domain_context": "sugar porter family mfs transporter"
+    },
+    {
+      "residue_number": 236,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 99.81,
+      "plddt": 91.06,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -31.263,
+        -2.768,
+        13.834
+      ],
+      "domain_context": "sugar porter family mfs transporter"
+    },
+    {
+      "residue_number": 240,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 32.8,
+      "plddt": 90.62,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "acid_base_pair"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -22.777,
+        -4.242,
+        16.421
+      ],
+      "domain_context": "sugar porter family mfs transporter"
+    },
+    {
+      "residue_number": 133,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 0.0,
+      "plddt": 98.25,
+      "motifs": [],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        1.995,
+        8.549,
+        3.296
+      ],
+      "domain_context": "sugar porter family mfs transporter"
+    },
+    {
+      "residue_number": 160,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 0.09,
+      "plddt": 97.94,
+      "motifs": [],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        -6.446,
+        0.196,
+        0.651
+      ],
+      "domain_context": "sugar porter family mfs transporter"
+    },
+    {
+      "residue_number": 207,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 2.22,
+      "plddt": 96.88,
+      "motifs": [],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        -18.159,
+        10.662,
+        5.371
+      ],
+      "domain_context": "sugar porter family mfs transporter"
+    },
+    {
+      "residue_number": 337,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 0.36,
+      "plddt": 98.44,
+      "motifs": [],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        -1.125,
+        -15.033,
+        2.807
+      ],
+      "domain_context": "sugar porter family mfs transporter"
+    },
+    {
+      "residue_number": 347,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 14.05,
+      "plddt": 96.81,
+      "motifs": [],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        8.237,
+        -17.813,
+        -8.965
+      ],
+      "domain_context": "sugar porter family mfs transporter"
+    },
+    {
+      "residue_number": 484,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 156.25,
+      "plddt": 34.84,
+      "motifs": [
+        "zinc_binding_cluster",
+        "acid_base_pair"
+      ],
+      "evidence_score": 6,
+      "confidence": "HIGH",
+      "coords": [
+        7.404,
+        -33.372,
+        23.689
+      ],
+      "domain_context": ""
+    },
+    {
+      "residue_number": 50,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 114.28,
+      "plddt": 94.62,
+      "motifs": [],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        23.459,
+        28.119,
+        -12.419
+      ],
+      "domain_context": "sugar porter family mfs transporter"
+    },
+    {
+      "residue_number": 75,
+      "chain_id": "A",
+      "one_letter": "G",
+      "three_letter": "GLY",
+      "conservation": 4.0,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 0.0,
+      "plddt": 98.31,
+      "motifs": [
+        "flavin_binding"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        9.178,
+        10.683,
+        5.987
+      ],
+      "domain_context": "sugar porter family mfs transporter"
+    },
+    {
+      "residue_number": 76,
+      "chain_id": "A",
+      "one_letter": "G",
+      "three_letter": "GLY",
+      "conservation": 4.0,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 0.0,
+      "plddt": 98.0,
+      "motifs": [
+        "flavin_binding"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        7.086,
+        7.45,
+        6.005
+      ],
+      "domain_context": "sugar porter family mfs transporter"
+    },
+    {
+      "residue_number": 92,
+      "chain_id": "A",
+      "one_letter": "R",
+      "three_letter": "ARG",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 1.17,
+      "plddt": 96.38,
+      "motifs": [
+        "acid_base_pair"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        -9.88,
+        8.776,
+        11.95
+      ],
+      "domain_context": "sugar porter family mfs transporter"
+    },
+    {
+      "residue_number": 146,
+      "chain_id": "A",
+      "one_letter": "E",
+      "three_letter": "GLU",
+      "conservation": 6.0,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 3.72,
+      "plddt": 95.06,
+      "motifs": [
+        "acid_base_pair"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        -13.816,
+        0.336,
+        11.9
+      ],
+      "domain_context": "sugar porter family mfs transporter"
+    },
+    {
+      "residue_number": 201,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 30.31,
+      "plddt": 98.06,
+      "motifs": [],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        -10.866,
+        17.175,
+        1.296
+      ],
+      "domain_context": "sugar porter family mfs transporter"
+    },
+    {
+      "residue_number": 209,
+      "chain_id": "A",
+      "one_letter": "E",
+      "three_letter": "GLU",
+      "conservation": 6.0,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 10.92,
+      "plddt": 96.88,
+      "motifs": [
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        -16.539,
+        9.373,
+        11.66
+      ],
+      "domain_context": "sugar porter family mfs transporter"
+    }
+  ],
+  "binding_pockets": [],
+  "allosteric_sites": [],
+  "ppi_partners": [
+    {
+      "partner_id": "9606.ENSP00000269305",
+      "partner_name": "TP53",
+      "combined_score": 967,
+      "experimental_score": 231,
+      "database_score": 900,
+      "textmining_score": 610,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        492,
+        330,
+        253,
+        256,
+        491,
+        486,
+        304,
+        38,
+        255,
+        483,
+        89,
+        252,
+        264,
+        359
+      ],
+      "interface_letters": [
+        "M",
+        "V",
+        "R",
+        "R",
+        "K",
+        "Q",
+        "L",
+        "Q",
+        "K",
+        "K",
+        "F",
+        "R",
+        "M",
+        "R",
+        "E"
+      ],
+      "interface_charge": 6.0,
+      "interface_hydrophobicity": -1.707,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000320935",
+      "partner_name": "SLC2A4",
+      "combined_score": 909,
+      "experimental_score": 0,
+      "database_score": 900,
+      "textmining_score": 116,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        492,
+        330,
+        253,
+        256,
+        491,
+        486,
+        304,
+        38,
+        255,
+        483,
+        89,
+        252,
+        264,
+        359
+      ],
+      "interface_letters": [
+        "M",
+        "V",
+        "R",
+        "R",
+        "K",
+        "Q",
+        "L",
+        "Q",
+        "K",
+        "K",
+        "F",
+        "R",
+        "M",
+        "R",
+        "E"
+      ],
+      "interface_charge": 6.0,
+      "interface_hydrophobicity": -1.707,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000323568",
+      "partner_name": "SLC2A2",
+      "combined_score": 906,
+      "experimental_score": 0,
+      "database_score": 900,
+      "textmining_score": 80,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        492,
+        330,
+        253,
+        256,
+        491,
+        486,
+        304,
+        38,
+        255,
+        483,
+        89,
+        252,
+        264,
+        359
+      ],
+      "interface_letters": [
+        "M",
+        "V",
+        "R",
+        "R",
+        "K",
+        "Q",
+        "L",
+        "Q",
+        "K",
+        "K",
+        "F",
+        "R",
+        "M",
+        "R",
+        "E"
+      ],
+      "interface_charge": 6.0,
+      "interface_hydrophobicity": -1.707,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000437955",
+      "partner_name": "HIF1A",
+      "combined_score": 902,
+      "experimental_score": 89,
+      "database_score": 0,
+      "textmining_score": 895,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        492,
+        330,
+        253,
+        256,
+        491,
+        486,
+        304,
+        38,
+        255,
+        483,
+        89,
+        252,
+        264,
+        359
+      ],
+      "interface_letters": [
+        "M",
+        "V",
+        "R",
+        "R",
+        "K",
+        "Q",
+        "L",
+        "Q",
+        "K",
+        "K",
+        "F",
+        "R",
+        "M",
+        "R",
+        "E"
+      ],
+      "interface_charge": 6.0,
+      "interface_hydrophobicity": -1.707,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000333769",
+      "partner_name": "BSG",
+      "combined_score": 900,
+      "experimental_score": 91,
+      "database_score": 0,
+      "textmining_score": 892,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        492,
+        330,
+        253,
+        256,
+        491,
+        486,
+        304,
+        38,
+        255,
+        483,
+        89,
+        252,
+        264,
+        359
+      ],
+      "interface_letters": [
+        "M",
+        "V",
+        "R",
+        "R",
+        "K",
+        "Q",
+        "L",
+        "Q",
+        "K",
+        "K",
+        "F",
+        "R",
+        "M",
+        "R",
+        "E"
+      ],
+      "interface_charge": 6.0,
+      "interface_hydrophobicity": -1.707,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000263734",
+      "partner_name": "EPAS1",
+      "combined_score": 888,
+      "experimental_score": 67,
+      "database_score": 0,
+      "textmining_score": 883,
+      "coexpression_score": 0,
+      "confidence": "medium-high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        492,
+        330,
+        253,
+        256,
+        491,
+        486,
+        304,
+        38,
+        255,
+        483,
+        89,
+        252,
+        264,
+        359
+      ],
+      "interface_letters": [
+        "M",
+        "V",
+        "R",
+        "R",
+        "K",
+        "Q",
+        "L",
+        "Q",
+        "K",
+        "K",
+        "F",
+        "R",
+        "M",
+        "R",
+        "E"
+      ],
+      "interface_charge": 6.0,
+      "interface_hydrophobicity": -1.707,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000286713",
+      "partner_name": "STOM",
+      "combined_score": 880,
+      "experimental_score": 295,
+      "database_score": 0,
+      "textmining_score": 832,
+      "coexpression_score": 0,
+      "confidence": "medium-high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        492,
+        330,
+        253,
+        256,
+        491,
+        486,
+        304,
+        38,
+        255,
+        483,
+        89,
+        252,
+        264,
+        359
+      ],
+      "interface_letters": [
+        "M",
+        "V",
+        "R",
+        "R",
+        "K",
+        "Q",
+        "L",
+        "Q",
+        "K",
+        "K",
+        "F",
+        "R",
+        "M",
+        "R",
+        "E"
+      ],
+      "interface_charge": 6.0,
+      "interface_hydrophobicity": -1.707,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000266088",
+      "partner_name": "SLC5A1",
+      "combined_score": 874,
+      "experimental_score": 0,
+      "database_score": 0,
+      "textmining_score": 865,
+      "coexpression_score": 0,
+      "confidence": "medium-high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        492,
+        330,
+        253,
+        256,
+        491,
+        486,
+        304,
+        38,
+        255,
+        483,
+        89,
+        252,
+        264,
+        359
+      ],
+      "interface_letters": [
+        "M",
+        "V",
+        "R",
+        "R",
+        "K",
+        "Q",
+        "L",
+        "Q",
+        "K",
+        "K",
+        "F",
+        "R",
+        "M",
+        "R",
+        "E"
+      ],
+      "interface_charge": 6.0,
+      "interface_hydrophobicity": -1.707,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000445175",
+      "partner_name": "LDHA",
+      "combined_score": 863,
+      "experimental_score": 45,
+      "database_score": 0,
+      "textmining_score": 849,
+      "coexpression_score": 0,
+      "confidence": "medium-high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        492,
+        330,
+        253,
+        256,
+        491,
+        486,
+        304,
+        38,
+        255,
+        483,
+        89,
+        252,
+        264,
+        359
+      ],
+      "interface_letters": [
+        "M",
+        "V",
+        "R",
+        "R",
+        "K",
+        "Q",
+        "L",
+        "Q",
+        "K",
+        "K",
+        "F",
+        "R",
+        "M",
+        "R",
+        "E"
+      ],
+      "interface_charge": 6.0,
+      "interface_hydrophobicity": -1.707,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000367608",
+      "partner_name": "CA9",
+      "combined_score": 849,
+      "experimental_score": 0,
+      "database_score": 0,
+      "textmining_score": 832,
+      "coexpression_score": 0,
+      "confidence": "medium-high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        492,
+        330,
+        253,
+        256,
+        491,
+        486,
+        304,
+        38,
+        255,
+        483,
+        89,
+        252,
+        264,
+        359
+      ],
+      "interface_letters": [
+        "M",
+        "V",
+        "R",
+        "R",
+        "K",
+        "Q",
+        "L",
+        "Q",
+        "K",
+        "K",
+        "F",
+        "R",
+        "M",
+        "R",
+        "E"
+      ],
+      "interface_charge": 6.0,
+      "interface_hydrophobicity": -1.707,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000380432",
+      "partner_name": "INS",
+      "combined_score": 849,
+      "experimental_score": 0,
+      "database_score": 0,
+      "textmining_score": 848,
+      "coexpression_score": 0,
+      "confidence": "medium-high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        492,
+        330,
+        253,
+        256,
+        491,
+        486,
+        304,
+        38,
+        255,
+        483,
+        89,
+        252,
+        264,
+        359
+      ],
+      "interface_letters": [
+        "M",
+        "V",
+        "R",
+        "R",
+        "K",
+        "Q",
+        "L",
+        "Q",
+        "K",
+        "K",
+        "F",
+        "R",
+        "M",
+        "R",
+        "E"
+      ],
+      "interface_charge": 6.0,
+      "interface_hydrophobicity": -1.707,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000265371",
+      "partner_name": "NRP1",
+      "combined_score": 819,
+      "experimental_score": 0,
+      "database_score": 0,
+      "textmining_score": 819,
+      "coexpression_score": 0,
+      "confidence": "medium-high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        492,
+        330,
+        253,
+        256,
+        491,
+        486,
+        304,
+        38,
+        255,
+        483,
+        89,
+        252,
+        264,
+        359
+      ],
+      "interface_letters": [
+        "M",
+        "V",
+        "R",
+        "R",
+        "K",
+        "Q",
+        "L",
+        "Q",
+        "K",
+        "K",
+        "F",
+        "R",
+        "M",
+        "R",
+        "E"
+      ],
+      "interface_charge": 6.0,
+      "interface_hydrophobicity": -1.707,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000398698",
+      "partner_name": "TNF",
+      "combined_score": 816,
+      "experimental_score": 0,
+      "database_score": 0,
+      "textmining_score": 816,
+      "coexpression_score": 0,
+      "confidence": "medium-high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        492,
+        330,
+        253,
+        256,
+        491,
+        486,
+        304,
+        38,
+        255,
+        483,
+        89,
+        252,
+        264,
+        359
+      ],
+      "interface_letters": [
+        "M",
+        "V",
+        "R",
+        "R",
+        "K",
+        "Q",
+        "L",
+        "Q",
+        "K",
+        "K",
+        "F",
+        "R",
+        "M",
+        "R",
+        "E"
+      ],
+      "interface_charge": 6.0,
+      "interface_hydrophobicity": -1.707,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000320171",
+      "partner_name": "PKM",
+      "combined_score": 814,
+      "experimental_score": 0,
+      "database_score": 0,
+      "textmining_score": 794,
+      "coexpression_score": 0,
+      "confidence": "medium-high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        492,
+        330,
+        253,
+        256,
+        491,
+        486,
+        304,
+        38,
+        255,
+        483,
+        89,
+        252,
+        264,
+        359
+      ],
+      "interface_letters": [
+        "M",
+        "V",
+        "R",
+        "R",
+        "K",
+        "Q",
+        "L",
+        "Q",
+        "K",
+        "K",
+        "F",
+        "R",
+        "M",
+        "R",
+        "E"
+      ],
+      "interface_charge": 6.0,
+      "interface_hydrophobicity": -1.707,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000290573",
+      "partner_name": "HK2",
+      "combined_score": 811,
+      "experimental_score": 0,
+      "database_score": 0,
+      "textmining_score": 797,
+      "coexpression_score": 0,
+      "confidence": "medium-high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        492,
+        330,
+        253,
+        256,
+        491,
+        486,
+        304,
+        38,
+        255,
+        483,
+        89,
+        252,
+        264,
+        359
+      ],
+      "interface_letters": [
+        "M",
+        "V",
+        "R",
+        "R",
+        "K",
+        "Q",
+        "L",
+        "Q",
+        "K",
+        "K",
+        "F",
+        "R",
+        "M",
+        "R",
+        "E"
+      ],
+      "interface_charge": 6.0,
+      "interface_hydrophobicity": -1.707,
+      "binding_mode": "electrostatic"
+    }
+  ],
+  "mean_plddt": 90.26,
+  "n_evidence_sources": 8,
+  "overall_confidence": "VERY HIGH",
+  "validation_suggestions": [
+    "Alanine scanning mutagenesis of predicted active site residues (H239, C133, H160) to confirm functional importance",
+    "Co-immunoprecipitation with TP53 (unknown interaction, predicted interface: [1, 492, 330])",
+    "Co-immunoprecipitation with SLC2A4 (unknown interaction, predicted interface: [1, 492, 330])",
+    "GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation"
+  ],
+  "modules_run": [
+    "structure",
+    "physico",
+    "active",
+    "homology",
+    "esm2",
+    "go",
+    "ec",
+    "ppi"
+  ],
+  "modules_missing": [
+    "pockets",
+    "allosteric",
+    "chem_env",
+    "foldseek"
+  ]
+}

@@ -1,0 +1,76 @@
+======================================================================
+  ProteinFP Prediction Report
+  Generated: 2026-04-19 18:00:23
+======================================================================
+
+  Protein    : Alpha-crystallin B chain
+  Gene       : CRYAB
+  UniProt    : P02511
+  Organism   : Homo sapiens
+  Length     : 175 aa
+  Mean pLDDT : 75.8
+  Confidence : VERY HIGH
+
+──────────────────────────────────────────────────────────────────────
+  FUNCTIONAL PREDICTION
+──────────────────────────────────────────────────────────────────────
+  Top function     : May contribute to the transparency and refractive index of the lens. Has chaperone-like activity, preventing aggregation of various proteins under a wide range of stress conditions. In lens epithelial
+  Enzyme           : no (non-enzyme)
+  Location         : C:plasma membrane
+  Evidence sources : 8
+
+──────────────────────────────────────────────────────────────────────
+  GENE ONTOLOGY PREDICTIONS
+──────────────────────────────────────────────────────────────────────
+
+  Molecular Function:
+    [HIGH  ] GO:0005212 structural constituent of eye lens (score=9.5, 2 sources)
+    [HIGH  ] GO:0046872 F:metal ion binding (score=6.8, 2 sources)
+    [HIGH  ] GO:0005764 C:lysosome (score=5.1, 1 sources)
+    [HIGH  ] GO:0042803 F:protein homodimerization activity (score=5.1, 1 sources)
+    [HIGH  ] GO:0051082 F:unfolded protein binding (score=5.1, 1 sources)
+
+  Biological Process:
+    [HIGH  ] GO:0043066 P:negative regulation of apoptotic process (score=5.1, 1 sources)
+    [HIGH  ] GO:0045892 P:negative regulation of DNA-templated transc (score=5.1, 1 sources)
+    [HIGH  ] GO:0042026 P:protein refolding (score=5.1, 1 sources)
+    [HIGH  ] GO:0009408 P:response to heat (score=5.1, 1 sources)
+    [HIGH  ] GO:0060561 P:apoptotic process involved in morphogenesis (score=5.1, 1 sources)
+
+  Cellular Component:
+    [HIGH  ] GO:0005634 C:nucleus (score=7.8, 3 sources)
+    [HIGH  ] GO:0005737 C:cytoplasm (score=6.5, 2 sources)
+    [HIGH  ] GO:0032991 C:protein-containing complex (score=5.1, 1 sources)
+
+──────────────────────────────────────────────────────────────────────
+  ACTIVE SITES
+──────────────────────────────────────────────────────────────────────
+  H104 [HIGH  ] motifs: zinc_binding_cluster, zinc_binding_cluster
+  H83 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H31 [HIGH  ] motifs: serine_protease_triad, acid_base_pair
+  D80 [MEDIUM] motifs: serine_protease_triad, serine_protease_triad
+  S85 [MEDIUM] motifs: serine_protease_triad, serine_protease_triad
+
+──────────────────────────────────────────────────────────────────────
+  PROTEIN INTERACTIONS (top 8)
+──────────────────────────────────────────────────────────────────────
+  CRYAA           STRING=996  type=unknown
+  BAG3            STRING=944  type=unknown
+  HSPB1           STRING=940  type=unknown
+  CRYBB2          STRING=939  type=unknown
+  CRYGS           STRING=924  type=unknown
+  CRYGD           STRING=924  type=unknown
+  HSPB2           STRING=921  type=unknown
+  CRYBA1          STRING=911  type=unknown
+
+──────────────────────────────────────────────────────────────────────
+  VALIDATION SUGGESTIONS
+──────────────────────────────────────────────────────────────────────
+  1. Alanine scanning mutagenesis of predicted active site residues (H104, H83, H31) to confirm functional importance
+  2. Co-immunoprecipitation with CRYAA (unknown interaction, predicted interface: [175, 1, 163])
+  3. Co-immunoprecipitation with BAG3 (unknown interaction, predicted interface: [175, 1, 163])
+  4. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+
+──────────────────────────────────────────────────────────────────────
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+======================================================================

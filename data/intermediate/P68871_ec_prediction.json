@@ -1,7 +1,7 @@
 {
   "uniprot_id": "P68871",
   "sequence_length": 147,
-  "is_enzyme": true,
+  "is_enzyme": false,
   "enzyme_confidence": 0.85,
   "top_prediction": {
     "ec_class": "3",
@@ -9,7 +9,6 @@
     "ec_full": "EC 3.x.x.x",
     "score": 0.85,
     "evidence": [
-      "go_prediction",
       "structural_motif",
       "sequence_composition"
     ]
@@ -21,7 +20,6 @@
       "ec_full": "EC 3.x.x.x",
       "score": 0.85,
       "evidence": [
-        "go_prediction",
         "structural_motif",
         "sequence_composition"
       ]
@@ -29,17 +27,16 @@
     {
       "ec_class": "1",
       "ec_name": "Oxidoreductase",
-      "ec_full": "EC 1.10.99",
-      "score": 0.72,
+      "ec_full": "EC 1.15.1",
+      "score": 0.675,
       "evidence": [
         "go_prediction",
-        "structural_motif",
         "sequence_composition"
       ]
     }
   ],
-  "specific_ec": "1.10.99",
-  "specific_ec_name": "NAD(P)H dehydrogenase",
-  "non_enzyme_score": 0.0,
+  "specific_ec": "1.15.1",
+  "specific_ec_name": "Superoxide dismutase",
+  "non_enzyme_score": 0.4,
   "ml_enzyme_prob": 0.402
 }

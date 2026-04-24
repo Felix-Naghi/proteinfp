@@ -4,11 +4,11 @@
   "protein_name": "Epidermal growth factor receptor",
   "organism": "Homo sapiens",
   "sequence_length": 1210,
-  "generated_at": "2026-04-19 13:04:37",
+  "generated_at": "2026-04-19 14:26:58",
   "top_function": "Receptor tyrosine kinase binding ligands of the EGF family and activating several signaling cascades to convert extracellular cues into appropriate cellular responses (PubMed:10805725, PubMed:27153536",
   "is_enzyme": true,
   "ec_number": "2.7.10",
-  "subcellular_location": "C:plasma membrane",
+  "subcellular_location": "integral component of plasma membrane",
   "go_terms_mf": [
     {
       "go_id": "GO:0005524",
@@ -52,19 +52,6 @@
       "top_evidence": "experimental_homolog"
     },
     {
-      "go_id": "GO:0009986",
-      "go_name": "C:cell surface",
-      "namespace": "MF",
-      "weighted_score": 9.37,
-      "n_sources": 2,
-      "sources": [
-        "experimental_homolog",
-        "neural_classifier"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
       "go_id": "GO:0043235",
       "go_name": "C:receptor complex",
       "namespace": "MF",
@@ -89,6 +76,66 @@
       "top_evidence": "experimental_homolog"
     },
     {
+      "go_id": "GO:0031594",
+      "go_name": "C:neuromuscular junction",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0098978",
+      "go_name": "C:glutamatergic synapse",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0009986",
+      "go_name": "C:cell surface",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005768",
+      "go_name": "C:endosome",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0098982",
+      "go_name": "C:GABA-ergic synapse",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
       "go_id": "GO:0004714",
       "go_name": "receptor protein tyrosine kinase activity",
       "namespace": "MF",
@@ -100,54 +147,6 @@
       ],
       "confidence": "MEDIUM",
       "top_evidence": "embedding_similarity"
-    },
-    {
-      "go_id": "GO:0031594",
-      "go_name": "C:neuromuscular junction",
-      "namespace": "MF",
-      "weighted_score": 3.0,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "MEDIUM",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0098978",
-      "go_name": "C:glutamatergic synapse",
-      "namespace": "MF",
-      "weighted_score": 3.0,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "MEDIUM",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0005768",
-      "go_name": "C:endosome",
-      "namespace": "MF",
-      "weighted_score": 3.0,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "MEDIUM",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0098982",
-      "go_name": "C:GABA-ergic synapse",
-      "namespace": "MF",
-      "weighted_score": 3.0,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "MEDIUM",
-      "top_evidence": "experimental_homolog"
     },
     {
       "go_id": "GO:0005739",
@@ -289,18 +288,6 @@
       "top_evidence": "structural_motif"
     },
     {
-      "go_id": "GO:0055114",
-      "go_name": "oxidation-reduction process",
-      "namespace": "BP",
-      "weighted_score": 1.4,
-      "n_sources": 1,
-      "sources": [
-        "structural_motif"
-      ],
-      "confidence": "LOW",
-      "top_evidence": "structural_motif"
-    },
-    {
       "go_id": "GO:0015671",
       "go_name": "oxygen transport",
       "namespace": "BP",
@@ -383,6 +370,18 @@
       ],
       "confidence": "LOW",
       "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0007131",
+      "go_name": "reciprocal meiotic recombination",
+      "namespace": "BP",
+      "weighted_score": 1.1,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
     }
   ],
   "go_terms_cc": [
@@ -390,26 +389,12 @@
       "go_id": "GO:0016020",
       "go_name": "membrane",
       "namespace": "CC",
-      "weighted_score": 12.9,
-      "n_sources": 4,
+      "weighted_score": 11.3,
+      "n_sources": 3,
       "sources": [
         "experimental_homolog",
         "domain_annotation",
-        "structural_motif",
         "embedding_similarity"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0005886",
-      "go_name": "C:plasma membrane",
-      "namespace": "CC",
-      "weighted_score": 9.42,
-      "n_sources": 2,
-      "sources": [
-        "experimental_homolog",
-        "neural_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -456,6 +441,18 @@
     {
       "go_id": "GO:0016323",
       "go_name": "C:basolateral plasma membrane",
+      "namespace": "CC",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005886",
+      "go_name": "C:plasma membrane",
       "namespace": "CC",
       "weighted_score": 5.1,
       "n_sources": 1,

@@ -1,7 +1,7 @@
 {
   "uniprot_id": "P06213",
   "sequence_length": 1382,
-  "is_enzyme": false,
+  "is_enzyme": true,
   "enzyme_confidence": 0.85,
   "top_prediction": {
     "ec_class": "2",
@@ -42,10 +42,8 @@
       "ec_class": "1",
       "ec_name": "Oxidoreductase",
       "ec_full": "EC 1.x.x.x",
-      "score": 0.72,
+      "score": 0.24,
       "evidence": [
-        "go_prediction",
-        "structural_motif",
         "sequence_composition"
       ]
     },
@@ -61,6 +59,6 @@
   ],
   "specific_ec": "2.7.10",
   "specific_ec_name": "Protein kinase",
-  "non_enzyme_score": 0.4,
+  "non_enzyme_score": 0.0,
   "ml_enzyme_prob": 0.335
 }

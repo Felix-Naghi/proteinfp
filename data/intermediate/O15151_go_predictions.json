@@ -3,130 +3,6 @@
   "sequence_length": 490,
   "mf_predictions": [
     {
-      "go_id": "GO:0005524",
-      "go_name": "ATP binding",
-      "namespace": "MF",
-      "score": 0.8,
-      "evidence": [
-        "structural_motif"
-      ],
-      "saliency_residues": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18,
-        19,
-        20
-      ]
-    },
-    {
-      "go_id": "GO:0016887",
-      "go_name": "ATPase activity",
-      "namespace": "MF",
-      "score": 0.75,
-      "evidence": [
-        "structural_motif"
-      ],
-      "saliency_residues": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18,
-        19,
-        20
-      ]
-    },
-    {
-      "go_id": "GO:0051082",
-      "go_name": "unfolded protein binding",
-      "namespace": "MF",
-      "score": 0.75,
-      "evidence": [
-        "structural_motif"
-      ],
-      "saliency_residues": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18,
-        19,
-        20
-      ]
-    },
-    {
-      "go_id": "GO:0042623",
-      "go_name": "ATPase activity, coupled",
-      "namespace": "MF",
-      "score": 0.7,
-      "evidence": [
-        "structural_motif"
-      ],
-      "saliency_residues": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18,
-        19,
-        20
-      ]
-    },
-    {
       "go_id": "GO:0046872",
       "go_name": "metal ion binding",
       "namespace": "MF",
@@ -284,37 +160,6 @@
         19,
         20
       ]
-    },
-    {
-      "go_id": "GO:0051085",
-      "go_name": "chaperone cofactor-dependent protein refolding",
-      "namespace": "BP",
-      "score": 0.65,
-      "evidence": [
-        "structural_motif"
-      ],
-      "saliency_residues": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18,
-        19,
-        20
-      ]
     }
   ],
   "cc_predictions": [
@@ -322,11 +167,12 @@
       "go_id": "GO:0005634",
       "go_name": "nucleus",
       "namespace": "CC",
-      "score": 0.75,
+      "score": 1.319,
       "evidence": [
         "sequence_homolog",
         "domain_annotation",
-        "ai_esm2"
+        "ai_esm2",
+        "neural_classifier"
       ],
       "saliency_residues": [
         1,
@@ -383,8 +229,8 @@
       ]
     }
   ],
-  "top_mf": "ATP binding",
+  "top_mf": "metal ion binding",
   "top_bp": "negative regulation of apoptotic process",
   "top_cc": "nucleus",
-  "n_predictions": 12
+  "n_predictions": 7
 }

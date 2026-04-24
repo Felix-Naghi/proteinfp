@@ -1,0 +1,76 @@
+======================================================================
+  ProteinFP Prediction Report
+  Generated: 2026-04-19 15:23:56
+======================================================================
+
+  Protein    : Myc proto-oncogene protein
+  Gene       : MYC
+  UniProt    : P01106
+  Organism   : Homo sapiens
+  Length     : 454 aa
+  Mean pLDDT : 60.4
+  Confidence : HIGH
+
+──────────────────────────────────────────────────────────────────────
+  FUNCTIONAL PREDICTION
+──────────────────────────────────────────────────────────────────────
+  Top function     : Transcription factor that binds DNA in a non-specific manner, yet also specifically recognizes the core sequence 5'-CAC[GA]TG-3' (PubMed:24940000, PubMed:25956029). Activates the transcription of grow
+  Enzyme           : no (non-enzyme)
+  Location         : membrane
+  Evidence sources : 8
+
+──────────────────────────────────────────────────────────────────────
+  GENE ONTOLOGY PREDICTIONS
+──────────────────────────────────────────────────────────────────────
+
+  Molecular Function:
+    [HIGH  ] GO:0046983 protein dimerization activity (score=13.0, 2 sources)
+    [HIGH  ] GO:0003700 DNA-binding transcription factor activity (score=12.8, 2 sources)
+    [HIGH  ] GO:0000978 F:RNA polymerase II cis-regulatory region seq (score=9.5, 2 sources)
+    [HIGH  ] GO:0000981 F:DNA-binding transcription factor activity,  (score=9.4, 2 sources)
+    [HIGH  ] GO:0003677 F:DNA binding (score=7.2, 2 sources)
+
+  Biological Process:
+    [HIGH  ] GO:0006355 regulation of DNA-templated transcription (score=11.2, 1 sources)
+    [HIGH  ] GO:0006974 P:DNA damage response (score=5.1, 1 sources)
+    [HIGH  ] GO:0000082 P:G1/S transition of mitotic cell cycle (score=5.1, 1 sources)
+    [HIGH  ] GO:0006879 P:intracellular iron ion homeostasis (score=5.1, 1 sources)
+    [HIGH  ] GO:0043066 P:negative regulation of apoptotic process (score=5.1, 1 sources)
+
+  Cellular Component:
+    [HIGH  ] GO:0005634 C:nucleus (score=14.1, 4 sources)
+    [HIGH  ] GO:0005737 C:cytoplasm (score=6.5, 2 sources)
+    [HIGH  ] GO:0005694 C:chromosome (score=5.1, 1 sources)
+
+──────────────────────────────────────────────────────────────────────
+  ACTIVE SITES
+──────────────────────────────────────────────────────────────────────
+  C315 [HIGH  ] motifs: cysteine_protease_dyad
+  H316 [HIGH  ] motifs: cysteine_protease_dyad
+  H374 [HIGH  ] motifs: acid_base_pair
+  H444 [HIGH  ] motifs: zinc_binding_cluster, acid_base_pair
+  C40 [HIGH  ] motifs: zinc_binding_cluster, zinc_binding_cluster
+
+──────────────────────────────────────────────────────────────────────
+  PROTEIN INTERACTIONS (top 8)
+──────────────────────────────────────────────────────────────────────
+  EP300           STRING=999  type=unknown
+  FBXW7           STRING=999  type=unknown
+  TRRAP           STRING=999  type=unknown
+  BRCA1           STRING=999  type=cooperative
+  BIN1            STRING=999  type=unknown
+  ZBTB17          STRING=999  type=unknown
+  MAX             STRING=999  type=unknown
+  CDKN2A          STRING=998  type=unknown
+
+──────────────────────────────────────────────────────────────────────
+  VALIDATION SUGGESTIONS
+──────────────────────────────────────────────────────────────────────
+  1. Alanine scanning mutagenesis of predicted active site residues (C315, H316, H374) to confirm functional importance
+  2. Co-immunoprecipitation with EP300 (unknown interaction, predicted interface: [181, 80, 1])
+  3. Co-immunoprecipitation with FBXW7 (unknown interaction, predicted interface: [181, 80, 1])
+  4. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+
+──────────────────────────────────────────────────────────────────────
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+======================================================================

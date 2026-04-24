@@ -1,0 +1,1928 @@
+{
+  "uniprot_id": "P00387",
+  "gene_name": "CYB5R3",
+  "protein_name": "NADH-cytochrome b5 reductase 3",
+  "organism": "Homo sapiens",
+  "sequence_length": 301,
+  "generated_at": "2026-04-19 16:17:42",
+  "top_function": "Catalyzes the reduction of two molecules of cytochrome b5 using NADH as the electron donor",
+  "is_enzyme": true,
+  "ec_number": "3.4.21",
+  "subcellular_location": "C:endoplasmic reticulum membrane",
+  "go_terms_mf": [
+    {
+      "go_id": "GO:0016491",
+      "go_name": "oxidoreductase activity",
+      "namespace": "MF",
+      "weighted_score": 21.5,
+      "n_sources": 3,
+      "sources": [
+        "experimental_homolog",
+        "domain_annotation",
+        "structural_motif"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0004128",
+      "go_name": "F:cytochrome-b5 reductase activity, acting on NAD(P)H",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0090524",
+      "go_name": "F:cytochrome-b5 reductase activity, acting on NADH",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005739",
+      "go_name": "C:mitochondrion",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0071949",
+      "go_name": "F:FAD binding",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005811",
+      "go_name": "C:lipid droplet",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005783",
+      "go_name": "C:endoplasmic reticulum",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0050660",
+      "go_name": "F:flavin adenine dinucleotide binding",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0050421",
+      "go_name": "F:nitrite reductase (NO-forming) activity",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0043531",
+      "go_name": "F:ADP binding",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0016208",
+      "go_name": "F:AMP binding",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0051287",
+      "go_name": "F:NAD binding",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0035578",
+      "go_name": "C:azurophil granule lumen",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0033011",
+      "go_name": "C:perinuclear theca",
+      "namespace": "MF",
+      "weighted_score": 3.0,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0120238",
+      "go_name": "C:sperm glycocalyx",
+      "namespace": "MF",
+      "weighted_score": 3.0,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "experimental_homolog"
+    }
+  ],
+  "go_terms_bp": [
+    {
+      "go_id": "GO:0006695",
+      "go_name": "P:cholesterol biosynthetic process",
+      "namespace": "BP",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0006809",
+      "go_name": "P:nitric oxide biosynthetic process",
+      "namespace": "BP",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0016126",
+      "go_name": "P:sterol biosynthetic process",
+      "namespace": "BP",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0001878",
+      "go_name": "P:response to yeast",
+      "namespace": "BP",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0055114",
+      "go_name": "oxidation-reduction process",
+      "namespace": "BP",
+      "weighted_score": 1.4,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0006351",
+      "go_name": "DNA-templated transcription",
+      "namespace": "BP",
+      "weighted_score": 1.3,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0030193",
+      "go_name": "regulation of blood coagulation",
+      "namespace": "BP",
+      "weighted_score": 1.2,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0045944",
+      "go_name": "positive regulation of transcription by RNA pol II",
+      "namespace": "BP",
+      "weighted_score": 1.2,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0042493",
+      "go_name": "response to drug",
+      "namespace": "BP",
+      "weighted_score": 1.1,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0006508",
+      "go_name": "proteolysis",
+      "namespace": "BP",
+      "weighted_score": 1.1,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0010819",
+      "go_name": "regulation of T cell chemotaxis",
+      "namespace": "BP",
+      "weighted_score": 0.9,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    }
+  ],
+  "go_terms_cc": [
+    {
+      "go_id": "GO:0005737",
+      "go_name": "C:cytoplasm",
+      "namespace": "CC",
+      "weighted_score": 6.5,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "sequence_baseline"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005789",
+      "go_name": "C:endoplasmic reticulum membrane",
+      "namespace": "CC",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005741",
+      "go_name": "C:mitochondrial outer membrane",
+      "namespace": "CC",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0016020",
+      "go_name": "C:membrane",
+      "namespace": "CC",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:1903958",
+      "go_name": "C:nitric-oxide synthase complex",
+      "namespace": "CC",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005829",
+      "go_name": "C:cytosol",
+      "namespace": "CC",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0031966",
+      "go_name": "C:mitochondrial membrane",
+      "namespace": "CC",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005576",
+      "go_name": "C:extracellular region",
+      "namespace": "CC",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005833",
+      "go_name": "C:hemoglobin complex",
+      "namespace": "CC",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0043234",
+      "go_name": "protein complex",
+      "namespace": "CC",
+      "weighted_score": 1.1,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    }
+  ],
+  "active_sites": [
+    {
+      "residue_number": 204,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 0.0,
+      "plddt": 98.94,
+      "motifs": [
+        "cysteine_protease_dyad",
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 9,
+      "confidence": "HIGH",
+      "coords": [
+        -11.084,
+        3.801,
+        9.687
+      ],
+      "domain_context": "ferredoxin reductase-like, c-terminal nadp-linked domain"
+    },
+    {
+      "residue_number": 201,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 143.07,
+      "plddt": 98.5,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        -16.931,
+        11.081,
+        12.115
+      ],
+      "domain_context": "ferredoxin reductase-like, c-terminal nadp-linked domain"
+    },
+    {
+      "residue_number": 205,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 32.85,
+      "plddt": 98.94,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "cysteine_protease_dyad",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        -9.432,
+        0.563,
+        10.897
+      ],
+      "domain_context": "ferredoxin reductase-like, c-terminal nadp-linked domain"
+    },
+    {
+      "residue_number": 229,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 50.09,
+      "plddt": 98.38,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad"
+      ],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        -6.192,
+        11.5,
+        13.683
+      ],
+      "domain_context": "ferredoxin reductase-like, c-terminal nadp-linked domain"
+    },
+    {
+      "residue_number": 174,
+      "chain_id": "A",
+      "one_letter": "S",
+      "three_letter": "SER",
+      "conservation": 4.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 5.58,
+      "plddt": 98.75,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        -16.701,
+        2.569,
+        10.901
+      ],
+      "domain_context": "ferredoxin reductase-like, c-terminal nadp-linked domain"
+    },
+    {
+      "residue_number": 200,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 0.58,
+      "plddt": 98.62,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        -16.701,
+        13.281,
+        8.986
+      ],
+      "domain_context": "ferredoxin reductase-like, c-terminal nadp-linked domain"
+    },
+    {
+      "residue_number": 215,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 13.04,
+      "plddt": 92.25,
+      "motifs": [
+        "serine_protease_triad",
+        "acid_base_pair"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        8.064,
+        -3.367,
+        1.884
+      ],
+      "domain_context": "ferredoxin reductase-like, c-terminal nadp-linked domain"
+    },
+    {
+      "residue_number": 197,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 39.18,
+      "plddt": 98.25,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "acid_base_pair"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -13.242,
+        16.623,
+        6.57
+      ],
+      "domain_context": "ferredoxin reductase-like, c-terminal nadp-linked domain"
+    },
+    {
+      "residue_number": 199,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 87.73,
+      "plddt": 98.38,
+      "motifs": [
+        "serine_protease_triad",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "acid_base_pair"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -17.321,
+        16.883,
+        10.185
+      ],
+      "domain_context": "ferredoxin reductase-like, c-terminal nadp-linked domain"
+    },
+    {
+      "residue_number": 230,
+      "chain_id": "A",
+      "one_letter": "S",
+      "three_letter": "SER",
+      "conservation": 4.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 65.47,
+      "plddt": 97.81,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -5.807,
+        8.602,
+        16.223
+      ],
+      "domain_context": "ferredoxin reductase-like, c-terminal nadp-linked domain"
+    },
+    {
+      "residue_number": 260,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 91.3,
+      "plddt": 98.62,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -8.571,
+        -7.422,
+        17.22
+      ],
+      "domain_context": "ferredoxin reductase-like, c-terminal nadp-linked domain"
+    },
+    {
+      "residue_number": 55,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 109.03,
+      "plddt": 89.75,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "acid_base_pair"
+      ],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        14.52,
+        -0.017,
+        -3.611
+      ],
+      "domain_context": "riboflavin synthase domain-like"
+    },
+    {
+      "residue_number": 69,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 32.34,
+      "plddt": 98.44,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad"
+      ],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        -6.98,
+        21.125,
+        -14.094
+      ],
+      "domain_context": "riboflavin synthase domain-like"
+    },
+    {
+      "residue_number": 56,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 15.42,
+      "plddt": 93.56,
+      "motifs": [
+        "serine_protease_triad",
+        "acid_base_pair",
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        11.436,
+        -1.085,
+        -5.655
+      ],
+      "domain_context": "riboflavin synthase domain-like"
+    },
+    {
+      "residue_number": 54,
+      "chain_id": "A",
+      "one_letter": "S",
+      "three_letter": "SER",
+      "conservation": 4.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 31.05,
+      "plddt": 87.12,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        12.396,
+        2.673,
+        -1.867
+      ],
+      "domain_context": "riboflavin synthase domain-like"
+    },
+    {
+      "residue_number": 66,
+      "chain_id": "A",
+      "one_letter": "S",
+      "three_letter": "SER",
+      "conservation": 4.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 33.72,
+      "plddt": 98.19,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -3.186,
+        22.673,
+        -17.493
+      ],
+      "domain_context": "riboflavin synthase domain-like"
+    },
+    {
+      "residue_number": 99,
+      "chain_id": "A",
+      "one_letter": "S",
+      "three_letter": "SER",
+      "conservation": 4.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 43.02,
+      "plddt": 98.0,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -6.853,
+        13.949,
+        -5.121
+      ],
+      "domain_context": "riboflavin synthase domain-like"
+    },
+    {
+      "residue_number": 100,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 48.28,
+      "plddt": 97.81,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -9.069,
+        16.526,
+        -6.9
+      ],
+      "domain_context": "riboflavin synthase domain-like"
+    },
+    {
+      "residue_number": 101,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 95.96,
+      "plddt": 96.62,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "zinc_binding_cluster",
+        "acid_base_pair"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -7.698,
+        19.038,
+        -4.316
+      ],
+      "domain_context": "riboflavin synthase domain-like"
+    },
+    {
+      "residue_number": 102,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 45.18,
+      "plddt": 98.0,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "zinc_binding_cluster",
+        "acid_base_pair"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -4.32,
+        18.716,
+        -6.184
+      ],
+      "domain_context": "riboflavin synthase domain-like"
+    },
+    {
+      "residue_number": 293,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 5.39,
+      "plddt": 98.5,
+      "motifs": [
+        "zinc_binding_cluster",
+        "acid_base_pair"
+      ],
+      "evidence_score": 9,
+      "confidence": "HIGH",
+      "coords": [
+        -18.665,
+        -10.259,
+        8.949
+      ],
+      "domain_context": "ferredoxin reductase-like, c-terminal nadp-linked domain"
+    },
+    {
+      "residue_number": 261,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 38.31,
+      "plddt": 98.75,
+      "motifs": [
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "acid_base_pair"
+      ],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        -7.897,
+        -4.761,
+        14.527
+      ],
+      "domain_context": "ferredoxin reductase-like, c-terminal nadp-linked domain"
+    },
+    {
+      "residue_number": 284,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 0.0,
+      "plddt": 98.69,
+      "motifs": [],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        -9.314,
+        -12.378,
+        4.143
+      ],
+      "domain_context": "ferredoxin reductase-like, c-terminal nadp-linked domain"
+    },
+    {
+      "residue_number": 290,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 117.53,
+      "plddt": 98.25,
+      "motifs": [
+        "zinc_binding_cluster",
+        "acid_base_pair"
+      ],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        -15.34,
+        -16.909,
+        10.893
+      ],
+      "domain_context": "ferredoxin reductase-like, c-terminal nadp-linked domain"
+    },
+    {
+      "residue_number": 274,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 22.77,
+      "plddt": 98.69,
+      "motifs": [],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        -7.367,
+        -4.8,
+        -1.761
+      ],
+      "domain_context": "ferredoxin reductase-like, c-terminal nadp-linked domain"
+    },
+    {
+      "residue_number": 298,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 24.89,
+      "plddt": 98.25,
+      "motifs": [],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        -17.329,
+        -6.973,
+        2.275
+      ],
+      "domain_context": "ferredoxin reductase-like, c-terminal nadp-linked domain"
+    },
+    {
+      "residue_number": 35,
+      "chain_id": "A",
+      "one_letter": "T",
+      "three_letter": "THR",
+      "conservation": 4.0,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 3.15,
+      "plddt": 98.56,
+      "motifs": [],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -9.085,
+        15.884,
+        -17.133
+      ],
+      "domain_context": "nadh-cytochrome b5 reductase"
+    },
+    {
+      "residue_number": 154,
+      "chain_id": "A",
+      "one_letter": "K",
+      "three_letter": "LYS",
+      "conservation": 6.0,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 117.09,
+      "plddt": 98.44,
+      "motifs": [
+        "dna_binding_cluster",
+        "acid_base_pair"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -19.659,
+        11.396,
+        6.133
+      ],
+      "domain_context": "ferredoxin reductase-like, c-terminal nadp-linked domain"
+    },
+    {
+      "residue_number": 155,
+      "chain_id": "A",
+      "one_letter": "G",
+      "three_letter": "GLY",
+      "conservation": 4.0,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 1.04,
+      "plddt": 98.5,
+      "motifs": [],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -19.697,
+        7.563,
+        6.195
+      ],
+      "domain_context": "ferredoxin reductase-like, c-terminal nadp-linked domain"
+    },
+    {
+      "residue_number": 156,
+      "chain_id": "A",
+      "one_letter": "K",
+      "three_letter": "LYS",
+      "conservation": 6.0,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 85.78,
+      "plddt": 98.75,
+      "motifs": [
+        "dna_binding_cluster"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -21.714,
+        7.318,
+        2.912
+      ],
+      "domain_context": "ferredoxin reductase-like, c-terminal nadp-linked domain"
+    }
+  ],
+  "binding_pockets": [],
+  "allosteric_sites": [],
+  "ppi_partners": [
+    {
+      "partner_id": "9606.ENSP00000308430",
+      "partner_name": "CYB5B",
+      "combined_score": 999,
+      "experimental_score": 289,
+      "database_score": 900,
+      "textmining_score": 992,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        29,
+        164,
+        244,
+        5,
+        84,
+        173,
+        4,
+        11,
+        120,
+        8,
+        17,
+        163,
+        10,
+        27
+      ],
+      "interface_letters": [
+        "M",
+        "R",
+        "K",
+        "E",
+        "L",
+        "R",
+        "K",
+        "Q",
+        "M",
+        "K",
+        "L",
+        "W",
+        "K",
+        "H",
+        "F"
+      ],
+      "interface_charge": 5.1,
+      "interface_hydrophobicity": -1.433,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000341625",
+      "partner_name": "CYB5A",
+      "combined_score": 999,
+      "experimental_score": 254,
+      "database_score": 750,
+      "textmining_score": 999,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        29,
+        164,
+        244,
+        5,
+        84,
+        173,
+        4,
+        11,
+        120,
+        8,
+        17,
+        163,
+        10,
+        27
+      ],
+      "interface_letters": [
+        "M",
+        "R",
+        "K",
+        "E",
+        "L",
+        "R",
+        "K",
+        "Q",
+        "M",
+        "K",
+        "L",
+        "W",
+        "K",
+        "H",
+        "F"
+      ],
+      "interface_charge": 5.1,
+      "interface_hydrophobicity": -1.433,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000377668",
+      "partner_name": "SUOX",
+      "combined_score": 951,
+      "experimental_score": 0,
+      "database_score": 0,
+      "textmining_score": 503,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        29,
+        164,
+        244,
+        5,
+        84,
+        173,
+        4,
+        11,
+        120,
+        8,
+        17,
+        163,
+        10,
+        27
+      ],
+      "interface_letters": [
+        "M",
+        "R",
+        "K",
+        "E",
+        "L",
+        "R",
+        "K",
+        "Q",
+        "M",
+        "K",
+        "L",
+        "W",
+        "K",
+        "H",
+        "F"
+      ],
+      "interface_charge": 5.1,
+      "interface_hydrophobicity": -1.433,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000355877",
+      "partner_name": "MARC1",
+      "combined_score": 937,
+      "experimental_score": 0,
+      "database_score": 900,
+      "textmining_score": 402,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        29,
+        164,
+        244,
+        5,
+        84,
+        173,
+        4,
+        11,
+        120,
+        8,
+        17,
+        163,
+        10,
+        27
+      ],
+      "interface_letters": [
+        "M",
+        "R",
+        "K",
+        "E",
+        "L",
+        "R",
+        "K",
+        "Q",
+        "M",
+        "K",
+        "L",
+        "W",
+        "K",
+        "H",
+        "F"
+      ],
+      "interface_charge": 5.1,
+      "interface_hydrophobicity": -1.433,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000251595",
+      "partner_name": "HBA2",
+      "combined_score": 923,
+      "experimental_score": 299,
+      "database_score": 720,
+      "textmining_score": 641,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        29,
+        164,
+        244,
+        5,
+        84,
+        173,
+        4,
+        11,
+        120,
+        8,
+        17,
+        163,
+        10,
+        27
+      ],
+      "interface_letters": [
+        "M",
+        "R",
+        "K",
+        "E",
+        "L",
+        "R",
+        "K",
+        "Q",
+        "M",
+        "K",
+        "L",
+        "W",
+        "K",
+        "H",
+        "F"
+      ],
+      "interface_charge": 5.1,
+      "interface_hydrophobicity": -1.433,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000219240",
+      "partner_name": "DHODH",
+      "combined_score": 912,
+      "experimental_score": 469,
+      "database_score": 352,
+      "textmining_score": 461,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        29,
+        164,
+        244,
+        5,
+        84,
+        173,
+        4,
+        11,
+        120,
+        8,
+        17,
+        163,
+        10,
+        27
+      ],
+      "interface_letters": [
+        "M",
+        "R",
+        "K",
+        "E",
+        "L",
+        "R",
+        "K",
+        "Q",
+        "M",
+        "K",
+        "L",
+        "W",
+        "K",
+        "H",
+        "F"
+      ],
+      "interface_charge": 5.1,
+      "interface_hydrophobicity": -1.433,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000322421",
+      "partner_name": "HBA1",
+      "combined_score": 890,
+      "experimental_score": 51,
+      "database_score": 720,
+      "textmining_score": 622,
+      "coexpression_score": 0,
+      "confidence": "medium-high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        29,
+        164,
+        244,
+        5,
+        84,
+        173,
+        4,
+        11,
+        120,
+        8,
+        17,
+        163,
+        10,
+        27
+      ],
+      "interface_letters": [
+        "M",
+        "R",
+        "K",
+        "E",
+        "L",
+        "R",
+        "K",
+        "Q",
+        "M",
+        "K",
+        "L",
+        "W",
+        "K",
+        "H",
+        "F"
+      ],
+      "interface_charge": 5.1,
+      "interface_hydrophobicity": -1.433,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000359211",
+      "partner_name": "DPYD",
+      "combined_score": 878,
+      "experimental_score": 469,
+      "database_score": 352,
+      "textmining_score": 252,
+      "coexpression_score": 0,
+      "confidence": "medium-high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        29,
+        164,
+        244,
+        5,
+        84,
+        173,
+        4,
+        11,
+        120,
+        8,
+        17,
+        163,
+        10,
+        27
+      ],
+      "interface_letters": [
+        "M",
+        "R",
+        "K",
+        "E",
+        "L",
+        "R",
+        "K",
+        "Q",
+        "M",
+        "K",
+        "L",
+        "W",
+        "K",
+        "H",
+        "F"
+      ],
+      "interface_charge": 5.1,
+      "interface_hydrophobicity": -1.433,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000232607",
+      "partner_name": "UMPS",
+      "combined_score": 857,
+      "experimental_score": 0,
+      "database_score": 449,
+      "textmining_score": 245,
+      "coexpression_score": 0,
+      "confidence": "medium-high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        29,
+        164,
+        244,
+        5,
+        84,
+        173,
+        4,
+        11,
+        120,
+        8,
+        17,
+        163,
+        10,
+        27
+      ],
+      "interface_letters": [
+        "M",
+        "R",
+        "K",
+        "E",
+        "L",
+        "R",
+        "K",
+        "Q",
+        "M",
+        "K",
+        "L",
+        "W",
+        "K",
+        "H",
+        "F"
+      ],
+      "interface_charge": 5.1,
+      "interface_hydrophobicity": -1.433,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000494175",
+      "partner_name": "HBB",
+      "combined_score": 847,
+      "experimental_score": 0,
+      "database_score": 720,
+      "textmining_score": 476,
+      "coexpression_score": 0,
+      "confidence": "medium-high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        29,
+        164,
+        244,
+        5,
+        84,
+        173,
+        4,
+        11,
+        120,
+        8,
+        17,
+        163,
+        10,
+        27
+      ],
+      "interface_letters": [
+        "M",
+        "R",
+        "K",
+        "E",
+        "L",
+        "R",
+        "K",
+        "Q",
+        "M",
+        "K",
+        "L",
+        "W",
+        "K",
+        "H",
+        "F"
+      ],
+      "interface_charge": 5.1,
+      "interface_hydrophobicity": -1.433,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000359380",
+      "partner_name": "SCD",
+      "combined_score": 815,
+      "experimental_score": 0,
+      "database_score": 0,
+      "textmining_score": 810,
+      "coexpression_score": 0,
+      "confidence": "medium-high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        29,
+        164,
+        244,
+        5,
+        84,
+        173,
+        4,
+        11,
+        120,
+        8,
+        17,
+        163,
+        10,
+        27
+      ],
+      "interface_letters": [
+        "M",
+        "R",
+        "K",
+        "E",
+        "L",
+        "R",
+        "K",
+        "Q",
+        "M",
+        "K",
+        "L",
+        "W",
+        "K",
+        "H",
+        "F"
+      ],
+      "interface_charge": 5.1,
+      "interface_hydrophobicity": -1.433,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000307199",
+      "partner_name": "AHSP",
+      "combined_score": 785,
+      "experimental_score": 0,
+      "database_score": 720,
+      "textmining_score": 263,
+      "coexpression_score": 0,
+      "confidence": "medium-high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        29,
+        164,
+        244,
+        5,
+        84,
+        173,
+        4,
+        11,
+        120,
+        8,
+        17,
+        163,
+        10,
+        27
+      ],
+      "interface_letters": [
+        "M",
+        "R",
+        "K",
+        "E",
+        "L",
+        "R",
+        "K",
+        "Q",
+        "M",
+        "K",
+        "L",
+        "W",
+        "K",
+        "H",
+        "F"
+      ],
+      "interface_charge": 5.1,
+      "interface_hydrophobicity": -1.433,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000003100",
+      "partner_name": "CYP51A1",
+      "combined_score": 782,
+      "experimental_score": 59,
+      "database_score": 0,
+      "textmining_score": 777,
+      "coexpression_score": 0,
+      "confidence": "medium-high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        29,
+        164,
+        244,
+        5,
+        84,
+        173,
+        4,
+        11,
+        120,
+        8,
+        17,
+        163,
+        10,
+        27
+      ],
+      "interface_letters": [
+        "M",
+        "R",
+        "K",
+        "E",
+        "L",
+        "R",
+        "K",
+        "Q",
+        "M",
+        "K",
+        "L",
+        "W",
+        "K",
+        "H",
+        "F"
+      ],
+      "interface_charge": 5.1,
+      "interface_hydrophobicity": -1.433,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000216124",
+      "partner_name": "ARSA",
+      "combined_score": 779,
+      "experimental_score": 0,
+      "database_score": 0,
+      "textmining_score": 774,
+      "coexpression_score": 0,
+      "confidence": "medium-high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        29,
+        164,
+        244,
+        5,
+        84,
+        173,
+        4,
+        11,
+        120,
+        8,
+        17,
+        163,
+        10,
+        27
+      ],
+      "interface_letters": [
+        "M",
+        "R",
+        "K",
+        "E",
+        "L",
+        "R",
+        "K",
+        "Q",
+        "M",
+        "K",
+        "L",
+        "W",
+        "K",
+        "H",
+        "F"
+      ],
+      "interface_charge": 5.1,
+      "interface_hydrophobicity": -1.433,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000419970",
+      "partner_name": "POR",
+      "combined_score": 736,
+      "experimental_score": 166,
+      "database_score": 116,
+      "textmining_score": 662,
+      "coexpression_score": 0,
+      "confidence": "medium-high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        29,
+        164,
+        244,
+        5,
+        84,
+        173,
+        4,
+        11,
+        120,
+        8,
+        17,
+        163,
+        10,
+        27
+      ],
+      "interface_letters": [
+        "M",
+        "R",
+        "K",
+        "E",
+        "L",
+        "R",
+        "K",
+        "Q",
+        "M",
+        "K",
+        "L",
+        "W",
+        "K",
+        "H",
+        "F"
+      ],
+      "interface_charge": 5.1,
+      "interface_hydrophobicity": -1.433,
+      "binding_mode": "electrostatic"
+    }
+  ],
+  "mean_plddt": 93.85,
+  "n_evidence_sources": 8,
+  "overall_confidence": "VERY HIGH",
+  "validation_suggestions": [
+    "Alanine scanning mutagenesis of predicted active site residues (C204, H201, H205) to confirm functional importance",
+    "Co-immunoprecipitation with CYB5B (unknown interaction, predicted interface: [1, 29, 164])",
+    "Co-immunoprecipitation with CYB5A (unknown interaction, predicted interface: [1, 29, 164])",
+    "Enzyme activity assay consistent with EC 3.4.21 using appropriate substrate panel",
+    "GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation"
+  ],
+  "modules_run": [
+    "structure",
+    "physico",
+    "active",
+    "homology",
+    "esm2",
+    "go",
+    "ec",
+    "ppi"
+  ],
+  "modules_missing": [
+    "pockets",
+    "allosteric",
+    "chem_env",
+    "foldseek"
+  ]
+}

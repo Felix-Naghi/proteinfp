@@ -4,17 +4,17 @@
   "protein_name": "Insulin receptor",
   "organism": "Homo sapiens",
   "sequence_length": 1382,
-  "generated_at": "2026-04-19 13:04:47",
+  "generated_at": "2026-04-19 14:30:53",
   "top_function": "Receptor tyrosine kinase which mediates the pleiotropic actions of insulin. Binding of insulin leads to phosphorylation of several intracellular substrates, including, insulin receptor substrates (IRS",
-  "is_enzyme": false,
+  "is_enzyme": true,
   "ec_number": "2.7.10",
-  "subcellular_location": "C:plasma membrane",
+  "subcellular_location": "membrane",
   "go_terms_mf": [
     {
       "go_id": "GO:0005524",
       "go_name": "ATP binding",
       "namespace": "MF",
-      "weighted_score": 21.8,
+      "weighted_score": 21.5,
       "n_sources": 3,
       "sources": [
         "experimental_homolog",
@@ -91,19 +91,6 @@
       "top_evidence": "experimental_homolog"
     },
     {
-      "go_id": "GO:0043235",
-      "go_name": "C:receptor complex",
-      "namespace": "MF",
-      "weighted_score": 9.47,
-      "n_sources": 2,
-      "sources": [
-        "experimental_homolog",
-        "neural_classifier"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
       "go_id": "GO:0005515",
       "go_name": "protein binding",
       "namespace": "MF",
@@ -120,48 +107,72 @@
       "go_id": "GO:0030424",
       "go_name": "C:axon",
       "namespace": "MF",
-      "weighted_score": 3.0,
+      "weighted_score": 5.1,
       "n_sources": 1,
       "sources": [
         "experimental_homolog"
       ],
-      "confidence": "MEDIUM",
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005899",
+      "go_name": "C:insulin receptor complex",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0043235",
+      "go_name": "C:receptor complex",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
     },
     {
       "go_id": "GO:0005009",
       "go_name": "F:insulin receptor activity",
       "namespace": "MF",
-      "weighted_score": 3.0,
+      "weighted_score": 5.1,
       "n_sources": 1,
       "sources": [
         "experimental_homolog"
       ],
-      "confidence": "MEDIUM",
+      "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
     },
     {
       "go_id": "GO:0005901",
       "go_name": "C:caveola",
       "namespace": "MF",
-      "weighted_score": 3.0,
+      "weighted_score": 5.1,
       "n_sources": 1,
       "sources": [
         "experimental_homolog"
       ],
-      "confidence": "MEDIUM",
+      "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
     },
     {
       "go_id": "GO:0043559",
       "go_name": "F:insulin binding",
       "namespace": "MF",
-      "weighted_score": 3.0,
+      "weighted_score": 5.1,
       "n_sources": 1,
       "sources": [
         "experimental_homolog"
       ],
-      "confidence": "MEDIUM",
+      "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
     },
     {
@@ -179,18 +190,6 @@
     {
       "go_id": "GO:0043025",
       "go_name": "C:neuronal cell body",
-      "namespace": "MF",
-      "weighted_score": 3.0,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "MEDIUM",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0005770",
-      "go_name": "C:late endosome",
       "namespace": "MF",
       "weighted_score": 3.0,
       "n_sources": 1,
@@ -291,44 +290,8 @@
       "top_evidence": "structural_motif"
     },
     {
-      "go_id": "GO:0055114",
-      "go_name": "oxidation-reduction process",
-      "namespace": "BP",
-      "weighted_score": 1.4,
-      "n_sources": 1,
-      "sources": [
-        "structural_motif"
-      ],
-      "confidence": "LOW",
-      "top_evidence": "structural_motif"
-    },
-    {
-      "go_id": "GO:0015671",
-      "go_name": "oxygen transport",
-      "namespace": "BP",
-      "weighted_score": 1.4,
-      "n_sources": 1,
-      "sources": [
-        "structural_motif"
-      ],
-      "confidence": "LOW",
-      "top_evidence": "structural_motif"
-    },
-    {
       "go_id": "GO:0006351",
       "go_name": "DNA-templated transcription",
-      "namespace": "BP",
-      "weighted_score": 1.3,
-      "n_sources": 1,
-      "sources": [
-        "structural_motif"
-      ],
-      "confidence": "LOW",
-      "top_evidence": "structural_motif"
-    },
-    {
-      "go_id": "GO:0051085",
-      "go_name": "chaperone cofactor-dependent protein refolding",
       "namespace": "BP",
       "weighted_score": 1.3,
       "n_sources": 1,
@@ -385,6 +348,42 @@
       ],
       "confidence": "LOW",
       "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0008283",
+      "go_name": "cell population proliferation",
+      "namespace": "BP",
+      "weighted_score": 1.2,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0038127",
+      "go_name": "ERBB signaling pathway",
+      "namespace": "BP",
+      "weighted_score": 1.2,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0007131",
+      "go_name": "reciprocal meiotic recombination",
+      "namespace": "BP",
+      "weighted_score": 1.1,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
     }
   ],
   "go_terms_cc": [
@@ -406,24 +405,10 @@
       "go_id": "GO:0005886",
       "go_name": "C:plasma membrane",
       "namespace": "CC",
-      "weighted_score": 9.55,
-      "n_sources": 2,
+      "weighted_score": 5.1,
+      "n_sources": 1,
       "sources": [
-        "experimental_homolog",
-        "neural_classifier"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0009897",
-      "go_name": "C:external side of plasma membrane",
-      "namespace": "CC",
-      "weighted_score": 9.41,
-      "n_sources": 2,
-      "sources": [
-        "experimental_homolog",
-        "neural_classifier"
+        "experimental_homolog"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -431,6 +416,18 @@
     {
       "go_id": "GO:0032590",
       "go_name": "C:dendrite membrane",
+      "namespace": "CC",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0009897",
+      "go_name": "C:external side of plasma membrane",
       "namespace": "CC",
       "weighted_score": 5.1,
       "n_sources": 1,
@@ -477,16 +474,17 @@
       "top_evidence": "experimental_homolog"
     },
     {
-      "go_id": "GO:0005899",
-      "go_name": "C:insulin receptor complex",
+      "go_id": "GO:0005615",
+      "go_name": "extracellular space",
       "namespace": "CC",
-      "weighted_score": 3.0,
-      "n_sources": 1,
+      "weighted_score": 4.46,
+      "n_sources": 2,
       "sources": [
-        "experimental_homolog"
+        "structural_motif",
+        "neural_classifier"
       ],
       "confidence": "MEDIUM",
-      "top_evidence": "experimental_homolog"
+      "top_evidence": "neural_classifier"
     },
     {
       "go_id": "GO:0005887",
@@ -501,10 +499,10 @@
       "top_evidence": "structural_motif"
     },
     {
-      "go_id": "GO:0005833",
-      "go_name": "hemoglobin complex",
+      "go_id": "GO:0043234",
+      "go_name": "protein complex",
       "namespace": "CC",
-      "weighted_score": 1.3,
+      "weighted_score": 1.1,
       "n_sources": 1,
       "sources": [
         "structural_motif"
@@ -2896,6 +2894,7 @@
     "Thermal shift assay or SPR binding assay against pocket P1 (vol=1460\u00c5\u00b3, druggability=1.00)",
     "Co-immunoprecipitation with IRS1 (unknown interaction, predicted interface: [7, 1, 297])",
     "Co-immunoprecipitation with IRS2 (unknown interaction, predicted interface: [7, 1, 297])",
+    "Enzyme activity assay consistent with EC 2.7.10 using appropriate substrate panel",
     "EMSA or fluorescence polarisation assay to confirm 'ATP binding' (GO:0005524)",
     "GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation"
   ],

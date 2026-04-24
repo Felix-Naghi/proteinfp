@@ -1,0 +1,76 @@
+======================================================================
+  ProteinFP Prediction Report
+  Generated: 2026-04-19 17:53:39
+======================================================================
+
+  Protein    : Heat shock protein beta-1
+  Gene       : HSPB1
+  UniProt    : P04792
+  Organism   : Homo sapiens
+  Length     : 205 aa
+  Mean pLDDT : 68.8
+  Confidence : HIGH
+
+──────────────────────────────────────────────────────────────────────
+  FUNCTIONAL PREDICTION
+──────────────────────────────────────────────────────────────────────
+  Top function     : Small heat shock protein which functions as a molecular chaperone probably maintaining denatured proteins in a folding-competent state (PubMed:10383393, PubMed:20178975). Plays a role in stress resist
+  Enzyme           : no (non-enzyme)
+  Location         : C:plasma membrane
+  Evidence sources : 8
+
+──────────────────────────────────────────────────────────────────────
+  GENE ONTOLOGY PREDICTIONS
+──────────────────────────────────────────────────────────────────────
+
+  Molecular Function:
+    [HIGH  ] GO:0042803 F:protein homodimerization activity (score=5.1, 1 sources)
+    [HIGH  ] GO:0005819 C:spindle (score=5.1, 1 sources)
+    [HIGH  ] GO:0042802 F:identical protein binding (score=5.1, 1 sources)
+    [HIGH  ] GO:0051082 F:unfolded protein binding (score=5.1, 1 sources)
+    [HIGH  ] GO:0030018 C:Z disc (score=5.1, 1 sources)
+
+  Biological Process:
+    [HIGH  ] GO:0044183 F:protein folding chaperone (score=5.1, 1 sources)
+    [HIGH  ] GO:0043066 P:negative regulation of apoptotic process (score=5.1, 1 sources)
+    [HIGH  ] GO:0042026 P:protein refolding (score=5.1, 1 sources)
+    [HIGH  ] GO:0009408 P:response to heat (score=5.1, 1 sources)
+    [HIGH  ] GO:0099641 P:anterograde axonal protein transport (score=5.1, 1 sources)
+
+  Cellular Component:
+    [HIGH  ] GO:0005634 C:nucleus (score=7.8, 3 sources)
+    [HIGH  ] GO:0005737 C:cytoplasm (score=6.5, 2 sources)
+    [HIGH  ] GO:1904115 C:axon cytoplasm (score=5.1, 1 sources)
+
+──────────────────────────────────────────────────────────────────────
+  ACTIVE SITES
+──────────────────────────────────────────────────────────────────────
+  H103 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H124 [HIGH  ] motifs: serine_protease_triad, zinc_binding_cluster
+  H25 [HIGH  ] motifs: hrd_catalytic_loop
+  S82 [MEDIUM] motifs: serine_protease_triad, serine_protease_triad
+  D100 [MEDIUM] motifs: serine_protease_triad, serine_protease_triad
+
+──────────────────────────────────────────────────────────────────────
+  PROTEIN INTERACTIONS (top 8)
+──────────────────────────────────────────────────────────────────────
+  MAPKAPK2        STRING=999  type=unknown
+  MAPKAPK5        STRING=995  type=unknown
+  CYCS            STRING=993  type=unknown
+  HSPA4           STRING=992  type=unknown
+  AKT1            STRING=991  type=unknown
+  EIF4G1          STRING=990  type=unknown
+  HSPA8           STRING=988  type=unknown
+  BAG3            STRING=980  type=unknown
+
+──────────────────────────────────────────────────────────────────────
+  VALIDATION SUGGESTIONS
+──────────────────────────────────────────────────────────────────────
+  1. Alanine scanning mutagenesis of predicted active site residues (H103, H124, H25) to confirm functional importance
+  2. Co-immunoprecipitation with MAPKAPK2 (unknown interaction, predicted interface: [205, 16, 37])
+  3. Co-immunoprecipitation with MAPKAPK5 (unknown interaction, predicted interface: [205, 16, 37])
+  4. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+
+──────────────────────────────────────────────────────────────────────
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+======================================================================

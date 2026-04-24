@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-19 13:04:58
+  Generated: 2026-04-19 19:22:55
 ======================================================================
 
   Protein    : Hemoglobin subunit beta
@@ -9,13 +9,13 @@
   Organism   : Homo sapiens
   Length     : 147 aa
   Mean pLDDT : 97.2
-  Confidence : HIGH
+  Confidence : VERY HIGH
 
 ──────────────────────────────────────────────────────────────────────
   FUNCTIONAL PREDICTION
 ──────────────────────────────────────────────────────────────────────
-  Top function     : heme binding
-  Enzyme           : yes — 1.10.99
+  Top function     : Involved in oxygen transport from the lung to the various peripheral tissues
+  Enzyme           : no (non-enzyme)
   Location         : membrane
   Evidence sources : 12
 
@@ -24,23 +24,23 @@
 ──────────────────────────────────────────────────────────────────────
 
   Molecular Function:
-    [HIGH  ] GO:0020037 heme binding (score=25.5, 5 sources)
-    [HIGH  ] GO:0019825 oxygen binding (score=18.1, 5 sources)
-    [LOW   ] GO:0005344  (score=1.9, 1 sources)
-    [LOW   ] GO:0003677 DNA binding (score=1.7, 1 sources)
-    [LOW   ] GO:0008270 zinc ion binding (score=1.6, 1 sources)
+    [HIGH  ] GO:0020037 heme binding (score=18.6, 3 sources)
+    [HIGH  ] GO:0019825 oxygen binding (score=11.3, 3 sources)
+    [HIGH  ] GO:0046872 F:metal ion binding (score=6.8, 2 sources)
+    [HIGH  ] GO:0072562 C:blood microparticle (score=6.5, 2 sources)
+    [HIGH  ] GO:0031721 F:hemoglobin alpha binding (score=5.1, 1 sources)
 
   Biological Process:
-    [HIGH  ] GO:0015671 oxygen transport (score=18.7, 5 sources)
-    [LOW   ] GO:0015670  (score=1.8, 1 sources)
-    [LOW   ] GO:0048821  (score=1.7, 1 sources)
-    [LOW   ] GO:0055114 oxidation-reduction process (score=1.4, 1 sources)
-    [LOW   ] GO:0019430 removal of superoxide radicals (score=1.4, 1 sources)
+    [HIGH  ] GO:0015671 oxygen transport (score=11.6, 3 sources)
+    [HIGH  ] GO:0042744 P:hydrogen peroxide catabolic process (score=5.1, 1 sources)
+    [HIGH  ] GO:0015670 P:carbon dioxide transport (score=5.1, 1 sources)
+    [HIGH  ] GO:0006954 P:inflammatory response (score=5.1, 1 sources)
+    [HIGH  ] GO:0030185 P:nitric oxide transport (score=5.1, 1 sources)
 
   Cellular Component:
-    [HIGH  ] GO:0005833 hemoglobin complex (score=18.6, 5 sources)
-    [HIGH  ] GO:0031838 haptoglobin-hemoglobin complex (score=5.2, 2 sources)
-    [LOW   ] GO:0005634 nucleus (score=1.9, 2 sources)
+    [HIGH  ] GO:0005833 hemoglobin complex (score=11.6, 3 sources)
+    [HIGH  ] GO:0031838 C:haptoglobin-hemoglobin complex (score=5.1, 1 sources)
+    [HIGH  ] GO:0005615 C:extracellular space (score=5.1, 1 sources)
 
 ──────────────────────────────────────────────────────────────────────
   ACTIVE SITES
@@ -49,7 +49,7 @@
   H93 [HIGH  ] motifs: serine_protease_triad, cysteine_protease_dyad
   H98 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
   H147 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
-  G25 [MEDIUM] motifs: p_loop_walker_a, ghkl_atpase
+  S90 [MEDIUM] motifs: serine_protease_triad, serine_protease_triad
 
 ──────────────────────────────────────────────────────────────────────
   BINDING POCKETS
@@ -79,9 +79,8 @@
   2. Thermal shift assay or SPR binding assay against pocket P1 (vol=1120Å³, druggability=0.95)
   3. Co-immunoprecipitation with HBA2 (unknown interaction, predicted interface: [121, 147, 96])
   4. Co-immunoprecipitation with HBA1 (unknown interaction, predicted interface: [121, 147, 96])
-  5. Enzyme activity assay consistent with EC 1.10.99 using appropriate substrate panel
-  6. EMSA or fluorescence polarisation assay to confirm 'heme binding' (GO:0020037)
-  7. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+  5. EMSA or fluorescence polarisation assay to confirm 'heme binding' (GO:0020037)
+  6. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
   Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi

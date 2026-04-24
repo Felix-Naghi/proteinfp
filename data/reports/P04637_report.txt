@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-19 13:04:33
+  Generated: 2026-04-19 15:20:29
 ======================================================================
 
   Protein    : Cellular tumor antigen p53
@@ -9,12 +9,12 @@
   Organism   : Homo sapiens
   Length     : 393 aa
   Mean pLDDT : 75.0
-  Confidence : VERY HIGH
+  Confidence : HIGH
 
 ──────────────────────────────────────────────────────────────────────
   FUNCTIONAL PREDICTION
 ──────────────────────────────────────────────────────────────────────
-  Top function     : Multifunctional transcription factor that induces cell cycle arrest, DNA repair or apoptosis upon binding to its target DNA sequence (PubMed:11025664, PubMed:12524540, PubMed:12810724, PubMed:15186775
+  Top function     : DNA binding
   Enzyme           : no (non-enzyme)
   Location         : membrane
   Evidence sources : 12
@@ -24,23 +24,23 @@
 ──────────────────────────────────────────────────────────────────────
 
   Molecular Function:
-    [HIGH  ] GO:0003677 DNA binding (score=24.4, 5 sources)
-    [HIGH  ] GO:0003700 DNA-binding transcription factor activity (score=20.1, 4 sources)
-    [HIGH  ] GO:0051262 protein tetramerization (score=11.0, 2 sources)
-    [HIGH  ] GO:1990841 F:promoter-specific chromatin binding (score=9.9, 2 sources)
-    [HIGH  ] GO:0097371 F:MDM2/MDM4 family protein binding (score=9.8, 2 sources)
+    [HIGH  ] GO:0003700 DNA-binding transcription factor activity (score=17.2, 4 sources)
+    [HIGH  ] GO:0003677 DNA binding (score=14.0, 4 sources)
+    [HIGH  ] GO:0051262 protein tetramerization (score=10.4, 2 sources)
+    [HIGH  ] GO:0005515 protein binding (score=8.2, 3 sources)
+    [HIGH  ] GO:0000976 transcription cis-regulatory region binding (score=6.9, 2 sources)
 
   Biological Process:
-    [HIGH  ] GO:0006974 P:DNA damage response (score=12.6, 3 sources)
-    [HIGH  ] GO:0006355 regulation of DNA-templated transcription (score=11.2, 1 sources)
-    [HIGH  ] GO:0071456 P:cellular response to hypoxia (score=9.5, 2 sources)
-    [HIGH  ] GO:0006915 apoptotic process (score=5.8, 2 sources)
-    [HIGH  ] GO:0097190 P:apoptotic signaling pathway (score=5.1, 1 sources)
+    [HIGH  ] GO:0006355 regulation of DNA-templated transcription (score=13.9, 2 sources)
+    [HIGH  ] GO:0006915 apoptotic process (score=8.4, 3 sources)
+    [MEDIUM] GO:0045944 positive regulation of transcription by RNA p (score=4.7, 2 sources)
+    [LOW   ] GO:0015671 oxygen transport (score=1.4, 1 sources)
+    [LOW   ] GO:0006974 cellular response to DNA damage stimulus (score=1.4, 1 sources)
 
   Cellular Component:
-    [HIGH  ] GO:0005634 nucleus (score=28.4, 6 sources)
-    [HIGH  ] GO:0005737 C:cytoplasm (score=6.5, 2 sources)
-    [HIGH  ] GO:0005759 C:mitochondrial matrix (score=5.1, 1 sources)
+    [HIGH  ] GO:0005634 nucleus (score=16.0, 5 sources)
+    [MEDIUM] GO:0043234 protein complex (score=2.6, 2 sources)
+    [LOW   ] GO:0005833 hemoglobin complex (score=1.3, 1 sources)
 
 ──────────────────────────────────────────────────────────────────────
   ACTIVE SITES
@@ -87,7 +87,7 @@
   2. Thermal shift assay or SPR binding assay against pocket P1 (vol=560Å³, druggability=0.98)
   3. Co-immunoprecipitation with SFN (unknown interaction, predicted interface: [1, 306, 65])
   4. Co-immunoprecipitation with EP300 (unknown interaction, predicted interface: [1, 306, 65])
-  5. EMSA or fluorescence polarisation assay to confirm 'DNA binding' (GO:0003677)
+  5. EMSA or fluorescence polarisation assay to confirm 'DNA-binding transcription factor activity' (GO:0003700)
   6. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────

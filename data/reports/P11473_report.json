@@ -1,0 +1,1168 @@
+{
+  "uniprot_id": "P11473",
+  "gene_name": "VDR",
+  "protein_name": "Vitamin D3 receptor",
+  "organism": "Homo sapiens",
+  "sequence_length": 427,
+  "generated_at": "2026-04-19 16:40:47",
+  "top_function": "Nuclear receptor for calcitriol, the active form of vitamin D3 which mediates the action of this vitamin on cells (PubMed:10678179, PubMed:15728261, PubMed:16913708, PubMed:28698609, PubMed:37478846).",
+  "is_enzyme": false,
+  "ec_number": "3.4.21",
+  "subcellular_location": "membrane",
+  "go_terms_mf": [
+    {
+      "go_id": "GO:0008270",
+      "go_name": "zinc ion binding",
+      "namespace": "MF",
+      "weighted_score": 14.8,
+      "n_sources": 3,
+      "sources": [
+        "experimental_homolog",
+        "domain_annotation",
+        "structural_motif"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0003677",
+      "go_name": "DNA binding",
+      "namespace": "MF",
+      "weighted_score": 11.6,
+      "n_sources": 3,
+      "sources": [
+        "experimental_homolog",
+        "domain_annotation",
+        "structural_motif"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0004879",
+      "go_name": "nuclear receptor activity",
+      "namespace": "MF",
+      "weighted_score": 9.5,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "domain_annotation"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0043565",
+      "go_name": "sequence-specific DNA binding",
+      "namespace": "MF",
+      "weighted_score": 7.75,
+      "n_sources": 1,
+      "sources": [
+        "domain_annotation"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "domain_annotation"
+    },
+    {
+      "go_id": "GO:0003700",
+      "go_name": "DNA-binding transcription factor activity",
+      "namespace": "MF",
+      "weighted_score": 5.75,
+      "n_sources": 2,
+      "sources": [
+        "domain_annotation",
+        "structural_motif"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0030154",
+      "go_name": "P:cell differentiation",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0000978",
+      "go_name": "F:RNA polymerase II cis-regulatory region sequence-specific DNA binding",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005499",
+      "go_name": "F:vitamin D binding",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005654",
+      "go_name": "C:nucleoplasm",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:1902098",
+      "go_name": "F:calcitriol binding",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:1902121",
+      "go_name": "F:lithocholic acid binding",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0000785",
+      "go_name": "C:chromatin",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0043235",
+      "go_name": "C:receptor complex",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0038186",
+      "go_name": "F:bile acid nuclear receptor activity",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0046965",
+      "go_name": "F:nuclear retinoid X receptor binding",
+      "namespace": "MF",
+      "weighted_score": 3.0,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "experimental_homolog"
+    }
+  ],
+  "go_terms_bp": [
+    {
+      "go_id": "GO:0006355",
+      "go_name": "regulation of DNA-templated transcription",
+      "namespace": "BP",
+      "weighted_score": 16.5,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "domain_annotation"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0045944",
+      "go_name": "P:positive regulation of transcription by RNA polymerase II",
+      "namespace": "BP",
+      "weighted_score": 6.5,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "structural_motif"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0000122",
+      "go_name": "P:negative regulation of transcription by RNA polymerase II",
+      "namespace": "BP",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0070561",
+      "go_name": "P:vitamin D receptor signaling pathway",
+      "namespace": "BP",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0070644",
+      "go_name": "F:vitamin D response element binding",
+      "namespace": "BP",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0030522",
+      "go_name": "P:intracellular receptor signaling pathway",
+      "namespace": "BP",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0006816",
+      "go_name": "P:calcium ion transport",
+      "namespace": "BP",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0060057",
+      "go_name": "P:apoptotic process involved in mammary gland involution",
+      "namespace": "BP",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0006351",
+      "go_name": "DNA-templated transcription",
+      "namespace": "BP",
+      "weighted_score": 1.3,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0051085",
+      "go_name": "chaperone cofactor-dependent protein refolding",
+      "namespace": "BP",
+      "weighted_score": 1.3,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0030193",
+      "go_name": "regulation of blood coagulation",
+      "namespace": "BP",
+      "weighted_score": 1.2,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0006508",
+      "go_name": "proteolysis",
+      "namespace": "BP",
+      "weighted_score": 1.1,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0010819",
+      "go_name": "regulation of T cell chemotaxis",
+      "namespace": "BP",
+      "weighted_score": 0.9,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    }
+  ],
+  "go_terms_cc": [
+    {
+      "go_id": "GO:0005634",
+      "go_name": "nucleus",
+      "namespace": "CC",
+      "weighted_score": 12.35,
+      "n_sources": 4,
+      "sources": [
+        "experimental_homolog",
+        "domain_annotation",
+        "ai_esm2",
+        "structural_motif"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005737",
+      "go_name": "C:cytoplasm",
+      "namespace": "CC",
+      "weighted_score": 6.5,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "sequence_baseline"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005829",
+      "go_name": "C:cytosol",
+      "namespace": "CC",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0090575",
+      "go_name": "C:RNA polymerase II transcription regulator complex",
+      "namespace": "CC",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0043234",
+      "go_name": "protein complex",
+      "namespace": "CC",
+      "weighted_score": 1.1,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0072562",
+      "go_name": "blood microparticle",
+      "namespace": "CC",
+      "weighted_score": 1.0,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    }
+  ],
+  "active_sites": [
+    {
+      "residue_number": 76,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 3.58,
+      "plddt": 97.69,
+      "motifs": [
+        "cysteine_protease_dyad",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 9,
+      "confidence": "HIGH",
+      "coords": [
+        -60.582,
+        -19.157,
+        37.983
+      ],
+      "domain_context": "glucocorticoid receptor-like (dna-binding domain)"
+    },
+    {
+      "residue_number": 229,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 0.64,
+      "plddt": 95.31,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "acid_base_pair"
+      ],
+      "evidence_score": 9,
+      "confidence": "HIGH",
+      "coords": [
+        12.242,
+        -2.578,
+        -27.115
+      ],
+      "domain_context": "nuclear receptor ligand-binding domain"
+    },
+    {
+      "residue_number": 75,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 126.43,
+      "plddt": 96.56,
+      "motifs": [
+        "cysteine_protease_dyad",
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        -62.503,
+        -17.35,
+        35.185
+      ],
+      "domain_context": "glucocorticoid receptor-like (dna-binding domain)"
+    },
+    {
+      "residue_number": 305,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 29.56,
+      "plddt": 96.12,
+      "motifs": [
+        "serine_protease_triad"
+      ],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        21.043,
+        -7.818,
+        -18.165
+      ],
+      "domain_context": "nuclear receptor ligand-binding domain"
+    },
+    {
+      "residue_number": 189,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 176.62,
+      "plddt": 30.73,
+      "motifs": [
+        "serine_protease_triad",
+        "cysteine_protease_dyad",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "acid_base_pair"
+      ],
+      "evidence_score": 6,
+      "confidence": "HIGH",
+      "coords": [
+        -12.567,
+        -26.583,
+        -1.241
+      ],
+      "domain_context": "nuclear receptor ligand-binding domain"
+    },
+    {
+      "residue_number": 190,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 122.34,
+      "plddt": 22.05,
+      "motifs": [
+        "cysteine_protease_dyad",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 6,
+      "confidence": "HIGH",
+      "coords": [
+        -10.195,
+        -24.843,
+        1.135
+      ],
+      "domain_context": "nuclear receptor ligand-binding domain"
+    },
+    {
+      "residue_number": 235,
+      "chain_id": "A",
+      "one_letter": "S",
+      "three_letter": "SER",
+      "conservation": 4.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 13.43,
+      "plddt": 96.06,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        11.359,
+        5.273,
+        -21.243
+      ],
+      "domain_context": "nuclear receptor ligand-binding domain"
+    },
+    {
+      "residue_number": 299,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 1.37,
+      "plddt": 96.06,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        13.746,
+        -11.284,
+        -22.852
+      ],
+      "domain_context": "nuclear receptor ligand-binding domain"
+    },
+    {
+      "residue_number": 225,
+      "chain_id": "A",
+      "one_letter": "S",
+      "three_letter": "SER",
+      "conservation": 4.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 23.91,
+      "plddt": 93.0,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        17.745,
+        -8.043,
+        -29.812
+      ],
+      "domain_context": "nuclear receptor ligand-binding domain"
+    },
+    {
+      "residue_number": 292,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 92.69,
+      "plddt": 88.0,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "acid_base_pair"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        3.129,
+        -10.221,
+        -27.516
+      ],
+      "domain_context": "nuclear receptor ligand-binding domain"
+    },
+    {
+      "residue_number": 398,
+      "chain_id": "A",
+      "one_letter": "S",
+      "three_letter": "SER",
+      "conservation": 4.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 28.81,
+      "plddt": 95.62,
+      "motifs": [
+        "serine_protease_triad"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        23.227,
+        0.972,
+        -12.558
+      ],
+      "domain_context": "nuclear receptor ligand-binding domain"
+    },
+    {
+      "residue_number": 24,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 2.07,
+      "plddt": 98.06,
+      "motifs": [
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 9,
+      "confidence": "HIGH",
+      "coords": [
+        -49.843,
+        -26.151,
+        26.795
+      ],
+      "domain_context": "glucocorticoid receptor-like (dna-binding domain)"
+    },
+    {
+      "residue_number": 27,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 5.06,
+      "plddt": 97.94,
+      "motifs": [
+        "zinc_binding_cluster",
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 9,
+      "confidence": "HIGH",
+      "coords": [
+        -54.978,
+        -24.846,
+        29.251
+      ],
+      "domain_context": "glucocorticoid receptor-like (dna-binding domain)"
+    },
+    {
+      "residue_number": 41,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 4.66,
+      "plddt": 97.94,
+      "motifs": [
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 9,
+      "confidence": "HIGH",
+      "coords": [
+        -48.2,
+        -21.054,
+        26.201
+      ],
+      "domain_context": "glucocorticoid receptor-like (dna-binding domain)"
+    },
+    {
+      "residue_number": 44,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 0.0,
+      "plddt": 98.44,
+      "motifs": [
+        "zinc_binding_cluster",
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 9,
+      "confidence": "HIGH",
+      "coords": [
+        -49.649,
+        -19.362,
+        31.286
+      ],
+      "domain_context": "glucocorticoid receptor-like (dna-binding domain)"
+    },
+    {
+      "residue_number": 79,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 7.18,
+      "plddt": 98.38,
+      "motifs": [
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 9,
+      "confidence": "HIGH",
+      "coords": [
+        -57.448,
+        -23.658,
+        39.779
+      ],
+      "domain_context": "glucocorticoid receptor-like (dna-binding domain)"
+    },
+    {
+      "residue_number": 139,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 1.45,
+      "plddt": 98.5,
+      "motifs": [
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "acid_base_pair"
+      ],
+      "evidence_score": 9,
+      "confidence": "HIGH",
+      "coords": [
+        -1.772,
+        5.893,
+        -9.975
+      ],
+      "domain_context": "nuclear receptor ligand-binding domain"
+    },
+    {
+      "residue_number": 330,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 14.01,
+      "plddt": 98.69,
+      "motifs": [
+        "zinc_binding_cluster",
+        "acid_base_pair",
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 9,
+      "confidence": "HIGH",
+      "coords": [
+        1.324,
+        0.06,
+        -2.986
+      ],
+      "domain_context": "nuclear receptor ligand-binding domain"
+    },
+    {
+      "residue_number": 397,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 11.2,
+      "plddt": 97.56,
+      "motifs": [
+        "zinc_binding_cluster",
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 9,
+      "confidence": "HIGH",
+      "coords": [
+        21.008,
+        -2.17,
+        -12.427
+      ],
+      "domain_context": "nuclear receptor ligand-binding domain"
+    },
+    {
+      "residue_number": 60,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 24.35,
+      "plddt": 97.69,
+      "motifs": [
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        -61.798,
+        -20.525,
+        43.768
+      ],
+      "domain_context": "glucocorticoid receptor-like (dna-binding domain)"
+    },
+    {
+      "residue_number": 66,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 31.11,
+      "plddt": 97.5,
+      "motifs": [
+        "zinc_binding_cluster",
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        -62.231,
+        -26.102,
+        37.672
+      ],
+      "domain_context": "glucocorticoid receptor-like (dna-binding domain)"
+    },
+    {
+      "residue_number": 84,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 0.0,
+      "plddt": 98.31,
+      "motifs": [],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        -49.49,
+        -24.689,
+        36.698
+      ],
+      "domain_context": "glucocorticoid receptor-like (dna-binding domain)"
+    },
+    {
+      "residue_number": 140,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 110.9,
+      "plddt": 97.88,
+      "motifs": [
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        -4.924,
+        5.412,
+        -12.129
+      ],
+      "domain_context": "nuclear receptor ligand-binding domain"
+    },
+    {
+      "residue_number": 288,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 8.03,
+      "plddt": 92.25,
+      "motifs": [],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        1.492,
+        -6.233,
+        -20.211
+      ],
+      "domain_context": "nuclear receptor ligand-binding domain"
+    },
+    {
+      "residue_number": 326,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 68.81,
+      "plddt": 97.38,
+      "motifs": [
+        "zinc_binding_cluster",
+        "acid_base_pair",
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        -3.732,
+        -3.186,
+        -0.968
+      ],
+      "domain_context": "nuclear receptor ligand-binding domain"
+    },
+    {
+      "residue_number": 337,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 2.02,
+      "plddt": 98.75,
+      "motifs": [],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        10.42,
+        5.381,
+        -2.329
+      ],
+      "domain_context": "nuclear receptor ligand-binding domain"
+    },
+    {
+      "residue_number": 410,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 0.0,
+      "plddt": 90.12,
+      "motifs": [],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        24.205,
+        -0.27,
+        -27.39
+      ],
+      "domain_context": "nuclear receptor ligand-binding domain"
+    },
+    {
+      "residue_number": 186,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 117.94,
+      "plddt": 20.86,
+      "motifs": [
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 6,
+      "confidence": "HIGH",
+      "coords": [
+        -18.5,
+        -23.493,
+        -8.612
+      ],
+      "domain_context": "nuclear receptor ligand-binding domain"
+    },
+    {
+      "residue_number": 29,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 19.27,
+      "plddt": 97.19,
+      "motifs": [
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        -53.543,
+        -23.584,
+        23.999
+      ],
+      "domain_context": "glucocorticoid receptor-like (dna-binding domain)"
+    },
+    {
+      "residue_number": 35,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 27.22,
+      "plddt": 97.38,
+      "motifs": [],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        -41.297,
+        -22.127,
+        30.631
+      ],
+      "domain_context": "glucocorticoid receptor-like (dna-binding domain)"
+    }
+  ],
+  "binding_pockets": [],
+  "allosteric_sites": [],
+  "ppi_partners": [],
+  "mean_plddt": 83.56,
+  "n_evidence_sources": 8,
+  "overall_confidence": "VERY HIGH",
+  "validation_suggestions": [
+    "Alanine scanning mutagenesis of predicted active site residues (C76, H229, H75) to confirm functional importance",
+    "EMSA or fluorescence polarisation assay to confirm 'zinc ion binding' (GO:0008270)",
+    "GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation"
+  ],
+  "modules_run": [
+    "structure",
+    "physico",
+    "active",
+    "homology",
+    "esm2",
+    "go",
+    "ec",
+    "ppi"
+  ],
+  "modules_missing": [
+    "pockets",
+    "allosteric",
+    "chem_env",
+    "foldseek"
+  ]
+}

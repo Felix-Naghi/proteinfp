@@ -1,0 +1,78 @@
+======================================================================
+  ProteinFP Prediction Report
+  Generated: 2026-04-19 18:41:35
+======================================================================
+
+  Protein    : Cell division control protein 42 homolog
+  Gene       : CDC42
+  UniProt    : P60953
+  Organism   : Homo sapiens
+  Length     : 191 aa
+  Mean pLDDT : 93.5
+  Confidence : VERY HIGH
+
+──────────────────────────────────────────────────────────────────────
+  FUNCTIONAL PREDICTION
+──────────────────────────────────────────────────────────────────────
+  Top function     : Plasma membrane-associated small GTPase which cycles between an active GTP-bound and an inactive GDP-bound state (PubMed:24352656). In its active state binds to a variety of effector proteins to regul
+  Enzyme           : yes — 3.6.5
+  Location         : C:plasma membrane
+  Evidence sources : 8
+
+──────────────────────────────────────────────────────────────────────
+  GENE ONTOLOGY PREDICTIONS
+──────────────────────────────────────────────────────────────────────
+
+  Molecular Function:
+    [HIGH  ] GO:0005525 GTP binding (score=18.3, 3 sources)
+    [HIGH  ] GO:0003924 GTPase activity (score=14.5, 3 sources)
+    [HIGH  ] GO:0019901 F:protein kinase binding (score=5.1, 1 sources)
+    [HIGH  ] GO:0007015 P:actin filament organization (score=5.1, 1 sources)
+    [HIGH  ] GO:0005813 C:centrosome (score=5.1, 1 sources)
+
+  Biological Process:
+    [HIGH  ] GO:0007264 small GTPase-mediated signal transduction (score=9.5, 2 sources)
+    [HIGH  ] GO:0022412 P:cellular process involved in reproduction i (score=5.1, 1 sources)
+    [HIGH  ] GO:0003006 P:developmental process involved in reproduct (score=5.1, 1 sources)
+    [HIGH  ] GO:0035006 P:melanization defense response (score=5.1, 1 sources)
+    [HIGH  ] GO:0051130 P:positive regulation of cellular component o (score=5.1, 1 sources)
+
+  Cellular Component:
+    [HIGH  ] GO:0005737 C:cytoplasm (score=6.5, 2 sources)
+    [HIGH  ] GO:0016020 C:membrane (score=6.5, 2 sources)
+    [HIGH  ] GO:0005886 C:plasma membrane (score=5.1, 1 sources)
+
+──────────────────────────────────────────────────────────────────────
+  ACTIVE SITES
+──────────────────────────────────────────────────────────────────────
+  C105 [HIGH  ] motifs: cysteine_protease_dyad, cysteine_protease_dyad
+  H103 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
+  H104 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
+  G10 [MEDIUM] motifs: p_loop_walker_a
+  V14 [MEDIUM] motifs: p_loop_walker_a
+
+──────────────────────────────────────────────────────────────────────
+  PROTEIN INTERACTIONS (top 8)
+──────────────────────────────────────────────────────────────────────
+  ARHGEF7         STRING=999  type=unknown
+  ARHGAP1         STRING=999  type=unknown
+  ITSN1           STRING=999  type=unknown
+  TNK2            STRING=999  type=unknown
+  IQGAP2          STRING=999  type=unknown
+  WASL            STRING=999  type=unknown
+  PARD6B          STRING=999  type=unknown
+  IQGAP1          STRING=999  type=unknown
+
+──────────────────────────────────────────────────────────────────────
+  VALIDATION SUGGESTIONS
+──────────────────────────────────────────────────────────────────────
+  1. Alanine scanning mutagenesis of predicted active site residues (C105, H103, H104) to confirm functional importance
+  2. Co-immunoprecipitation with ARHGEF7 (unknown interaction, predicted interface: [186, 191, 66])
+  3. Co-immunoprecipitation with ARHGAP1 (unknown interaction, predicted interface: [186, 191, 66])
+  4. Enzyme activity assay consistent with EC 3.6.5 using appropriate substrate panel
+  5. EMSA or fluorescence polarisation assay to confirm 'GTP binding' (GO:0005525)
+  6. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+
+──────────────────────────────────────────────────────────────────────
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+======================================================================

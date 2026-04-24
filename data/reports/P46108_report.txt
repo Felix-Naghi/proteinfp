@@ -1,0 +1,78 @@
+======================================================================
+  ProteinFP Prediction Report
+  Generated: 2026-04-19 21:35:47
+======================================================================
+
+  Protein    : Adapter molecule crk
+  Gene       : CRK
+  UniProt    : P46108
+  Organism   : Homo sapiens
+  Length     : 304 aa
+  Mean pLDDT : 69.8
+  Confidence : HIGH
+
+──────────────────────────────────────────────────────────────────────
+  FUNCTIONAL PREDICTION
+──────────────────────────────────────────────────────────────────────
+  Top function     : Involved in cell branching and adhesion mediated by BCAR1-CRK-RAPGEF1 signaling and activation of RAP1
+  Enzyme           : yes — 2.7.10
+  Location         : C:plasma membrane
+  Evidence sources : 8
+
+──────────────────────────────────────────────────────────────────────
+  GENE ONTOLOGY PREDICTIONS
+──────────────────────────────────────────────────────────────────────
+
+  Molecular Function:
+    [HIGH  ] GO:0005515 protein binding (score=9.1, 2 sources)
+    [HIGH  ] GO:0030971 F:receptor tyrosine kinase binding (score=5.1, 1 sources)
+    [HIGH  ] GO:0001784 F:phosphotyrosine residue binding (score=5.1, 1 sources)
+    [HIGH  ] GO:0016477 P:cell migration (score=5.1, 1 sources)
+    [HIGH  ] GO:0031594 C:neuromuscular junction (score=5.1, 1 sources)
+
+  Biological Process:
+    [HIGH  ] GO:0035591 F:signaling adaptor activity (score=5.1, 1 sources)
+    [HIGH  ] GO:0007167 P:enzyme-linked receptor protein signaling pa (score=5.1, 1 sources)
+    [HIGH  ] GO:0048013 P:ephrin receptor signaling pathway (score=5.1, 1 sources)
+    [HIGH  ] GO:0032956 P:regulation of actin cytoskeleton organizati (score=5.1, 1 sources)
+    [HIGH  ] GO:0043087 P:regulation of GTPase activity (score=5.1, 1 sources)
+
+  Cellular Component:
+    [HIGH  ] GO:0005737 C:cytoplasm (score=6.5, 2 sources)
+    [HIGH  ] GO:0016020 C:membrane (score=6.5, 2 sources)
+    [HIGH  ] GO:0032991 C:protein-containing complex (score=5.1, 1 sources)
+
+──────────────────────────────────────────────────────────────────────
+  ACTIVE SITES
+──────────────────────────────────────────────────────────────────────
+  C279 [HIGH  ] motifs: p_loop_walker_a
+  H32 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H59 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H285 [HIGH  ] motifs: serine_protease_triad, acid_base_pair
+  H290 [HIGH  ] motifs: hrd_catalytic_loop
+
+──────────────────────────────────────────────────────────────────────
+  PROTEIN INTERACTIONS (top 8)
+──────────────────────────────────────────────────────────────────────
+  ABL1            STRING=999  type=unknown
+  DOCK1           STRING=999  type=unknown
+  PXN             STRING=999  type=unknown
+  RAPGEF1         STRING=999  type=unknown
+  BCAR1           STRING=999  type=unknown
+  SRC             STRING=999  type=unknown
+  CBL             STRING=999  type=unknown
+  ELMO1           STRING=998  type=unknown
+
+──────────────────────────────────────────────────────────────────────
+  VALIDATION SUGGESTIONS
+──────────────────────────────────────────────────────────────────────
+  1. Alanine scanning mutagenesis of predicted active site residues (C279, H32, H59) to confirm functional importance
+  2. Co-immunoprecipitation with ABL1 (unknown interaction, predicted interface: [17, 221, 303])
+  3. Co-immunoprecipitation with DOCK1 (unknown interaction, predicted interface: [17, 221, 303])
+  4. Enzyme activity assay consistent with EC 2.7.10 using appropriate substrate panel
+  5. EMSA or fluorescence polarisation assay to confirm 'protein binding' (GO:0005515)
+  6. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+
+──────────────────────────────────────────────────────────────────────
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+======================================================================

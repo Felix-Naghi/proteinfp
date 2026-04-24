@@ -1,0 +1,77 @@
+======================================================================
+  ProteinFP Prediction Report
+  Generated: 2026-04-19 14:58:08
+======================================================================
+
+  Protein    : Caspase-7
+  Gene       : CASP7
+  UniProt    : P55210
+  Organism   : Homo sapiens
+  Length     : 303 aa
+  Mean pLDDT : 81.7
+  Confidence : VERY HIGH
+
+──────────────────────────────────────────────────────────────────────
+  FUNCTIONAL PREDICTION
+──────────────────────────────────────────────────────────────────────
+  Top function     : Thiol protease involved in different programmed cell death processes, such as apoptosis, pyroptosis or granzyme-mediated programmed cell death, by proteolytically cleaving target proteins (PubMed:1125
+  Enzyme           : yes — 3.4.21
+  Location         : C:plasma membrane
+  Evidence sources : 8
+
+──────────────────────────────────────────────────────────────────────
+  GENE ONTOLOGY PREDICTIONS
+──────────────────────────────────────────────────────────────────────
+
+  Molecular Function:
+    [HIGH  ] GO:0004197 cysteine-type endopeptidase activity (score=20.0, 2 sources)
+    [HIGH  ] GO:0008234 cysteine-type peptidase activity (score=9.5, 2 sources)
+    [HIGH  ] GO:0008233 F:peptidase activity (score=7.0, 2 sources)
+    [HIGH  ] GO:0097194 P:execution phase of apoptosis (score=5.1, 1 sources)
+    [HIGH  ] GO:0004190 F:aspartic-type endopeptidase activity (score=5.1, 1 sources)
+
+  Biological Process:
+    [HIGH  ] GO:0006508 proteolysis (score=21.5, 3 sources)
+    [HIGH  ] GO:0006915 P:apoptotic process (score=5.1, 1 sources)
+    [HIGH  ] GO:0043525 P:positive regulation of neuron apoptotic pro (score=5.1, 1 sources)
+    [HIGH  ] GO:0031264 C:death-inducing signaling complex (score=5.1, 1 sources)
+    [HIGH  ] GO:0072734 P:cellular response to staurosporine (score=5.1, 1 sources)
+
+  Cellular Component:
+    [HIGH  ] GO:0005634 C:nucleus (score=7.8, 3 sources)
+    [HIGH  ] GO:0005737 C:cytoplasm (score=6.5, 2 sources)
+    [HIGH  ] GO:0005829 C:cytosol (score=5.1, 1 sources)
+
+──────────────────────────────────────────────────────────────────────
+  ACTIVE SITES
+──────────────────────────────────────────────────────────────────────
+  H144 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H165 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H252 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H281 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H283 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+
+──────────────────────────────────────────────────────────────────────
+  PROTEIN INTERACTIONS (top 8)
+──────────────────────────────────────────────────────────────────────
+  XIAP            STRING=999  type=unknown
+  BIRC2           STRING=997  type=unknown
+  PARP1           STRING=995  type=unknown
+  BIRC7           STRING=993  type=unknown
+  CASP8           STRING=992  type=apoptotic
+  BIRC3           STRING=989  type=unknown
+  CASP10          STRING=968  type=apoptotic
+  ACTB            STRING=967  type=unknown
+
+──────────────────────────────────────────────────────────────────────
+  VALIDATION SUGGESTIONS
+──────────────────────────────────────────────────────────────────────
+  1. Alanine scanning mutagenesis of predicted active site residues (H144, H165, H252) to confirm functional importance
+  2. Co-immunoprecipitation with XIAP (unknown interaction, predicted interface: [1, 52, 28])
+  3. Co-immunoprecipitation with BIRC2 (unknown interaction, predicted interface: [1, 52, 28])
+  4. Enzyme activity assay consistent with EC 3.4.21 using appropriate substrate panel
+  5. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+
+──────────────────────────────────────────────────────────────────────
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+======================================================================

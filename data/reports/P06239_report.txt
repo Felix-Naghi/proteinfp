@@ -1,0 +1,78 @@
+======================================================================
+  ProteinFP Prediction Report
+  Generated: 2026-04-19 14:52:05
+======================================================================
+
+  Protein    : Tyrosine-protein kinase Lck
+  Gene       : LCK
+  UniProt    : P06239
+  Organism   : Homo sapiens
+  Length     : 509 aa
+  Mean pLDDT : 83.6
+  Confidence : VERY HIGH
+
+──────────────────────────────────────────────────────────────────────
+  FUNCTIONAL PREDICTION
+──────────────────────────────────────────────────────────────────────
+  Top function     : Non-receptor tyrosine-protein kinase that plays an essential role in the selection and maturation of developing T-cells in the thymus and in the function of mature T-cells (PubMed:2470098). Plays a ke
+  Enzyme           : yes — 2.7.10
+  Location         : C:plasma membrane
+  Evidence sources : 8
+
+──────────────────────────────────────────────────────────────────────
+  GENE ONTOLOGY PREDICTIONS
+──────────────────────────────────────────────────────────────────────
+
+  Molecular Function:
+    [HIGH  ] GO:0005524 ATP binding (score=14.8, 3 sources)
+    [HIGH  ] GO:0004672 protein kinase activity (score=13.1, 2 sources)
+    [HIGH  ] GO:0004713 protein tyrosine kinase activity (score=9.5, 2 sources)
+    [HIGH  ] GO:0005515 protein binding (score=9.1, 2 sources)
+    [HIGH  ] GO:0004715 F:non-membrane spanning protein tyrosine kina (score=5.1, 1 sources)
+
+  Biological Process:
+    [HIGH  ] GO:0006468 protein phosphorylation (score=16.4, 2 sources)
+    [HIGH  ] GO:0005102 F:signaling receptor binding (score=5.1, 1 sources)
+    [HIGH  ] GO:0007169 P:cell surface receptor protein tyrosine kina (score=5.1, 1 sources)
+    [HIGH  ] GO:0030133 C:transport vesicle (score=5.1, 1 sources)
+    [HIGH  ] GO:0038094 P:Fc-gamma receptor signaling pathway (score=5.1, 1 sources)
+
+  Cellular Component:
+    [HIGH  ] GO:0005634 C:nucleus (score=7.8, 3 sources)
+    [HIGH  ] GO:0005737 C:cytoplasm (score=6.5, 2 sources)
+    [HIGH  ] GO:0005829 C:cytosol (score=5.1, 1 sources)
+
+──────────────────────────────────────────────────────────────────────
+  ACTIVE SITES
+──────────────────────────────────────────────────────────────────────
+  H362 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H436 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  D364 [MEDIUM] motifs: serine_protease_triad, serine_protease_triad
+  S421 [MEDIUM] motifs: serine_protease_triad, serine_protease_triad
+  D422 [MEDIUM] motifs: serine_protease_triad, serine_protease_triad
+
+──────────────────────────────────────────────────────────────────────
+  PROTEIN INTERACTIONS (top 8)
+──────────────────────────────────────────────────────────────────────
+  PTPRC           STRING=999  type=unknown
+  LCP2            STRING=999  type=unknown
+  CD8A            STRING=999  type=unknown
+  ZAP70           STRING=999  type=unknown
+  CD4             STRING=999  type=unknown
+  CD28            STRING=998  type=unknown
+  FYN             STRING=998  type=unknown
+  CD247           STRING=996  type=unknown
+
+──────────────────────────────────────────────────────────────────────
+  VALIDATION SUGGESTIONS
+──────────────────────────────────────────────────────────────────────
+  1. Alanine scanning mutagenesis of predicted active site residues (H362, H436, H180) to confirm functional importance
+  2. Co-immunoprecipitation with PTPRC (unknown interaction, predicted interface: [1, 45, 33])
+  3. Co-immunoprecipitation with LCP2 (unknown interaction, predicted interface: [1, 45, 33])
+  4. Enzyme activity assay consistent with EC 2.7.10 using appropriate substrate panel
+  5. EMSA or fluorescence polarisation assay to confirm 'ATP binding' (GO:0005524)
+  6. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+
+──────────────────────────────────────────────────────────────────────
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+======================================================================

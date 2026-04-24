@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-19 13:04:37
+  Generated: 2026-04-19 14:26:58
 ======================================================================
 
   Protein    : Epidermal growth factor receptor
@@ -16,7 +16,7 @@
 ──────────────────────────────────────────────────────────────────────
   Top function     : Receptor tyrosine kinase binding ligands of the EGF family and activating several signaling cascades to convert extracellular cues into appropriate cellular responses (PubMed:10805725, PubMed:27153536
   Enzyme           : yes — 2.7.10
-  Location         : C:plasma membrane
+  Location         : integral component of plasma membrane
   Evidence sources : 12
 
 ──────────────────────────────────────────────────────────────────────
@@ -27,8 +27,8 @@
     [HIGH  ] GO:0005524 ATP binding (score=18.3, 3 sources)
     [HIGH  ] GO:0004672 protein kinase activity (score=15.0, 3 sources)
     [HIGH  ] GO:0004713 protein tyrosine kinase activity (score=13.0, 2 sources)
-    [HIGH  ] GO:0009986 C:cell surface (score=9.4, 2 sources)
     [HIGH  ] GO:0043235 C:receptor complex (score=5.1, 1 sources)
+    [HIGH  ] GO:0005006 F:epidermal growth factor receptor activity (score=5.1, 1 sources)
 
   Biological Process:
     [HIGH  ] GO:0006468 protein phosphorylation (score=25.3, 3 sources)
@@ -38,9 +38,9 @@
     [MEDIUM] GO:0008283 cell population proliferation (score=2.6, 2 sources)
 
   Cellular Component:
-    [HIGH  ] GO:0016020 membrane (score=12.9, 4 sources)
-    [HIGH  ] GO:0005886 C:plasma membrane (score=9.4, 2 sources)
+    [HIGH  ] GO:0016020 membrane (score=11.3, 3 sources)
     [HIGH  ] GO:0005634 C:nucleus (score=7.8, 3 sources)
+    [HIGH  ] GO:0005737 C:cytoplasm (score=6.5, 2 sources)
 
 ──────────────────────────────────────────────────────────────────────
   ACTIVE SITES

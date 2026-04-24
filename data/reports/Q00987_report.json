@@ -4,7 +4,7 @@
   "protein_name": "E3 ubiquitin-protein ligase Mdm2",
   "organism": "Homo sapiens",
   "sequence_length": 491,
-  "generated_at": "2026-04-19 13:05:05",
+  "generated_at": "2026-04-19 18:43:27",
   "top_function": "E3 ubiquitin-protein ligase that mediates ubiquitination of p53/TP53, leading to its degradation by the proteasome (PubMed:29681526). Inhibits p53/TP53- and p73/TP73-mediated cell cycle arrest and apo",
   "is_enzyme": true,
   "ec_number": "2.3.2",
@@ -25,20 +25,6 @@
       "top_evidence": "experimental_homolog"
     },
     {
-      "go_id": "GO:0008270",
-      "go_name": "F:zinc ion binding",
-      "namespace": "MF",
-      "weighted_score": 13.53,
-      "n_sources": 3,
-      "sources": [
-        "experimental_homolog",
-        "structural_motif",
-        "neural_classifier"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "neural_classifier"
-    },
-    {
       "go_id": "GO:0042802",
       "go_name": "identical protein binding",
       "namespace": "MF",
@@ -53,27 +39,14 @@
       "top_evidence": "experimental_homolog"
     },
     {
-      "go_id": "GO:0002039",
-      "go_name": "F:p53 binding",
+      "go_id": "GO:0008270",
+      "go_name": "F:zinc ion binding",
       "namespace": "MF",
-      "weighted_score": 9.47,
+      "weighted_score": 7.0,
       "n_sources": 2,
       "sources": [
         "experimental_homolog",
-        "neural_classifier"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0019899",
-      "go_name": "F:enzyme binding",
-      "namespace": "MF",
-      "weighted_score": 9.37,
-      "n_sources": 2,
-      "sources": [
-        "experimental_homolog",
-        "neural_classifier"
+        "structural_motif"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -93,6 +66,18 @@
     {
       "go_id": "GO:0005654",
       "go_name": "C:nucleoplasm",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0002039",
+      "go_name": "F:p53 binding",
       "namespace": "MF",
       "weighted_score": 5.1,
       "n_sources": 1,
@@ -142,60 +127,72 @@
       "go_id": "GO:0034451",
       "go_name": "C:centriolar satellite",
       "namespace": "MF",
-      "weighted_score": 3.0,
+      "weighted_score": 5.1,
       "n_sources": 1,
       "sources": [
         "experimental_homolog"
       ],
-      "confidence": "MEDIUM",
+      "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
     },
     {
       "go_id": "GO:0098978",
       "go_name": "C:glutamatergic synapse",
       "namespace": "MF",
-      "weighted_score": 3.0,
+      "weighted_score": 5.1,
       "n_sources": 1,
       "sources": [
         "experimental_homolog"
       ],
-      "confidence": "MEDIUM",
+      "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
     },
     {
       "go_id": "GO:0014069",
       "go_name": "C:postsynaptic density",
       "namespace": "MF",
-      "weighted_score": 3.0,
+      "weighted_score": 5.1,
       "n_sources": 1,
       "sources": [
         "experimental_homolog"
       ],
-      "confidence": "MEDIUM",
+      "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
     },
     {
       "go_id": "GO:0097718",
       "go_name": "F:disordered domain specific binding",
       "namespace": "MF",
-      "weighted_score": 3.0,
+      "weighted_score": 5.1,
       "n_sources": 1,
       "sources": [
         "experimental_homolog"
       ],
-      "confidence": "MEDIUM",
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0019899",
+      "go_name": "F:enzyme binding",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
     },
     {
       "go_id": "GO:0016874",
       "go_name": "F:ligase activity",
       "namespace": "MF",
-      "weighted_score": 3.0,
+      "weighted_score": 5.1,
       "n_sources": 1,
       "sources": [
         "experimental_homolog"
       ],
-      "confidence": "MEDIUM",
+      "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
     }
   ],
@@ -204,13 +201,12 @@
       "go_id": "GO:0043066",
       "go_name": "negative regulation of apoptotic process",
       "namespace": "BP",
-      "weighted_score": 21.02,
-      "n_sources": 4,
+      "weighted_score": 14.8,
+      "n_sources": 3,
       "sources": [
         "experimental_homolog",
         "domain_annotation",
-        "embedding_similarity",
-        "neural_classifier"
+        "embedding_similarity"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -230,53 +226,13 @@
       "top_evidence": "experimental_homolog"
     },
     {
-      "go_id": "GO:0000122",
-      "go_name": "P:negative regulation of transcription by RNA polymerase II",
-      "namespace": "BP",
-      "weighted_score": 9.81,
-      "n_sources": 2,
-      "sources": [
-        "experimental_homolog",
-        "neural_classifier"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0045892",
-      "go_name": "P:negative regulation of DNA-templated transcription",
-      "namespace": "BP",
-      "weighted_score": 9.59,
-      "n_sources": 2,
-      "sources": [
-        "experimental_homolog",
-        "neural_classifier"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
       "go_id": "GO:0016567",
       "go_name": "P:protein ubiquitination",
       "namespace": "BP",
-      "weighted_score": 9.34,
-      "n_sources": 2,
+      "weighted_score": 5.1,
+      "n_sources": 1,
       "sources": [
-        "experimental_homolog",
-        "neural_classifier"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0006511",
-      "go_name": "P:ubiquitin-dependent protein catabolic process",
-      "namespace": "BP",
-      "weighted_score": 9.33,
-      "n_sources": 2,
-      "sources": [
-        "experimental_homolog",
-        "neural_classifier"
+        "experimental_homolog"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -306,8 +262,8 @@
       "top_evidence": "experimental_homolog"
     },
     {
-      "go_id": "GO:0010468",
-      "go_name": "P:regulation of gene expression",
+      "go_id": "GO:0006511",
+      "go_name": "P:ubiquitin-dependent protein catabolic process",
       "namespace": "BP",
       "weighted_score": 5.1,
       "n_sources": 1,
@@ -318,17 +274,40 @@
       "top_evidence": "experimental_homolog"
     },
     {
-      "go_id": "GO:0045944",
-      "go_name": "positive regulation of transcription by RNA pol II",
+      "go_id": "GO:0045892",
+      "go_name": "P:negative regulation of DNA-templated transcription",
       "namespace": "BP",
-      "weighted_score": 4.68,
-      "n_sources": 2,
+      "weighted_score": 5.1,
+      "n_sources": 1,
       "sources": [
-        "structural_motif",
-        "neural_classifier"
+        "experimental_homolog"
       ],
-      "confidence": "MEDIUM",
-      "top_evidence": "neural_classifier"
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0000122",
+      "go_name": "P:negative regulation of transcription by RNA polymerase II",
+      "namespace": "BP",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0010468",
+      "go_name": "P:regulation of gene expression",
+      "namespace": "BP",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
     },
     {
       "go_id": "GO:0006468",
@@ -355,34 +334,46 @@
       "top_evidence": "structural_motif"
     },
     {
-      "go_id": "GO:0055114",
-      "go_name": "oxidation-reduction process",
-      "namespace": "BP",
-      "weighted_score": 1.4,
-      "n_sources": 1,
-      "sources": [
-        "structural_motif"
-      ],
-      "confidence": "LOW",
-      "top_evidence": "structural_motif"
-    },
-    {
-      "go_id": "GO:0015671",
-      "go_name": "oxygen transport",
-      "namespace": "BP",
-      "weighted_score": 1.4,
-      "n_sources": 1,
-      "sources": [
-        "structural_motif"
-      ],
-      "confidence": "LOW",
-      "top_evidence": "structural_motif"
-    },
-    {
       "go_id": "GO:0006351",
       "go_name": "DNA-templated transcription",
       "namespace": "BP",
       "weighted_score": 1.3,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0030193",
+      "go_name": "regulation of blood coagulation",
+      "namespace": "BP",
+      "weighted_score": 1.2,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0045944",
+      "go_name": "positive regulation of transcription by RNA pol II",
+      "namespace": "BP",
+      "weighted_score": 1.2,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0007173",
+      "go_name": "epidermal growth factor receptor signaling pathway",
+      "namespace": "BP",
+      "weighted_score": 1.2,
       "n_sources": 1,
       "sources": [
         "structural_motif"
@@ -396,28 +387,14 @@
       "go_id": "GO:0005634",
       "go_name": "nucleus",
       "namespace": "CC",
-      "weighted_score": 23.69,
-      "n_sources": 6,
+      "weighted_score": 14.83,
+      "n_sources": 5,
       "sources": [
         "experimental_homolog",
         "domain_annotation",
         "ai_esm2",
         "structural_motif",
-        "embedding_similarity",
-        "neural_classifier"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0032991",
-      "go_name": "C:protein-containing complex",
-      "namespace": "CC",
-      "weighted_score": 9.4,
-      "n_sources": 2,
-      "sources": [
-        "experimental_homolog",
-        "neural_classifier"
+        "embedding_similarity"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -439,6 +416,18 @@
     {
       "go_id": "GO:0005829",
       "go_name": "C:cytosol",
+      "namespace": "CC",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0032991",
+      "go_name": "C:protein-containing complex",
       "namespace": "CC",
       "weighted_score": 5.1,
       "n_sources": 1,
@@ -485,18 +474,6 @@
       "top_evidence": "structural_motif"
     },
     {
-      "go_id": "GO:0005833",
-      "go_name": "hemoglobin complex",
-      "namespace": "CC",
-      "weighted_score": 1.3,
-      "n_sources": 1,
-      "sources": [
-        "structural_motif"
-      ],
-      "confidence": "LOW",
-      "top_evidence": "structural_motif"
-    },
-    {
       "go_id": "GO:0043234",
       "go_name": "protein complex",
       "namespace": "CC",
@@ -519,6 +496,18 @@
       ],
       "confidence": "LOW",
       "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0072562",
+      "go_name": "blood microparticle",
+      "namespace": "CC",
+      "weighted_score": 1.0,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
     }
   ],
   "active_sites": [
@@ -534,8 +523,7 @@
       "plddt": 94.38,
       "motifs": [
         "serine_protease_triad",
-        "serine_protease_triad",
-        "haem_binding"
+        "serine_protease_triad"
       ],
       "evidence_score": 7,
       "confidence": "HIGH",
@@ -558,8 +546,7 @@
       "plddt": 91.12,
       "motifs": [
         "serine_protease_triad",
-        "acid_base_pair",
-        "haem_binding"
+        "acid_base_pair"
       ],
       "evidence_score": 7,
       "confidence": "HIGH",
@@ -659,51 +646,6 @@
       "domain_context": "os05g0521000 protein"
     },
     {
-      "residue_number": 83,
-      "chain_id": "A",
-      "one_letter": "G",
-      "three_letter": "GLY",
-      "conservation": 4.0,
-      "is_conserved": false,
-      "is_buried": true,
-      "sasa": 7.62,
-      "plddt": 95.94,
-      "motifs": [
-        "p_loop_walker_a",
-        "flavin_binding"
-      ],
-      "evidence_score": 5,
-      "confidence": "MEDIUM",
-      "coords": [
-        11.602,
-        9.986,
-        -12.621
-      ],
-      "domain_context": "swib/mdm2 domain"
-    },
-    {
-      "residue_number": 85,
-      "chain_id": "A",
-      "one_letter": "L",
-      "three_letter": "LEU",
-      "conservation": 3.5,
-      "is_conserved": false,
-      "is_buried": true,
-      "sasa": 14.45,
-      "plddt": 95.75,
-      "motifs": [
-        "p_loop_walker_a"
-      ],
-      "evidence_score": 5,
-      "confidence": "MEDIUM",
-      "coords": [
-        8.844,
-        13.473,
-        -9.629
-      ],
-      "domain_context": "swib/mdm2 domain"
-    },
-    {
       "residue_number": 86,
       "chain_id": "A",
       "one_letter": "F",
@@ -714,8 +656,7 @@
       "sasa": 13.27,
       "plddt": 96.31,
       "motifs": [
-        "dfg_loop",
-        "p_loop_walker_a"
+        "dfg_loop"
       ],
       "evidence_score": 5,
       "confidence": "MEDIUM",
@@ -785,8 +726,7 @@
       "plddt": 94.56,
       "motifs": [
         "zinc_binding_cluster",
-        "dfg_loop",
-        "p_loop_walker_a"
+        "dfg_loop"
       ],
       "evidence_score": 3,
       "confidence": "MEDIUM",
@@ -808,9 +748,7 @@
       "sasa": 67.77,
       "plddt": 95.12,
       "motifs": [
-        "dfg_loop",
-        "p_loop_walker_a",
-        "flavin_binding"
+        "dfg_loop"
       ],
       "evidence_score": 3,
       "confidence": "MEDIUM",
@@ -818,28 +756,6 @@
         11.773,
         9.167,
         -7.095
-      ],
-      "domain_context": "swib/mdm2 domain"
-    },
-    {
-      "residue_number": 88,
-      "chain_id": "A",
-      "one_letter": "V",
-      "three_letter": "VAL",
-      "conservation": 3.5,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 35.81,
-      "plddt": 96.44,
-      "motifs": [
-        "p_loop_walker_a"
-      ],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        12.074,
-        5.885,
-        -9.121
       ],
       "domain_context": "swib/mdm2 domain"
     },
@@ -959,28 +875,6 @@
       "domain_context": "ring/u-box"
     },
     {
-      "residue_number": 452,
-      "chain_id": "A",
-      "one_letter": "H",
-      "three_letter": "HIS",
-      "conservation": 7.0,
-      "is_conserved": true,
-      "is_buried": true,
-      "sasa": 13.27,
-      "plddt": 91.75,
-      "motifs": [
-        "haem_binding"
-      ],
-      "evidence_score": 9,
-      "confidence": "HIGH",
-      "coords": [
-        -14.074,
-        6.271,
-        14.517
-      ],
-      "domain_context": "ring/u-box"
-    },
-    {
       "residue_number": 461,
       "chain_id": "A",
       "one_letter": "C",
@@ -1044,6 +938,26 @@
         -24.639,
         -7.987,
         25.764
+      ],
+      "domain_context": "ring/u-box"
+    },
+    {
+      "residue_number": 452,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 13.27,
+      "plddt": 91.75,
+      "motifs": [],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        -14.074,
+        6.271,
+        14.517
       ],
       "domain_context": "ring/u-box"
     },
@@ -1198,6 +1112,66 @@
         -31.834
       ],
       "domain_context": "p53 negative regulator mdm2/mdm4"
+    },
+    {
+      "residue_number": 151,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 158.82,
+      "plddt": 41.44,
+      "motifs": [],
+      "evidence_score": 4,
+      "confidence": "MEDIUM",
+      "coords": [
+        32.798,
+        40.357,
+        -8.116
+      ],
+      "domain_context": "os05g0521000 protein"
+    },
+    {
+      "residue_number": 184,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 185.75,
+      "plddt": 40.19,
+      "motifs": [],
+      "evidence_score": 4,
+      "confidence": "MEDIUM",
+      "coords": [
+        -0.506,
+        18.683,
+        16.317
+      ],
+      "domain_context": "os05g0521000 protein"
+    },
+    {
+      "residue_number": 362,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 76.21,
+      "plddt": 48.69,
+      "motifs": [],
+      "evidence_score": 4,
+      "confidence": "MEDIUM",
+      "coords": [
+        -15.854,
+        -5.938,
+        59.861
+      ],
+      "domain_context": "os05g0521000 protein"
     }
   ],
   "binding_pockets": [

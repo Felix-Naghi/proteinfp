@@ -4,146 +4,81 @@
   "protein_name": "Cellular tumor antigen p53",
   "organism": "Homo sapiens",
   "sequence_length": 393,
-  "generated_at": "2026-04-19 13:04:33",
-  "top_function": "Multifunctional transcription factor that induces cell cycle arrest, DNA repair or apoptosis upon binding to its target DNA sequence (PubMed:11025664, PubMed:12524540, PubMed:12810724, PubMed:15186775",
+  "generated_at": "2026-04-19 15:20:29",
+  "top_function": "DNA binding",
   "is_enzyme": false,
   "ec_number": "3.4.21",
   "subcellular_location": "membrane",
   "go_terms_mf": [
     {
-      "go_id": "GO:0003677",
-      "go_name": "DNA binding",
-      "namespace": "MF",
-      "weighted_score": 24.36,
-      "n_sources": 5,
-      "sources": [
-        "experimental_homolog",
-        "domain_annotation",
-        "structural_motif",
-        "embedding_similarity",
-        "neural_classifier"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
       "go_id": "GO:0003700",
       "go_name": "DNA-binding transcription factor activity",
       "namespace": "MF",
-      "weighted_score": 20.11,
+      "weighted_score": 17.2,
       "n_sources": 4,
       "sources": [
+        "sequence_homolog",
         "domain_annotation",
         "structural_motif",
-        "embedding_similarity",
-        "neural_classifier"
+        "embedding_similarity"
       ],
       "confidence": "HIGH",
-      "top_evidence": "neural_classifier"
+      "top_evidence": "embedding_similarity"
+    },
+    {
+      "go_id": "GO:0003677",
+      "go_name": "DNA binding",
+      "namespace": "MF",
+      "weighted_score": 14.02,
+      "n_sources": 4,
+      "sources": [
+        "sequence_homolog",
+        "domain_annotation",
+        "structural_motif",
+        "embedding_similarity"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "embedding_similarity"
     },
     {
       "go_id": "GO:0051262",
       "go_name": "protein tetramerization",
       "namespace": "MF",
-      "weighted_score": 10.97,
+      "weighted_score": 10.38,
       "n_sources": 2,
       "sources": [
-        "domain_annotation",
-        "neural_classifier"
+        "sequence_homolog",
+        "domain_annotation"
       ],
       "confidence": "HIGH",
-      "top_evidence": "neural_classifier"
-    },
-    {
-      "go_id": "GO:1990841",
-      "go_name": "F:promoter-specific chromatin binding",
-      "namespace": "MF",
-      "weighted_score": 9.87,
-      "n_sources": 2,
-      "sources": [
-        "experimental_homolog",
-        "neural_classifier"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0097371",
-      "go_name": "F:MDM2/MDM4 family protein binding",
-      "namespace": "MF",
-      "weighted_score": 9.75,
-      "n_sources": 2,
-      "sources": [
-        "experimental_homolog",
-        "neural_classifier"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0000785",
-      "go_name": "C:chromatin",
-      "namespace": "MF",
-      "weighted_score": 9.71,
-      "n_sources": 2,
-      "sources": [
-        "experimental_homolog",
-        "neural_classifier"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0000978",
-      "go_name": "F:RNA polymerase II cis-regulatory region sequence-specific DNA binding",
-      "namespace": "MF",
-      "weighted_score": 9.66,
-      "n_sources": 2,
-      "sources": [
-        "experimental_homolog",
-        "neural_classifier"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0031625",
-      "go_name": "F:ubiquitin protein ligase binding",
-      "namespace": "MF",
-      "weighted_score": 9.45,
-      "n_sources": 2,
-      "sources": [
-        "experimental_homolog",
-        "neural_classifier"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0000976",
-      "go_name": "transcription cis-regulatory region binding",
-      "namespace": "MF",
-      "weighted_score": 7.6,
-      "n_sources": 2,
-      "sources": [
-        "domain_annotation",
-        "neural_classifier"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "neural_classifier"
+      "top_evidence": "sequence_homolog"
     },
     {
       "go_id": "GO:0005515",
       "go_name": "protein binding",
       "namespace": "MF",
-      "weighted_score": 5.6,
-      "n_sources": 2,
+      "weighted_score": 8.22,
+      "n_sources": 3,
       "sources": [
+        "sequence_homolog",
         "domain_annotation",
         "ai_esm2"
       ],
       "confidence": "HIGH",
-      "top_evidence": "ai_esm2"
+      "top_evidence": "sequence_homolog"
+    },
+    {
+      "go_id": "GO:0000976",
+      "go_name": "transcription cis-regulatory region binding",
+      "namespace": "MF",
+      "weighted_score": 6.88,
+      "n_sources": 2,
+      "sources": [
+        "sequence_homolog",
+        "domain_annotation"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "sequence_homolog"
     },
     {
       "go_id": "GO:0046872",
@@ -160,143 +95,142 @@
       "top_evidence": "sequence_composition"
     },
     {
-      "go_id": "GO:0005813",
-      "go_name": "C:centrosome",
+      "go_id": "GO:0004252",
+      "go_name": "serine-type endopeptidase activity",
       "namespace": "MF",
-      "weighted_score": 3.0,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "MEDIUM",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0005783",
-      "go_name": "C:endoplasmic reticulum",
-      "namespace": "MF",
-      "weighted_score": 3.0,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "MEDIUM",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0005739",
-      "go_name": "C:mitochondrion",
-      "namespace": "MF",
-      "weighted_score": 3.0,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "MEDIUM",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0016605",
-      "go_name": "C:PML body",
-      "namespace": "MF",
-      "weighted_score": 3.0,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "MEDIUM",
-      "top_evidence": "experimental_homolog"
-    }
-  ],
-  "go_terms_bp": [
-    {
-      "go_id": "GO:0006974",
-      "go_name": "P:DNA damage response",
-      "namespace": "BP",
-      "weighted_score": 12.6,
-      "n_sources": 3,
-      "sources": [
-        "experimental_homolog",
-        "embedding_similarity",
-        "neural_classifier"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0006355",
-      "go_name": "regulation of DNA-templated transcription",
-      "namespace": "BP",
-      "weighted_score": 11.25,
-      "n_sources": 1,
-      "sources": [
-        "domain_annotation"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "domain_annotation"
-    },
-    {
-      "go_id": "GO:0071456",
-      "go_name": "P:cellular response to hypoxia",
-      "namespace": "BP",
-      "weighted_score": 9.52,
-      "n_sources": 2,
-      "sources": [
-        "experimental_homolog",
-        "neural_classifier"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0006915",
-      "go_name": "apoptotic process",
-      "namespace": "BP",
-      "weighted_score": 5.75,
-      "n_sources": 2,
-      "sources": [
-        "domain_annotation",
-        "embedding_similarity"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "embedding_similarity"
-    },
-    {
-      "go_id": "GO:0097190",
-      "go_name": "P:apoptotic signaling pathway",
-      "namespace": "BP",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0045944",
-      "go_name": "positive regulation of transcription by RNA pol II",
-      "namespace": "BP",
-      "weighted_score": 5.03,
-      "n_sources": 2,
-      "sources": [
-        "structural_motif",
-        "neural_classifier"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "neural_classifier"
-    },
-    {
-      "go_id": "GO:0055114",
-      "go_name": "oxidation-reduction process",
-      "namespace": "BP",
-      "weighted_score": 1.4,
+      "weighted_score": 1.7,
       "n_sources": 1,
       "sources": [
         "structural_motif"
       ],
       "confidence": "LOW",
       "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0008270",
+      "go_name": "zinc ion binding",
+      "namespace": "MF",
+      "weighted_score": 1.6,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0020037",
+      "go_name": "heme binding",
+      "namespace": "MF",
+      "weighted_score": 1.6,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0008233",
+      "go_name": "peptidase activity",
+      "namespace": "MF",
+      "weighted_score": 1.6,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0019825",
+      "go_name": "oxygen binding",
+      "namespace": "MF",
+      "weighted_score": 1.5,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0005172",
+      "go_name": "vascular endothelial growth factor receptor binding",
+      "namespace": "MF",
+      "weighted_score": 1.1,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0003824",
+      "go_name": "catalytic activity",
+      "namespace": "MF",
+      "weighted_score": 1.1,
+      "n_sources": 1,
+      "sources": [
+        "active_site"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "active_site"
+    },
+    {
+      "go_id": "GO:0005488",
+      "go_name": "binding",
+      "namespace": "MF",
+      "weighted_score": 1.1,
+      "n_sources": 1,
+      "sources": [
+        "sequence_composition"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "sequence_composition"
+    }
+  ],
+  "go_terms_bp": [
+    {
+      "go_id": "GO:0006355",
+      "go_name": "regulation of DNA-templated transcription",
+      "namespace": "BP",
+      "weighted_score": 13.88,
+      "n_sources": 2,
+      "sources": [
+        "sequence_homolog",
+        "domain_annotation"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "sequence_homolog"
+    },
+    {
+      "go_id": "GO:0006915",
+      "go_name": "apoptotic process",
+      "namespace": "BP",
+      "weighted_score": 8.38,
+      "n_sources": 3,
+      "sources": [
+        "sequence_homolog",
+        "domain_annotation",
+        "embedding_similarity"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "sequence_homolog"
+    },
+    {
+      "go_id": "GO:0045944",
+      "go_name": "positive regulation of transcription by RNA pol II",
+      "namespace": "BP",
+      "weighted_score": 4.72,
+      "n_sources": 2,
+      "sources": [
+        "structural_motif",
+        "neural_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "neural_classifier"
     },
     {
       "go_id": "GO:0015671",
@@ -309,6 +243,18 @@
       ],
       "confidence": "LOW",
       "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0006974",
+      "go_name": "cellular response to DNA damage stimulus",
+      "namespace": "BP",
+      "weighted_score": 1.4,
+      "n_sources": 1,
+      "sources": [
+        "embedding_similarity"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "embedding_similarity"
     },
     {
       "go_id": "GO:0006351",
@@ -327,18 +273,6 @@
       "go_name": "regulation of blood coagulation",
       "namespace": "BP",
       "weighted_score": 1.2,
-      "n_sources": 1,
-      "sources": [
-        "structural_motif"
-      ],
-      "confidence": "LOW",
-      "top_evidence": "structural_motif"
-    },
-    {
-      "go_id": "GO:0042493",
-      "go_name": "response to drug",
-      "namespace": "BP",
-      "weighted_score": 1.1,
       "n_sources": 1,
       "sources": [
         "structural_motif"
@@ -388,79 +322,17 @@
       "go_id": "GO:0005634",
       "go_name": "nucleus",
       "namespace": "CC",
-      "weighted_score": 28.4,
-      "n_sources": 6,
+      "weighted_score": 15.97,
+      "n_sources": 5,
       "sources": [
-        "experimental_homolog",
+        "sequence_homolog",
         "domain_annotation",
         "ai_esm2",
         "structural_motif",
-        "embedding_similarity",
-        "neural_classifier"
+        "embedding_similarity"
       ],
       "confidence": "HIGH",
-      "top_evidence": "neural_classifier"
-    },
-    {
-      "go_id": "GO:0005737",
-      "go_name": "C:cytoplasm",
-      "namespace": "CC",
-      "weighted_score": 6.5,
-      "n_sources": 2,
-      "sources": [
-        "experimental_homolog",
-        "sequence_baseline"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0005759",
-      "go_name": "C:mitochondrial matrix",
-      "namespace": "CC",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0005829",
-      "go_name": "C:cytosol",
-      "namespace": "CC",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0043073",
-      "go_name": "C:germ cell nucleus",
-      "namespace": "CC",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0017053",
-      "go_name": "C:transcription repressor complex",
-      "namespace": "CC",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
+      "top_evidence": "ai_esm2"
     },
     {
       "go_id": "GO:0043234",
@@ -488,18 +360,6 @@
       "top_evidence": "structural_motif"
     },
     {
-      "go_id": "GO:0016020",
-      "go_name": "membrane",
-      "namespace": "CC",
-      "weighted_score": 1.1,
-      "n_sources": 1,
-      "sources": [
-        "structural_motif"
-      ],
-      "confidence": "LOW",
-      "top_evidence": "structural_motif"
-    },
-    {
       "go_id": "GO:0031838",
       "go_name": "haptoglobin-hemoglobin complex",
       "namespace": "CC",
@@ -510,6 +370,30 @@
       ],
       "confidence": "LOW",
       "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0072562",
+      "go_name": "blood microparticle",
+      "namespace": "CC",
+      "weighted_score": 1.0,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0005737",
+      "go_name": "cytoplasm",
+      "namespace": "CC",
+      "weighted_score": 0.9,
+      "n_sources": 1,
+      "sources": [
+        "sequence_baseline"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "sequence_baseline"
     }
   ],
   "active_sites": [
@@ -581,8 +465,7 @@
         "serine_protease_triad",
         "serine_protease_triad",
         "serine_protease_triad",
-        "zinc_binding_cluster",
-        "haem_binding"
+        "zinc_binding_cluster"
       ],
       "evidence_score": 9,
       "confidence": "HIGH",
@@ -756,73 +639,6 @@
       "domain_context": "cellular tumor antigen p53"
     },
     {
-      "residue_number": 108,
-      "chain_id": "A",
-      "one_letter": "G",
-      "three_letter": "GLY",
-      "conservation": 4.0,
-      "is_conserved": false,
-      "is_buried": true,
-      "sasa": 8.26,
-      "plddt": 97.25,
-      "motifs": [
-        "p_loop_walker_a",
-        "flavin_binding"
-      ],
-      "evidence_score": 5,
-      "confidence": "MEDIUM",
-      "coords": [
-        -22.483,
-        8.939,
-        4.346
-      ],
-      "domain_context": "p53-like transcription factors"
-    },
-    {
-      "residue_number": 109,
-      "chain_id": "A",
-      "one_letter": "F",
-      "three_letter": "PHE",
-      "conservation": 4.5,
-      "is_conserved": false,
-      "is_buried": true,
-      "sasa": 0.1,
-      "plddt": 98.25,
-      "motifs": [
-        "p_loop_walker_a"
-      ],
-      "evidence_score": 5,
-      "confidence": "MEDIUM",
-      "coords": [
-        -19.241,
-        6.89,
-        4.043
-      ],
-      "domain_context": "p53-like transcription factors"
-    },
-    {
-      "residue_number": 112,
-      "chain_id": "A",
-      "one_letter": "G",
-      "three_letter": "GLY",
-      "conservation": 4.0,
-      "is_conserved": false,
-      "is_buried": true,
-      "sasa": 14.02,
-      "plddt": 96.88,
-      "motifs": [
-        "p_loop_walker_a"
-      ],
-      "evidence_score": 5,
-      "confidence": "MEDIUM",
-      "coords": [
-        -10.424,
-        11.97,
-        4.81
-      ],
-      "domain_context": "p53-like transcription factors"
-    },
-    {
       "residue_number": 215,
       "chain_id": "A",
       "one_letter": "S",
@@ -845,95 +661,6 @@
         -7.654,
         -7.736,
         0.447
-      ],
-      "domain_context": "p53-like transcription factors"
-    },
-    {
-      "residue_number": 266,
-      "chain_id": "A",
-      "one_letter": "G",
-      "three_letter": "GLY",
-      "conservation": 4.0,
-      "is_conserved": false,
-      "is_buried": true,
-      "sasa": 0.0,
-      "plddt": 98.19,
-      "motifs": [
-        "p_loop_walker_a"
-      ],
-      "evidence_score": 5,
-      "confidence": "MEDIUM",
-      "coords": [
-        -20.279,
-        2.194,
-        1.257
-      ],
-      "domain_context": "p53-like transcription factors"
-    },
-    {
-      "residue_number": 110,
-      "chain_id": "A",
-      "one_letter": "R",
-      "three_letter": "ARG",
-      "conservation": 6.5,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 90.81,
-      "plddt": 97.81,
-      "motifs": [
-        "dna_binding_cluster",
-        "p_loop_walker_a"
-      ],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        -16.319,
-        9.094,
-        2.878
-      ],
-      "domain_context": "p53-like transcription factors"
-    },
-    {
-      "residue_number": 111,
-      "chain_id": "A",
-      "one_letter": "L",
-      "three_letter": "LEU",
-      "conservation": 3.5,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 25.84,
-      "plddt": 98.19,
-      "motifs": [
-        "p_loop_walker_a"
-      ],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        -12.52,
-        9.213,
-        3.21
-      ],
-      "domain_context": "p53-like transcription factors"
-    },
-    {
-      "residue_number": 113,
-      "chain_id": "A",
-      "one_letter": "F",
-      "three_letter": "PHE",
-      "conservation": 4.5,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 26.15,
-      "plddt": 97.5,
-      "motifs": [
-        "p_loop_walker_a"
-      ],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        -6.655,
-        12.527,
-        4.784
       ],
       "domain_context": "p53-like transcription factors"
     },
@@ -1018,117 +745,6 @@
         -10.277,
         -14.447,
         -2.702
-      ],
-      "domain_context": "p53-like transcription factors"
-    },
-    {
-      "residue_number": 262,
-      "chain_id": "A",
-      "one_letter": "G",
-      "three_letter": "GLY",
-      "conservation": 4.0,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 41.27,
-      "plddt": 94.56,
-      "motifs": [
-        "p_loop_walker_a"
-      ],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        -19.736,
-        -8.777,
-        3.104
-      ],
-      "domain_context": "p53-like transcription factors"
-    },
-    {
-      "residue_number": 263,
-      "chain_id": "A",
-      "one_letter": "N",
-      "three_letter": "ASN",
-      "conservation": 4.0,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 86.75,
-      "plddt": 96.94,
-      "motifs": [
-        "p_loop_walker_a"
-      ],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        -22.611,
-        -6.75,
-        1.536
-      ],
-      "domain_context": "p53-like transcription factors"
-    },
-    {
-      "residue_number": 264,
-      "chain_id": "A",
-      "one_letter": "L",
-      "three_letter": "LEU",
-      "conservation": 3.5,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 70.14,
-      "plddt": 98.0,
-      "motifs": [
-        "p_loop_walker_a"
-      ],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        -21.691,
-        -3.238,
-        0.376
-      ],
-      "domain_context": "p53-like transcription factors"
-    },
-    {
-      "residue_number": 265,
-      "chain_id": "A",
-      "one_letter": "L",
-      "three_letter": "LEU",
-      "conservation": 3.5,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 33.1,
-      "plddt": 98.31,
-      "motifs": [
-        "p_loop_walker_a"
-      ],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        -22.697,
-        -0.4,
-        2.77
-      ],
-      "domain_context": "p53-like transcription factors"
-    },
-    {
-      "residue_number": 267,
-      "chain_id": "A",
-      "one_letter": "R",
-      "three_letter": "ARG",
-      "conservation": 6.5,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 34.38,
-      "plddt": 98.62,
-      "motifs": [
-        "dna_binding_cluster",
-        "p_loop_walker_a"
-      ],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        -17.294,
-        2.644,
-        -1.126
       ],
       "domain_context": "p53-like transcription factors"
     },
@@ -1249,6 +865,277 @@
         3.401,
         10.245,
         3.605
+      ],
+      "domain_context": "p53-like transcription factors"
+    },
+    {
+      "residue_number": 168,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 33.98,
+      "plddt": 94.69,
+      "motifs": [
+        "acid_base_pair"
+      ],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        -4.004,
+        -3.823,
+        -16.465
+      ],
+      "domain_context": "p53-like transcription factors"
+    },
+    {
+      "residue_number": 229,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 14.5,
+      "plddt": 95.38,
+      "motifs": [],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        -13.708,
+        10.162,
+        12.418
+      ],
+      "domain_context": "p53-like transcription factors"
+    },
+    {
+      "residue_number": 277,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 47.23,
+      "plddt": 97.12,
+      "motifs": [
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        10.517,
+        11.022,
+        -2.101
+      ],
+      "domain_context": "p53-like transcription factors"
+    },
+    {
+      "residue_number": 296,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 145.6,
+      "plddt": 49.81,
+      "motifs": [
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "acid_base_pair",
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 6,
+      "confidence": "HIGH",
+      "coords": [
+        0.574,
+        29.497,
+        -20.728
+      ],
+      "domain_context": "cellular tumor antigen p53"
+    },
+    {
+      "residue_number": 297,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 166.8,
+      "plddt": 47.94,
+      "motifs": [
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "acid_base_pair"
+      ],
+      "evidence_score": 6,
+      "confidence": "HIGH",
+      "coords": [
+        0.71,
+        33.194,
+        -19.679
+      ],
+      "domain_context": "cellular tumor antigen p53"
+    },
+    {
+      "residue_number": 115,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 179.45,
+      "plddt": 88.88,
+      "motifs": [],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        -3.191,
+        17.828,
+        5.495
+      ],
+      "domain_context": "p53-like transcription factors"
+    },
+    {
+      "residue_number": 132,
+      "chain_id": "A",
+      "one_letter": "K",
+      "three_letter": "LYS",
+      "conservation": 6.0,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 15.61,
+      "plddt": 98.25,
+      "motifs": [
+        "acid_base_pair"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        -3.595,
+        10.669,
+        -4.68
+      ],
+      "domain_context": "p53-like transcription factors"
+    },
+    {
+      "residue_number": 175,
+      "chain_id": "A",
+      "one_letter": "R",
+      "three_letter": "ARG",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 8.61,
+      "plddt": 96.62,
+      "motifs": [
+        "acid_base_pair"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        4.335,
+        -7.532,
+        -4.313
+      ],
+      "domain_context": "p53-like transcription factors"
+    },
+    {
+      "residue_number": 196,
+      "chain_id": "A",
+      "one_letter": "R",
+      "three_letter": "ARG",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 12.44,
+      "plddt": 96.69,
+      "motifs": [
+        "acid_base_pair"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        -1.119,
+        -4.114,
+        5.486
+      ],
+      "domain_context": "p53-like transcription factors"
+    },
+    {
+      "residue_number": 213,
+      "chain_id": "A",
+      "one_letter": "R",
+      "three_letter": "ARG",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 4.89,
+      "plddt": 96.38,
+      "motifs": [
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        -7.467,
+        -10.625,
+        -5.321
+      ],
+      "domain_context": "p53-like transcription factors"
+    },
+    {
+      "residue_number": 258,
+      "chain_id": "A",
+      "one_letter": "E",
+      "three_letter": "GLU",
+      "conservation": 6.0,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 11.93,
+      "plddt": 98.5,
+      "motifs": [
+        "acid_base_pair"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        -19.275,
+        -3.855,
+        4.407
+      ],
+      "domain_context": "p53-like transcription factors"
+    },
+    {
+      "residue_number": 271,
+      "chain_id": "A",
+      "one_letter": "E",
+      "three_letter": "GLU",
+      "conservation": 6.0,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 12.86,
+      "plddt": 98.5,
+      "motifs": [
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        -4.711,
+        6.652,
+        -6.038
       ],
       "domain_context": "p53-like transcription factors"
     }
@@ -2821,13 +2708,13 @@
   ],
   "mean_plddt": 75.05,
   "n_evidence_sources": 12,
-  "overall_confidence": "VERY HIGH",
+  "overall_confidence": "HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (C141, C176, H193) to confirm functional importance",
     "Thermal shift assay or SPR binding assay against pocket P1 (vol=560\u00c5\u00b3, druggability=0.98)",
     "Co-immunoprecipitation with SFN (unknown interaction, predicted interface: [1, 306, 65])",
     "Co-immunoprecipitation with EP300 (unknown interaction, predicted interface: [1, 306, 65])",
-    "EMSA or fluorescence polarisation assay to confirm 'DNA binding' (GO:0003677)",
+    "EMSA or fluorescence polarisation assay to confirm 'DNA-binding transcription factor activity' (GO:0003700)",
     "GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation"
   ],
   "modules_run": [

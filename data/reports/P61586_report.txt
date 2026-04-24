@@ -1,0 +1,78 @@
+======================================================================
+  ProteinFP Prediction Report
+  Generated: 2026-04-19 18:39:24
+======================================================================
+
+  Protein    : Transforming protein RhoA
+  Gene       : RHOA
+  UniProt    : P61586
+  Organism   : Homo sapiens
+  Length     : 193 aa
+  Mean pLDDT : 93.6
+  Confidence : VERY HIGH
+
+──────────────────────────────────────────────────────────────────────
+  FUNCTIONAL PREDICTION
+──────────────────────────────────────────────────────────────────────
+  Top function     : Small GTPase which cycles between an active GTP-bound and an inactive GDP-bound state. Mainly associated with cytoskeleton organization, in active state binds to a variety of effector proteins to regu
+  Enzyme           : yes — 3.6.5
+  Location         : C:plasma membrane
+  Evidence sources : 8
+
+──────────────────────────────────────────────────────────────────────
+  GENE ONTOLOGY PREDICTIONS
+──────────────────────────────────────────────────────────────────────
+
+  Molecular Function:
+    [HIGH  ] GO:0005525 GTP binding (score=18.3, 3 sources)
+    [HIGH  ] GO:0003924 GTPase activity (score=11.0, 3 sources)
+    [HIGH  ] GO:0019901 F:protein kinase binding (score=5.1, 1 sources)
+    [HIGH  ] GO:0032154 C:cleavage furrow (score=5.1, 1 sources)
+    [HIGH  ] GO:0016477 P:cell migration (score=5.1, 1 sources)
+
+  Biological Process:
+    [HIGH  ] GO:0007264 small GTPase-mediated signal transduction (score=9.5, 2 sources)
+    [HIGH  ] GO:0032956 P:regulation of actin cytoskeleton organizati (score=5.1, 1 sources)
+    [HIGH  ] GO:0007165 P:signal transduction (score=5.1, 1 sources)
+    [HIGH  ] GO:0007266 P:Rho protein signal transduction (score=5.1, 1 sources)
+    [LOW   ] GO:0006351 DNA-templated transcription (score=1.3, 1 sources)
+
+  Cellular Component:
+    [HIGH  ] GO:0005634 C:nucleus (score=7.8, 3 sources)
+    [HIGH  ] GO:0005886 C:plasma membrane (score=5.1, 1 sources)
+    [HIGH  ] GO:0005829 C:cytosol (score=5.1, 1 sources)
+
+──────────────────────────────────────────────────────────────────────
+  ACTIVE SITES
+──────────────────────────────────────────────────────────────────────
+  C16 [HIGH  ] motifs: zinc_binding_cluster, p_loop_walker_a
+  C107 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
+  H105 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
+  G12 [MEDIUM] motifs: p_loop_walker_a
+  G17 [MEDIUM] motifs: p_loop_walker_a
+
+──────────────────────────────────────────────────────────────────────
+  PROTEIN INTERACTIONS (top 8)
+──────────────────────────────────────────────────────────────────────
+  AKAP13          STRING=999  type=unknown
+  ANLN            STRING=999  type=unknown
+  ARHGDIA         STRING=999  type=unknown
+  ARHGEF11        STRING=999  type=unknown
+  RTKN            STRING=999  type=unknown
+  ROCK1           STRING=999  type=unknown
+  ARHGAP1         STRING=999  type=unknown
+  ARHGEF2         STRING=999  type=unknown
+
+──────────────────────────────────────────────────────────────────────
+  VALIDATION SUGGESTIONS
+──────────────────────────────────────────────────────────────────────
+  1. Alanine scanning mutagenesis of predicted active site residues (C16, C107, H105) to confirm functional importance
+  2. Co-immunoprecipitation with AKAP13 (unknown interaction, predicted interface: [1, 182, 68])
+  3. Co-immunoprecipitation with ANLN (unknown interaction, predicted interface: [1, 182, 68])
+  4. Enzyme activity assay consistent with EC 3.6.5 using appropriate substrate panel
+  5. EMSA or fluorescence polarisation assay to confirm 'GTP binding' (GO:0005525)
+  6. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+
+──────────────────────────────────────────────────────────────────────
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+======================================================================

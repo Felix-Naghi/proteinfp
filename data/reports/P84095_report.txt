@@ -1,0 +1,78 @@
+======================================================================
+  ProteinFP Prediction Report
+  Generated: 2026-04-19 18:37:56
+======================================================================
+
+  Protein    : Rho-related GTP-binding protein RhoG
+  Gene       : RHOG
+  UniProt    : P84095
+  Organism   : Homo sapiens
+  Length     : 191 aa
+  Mean pLDDT : 93.9
+  Confidence : VERY HIGH
+
+──────────────────────────────────────────────────────────────────────
+  FUNCTIONAL PREDICTION
+──────────────────────────────────────────────────────────────────────
+  Top function     : Plays a role in immunological synaptic F-actin density and architecture organization (PubMed:33513601). Regulates actin reorganization in lymphocytes, possibly through the modulation of Rac1 activity 
+  Enzyme           : yes — 3.6.5
+  Location         : C:plasma membrane
+  Evidence sources : 8
+
+──────────────────────────────────────────────────────────────────────
+  GENE ONTOLOGY PREDICTIONS
+──────────────────────────────────────────────────────────────────────
+
+  Molecular Function:
+    [HIGH  ] GO:0005525 GTP binding (score=18.3, 3 sources)
+    [HIGH  ] GO:0003924 GTPase activity (score=14.5, 3 sources)
+    [HIGH  ] GO:0042995 C:cell projection (score=5.1, 1 sources)
+    [HIGH  ] GO:0005856 C:cytoskeleton (score=5.1, 1 sources)
+    [HIGH  ] GO:0019901 F:protein kinase binding (score=5.1, 1 sources)
+
+  Biological Process:
+    [HIGH  ] GO:0007264 small GTPase-mediated signal transduction (score=9.5, 2 sources)
+    [HIGH  ] GO:0032956 P:regulation of actin cytoskeleton organizati (score=5.1, 1 sources)
+    [LOW   ] GO:0019430 removal of superoxide radicals (score=1.4, 1 sources)
+    [LOW   ] GO:0006351 DNA-templated transcription (score=1.3, 1 sources)
+    [LOW   ] GO:0030193 regulation of blood coagulation (score=1.2, 1 sources)
+
+  Cellular Component:
+    [HIGH  ] GO:0016020 C:membrane (score=6.5, 2 sources)
+    [HIGH  ] GO:0005737 C:cytoplasm (score=6.5, 2 sources)
+    [HIGH  ] GO:0005886 C:plasma membrane (score=5.1, 1 sources)
+
+──────────────────────────────────────────────────────────────────────
+  ACTIVE SITES
+──────────────────────────────────────────────────────────────────────
+  C105 [HIGH  ] motifs: cysteine_protease_dyad, cysteine_protease_dyad
+  H95 [HIGH  ] motifs: serine_protease_triad, acid_base_pair
+  H98 [HIGH  ] motifs: serine_protease_triad, zinc_binding_cluster
+  C102 [HIGH  ] motifs: cysteine_protease_dyad, cysteine_protease_dyad
+  H103 [HIGH  ] motifs: cysteine_protease_dyad, cysteine_protease_dyad
+
+──────────────────────────────────────────────────────────────────────
+  PROTEIN INTERACTIONS (top 8)
+──────────────────────────────────────────────────────────────────────
+  DOCK1           STRING=999  type=unknown
+  ELMO2           STRING=999  type=unknown
+  ELMO1           STRING=997  type=unknown
+  ARHGDIA         STRING=986  type=unknown
+  ARHGEF26        STRING=971  type=unknown
+  PIK3CB          STRING=960  type=unknown
+  ELMO3           STRING=955  type=unknown
+  KALRN           STRING=921  type=unknown
+
+──────────────────────────────────────────────────────────────────────
+  VALIDATION SUGGESTIONS
+──────────────────────────────────────────────────────────────────────
+  1. Alanine scanning mutagenesis of predicted active site residues (C105, H95, H98) to confirm functional importance
+  2. Co-immunoprecipitation with DOCK1 (unknown interaction, predicted interface: [191, 186, 66])
+  3. Co-immunoprecipitation with ELMO2 (unknown interaction, predicted interface: [191, 186, 66])
+  4. Enzyme activity assay consistent with EC 3.6.5 using appropriate substrate panel
+  5. EMSA or fluorescence polarisation assay to confirm 'GTP binding' (GO:0005525)
+  6. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+
+──────────────────────────────────────────────────────────────────────
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+======================================================================
