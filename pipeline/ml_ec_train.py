@@ -32,20 +32,39 @@ CSV format (--csv):
 """
 
 from __future__ import annotations
-import sys as _sys, os as _os
-_sys.path.insert(0, str(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__)))))
+
+import ssl
+import certifi
+
+# Patch the default SSL context to use certifi's CA bundle
+ssl._create_default_https_context = lambda: ssl.create_default_context(cafile=certifi.where())
 
 import csv
 import json
 import logging
 import os
 import random
+import sys
 import time
 from pathlib import Path
 from typing import Optional
 
 import click
 import numpy as np
+
+from pipeline.ml_ec_classifier import ECClassifierEnsemble
+from pipeline.ml_ec_features import MLECFeatures
+
+# ⚠️ Better fix: replace this with proper packaging later
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+log = logging.getLogger(__name__)
+
+
+@click.command()
+def main():
+    # Use the imported classes directly
+    pass
 
 log = logging.getLogger(__name__)
 logging.basicConfig(
@@ -320,6 +339,27 @@ def build_training_dataset(
                 samples.append((f"{uid}_aug", aug_seq, label))
         log.info(f"  After augmentation: {len(samples):,} samples")
 
+    # Add this once BEFORE the loop (load model once, not per protein)
+    from transformers import AutoTokenizer, AutoModel
+    import torch
+
+    log.info("  Loading ESM2 model...")
+    _esm2_tokenizer = AutoTokenizer.from_pretrained("facebook/esm2_t33_650M_UR50D")
+    _esm2_model     = AutoModel.from_pretrained("facebook/esm2_t33_650M_UR50D")
+    _esm2_model.eval()
+    if torch.cuda.is_available():
+        _esm2_model = _esm2_model.cuda()
+    log.info("  ESM2 loaded.")
+
+    def _get_esm2(sequence: str) -> dict:
+        inputs = _esm2_tokenizer(sequence, return_tensors="pt", truncation=True, max_length=1024)
+        if torch.cuda.is_available():
+            inputs = {k: v.cuda() for k, v in inputs.items()}
+        with torch.no_grad():
+            outputs = _esm2_model(**inputs)
+        embedding = outputs.last_hidden_state[0].mean(dim=0).cpu().tolist()  # 1280-dim
+        return {"protein_embedding": embedding, "contact_map": []}
+
     # ── Build feature matrix ───────────────────────────────────────────────────
     from pipeline.ml_ec_features import build_feature_vector, FEATURE_DIM
     log.info(f"  Building feature vectors (dim={FEATURE_DIM})...")
@@ -333,7 +373,7 @@ def build_training_dataset(
         pdata = extra_data.get(uid, {})
         feat = build_feature_vector(
             sequence        = seq,
-            esm2_result     = pdata.get("esm2"),
+            esm2_result     = pdata.get("esm2") or _get_esm2(seq),
             pdb_result      = pdata.get("pdb"),
             active_result   = pdata.get("active_sites"),
             pocket_result   = pdata.get("pockets"),

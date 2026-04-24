@@ -1,0 +1,98 @@
+{
+  "uniprot_id": "P42574",
+  "sequence_length": 277,
+  "is_enzyme": true,
+  "enzyme_confidence": 0.9751,
+  "top_prediction": {
+    "ec_class": "3",
+    "ec_name": "Hydrolase",
+    "ec_full": "EC 3.4.22",
+    "score": 0.7634340317916702,
+    "evidence": [
+      "ml_ensemble"
+    ],
+    "probability": 0.7634340317916702
+  },
+  "all_predictions": [
+    {
+      "ec_class": "3",
+      "ec_name": "Hydrolase",
+      "ec_full": "EC 3.4.22",
+      "score": 0.7634340317916702,
+      "evidence": [
+        "ml_ensemble"
+      ],
+      "probability": 0.7634340317916702
+    },
+    {
+      "ec_class": "1",
+      "ec_name": "Oxidoreductase",
+      "ec_full": "EC 1.x.x.x",
+      "score": 0.06218027422494089,
+      "evidence": [
+        "ml_ensemble"
+      ],
+      "probability": 0.06218027422494089
+    },
+    {
+      "ec_class": "4",
+      "ec_name": "Lyase",
+      "ec_full": "EC 4.x.x.x",
+      "score": 0.054213851128862546,
+      "evidence": [
+        "ml_ensemble"
+      ],
+      "probability": 0.054213851128862546
+    },
+    {
+      "ec_class": "6",
+      "ec_name": "Ligase",
+      "ec_full": "EC 6.x.x.x",
+      "score": 0.029499426773339228,
+      "evidence": [
+        "ml_ensemble"
+      ],
+      "probability": 0.029499426773339228
+    },
+    {
+      "ec_class": "5",
+      "ec_name": "Isomerase",
+      "ec_full": "EC 5.x.x.x",
+      "score": 0.02499778904726745,
+      "evidence": [
+        "ml_ensemble"
+      ],
+      "probability": 0.02499778904726745
+    },
+    {
+      "ec_class": "7",
+      "ec_name": "Translocase",
+      "ec_full": "EC 7.x.x.x",
+      "score": 0.02190000353348933,
+      "evidence": [
+        "ml_ensemble"
+      ],
+      "probability": 0.02190000353348933
+    },
+    {
+      "ec_class": "2",
+      "ec_name": "Transferase",
+      "ec_full": "EC 2.x.x.x",
+      "score": 0.018848712236482656,
+      "evidence": [
+        "ml_ensemble"
+      ],
+      "probability": 0.018848712236482656
+    }
+  ],
+  "specific_ec": "3.4.22",
+  "specific_ec_name": "Cysteine protease",
+  "non_enzyme_score": 0.0249,
+  "ml_used": true,
+  "ml_model_version": "ensemble-v1",
+  "ml_inference_ms": 151.69,
+  "ml_feature_dim": 932,
+  "ml_top2_class": "1",
+  "ml_top2_prob": 0.0622,
+  "ml_entropy": 0.8915
+}

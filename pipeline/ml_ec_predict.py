@@ -26,9 +26,9 @@ Usage (as complete module 10 replacement):
 """
 
 from __future__ import annotations
-import sys as _sys, os as _os
-_sys.path.insert(0, str(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__)))))
 
+import os
+import sys
 import json
 import logging
 from dataclasses import dataclass, field, asdict
@@ -38,7 +38,18 @@ from typing import Optional
 import click
 import numpy as np
 
+from pipeline.ml_ec_classifier import ECClassifierEnsemble
+from pipeline.ml_ec_features import MLECFeatures
+
 log = logging.getLogger(__name__)
+
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+
+@click.command()
+@click.option("--protein-data", type=str)
+def predict(protein_data):
+    pass
 
 # ── Default model location ─────────────────────────────────────────────────────
 DEFAULT_MODEL_DIR = Path("models/ec_ensemble")
