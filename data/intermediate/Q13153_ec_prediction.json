@@ -1,0 +1,57 @@
+{
+  "uniprot_id": "Q13153",
+  "sequence_length": 545,
+  "is_enzyme": true,
+  "enzyme_confidence": 0.85,
+  "top_prediction": {
+    "ec_class": "2",
+    "ec_name": "Transferase",
+    "ec_full": "EC 2.7.10",
+    "score": 0.85,
+    "evidence": [
+      "go_prediction",
+      "structural_motif",
+      "sequence_composition",
+      "homology_inference"
+    ]
+  },
+  "all_predictions": [
+    {
+      "ec_class": "2",
+      "ec_name": "Transferase",
+      "ec_full": "EC 2.7.10",
+      "score": 0.85,
+      "evidence": [
+        "go_prediction",
+        "structural_motif",
+        "sequence_composition",
+        "homology_inference"
+      ]
+    },
+    {
+      "ec_class": "3",
+      "ec_name": "Hydrolase",
+      "ec_full": "EC 3.x.x.x",
+      "score": 0.85,
+      "evidence": [
+        "go_prediction",
+        "structural_motif",
+        "sequence_composition",
+        "homology_inference"
+      ]
+    },
+    {
+      "ec_class": "4",
+      "ec_name": "Lyase",
+      "ec_full": "EC 4.x.x.x",
+      "score": 0.24,
+      "evidence": [
+        "sequence_composition"
+      ]
+    }
+  ],
+  "specific_ec": "2.7.10",
+  "specific_ec_name": "Protein kinase",
+  "non_enzyme_score": 0.0,
+  "ml_enzyme_prob": 0.83
+}

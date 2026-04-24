@@ -4,60 +4,12 @@
   "protein_name": "Protein Mdm4",
   "organism": "Homo sapiens",
   "sequence_length": 490,
-  "generated_at": "2026-04-19 13:05:11",
-  "top_function": "ATP binding",
+  "generated_at": "2026-04-19 18:49:47",
+  "top_function": "metal ion binding",
   "is_enzyme": false,
-  "ec_number": "3.6.1",
+  "ec_number": "2.x.x.x",
   "subcellular_location": "membrane",
   "go_terms_mf": [
-    {
-      "go_id": "GO:0005524",
-      "go_name": "ATP binding",
-      "namespace": "MF",
-      "weighted_score": 1.6,
-      "n_sources": 1,
-      "sources": [
-        "structural_motif"
-      ],
-      "confidence": "LOW",
-      "top_evidence": "structural_motif"
-    },
-    {
-      "go_id": "GO:0016887",
-      "go_name": "ATPase activity",
-      "namespace": "MF",
-      "weighted_score": 1.5,
-      "n_sources": 1,
-      "sources": [
-        "structural_motif"
-      ],
-      "confidence": "LOW",
-      "top_evidence": "structural_motif"
-    },
-    {
-      "go_id": "GO:0051082",
-      "go_name": "unfolded protein binding",
-      "namespace": "MF",
-      "weighted_score": 1.5,
-      "n_sources": 1,
-      "sources": [
-        "structural_motif"
-      ],
-      "confidence": "LOW",
-      "top_evidence": "structural_motif"
-    },
-    {
-      "go_id": "GO:0042623",
-      "go_name": "ATPase activity, coupled",
-      "namespace": "MF",
-      "weighted_score": 1.4,
-      "n_sources": 1,
-      "sources": [
-        "structural_motif"
-      ],
-      "confidence": "LOW",
-      "top_evidence": "structural_motif"
-    },
     {
       "go_id": "GO:0046872",
       "go_name": "metal ion binding",
@@ -121,18 +73,6 @@
       ],
       "confidence": "HIGH",
       "top_evidence": "sequence_homolog"
-    },
-    {
-      "go_id": "GO:0051085",
-      "go_name": "chaperone cofactor-dependent protein refolding",
-      "namespace": "BP",
-      "weighted_score": 1.3,
-      "n_sources": 1,
-      "sources": [
-        "structural_motif"
-      ],
-      "confidence": "LOW",
-      "top_evidence": "structural_motif"
     }
   ],
   "go_terms_cc": [
@@ -140,15 +80,16 @@
       "go_id": "GO:0005634",
       "go_name": "nucleus",
       "namespace": "CC",
-      "weighted_score": 8.22,
-      "n_sources": 3,
+      "weighted_score": 13.31,
+      "n_sources": 4,
       "sources": [
         "sequence_homolog",
         "domain_annotation",
-        "ai_esm2"
+        "ai_esm2",
+        "neural_classifier"
       ],
       "confidence": "HIGH",
-      "top_evidence": "sequence_homolog"
+      "top_evidence": "neural_classifier"
     },
     {
       "go_id": "GO:0005737",
@@ -1075,7 +1016,7 @@
   "validation_suggestions": [
     "Co-immunoprecipitation with MDM2 (inhibitory interaction, predicted interface: [4, 10, 13])",
     "Co-immunoprecipitation with TP53 (unknown interaction, predicted interface: [1, 2, 3])",
-    "EMSA or fluorescence polarisation assay to confirm 'ATP binding' (GO:0005524)",
+    "EMSA or fluorescence polarisation assay to confirm 'metal ion binding' (GO:0046872)",
     "GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation"
   ],
   "modules_run": [

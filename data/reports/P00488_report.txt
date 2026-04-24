@@ -1,0 +1,77 @@
+======================================================================
+  ProteinFP Prediction Report
+  Generated: 2026-04-19 21:15:37
+======================================================================
+
+  Protein    : Coagulation factor XIII A chain
+  Gene       : F13A1
+  UniProt    : P00488
+  Organism   : Homo sapiens
+  Length     : 732 aa
+  Mean pLDDT : 90.9
+  Confidence : VERY HIGH
+
+──────────────────────────────────────────────────────────────────────
+  FUNCTIONAL PREDICTION
+──────────────────────────────────────────────────────────────────────
+  Top function     : Factor XIII is activated by thrombin and calcium ion to a transglutaminase that catalyzes the formation of gamma-glutamyl-epsilon-lysine cross-links between fibrin chains, thus stabilizing the fibrin 
+  Enzyme           : yes — 3.4.21
+  Location         : C:membrane
+  Evidence sources : 8
+
+──────────────────────────────────────────────────────────────────────
+  GENE ONTOLOGY PREDICTIONS
+──────────────────────────────────────────────────────────────────────
+
+  Molecular Function:
+    [HIGH  ] GO:0018149 peptide cross-linking (score=23.5, 2 sources)
+    [HIGH  ] GO:0003810 protein-glutamine gamma-glutamyltransferase a (score=16.5, 2 sources)
+    [HIGH  ] GO:0046872 F:metal ion binding (score=8.2, 3 sources)
+    [HIGH  ] GO:0072562 C:blood microparticle (score=6.5, 2 sources)
+    [HIGH  ] GO:0031424 P:keratinization (score=5.1, 1 sources)
+
+  Biological Process:
+    [HIGH  ] GO:0045787 P:positive regulation of cell cycle (score=5.1, 1 sources)
+    [HIGH  ] GO:0010838 P:positive regulation of keratinocyte prolife (score=5.1, 1 sources)
+    [HIGH  ] GO:0007596 P:blood coagulation (score=5.1, 1 sources)
+    [HIGH  ] GO:0072378 P:blood coagulation, fibrin clot formation (score=5.1, 1 sources)
+    [HIGH  ] GO:0036211 P:protein modification process (score=5.1, 1 sources)
+
+  Cellular Component:
+    [HIGH  ] GO:0005737 C:cytoplasm (score=6.5, 2 sources)
+    [HIGH  ] GO:0005829 C:cytosol (score=5.1, 1 sources)
+    [HIGH  ] GO:0016020 C:membrane (score=5.1, 1 sources)
+
+──────────────────────────────────────────────────────────────────────
+  ACTIVE SITES
+──────────────────────────────────────────────────────────────────────
+  H717 [HIGH  ] motifs: serine_protease_triad, acid_base_pair
+  H667 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H703 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  D669 [MEDIUM] motifs: serine_protease_triad, serine_protease_triad
+  S709 [MEDIUM] motifs: serine_protease_triad, serine_protease_triad
+
+──────────────────────────────────────────────────────────────────────
+  PROTEIN INTERACTIONS (top 8)
+──────────────────────────────────────────────────────────────────────
+  F13B            STRING=997  type=unknown
+  F2              STRING=954  type=unknown
+  FGA             STRING=910  type=unknown
+  FGB             STRING=812  type=unknown
+  FGG             STRING=812  type=unknown
+  APLNR           STRING=784  type=unknown
+  FN1             STRING=783  type=unknown
+  VWF             STRING=713  type=unknown
+
+──────────────────────────────────────────────────────────────────────
+  VALIDATION SUGGESTIONS
+──────────────────────────────────────────────────────────────────────
+  1. Alanine scanning mutagenesis of predicted active site residues (H717, H667, H703) to confirm functional importance
+  2. Co-immunoprecipitation with F13B (unknown interaction, predicted interface: [1, 38, 12])
+  3. Co-immunoprecipitation with F2 (unknown interaction, predicted interface: [1, 38, 12])
+  4. Enzyme activity assay consistent with EC 3.4.21 using appropriate substrate panel
+  5. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+
+──────────────────────────────────────────────────────────────────────
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+======================================================================

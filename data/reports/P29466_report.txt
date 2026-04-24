@@ -1,0 +1,77 @@
+======================================================================
+  ProteinFP Prediction Report
+  Generated: 2026-04-19 14:59:31
+======================================================================
+
+  Protein    : Caspase-1
+  Gene       : CASP1
+  UniProt    : P29466
+  Organism   : Homo sapiens
+  Length     : 404 aa
+  Mean pLDDT : 81.7
+  Confidence : VERY HIGH
+
+──────────────────────────────────────────────────────────────────────
+  FUNCTIONAL PREDICTION
+──────────────────────────────────────────────────────────────────────
+  Top function     : Thiol protease involved in a variety of inflammatory processes by proteolytically cleaving other proteins, such as the precursors of the inflammatory cytokines interleukin-1 beta (IL1B) and interleuki
+  Enzyme           : yes — 3.4.21
+  Location         : C:plasma membrane
+  Evidence sources : 8
+
+──────────────────────────────────────────────────────────────────────
+  GENE ONTOLOGY PREDICTIONS
+──────────────────────────────────────────────────────────────────────
+
+  Molecular Function:
+    [HIGH  ] GO:0004197 cysteine-type endopeptidase activity (score=20.0, 2 sources)
+    [HIGH  ] GO:0008233 F:peptidase activity (score=7.0, 2 sources)
+    [HIGH  ] GO:0050700 F:CARD domain binding (score=5.1, 1 sources)
+    [HIGH  ] GO:0019955 F:cytokine binding (score=5.1, 1 sources)
+    [HIGH  ] GO:0004175 F:endopeptidase activity (score=5.1, 1 sources)
+
+  Biological Process:
+    [HIGH  ] GO:0006508 proteolysis (score=21.5, 3 sources)
+    [HIGH  ] GO:0042981 regulation of apoptotic process (score=9.5, 2 sources)
+    [HIGH  ] GO:0006915 P:apoptotic process (score=5.1, 1 sources)
+    [HIGH  ] GO:0001819 P:positive regulation of cytokine production (score=5.1, 1 sources)
+    [HIGH  ] GO:0032731 P:positive regulation of interleukin-1 beta p (score=5.1, 1 sources)
+
+  Cellular Component:
+    [HIGH  ] GO:0005737 C:cytoplasm (score=6.5, 2 sources)
+    [HIGH  ] GO:0072558 C:NLRP1 inflammasome complex (score=5.1, 1 sources)
+    [HIGH  ] GO:0005886 C:plasma membrane (score=5.1, 1 sources)
+
+──────────────────────────────────────────────────────────────────────
+  ACTIVE SITES
+──────────────────────────────────────────────────────────────────────
+  H224 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  C244 [HIGH  ] motifs: cysteine_protease_dyad, cysteine_protease_dyad
+  H248 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H237 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H404 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+
+──────────────────────────────────────────────────────────────────────
+  PROTEIN INTERACTIONS (top 8)
+──────────────────────────────────────────────────────────────────────
+  PYCARD          STRING=999  type=unknown
+  MEFV            STRING=999  type=unknown
+  AIM2            STRING=999  type=unknown
+  NLRC4           STRING=999  type=unknown
+  NLRP3           STRING=999  type=unknown
+  IL1B            STRING=999  type=unknown
+  CASP8           STRING=999  type=apoptotic
+  GSDMD           STRING=999  type=unknown
+
+──────────────────────────────────────────────────────────────────────
+  VALIDATION SUGGESTIONS
+──────────────────────────────────────────────────────────────────────
+  1. Alanine scanning mutagenesis of predicted active site residues (H224, C244, H248) to confirm functional importance
+  2. Co-immunoprecipitation with PYCARD (unknown interaction, predicted interface: [98, 33, 111])
+  3. Co-immunoprecipitation with MEFV (unknown interaction, predicted interface: [98, 33, 111])
+  4. Enzyme activity assay consistent with EC 3.4.21 using appropriate substrate panel
+  5. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+
+──────────────────────────────────────────────────────────────────────
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+======================================================================

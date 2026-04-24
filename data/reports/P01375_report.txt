@@ -1,0 +1,77 @@
+======================================================================
+  ProteinFP Prediction Report
+  Generated: 2026-04-19 21:27:35
+======================================================================
+
+  Protein    : Tumor necrosis factor
+  Gene       : TNF
+  UniProt    : P01375
+  Organism   : Homo sapiens
+  Length     : 233 aa
+  Mean pLDDT : 84.6
+  Confidence : VERY HIGH
+
+──────────────────────────────────────────────────────────────────────
+  FUNCTIONAL PREDICTION
+──────────────────────────────────────────────────────────────────────
+  Top function     : Cytokine that binds to TNFRSF1A/TNFR1 and TNFRSF1B/TNFBR. It is mainly secreted by macrophages and can induce cell death of certain tumor cell lines. It is potent pyrogen causing fever by direct actio
+  Enzyme           : no (non-enzyme)
+  Location         : membrane
+  Evidence sources : 8
+
+──────────────────────────────────────────────────────────────────────
+  GENE ONTOLOGY PREDICTIONS
+──────────────────────────────────────────────────────────────────────
+
+  Molecular Function:
+    [HIGH  ] GO:0005164 tumor necrosis factor receptor binding (score=16.5, 2 sources)
+    [HIGH  ] GO:0005515 protein binding (score=5.6, 2 sources)
+    [HIGH  ] GO:0005125 F:cytokine activity (score=5.1, 1 sources)
+    [HIGH  ] GO:0051092 P:positive regulation of NF-kappaB transcript (score=5.1, 1 sources)
+    [HIGH  ] GO:0009986 C:cell surface (score=5.1, 1 sources)
+
+  Biological Process:
+    [HIGH  ] GO:0006955 immune response (score=16.5, 2 sources)
+    [HIGH  ] GO:0008625 P:extrinsic apoptotic signaling pathway via d (score=5.1, 1 sources)
+    [HIGH  ] GO:0043123 P:positive regulation of canonical NF-kappaB  (score=5.1, 1 sources)
+    [HIGH  ] GO:2001238 P:positive regulation of extrinsic apoptotic  (score=5.1, 1 sources)
+    [HIGH  ] GO:0045087 P:innate immune response (score=5.1, 1 sources)
+
+  Cellular Component:
+    [HIGH  ] GO:0016020 membrane (score=11.2, 1 sources)
+    [HIGH  ] GO:0005615 C:extracellular space (score=5.1, 1 sources)
+    [HIGH  ] GO:0005886 C:plasma membrane (score=5.1, 1 sources)
+
+──────────────────────────────────────────────────────────────────────
+  ACTIVE SITES
+──────────────────────────────────────────────────────────────────────
+  C49 [HIGH  ] motifs: cysteine_protease_dyad
+  H52 [HIGH  ] motifs: cysteine_protease_dyad
+  H154 [HIGH  ] motifs: acid_base_pair, haem_binding
+  C177 [HIGH  ] motifs: zinc_binding_cluster, zinc_binding_cluster
+  H91 [HIGH  ] motifs: haem_binding
+
+──────────────────────────────────────────────────────────────────────
+  PROTEIN INTERACTIONS (top 8)
+──────────────────────────────────────────────────────────────────────
+  TAB2            STRING=999  type=unknown
+  NFKB1           STRING=999  type=unknown
+  TRAF2           STRING=999  type=unknown
+  RIPK1           STRING=999  type=unknown
+  CHUK            STRING=999  type=unknown
+  TRADD           STRING=999  type=cooperative
+  IKBKB           STRING=999  type=unknown
+  BIRC2           STRING=999  type=unknown
+
+──────────────────────────────────────────────────────────────────────
+  VALIDATION SUGGESTIONS
+──────────────────────────────────────────────────────────────────────
+  1. Alanine scanning mutagenesis of predicted active site residues (C49, H52, H154) to confirm functional importance
+  2. Co-immunoprecipitation with TAB2 (unknown interaction, predicted interface: [1, 65, 60])
+  3. Co-immunoprecipitation with NFKB1 (unknown interaction, predicted interface: [1, 65, 60])
+  4. EMSA or fluorescence polarisation assay to confirm 'tumor necrosis factor receptor binding' (GO:0005164)
+  5. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+
+──────────────────────────────────────────────────────────────────────
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+======================================================================

@@ -1,0 +1,76 @@
+======================================================================
+  ProteinFP Prediction Report
+  Generated: 2026-04-19 19:38:06
+======================================================================
+
+  Protein    : Solute carrier family 2, facilitated glucose transporter member 1
+  Gene       : SLC2A1
+  UniProt    : P11166
+  Organism   : Homo sapiens
+  Length     : 492 aa
+  Mean pLDDT : 90.3
+  Confidence : VERY HIGH
+
+──────────────────────────────────────────────────────────────────────
+  FUNCTIONAL PREDICTION
+──────────────────────────────────────────────────────────────────────
+  Top function     : Facilitative glucose transporter, which is responsible for constitutive or basal glucose uptake (PubMed:10227690, PubMed:10954735, PubMed:18245775, PubMed:19449892, PubMed:25982116, PubMed:27078104, P
+  Enzyme           : no (non-enzyme)
+  Location         : membrane
+  Evidence sources : 8
+
+──────────────────────────────────────────────────────────────────────
+  GENE ONTOLOGY PREDICTIONS
+──────────────────────────────────────────────────────────────────────
+
+  Molecular Function:
+    [HIGH  ] GO:0022857 transmembrane transporter activity (score=20.0, 2 sources)
+    [HIGH  ] GO:0055056 D-glucose transmembrane transporter activity (score=9.5, 2 sources)
+    [HIGH  ] GO:0030864 C:cortical actin cytoskeleton (score=5.1, 1 sources)
+    [HIGH  ] GO:0001917 C:photoreceptor inner segment (score=5.1, 1 sources)
+    [HIGH  ] GO:0030496 C:midbody (score=5.1, 1 sources)
+
+  Biological Process:
+    [HIGH  ] GO:0055085 transmembrane transport (score=11.2, 1 sources)
+    [HIGH  ] GO:1904659 D-glucose transmembrane transport (score=9.5, 2 sources)
+    [HIGH  ] GO:1990350 C:glucose transporter complex (score=5.1, 1 sources)
+    [HIGH  ] GO:0042149 P:cellular response to glucose starvation (score=5.1, 1 sources)
+    [HIGH  ] GO:0032868 P:response to insulin (score=5.1, 1 sources)
+
+  Cellular Component:
+    [HIGH  ] GO:0016020 membrane (score=21.5, 3 sources)
+    [HIGH  ] GO:0005886 C:plasma membrane (score=5.1, 1 sources)
+    [HIGH  ] GO:0016324 C:apical plasma membrane (score=5.1, 1 sources)
+
+──────────────────────────────────────────────────────────────────────
+  ACTIVE SITES
+──────────────────────────────────────────────────────────────────────
+  H239 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  S113 [MEDIUM] motifs: p_loop_walker_a
+  G175 [MEDIUM] motifs: p_loop_walker_a
+  G181 [MEDIUM] motifs: p_loop_walker_a
+  G111 [MEDIUM] motifs: p_loop_walker_a
+
+──────────────────────────────────────────────────────────────────────
+  PROTEIN INTERACTIONS (top 8)
+──────────────────────────────────────────────────────────────────────
+  TP53            STRING=967  type=unknown
+  SLC2A4          STRING=909  type=unknown
+  SLC2A2          STRING=906  type=unknown
+  HIF1A           STRING=902  type=unknown
+  BSG             STRING=900  type=unknown
+  EPAS1           STRING=888  type=unknown
+  STOM            STRING=880  type=unknown
+  SLC5A1          STRING=874  type=unknown
+
+──────────────────────────────────────────────────────────────────────
+  VALIDATION SUGGESTIONS
+──────────────────────────────────────────────────────────────────────
+  1. Alanine scanning mutagenesis of predicted active site residues (H239, C133, H160) to confirm functional importance
+  2. Co-immunoprecipitation with TP53 (unknown interaction, predicted interface: [1, 492, 330])
+  3. Co-immunoprecipitation with SLC2A4 (unknown interaction, predicted interface: [1, 492, 330])
+  4. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+
+──────────────────────────────────────────────────────────────────────
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+======================================================================

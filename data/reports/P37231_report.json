@@ -1,0 +1,1925 @@
+{
+  "uniprot_id": "P37231",
+  "gene_name": "PPARG",
+  "protein_name": "Peroxisome proliferator-activated receptor gamma",
+  "organism": "Homo sapiens",
+  "sequence_length": 505,
+  "generated_at": "2026-04-19 16:56:53",
+  "top_function": "Ligand-activated transcription factor that forms obligate heterodimers with the retinoic acid receptor and acts as a key regulator of biological processes, such as adipocyte differentiation, lipid met",
+  "is_enzyme": false,
+  "ec_number": "3.4.21",
+  "subcellular_location": "membrane",
+  "go_terms_mf": [
+    {
+      "go_id": "GO:0003677",
+      "go_name": "DNA binding",
+      "namespace": "MF",
+      "weighted_score": 15.1,
+      "n_sources": 3,
+      "sources": [
+        "experimental_homolog",
+        "domain_annotation",
+        "structural_motif"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0008270",
+      "go_name": "zinc ion binding",
+      "namespace": "MF",
+      "weighted_score": 14.8,
+      "n_sources": 3,
+      "sources": [
+        "experimental_homolog",
+        "domain_annotation",
+        "structural_motif"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0004879",
+      "go_name": "nuclear receptor activity",
+      "namespace": "MF",
+      "weighted_score": 13.0,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "domain_annotation"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0003700",
+      "go_name": "DNA-binding transcription factor activity",
+      "namespace": "MF",
+      "weighted_score": 11.0,
+      "n_sources": 3,
+      "sources": [
+        "experimental_homolog",
+        "domain_annotation",
+        "structural_motif"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0003682",
+      "go_name": "F:chromatin binding",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0001227",
+      "go_name": "F:DNA-binding transcription repressor activity, RNA polymerase II-specific",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0070888",
+      "go_name": "F:E-box binding",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0000976",
+      "go_name": "F:transcription cis-regulatory region binding",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0050873",
+      "go_name": "P:brown fat cell differentiation",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005654",
+      "go_name": "C:nucleoplasm",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0000978",
+      "go_name": "F:RNA polymerase II cis-regulatory region sequence-specific DNA binding",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0030154",
+      "go_name": "P:cell differentiation",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0043235",
+      "go_name": "C:receptor complex",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0051393",
+      "go_name": "F:alpha-actinin binding",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0050544",
+      "go_name": "F:arachidonate binding",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    }
+  ],
+  "go_terms_bp": [
+    {
+      "go_id": "GO:0006355",
+      "go_name": "regulation of DNA-templated transcription",
+      "namespace": "BP",
+      "weighted_score": 14.75,
+      "n_sources": 1,
+      "sources": [
+        "domain_annotation"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "domain_annotation"
+    },
+    {
+      "go_id": "GO:0032869",
+      "go_name": "P:cellular response to insulin stimulus",
+      "namespace": "BP",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0006631",
+      "go_name": "P:fatty acid metabolic process",
+      "namespace": "BP",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0010887",
+      "go_name": "P:negative regulation of cholesterol storage",
+      "namespace": "BP",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0010629",
+      "go_name": "P:negative regulation of gene expression",
+      "namespace": "BP",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0009755",
+      "go_name": "P:hormone-mediated signaling pathway",
+      "namespace": "BP",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0050728",
+      "go_name": "P:negative regulation of inflammatory response",
+      "namespace": "BP",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0001228",
+      "go_name": "F:DNA-binding transcription activator activity, RNA polymerase II-specific",
+      "namespace": "BP",
+      "weighted_score": 3.0,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0140297",
+      "go_name": "F:DNA-binding transcription factor binding",
+      "namespace": "BP",
+      "weighted_score": 3.0,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0006351",
+      "go_name": "DNA-templated transcription",
+      "namespace": "BP",
+      "weighted_score": 1.3,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0030193",
+      "go_name": "regulation of blood coagulation",
+      "namespace": "BP",
+      "weighted_score": 1.2,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0045944",
+      "go_name": "positive regulation of transcription by RNA pol II",
+      "namespace": "BP",
+      "weighted_score": 1.2,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0006508",
+      "go_name": "proteolysis",
+      "namespace": "BP",
+      "weighted_score": 1.1,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0010819",
+      "go_name": "regulation of T cell chemotaxis",
+      "namespace": "BP",
+      "weighted_score": 0.9,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    }
+  ],
+  "go_terms_cc": [
+    {
+      "go_id": "GO:0005634",
+      "go_name": "nucleus",
+      "namespace": "CC",
+      "weighted_score": 15.85,
+      "n_sources": 4,
+      "sources": [
+        "experimental_homolog",
+        "domain_annotation",
+        "ai_esm2",
+        "structural_motif"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005737",
+      "go_name": "C:cytoplasm",
+      "namespace": "CC",
+      "weighted_score": 6.5,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "sequence_baseline"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0090575",
+      "go_name": "C:RNA polymerase II transcription regulator complex",
+      "namespace": "CC",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005829",
+      "go_name": "C:cytosol",
+      "namespace": "CC",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0043234",
+      "go_name": "protein complex",
+      "namespace": "CC",
+      "weighted_score": 1.1,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0072562",
+      "go_name": "blood microparticle",
+      "namespace": "CC",
+      "weighted_score": 1.0,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    }
+  ],
+  "active_sites": [
+    {
+      "residue_number": 139,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 3.16,
+      "plddt": 95.69,
+      "motifs": [
+        "cysteine_protease_dyad",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 9,
+      "confidence": "HIGH",
+      "coords": [
+        15.07,
+        3.624,
+        -17.631
+      ],
+      "domain_context": "glucocorticoid receptor-like (dna-binding domain)"
+    },
+    {
+      "residue_number": 142,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 2.08,
+      "plddt": 96.56,
+      "motifs": [
+        "cysteine_protease_dyad",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 9,
+      "confidence": "HIGH",
+      "coords": [
+        10.181,
+        4.642,
+        -20.284
+      ],
+      "domain_context": "glucocorticoid receptor-like (dna-binding domain)"
+    },
+    {
+      "residue_number": 154,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 18.11,
+      "plddt": 92.62,
+      "motifs": [
+        "serine_protease_triad",
+        "cysteine_protease_dyad",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "acid_base_pair"
+      ],
+      "evidence_score": 9,
+      "confidence": "HIGH",
+      "coords": [
+        20.372,
+        3.29,
+        -18.362
+      ],
+      "domain_context": "glucocorticoid receptor-like (dna-binding domain)"
+    },
+    {
+      "residue_number": 183,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 76.25,
+      "plddt": 93.38,
+      "motifs": [
+        "serine_protease_triad",
+        "cysteine_protease_dyad",
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        6.206,
+        5.671,
+        -20.003
+      ],
+      "domain_context": "glucocorticoid receptor-like (dna-binding domain)"
+    },
+    {
+      "residue_number": 245,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 77.55,
+      "plddt": 98.19,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "acid_base_pair"
+      ],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        7.912,
+        8.362,
+        7.417
+      ],
+      "domain_context": "nuclear receptor ligand-binding domain"
+    },
+    {
+      "residue_number": 453,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 30.36,
+      "plddt": 93.25,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "acid_base_pair"
+      ],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        2.581,
+        11.45,
+        -11.231
+      ],
+      "domain_context": "nuclear receptor ligand-binding domain"
+    },
+    {
+      "residue_number": 56,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 160.15,
+      "plddt": 32.06,
+      "motifs": [
+        "serine_protease_triad",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "acid_base_pair"
+      ],
+      "evidence_score": 6,
+      "confidence": "HIGH",
+      "coords": [
+        -17.276,
+        15.994,
+        -32.595
+      ],
+      "domain_context": "proxisompagr"
+    },
+    {
+      "residue_number": 186,
+      "chain_id": "A",
+      "one_letter": "S",
+      "three_letter": "SER",
+      "conservation": 4.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 18.69,
+      "plddt": 94.25,
+      "motifs": [
+        "serine_protease_triad"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        2.49,
+        3.556,
+        -23.178
+      ],
+      "domain_context": "glucocorticoid receptor-like (dna-binding domain)"
+    },
+    {
+      "residue_number": 249,
+      "chain_id": "A",
+      "one_letter": "S",
+      "three_letter": "SER",
+      "conservation": 4.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 16.8,
+      "plddt": 98.31,
+      "motifs": [
+        "serine_protease_triad"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        4.758,
+        3.27,
+        8.862
+      ],
+      "domain_context": "nuclear receptor ligand-binding domain"
+    },
+    {
+      "residue_number": 411,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 0.0,
+      "plddt": 98.62,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        0.51,
+        8.129,
+        -2.324
+      ],
+      "domain_context": "nuclear receptor ligand-binding domain"
+    },
+    {
+      "residue_number": 144,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 22.7,
+      "plddt": 94.31,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        10.621,
+        1.426,
+        -15.748
+      ],
+      "domain_context": "glucocorticoid receptor-like (dna-binding domain)"
+    },
+    {
+      "residue_number": 204,
+      "chain_id": "A",
+      "one_letter": "S",
+      "three_letter": "SER",
+      "conservation": 4.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 41.62,
+      "plddt": 96.06,
+      "motifs": [
+        "serine_protease_triad"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        23.749,
+        3.645,
+        -29.767
+      ],
+      "domain_context": "glucocorticoid receptor-like (dna-binding domain)"
+    },
+    {
+      "residue_number": 238,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 104.28,
+      "plddt": 91.62,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "acid_base_pair"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        10.569,
+        18.246,
+        5.469
+      ],
+      "domain_context": "nuclear hormone receptor family nr1 subfamily"
+    },
+    {
+      "residue_number": 248,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 65.91,
+      "plddt": 98.06,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "acid_base_pair",
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        7.457,
+        3.288,
+        6.135
+      ],
+      "domain_context": "nuclear receptor ligand-binding domain"
+    },
+    {
+      "residue_number": 330,
+      "chain_id": "A",
+      "one_letter": "S",
+      "three_letter": "SER",
+      "conservation": 4.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 32.02,
+      "plddt": 98.38,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        2.582,
+        6.922,
+        13.795
+      ],
+      "domain_context": "nuclear receptor ligand-binding domain"
+    },
+    {
+      "residue_number": 408,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 56.96,
+      "plddt": 97.88,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "acid_base_pair"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        0.67,
+        3.568,
+        -5.36
+      ],
+      "domain_context": "nuclear receptor ligand-binding domain"
+    },
+    {
+      "residue_number": 410,
+      "chain_id": "A",
+      "one_letter": "S",
+      "three_letter": "SER",
+      "conservation": 4.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 27.72,
+      "plddt": 98.06,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        3.421,
+        5.91,
+        -1.203
+      ],
+      "domain_context": "nuclear receptor ligand-binding domain"
+    },
+    {
+      "residue_number": 456,
+      "chain_id": "A",
+      "one_letter": "S",
+      "three_letter": "SER",
+      "conservation": 4.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 51.67,
+      "plddt": 91.31,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -1.52,
+        13.341,
+        -14.218
+      ],
+      "domain_context": "nuclear receptor ligand-binding domain"
+    },
+    {
+      "residue_number": 457,
+      "chain_id": "A",
+      "one_letter": "S",
+      "three_letter": "SER",
+      "conservation": 4.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 81.28,
+      "plddt": 89.75,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -3.344,
+        16.687,
+        -14.581
+      ],
+      "domain_context": "nuclear receptor ligand-binding domain"
+    },
+    {
+      "residue_number": 156,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 3.32,
+      "plddt": 97.06,
+      "motifs": [
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 9,
+      "confidence": "HIGH",
+      "coords": [
+        15.045,
+        -1.494,
+        -18.775
+      ],
+      "domain_context": "glucocorticoid receptor-like (dna-binding domain)"
+    },
+    {
+      "residue_number": 159,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 0.0,
+      "plddt": 98.44,
+      "motifs": [
+        "zinc_binding_cluster",
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 9,
+      "confidence": "HIGH",
+      "coords": [
+        13.808,
+        -1.031,
+        -24.107
+      ],
+      "domain_context": "glucocorticoid receptor-like (dna-binding domain)"
+    },
+    {
+      "residue_number": 193,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 10.82,
+      "plddt": 98.19,
+      "motifs": [
+        "zinc_binding_cluster",
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 9,
+      "confidence": "HIGH",
+      "coords": [
+        8.152,
+        7.477,
+        -31.043
+      ],
+      "domain_context": "glucocorticoid receptor-like (dna-binding domain)"
+    },
+    {
+      "residue_number": 351,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 3.68,
+      "plddt": 96.25,
+      "motifs": [
+        "acid_base_pair"
+      ],
+      "evidence_score": 9,
+      "confidence": "HIGH",
+      "coords": [
+        -14.519,
+        3.061,
+        7.303
+      ],
+      "domain_context": "nuclear receptor ligand-binding domain"
+    },
+    {
+      "residue_number": 477,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 12.46,
+      "plddt": 95.06,
+      "motifs": [
+        "acid_base_pair"
+      ],
+      "evidence_score": 9,
+      "confidence": "HIGH",
+      "coords": [
+        -23.276,
+        1.16,
+        4.36
+      ],
+      "domain_context": "nuclear receptor ligand-binding domain"
+    },
+    {
+      "residue_number": 150,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 33.36,
+      "plddt": 94.0,
+      "motifs": [
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        22.642,
+        -0.832,
+        -22.311
+      ],
+      "domain_context": "glucocorticoid receptor-like (dna-binding domain)"
+    },
+    {
+      "residue_number": 176,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 26.37,
+      "plddt": 97.25,
+      "motifs": [
+        "zinc_binding_cluster",
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        4.385,
+        9.674,
+        -36.095
+      ],
+      "domain_context": "glucocorticoid receptor-like (dna-binding domain)"
+    },
+    {
+      "residue_number": 180,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 40.82,
+      "plddt": 95.69,
+      "motifs": [
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        3.993,
+        10.38,
+        -28.063
+      ],
+      "domain_context": "glucocorticoid receptor-like (dna-binding domain)"
+    },
+    {
+      "residue_number": 190,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 22.32,
+      "plddt": 97.75,
+      "motifs": [
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        3.909,
+        3.803,
+        -30.862
+      ],
+      "domain_context": "glucocorticoid receptor-like (dna-binding domain)"
+    },
+    {
+      "residue_number": 198,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 0.0,
+      "plddt": 98.06,
+      "motifs": [],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        15.745,
+        5.592,
+        -27.518
+      ],
+      "domain_context": "glucocorticoid receptor-like (dna-binding domain)"
+    },
+    {
+      "residue_number": 58,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 163.38,
+      "plddt": 30.88,
+      "motifs": [
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 6,
+      "confidence": "HIGH",
+      "coords": [
+        -16.562,
+        9.611,
+        -31.702
+      ],
+      "domain_context": "ppar gamma n-terminal region"
+    }
+  ],
+  "binding_pockets": [],
+  "allosteric_sites": [],
+  "ppi_partners": [
+    {
+      "partner_id": "9606.ENSP00000264867",
+      "partner_name": "PPARGC1A",
+      "combined_score": 999,
+      "experimental_score": 992,
+      "database_score": 500,
+      "textmining_score": 999,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        212,
+        95,
+        123,
+        85,
+        102,
+        39,
+        93,
+        78,
+        43,
+        303,
+        115,
+        38,
+        83,
+        65
+      ],
+      "interface_letters": [
+        "M",
+        "R",
+        "Y",
+        "Y",
+        "R",
+        "Y",
+        "W",
+        "Y",
+        "Y",
+        "F",
+        "K",
+        "Y",
+        "F",
+        "F",
+        "F"
+      ],
+      "interface_charge": 3.0,
+      "interface_hydrophobicity": -0.567,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000268712",
+      "partner_name": "NCOR1",
+      "combined_score": 999,
+      "experimental_score": 984,
+      "database_score": 500,
+      "textmining_score": 986,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        212,
+        95,
+        123,
+        85,
+        102,
+        39,
+        93,
+        78,
+        43,
+        303,
+        115,
+        38,
+        83,
+        65
+      ],
+      "interface_letters": [
+        "M",
+        "R",
+        "Y",
+        "Y",
+        "R",
+        "Y",
+        "W",
+        "Y",
+        "Y",
+        "F",
+        "K",
+        "Y",
+        "F",
+        "F",
+        "F"
+      ],
+      "interface_charge": 3.0,
+      "interface_hydrophobicity": -0.567,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000384018",
+      "partner_name": "NCOR2",
+      "combined_score": 999,
+      "experimental_score": 984,
+      "database_score": 500,
+      "textmining_score": 920,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        212,
+        95,
+        123,
+        85,
+        102,
+        39,
+        93,
+        78,
+        43,
+        303,
+        115,
+        38,
+        83,
+        65
+      ],
+      "interface_letters": [
+        "M",
+        "R",
+        "Y",
+        "Y",
+        "R",
+        "Y",
+        "W",
+        "Y",
+        "Y",
+        "F",
+        "K",
+        "Y",
+        "F",
+        "F",
+        "F"
+      ],
+      "interface_charge": 3.0,
+      "interface_hydrophobicity": -0.567,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000419692",
+      "partner_name": "RXRA",
+      "combined_score": 999,
+      "experimental_score": 999,
+      "database_score": 900,
+      "textmining_score": 987,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        212,
+        95,
+        123,
+        85,
+        102,
+        39,
+        93,
+        78,
+        43,
+        303,
+        115,
+        38,
+        83,
+        65
+      ],
+      "interface_letters": [
+        "M",
+        "R",
+        "Y",
+        "Y",
+        "R",
+        "Y",
+        "W",
+        "Y",
+        "Y",
+        "F",
+        "K",
+        "Y",
+        "F",
+        "F",
+        "F"
+      ],
+      "interface_charge": 3.0,
+      "interface_hydrophobicity": -0.567,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000300651",
+      "partner_name": "MED1",
+      "combined_score": 999,
+      "experimental_score": 986,
+      "database_score": 500,
+      "textmining_score": 961,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        212,
+        95,
+        123,
+        85,
+        102,
+        39,
+        93,
+        78,
+        43,
+        303,
+        115,
+        38,
+        83,
+        65
+      ],
+      "interface_letters": [
+        "M",
+        "R",
+        "Y",
+        "Y",
+        "R",
+        "Y",
+        "W",
+        "Y",
+        "Y",
+        "F",
+        "K",
+        "Y",
+        "F",
+        "F",
+        "F"
+      ],
+      "interface_charge": 3.0,
+      "interface_hydrophobicity": -0.567,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000385216",
+      "partner_name": "NCOA1",
+      "combined_score": 999,
+      "experimental_score": 992,
+      "database_score": 500,
+      "textmining_score": 907,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        212,
+        95,
+        123,
+        85,
+        102,
+        39,
+        93,
+        78,
+        43,
+        303,
+        115,
+        38,
+        83,
+        65
+      ],
+      "interface_letters": [
+        "M",
+        "R",
+        "Y",
+        "Y",
+        "R",
+        "Y",
+        "W",
+        "Y",
+        "Y",
+        "F",
+        "K",
+        "Y",
+        "F",
+        "F",
+        "F"
+      ],
+      "interface_charge": 3.0,
+      "interface_hydrophobicity": -0.567,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000262367",
+      "partner_name": "CREBBP",
+      "combined_score": 998,
+      "experimental_score": 982,
+      "database_score": 500,
+      "textmining_score": 886,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        212,
+        95,
+        123,
+        85,
+        102,
+        39,
+        93,
+        78,
+        43,
+        303,
+        115,
+        38,
+        83,
+        65
+      ],
+      "interface_letters": [
+        "M",
+        "R",
+        "Y",
+        "Y",
+        "R",
+        "Y",
+        "W",
+        "Y",
+        "Y",
+        "F",
+        "K",
+        "Y",
+        "F",
+        "F",
+        "F"
+      ],
+      "interface_charge": 3.0,
+      "interface_hydrophobicity": -0.567,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000399968",
+      "partner_name": "NCOA2",
+      "combined_score": 998,
+      "experimental_score": 965,
+      "database_score": 500,
+      "textmining_score": 902,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        212,
+        95,
+        123,
+        85,
+        102,
+        39,
+        93,
+        78,
+        43,
+        303,
+        115,
+        38,
+        83,
+        65
+      ],
+      "interface_letters": [
+        "M",
+        "R",
+        "Y",
+        "Y",
+        "R",
+        "Y",
+        "W",
+        "Y",
+        "Y",
+        "F",
+        "K",
+        "Y",
+        "F",
+        "F",
+        "F"
+      ],
+      "interface_charge": 3.0,
+      "interface_hydrophobicity": -0.567,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000384273",
+      "partner_name": "RELA",
+      "combined_score": 998,
+      "experimental_score": 834,
+      "database_score": 750,
+      "textmining_score": 976,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        212,
+        95,
+        123,
+        85,
+        102,
+        39,
+        93,
+        78,
+        43,
+        303,
+        115,
+        38,
+        83,
+        65
+      ],
+      "interface_letters": [
+        "M",
+        "R",
+        "Y",
+        "Y",
+        "R",
+        "Y",
+        "W",
+        "Y",
+        "Y",
+        "F",
+        "K",
+        "Y",
+        "F",
+        "F",
+        "F"
+      ],
+      "interface_charge": 3.0,
+      "interface_hydrophobicity": -0.567,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000212015",
+      "partner_name": "SIRT1",
+      "combined_score": 998,
+      "experimental_score": 345,
+      "database_score": 900,
+      "textmining_score": 981,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        212,
+        95,
+        123,
+        85,
+        102,
+        39,
+        93,
+        78,
+        43,
+        303,
+        115,
+        38,
+        83,
+        65
+      ],
+      "interface_letters": [
+        "M",
+        "R",
+        "Y",
+        "Y",
+        "R",
+        "Y",
+        "W",
+        "Y",
+        "Y",
+        "F",
+        "K",
+        "Y",
+        "F",
+        "F",
+        "F"
+      ],
+      "interface_charge": 3.0,
+      "interface_hydrophobicity": -0.567,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000263253",
+      "partner_name": "EP300",
+      "combined_score": 997,
+      "experimental_score": 860,
+      "database_score": 500,
+      "textmining_score": 963,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        212,
+        95,
+        123,
+        85,
+        102,
+        39,
+        93,
+        78,
+        43,
+        303,
+        115,
+        38,
+        83,
+        65
+      ],
+      "interface_letters": [
+        "M",
+        "R",
+        "Y",
+        "Y",
+        "R",
+        "Y",
+        "W",
+        "Y",
+        "Y",
+        "F",
+        "K",
+        "Y",
+        "F",
+        "F",
+        "F"
+      ],
+      "interface_charge": 3.0,
+      "interface_hydrophobicity": -0.567,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000356562",
+      "partner_name": "XPR1",
+      "combined_score": 996,
+      "experimental_score": 0,
+      "database_score": 0,
+      "textmining_score": 996,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        212,
+        95,
+        123,
+        85,
+        102,
+        39,
+        93,
+        78,
+        43,
+        303,
+        115,
+        38,
+        83,
+        65
+      ],
+      "interface_letters": [
+        "M",
+        "R",
+        "Y",
+        "Y",
+        "R",
+        "Y",
+        "W",
+        "Y",
+        "Y",
+        "F",
+        "K",
+        "Y",
+        "F",
+        "F",
+        "F"
+      ],
+      "interface_charge": 3.0,
+      "interface_hydrophobicity": -0.567,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000270722",
+      "partner_name": "PRDM16",
+      "combined_score": 996,
+      "experimental_score": 95,
+      "database_score": 0,
+      "textmining_score": 996,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        212,
+        95,
+        123,
+        85,
+        102,
+        39,
+        93,
+        78,
+        43,
+        303,
+        115,
+        38,
+        83,
+        65
+      ],
+      "interface_letters": [
+        "M",
+        "R",
+        "Y",
+        "Y",
+        "R",
+        "Y",
+        "W",
+        "Y",
+        "Y",
+        "F",
+        "K",
+        "Y",
+        "F",
+        "F",
+        "F"
+      ],
+      "interface_charge": 3.0,
+      "interface_hydrophobicity": -0.567,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000495360",
+      "partner_name": "CTNNB1",
+      "combined_score": 994,
+      "experimental_score": 735,
+      "database_score": 0,
+      "textmining_score": 980,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        212,
+        95,
+        123,
+        85,
+        102,
+        39,
+        93,
+        78,
+        43,
+        303,
+        115,
+        38,
+        83,
+        65
+      ],
+      "interface_letters": [
+        "M",
+        "R",
+        "Y",
+        "Y",
+        "R",
+        "Y",
+        "W",
+        "Y",
+        "Y",
+        "F",
+        "K",
+        "Y",
+        "F",
+        "F",
+        "F"
+      ],
+      "interface_charge": 3.0,
+      "interface_hydrophobicity": -0.567,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000263334",
+      "partner_name": "PAX8",
+      "combined_score": 994,
+      "experimental_score": 45,
+      "database_score": 900,
+      "textmining_score": 946,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        212,
+        95,
+        123,
+        85,
+        102,
+        39,
+        93,
+        78,
+        43,
+        303,
+        115,
+        38,
+        83,
+        65
+      ],
+      "interface_letters": [
+        "M",
+        "R",
+        "Y",
+        "Y",
+        "R",
+        "Y",
+        "W",
+        "Y",
+        "Y",
+        "F",
+        "K",
+        "Y",
+        "F",
+        "F",
+        "F"
+      ],
+      "interface_charge": 3.0,
+      "interface_hydrophobicity": -0.567,
+      "binding_mode": "electrostatic"
+    }
+  ],
+  "mean_plddt": 76.09,
+  "n_evidence_sources": 8,
+  "overall_confidence": "VERY HIGH",
+  "validation_suggestions": [
+    "Alanine scanning mutagenesis of predicted active site residues (C139, C142, H154) to confirm functional importance",
+    "Co-immunoprecipitation with PPARGC1A (unknown interaction, predicted interface: [1, 212, 95])",
+    "Co-immunoprecipitation with NCOR1 (unknown interaction, predicted interface: [1, 212, 95])",
+    "EMSA or fluorescence polarisation assay to confirm 'DNA binding' (GO:0003677)",
+    "GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation"
+  ],
+  "modules_run": [
+    "structure",
+    "physico",
+    "active",
+    "homology",
+    "esm2",
+    "go",
+    "ec",
+    "ppi"
+  ],
+  "modules_missing": [
+    "pockets",
+    "allosteric",
+    "chem_env",
+    "foldseek"
+  ]
+}

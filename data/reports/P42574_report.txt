@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-19 13:06:30
+  Generated: 2026-04-19 14:56:48
 ======================================================================
 
   Protein    : Caspase-3
@@ -9,14 +9,14 @@
   Organism   : Homo sapiens
   Length     : 277 aa
   Mean pLDDT : 75.0
-  Confidence : VERY HIGH
+  Confidence : HIGH
 
 ──────────────────────────────────────────────────────────────────────
   FUNCTIONAL PREDICTION
 ──────────────────────────────────────────────────────────────────────
-  Top function     : Thiol protease that acts as a major effector caspase involved in the execution phase of apoptosis (PubMed:18723680, PubMed:20566630, PubMed:23650375, PubMed:35338844, PubMed:35446120, PubMed:7596430).
+  Top function     : cysteine-type endopeptidase activity
   Enzyme           : no (non-enzyme)
-  Location         : membrane
+  Location         : cytoplasm
   Evidence sources : 12
 
 ──────────────────────────────────────────────────────────────────────
@@ -24,32 +24,23 @@
 ──────────────────────────────────────────────────────────────────────
 
   Molecular Function:
-    [HIGH  ] GO:0004197 cysteine-type endopeptidase activity (score=20.0, 2 sources)
-    [HIGH  ] GO:0008233 peptidase activity (score=7.6, 2 sources)
-    [HIGH  ] GO:0004175 F:endopeptidase activity (score=5.1, 1 sources)
-    [HIGH  ] GO:0030218 P:erythrocyte differentiation (score=5.1, 1 sources)
-    [HIGH  ] GO:0097194 P:execution phase of apoptosis (score=5.1, 1 sources)
+    [HIGH  ] GO:0004197 cysteine-type endopeptidase activity (score=17.4, 2 sources)
+    [HIGH  ] GO:0008234 cysteine-type peptidase activity (score=6.9, 2 sources)
+    [MEDIUM] GO:0008233 peptidase activity (score=2.5, 1 sources)
+    [LOW   ] GO:0005515 protein binding (score=1.1, 1 sources)
 
   Biological Process:
-    [HIGH  ] GO:0006508 proteolysis (score=20.0, 2 sources)
-    [HIGH  ] GO:0031264 C:death-inducing signaling complex (score=5.1, 1 sources)
-    [HIGH  ] GO:1902004 P:positive regulation of amyloid-beta formati (score=5.1, 1 sources)
-    [HIGH  ] GO:0043525 P:positive regulation of neuron apoptotic pro (score=5.1, 1 sources)
-    [HIGH  ] GO:0006915 P:apoptotic process (score=5.1, 1 sources)
+    [HIGH  ] GO:0006508 proteolysis (score=17.4, 2 sources)
 
   Cellular Component:
-    [HIGH  ] GO:0005737 C:cytoplasm (score=6.5, 2 sources)
-    [HIGH  ] GO:0005634 C:nucleus (score=6.4, 2 sources)
-    [HIGH  ] GO:0005829 C:cytosol (score=5.1, 1 sources)
+    [LOW   ] GO:0005634 nucleus (score=0.9, 1 sources)
+    [LOW   ] GO:0005737 cytoplasm (score=0.9, 1 sources)
 
 ──────────────────────────────────────────────────────────────────────
   ACTIVE SITES
 ──────────────────────────────────────────────────────────────────────
-  H22 [MEDIUM] motifs: general
-  H37 [MEDIUM] motifs: general
-  H54 [MEDIUM] motifs: general
-  H121 [MEDIUM] motifs: general
-  C163 [MEDIUM] motifs: general
+  H121 [HIGH  ] motifs: cysteine_protease_dyad
+  C163 [HIGH  ] motifs: cysteine_protease_dyad
 
 ──────────────────────────────────────────────────────────────────────
   PROTEIN INTERACTIONS (top 8)
@@ -66,9 +57,10 @@
 ──────────────────────────────────────────────────────────────────────
   VALIDATION SUGGESTIONS
 ──────────────────────────────────────────────────────────────────────
-  1. Co-immunoprecipitation with CASP8 (apoptotic interaction, predicted interface: [1, 2, 3])
-  2. Co-immunoprecipitation with XIAP (unknown interaction, predicted interface: [1, 2, 3])
-  3. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+  1. Alanine scanning mutagenesis of predicted active site residues (H121, C163) to confirm functional importance
+  2. Co-immunoprecipitation with CASP8 (apoptotic interaction, predicted interface: [2, 3, 7])
+  3. Co-immunoprecipitation with XIAP (unknown interaction, predicted interface: [2, 3, 7])
+  4. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
   Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi

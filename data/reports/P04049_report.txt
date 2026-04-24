@@ -1,0 +1,77 @@
+======================================================================
+  ProteinFP Prediction Report
+  Generated: 2026-04-19 14:54:35
+======================================================================
+
+  Protein    : RAF proto-oncogene serine/threonine-protein kinase
+  Gene       : RAF1
+  UniProt    : P04049
+  Organism   : Homo sapiens
+  Length     : 648 aa
+  Mean pLDDT : 67.5
+  Confidence : HIGH
+
+──────────────────────────────────────────────────────────────────────
+  FUNCTIONAL PREDICTION
+──────────────────────────────────────────────────────────────────────
+  Top function     : Serine/threonine-protein kinase that acts as a regulatory link between the membrane-associated Ras GTPases and the MAPK/ERK cascade, and this critical regulatory link functions as a switch determining
+  Enzyme           : yes — 2.7.10
+  Location         : C:plasma membrane
+  Evidence sources : 8
+
+──────────────────────────────────────────────────────────────────────
+  GENE ONTOLOGY PREDICTIONS
+──────────────────────────────────────────────────────────────────────
+
+  Molecular Function:
+    [HIGH  ] GO:0004672 protein kinase activity (score=18.6, 3 sources)
+    [HIGH  ] GO:0005524 ATP binding (score=13.0, 2 sources)
+    [HIGH  ] GO:0008270 F:zinc ion binding (score=7.0, 2 sources)
+    [HIGH  ] GO:0106310 F:protein serine kinase activity (score=5.1, 1 sources)
+    [HIGH  ] GO:0005739 C:mitochondrion (score=5.1, 1 sources)
+
+  Biological Process:
+    [HIGH  ] GO:0006468 protein phosphorylation (score=18.3, 3 sources)
+    [HIGH  ] GO:0071550 P:death-inducing signaling complex assembly (score=5.1, 1 sources)
+    [HIGH  ] GO:0038133 P:ERBB2-ERBB3 signaling pathway (score=5.1, 1 sources)
+    [HIGH  ] GO:0043066 P:negative regulation of apoptotic process (score=5.1, 1 sources)
+    [HIGH  ] GO:0032434 P:regulation of proteasomal ubiquitin-depende (score=5.1, 1 sources)
+
+  Cellular Component:
+    [HIGH  ] GO:0005634 C:nucleus (score=7.8, 3 sources)
+    [HIGH  ] GO:0005737 C:cytoplasm (score=6.5, 2 sources)
+    [HIGH  ] GO:0005829 C:cytosol (score=5.1, 1 sources)
+
+──────────────────────────────────────────────────────────────────────
+  ACTIVE SITES
+──────────────────────────────────────────────────────────────────────
+  C424 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
+  H460 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H466 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H477 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
+  H611 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+
+──────────────────────────────────────────────────────────────────────
+  PROTEIN INTERACTIONS (top 8)
+──────────────────────────────────────────────────────────────────────
+  RAP1A           STRING=999  type=unknown
+  YWHAZ           STRING=999  type=unknown
+  HRAS            STRING=999  type=unknown
+  MAP2K1          STRING=999  type=unknown
+  BRAF            STRING=999  type=unknown
+  KSR1            STRING=999  type=unknown
+  NRAS            STRING=999  type=unknown
+  KRAS            STRING=999  type=unknown
+
+──────────────────────────────────────────────────────────────────────
+  VALIDATION SUGGESTIONS
+──────────────────────────────────────────────────────────────────────
+  1. Alanine scanning mutagenesis of predicted active site residues (C424, H460, H466) to confirm functional importance
+  2. Co-immunoprecipitation with RAP1A (unknown interaction, predicted interface: [648, 305, 333])
+  3. Co-immunoprecipitation with YWHAZ (unknown interaction, predicted interface: [648, 305, 333])
+  4. Enzyme activity assay consistent with EC 2.7.10 using appropriate substrate panel
+  5. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+
+──────────────────────────────────────────────────────────────────────
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+======================================================================

@@ -1,0 +1,78 @@
+======================================================================
+  ProteinFP Prediction Report
+  Generated: 2026-04-19 21:05:33
+======================================================================
+
+  Protein    : Aminopeptidase N
+  Gene       : ANPEP
+  UniProt    : P15144
+  Organism   : Homo sapiens
+  Length     : 967 aa
+  Mean pLDDT : 93.1
+  Confidence : HIGH
+
+──────────────────────────────────────────────────────────────────────
+  FUNCTIONAL PREDICTION
+──────────────────────────────────────────────────────────────────────
+  Top function     : serine-type endopeptidase activity
+  Enzyme           : yes — 3.4.21
+  Location         : integral component of plasma membrane
+  Evidence sources : 8
+
+──────────────────────────────────────────────────────────────────────
+  GENE ONTOLOGY PREDICTIONS
+──────────────────────────────────────────────────────────────────────
+
+  Molecular Function:
+    [HIGH  ] GO:0008270 zinc ion binding (score=8.6, 3 sources)
+    [HIGH  ] GO:0008237 metallopeptidase activity (score=6.9, 2 sources)
+    [MEDIUM] GO:0046872 metal ion binding (score=3.0, 2 sources)
+    [LOW   ] GO:0004252 serine-type endopeptidase activity (score=1.7, 1 sources)
+    [LOW   ] GO:0003677 DNA binding (score=1.7, 1 sources)
+
+  Biological Process:
+    [HIGH  ] GO:0006508 proteolysis (score=8.4, 3 sources)
+    [LOW   ] GO:0006468 protein phosphorylation (score=1.6, 1 sources)
+    [LOW   ] GO:0018108 peptidyl-tyrosine phosphorylation (score=1.4, 1 sources)
+    [LOW   ] GO:0055114 oxidation-reduction process (score=1.4, 1 sources)
+    [LOW   ] GO:0006351 DNA-templated transcription (score=1.3, 1 sources)
+
+  Cellular Component:
+    [LOW   ] GO:0005634 nucleus (score=1.9, 2 sources)
+    [LOW   ] GO:0005887 integral component of plasma membrane (score=1.3, 1 sources)
+    [LOW   ] GO:0043234 protein complex (score=1.1, 1 sources)
+
+──────────────────────────────────────────────────────────────────────
+  ACTIVE SITES
+──────────────────────────────────────────────────────────────────────
+  H123 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  C223 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
+  H239 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H313 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H453 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+
+──────────────────────────────────────────────────────────────────────
+  PROTEIN INTERACTIONS (top 8)
+──────────────────────────────────────────────────────────────────────
+  RTN4R           STRING=996  type=unknown
+  LAP3            STRING=965  type=unknown
+  CD7             STRING=964  type=unknown
+  SFN             STRING=960  type=unknown
+  GGT6            STRING=953  type=unknown
+  CD33            STRING=953  type=unknown
+  FCGR3A          STRING=951  type=unknown
+  GGT7            STRING=949  type=unknown
+
+──────────────────────────────────────────────────────────────────────
+  VALIDATION SUGGESTIONS
+──────────────────────────────────────────────────────────────────────
+  1. Alanine scanning mutagenesis of predicted active site residues (H123, C223, H239) to confirm functional importance
+  2. Co-immunoprecipitation with RTN4R (unknown interaction, predicted interface: [1, 6, 3])
+  3. Co-immunoprecipitation with LAP3 (unknown interaction, predicted interface: [1, 6, 3])
+  4. Enzyme activity assay consistent with EC 3.4.21 using appropriate substrate panel
+  5. EMSA or fluorescence polarisation assay to confirm 'zinc ion binding' (GO:0008270)
+  6. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+
+──────────────────────────────────────────────────────────────────────
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+======================================================================

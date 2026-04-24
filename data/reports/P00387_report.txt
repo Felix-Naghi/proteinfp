@@ -1,0 +1,77 @@
+======================================================================
+  ProteinFP Prediction Report
+  Generated: 2026-04-19 16:17:42
+======================================================================
+
+  Protein    : NADH-cytochrome b5 reductase 3
+  Gene       : CYB5R3
+  UniProt    : P00387
+  Organism   : Homo sapiens
+  Length     : 301 aa
+  Mean pLDDT : 93.8
+  Confidence : VERY HIGH
+
+──────────────────────────────────────────────────────────────────────
+  FUNCTIONAL PREDICTION
+──────────────────────────────────────────────────────────────────────
+  Top function     : Catalyzes the reduction of two molecules of cytochrome b5 using NADH as the electron donor
+  Enzyme           : yes — 3.4.21
+  Location         : C:endoplasmic reticulum membrane
+  Evidence sources : 8
+
+──────────────────────────────────────────────────────────────────────
+  GENE ONTOLOGY PREDICTIONS
+──────────────────────────────────────────────────────────────────────
+
+  Molecular Function:
+    [HIGH  ] GO:0016491 oxidoreductase activity (score=21.5, 3 sources)
+    [HIGH  ] GO:0004128 F:cytochrome-b5 reductase activity, acting on (score=5.1, 1 sources)
+    [HIGH  ] GO:0090524 F:cytochrome-b5 reductase activity, acting on (score=5.1, 1 sources)
+    [HIGH  ] GO:0005739 C:mitochondrion (score=5.1, 1 sources)
+    [HIGH  ] GO:0071949 F:FAD binding (score=5.1, 1 sources)
+
+  Biological Process:
+    [HIGH  ] GO:0006695 P:cholesterol biosynthetic process (score=5.1, 1 sources)
+    [HIGH  ] GO:0006809 P:nitric oxide biosynthetic process (score=5.1, 1 sources)
+    [HIGH  ] GO:0016126 P:sterol biosynthetic process (score=5.1, 1 sources)
+    [HIGH  ] GO:0001878 P:response to yeast (score=5.1, 1 sources)
+    [LOW   ] GO:0055114 oxidation-reduction process (score=1.4, 1 sources)
+
+  Cellular Component:
+    [HIGH  ] GO:0005737 C:cytoplasm (score=6.5, 2 sources)
+    [HIGH  ] GO:0005789 C:endoplasmic reticulum membrane (score=5.1, 1 sources)
+    [HIGH  ] GO:0005741 C:mitochondrial outer membrane (score=5.1, 1 sources)
+
+──────────────────────────────────────────────────────────────────────
+  ACTIVE SITES
+──────────────────────────────────────────────────────────────────────
+  C204 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
+  H201 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H205 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H229 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  S174 [MEDIUM] motifs: serine_protease_triad, serine_protease_triad
+
+──────────────────────────────────────────────────────────────────────
+  PROTEIN INTERACTIONS (top 8)
+──────────────────────────────────────────────────────────────────────
+  CYB5B           STRING=999  type=unknown
+  CYB5A           STRING=999  type=unknown
+  SUOX            STRING=951  type=unknown
+  MARC1           STRING=937  type=unknown
+  HBA2            STRING=923  type=unknown
+  DHODH           STRING=912  type=unknown
+  HBA1            STRING=890  type=unknown
+  DPYD            STRING=878  type=unknown
+
+──────────────────────────────────────────────────────────────────────
+  VALIDATION SUGGESTIONS
+──────────────────────────────────────────────────────────────────────
+  1. Alanine scanning mutagenesis of predicted active site residues (C204, H201, H205) to confirm functional importance
+  2. Co-immunoprecipitation with CYB5B (unknown interaction, predicted interface: [1, 29, 164])
+  3. Co-immunoprecipitation with CYB5A (unknown interaction, predicted interface: [1, 29, 164])
+  4. Enzyme activity assay consistent with EC 3.4.21 using appropriate substrate panel
+  5. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+
+──────────────────────────────────────────────────────────────────────
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+======================================================================

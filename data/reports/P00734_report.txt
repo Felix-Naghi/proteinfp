@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-19 13:04:56
+  Generated: 2026-04-19 14:56:17
 ======================================================================
 
   Protein    : Prothrombin
@@ -24,23 +24,23 @@
 ──────────────────────────────────────────────────────────────────────
 
   Molecular Function:
-    [HIGH  ] GO:0004252 serine-type endopeptidase activity (score=36.8, 5 sources)
+    [HIGH  ] GO:0004252 serine-type endopeptidase activity (score=27.7, 4 sources)
     [HIGH  ] GO:0005509 calcium ion binding (score=16.5, 2 sources)
-    [HIGH  ] GO:0008233 F:peptidase activity (score=15.8, 4 sources)
-    [HIGH  ] GO:0042730 P:fibrinolysis (score=9.5, 2 sources)
-    [HIGH  ] GO:0004175 F:endopeptidase activity (score=9.5, 2 sources)
+    [HIGH  ] GO:0008233 F:peptidase activity (score=8.9, 3 sources)
+    [HIGH  ] GO:0072562 C:blood microparticle (score=6.5, 2 sources)
+    [HIGH  ] GO:0008201 F:heparin binding (score=5.1, 1 sources)
 
   Biological Process:
-    [HIGH  ] GO:0006508 proteolysis (score=31.6, 4 sources)
-    [HIGH  ] GO:0007596 blood coagulation (score=24.5, 4 sources)
+    [HIGH  ] GO:0006508 proteolysis (score=25.0, 3 sources)
+    [HIGH  ] GO:0007596 blood coagulation (score=18.3, 3 sources)
     [HIGH  ] GO:0006953 P:acute-phase response (score=5.1, 1 sources)
     [HIGH  ] GO:0005102 F:signaling receptor binding (score=5.1, 1 sources)
     [HIGH  ] GO:0061844 P:antimicrobial humoral immune response media (score=5.1, 1 sources)
 
   Cellular Component:
-    [HIGH  ] GO:0005576 extracellular region (score=27.9, 4 sources)
-    [HIGH  ] GO:0005615 C:extracellular space (score=12.9, 3 sources)
-    [HIGH  ] GO:0031012 C:extracellular matrix (score=9.5, 2 sources)
+    [HIGH  ] GO:0005576 extracellular region (score=21.5, 3 sources)
+    [HIGH  ] GO:0005615 C:extracellular space (score=12.1, 3 sources)
+    [HIGH  ] GO:0009897 C:external side of plasma membrane (score=5.1, 1 sources)
 
 ──────────────────────────────────────────────────────────────────────
   ACTIVE SITES
@@ -49,7 +49,7 @@
   C407 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
   H479 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
   H605 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
-  H429 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  C594 [HIGH  ] motifs: zinc_binding_cluster, zinc_binding_cluster
 
 ──────────────────────────────────────────────────────────────────────
   BINDING POCKETS

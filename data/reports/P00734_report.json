@@ -4,7 +4,7 @@
   "protein_name": "Prothrombin",
   "organism": "Homo sapiens",
   "sequence_length": 622,
-  "generated_at": "2026-04-19 13:04:56",
+  "generated_at": "2026-04-19 14:56:17",
   "top_function": "Thrombin, which cleaves bonds after Arg and Lys, converts fibrinogen to fibrin and activates factors V, VII, VIII, XIII, and, in complex with thrombomodulin, protein C. Functions in blood homeostasis,",
   "is_enzyme": true,
   "ec_number": "3.4.21",
@@ -14,17 +14,16 @@
       "go_id": "GO:0004252",
       "go_name": "serine-type endopeptidase activity",
       "namespace": "MF",
-      "weighted_score": 36.84,
-      "n_sources": 5,
+      "weighted_score": 27.7,
+      "n_sources": 4,
       "sources": [
         "experimental_homolog",
         "domain_annotation",
         "structural_motif",
-        "embedding_similarity",
-        "neural_classifier"
+        "embedding_similarity"
       ],
       "confidence": "HIGH",
-      "top_evidence": "neural_classifier"
+      "top_evidence": "experimental_homolog"
     },
     {
       "go_id": "GO:0005509",
@@ -43,39 +42,25 @@
       "go_id": "GO:0008233",
       "go_name": "F:peptidase activity",
       "namespace": "MF",
-      "weighted_score": 15.82,
-      "n_sources": 4,
+      "weighted_score": 8.95,
+      "n_sources": 3,
       "sources": [
         "experimental_homolog",
         "structural_motif",
-        "embedding_similarity",
-        "neural_classifier"
+        "embedding_similarity"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
     },
     {
-      "go_id": "GO:0042730",
-      "go_name": "P:fibrinolysis",
+      "go_id": "GO:0072562",
+      "go_name": "C:blood microparticle",
       "namespace": "MF",
-      "weighted_score": 9.54,
+      "weighted_score": 6.5,
       "n_sources": 2,
       "sources": [
         "experimental_homolog",
-        "neural_classifier"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0004175",
-      "go_name": "F:endopeptidase activity",
-      "namespace": "MF",
-      "weighted_score": 9.47,
-      "n_sources": 2,
-      "sources": [
-        "experimental_homolog",
-        "neural_classifier"
+        "structural_motif"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -84,11 +69,10 @@
       "go_id": "GO:0008201",
       "go_name": "F:heparin binding",
       "namespace": "MF",
-      "weighted_score": 9.32,
-      "n_sources": 2,
+      "weighted_score": 5.1,
+      "n_sources": 1,
       "sources": [
-        "experimental_homolog",
-        "neural_classifier"
+        "experimental_homolog"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -97,84 +81,96 @@
       "go_id": "GO:0001530",
       "go_name": "F:lipopolysaccharide binding",
       "namespace": "MF",
-      "weighted_score": 3.0,
+      "weighted_score": 5.1,
       "n_sources": 1,
       "sources": [
         "experimental_homolog"
       ],
-      "confidence": "MEDIUM",
+      "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
     },
     {
       "go_id": "GO:0048018",
       "go_name": "F:receptor ligand activity",
       "namespace": "MF",
-      "weighted_score": 3.0,
+      "weighted_score": 5.1,
       "n_sources": 1,
       "sources": [
         "experimental_homolog"
       ],
-      "confidence": "MEDIUM",
+      "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
     },
     {
       "go_id": "GO:0070053",
       "go_name": "F:thrombospondin receptor activity",
       "namespace": "MF",
-      "weighted_score": 3.0,
+      "weighted_score": 5.1,
       "n_sources": 1,
       "sources": [
         "experimental_homolog"
       ],
-      "confidence": "MEDIUM",
+      "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
     },
     {
       "go_id": "GO:0030168",
       "go_name": "P:platelet activation",
       "namespace": "MF",
-      "weighted_score": 3.0,
+      "weighted_score": 5.1,
       "n_sources": 1,
       "sources": [
         "experimental_homolog"
       ],
-      "confidence": "MEDIUM",
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0004175",
+      "go_name": "F:endopeptidase activity",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0042730",
+      "go_name": "P:fibrinolysis",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
     },
     {
       "go_id": "GO:0005783",
       "go_name": "C:endoplasmic reticulum",
       "namespace": "MF",
-      "weighted_score": 3.0,
+      "weighted_score": 5.1,
       "n_sources": 1,
       "sources": [
         "experimental_homolog"
       ],
-      "confidence": "MEDIUM",
+      "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
     },
     {
       "go_id": "GO:0005794",
       "go_name": "C:Golgi apparatus",
       "namespace": "MF",
-      "weighted_score": 3.0,
+      "weighted_score": 5.1,
       "n_sources": 1,
       "sources": [
         "experimental_homolog"
       ],
-      "confidence": "MEDIUM",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0072562",
-      "go_name": "C:blood microparticle",
-      "namespace": "MF",
-      "weighted_score": 3.0,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "MEDIUM",
+      "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
     },
     {
@@ -208,13 +204,12 @@
       "go_id": "GO:0006508",
       "go_name": "proteolysis",
       "namespace": "BP",
-      "weighted_score": 31.55,
-      "n_sources": 4,
+      "weighted_score": 25.0,
+      "n_sources": 3,
       "sources": [
         "experimental_homolog",
         "domain_annotation",
-        "structural_motif",
-        "neural_classifier"
+        "structural_motif"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -223,13 +218,12 @@
       "go_id": "GO:0007596",
       "go_name": "blood coagulation",
       "namespace": "BP",
-      "weighted_score": 24.5,
-      "n_sources": 4,
+      "weighted_score": 18.3,
+      "n_sources": 3,
       "sources": [
         "experimental_homolog",
         "domain_annotation",
-        "embedding_similarity",
-        "neural_classifier"
+        "embedding_similarity"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -396,13 +390,12 @@
       "go_id": "GO:0005576",
       "go_name": "extracellular region",
       "namespace": "CC",
-      "weighted_score": 27.86,
-      "n_sources": 4,
+      "weighted_score": 21.5,
+      "n_sources": 3,
       "sources": [
         "experimental_homolog",
         "domain_annotation",
-        "embedding_similarity",
-        "neural_classifier"
+        "embedding_similarity"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -411,7 +404,7 @@
       "go_id": "GO:0005615",
       "go_name": "C:extracellular space",
       "namespace": "CC",
-      "weighted_score": 12.91,
+      "weighted_score": 12.13,
       "n_sources": 3,
       "sources": [
         "experimental_homolog",
@@ -422,21 +415,20 @@
       "top_evidence": "experimental_homolog"
     },
     {
-      "go_id": "GO:0031012",
-      "go_name": "C:extracellular matrix",
+      "go_id": "GO:0009897",
+      "go_name": "C:external side of plasma membrane",
       "namespace": "CC",
-      "weighted_score": 9.46,
-      "n_sources": 2,
+      "weighted_score": 5.1,
+      "n_sources": 1,
       "sources": [
-        "experimental_homolog",
-        "neural_classifier"
+        "experimental_homolog"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
     },
     {
-      "go_id": "GO:0009897",
-      "go_name": "C:external side of plasma membrane",
+      "go_id": "GO:0031012",
+      "go_name": "C:extracellular matrix",
       "namespace": "CC",
       "weighted_score": 5.1,
       "n_sources": 1,
@@ -472,18 +464,6 @@
       "top_evidence": "structural_motif"
     },
     {
-      "go_id": "GO:0005833",
-      "go_name": "hemoglobin complex",
-      "namespace": "CC",
-      "weighted_score": 1.3,
-      "n_sources": 1,
-      "sources": [
-        "structural_motif"
-      ],
-      "confidence": "LOW",
-      "top_evidence": "structural_motif"
-    },
-    {
       "go_id": "GO:0043234",
       "go_name": "protein complex",
       "namespace": "CC",
@@ -508,16 +488,28 @@
       "top_evidence": "structural_motif"
     },
     {
-      "go_id": "GO:0031838",
-      "go_name": "haptoglobin-hemoglobin complex",
+      "go_id": "GO:0010369",
+      "go_name": "chromatin",
       "namespace": "CC",
-      "weighted_score": 1.1,
+      "weighted_score": 1.0,
       "n_sources": 1,
       "sources": [
         "structural_motif"
       ],
       "confidence": "LOW",
       "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0005737",
+      "go_name": "cytoplasm",
+      "namespace": "CC",
+      "weighted_score": 0.9,
+      "n_sources": 1,
+      "sources": [
+        "sequence_baseline"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "sequence_baseline"
     }
   ],
   "active_sites": [
@@ -636,6 +628,32 @@
         -5.808,
         7.349,
         6.973
+      ],
+      "domain_context": "trypsin-like serine proteases"
+    },
+    {
+      "residue_number": 594,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 0.81,
+      "plddt": 73.94,
+      "motifs": [
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "p_loop_walker_a"
+      ],
+      "evidence_score": 8,
+      "confidence": "HIGH",
+      "coords": [
+        6.539,
+        -1.375,
+        -4.885
       ],
       "domain_context": "trypsin-like serine proteases"
     },
@@ -1008,6 +1026,54 @@
       "domain_context": "trypsin-like serine proteases"
     },
     {
+      "residue_number": 593,
+      "chain_id": "A",
+      "one_letter": "G",
+      "three_letter": "GLY",
+      "conservation": 4.0,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 0.12,
+      "plddt": 71.38,
+      "motifs": [
+        "p_loop_walker_a"
+      ],
+      "evidence_score": 4,
+      "confidence": "MEDIUM",
+      "coords": [
+        8.329,
+        0.879,
+        -2.378
+      ],
+      "domain_context": "trypsin-like serine proteases"
+    },
+    {
+      "residue_number": 595,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 11.65,
+      "plddt": 71.62,
+      "motifs": [
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "acid_base_pair",
+        "p_loop_walker_a"
+      ],
+      "evidence_score": 4,
+      "confidence": "MEDIUM",
+      "coords": [
+        8.804,
+        -0.023,
+        -7.692
+      ],
+      "domain_context": "trypsin-like serine proteases"
+    },
+    {
       "residue_number": 246,
       "chain_id": "A",
       "one_letter": "S",
@@ -1198,79 +1264,6 @@
         -9.099,
         2.5,
         -18.336
-      ],
-      "domain_context": "trypsin-like serine proteases"
-    },
-    {
-      "residue_number": 475,
-      "chain_id": "A",
-      "one_letter": "S",
-      "three_letter": "SER",
-      "conservation": 4.5,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 47.84,
-      "plddt": 97.81,
-      "motifs": [
-        "serine_protease_triad",
-        "serine_protease_triad",
-        "serine_protease_triad"
-      ],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        -19.027,
-        -16.347,
-        12.308
-      ],
-      "domain_context": "trypsin-like serine proteases"
-    },
-    {
-      "residue_number": 476,
-      "chain_id": "A",
-      "one_letter": "D",
-      "three_letter": "ASP",
-      "conservation": 6.5,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 64.06,
-      "plddt": 97.88,
-      "motifs": [
-        "serine_protease_triad",
-        "serine_protease_triad",
-        "serine_protease_triad",
-        "serine_protease_triad",
-        "serine_protease_triad"
-      ],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        -15.619,
-        -17.527,
-        13.612
-      ],
-      "domain_context": "trypsin-like serine proteases"
-    },
-    {
-      "residue_number": 485,
-      "chain_id": "A",
-      "one_letter": "D",
-      "three_letter": "ASP",
-      "conservation": 6.5,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 56.09,
-      "plddt": 94.19,
-      "motifs": [
-        "serine_protease_triad",
-        "acid_base_pair"
-      ],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        -11.998,
-        8.488,
-        15.643
       ],
       "domain_context": "trypsin-like serine proteases"
     }

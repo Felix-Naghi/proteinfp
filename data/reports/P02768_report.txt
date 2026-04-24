@@ -1,0 +1,78 @@
+======================================================================
+  ProteinFP Prediction Report
+  Generated: 2026-04-19 19:33:55
+======================================================================
+
+  Protein    : Albumin
+  Gene       : ALB
+  UniProt    : P02768
+  Organism   : Homo sapiens
+  Length     : 609 aa
+  Mean pLDDT : 92.7
+  Confidence : VERY HIGH
+
+──────────────────────────────────────────────────────────────────────
+  FUNCTIONAL PREDICTION
+──────────────────────────────────────────────────────────────────────
+  Top function     : Binds water, Ca(2+), Na(+), K(+), fatty acids, hormones, bilirubin and drugs (Probable). Its main function is the regulation of the colloidal osmotic pressure of blood (Probable). Major zinc transport
+  Enzyme           : yes — 2.7.10
+  Location         : integral component of plasma membrane
+  Evidence sources : 8
+
+──────────────────────────────────────────────────────────────────────
+  GENE ONTOLOGY PREDICTIONS
+──────────────────────────────────────────────────────────────────────
+
+  Molecular Function:
+    [HIGH  ] GO:0046872 F:metal ion binding (score=8.2, 3 sources)
+    [HIGH  ] GO:0003677 F:DNA binding (score=7.2, 2 sources)
+    [HIGH  ] GO:0072562 C:blood microparticle (score=6.5, 2 sources)
+    [HIGH  ] GO:1903981 F:enterobactin binding (score=5.1, 1 sources)
+    [HIGH  ] GO:0005504 F:fatty acid binding (score=5.1, 1 sources)
+
+  Biological Process:
+    [HIGH  ] GO:0072732 P:cellular response to calcium ion starvation (score=5.1, 1 sources)
+    [HIGH  ] GO:0051902 P:negative regulation of mitochondrial depola (score=5.1, 1 sources)
+    [HIGH  ] GO:0009267 P:cellular response to starvation (score=5.1, 1 sources)
+    [HIGH  ] GO:0031667 P:response to nutrient levels (score=5.1, 1 sources)
+    [HIGH  ] GO:0051087 F:protein-folding chaperone binding (score=5.1, 1 sources)
+
+  Cellular Component:
+    [HIGH  ] GO:0005615 extracellular space (score=21.5, 3 sources)
+    [HIGH  ] GO:0005634 C:nucleus (score=7.8, 3 sources)
+    [HIGH  ] GO:0005737 C:cytoplasm (score=6.5, 2 sources)
+
+──────────────────────────────────────────────────────────────────────
+  ACTIVE SITES
+──────────────────────────────────────────────────────────────────────
+  H266 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  C269 [HIGH  ] motifs: cysteine_protease_dyad, cysteine_protease_dyad
+  C270 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
+  C461 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
+  C462 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
+
+──────────────────────────────────────────────────────────────────────
+  PROTEIN INTERACTIONS (top 8)
+──────────────────────────────────────────────────────────────────────
+  FCGRT           STRING=999  type=unknown
+  INS             STRING=999  type=unknown
+  AHSG            STRING=999  type=unknown
+  ORM1            STRING=998  type=unknown
+  APOA1           STRING=998  type=unknown
+  SERPINA1        STRING=998  type=unknown
+  ORM2            STRING=998  type=unknown
+  FN1             STRING=998  type=unknown
+
+──────────────────────────────────────────────────────────────────────
+  VALIDATION SUGGESTIONS
+──────────────────────────────────────────────────────────────────────
+  1. Alanine scanning mutagenesis of predicted active site residues (H266, C269, C270) to confirm functional importance
+  2. Co-immunoprecipitation with FCGRT (unknown interaction, predicted interface: [19, 1, 23])
+  3. Co-immunoprecipitation with INS (unknown interaction, predicted interface: [19, 1, 23])
+  4. Enzyme activity assay consistent with EC 2.7.10 using appropriate substrate panel
+  5. EMSA or fluorescence polarisation assay to confirm 'F:metal ion binding' (GO:0046872)
+  6. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+
+──────────────────────────────────────────────────────────────────────
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+======================================================================

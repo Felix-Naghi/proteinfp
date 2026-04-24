@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-19 13:04:47
+  Generated: 2026-04-19 14:30:53
 ======================================================================
 
   Protein    : Insulin receptor
@@ -15,8 +15,8 @@
   FUNCTIONAL PREDICTION
 ──────────────────────────────────────────────────────────────────────
   Top function     : Receptor tyrosine kinase which mediates the pleiotropic actions of insulin. Binding of insulin leads to phosphorylation of several intracellular substrates, including, insulin receptor substrates (IRS
-  Enzyme           : no (non-enzyme)
-  Location         : C:plasma membrane
+  Enzyme           : yes — 2.7.10
+  Location         : membrane
   Evidence sources : 12
 
 ──────────────────────────────────────────────────────────────────────
@@ -24,7 +24,7 @@
 ──────────────────────────────────────────────────────────────────────
 
   Molecular Function:
-    [HIGH  ] GO:0005524 ATP binding (score=21.8, 3 sources)
+    [HIGH  ] GO:0005524 ATP binding (score=21.5, 3 sources)
     [HIGH  ] GO:0004714 transmembrane receptor protein tyrosine kinas (score=14.5, 3 sources)
     [HIGH  ] GO:0004672 protein kinase activity (score=13.1, 2 sources)
     [HIGH  ] GO:0043560 insulin receptor substrate binding (score=9.5, 2 sources)
@@ -39,8 +39,8 @@
 
   Cellular Component:
     [HIGH  ] GO:0016020 membrane (score=14.5, 3 sources)
-    [HIGH  ] GO:0005886 C:plasma membrane (score=9.6, 2 sources)
-    [HIGH  ] GO:0009897 C:external side of plasma membrane (score=9.4, 2 sources)
+    [HIGH  ] GO:0005886 C:plasma membrane (score=5.1, 1 sources)
+    [HIGH  ] GO:0032590 C:dendrite membrane (score=5.1, 1 sources)
 
 ──────────────────────────────────────────────────────────────────────
   ACTIVE SITES
@@ -87,8 +87,9 @@
   2. Thermal shift assay or SPR binding assay against pocket P1 (vol=1460Å³, druggability=1.00)
   3. Co-immunoprecipitation with IRS1 (unknown interaction, predicted interface: [7, 1, 297])
   4. Co-immunoprecipitation with IRS2 (unknown interaction, predicted interface: [7, 1, 297])
-  5. EMSA or fluorescence polarisation assay to confirm 'ATP binding' (GO:0005524)
-  6. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+  5. Enzyme activity assay consistent with EC 2.7.10 using appropriate substrate panel
+  6. EMSA or fluorescence polarisation assay to confirm 'ATP binding' (GO:0005524)
+  7. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
   Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi

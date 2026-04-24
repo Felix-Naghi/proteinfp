@@ -1,0 +1,206 @@
+{
+  "uniprot_id": "P12004",
+  "sequence_length": 261,
+  "blast_hits": [],
+  "interpro_domains": [
+    {
+      "accession": "cd00577",
+      "name": "PCNA",
+      "database": "CDD",
+      "start": 4,
+      "end": 256,
+      "go_terms": [],
+      "go_names": [],
+      "e_value": 0.0
+    },
+    {
+      "accession": "G3DSA:3.70.10.10",
+      "name": "None",
+      "database": "CATHGENE3D",
+      "start": 1,
+      "end": 261,
+      "go_terms": [],
+      "go_names": [],
+      "e_value": 0.0
+    },
+    {
+      "accession": "IPR000730",
+      "name": "Proliferating cell nuclear antigen, PCNA",
+      "database": "INTERPRO",
+      "start": 1,
+      "end": 259,
+      "go_terms": [
+        "GO:0003677",
+        "GO:0030337",
+        "GO:0006275"
+      ],
+      "go_names": [
+        "DNA binding",
+        "DNA polymerase processivity factor activity",
+        "regulation of DNA replication"
+      ],
+      "e_value": 0.0
+    },
+    {
+      "accession": "IPR022648",
+      "name": "Proliferating cell nuclear antigen, PCNA, N-terminal",
+      "database": "INTERPRO",
+      "start": 1,
+      "end": 124,
+      "go_terms": [
+        "GO:0003677",
+        "GO:0006275"
+      ],
+      "go_names": [
+        "DNA binding",
+        "regulation of DNA replication"
+      ],
+      "e_value": 0.0
+    },
+    {
+      "accession": "IPR022649",
+      "name": "Proliferating cell nuclear antigen, PCNA, C-terminal",
+      "database": "INTERPRO",
+      "start": 127,
+      "end": 254,
+      "go_terms": [
+        "GO:0003677",
+        "GO:0006275"
+      ],
+      "go_names": [
+        "DNA binding",
+        "regulation of DNA replication"
+      ],
+      "e_value": 0.0
+    },
+    {
+      "accession": "IPR022659",
+      "name": "Proliferating cell nuclear antigen, PCNA, conserved site",
+      "database": "INTERPRO",
+      "start": 34,
+      "end": 57,
+      "go_terms": [],
+      "go_names": [],
+      "e_value": 0.0
+    },
+    {
+      "accession": "IPR046938",
+      "name": "DNA clamp superfamily",
+      "database": "INTERPRO",
+      "start": 1,
+      "end": 126,
+      "go_terms": [],
+      "go_names": [],
+      "e_value": 0.0
+    },
+    {
+      "accession": "MF_00317",
+      "name": "DNA polymerase sliding clamp [pcn]",
+      "database": "HAMAP",
+      "start": 2,
+      "end": 255,
+      "go_terms": [],
+      "go_names": [],
+      "e_value": 0.0
+    },
+    {
+      "accession": "PF00705",
+      "name": "Proliferating cell nuclear antigen, N-terminal domain",
+      "database": "PFAM",
+      "start": 1,
+      "end": 124,
+      "go_terms": [],
+      "go_names": [],
+      "e_value": 0.0
+    },
+    {
+      "accession": "PF02747",
+      "name": "Proliferating cell nuclear antigen, C-terminal domain",
+      "database": "PFAM",
+      "start": 127,
+      "end": 254,
+      "go_terms": [],
+      "go_names": [],
+      "e_value": 0.0
+    },
+    {
+      "accession": "PR00339",
+      "name": "PCNACYCLIN",
+      "database": "PRINTS",
+      "start": 10,
+      "end": 29,
+      "go_terms": [],
+      "go_names": [],
+      "e_value": 0.0
+    },
+    {
+      "accession": "PS00293",
+      "name": "Proliferating cell nuclear antigen signature 2",
+      "database": "PROSITE",
+      "start": 61,
+      "end": 79,
+      "go_terms": [],
+      "go_names": [],
+      "e_value": 0.0
+    },
+    {
+      "accession": "PS01251",
+      "name": "Proliferating cell nuclear antigen signature 1",
+      "database": "PROSITE",
+      "start": 34,
+      "end": 57,
+      "go_terms": [],
+      "go_names": [],
+      "e_value": 0.0
+    },
+    {
+      "accession": "PTHR11352",
+      "name": "PROLIFERATING CELL NUCLEAR ANTIGEN",
+      "database": "PANTHER",
+      "start": 1,
+      "end": 259,
+      "go_terms": [],
+      "go_names": [],
+      "e_value": 0.0
+    },
+    {
+      "accession": "SSF55979",
+      "name": "DNA clamp",
+      "database": "SSF",
+      "start": 1,
+      "end": 126,
+      "go_terms": [],
+      "go_names": [],
+      "e_value": 0.0
+    },
+    {
+      "accession": "TIGR00590",
+      "name": "proliferating cell nuclear antigen (pcna)",
+      "database": "NCBIFAM",
+      "start": 1,
+      "end": 259,
+      "go_terms": [],
+      "go_names": [],
+      "e_value": 0.0
+    }
+  ],
+  "all_go_terms": [
+    "GO:0003677",
+    "GO:0006275",
+    "GO:0030337"
+  ],
+  "all_go_names": [
+    "DNA binding",
+    "regulation of DNA replication",
+    "DNA polymerase processivity factor activity"
+  ],
+  "protein_families": [
+    "Proliferating cell nuclear antigen, N-terminal domain",
+    "Proliferating cell nuclear antigen, C-terminal domain",
+    "PROLIFERATING CELL NUCLEAR ANTIGEN"
+  ],
+  "top_function": "",
+  "blast_available": false,
+  "interpro_available": true,
+  "n_experimental_hits": 0
+}

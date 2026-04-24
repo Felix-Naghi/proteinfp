@@ -1,0 +1,78 @@
+======================================================================
+  ProteinFP Prediction Report
+  Generated: 2026-04-19 14:47:36
+======================================================================
+
+  Protein    : Dual specificity mitogen-activated protein kinase kinase 1
+  Gene       : MAP2K1
+  UniProt    : Q02750
+  Organism   : Homo sapiens
+  Length     : 393 aa
+  Mean pLDDT : 83.2
+  Confidence : VERY HIGH
+
+──────────────────────────────────────────────────────────────────────
+  FUNCTIONAL PREDICTION
+──────────────────────────────────────────────────────────────────────
+  Top function     : Dual specificity protein kinase which acts as an essential component of the MAP kinase signal transduction pathway. Binding of extracellular ligands such as growth factors, cytokines and hormones to t
+  Enzyme           : yes — 2.7.10
+  Location         : C:plasma membrane
+  Evidence sources : 8
+
+──────────────────────────────────────────────────────────────────────
+  GENE ONTOLOGY PREDICTIONS
+──────────────────────────────────────────────────────────────────────
+
+  Molecular Function:
+    [HIGH  ] GO:0005524 ATP binding (score=13.0, 2 sources)
+    [HIGH  ] GO:0004672 protein kinase activity (score=9.6, 2 sources)
+    [HIGH  ] GO:0005769 C:early endosome (score=5.1, 1 sources)
+    [HIGH  ] GO:0005925 C:focal adhesion (score=5.1, 1 sources)
+    [HIGH  ] GO:0005770 C:late endosome (score=5.1, 1 sources)
+
+  Biological Process:
+    [HIGH  ] GO:0006468 protein phosphorylation (score=9.4, 2 sources)
+    [HIGH  ] GO:2000641 P:regulation of early endosome to late endoso (score=5.1, 1 sources)
+    [HIGH  ] GO:0090170 P:regulation of Golgi inheritance (score=5.1, 1 sources)
+    [HIGH  ] GO:0032872 P:regulation of stress-activated MAPK cascade (score=5.1, 1 sources)
+    [LOW   ] GO:0018108 peptidyl-tyrosine phosphorylation (score=1.4, 1 sources)
+
+  Cellular Component:
+    [HIGH  ] GO:0005634 C:nucleus (score=7.8, 3 sources)
+    [HIGH  ] GO:0005829 C:cytosol (score=5.1, 1 sources)
+    [HIGH  ] GO:0032839 C:dendrite cytoplasm (score=5.1, 1 sources)
+
+──────────────────────────────────────────────────────────────────────
+  ACTIVE SITES
+──────────────────────────────────────────────────────────────────────
+  H87 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  C121 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
+  H188 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H358 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H100 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+
+──────────────────────────────────────────────────────────────────────
+  PROTEIN INTERACTIONS (top 8)
+──────────────────────────────────────────────────────────────────────
+  MAPK3           STRING=999  type=unknown
+  BRAF            STRING=999  type=unknown
+  MAPK1           STRING=999  type=unknown
+  RAF1            STRING=999  type=unknown
+  LAMTOR3         STRING=998  type=unknown
+  KSR2            STRING=997  type=unknown
+  KSR1            STRING=996  type=unknown
+  MAP2K2          STRING=996  type=unknown
+
+──────────────────────────────────────────────────────────────────────
+  VALIDATION SUGGESTIONS
+──────────────────────────────────────────────────────────────────────
+  1. Alanine scanning mutagenesis of predicted active site residues (H87, C121, H188) to confirm functional importance
+  2. Co-immunoprecipitation with MAPK3 (unknown interaction, predicted interface: [1, 393, 300])
+  3. Co-immunoprecipitation with BRAF (unknown interaction, predicted interface: [1, 393, 300])
+  4. Enzyme activity assay consistent with EC 2.7.10 using appropriate substrate panel
+  5. EMSA or fluorescence polarisation assay to confirm 'ATP binding' (GO:0005524)
+  6. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+
+──────────────────────────────────────────────────────────────────────
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+======================================================================

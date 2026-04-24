@@ -1,0 +1,77 @@
+======================================================================
+  ProteinFP Prediction Report
+  Generated: 2026-04-19 15:09:27
+======================================================================
+
+  Protein    : Cathepsin B
+  Gene       : CTSB
+  UniProt    : P07858
+  Organism   : Homo sapiens
+  Length     : 339 aa
+  Mean pLDDT : 92.1
+  Confidence : VERY HIGH
+
+──────────────────────────────────────────────────────────────────────
+  FUNCTIONAL PREDICTION
+──────────────────────────────────────────────────────────────────────
+  Top function     : Thiol protease which is believed to participate in intracellular degradation and turnover of proteins (PubMed:12220505). Cleaves matrix extracellular phosphoglycoprotein MEPE (PubMed:12220505). Involv
+  Enzyme           : yes — 3.4.22
+  Location         : C:apical plasma membrane
+  Evidence sources : 8
+
+──────────────────────────────────────────────────────────────────────
+  GENE ONTOLOGY PREDICTIONS
+──────────────────────────────────────────────────────────────────────
+
+  Molecular Function:
+    [HIGH  ] GO:0008234 cysteine-type peptidase activity (score=13.0, 2 sources)
+    [HIGH  ] GO:0004197 cysteine-type endopeptidase activity (score=9.5, 2 sources)
+    [HIGH  ] GO:0008233 F:peptidase activity (score=6.5, 2 sources)
+    [HIGH  ] GO:0005764 C:lysosome (score=5.1, 1 sources)
+    [HIGH  ] GO:0042470 C:melanosome (score=5.1, 1 sources)
+
+  Biological Process:
+    [HIGH  ] GO:0006508 proteolysis (score=11.0, 3 sources)
+    [HIGH  ] GO:0051603 P:proteolysis involved in protein catabolic p (score=5.1, 1 sources)
+    [HIGH  ] GO:0097067 P:cellular response to thyroid hormone stimul (score=5.1, 1 sources)
+    [HIGH  ] GO:0030574 P:collagen catabolic process (score=5.1, 1 sources)
+    [MEDIUM] GO:0050790 regulation of catalytic activity (score=4.2, 1 sources)
+
+  Cellular Component:
+    [HIGH  ] GO:0016324 C:apical plasma membrane (score=5.1, 1 sources)
+    [HIGH  ] GO:0005615 C:extracellular space (score=5.1, 1 sources)
+    [HIGH  ] GO:0009897 C:external side of plasma membrane (score=5.1, 1 sources)
+
+──────────────────────────────────────────────────────────────────────
+  ACTIVE SITES
+──────────────────────────────────────────────────────────────────────
+  C59 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
+  C122 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
+  H224 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H278 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
+  H189 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+
+──────────────────────────────────────────────────────────────────────
+  PROTEIN INTERACTIONS (top 8)
+──────────────────────────────────────────────────────────────────────
+  CSTA            STRING=998  type=unknown
+  NLRP3           STRING=993  type=unknown
+  CST3            STRING=982  type=unknown
+  ANXA2           STRING=978  type=unknown
+  CTSD            STRING=977  type=unknown
+  CTSL            STRING=974  type=unknown
+  CTSS            STRING=958  type=unknown
+  CD74            STRING=954  type=unknown
+
+──────────────────────────────────────────────────────────────────────
+  VALIDATION SUGGESTIONS
+──────────────────────────────────────────────────────────────────────
+  1. Alanine scanning mutagenesis of predicted active site residues (C59, C122, H224) to confirm functional importance
+  2. Co-immunoprecipitation with CSTA (unknown interaction, predicted interface: [2, 1, 18])
+  3. Co-immunoprecipitation with NLRP3 (unknown interaction, predicted interface: [2, 1, 18])
+  4. Enzyme activity assay consistent with EC 3.4.22 using appropriate substrate panel
+  5. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+
+──────────────────────────────────────────────────────────────────────
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+======================================================================

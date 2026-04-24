@@ -3,75 +3,11 @@
   "sequence_length": 231,
   "mf_predictions": [
     {
-      "go_id": "GO:0071949",
-      "go_name": "F:FAD binding",
-      "namespace": "MF",
-      "score": 1.275,
-      "evidence": [
-        "experimental_homolog",
-        "neural_classifier"
-      ],
-      "saliency_residues": [
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        10,
-        12,
-        20,
-        23,
-        24,
-        27,
-        29,
-        30,
-        31,
-        32,
-        33,
-        34,
-        35
-      ]
-    },
-    {
       "go_id": "GO:0003677",
       "go_name": "DNA binding",
       "namespace": "MF",
       "score": 0.85,
       "evidence": [
-        "structural_motif"
-      ],
-      "saliency_residues": [
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        10,
-        12,
-        20,
-        23,
-        24,
-        27,
-        29,
-        30,
-        31,
-        32,
-        33,
-        34,
-        35
-      ]
-    },
-    {
-      "go_id": "GO:0003955",
-      "go_name": "F:NAD(P)H dehydrogenase (quinone) activity",
-      "namespace": "MF",
-      "score": 0.8,
-      "evidence": [
-        "experimental_homolog",
         "structural_motif"
       ],
       "saliency_residues": [
@@ -130,70 +66,8 @@
       ]
     },
     {
-      "go_id": "GO:0005524",
-      "go_name": "ATP binding",
-      "namespace": "MF",
-      "score": 0.8,
-      "evidence": [
-        "structural_motif"
-      ],
-      "saliency_residues": [
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        10,
-        12,
-        20,
-        23,
-        24,
-        27,
-        29,
-        30,
-        31,
-        32,
-        33,
-        34,
-        35
-      ]
-    },
-    {
       "go_id": "GO:0005525",
       "go_name": "GTP binding",
-      "namespace": "MF",
-      "score": 0.8,
-      "evidence": [
-        "structural_motif"
-      ],
-      "saliency_residues": [
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        10,
-        12,
-        20,
-        23,
-        24,
-        27,
-        29,
-        30,
-        31,
-        32,
-        33,
-        34,
-        35
-      ]
-    },
-    {
-      "go_id": "GO:0020037",
-      "go_name": "heme binding",
       "namespace": "MF",
       "score": 0.8,
       "evidence": [
@@ -255,68 +129,6 @@
       ]
     },
     {
-      "go_id": "GO:0016887",
-      "go_name": "ATPase activity",
-      "namespace": "MF",
-      "score": 0.75,
-      "evidence": [
-        "structural_motif"
-      ],
-      "saliency_residues": [
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        10,
-        12,
-        20,
-        23,
-        24,
-        27,
-        29,
-        30,
-        31,
-        32,
-        33,
-        34,
-        35
-      ]
-    },
-    {
-      "go_id": "GO:0051082",
-      "go_name": "unfolded protein binding",
-      "namespace": "MF",
-      "score": 0.75,
-      "evidence": [
-        "structural_motif"
-      ],
-      "saliency_residues": [
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        10,
-        12,
-        20,
-        23,
-        24,
-        27,
-        29,
-        30,
-        31,
-        32,
-        33,
-        34,
-        35
-      ]
-    },
-    {
       "go_id": "GO:0003924",
       "go_name": "GTPase activity",
       "namespace": "MF",
@@ -348,43 +160,12 @@
       ]
     },
     {
-      "go_id": "GO:0010181",
-      "go_name": "FMN binding",
+      "go_id": "GO:0003955",
+      "go_name": "F:NAD(P)H dehydrogenase (quinone) activity",
       "namespace": "MF",
-      "score": 0.75,
+      "score": 0.7,
       "evidence": [
-        "structural_motif"
-      ],
-      "saliency_residues": [
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        10,
-        12,
-        20,
-        23,
-        24,
-        27,
-        29,
-        30,
-        31,
-        32,
-        33,
-        34,
-        35
-      ]
-    },
-    {
-      "go_id": "GO:0019825",
-      "go_name": "oxygen binding",
-      "namespace": "MF",
-      "score": 0.75,
-      "evidence": [
-        "structural_motif"
+        "experimental_homolog"
       ],
       "saliency_residues": [
         2,
@@ -602,6 +383,223 @@
       "score": 0.7,
       "evidence": [
         "experimental_homolog"
+      ],
+      "saliency_residues": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        12,
+        20,
+        23,
+        24,
+        27,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ]
+    },
+    {
+      "go_id": "GO:0071949",
+      "go_name": "F:FAD binding",
+      "namespace": "MF",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        12,
+        20,
+        23,
+        24,
+        27,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ]
+    },
+    {
+      "go_id": "GO:1904408",
+      "go_name": "F:melatonin binding",
+      "namespace": "MF",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        12,
+        20,
+        23,
+        24,
+        27,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ]
+    },
+    {
+      "go_id": "GO:0016491",
+      "go_name": "F:oxidoreductase activity",
+      "namespace": "MF",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        12,
+        20,
+        23,
+        24,
+        27,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ]
+    },
+    {
+      "go_id": "GO:0016661",
+      "go_name": "F:oxidoreductase activity, acting on other nitrogenous compounds as donors",
+      "namespace": "MF",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        12,
+        20,
+        23,
+        24,
+        27,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ]
+    },
+    {
+      "go_id": "GO:0042803",
+      "go_name": "F:protein homodimerization activity",
+      "namespace": "MF",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        12,
+        20,
+        23,
+        24,
+        27,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ]
+    },
+    {
+      "go_id": "GO:1905594",
+      "go_name": "F:resveratrol binding",
+      "namespace": "MF",
+      "score": 0.7,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        12,
+        20,
+        23,
+        24,
+        27,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ]
+    },
+    {
+      "go_id": "GO:0004252",
+      "go_name": "serine-type endopeptidase activity",
+      "namespace": "MF",
+      "score": 0.65,
+      "evidence": [
+        "structural_motif"
       ],
       "saliency_residues": [
         2,
@@ -851,8 +849,7 @@
       "namespace": "BP",
       "score": 0.7,
       "evidence": [
-        "experimental_homolog",
-        "structural_motif"
+        "experimental_homolog"
       ],
       "saliency_residues": [
         2,
@@ -1002,101 +999,8 @@
       ]
     },
     {
-      "go_id": "GO:0055114",
-      "go_name": "oxidation-reduction process",
-      "namespace": "BP",
-      "score": 0.7,
-      "evidence": [
-        "structural_motif"
-      ],
-      "saliency_residues": [
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        10,
-        12,
-        20,
-        23,
-        24,
-        27,
-        29,
-        30,
-        31,
-        32,
-        33,
-        34,
-        35
-      ]
-    },
-    {
-      "go_id": "GO:0015671",
-      "go_name": "oxygen transport",
-      "namespace": "BP",
-      "score": 0.7,
-      "evidence": [
-        "structural_motif"
-      ],
-      "saliency_residues": [
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        10,
-        12,
-        20,
-        23,
-        24,
-        27,
-        29,
-        30,
-        31,
-        32,
-        33,
-        34,
-        35
-      ]
-    },
-    {
       "go_id": "GO:0006351",
       "go_name": "DNA-templated transcription",
-      "namespace": "BP",
-      "score": 0.65,
-      "evidence": [
-        "structural_motif"
-      ],
-      "saliency_residues": [
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        10,
-        12,
-        20,
-        23,
-        24,
-        27,
-        29,
-        30,
-        31,
-        32,
-        33,
-        34,
-        35
-      ]
-    },
-    {
-      "go_id": "GO:0051085",
-      "go_name": "chaperone cofactor-dependent protein refolding",
       "namespace": "BP",
       "score": 0.65,
       "evidence": [
@@ -1188,8 +1092,8 @@
       ]
     },
     {
-      "go_id": "GO:0042493",
-      "go_name": "response to drug",
+      "go_id": "GO:0006508",
+      "go_name": "proteolysis",
       "namespace": "BP",
       "score": 0.55,
       "evidence": [
@@ -1219,10 +1123,10 @@
       ]
     },
     {
-      "go_id": "GO:0006508",
-      "go_name": "proteolysis",
+      "go_id": "GO:0010819",
+      "go_name": "regulation of T cell chemotaxis",
       "namespace": "BP",
-      "score": 0.55,
+      "score": 0.45,
       "evidence": [
         "structural_motif"
       ],
@@ -1348,37 +1252,6 @@
       ]
     },
     {
-      "go_id": "GO:0005833",
-      "go_name": "hemoglobin complex",
-      "namespace": "CC",
-      "score": 0.65,
-      "evidence": [
-        "structural_motif"
-      ],
-      "saliency_residues": [
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        10,
-        12,
-        20,
-        23,
-        24,
-        27,
-        29,
-        30,
-        31,
-        32,
-        33,
-        34,
-        35
-      ]
-    },
-    {
       "go_id": "GO:0043234",
       "go_name": "protein complex",
       "namespace": "CC",
@@ -1441,37 +1314,6 @@
       ]
     },
     {
-      "go_id": "GO:0031838",
-      "go_name": "haptoglobin-hemoglobin complex",
-      "namespace": "CC",
-      "score": 0.55,
-      "evidence": [
-        "structural_motif"
-      ],
-      "saliency_residues": [
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        10,
-        12,
-        20,
-        23,
-        24,
-        27,
-        29,
-        30,
-        31,
-        32,
-        33,
-        34,
-        35
-      ]
-    },
-    {
       "go_id": "GO:0072562",
       "go_name": "blood microparticle",
       "namespace": "CC",
@@ -1503,8 +1345,8 @@
       ]
     }
   ],
-  "top_mf": "F:FAD binding",
+  "top_mf": "DNA binding",
   "top_bp": "P:cellular response to oxidative stress",
   "top_cc": "C:cytosol",
-  "n_predictions": 48
+  "n_predictions": 43
 }

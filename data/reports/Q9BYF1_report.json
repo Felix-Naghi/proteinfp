@@ -4,251 +4,166 @@
   "protein_name": "Angiotensin-converting enzyme 2",
   "organism": "Homo sapiens",
   "sequence_length": 805,
-  "generated_at": "2026-04-19 13:05:08",
-  "top_function": "Essential counter-regulatory carboxypeptidase of the renin-angiotensin hormone system that is a critical regulator of blood volume, systemic vascular resistance, and thus cardiovascular homeostasis (P",
+  "generated_at": "2026-04-19 20:38:19",
+  "top_function": "metallopeptidase activity",
   "is_enzyme": true,
   "ec_number": "3.4.24",
-  "subcellular_location": "C:plasma membrane",
+  "subcellular_location": "membrane",
   "go_terms_mf": [
     {
       "go_id": "GO:0008237",
       "go_name": "metallopeptidase activity",
       "namespace": "MF",
-      "weighted_score": 18.19,
-      "n_sources": 4,
+      "weighted_score": 9.05,
+      "n_sources": 3,
       "sources": [
-        "experimental_homolog",
+        "sequence_homolog",
         "domain_annotation",
-        "embedding_similarity",
-        "neural_classifier"
+        "embedding_similarity"
       ],
       "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
+      "top_evidence": "embedding_similarity"
     },
     {
       "go_id": "GO:0008241",
       "go_name": "peptidyl-dipeptidase activity",
       "namespace": "MF",
-      "weighted_score": 11.6,
+      "weighted_score": 8.82,
       "n_sources": 3,
       "sources": [
-        "experimental_homolog",
+        "sequence_homolog",
         "domain_annotation",
         "embedding_similarity"
       ],
       "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
+      "top_evidence": "embedding_similarity"
     },
     {
       "go_id": "GO:0046872",
-      "go_name": "F:metal ion binding",
+      "go_name": "metal ion binding",
       "namespace": "MF",
-      "weighted_score": 10.2,
-      "n_sources": 4,
+      "weighted_score": 4.8,
+      "n_sources": 3,
       "sources": [
-        "experimental_homolog",
         "structural_motif",
         "embedding_similarity",
         "sequence_composition"
       ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
+      "confidence": "MEDIUM",
+      "top_evidence": "sequence_composition"
     },
     {
-      "go_id": "GO:0009986",
-      "go_name": "C:cell surface",
+      "go_id": "GO:0004252",
+      "go_name": "serine-type endopeptidase activity",
       "namespace": "MF",
-      "weighted_score": 9.56,
-      "n_sources": 2,
+      "weighted_score": 1.7,
+      "n_sources": 1,
       "sources": [
-        "experimental_homolog",
-        "neural_classifier"
+        "structural_motif"
       ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
     },
     {
-      "go_id": "GO:0002003",
-      "go_name": "P:angiotensin maturation",
+      "go_id": "GO:0003677",
+      "go_name": "DNA binding",
       "namespace": "MF",
-      "weighted_score": 9.49,
-      "n_sources": 2,
+      "weighted_score": 1.7,
+      "n_sources": 1,
       "sources": [
-        "experimental_homolog",
-        "neural_classifier"
+        "structural_motif"
       ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
     },
     {
-      "go_id": "GO:0005764",
-      "go_name": "C:lysosome",
+      "go_id": "GO:0008270",
+      "go_name": "zinc ion binding",
       "namespace": "MF",
-      "weighted_score": 9.4,
-      "n_sources": 2,
+      "weighted_score": 1.6,
+      "n_sources": 1,
       "sources": [
-        "experimental_homolog",
-        "neural_classifier"
+        "structural_motif"
       ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
     },
     {
-      "go_id": "GO:0001618",
-      "go_name": "F:virus receptor activity",
+      "go_id": "GO:0005524",
+      "go_name": "ATP binding",
       "namespace": "MF",
-      "weighted_score": 9.36,
-      "n_sources": 2,
+      "weighted_score": 1.6,
+      "n_sources": 1,
       "sources": [
-        "experimental_homolog",
-        "neural_classifier"
+        "structural_motif"
       ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0020037",
+      "go_name": "heme binding",
+      "namespace": "MF",
+      "weighted_score": 1.6,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
     },
     {
       "go_id": "GO:0008233",
-      "go_name": "F:peptidase activity",
+      "go_name": "peptidase activity",
       "namespace": "MF",
-      "weighted_score": 7.0,
-      "n_sources": 2,
+      "weighted_score": 1.6,
+      "n_sources": 1,
       "sources": [
-        "experimental_homolog",
         "structural_motif"
       ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
     },
     {
-      "go_id": "GO:0005929",
-      "go_name": "C:cilium",
+      "go_id": "GO:0016887",
+      "go_name": "ATPase activity",
       "namespace": "MF",
-      "weighted_score": 3.0,
+      "weighted_score": 1.5,
       "n_sources": 1,
       "sources": [
-        "experimental_homolog"
+        "structural_motif"
       ],
-      "confidence": "MEDIUM",
-      "top_evidence": "experimental_homolog"
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
     },
     {
-      "go_id": "GO:0004180",
-      "go_name": "F:carboxypeptidase activity",
+      "go_id": "GO:0051082",
+      "go_name": "unfolded protein binding",
       "namespace": "MF",
-      "weighted_score": 3.0,
+      "weighted_score": 1.5,
       "n_sources": 1,
       "sources": [
-        "experimental_homolog"
+        "structural_motif"
       ],
-      "confidence": "MEDIUM",
-      "top_evidence": "experimental_homolog"
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
     },
     {
-      "go_id": "GO:0004175",
-      "go_name": "F:endopeptidase activity",
+      "go_id": "GO:0019825",
+      "go_name": "oxygen binding",
       "namespace": "MF",
-      "weighted_score": 3.0,
+      "weighted_score": 1.5,
       "n_sources": 1,
       "sources": [
-        "experimental_homolog"
+        "structural_motif"
       ],
-      "confidence": "MEDIUM",
-      "top_evidence": "experimental_homolog"
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
     },
     {
-      "go_id": "GO:0004181",
-      "go_name": "F:metallocarboxypeptidase activity",
+      "go_id": "GO:0042623",
+      "go_name": "ATPase activity, coupled",
       "namespace": "MF",
-      "weighted_score": 3.0,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "MEDIUM",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0042802",
-      "go_name": "F:identical protein binding",
-      "namespace": "MF",
-      "weighted_score": 3.0,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "MEDIUM",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0003051",
-      "go_name": "P:angiotensin-mediated drinking behavior",
-      "namespace": "MF",
-      "weighted_score": 3.0,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "MEDIUM",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0005516",
-      "go_name": "F:calmodulin binding",
-      "namespace": "MF",
-      "weighted_score": 3.0,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "MEDIUM",
-      "top_evidence": "experimental_homolog"
-    }
-  ],
-  "go_terms_bp": [
-    {
-      "go_id": "GO:0006508",
-      "go_name": "proteolysis",
-      "namespace": "BP",
-      "weighted_score": 20.5,
-      "n_sources": 5,
-      "sources": [
-        "experimental_homolog",
-        "domain_annotation",
-        "structural_motif",
-        "embedding_similarity",
-        "neural_classifier"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0141109",
-      "go_name": "F:transporter activator activity",
-      "namespace": "BP",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0046513",
-      "go_name": "P:ceramide biosynthetic process",
-      "namespace": "BP",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0055114",
-      "go_name": "oxidation-reduction process",
-      "namespace": "BP",
       "weighted_score": 1.4,
       "n_sources": 1,
       "sources": [
@@ -256,6 +171,47 @@
       ],
       "confidence": "LOW",
       "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0005172",
+      "go_name": "vascular endothelial growth factor receptor binding",
+      "namespace": "MF",
+      "weighted_score": 1.1,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0003824",
+      "go_name": "catalytic activity",
+      "namespace": "MF",
+      "weighted_score": 1.1,
+      "n_sources": 1,
+      "sources": [
+        "active_site"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "active_site"
+    }
+  ],
+  "go_terms_bp": [
+    {
+      "go_id": "GO:0006508",
+      "go_name": "proteolysis",
+      "namespace": "BP",
+      "weighted_score": 9.88,
+      "n_sources": 4,
+      "sources": [
+        "sequence_homolog",
+        "domain_annotation",
+        "structural_motif",
+        "embedding_similarity"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "sequence_homolog"
     },
     {
       "go_id": "GO:0015671",
@@ -318,18 +274,6 @@
       "top_evidence": "structural_motif"
     },
     {
-      "go_id": "GO:0042493",
-      "go_name": "response to drug",
-      "namespace": "BP",
-      "weighted_score": 1.1,
-      "n_sources": 1,
-      "sources": [
-        "structural_motif"
-      ],
-      "confidence": "LOW",
-      "top_evidence": "structural_motif"
-    },
-    {
       "go_id": "GO:0019430",
       "go_name": "removal of superoxide radicals",
       "namespace": "BP",
@@ -356,118 +300,31 @@
   ],
   "go_terms_cc": [
     {
-      "go_id": "GO:0005886",
-      "go_name": "C:plasma membrane",
-      "namespace": "CC",
-      "weighted_score": 9.53,
-      "n_sources": 2,
-      "sources": [
-        "experimental_homolog",
-        "neural_classifier"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0009897",
-      "go_name": "C:external side of plasma membrane",
-      "namespace": "CC",
-      "weighted_score": 9.47,
-      "n_sources": 2,
-      "sources": [
-        "experimental_homolog",
-        "neural_classifier"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
       "go_id": "GO:0016020",
       "go_name": "membrane",
       "namespace": "CC",
-      "weighted_score": 7.75,
+      "weighted_score": 8.82,
       "n_sources": 3,
       "sources": [
+        "sequence_homolog",
         "domain_annotation",
-        "structural_motif",
         "embedding_similarity"
       ],
       "confidence": "HIGH",
       "top_evidence": "embedding_similarity"
     },
     {
-      "go_id": "GO:0005615",
-      "go_name": "C:extracellular space",
+      "go_id": "GO:0005634",
+      "go_name": "nucleus",
       "namespace": "CC",
-      "weighted_score": 6.5,
+      "weighted_score": 1.9,
       "n_sources": 2,
       "sources": [
-        "experimental_homolog",
-        "embedding_similarity"
+        "ai_esm2",
+        "structural_motif"
       ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0005737",
-      "go_name": "C:cytoplasm",
-      "namespace": "CC",
-      "weighted_score": 6.5,
-      "n_sources": 2,
-      "sources": [
-        "experimental_homolog",
-        "sequence_baseline"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0016324",
-      "go_name": "C:apical plasma membrane",
-      "namespace": "CC",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0005576",
-      "go_name": "C:extracellular region",
-      "namespace": "CC",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0031526",
-      "go_name": "C:brush border membrane",
-      "namespace": "CC",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0070062",
-      "go_name": "C:extracellular exosome",
-      "namespace": "CC",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
+      "confidence": "LOW",
+      "top_evidence": "ai_esm2"
     },
     {
       "go_id": "GO:0005833",
@@ -480,6 +337,66 @@
       ],
       "confidence": "LOW",
       "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0005615",
+      "go_name": "extracellular space",
+      "namespace": "CC",
+      "weighted_score": 1.3,
+      "n_sources": 1,
+      "sources": [
+        "embedding_similarity"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "embedding_similarity"
+    },
+    {
+      "go_id": "GO:0043234",
+      "go_name": "protein complex",
+      "namespace": "CC",
+      "weighted_score": 1.1,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0031838",
+      "go_name": "haptoglobin-hemoglobin complex",
+      "namespace": "CC",
+      "weighted_score": 1.1,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0072562",
+      "go_name": "blood microparticle",
+      "namespace": "CC",
+      "weighted_score": 1.0,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0005737",
+      "go_name": "cytoplasm",
+      "namespace": "CC",
+      "weighted_score": 0.9,
+      "n_sources": 1,
+      "sources": [
+        "sequence_baseline"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "sequence_baseline"
     }
   ],
   "active_sites": [
@@ -529,7 +446,8 @@
         "zinc_binding_cluster",
         "zinc_binding_cluster",
         "zinc_binding_cluster",
-        "acid_base_pair"
+        "acid_base_pair",
+        "haem_binding"
       ],
       "evidence_score": 9,
       "confidence": "HIGH",
@@ -771,8 +689,7 @@
       "motifs": [
         "serine_protease_triad",
         "zinc_binding_cluster",
-        "acid_base_pair",
-        "haem_binding"
+        "acid_base_pair"
       ],
       "evidence_score": 7,
       "confidence": "HIGH",
@@ -877,145 +794,6 @@
         -6.208,
         14.525,
         -19.473
-      ],
-      "domain_context": "metalloproteases (\"zincins\"), catalytic domain"
-    },
-    {
-      "residue_number": 200,
-      "chain_id": "A",
-      "one_letter": "G",
-      "three_letter": "GLY",
-      "conservation": 4.0,
-      "is_conserved": false,
-      "is_buried": true,
-      "sasa": 0.0,
-      "plddt": 98.19,
-      "motifs": [
-        "p_loop_walker_a"
-      ],
-      "evidence_score": 5,
-      "confidence": "MEDIUM",
-      "coords": [
-        2.057,
-        -5.811,
-        9.655
-      ],
-      "domain_context": "metalloproteases (\"zincins\"), catalytic domain"
-    },
-    {
-      "residue_number": 201,
-      "chain_id": "A",
-      "one_letter": "D",
-      "three_letter": "ASP",
-      "conservation": 6.5,
-      "is_conserved": false,
-      "is_buried": true,
-      "sasa": 5.09,
-      "plddt": 98.5,
-      "motifs": [
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "acid_base_pair",
-        "acid_base_pair",
-        "p_loop_walker_a"
-      ],
-      "evidence_score": 5,
-      "confidence": "MEDIUM",
-      "coords": [
-        1.179,
-        -8.406,
-        12.354
-      ],
-      "domain_context": "metalloproteases (\"zincins\"), catalytic domain"
-    },
-    {
-      "residue_number": 204,
-      "chain_id": "A",
-      "one_letter": "R",
-      "three_letter": "ARG",
-      "conservation": 6.5,
-      "is_conserved": false,
-      "is_buried": true,
-      "sasa": 15.41,
-      "plddt": 97.81,
-      "motifs": [
-        "acid_base_pair",
-        "acid_base_pair",
-        "p_loop_walker_a"
-      ],
-      "evidence_score": 5,
-      "confidence": "MEDIUM",
-      "coords": [
-        -3.773,
-        -7.78,
-        11.254
-      ],
-      "domain_context": "metalloproteases (\"zincins\"), catalytic domain"
-    },
-    {
-      "residue_number": 205,
-      "chain_id": "A",
-      "one_letter": "G",
-      "three_letter": "GLY",
-      "conservation": 4.0,
-      "is_conserved": false,
-      "is_buried": true,
-      "sasa": 19.0,
-      "plddt": 96.19,
-      "motifs": [
-        "p_loop_walker_a",
-        "p_loop_walker_a"
-      ],
-      "evidence_score": 5,
-      "confidence": "MEDIUM",
-      "coords": [
-        -4.579,
-        -7.898,
-        15.024
-      ],
-      "domain_context": "metalloproteases (\"zincins\"), catalytic domain"
-    },
-    {
-      "residue_number": 207,
-      "chain_id": "A",
-      "one_letter": "Y",
-      "three_letter": "TYR",
-      "conservation": 5.5,
-      "is_conserved": false,
-      "is_buried": true,
-      "sasa": 0.06,
-      "plddt": 97.38,
-      "motifs": [
-        "p_loop_walker_a"
-      ],
-      "evidence_score": 5,
-      "confidence": "MEDIUM",
-      "coords": [
-        -9.269,
-        -9.217,
-        12.722
-      ],
-      "domain_context": "metalloproteases (\"zincins\"), catalytic domain"
-    },
-    {
-      "residue_number": 209,
-      "chain_id": "A",
-      "one_letter": "V",
-      "three_letter": "VAL",
-      "conservation": 3.5,
-      "is_conserved": false,
-      "is_buried": true,
-      "sasa": 13.77,
-      "plddt": 95.31,
-      "motifs": [
-        "p_loop_walker_a"
-      ],
-      "evidence_score": 5,
-      "confidence": "MEDIUM",
-      "coords": [
-        -10.596,
-        -13.25,
-        17.669
       ],
       "domain_context": "metalloproteases (\"zincins\"), catalytic domain"
     },
@@ -1246,6 +1024,153 @@
         -2.453,
         13.527,
         -23.443
+      ],
+      "domain_context": "metalloproteases (\"zincins\"), catalytic domain"
+    },
+    {
+      "residue_number": 167,
+      "chain_id": "A",
+      "one_letter": "S",
+      "three_letter": "SER",
+      "conservation": 4.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 22.08,
+      "plddt": 97.06,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        7.387,
+        14.331,
+        -11.37
+      ],
+      "domain_context": "metalloproteases (\"zincins\"), catalytic domain"
+    },
+    {
+      "residue_number": 170,
+      "chain_id": "A",
+      "one_letter": "S",
+      "three_letter": "SER",
+      "conservation": 4.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 27.55,
+      "plddt": 96.62,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        10.594,
+        11.969,
+        -8.255
+      ],
+      "domain_context": "metalloproteases (\"zincins\"), catalytic domain"
+    },
+    {
+      "residue_number": 269,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 24.01,
+      "plddt": 96.5,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "acid_base_pair"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -5.845,
+        8.591,
+        -11.216
+      ],
+      "domain_context": "metalloproteases (\"zincins\"), catalytic domain"
+    },
+    {
+      "residue_number": 350,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 37.85,
+      "plddt": 97.88,
+      "motifs": [
+        "serine_protease_triad",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "acid_base_pair"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -18.653,
+        10.469,
+        16.167
+      ],
+      "domain_context": "metalloproteases (\"zincins\"), catalytic domain"
+    },
+    {
+      "residue_number": 367,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 89.41,
+      "plddt": 88.88,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -21.103,
+        11.042,
+        -7.021
+      ],
+      "domain_context": "metalloproteases (\"zincins\"), catalytic domain"
+    },
+    {
+      "residue_number": 368,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 26.61,
+      "plddt": 94.06,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "acid_base_pair"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -21.695,
+        13.439,
+        -4.057
       ],
       "domain_context": "metalloproteases (\"zincins\"), catalytic domain"
     }
@@ -2848,7 +2773,7 @@
   ],
   "mean_plddt": 90.67,
   "n_evidence_sources": 12,
-  "overall_confidence": "VERY HIGH",
+  "overall_confidence": "HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (H265, H373, H374) to confirm functional importance",
     "Thermal shift assay or SPR binding assay against pocket P1 (vol=1540\u00c5\u00b3, druggability=0.99)",

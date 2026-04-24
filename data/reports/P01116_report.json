@@ -4,54 +4,51 @@
   "protein_name": "GTPase KRas",
   "organism": "Homo sapiens",
   "sequence_length": 189,
-  "generated_at": "2026-04-19 13:05:03",
+  "generated_at": "2026-04-19 18:24:16",
   "top_function": "Ras proteins bind GDP/GTP and possess intrinsic GTPase activity (PubMed:20949621, PubMed:39809765). Plays an important role in the regulation of cell proliferation (PubMed:22711838, PubMed:23698361). ",
   "is_enzyme": false,
   "ec_number": "3.6.5",
-  "subcellular_location": "C:plasma membrane",
+  "subcellular_location": "membrane",
   "go_terms_mf": [
     {
       "go_id": "GO:0005525",
       "go_name": "GTP binding",
       "namespace": "MF",
-      "weighted_score": 29.68,
-      "n_sources": 5,
+      "weighted_score": 20.7,
+      "n_sources": 4,
       "sources": [
         "experimental_homolog",
         "domain_annotation",
         "structural_motif",
-        "embedding_similarity",
-        "neural_classifier"
+        "embedding_similarity"
       ],
       "confidence": "HIGH",
-      "top_evidence": "neural_classifier"
+      "top_evidence": "experimental_homolog"
     },
     {
       "go_id": "GO:0003924",
       "go_name": "GTPase activity",
       "namespace": "MF",
-      "weighted_score": 22.28,
-      "n_sources": 5,
+      "weighted_score": 13.3,
+      "n_sources": 4,
       "sources": [
         "experimental_homolog",
         "domain_annotation",
         "structural_motif",
-        "embedding_similarity",
-        "neural_classifier"
+        "embedding_similarity"
       ],
       "confidence": "HIGH",
-      "top_evidence": "neural_classifier"
+      "top_evidence": "experimental_homolog"
     },
     {
       "go_id": "GO:0019003",
       "go_name": "F:GDP binding",
       "namespace": "MF",
-      "weighted_score": 13.27,
-      "n_sources": 3,
+      "weighted_score": 6.75,
+      "n_sources": 2,
       "sources": [
         "experimental_homolog",
-        "embedding_similarity",
-        "neural_classifier"
+        "embedding_similarity"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -60,11 +57,10 @@
       "go_id": "GO:0003925",
       "go_name": "F:G protein activity",
       "namespace": "MF",
-      "weighted_score": 10.09,
-      "n_sources": 2,
+      "weighted_score": 5.1,
+      "n_sources": 1,
       "sources": [
-        "experimental_homolog",
-        "neural_classifier"
+        "experimental_homolog"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -181,24 +177,24 @@
       "go_id": "GO:0036064",
       "go_name": "C:ciliary basal body",
       "namespace": "MF",
-      "weighted_score": 3.0,
+      "weighted_score": 5.1,
       "n_sources": 1,
       "sources": [
         "experimental_homolog"
       ],
-      "confidence": "MEDIUM",
+      "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
     },
     {
       "go_id": "GO:0098978",
       "go_name": "C:glutamatergic synapse",
       "namespace": "MF",
-      "weighted_score": 3.0,
+      "weighted_score": 5.1,
       "n_sources": 1,
       "sources": [
         "experimental_homolog"
       ],
-      "confidence": "MEDIUM",
+      "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
     }
   ],
@@ -240,30 +236,6 @@
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0055114",
-      "go_name": "oxidation-reduction process",
-      "namespace": "BP",
-      "weighted_score": 1.4,
-      "n_sources": 1,
-      "sources": [
-        "structural_motif"
-      ],
-      "confidence": "LOW",
-      "top_evidence": "structural_motif"
-    },
-    {
-      "go_id": "GO:0015671",
-      "go_name": "oxygen transport",
-      "namespace": "BP",
-      "weighted_score": 1.4,
-      "n_sources": 1,
-      "sources": [
-        "structural_motif"
-      ],
-      "confidence": "LOW",
-      "top_evidence": "structural_motif"
     },
     {
       "go_id": "GO:0006351",
@@ -326,30 +298,6 @@
       "top_evidence": "structural_motif"
     },
     {
-      "go_id": "GO:0042493",
-      "go_name": "response to drug",
-      "namespace": "BP",
-      "weighted_score": 1.1,
-      "n_sources": 1,
-      "sources": [
-        "structural_motif"
-      ],
-      "confidence": "LOW",
-      "top_evidence": "structural_motif"
-    },
-    {
-      "go_id": "GO:0019430",
-      "go_name": "removal of superoxide radicals",
-      "namespace": "BP",
-      "weighted_score": 1.1,
-      "n_sources": 1,
-      "sources": [
-        "structural_motif"
-      ],
-      "confidence": "LOW",
-      "top_evidence": "structural_motif"
-    },
-    {
       "go_id": "GO:0006508",
       "go_name": "proteolysis",
       "namespace": "BP",
@@ -403,19 +351,6 @@
       "top_evidence": "experimental_homolog"
     },
     {
-      "go_id": "GO:0005886",
-      "go_name": "C:plasma membrane",
-      "namespace": "CC",
-      "weighted_score": 9.5,
-      "n_sources": 2,
-      "sources": [
-        "experimental_homolog",
-        "neural_classifier"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
       "go_id": "GO:0005737",
       "go_name": "C:cytoplasm",
       "namespace": "CC",
@@ -432,6 +367,18 @@
     {
       "go_id": "GO:0020002",
       "go_name": "C:host cell plasma membrane",
+      "namespace": "CC",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005886",
+      "go_name": "C:plasma membrane",
       "namespace": "CC",
       "weighted_score": 5.1,
       "n_sources": 1,
@@ -584,9 +531,7 @@
       "sasa": 0.4,
       "plddt": 97.0,
       "motifs": [
-        "p_loop_walker_a",
-        "flavin_binding",
-        "flavin_binding"
+        "p_loop_walker_a"
       ],
       "evidence_score": 5,
       "confidence": "MEDIUM",
@@ -697,8 +642,7 @@
       "sasa": 22.59,
       "plddt": 93.94,
       "motifs": [
-        "p_loop_walker_a",
-        "flavin_binding"
+        "p_loop_walker_a"
       ],
       "evidence_score": 3,
       "confidence": "MEDIUM",
@@ -720,8 +664,7 @@
       "sasa": 29.77,
       "plddt": 94.06,
       "motifs": [
-        "p_loop_walker_a",
-        "flavin_binding"
+        "p_loop_walker_a"
       ],
       "evidence_score": 3,
       "confidence": "MEDIUM",
@@ -919,28 +862,6 @@
       "domain_context": "small gtp-binding protein domain"
     },
     {
-      "residue_number": 27,
-      "chain_id": "A",
-      "one_letter": "H",
-      "three_letter": "HIS",
-      "conservation": 7.0,
-      "is_conserved": true,
-      "is_buried": false,
-      "sasa": 99.67,
-      "plddt": 91.5,
-      "motifs": [
-        "haem_binding"
-      ],
-      "evidence_score": 7,
-      "confidence": "HIGH",
-      "coords": [
-        -1.006,
-        18.824,
-        -7.441
-      ],
-      "domain_context": "small gtp-binding protein domain"
-    },
-    {
       "residue_number": 80,
       "chain_id": "A",
       "one_letter": "C",
@@ -979,6 +900,26 @@
         -1.567,
         3.846,
         -15.996
+      ],
+      "domain_context": "small gtp-binding protein domain"
+    },
+    {
+      "residue_number": 27,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 99.67,
+      "plddt": 91.5,
+      "motifs": [],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        -1.006,
+        18.824,
+        -7.441
       ],
       "domain_context": "small gtp-binding protein domain"
     },
@@ -1027,29 +968,6 @@
         0.287,
         7.811,
         3.689
-      ],
-      "domain_context": "small gtp-binding protein domain"
-    },
-    {
-      "residue_number": 96,
-      "chain_id": "A",
-      "one_letter": "Y",
-      "three_letter": "TYR",
-      "conservation": 5.5,
-      "is_conserved": false,
-      "is_buried": true,
-      "sasa": 8.65,
-      "plddt": 95.56,
-      "motifs": [
-        "flavin_binding",
-        "flavin_binding"
-      ],
-      "evidence_score": 5,
-      "confidence": "MEDIUM",
-      "coords": [
-        0.211,
-        -6.353,
-        2.349
       ],
       "domain_context": "small gtp-binding protein domain"
     },
@@ -1198,6 +1116,26 @@
         -4.542,
         3.885,
         4.865
+      ],
+      "domain_context": "small gtp-binding protein domain"
+    },
+    {
+      "residue_number": 8,
+      "chain_id": "A",
+      "one_letter": "V",
+      "three_letter": "VAL",
+      "conservation": 3.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 0.07,
+      "plddt": 98.0,
+      "motifs": [],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -2.498,
+        3.843,
+        1.64
       ],
       "domain_context": "small gtp-binding protein domain"
     }

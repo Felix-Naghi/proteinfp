@@ -1,0 +1,77 @@
+======================================================================
+  ProteinFP Prediction Report
+  Generated: 2026-04-19 17:14:45
+======================================================================
+
+  Protein    : Nuclear receptor subfamily 1 group D member 1
+  Gene       : NR1D1
+  UniProt    : P20393
+  Organism   : Homo sapiens
+  Length     : 614 aa
+  Mean pLDDT : 62.9
+  Confidence : HIGH
+
+──────────────────────────────────────────────────────────────────────
+  FUNCTIONAL PREDICTION
+──────────────────────────────────────────────────────────────────────
+  Top function     : Transcriptional repressor which coordinates circadian rhythm and metabolic pathways in a heme-dependent manner. Integral component of the complex transcription machinery that governs circadian rhythmi
+  Enzyme           : no (non-enzyme)
+  Location         : membrane
+  Evidence sources : 8
+
+──────────────────────────────────────────────────────────────────────
+  GENE ONTOLOGY PREDICTIONS
+──────────────────────────────────────────────────────────────────────
+
+  Molecular Function:
+    [HIGH  ] GO:0008270 zinc ion binding (score=14.8, 3 sources)
+    [HIGH  ] GO:0003700 DNA-binding transcription factor activity (score=11.0, 3 sources)
+    [HIGH  ] GO:0000978 F:RNA polymerase II cis-regulatory region seq (score=9.6, 2 sources)
+    [HIGH  ] GO:0000981 F:DNA-binding transcription factor activity,  (score=9.6, 2 sources)
+    [HIGH  ] GO:1990837 F:sequence-specific double-stranded DNA bindi (score=9.5, 2 sources)
+
+  Biological Process:
+    [HIGH  ] GO:0006355 regulation of DNA-templated transcription (score=7.8, 1 sources)
+    [HIGH  ] GO:0009755 P:hormone-mediated signaling pathway (score=5.1, 1 sources)
+    [HIGH  ] GO:0000122 P:negative regulation of transcription by RNA (score=5.1, 1 sources)
+    [HIGH  ] GO:0045892 P:negative regulation of DNA-templated transc (score=5.1, 1 sources)
+    [HIGH  ] GO:0030522 P:intracellular receptor signaling pathway (score=5.1, 1 sources)
+
+  Cellular Component:
+    [HIGH  ] GO:0005634 C:nucleus (score=14.2, 4 sources)
+    [HIGH  ] GO:0005737 C:cytoplasm (score=6.5, 2 sources)
+    [LOW   ] GO:0043234 protein complex (score=1.1, 1 sources)
+
+──────────────────────────────────────────────────────────────────────
+  ACTIVE SITES
+──────────────────────────────────────────────────────────────────────
+  C132 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
+  H143 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H147 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
+  H456 [HIGH  ] motifs: serine_protease_triad, zinc_binding_cluster
+  H466 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+
+──────────────────────────────────────────────────────────────────────
+  PROTEIN INTERACTIONS (top 8)
+──────────────────────────────────────────────────────────────────────
+  NCOR1           STRING=999  type=unknown
+  PER2            STRING=998  type=unknown
+  ARNTL           STRING=989  type=unknown
+  NPAS2           STRING=985  type=unknown
+  PER3            STRING=978  type=unknown
+  CRY1            STRING=976  type=unknown
+  CLOCK           STRING=975  type=unknown
+  NFIL3           STRING=966  type=unknown
+
+──────────────────────────────────────────────────────────────────────
+  VALIDATION SUGGESTIONS
+──────────────────────────────────────────────────────────────────────
+  1. Alanine scanning mutagenesis of predicted active site residues (C132, H143, H147) to confirm functional importance
+  2. Co-immunoprecipitation with NCOR1 (unknown interaction, predicted interface: [427, 1, 331])
+  3. Co-immunoprecipitation with PER2 (unknown interaction, predicted interface: [427, 1, 331])
+  4. EMSA or fluorescence polarisation assay to confirm 'zinc ion binding' (GO:0008270)
+  5. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+
+──────────────────────────────────────────────────────────────────────
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+======================================================================

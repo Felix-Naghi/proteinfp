@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-19 13:04:51
+  Generated: 2026-04-19 19:49:26
 ======================================================================
 
   Protein    : Breast cancer type 1 susceptibility protein
@@ -9,14 +9,14 @@
   Organism   : Homo sapiens
   Length     : 1863 aa
   Mean pLDDT : 41.6
-  Confidence : VERY HIGH
+  Confidence : MEDIUM
 
 ──────────────────────────────────────────────────────────────────────
   FUNCTIONAL PREDICTION
 ──────────────────────────────────────────────────────────────────────
-  Top function     : E3 ubiquitin-protein ligase that specifically mediates the formation of 'Lys-6'-linked polyubiquitin chains and plays a central role in DNA repair by facilitating cellular responses to DNA damage (Pub
+  Top function     : DNA binding
   Enzyme           : yes — 3.4.21
-  Location         : C:plasma membrane
+  Location         : integral component of plasma membrane
   Evidence sources : 12
 
 ──────────────────────────────────────────────────────────────────────
@@ -24,23 +24,23 @@
 ──────────────────────────────────────────────────────────────────────
 
   Molecular Function:
-    [HIGH  ] GO:0008270 zinc ion binding (score=17.7, 4 sources)
-    [HIGH  ] GO:0003677 DNA binding (score=11.6, 3 sources)
-    [HIGH  ] GO:0004842 ubiquitin-protein transferase activity (score=9.5, 2 sources)
-    [HIGH  ] GO:0046872 metal ion binding (score=7.2, 3 sources)
-    [HIGH  ] GO:0070063 F:RNA polymerase binding (score=5.1, 1 sources)
+    [HIGH  ] GO:0046872 metal ion binding (score=9.9, 4 sources)
+    [HIGH  ] GO:0003677 DNA binding (score=8.8, 3 sources)
+    [HIGH  ] GO:0008270 zinc ion binding (score=8.6, 3 sources)
+    [HIGH  ] GO:0004842 ubiquitin-protein transferase activity (score=6.9, 2 sources)
+    [LOW   ] GO:0004252 serine-type endopeptidase activity (score=1.7, 1 sources)
 
   Biological Process:
-    [HIGH  ] GO:0006281 DNA repair (score=7.8, 1 sources)
-    [HIGH  ] GO:0045944 P:positive regulation of transcription by RNA (score=6.5, 2 sources)
-    [HIGH  ] GO:0000724 P:double-strand break repair via homologous r (score=5.1, 1 sources)
-    [HIGH  ] GO:0006633 P:fatty acid biosynthetic process (score=5.1, 1 sources)
-    [HIGH  ] GO:0007095 P:mitotic G2 DNA damage checkpoint signaling (score=5.1, 1 sources)
+    [HIGH  ] GO:0006281 DNA repair (score=10.4, 2 sources)
+    [HIGH  ] GO:0006974 DNA damage response (score=6.9, 2 sources)
+    [LOW   ] GO:0006468 protein phosphorylation (score=1.6, 1 sources)
+    [LOW   ] GO:0007165 signal transduction (score=1.5, 1 sources)
+    [LOW   ] GO:0018108 peptidyl-tyrosine phosphorylation (score=1.4, 1 sources)
 
   Cellular Component:
-    [HIGH  ] GO:0005634 nucleus (score=12.3, 4 sources)
-    [HIGH  ] GO:0005737 C:cytoplasm (score=6.5, 2 sources)
-    [HIGH  ] GO:0070531 C:BRCA1-A complex (score=5.1, 1 sources)
+    [HIGH  ] GO:0005634 nucleus (score=9.7, 4 sources)
+    [LOW   ] GO:0005887 integral component of plasma membrane (score=1.3, 1 sources)
+    [LOW   ] GO:0005833 hemoglobin complex (score=1.3, 1 sources)
 
 ──────────────────────────────────────────────────────────────────────
   ACTIVE SITES
@@ -88,7 +88,7 @@
   3. Co-immunoprecipitation with MDC1 (unknown interaction, predicted interface: [1863, 1508, 1076])
   4. Co-immunoprecipitation with PALB2 (unknown interaction, predicted interface: [1863, 1508, 1076])
   5. Enzyme activity assay consistent with EC 3.4.21 using appropriate substrate panel
-  6. EMSA or fluorescence polarisation assay to confirm 'zinc ion binding' (GO:0008270)
+  6. EMSA or fluorescence polarisation assay to confirm 'metal ion binding' (GO:0046872)
   7. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────

@@ -1,0 +1,76 @@
+======================================================================
+  ProteinFP Prediction Report
+  Generated: 2026-04-19 18:10:28
+======================================================================
+
+  Protein    : Sodium channel protein type 5 subunit alpha
+  Gene       : SCN5A
+  UniProt    : Q14524
+  Organism   : Homo sapiens
+  Length     : 2016 aa
+  Mean pLDDT : 67.2
+  Confidence : HIGH
+
+──────────────────────────────────────────────────────────────────────
+  FUNCTIONAL PREDICTION
+──────────────────────────────────────────────────────────────────────
+  Top function     : Pore-forming subunit of Nav1.5, a voltage-gated sodium (Nav) channel that directly mediates the depolarizing phase of action potentials in excitable membranes. Navs, also called VGSCs (voltage-gated s
+  Enzyme           : no (non-enzyme)
+  Location         : plasma membrane
+  Evidence sources : 8
+
+──────────────────────────────────────────────────────────────────────
+  GENE ONTOLOGY PREDICTIONS
+──────────────────────────────────────────────────────────────────────
+
+  Molecular Function:
+    [HIGH  ] GO:0005248 voltage-gated sodium channel activity (score=16.5, 2 sources)
+    [HIGH  ] GO:0014704 C:intercalated disc (score=5.1, 1 sources)
+    [HIGH  ] GO:0030315 C:T-tubule (score=5.1, 1 sources)
+    [HIGH  ] GO:0030424 C:axon (score=5.1, 1 sources)
+    [HIGH  ] GO:0005516 F:calmodulin binding (score=5.1, 1 sources)
+
+  Biological Process:
+    [HIGH  ] GO:0006814 sodium ion transport (score=16.5, 2 sources)
+    [HIGH  ] GO:0099508 F:voltage-gated monoatomic ion channel activi (score=5.1, 1 sources)
+    [HIGH  ] GO:0071456 P:cellular response to hypoxia (score=5.1, 1 sources)
+    [MEDIUM] GO:0006811 monoatomic ion transport (score=4.2, 1 sources)
+    [MEDIUM] GO:0055085 transmembrane transport (score=4.2, 1 sources)
+
+  Cellular Component:
+    [HIGH  ] GO:0001518 voltage-gated sodium channel complex (score=16.5, 2 sources)
+    [HIGH  ] GO:0016020 membrane (score=11.0, 3 sources)
+    [HIGH  ] GO:0005886 plasma membrane (score=9.5, 2 sources)
+
+──────────────────────────────────────────────────────────────────────
+  ACTIVE SITES
+──────────────────────────────────────────────────────────────────────
+  C326 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
+  H880 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  C1198 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
+  H1849 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  C1850 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
+
+──────────────────────────────────────────────────────────────────────
+  PROTEIN INTERACTIONS (top 8)
+──────────────────────────────────────────────────────────────────────
+  CALM3           STRING=999  type=unknown
+  SCN1B           STRING=998  type=unknown
+  SCN4B           STRING=994  type=unknown
+  ANK3            STRING=993  type=unknown
+  FGF13           STRING=992  type=unknown
+  FGF12           STRING=988  type=unknown
+  CALM1           STRING=986  type=unknown
+  KCNH2           STRING=978  type=unknown
+
+──────────────────────────────────────────────────────────────────────
+  VALIDATION SUGGESTIONS
+──────────────────────────────────────────────────────────────────────
+  1. Alanine scanning mutagenesis of predicted active site residues (C326, H880, C1198) to confirm functional importance
+  2. Co-immunoprecipitation with CALM3 (unknown interaction, predicted interface: [526, 565, 800])
+  3. Co-immunoprecipitation with SCN1B (unknown interaction, predicted interface: [526, 565, 800])
+  4. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+
+──────────────────────────────────────────────────────────────────────
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+======================================================================

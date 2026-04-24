@@ -1,0 +1,733 @@
+{
+  "uniprot_id": "P12004",
+  "sequence_length": 261,
+  "mf_predictions": [
+    {
+      "go_id": "GO:0003677",
+      "go_name": "DNA binding",
+      "namespace": "MF",
+      "score": 0.85,
+      "evidence": [
+        "sequence_homolog",
+        "domain_annotation",
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        2,
+        16,
+        19,
+        23,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        34,
+        36,
+        37,
+        38,
+        39,
+        40,
+        46,
+        47,
+        49,
+        69
+      ]
+    },
+    {
+      "go_id": "GO:0004252",
+      "go_name": "serine-type endopeptidase activity",
+      "namespace": "MF",
+      "score": 0.85,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        2,
+        16,
+        19,
+        23,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        34,
+        36,
+        37,
+        38,
+        39,
+        40,
+        46,
+        47,
+        49,
+        69
+      ]
+    },
+    {
+      "go_id": "GO:0008270",
+      "go_name": "zinc ion binding",
+      "namespace": "MF",
+      "score": 0.8,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        2,
+        16,
+        19,
+        23,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        34,
+        36,
+        37,
+        38,
+        39,
+        40,
+        46,
+        47,
+        49,
+        69
+      ]
+    },
+    {
+      "go_id": "GO:0008233",
+      "go_name": "peptidase activity",
+      "namespace": "MF",
+      "score": 0.799,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        2,
+        16,
+        19,
+        23,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        34,
+        36,
+        37,
+        38,
+        39,
+        40,
+        46,
+        47,
+        49,
+        69
+      ]
+    },
+    {
+      "go_id": "GO:0046872",
+      "go_name": "metal ion binding",
+      "namespace": "MF",
+      "score": 0.75,
+      "evidence": [
+        "structural_motif",
+        "sequence_composition"
+      ],
+      "saliency_residues": [
+        2,
+        16,
+        19,
+        23,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        34,
+        36,
+        37,
+        38,
+        39,
+        40,
+        46,
+        47,
+        49,
+        69
+      ]
+    },
+    {
+      "go_id": "GO:0005515",
+      "go_name": "protein binding",
+      "namespace": "MF",
+      "score": 0.6,
+      "evidence": [
+        "ai_esm2"
+      ],
+      "saliency_residues": [
+        2,
+        16,
+        19,
+        23,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        34,
+        36,
+        37,
+        38,
+        39,
+        40,
+        46,
+        47,
+        49,
+        69
+      ]
+    },
+    {
+      "go_id": "GO:0005172",
+      "go_name": "vascular endothelial growth factor receptor binding",
+      "namespace": "MF",
+      "score": 0.55,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        2,
+        16,
+        19,
+        23,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        34,
+        36,
+        37,
+        38,
+        39,
+        40,
+        46,
+        47,
+        49,
+        69
+      ]
+    },
+    {
+      "go_id": "GO:0003824",
+      "go_name": "catalytic activity",
+      "namespace": "MF",
+      "score": 0.55,
+      "evidence": [
+        "active_site"
+      ],
+      "saliency_residues": [
+        2,
+        16,
+        19,
+        23,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        34,
+        36,
+        37,
+        38,
+        39,
+        40,
+        46,
+        47,
+        49,
+        69
+      ]
+    },
+    {
+      "go_id": "GO:0005488",
+      "go_name": "binding",
+      "namespace": "MF",
+      "score": 0.55,
+      "evidence": [
+        "sequence_composition"
+      ],
+      "saliency_residues": [
+        2,
+        16,
+        19,
+        23,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        34,
+        36,
+        37,
+        38,
+        39,
+        40,
+        46,
+        47,
+        49,
+        69
+      ]
+    },
+    {
+      "go_id": "GO:0003700",
+      "go_name": "DNA-binding transcription factor activity",
+      "namespace": "MF",
+      "score": 0.45,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        2,
+        16,
+        19,
+        23,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        34,
+        36,
+        37,
+        38,
+        39,
+        40,
+        46,
+        47,
+        49,
+        69
+      ]
+    }
+  ],
+  "bp_predictions": [
+    {
+      "go_id": "GO:0006275",
+      "go_name": "regulation of DNA replication",
+      "namespace": "BP",
+      "score": 0.75,
+      "evidence": [
+        "sequence_homolog",
+        "domain_annotation"
+      ],
+      "saliency_residues": [
+        2,
+        16,
+        19,
+        23,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        34,
+        36,
+        37,
+        38,
+        39,
+        40,
+        46,
+        47,
+        49,
+        69
+      ]
+    },
+    {
+      "go_id": "GO:0030337",
+      "go_name": "DNA polymerase processivity factor activity",
+      "namespace": "BP",
+      "score": 0.75,
+      "evidence": [
+        "sequence_homolog",
+        "domain_annotation"
+      ],
+      "saliency_residues": [
+        2,
+        16,
+        19,
+        23,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        34,
+        36,
+        37,
+        38,
+        39,
+        40,
+        46,
+        47,
+        49,
+        69
+      ]
+    },
+    {
+      "go_id": "GO:0006351",
+      "go_name": "DNA-templated transcription",
+      "namespace": "BP",
+      "score": 0.65,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        2,
+        16,
+        19,
+        23,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        34,
+        36,
+        37,
+        38,
+        39,
+        40,
+        46,
+        47,
+        49,
+        69
+      ]
+    },
+    {
+      "go_id": "GO:0030193",
+      "go_name": "regulation of blood coagulation",
+      "namespace": "BP",
+      "score": 0.6,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        2,
+        16,
+        19,
+        23,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        34,
+        36,
+        37,
+        38,
+        39,
+        40,
+        46,
+        47,
+        49,
+        69
+      ]
+    },
+    {
+      "go_id": "GO:0045944",
+      "go_name": "positive regulation of transcription by RNA pol II",
+      "namespace": "BP",
+      "score": 0.6,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        2,
+        16,
+        19,
+        23,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        34,
+        36,
+        37,
+        38,
+        39,
+        40,
+        46,
+        47,
+        49,
+        69
+      ]
+    },
+    {
+      "go_id": "GO:0015701",
+      "go_name": "bicarbonate transport",
+      "namespace": "BP",
+      "score": 0.6,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        2,
+        16,
+        19,
+        23,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        34,
+        36,
+        37,
+        38,
+        39,
+        40,
+        46,
+        47,
+        49,
+        69
+      ]
+    },
+    {
+      "go_id": "GO:0006508",
+      "go_name": "proteolysis",
+      "namespace": "BP",
+      "score": 0.55,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        2,
+        16,
+        19,
+        23,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        34,
+        36,
+        37,
+        38,
+        39,
+        40,
+        46,
+        47,
+        49,
+        69
+      ]
+    },
+    {
+      "go_id": "GO:0001659",
+      "go_name": "temperature homeostasis",
+      "namespace": "BP",
+      "score": 0.5,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        2,
+        16,
+        19,
+        23,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        34,
+        36,
+        37,
+        38,
+        39,
+        40,
+        46,
+        47,
+        49,
+        69
+      ]
+    },
+    {
+      "go_id": "GO:0010819",
+      "go_name": "regulation of T cell chemotaxis",
+      "namespace": "BP",
+      "score": 0.45,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        2,
+        16,
+        19,
+        23,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        34,
+        36,
+        37,
+        38,
+        39,
+        40,
+        46,
+        47,
+        49,
+        69
+      ]
+    }
+  ],
+  "cc_predictions": [
+    {
+      "go_id": "GO:0043234",
+      "go_name": "protein complex",
+      "namespace": "CC",
+      "score": 0.55,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        2,
+        16,
+        19,
+        23,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        34,
+        36,
+        37,
+        38,
+        39,
+        40,
+        46,
+        47,
+        49,
+        69
+      ]
+    },
+    {
+      "go_id": "GO:0005634",
+      "go_name": "nucleus",
+      "namespace": "CC",
+      "score": 0.5,
+      "evidence": [
+        "ai_esm2",
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        2,
+        16,
+        19,
+        23,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        34,
+        36,
+        37,
+        38,
+        39,
+        40,
+        46,
+        47,
+        49,
+        69
+      ]
+    },
+    {
+      "go_id": "GO:0072562",
+      "go_name": "blood microparticle",
+      "namespace": "CC",
+      "score": 0.5,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        2,
+        16,
+        19,
+        23,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        34,
+        36,
+        37,
+        38,
+        39,
+        40,
+        46,
+        47,
+        49,
+        69
+      ]
+    },
+    {
+      "go_id": "GO:0005737",
+      "go_name": "cytoplasm",
+      "namespace": "CC",
+      "score": 0.45,
+      "evidence": [
+        "sequence_baseline"
+      ],
+      "saliency_residues": [
+        2,
+        16,
+        19,
+        23,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        34,
+        36,
+        37,
+        38,
+        39,
+        40,
+        46,
+        47,
+        49,
+        69
+      ]
+    }
+  ],
+  "top_mf": "DNA binding",
+  "top_bp": "regulation of DNA replication",
+  "top_cc": "protein complex",
+  "n_predictions": 23
+}

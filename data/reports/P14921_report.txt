@@ -1,0 +1,77 @@
+======================================================================
+  ProteinFP Prediction Report
+  Generated: 2026-04-19 16:05:05
+======================================================================
+
+  Protein    : Protein C-ets-1
+  Gene       : ETS1
+  UniProt    : P14921
+  Organism   : Homo sapiens
+  Length     : 441 aa
+  Mean pLDDT : 65.4
+  Confidence : HIGH
+
+──────────────────────────────────────────────────────────────────────
+  FUNCTIONAL PREDICTION
+──────────────────────────────────────────────────────────────────────
+  Top function     : Transcription factor (PubMed:10698492, PubMed:11909962). Directly controls the expression of cytokine and chemokine genes in a wide variety of different cellular contexts (PubMed:20378371). May contro
+  Enzyme           : no (non-enzyme)
+  Location         : integral component of plasma membrane
+  Evidence sources : 8
+
+──────────────────────────────────────────────────────────────────────
+  GENE ONTOLOGY PREDICTIONS
+──────────────────────────────────────────────────────────────────────
+
+  Molecular Function:
+    [HIGH  ] GO:0003700 DNA-binding transcription factor activity (score=18.0, 3 sources)
+    [HIGH  ] GO:0043565 sequence-specific DNA binding (score=13.0, 2 sources)
+    [HIGH  ] GO:0000978 F:RNA polymerase II cis-regulatory region seq (score=9.5, 2 sources)
+    [HIGH  ] GO:0000981 F:DNA-binding transcription factor activity,  (score=9.4, 2 sources)
+    [HIGH  ] GO:1990837 F:sequence-specific double-stranded DNA bindi (score=9.3, 2 sources)
+
+  Biological Process:
+    [HIGH  ] GO:0006357 regulation of transcription by RNA polymerase (score=14.6, 3 sources)
+    [HIGH  ] GO:0010595 P:positive regulation of endothelial cell mig (score=5.1, 1 sources)
+    [HIGH  ] GO:0045765 P:regulation of angiogenesis (score=5.1, 1 sources)
+    [HIGH  ] GO:0006955 P:immune response (score=5.1, 1 sources)
+    [HIGH  ] GO:0045786 P:negative regulation of cell cycle (score=5.1, 1 sources)
+
+  Cellular Component:
+    [HIGH  ] GO:0005634 C:nucleus (score=14.2, 4 sources)
+    [HIGH  ] GO:0005737 C:cytoplasm (score=6.5, 2 sources)
+    [HIGH  ] GO:0005667 C:transcription regulator complex (score=5.1, 1 sources)
+
+──────────────────────────────────────────────────────────────────────
+  ACTIVE SITES
+──────────────────────────────────────────────────────────────────────
+  H128 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H430 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H76 [HIGH  ] motifs: zinc_binding_cluster, zinc_binding_cluster
+  G122 [MEDIUM] motifs: dfg_loop
+  R78 [MEDIUM] motifs: acid_base_pair, acid_base_pair
+
+──────────────────────────────────────────────────────────────────────
+  PROTEIN INTERACTIONS (top 8)
+──────────────────────────────────────────────────────────────────────
+  RUNX1           STRING=999  type=unknown
+  PAX5            STRING=996  type=unknown
+  MAPK1           STRING=992  type=unknown
+  FOXO1           STRING=978  type=unknown
+  TP53            STRING=972  type=unknown
+  ETS2            STRING=958  type=unknown
+  EP300           STRING=954  type=unknown
+  MAPK3           STRING=945  type=unknown
+
+──────────────────────────────────────────────────────────────────────
+  VALIDATION SUGGESTIONS
+──────────────────────────────────────────────────────────────────────
+  1. Alanine scanning mutagenesis of predicted active site residues (H128, H430, H76) to confirm functional importance
+  2. Co-immunoprecipitation with RUNX1 (unknown interaction, predicted interface: [268, 1, 243])
+  3. Co-immunoprecipitation with PAX5 (unknown interaction, predicted interface: [268, 1, 243])
+  4. EMSA or fluorescence polarisation assay to confirm 'DNA-binding transcription factor activity' (GO:0003700)
+  5. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+
+──────────────────────────────────────────────────────────────────────
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+======================================================================

@@ -4,151 +4,67 @@
   "protein_name": "Breast cancer type 1 susceptibility protein",
   "organism": "Homo sapiens",
   "sequence_length": 1863,
-  "generated_at": "2026-04-19 13:04:51",
-  "top_function": "E3 ubiquitin-protein ligase that specifically mediates the formation of 'Lys-6'-linked polyubiquitin chains and plays a central role in DNA repair by facilitating cellular responses to DNA damage (Pub",
+  "generated_at": "2026-04-19 19:49:26",
+  "top_function": "DNA binding",
   "is_enzyme": true,
   "ec_number": "3.4.21",
-  "subcellular_location": "C:plasma membrane",
+  "subcellular_location": "integral component of plasma membrane",
   "go_terms_mf": [
-    {
-      "go_id": "GO:0008270",
-      "go_name": "zinc ion binding",
-      "namespace": "MF",
-      "weighted_score": 17.69,
-      "n_sources": 4,
-      "sources": [
-        "experimental_homolog",
-        "domain_annotation",
-        "structural_motif",
-        "neural_classifier"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0003677",
-      "go_name": "DNA binding",
-      "namespace": "MF",
-      "weighted_score": 11.6,
-      "n_sources": 3,
-      "sources": [
-        "experimental_homolog",
-        "domain_annotation",
-        "structural_motif"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0004842",
-      "go_name": "ubiquitin-protein transferase activity",
-      "namespace": "MF",
-      "weighted_score": 9.5,
-      "n_sources": 2,
-      "sources": [
-        "experimental_homolog",
-        "domain_annotation"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
     {
       "go_id": "GO:0046872",
       "go_name": "metal ion binding",
       "namespace": "MF",
-      "weighted_score": 7.25,
-      "n_sources": 3,
+      "weighted_score": 9.88,
+      "n_sources": 4,
       "sources": [
+        "sequence_homolog",
         "domain_annotation",
         "structural_motif",
         "sequence_composition"
       ],
       "confidence": "HIGH",
-      "top_evidence": "sequence_composition"
+      "top_evidence": "sequence_homolog"
     },
     {
-      "go_id": "GO:0070063",
-      "go_name": "F:RNA polymerase binding",
+      "go_id": "GO:0003677",
+      "go_name": "DNA binding",
       "namespace": "MF",
-      "weighted_score": 5.1,
-      "n_sources": 1,
+      "weighted_score": 8.82,
+      "n_sources": 3,
       "sources": [
-        "experimental_homolog"
+        "sequence_homolog",
+        "domain_annotation",
+        "structural_motif"
       ],
       "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
+      "top_evidence": "structural_motif"
     },
     {
-      "go_id": "GO:0003713",
-      "go_name": "F:transcription coactivator activity",
+      "go_id": "GO:0008270",
+      "go_name": "zinc ion binding",
       "namespace": "MF",
-      "weighted_score": 5.1,
-      "n_sources": 1,
+      "weighted_score": 8.6,
+      "n_sources": 3,
       "sources": [
-        "experimental_homolog"
+        "sequence_homolog",
+        "domain_annotation",
+        "structural_motif"
       ],
       "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
+      "top_evidence": "structural_motif"
     },
     {
-      "go_id": "GO:0061630",
-      "go_name": "F:ubiquitin protein ligase activity",
+      "go_id": "GO:0004842",
+      "go_name": "ubiquitin-protein transferase activity",
       "namespace": "MF",
-      "weighted_score": 5.1,
-      "n_sources": 1,
+      "weighted_score": 6.88,
+      "n_sources": 2,
       "sources": [
-        "experimental_homolog"
+        "sequence_homolog",
+        "domain_annotation"
       ],
       "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0043009",
-      "go_name": "P:chordate embryonic development",
-      "namespace": "MF",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0000800",
-      "go_name": "C:lateral element",
-      "namespace": "MF",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0016604",
-      "go_name": "C:nuclear body",
-      "namespace": "MF",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0005654",
-      "go_name": "C:nucleoplasm",
-      "namespace": "MF",
-      "weighted_score": 3.0,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "MEDIUM",
-      "top_evidence": "experimental_homolog"
+      "top_evidence": "sequence_homolog"
     },
     {
       "go_id": "GO:0004252",
@@ -187,8 +103,8 @@
       "top_evidence": "structural_motif"
     },
     {
-      "go_id": "GO:0003955",
-      "go_name": "NAD(P)H dehydrogenase (quinone) activity",
+      "go_id": "GO:0020037",
+      "go_name": "heme binding",
       "namespace": "MF",
       "weighted_score": 1.6,
       "n_sources": 1,
@@ -197,6 +113,90 @@
       ],
       "confidence": "LOW",
       "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0008233",
+      "go_name": "peptidase activity",
+      "namespace": "MF",
+      "weighted_score": 1.6,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0004714",
+      "go_name": "receptor protein tyrosine kinase activity",
+      "namespace": "MF",
+      "weighted_score": 1.5,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0003924",
+      "go_name": "GTPase activity",
+      "namespace": "MF",
+      "weighted_score": 1.5,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0019825",
+      "go_name": "oxygen binding",
+      "namespace": "MF",
+      "weighted_score": 1.5,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0005524",
+      "go_name": "ATP binding",
+      "namespace": "MF",
+      "weighted_score": 1.3,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0005172",
+      "go_name": "vascular endothelial growth factor receptor binding",
+      "namespace": "MF",
+      "weighted_score": 1.1,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0003824",
+      "go_name": "catalytic activity",
+      "namespace": "MF",
+      "weighted_score": 1.1,
+      "n_sources": 1,
+      "sources": [
+        "active_site"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "active_site"
     }
   ],
   "go_terms_bp": [
@@ -204,122 +204,27 @@
       "go_id": "GO:0006281",
       "go_name": "DNA repair",
       "namespace": "BP",
-      "weighted_score": 7.75,
-      "n_sources": 1,
+      "weighted_score": 10.38,
+      "n_sources": 2,
       "sources": [
+        "sequence_homolog",
         "domain_annotation"
       ],
       "confidence": "HIGH",
-      "top_evidence": "domain_annotation"
-    },
-    {
-      "go_id": "GO:0045944",
-      "go_name": "P:positive regulation of transcription by RNA polymerase II",
-      "namespace": "BP",
-      "weighted_score": 6.5,
-      "n_sources": 2,
-      "sources": [
-        "experimental_homolog",
-        "structural_motif"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0000724",
-      "go_name": "P:double-strand break repair via homologous recombination",
-      "namespace": "BP",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0006633",
-      "go_name": "P:fatty acid biosynthetic process",
-      "namespace": "BP",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0007095",
-      "go_name": "P:mitotic G2 DNA damage checkpoint signaling",
-      "namespace": "BP",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0045717",
-      "go_name": "P:negative regulation of fatty acid biosynthetic process",
-      "namespace": "BP",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0045893",
-      "go_name": "P:positive regulation of DNA-templated transcription",
-      "namespace": "BP",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0051865",
-      "go_name": "P:protein autoubiquitination",
-      "namespace": "BP",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:1990391",
-      "go_name": "C:DNA repair complex",
-      "namespace": "BP",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
+      "top_evidence": "sequence_homolog"
     },
     {
       "go_id": "GO:0006974",
       "go_name": "DNA damage response",
       "namespace": "BP",
-      "weighted_score": 4.25,
-      "n_sources": 1,
+      "weighted_score": 6.88,
+      "n_sources": 2,
       "sources": [
+        "sequence_homolog",
         "domain_annotation"
       ],
-      "confidence": "MEDIUM",
-      "top_evidence": "domain_annotation"
+      "confidence": "HIGH",
+      "top_evidence": "sequence_homolog"
     },
     {
       "go_id": "GO:0006468",
@@ -358,8 +263,8 @@
       "top_evidence": "structural_motif"
     },
     {
-      "go_id": "GO:0055114",
-      "go_name": "oxidation-reduction process",
+      "go_id": "GO:0015671",
+      "go_name": "oxygen transport",
       "namespace": "BP",
       "weighted_score": 1.4,
       "n_sources": 1,
@@ -370,10 +275,106 @@
       "top_evidence": "structural_motif"
     },
     {
-      "go_id": "GO:0015671",
-      "go_name": "oxygen transport",
+      "go_id": "GO:0006351",
+      "go_name": "DNA-templated transcription",
       "namespace": "BP",
-      "weighted_score": 1.4,
+      "weighted_score": 1.3,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0030193",
+      "go_name": "regulation of blood coagulation",
+      "namespace": "BP",
+      "weighted_score": 1.2,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0045944",
+      "go_name": "positive regulation of transcription by RNA pol II",
+      "namespace": "BP",
+      "weighted_score": 1.2,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0007173",
+      "go_name": "epidermal growth factor receptor signaling pathway",
+      "namespace": "BP",
+      "weighted_score": 1.2,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0008283",
+      "go_name": "cell population proliferation",
+      "namespace": "BP",
+      "weighted_score": 1.2,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0038127",
+      "go_name": "ERBB signaling pathway",
+      "namespace": "BP",
+      "weighted_score": 1.2,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0046628",
+      "go_name": "positive regulation of insulin receptor signaling pathway",
+      "namespace": "BP",
+      "weighted_score": 1.1,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0019430",
+      "go_name": "removal of superoxide radicals",
+      "namespace": "BP",
+      "weighted_score": 1.1,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0006508",
+      "go_name": "proteolysis",
+      "namespace": "BP",
+      "weighted_score": 1.1,
       "n_sources": 1,
       "sources": [
         "structural_motif"
@@ -387,125 +388,112 @@
       "go_id": "GO:0005634",
       "go_name": "nucleus",
       "namespace": "CC",
-      "weighted_score": 12.35,
+      "weighted_score": 9.72,
       "n_sources": 4,
       "sources": [
-        "experimental_homolog",
+        "sequence_homolog",
         "domain_annotation",
         "ai_esm2",
         "structural_motif"
       ],
       "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
+      "top_evidence": "sequence_homolog"
+    },
+    {
+      "go_id": "GO:0005887",
+      "go_name": "integral component of plasma membrane",
+      "namespace": "CC",
+      "weighted_score": 1.3,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0005833",
+      "go_name": "hemoglobin complex",
+      "namespace": "CC",
+      "weighted_score": 1.3,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0043234",
+      "go_name": "protein complex",
+      "namespace": "CC",
+      "weighted_score": 1.1,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0005615",
+      "go_name": "extracellular space",
+      "namespace": "CC",
+      "weighted_score": 1.1,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0016020",
+      "go_name": "membrane",
+      "namespace": "CC",
+      "weighted_score": 1.1,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0031838",
+      "go_name": "haptoglobin-hemoglobin complex",
+      "namespace": "CC",
+      "weighted_score": 1.1,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0072562",
+      "go_name": "blood microparticle",
+      "namespace": "CC",
+      "weighted_score": 1.0,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
     },
     {
       "go_id": "GO:0005737",
-      "go_name": "C:cytoplasm",
+      "go_name": "cytoplasm",
       "namespace": "CC",
-      "weighted_score": 6.5,
-      "n_sources": 2,
+      "weighted_score": 0.9,
+      "n_sources": 1,
       "sources": [
-        "experimental_homolog",
         "sequence_baseline"
       ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0070531",
-      "go_name": "C:BRCA1-A complex",
-      "namespace": "CC",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0031436",
-      "go_name": "C:BRCA1-BARD1 complex",
-      "namespace": "CC",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0005694",
-      "go_name": "C:chromosome",
-      "namespace": "CC",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0070013",
-      "go_name": "C:intracellular organelle lumen",
-      "namespace": "CC",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0070532",
-      "go_name": "C:BRCA1-B complex",
-      "namespace": "CC",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0070533",
-      "go_name": "C:BRCA1-C complex",
-      "namespace": "CC",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0000152",
-      "go_name": "C:nuclear ubiquitin ligase complex",
-      "namespace": "CC",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0005886",
-      "go_name": "C:plasma membrane",
-      "namespace": "CC",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
+      "confidence": "LOW",
+      "top_evidence": "sequence_baseline"
     }
   ],
   "active_sites": [
@@ -576,7 +564,8 @@
         "serine_protease_triad",
         "serine_protease_triad",
         "serine_protease_triad",
-        "serine_protease_triad"
+        "serine_protease_triad",
+        "p_loop_walker_a"
       ],
       "evidence_score": 7,
       "confidence": "HIGH",
@@ -636,50 +625,6 @@
         29.817,
         35.884,
         -78.133
-      ],
-      "domain_context": "breast cancer type 1 susceptibility protein brca1"
-    },
-    {
-      "residue_number": 816,
-      "chain_id": "A",
-      "one_letter": "H",
-      "three_letter": "HIS",
-      "conservation": 7.0,
-      "is_conserved": true,
-      "is_buried": false,
-      "sasa": 173.43,
-      "plddt": 33.03,
-      "motifs": [
-        "p_loop_walker_a"
-      ],
-      "evidence_score": 6,
-      "confidence": "HIGH",
-      "coords": [
-        13.123,
-        -87.886,
-        -5.776
-      ],
-      "domain_context": "breast cancer type 1 susceptibility protein brca1"
-    },
-    {
-      "residue_number": 818,
-      "chain_id": "A",
-      "one_letter": "C",
-      "three_letter": "CYS",
-      "conservation": 7.5,
-      "is_conserved": true,
-      "is_buried": false,
-      "sasa": 126.92,
-      "plddt": 33.62,
-      "motifs": [
-        "p_loop_walker_a"
-      ],
-      "evidence_score": 6,
-      "confidence": "HIGH",
-      "coords": [
-        11.581,
-        -85.355,
-        -12.067
       ],
       "domain_context": "breast cancer type 1 susceptibility protein brca1"
     },
@@ -779,6 +724,94 @@
       "domain_context": "ring/u-box"
     },
     {
+      "residue_number": 1706,
+      "chain_id": "A",
+      "one_letter": "G",
+      "three_letter": "GLY",
+      "conservation": 4.0,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 0.0,
+      "plddt": 95.88,
+      "motifs": [
+        "p_loop_walker_a"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        -6.717,
+        13.044,
+        -7.715
+      ],
+      "domain_context": "brct domain"
+    },
+    {
+      "residue_number": 1707,
+      "chain_id": "A",
+      "one_letter": "I",
+      "three_letter": "ILE",
+      "conservation": 3.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 0.27,
+      "plddt": 97.0,
+      "motifs": [
+        "p_loop_walker_a"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        -3.548,
+        15.161,
+        -8.193
+      ],
+      "domain_context": "brct domain"
+    },
+    {
+      "residue_number": 1708,
+      "chain_id": "A",
+      "one_letter": "A",
+      "three_letter": "ALA",
+      "conservation": 3.0,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 1.59,
+      "plddt": 96.12,
+      "motifs": [
+        "p_loop_walker_a"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        -3.164,
+        14.396,
+        -11.957
+      ],
+      "domain_context": "brct domain"
+    },
+    {
+      "residue_number": 1710,
+      "chain_id": "A",
+      "one_letter": "G",
+      "three_letter": "GLY",
+      "conservation": 4.0,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 15.84,
+      "plddt": 95.0,
+      "motifs": [
+        "p_loop_walker_a"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        -6.377,
+        18.747,
+        -10.489
+      ],
+      "domain_context": "brct domain"
+    },
+    {
       "residue_number": 1739,
       "chain_id": "A",
       "one_letter": "D",
@@ -802,6 +835,50 @@
         2.74,
         11.831,
         1.36
+      ],
+      "domain_context": "brct domain"
+    },
+    {
+      "residue_number": 1748,
+      "chain_id": "A",
+      "one_letter": "G",
+      "three_letter": "GLY",
+      "conservation": 4.0,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 0.0,
+      "plddt": 95.44,
+      "motifs": [
+        "p_loop_walker_a"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        1.469,
+        18.504,
+        -4.407
+      ],
+      "domain_context": "brct domain"
+    },
+    {
+      "residue_number": 1749,
+      "chain_id": "A",
+      "one_letter": "P",
+      "three_letter": "PRO",
+      "conservation": 3.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 0.55,
+      "plddt": 96.38,
+      "motifs": [
+        "p_loop_walker_a"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        -2.394,
+        18.46,
+        -4.628
       ],
       "domain_context": "brct domain"
     },
@@ -878,6 +955,141 @@
         14.507
       ],
       "domain_context": "ring/u-box"
+    },
+    {
+      "residue_number": 1709,
+      "chain_id": "A",
+      "one_letter": "G",
+      "three_letter": "GLY",
+      "conservation": 4.0,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 22.81,
+      "plddt": 93.94,
+      "motifs": [
+        "p_loop_walker_a"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -6.829,
+        15.46,
+        -12.517
+      ],
+      "domain_context": "brct domain"
+    },
+    {
+      "residue_number": 1711,
+      "chain_id": "A",
+      "one_letter": "K",
+      "three_letter": "LYS",
+      "conservation": 6.0,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 23.16,
+      "plddt": 95.62,
+      "motifs": [
+        "dna_binding_cluster",
+        "p_loop_walker_a"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -9.09,
+        17.53,
+        -8.017
+      ],
+      "domain_context": "brct domain"
+    },
+    {
+      "residue_number": 1743,
+      "chain_id": "A",
+      "one_letter": "G",
+      "three_letter": "GLY",
+      "conservation": 4.0,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 31.0,
+      "plddt": 89.75,
+      "motifs": [
+        "p_loop_walker_a"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        7.605,
+        14.292,
+        2.271
+      ],
+      "domain_context": "brct domain"
+    },
+    {
+      "residue_number": 1744,
+      "chain_id": "A",
+      "one_letter": "R",
+      "three_letter": "ARG",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 119.61,
+      "plddt": 93.06,
+      "motifs": [
+        "dna_binding_cluster",
+        "acid_base_pair",
+        "p_loop_walker_a"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        5.156,
+        15.745,
+        4.828
+      ],
+      "domain_context": "brct domain"
+    },
+    {
+      "residue_number": 1745,
+      "chain_id": "A",
+      "one_letter": "N",
+      "three_letter": "ASN",
+      "conservation": 4.0,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 102.74,
+      "plddt": 92.75,
+      "motifs": [
+        "p_loop_walker_a"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        4.656,
+        19.215,
+        3.182
+      ],
+      "domain_context": "brct domain"
+    },
+    {
+      "residue_number": 1747,
+      "chain_id": "A",
+      "one_letter": "Q",
+      "three_letter": "GLN",
+      "conservation": 4.0,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 57.91,
+      "plddt": 94.25,
+      "motifs": [
+        "p_loop_walker_a"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        1.955,
+        20.817,
+        -1.354
+      ],
+      "domain_context": "brct domain"
     },
     {
       "residue_number": 24,
@@ -974,149 +1186,6 @@
       "domain_context": "ring/u-box"
     },
     {
-      "residue_number": 1697,
-      "chain_id": "A",
-      "one_letter": "C",
-      "three_letter": "CYS",
-      "conservation": 7.5,
-      "is_conserved": true,
-      "is_buried": true,
-      "sasa": 3.26,
-      "plddt": 96.06,
-      "motifs": [
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster"
-      ],
-      "evidence_score": 9,
-      "confidence": "HIGH",
-      "coords": [
-        -1.319,
-        10.475,
-        3.512
-      ],
-      "domain_context": "brct domain"
-    },
-    {
-      "residue_number": 1767,
-      "chain_id": "A",
-      "one_letter": "C",
-      "three_letter": "CYS",
-      "conservation": 7.5,
-      "is_conserved": true,
-      "is_buried": true,
-      "sasa": 0.58,
-      "plddt": 94.5,
-      "motifs": [
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster"
-      ],
-      "evidence_score": 9,
-      "confidence": "HIGH",
-      "coords": [
-        5.142,
-        4.426,
-        -23.534
-      ],
-      "domain_context": "breast cancer type 1 susceptibility protein brca1"
-    },
-    {
-      "residue_number": 1768,
-      "chain_id": "A",
-      "one_letter": "C",
-      "three_letter": "CYS",
-      "conservation": 7.5,
-      "is_conserved": true,
-      "is_buried": true,
-      "sasa": 13.01,
-      "plddt": 94.56,
-      "motifs": [
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster"
-      ],
-      "evidence_score": 9,
-      "confidence": "HIGH",
-      "coords": [
-        4.054,
-        2.447,
-        -20.424
-      ],
-      "domain_context": "breast cancer type 1 susceptibility protein brca1"
-    },
-    {
-      "residue_number": 27,
-      "chain_id": "A",
-      "one_letter": "C",
-      "three_letter": "CYS",
-      "conservation": 7.5,
-      "is_conserved": true,
-      "is_buried": false,
-      "sasa": 44.44,
-      "plddt": 91.69,
-      "motifs": [
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster"
-      ],
-      "evidence_score": 7,
-      "confidence": "HIGH",
-      "coords": [
-        -22.46,
-        -31.184,
-        21.345
-      ],
-      "domain_context": "ring/u-box"
-    },
-    {
-      "residue_number": 64,
-      "chain_id": "A",
-      "one_letter": "C",
-      "three_letter": "CYS",
-      "conservation": 7.5,
-      "is_conserved": true,
-      "is_buried": false,
-      "sasa": 37.0,
-      "plddt": 88.56,
-      "motifs": [
-        "zinc_binding_cluster",
-        "zinc_binding_cluster",
-        "zinc_binding_cluster"
-      ],
-      "evidence_score": 7,
-      "confidence": "HIGH",
-      "coords": [
-        -9.993,
-        -39.955,
-        13.476
-      ],
-      "domain_context": "ring/u-box"
-    },
-    {
-      "residue_number": 1402,
-      "chain_id": "A",
-      "one_letter": "H",
-      "three_letter": "HIS",
-      "conservation": 7.0,
-      "is_conserved": true,
-      "is_buried": false,
-      "sasa": 121.28,
-      "plddt": 92.0,
-      "motifs": [
-        "acid_base_pair",
-        "haem_binding"
-      ],
-      "evidence_score": 7,
-      "confidence": "HIGH",
-      "coords": [
-        10.178,
-        -32.406,
-        -11.003
-      ],
-      "domain_context": "breast cancer type 1 susceptibility protein brca1"
-    },
-    {
       "residue_number": 1686,
       "chain_id": "A",
       "one_letter": "H",
@@ -1126,8 +1195,10 @@
       "is_buried": true,
       "sasa": 9.08,
       "plddt": 97.31,
-      "motifs": [],
-      "evidence_score": 7,
+      "motifs": [
+        "haem_binding"
+      ],
+      "evidence_score": 9,
       "confidence": "HIGH",
       "coords": [
         -13.031,
@@ -1135,94 +1206,6 @@
         -4.381
       ],
       "domain_context": "brct domain"
-    },
-    {
-      "residue_number": 1732,
-      "chain_id": "A",
-      "one_letter": "H",
-      "three_letter": "HIS",
-      "conservation": 7.0,
-      "is_conserved": true,
-      "is_buried": false,
-      "sasa": 105.66,
-      "plddt": 94.31,
-      "motifs": [
-        "zinc_binding_cluster",
-        "acid_base_pair",
-        "acid_base_pair",
-        "acid_base_pair"
-      ],
-      "evidence_score": 7,
-      "confidence": "HIGH",
-      "coords": [
-        -8.713,
-        24.546,
-        1.648
-      ],
-      "domain_context": "brct domain"
-    },
-    {
-      "residue_number": 1787,
-      "chain_id": "A",
-      "one_letter": "C",
-      "three_letter": "CYS",
-      "conservation": 7.5,
-      "is_conserved": true,
-      "is_buried": true,
-      "sasa": 0.11,
-      "plddt": 94.88,
-      "motifs": [],
-      "evidence_score": 7,
-      "confidence": "HIGH",
-      "coords": [
-        -0.648,
-        15.179,
-        -16.526
-      ],
-      "domain_context": "breast cancer type 1 susceptibility protein brca1"
-    },
-    {
-      "residue_number": 1805,
-      "chain_id": "A",
-      "one_letter": "H",
-      "three_letter": "HIS",
-      "conservation": 7.0,
-      "is_conserved": true,
-      "is_buried": false,
-      "sasa": 118.48,
-      "plddt": 89.12,
-      "motifs": [
-        "zinc_binding_cluster",
-        "acid_base_pair"
-      ],
-      "evidence_score": 7,
-      "confidence": "HIGH",
-      "coords": [
-        10.446,
-        13.827,
-        -26.215
-      ],
-      "domain_context": "breast cancer type 1 susceptibility protein brca1"
-    },
-    {
-      "residue_number": 1828,
-      "chain_id": "A",
-      "one_letter": "C",
-      "three_letter": "CYS",
-      "conservation": 7.5,
-      "is_conserved": true,
-      "is_buried": true,
-      "sasa": 19.76,
-      "plddt": 82.94,
-      "motifs": [],
-      "evidence_score": 7,
-      "confidence": "HIGH",
-      "coords": [
-        14.114,
-        2.606,
-        -29.541
-      ],
-      "domain_context": "breast cancer type 1 susceptibility protein brca1"
     }
   ],
   "binding_pockets": [
@@ -2814,14 +2797,14 @@
   ],
   "mean_plddt": 41.59,
   "n_evidence_sources": 12,
-  "overall_confidence": "VERY HIGH",
+  "overall_confidence": "MEDIUM",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (C39, H41, H1746) to confirm functional importance",
     "Thermal shift assay or SPR binding assay against pocket P1 (vol=1720\u00c5\u00b3, druggability=0.97)",
     "Co-immunoprecipitation with MDC1 (unknown interaction, predicted interface: [1863, 1508, 1076])",
     "Co-immunoprecipitation with PALB2 (unknown interaction, predicted interface: [1863, 1508, 1076])",
     "Enzyme activity assay consistent with EC 3.4.21 using appropriate substrate panel",
-    "EMSA or fluorescence polarisation assay to confirm 'zinc ion binding' (GO:0008270)",
+    "EMSA or fluorescence polarisation assay to confirm 'metal ion binding' (GO:0046872)",
     "GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation"
   ],
   "modules_run": [

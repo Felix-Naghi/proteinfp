@@ -4,331 +4,203 @@
   "protein_name": "Heat shock protein HSP 90-alpha",
   "organism": "Homo sapiens",
   "sequence_length": 732,
-  "generated_at": "2026-04-19 13:04:43",
-  "top_function": "Molecular chaperone that promotes the maturation, structural maintenance and proper regulation of specific target proteins involved for instance in cell cycle control and signal transduction. Undergoe",
+  "generated_at": "2026-04-19 17:25:51",
+  "top_function": "serine-type endopeptidase activity",
   "is_enzyme": false,
-  "ec_number": "3.6.1",
-  "subcellular_location": "C:plasma membrane",
+  "ec_number": "3.4.21",
+  "subcellular_location": "membrane",
   "go_terms_mf": [
     {
       "go_id": "GO:0005524",
       "go_name": "ATP binding",
       "namespace": "MF",
-      "weighted_score": 22.06,
-      "n_sources": 4,
+      "weighted_score": 10.38,
+      "n_sources": 2,
       "sources": [
-        "experimental_homolog",
-        "domain_annotation",
-        "structural_motif",
-        "neural_classifier"
+        "sequence_homolog",
+        "domain_annotation"
       ],
       "confidence": "HIGH",
-      "top_evidence": "neural_classifier"
+      "top_evidence": "sequence_homolog"
     },
     {
       "go_id": "GO:0051082",
       "go_name": "unfolded protein binding",
       "namespace": "MF",
-      "weighted_score": 21.53,
-      "n_sources": 4,
+      "weighted_score": 10.38,
+      "n_sources": 2,
       "sources": [
-        "experimental_homolog",
-        "domain_annotation",
-        "structural_motif",
-        "neural_classifier"
+        "sequence_homolog",
+        "domain_annotation"
       ],
       "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
+      "top_evidence": "sequence_homolog"
     },
     {
       "go_id": "GO:0016887",
       "go_name": "ATP hydrolysis activity",
       "namespace": "MF",
-      "weighted_score": 17.72,
-      "n_sources": 4,
-      "sources": [
-        "experimental_homolog",
-        "domain_annotation",
-        "structural_motif",
-        "neural_classifier"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0042470",
-      "go_name": "C:melanosome",
-      "namespace": "MF",
-      "weighted_score": 9.64,
+      "weighted_score": 6.88,
       "n_sources": 2,
       "sources": [
-        "experimental_homolog",
-        "neural_classifier"
+        "sequence_homolog",
+        "domain_annotation"
       ],
       "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
+      "top_evidence": "sequence_homolog"
     },
     {
-      "go_id": "GO:0043025",
-      "go_name": "C:neuronal cell body",
-      "namespace": "MF",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0005739",
-      "go_name": "C:mitochondrion",
-      "namespace": "MF",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0043209",
-      "go_name": "C:myelin sheath",
-      "namespace": "MF",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0030235",
-      "go_name": "F:nitric-oxide synthase regulator activity",
-      "namespace": "MF",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0044295",
-      "go_name": "C:axonal growth cone",
-      "namespace": "MF",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0009986",
-      "go_name": "C:cell surface",
+      "go_id": "GO:0046872",
+      "go_name": "metal ion binding",
       "namespace": "MF",
       "weighted_score": 3.0,
-      "n_sources": 1,
+      "n_sources": 2,
       "sources": [
-        "experimental_homolog"
+        "structural_motif",
+        "sequence_composition"
       ],
       "confidence": "MEDIUM",
-      "top_evidence": "experimental_homolog"
+      "top_evidence": "sequence_composition"
     },
     {
-      "go_id": "GO:0044294",
-      "go_name": "C:dendritic growth cone",
+      "go_id": "GO:0004252",
+      "go_name": "serine-type endopeptidase activity",
       "namespace": "MF",
-      "weighted_score": 3.0,
+      "weighted_score": 1.7,
       "n_sources": 1,
       "sources": [
-        "experimental_homolog"
+        "structural_motif"
       ],
-      "confidence": "MEDIUM",
-      "top_evidence": "experimental_homolog"
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
     },
     {
-      "go_id": "GO:0005654",
-      "go_name": "C:nucleoplasm",
+      "go_id": "GO:0003677",
+      "go_name": "DNA binding",
       "namespace": "MF",
-      "weighted_score": 3.0,
+      "weighted_score": 1.7,
       "n_sources": 1,
       "sources": [
-        "experimental_homolog"
+        "structural_motif"
       ],
-      "confidence": "MEDIUM",
-      "top_evidence": "experimental_homolog"
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
     },
     {
-      "go_id": "GO:0030911",
-      "go_name": "F:TPR domain binding",
+      "go_id": "GO:0008270",
+      "go_name": "zinc ion binding",
       "namespace": "MF",
-      "weighted_score": 3.0,
+      "weighted_score": 1.6,
       "n_sources": 1,
       "sources": [
-        "experimental_homolog"
+        "structural_motif"
       ],
-      "confidence": "MEDIUM",
-      "top_evidence": "experimental_homolog"
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
     },
     {
-      "go_id": "GO:1904813",
-      "go_name": "C:ficolin-1-rich granule lumen",
+      "go_id": "GO:0008233",
+      "go_name": "peptidase activity",
       "namespace": "MF",
-      "weighted_score": 3.0,
+      "weighted_score": 1.6,
       "n_sources": 1,
       "sources": [
-        "experimental_homolog"
+        "structural_motif"
       ],
-      "confidence": "MEDIUM",
-      "top_evidence": "experimental_homolog"
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
     },
     {
-      "go_id": "GO:0097718",
-      "go_name": "F:disordered domain specific binding",
+      "go_id": "GO:0005172",
+      "go_name": "vascular endothelial growth factor receptor binding",
       "namespace": "MF",
-      "weighted_score": 3.0,
+      "weighted_score": 1.1,
       "n_sources": 1,
       "sources": [
-        "experimental_homolog"
+        "structural_motif"
       ],
-      "confidence": "MEDIUM",
-      "top_evidence": "experimental_homolog"
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0003824",
+      "go_name": "catalytic activity",
+      "namespace": "MF",
+      "weighted_score": 1.1,
+      "n_sources": 1,
+      "sources": [
+        "active_site"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "active_site"
+    },
+    {
+      "go_id": "GO:0005488",
+      "go_name": "binding",
+      "namespace": "MF",
+      "weighted_score": 1.1,
+      "n_sources": 1,
+      "sources": [
+        "sequence_composition"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "sequence_composition"
+    },
+    {
+      "go_id": "GO:0005515",
+      "go_name": "protein binding",
+      "namespace": "MF",
+      "weighted_score": 1.08,
+      "n_sources": 1,
+      "sources": [
+        "ai_esm2"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "ai_esm2"
+    },
+    {
+      "go_id": "GO:0003700",
+      "go_name": "DNA-binding transcription factor activity",
+      "namespace": "MF",
+      "weighted_score": 0.9,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
     }
   ],
   "go_terms_bp": [
     {
-      "go_id": "GO:0140662",
-      "go_name": "ATP-dependent protein folding chaperone",
-      "namespace": "BP",
-      "weighted_score": 15.15,
-      "n_sources": 3,
-      "sources": [
-        "experimental_homolog",
-        "domain_annotation",
-        "neural_classifier"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
       "go_id": "GO:0006457",
       "go_name": "protein folding",
       "namespace": "BP",
-      "weighted_score": 11.18,
+      "weighted_score": 10.38,
       "n_sources": 2,
       "sources": [
-        "domain_annotation",
-        "neural_classifier"
+        "sequence_homolog",
+        "domain_annotation"
       ],
       "confidence": "HIGH",
-      "top_evidence": "neural_classifier"
+      "top_evidence": "sequence_homolog"
     },
     {
-      "go_id": "GO:0034605",
-      "go_name": "P:cellular response to heat",
+      "go_id": "GO:0140662",
+      "go_name": "ATP-dependent protein folding chaperone",
       "namespace": "BP",
-      "weighted_score": 9.43,
+      "weighted_score": 6.88,
       "n_sources": 2,
       "sources": [
-        "experimental_homolog",
-        "neural_classifier"
+        "sequence_homolog",
+        "domain_annotation"
       ],
       "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0002218",
-      "go_name": "P:activation of innate immune response",
-      "namespace": "BP",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0101031",
-      "go_name": "C:protein folding chaperone complex",
-      "namespace": "BP",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0098586",
-      "go_name": "P:cellular response to virus",
-      "namespace": "BP",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0002230",
-      "go_name": "P:positive regulation of defense response to virus by host",
-      "namespace": "BP",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0055114",
-      "go_name": "oxidation-reduction process",
-      "namespace": "BP",
-      "weighted_score": 1.4,
-      "n_sources": 1,
-      "sources": [
-        "structural_motif"
-      ],
-      "confidence": "LOW",
-      "top_evidence": "structural_motif"
-    },
-    {
-      "go_id": "GO:0015671",
-      "go_name": "oxygen transport",
-      "namespace": "BP",
-      "weighted_score": 1.4,
-      "n_sources": 1,
-      "sources": [
-        "structural_motif"
-      ],
-      "confidence": "LOW",
-      "top_evidence": "structural_motif"
+      "top_evidence": "sequence_homolog"
     },
     {
       "go_id": "GO:0006351",
       "go_name": "DNA-templated transcription",
-      "namespace": "BP",
-      "weighted_score": 1.3,
-      "n_sources": 1,
-      "sources": [
-        "structural_motif"
-      ],
-      "confidence": "LOW",
-      "top_evidence": "structural_motif"
-    },
-    {
-      "go_id": "GO:0051085",
-      "go_name": "chaperone cofactor-dependent protein refolding",
       "namespace": "BP",
       "weighted_score": 1.3,
       "n_sources": 1,
@@ -363,8 +235,8 @@
       "top_evidence": "structural_motif"
     },
     {
-      "go_id": "GO:0042493",
-      "go_name": "response to drug",
+      "go_id": "GO:0006508",
+      "go_name": "proteolysis",
       "namespace": "BP",
       "weighted_score": 1.1,
       "n_sources": 1,
@@ -375,10 +247,10 @@
       "top_evidence": "structural_motif"
     },
     {
-      "go_id": "GO:0019430",
-      "go_name": "removal of superoxide radicals",
+      "go_id": "GO:0010819",
+      "go_name": "regulation of T cell chemotaxis",
       "namespace": "BP",
-      "weighted_score": 1.1,
+      "weighted_score": 0.9,
       "n_sources": 1,
       "sources": [
         "structural_motif"
@@ -389,130 +261,53 @@
   ],
   "go_terms_cc": [
     {
-      "go_id": "GO:0005737",
-      "go_name": "C:cytoplasm",
-      "namespace": "CC",
-      "weighted_score": 11.89,
-      "n_sources": 3,
-      "sources": [
-        "experimental_homolog",
-        "sequence_baseline",
-        "neural_classifier"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0005829",
-      "go_name": "C:cytosol",
-      "namespace": "CC",
-      "weighted_score": 9.5,
-      "n_sources": 2,
-      "sources": [
-        "experimental_homolog",
-        "neural_classifier"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0032991",
-      "go_name": "C:protein-containing complex",
-      "namespace": "CC",
-      "weighted_score": 9.39,
-      "n_sources": 2,
-      "sources": [
-        "experimental_homolog",
-        "neural_classifier"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
       "go_id": "GO:0005634",
-      "go_name": "C:nucleus",
+      "go_name": "nucleus",
       "namespace": "CC",
-      "weighted_score": 7.76,
-      "n_sources": 3,
+      "weighted_score": 1.9,
+      "n_sources": 2,
       "sources": [
-        "experimental_homolog",
         "ai_esm2",
         "structural_motif"
       ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
+      "confidence": "LOW",
+      "top_evidence": "ai_esm2"
     },
     {
-      "go_id": "GO:0005886",
-      "go_name": "C:plasma membrane",
+      "go_id": "GO:0043234",
+      "go_name": "protein complex",
       "namespace": "CC",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0048471",
-      "go_name": "C:perinuclear region of cytoplasm",
-      "namespace": "CC",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0016323",
-      "go_name": "C:basolateral plasma membrane",
-      "namespace": "CC",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0031526",
-      "go_name": "C:brush border membrane",
-      "namespace": "CC",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0031012",
-      "go_name": "C:extracellular matrix",
-      "namespace": "CC",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0005833",
-      "go_name": "hemoglobin complex",
-      "namespace": "CC",
-      "weighted_score": 1.3,
+      "weighted_score": 1.1,
       "n_sources": 1,
       "sources": [
         "structural_motif"
       ],
       "confidence": "LOW",
       "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0072562",
+      "go_name": "blood microparticle",
+      "namespace": "CC",
+      "weighted_score": 1.0,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0005737",
+      "go_name": "cytoplasm",
+      "namespace": "CC",
+      "weighted_score": 0.9,
+      "n_sources": 1,
+      "sources": [
+        "sequence_baseline"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "sequence_baseline"
     }
   ],
   "active_sites": [
@@ -528,8 +323,7 @@
       "plddt": 89.69,
       "motifs": [
         "serine_protease_triad",
-        "serine_protease_triad",
-        "haem_binding"
+        "serine_protease_triad"
       ],
       "evidence_score": 9,
       "confidence": "HIGH",
@@ -559,8 +353,7 @@
         "serine_protease_triad",
         "zinc_binding_cluster",
         "acid_base_pair",
-        "acid_base_pair",
-        "haem_binding"
+        "acid_base_pair"
       ],
       "evidence_score": 7,
       "confidence": "HIGH",
@@ -615,8 +408,7 @@
         "serine_protease_triad",
         "serine_protease_triad",
         "serine_protease_triad",
-        "acid_base_pair",
-        "haem_binding"
+        "acid_base_pair"
       ],
       "evidence_score": 7,
       "confidence": "HIGH",
@@ -774,95 +566,6 @@
       "domain_context": "atpase domain of hsp90 chaperone/dna topoisomerase ii/histidine kinase"
     },
     {
-      "residue_number": 113,
-      "chain_id": "A",
-      "one_letter": "S",
-      "three_letter": "SER",
-      "conservation": 4.5,
-      "is_conserved": false,
-      "is_buried": true,
-      "sasa": 16.1,
-      "plddt": 84.56,
-      "motifs": [
-        "p_loop_walker_a"
-      ],
-      "evidence_score": 5,
-      "confidence": "MEDIUM",
-      "coords": [
-        10.509,
-        11.827,
-        -36.623
-      ],
-      "domain_context": "atpase domain of hsp90 chaperone/dna topoisomerase ii/histidine kinase"
-    },
-    {
-      "residue_number": 135,
-      "chain_id": "A",
-      "one_letter": "G",
-      "three_letter": "GLY",
-      "conservation": 4.0,
-      "is_conserved": false,
-      "is_buried": true,
-      "sasa": 18.37,
-      "plddt": 82.62,
-      "motifs": [
-        "p_loop_walker_a",
-        "flavin_binding"
-      ],
-      "evidence_score": 5,
-      "confidence": "MEDIUM",
-      "coords": [
-        10.041,
-        14.673,
-        -33.429
-      ],
-      "domain_context": "atpase domain of hsp90 chaperone/dna topoisomerase ii/histidine kinase"
-    },
-    {
-      "residue_number": 136,
-      "chain_id": "A",
-      "one_letter": "V",
-      "three_letter": "VAL",
-      "conservation": 3.5,
-      "is_conserved": false,
-      "is_buried": true,
-      "sasa": 8.68,
-      "plddt": 86.19,
-      "motifs": [
-        "p_loop_walker_a"
-      ],
-      "evidence_score": 5,
-      "confidence": "MEDIUM",
-      "coords": [
-        10.842,
-        17.195,
-        -30.597
-      ],
-      "domain_context": "atpase domain of hsp90 chaperone/dna topoisomerase ii/histidine kinase"
-    },
-    {
-      "residue_number": 137,
-      "chain_id": "A",
-      "one_letter": "G",
-      "three_letter": "GLY",
-      "conservation": 4.0,
-      "is_conserved": false,
-      "is_buried": true,
-      "sasa": 10.78,
-      "plddt": 88.0,
-      "motifs": [
-        "p_loop_walker_a"
-      ],
-      "evidence_score": 5,
-      "confidence": "MEDIUM",
-      "coords": [
-        12.283,
-        14.995,
-        -27.772
-      ],
-      "domain_context": "atpase domain of hsp90 chaperone/dna topoisomerase ii/histidine kinase"
-    },
-    {
       "residue_number": 164,
       "chain_id": "A",
       "one_letter": "S",
@@ -904,29 +607,6 @@
         13.754,
         3.983,
         -17.976
-      ],
-      "domain_context": "atpase domain of hsp90 chaperone/dna topoisomerase ii/histidine kinase"
-    },
-    {
-      "residue_number": 132,
-      "chain_id": "A",
-      "one_letter": "G",
-      "three_letter": "GLY",
-      "conservation": 4.0,
-      "is_conserved": false,
-      "is_buried": true,
-      "sasa": 11.02,
-      "plddt": 70.5,
-      "motifs": [
-        "p_loop_walker_a",
-        "flavin_binding"
-      ],
-      "evidence_score": 4,
-      "confidence": "MEDIUM",
-      "coords": [
-        9.421,
-        8.699,
-        -30.413
       ],
       "domain_context": "atpase domain of hsp90 chaperone/dna topoisomerase ii/histidine kinase"
     },
@@ -1004,160 +684,6 @@
       "domain_context": "atpase domain of hsp90 chaperone/dna topoisomerase ii/histidine kinase"
     },
     {
-      "residue_number": 108,
-      "chain_id": "A",
-      "one_letter": "G",
-      "three_letter": "GLY",
-      "conservation": 4.0,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 26.26,
-      "plddt": 82.38,
-      "motifs": [
-        "p_loop_walker_a"
-      ],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        17.914,
-        19.019,
-        -38.252
-      ],
-      "domain_context": "atpase domain of hsp90 chaperone/dna topoisomerase ii/histidine kinase"
-    },
-    {
-      "residue_number": 109,
-      "chain_id": "A",
-      "one_letter": "T",
-      "three_letter": "THR",
-      "conservation": 4.0,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 53.34,
-      "plddt": 84.75,
-      "motifs": [
-        "p_loop_walker_a"
-      ],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        14.085,
-        19.331,
-        -38.71
-      ],
-      "domain_context": "atpase domain of hsp90 chaperone/dna topoisomerase ii/histidine kinase"
-    },
-    {
-      "residue_number": 110,
-      "chain_id": "A",
-      "one_letter": "I",
-      "three_letter": "ILE",
-      "conservation": 3.5,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 32.3,
-      "plddt": 84.81,
-      "motifs": [
-        "p_loop_walker_a"
-      ],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        11.683,
-        20.258,
-        -35.871
-      ],
-      "domain_context": "atpase domain of hsp90 chaperone/dna topoisomerase ii/histidine kinase"
-    },
-    {
-      "residue_number": 111,
-      "chain_id": "A",
-      "one_letter": "A",
-      "three_letter": "ALA",
-      "conservation": 3.0,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 74.3,
-      "plddt": 83.12,
-      "motifs": [
-        "p_loop_walker_a"
-      ],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        8.525,
-        18.071,
-        -35.628
-      ],
-      "domain_context": "atpase domain of hsp90 chaperone/dna topoisomerase ii/histidine kinase"
-    },
-    {
-      "residue_number": 112,
-      "chain_id": "A",
-      "one_letter": "K",
-      "three_letter": "LYS",
-      "conservation": 6.0,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 94.48,
-      "plddt": 85.5,
-      "motifs": [
-        "p_loop_walker_a"
-      ],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        9.979,
-        15.369,
-        -37.941
-      ],
-      "domain_context": "atpase domain of hsp90 chaperone/dna topoisomerase ii/histidine kinase"
-    },
-    {
-      "residue_number": 114,
-      "chain_id": "A",
-      "one_letter": "G",
-      "three_letter": "GLY",
-      "conservation": 4.0,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 21.53,
-      "plddt": 81.56,
-      "motifs": [
-        "p_loop_walker_a"
-      ],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        12.277,
-        8.988,
-        -38.442
-      ],
-      "domain_context": "atpase domain of hsp90 chaperone/dna topoisomerase ii/histidine kinase"
-    },
-    {
-      "residue_number": 138,
-      "chain_id": "A",
-      "one_letter": "F",
-      "three_letter": "PHE",
-      "conservation": 4.5,
-      "is_conserved": false,
-      "is_buried": false,
-      "sasa": 23.24,
-      "plddt": 93.19,
-      "motifs": [
-        "p_loop_walker_a"
-      ],
-      "evidence_score": 3,
-      "confidence": "MEDIUM",
-      "coords": [
-        15.941,
-        15.264,
-        -28.974
-      ],
-      "domain_context": "atpase domain of hsp90 chaperone/dna topoisomerase ii/histidine kinase"
-    },
-    {
       "residue_number": 156,
       "chain_id": "A",
       "one_letter": "D",
@@ -1230,6 +756,303 @@
         -29.764
       ],
       "domain_context": "atpase domain of hsp90 chaperone/dna topoisomerase ii/histidine kinase"
+    },
+    {
+      "residue_number": 193,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 102.37,
+      "plddt": 95.81,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "acid_base_pair"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        24.965,
+        24.816,
+        -13.322
+      ],
+      "domain_context": "atpase domain of hsp90 chaperone/dna topoisomerase ii/histidine kinase"
+    },
+    {
+      "residue_number": 529,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 0.03,
+      "plddt": 96.62,
+      "motifs": [
+        "cysteine_protease_dyad",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 9,
+      "confidence": "HIGH",
+      "coords": [
+        -20.312,
+        2.622,
+        7.48
+      ],
+      "domain_context": "ribosomal protein s5 domain 2-like"
+    },
+    {
+      "residue_number": 684,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 17.77,
+      "plddt": 91.62,
+      "motifs": [
+        "serine_protease_triad",
+        "zinc_binding_cluster",
+        "acid_base_pair"
+      ],
+      "evidence_score": 9,
+      "confidence": "HIGH",
+      "coords": [
+        -23.502,
+        13.758,
+        39.447
+      ],
+      "domain_context": "hsp90 c-terminal domain"
+    },
+    {
+      "residue_number": 328,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 30.64,
+      "plddt": 97.81,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad"
+      ],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        -2.365,
+        -9.663,
+        -13.16
+      ],
+      "domain_context": "ribosomal protein s5 domain 2-like"
+    },
+    {
+      "residue_number": 450,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 62.95,
+      "plddt": 97.38,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "cysteine_protease_dyad",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        -19.057,
+        5.225,
+        2.939
+      ],
+      "domain_context": "ribosomal protein s5 domain 2-like"
+    },
+    {
+      "residue_number": 514,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 48.66,
+      "plddt": 90.12,
+      "motifs": [
+        "serine_protease_triad"
+      ],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        -34.019,
+        -14.681,
+        22.911
+      ],
+      "domain_context": "ribosomal protein s5 domain 2-like"
+    },
+    {
+      "residue_number": 640,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 37.3,
+      "plddt": 96.69,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "zinc_binding_cluster",
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        -36.728,
+        -4.612,
+        38.107
+      ],
+      "domain_context": "hsp90 c-terminal domain"
+    },
+    {
+      "residue_number": 390,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 6.99,
+      "plddt": 94.25,
+      "motifs": [
+        "serine_protease_triad",
+        "zinc_binding_cluster",
+        "acid_base_pair",
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        1.099,
+        -0.001,
+        -18.968
+      ],
+      "domain_context": "ribosomal protein s5 domain 2-like"
+    },
+    {
+      "residue_number": 460,
+      "chain_id": "A",
+      "one_letter": "S",
+      "three_letter": "SER",
+      "conservation": 4.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 2.38,
+      "plddt": 97.81,
+      "motifs": [
+        "serine_protease_triad"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        -20.413,
+        -5.149,
+        2.2
+      ],
+      "domain_context": "ribosomal protein s5 domain 2-like"
+    },
+    {
+      "residue_number": 526,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 1.72,
+      "plddt": 97.81,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "acid_base_pair"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        -18.264,
+        1.722,
+        11.721
+      ],
+      "domain_context": "ribosomal protein s5 domain 2-like"
+    },
+    {
+      "residue_number": 589,
+      "chain_id": "A",
+      "one_letter": "S",
+      "three_letter": "SER",
+      "conservation": 4.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 5.93,
+      "plddt": 92.0,
+      "motifs": [
+        "serine_protease_triad"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        -38.85,
+        -1.267,
+        27.685
+      ],
+      "domain_context": "hsp90 c-terminal domain"
+    },
+    {
+      "residue_number": 302,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 132.48,
+      "plddt": 95.0,
+      "motifs": [
+        "serine_protease_triad"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        0.449,
+        -18.498,
+        -16.486
+      ],
+      "domain_context": "ribosomal protein s5 domain 2-like"
     }
   ],
   "binding_pockets": [
@@ -2813,7 +2636,7 @@
   ],
   "mean_plddt": 85.22,
   "n_evidence_sources": 12,
-  "overall_confidence": "VERY HIGH",
+  "overall_confidence": "HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (H210, H77, H154) to confirm functional importance",
     "Thermal shift assay or SPR binding assay against pocket P1 (vol=560\u00c5\u00b3, druggability=0.98)",
