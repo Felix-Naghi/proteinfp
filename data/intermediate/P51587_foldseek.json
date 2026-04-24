@@ -1,0 +1,116 @@
+{
+  "uniprot_id": "P51587",
+  "pdb_path": "C:\\Users\\adria\\Documents\\proteinFP\\data\\structures\\P51587.pdb",
+  "n_hits": 4,
+  "hits": [
+    {
+      "target": "P51587",
+      "description": "RecName: Full=Breast cancer type 2 susceptibility protein; AltName: Full=Fanconi anemia group D1 protein [Homo sapiens]",
+      "tmscore": 1.0,
+      "rmsd": 1.0,
+      "seq_identity": 1.0,
+      "query_coverage": 1.0,
+      "e_value": 0.0,
+      "database": "blast_proxy",
+      "is_same_fold": true,
+      "function_inferred": "Involved in double-strand break repair and/or homologous recombination. Binds RAD51 and potentiates "
+    },
+    {
+      "target": "Q864S8",
+      "description": "RecName: Full=Breast cancer type 2 susceptibility protein homolog; AltName: Full=Fanconi anemia group D1 protein homolog [Felis catus]",
+      "tmscore": 0.8325,
+      "rmsd": 1.67,
+      "seq_identity": 0.665,
+      "query_coverage": 1.0,
+      "e_value": 0.0,
+      "database": "blast_proxy",
+      "is_same_fold": true,
+      "function_inferred": "Involved in double-strand break repair and/or homologous recombination. Binds RAD51 and potentiates "
+    },
+    {
+      "target": "P97929",
+      "description": "RecName: Full=Breast cancer type 2 susceptibility protein homolog; AltName: Full=Fanconi anemia group D1 protein homolog [Mus musculus]",
+      "tmscore": 0.7805,
+      "rmsd": 1.878,
+      "seq_identity": 0.561,
+      "query_coverage": 0.9990000000000001,
+      "e_value": 0.0,
+      "database": "blast_proxy",
+      "is_same_fold": true,
+      "function_inferred": "Involved in double-strand break repair and/or homologous recombination. Binds RAD51 and potentiates "
+    },
+    {
+      "target": "O35923",
+      "description": "RecName: Full=Breast cancer type 2 susceptibility protein homolog; AltName: Full=Fanconi anemia group D1 protein homolog [Rattus norvegicus]",
+      "tmscore": 0.768,
+      "rmsd": 1.928,
+      "seq_identity": 0.536,
+      "query_coverage": 1.0,
+      "e_value": 0.0,
+      "database": "blast_proxy",
+      "is_same_fold": true,
+      "function_inferred": "Involved in double-strand break repair and/or homologous recombination. Binds RAD51 and potentiates "
+    }
+  ],
+  "same_fold_hits": [
+    {
+      "target": "P51587",
+      "description": "RecName: Full=Breast cancer type 2 susceptibility protein; AltName: Full=Fanconi anemia group D1 protein [Homo sapiens]",
+      "tmscore": 1.0,
+      "rmsd": 1.0,
+      "seq_identity": 1.0,
+      "query_coverage": 1.0,
+      "e_value": 0.0,
+      "database": "blast_proxy",
+      "is_same_fold": true,
+      "function_inferred": "Involved in double-strand break repair and/or homologous recombination. Binds RAD51 and potentiates "
+    },
+    {
+      "target": "Q864S8",
+      "description": "RecName: Full=Breast cancer type 2 susceptibility protein homolog; AltName: Full=Fanconi anemia group D1 protein homolog [Felis catus]",
+      "tmscore": 0.8325,
+      "rmsd": 1.67,
+      "seq_identity": 0.665,
+      "query_coverage": 1.0,
+      "e_value": 0.0,
+      "database": "blast_proxy",
+      "is_same_fold": true,
+      "function_inferred": "Involved in double-strand break repair and/or homologous recombination. Binds RAD51 and potentiates "
+    },
+    {
+      "target": "P97929",
+      "description": "RecName: Full=Breast cancer type 2 susceptibility protein homolog; AltName: Full=Fanconi anemia group D1 protein homolog [Mus musculus]",
+      "tmscore": 0.7805,
+      "rmsd": 1.878,
+      "seq_identity": 0.561,
+      "query_coverage": 0.9990000000000001,
+      "e_value": 0.0,
+      "database": "blast_proxy",
+      "is_same_fold": true,
+      "function_inferred": "Involved in double-strand break repair and/or homologous recombination. Binds RAD51 and potentiates "
+    },
+    {
+      "target": "O35923",
+      "description": "RecName: Full=Breast cancer type 2 susceptibility protein homolog; AltName: Full=Fanconi anemia group D1 protein homolog [Rattus norvegicus]",
+      "tmscore": 0.768,
+      "rmsd": 1.928,
+      "seq_identity": 0.536,
+      "query_coverage": 1.0,
+      "e_value": 0.0,
+      "database": "blast_proxy",
+      "is_same_fold": true,
+      "function_inferred": "Involved in double-strand break repair and/or homologous recombination. Binds RAD51 and potentiates "
+    }
+  ],
+  "n_same_fold": 4,
+  "top_tmscore": 1.0,
+  "novel_hits": [],
+  "api_available": true,
+  "inferred_functions": [
+    "BRCA2 repeat",
+    "BRCA2, oligonucleotide/oligosaccharide-binding, domain 1",
+    "BRCA2, oligonucleotide/oligosaccharide-binding, domain 3",
+    "Tower",
+    "BRCA2, helical"
+  ]
+}
