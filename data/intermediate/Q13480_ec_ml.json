@@ -1,0 +1,98 @@
+{
+  "uniprot_id": "Q13480",
+  "sequence_length": 694,
+  "is_enzyme": true,
+  "enzyme_confidence": 0.7674,
+  "top_prediction": {
+    "ec_class": "3",
+    "ec_name": "Hydrolase",
+    "ec_full": "EC 3.4.21",
+    "score": 0.20211767494736588,
+    "evidence": [
+      "ml_ensemble"
+    ],
+    "probability": 0.20211767494736588
+  },
+  "all_predictions": [
+    {
+      "ec_class": "3",
+      "ec_name": "Hydrolase",
+      "ec_full": "EC 3.4.21",
+      "score": 0.20211767494736588,
+      "evidence": [
+        "ml_ensemble"
+      ],
+      "probability": 0.20211767494736588
+    },
+    {
+      "ec_class": "5",
+      "ec_name": "Isomerase",
+      "ec_full": "EC 5.x.x.x",
+      "score": 0.1744028386269371,
+      "evidence": [
+        "ml_ensemble"
+      ],
+      "probability": 0.1744028386269371
+    },
+    {
+      "ec_class": "6",
+      "ec_name": "Ligase",
+      "ec_full": "EC 6.x.x.x",
+      "score": 0.13079551682256746,
+      "evidence": [
+        "ml_ensemble"
+      ],
+      "probability": 0.13079551682256746
+    },
+    {
+      "ec_class": "4",
+      "ec_name": "Lyase",
+      "ec_full": "EC 4.x.x.x",
+      "score": 0.08770490259249068,
+      "evidence": [
+        "ml_ensemble"
+      ],
+      "probability": 0.08770490259249068
+    },
+    {
+      "ec_class": "7",
+      "ec_name": "Translocase",
+      "ec_full": "EC 7.x.x.x",
+      "score": 0.0606393071706363,
+      "evidence": [
+        "ml_ensemble"
+      ],
+      "probability": 0.0606393071706363
+    },
+    {
+      "ec_class": "2",
+      "ec_name": "Transferase",
+      "ec_full": "EC 2.x.x.x",
+      "score": 0.05842865385170104,
+      "evidence": [
+        "ml_ensemble"
+      ],
+      "probability": 0.05842865385170104
+    },
+    {
+      "ec_class": "1",
+      "ec_name": "Oxidoreductase",
+      "ec_full": "EC 1.x.x.x",
+      "score": 0.053324945462765096,
+      "evidence": [
+        "ml_ensemble"
+      ],
+      "probability": 0.053324945462765096
+    }
+  ],
+  "specific_ec": "3.4.21",
+  "specific_ec_name": "Serine protease",
+  "non_enzyme_score": 0.2326,
+  "ml_used": true,
+  "ml_model_version": "ensemble-v1",
+  "ml_inference_ms": 203.0,
+  "ml_feature_dim": 932,
+  "ml_top2_class": "5",
+  "ml_top2_prob": 0.1744,
+  "ml_entropy": 1.5995
+}

@@ -1,0 +1,98 @@
+{
+  "uniprot_id": "P17275",
+  "sequence_length": 347,
+  "is_enzyme": true,
+  "enzyme_confidence": 0.9683,
+  "top_prediction": {
+    "ec_class": "6",
+    "ec_name": "Ligase",
+    "ec_full": "EC 6.x.x.x",
+    "score": 0.8440989636159353,
+    "evidence": [
+      "ml_ensemble"
+    ],
+    "probability": 0.8440989636159353
+  },
+  "all_predictions": [
+    {
+      "ec_class": "6",
+      "ec_name": "Ligase",
+      "ec_full": "EC 6.x.x.x",
+      "score": 0.8440989636159353,
+      "evidence": [
+        "ml_ensemble"
+      ],
+      "probability": 0.8440989636159353
+    },
+    {
+      "ec_class": "1",
+      "ec_name": "Oxidoreductase",
+      "ec_full": "EC 1.x.x.x",
+      "score": 0.02368206024858397,
+      "evidence": [
+        "ml_ensemble"
+      ],
+      "probability": 0.02368206024858397
+    },
+    {
+      "ec_class": "5",
+      "ec_name": "Isomerase",
+      "ec_full": "EC 5.x.x.x",
+      "score": 0.021471226324768243,
+      "evidence": [
+        "ml_ensemble"
+      ],
+      "probability": 0.021471226324768243
+    },
+    {
+      "ec_class": "2",
+      "ec_name": "Transferase",
+      "ec_full": "EC 2.x.x.x",
+      "score": 0.020167740113910503,
+      "evidence": [
+        "ml_ensemble"
+      ],
+      "probability": 0.020167740113910503
+    },
+    {
+      "ec_class": "3",
+      "ec_name": "Hydrolase",
+      "ec_full": "EC 3.x.x.x",
+      "score": 0.020084431291683837,
+      "evidence": [
+        "ml_ensemble"
+      ],
+      "probability": 0.020084431291683837
+    },
+    {
+      "ec_class": "7",
+      "ec_name": "Translocase",
+      "ec_full": "EC 7.x.x.x",
+      "score": 0.01984860128634505,
+      "evidence": [
+        "ml_ensemble"
+      ],
+      "probability": 0.01984860128634505
+    },
+    {
+      "ec_class": "4",
+      "ec_name": "Lyase",
+      "ec_full": "EC 4.x.x.x",
+      "score": 0.018932423881511368,
+      "evidence": [
+        "ml_ensemble"
+      ],
+      "probability": 0.018932423881511368
+    }
+  ],
+  "specific_ec": "",
+  "specific_ec_name": "",
+  "non_enzyme_score": 0.0317,
+  "ml_used": true,
+  "ml_model_version": "ensemble-v1",
+  "ml_inference_ms": 154.0,
+  "ml_feature_dim": 932,
+  "ml_top2_class": "1",
+  "ml_top2_prob": 0.0237,
+  "ml_entropy": 0.6243
+}
