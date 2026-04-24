@@ -4,37 +4,1929 @@
   "protein_name": "unknown",
   "organism": "unknown",
   "sequence_length": 0,
-  "generated_at": "2026-04-23 16:53:03",
-  "top_function": "Function not determined",
-  "is_enzyme": false,
-  "ec_number": "",
-  "subcellular_location": "unknown",
-  "go_terms_mf": [],
-  "go_terms_bp": [],
-  "go_terms_cc": [],
-  "active_sites": [],
+  "generated_at": "2026-04-24 10:25:23",
+  "top_function": "Involved in double-strand break repair and/or homologous recombination. Binds RAD51 and potentiates recombinational DNA repair by promoting assembly of RAD51 onto single-stranded DNA (ssDNA). Acts by ",
+  "is_enzyme": true,
+  "ec_number": "3.4.21",
+  "subcellular_location": "membrane",
+  "go_terms_mf": [
+    {
+      "go_id": "GO:0005813",
+      "go_name": "C:centrosome",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0030141",
+      "go_name": "C:secretory granule",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0043015",
+      "go_name": "F:gamma-tubulin binding",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0003697",
+      "go_name": "F:single-stranded DNA binding",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0000800",
+      "go_name": "C:lateral element",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005654",
+      "go_name": "C:nucleoplasm",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0010484",
+      "go_name": "F:histone H3 acetyltransferase activity",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0010485",
+      "go_name": "F:histone H4 acetyltransferase activity",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0042802",
+      "go_name": "F:identical protein binding",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0002020",
+      "go_name": "F:protease binding",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0007420",
+      "go_name": "P:brain development",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0090398",
+      "go_name": "P:cellular senescence",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0051298",
+      "go_name": "P:centrosome duplication",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0046872",
+      "go_name": "metal ion binding",
+      "namespace": "MF",
+      "weighted_score": 3.0,
+      "n_sources": 2,
+      "sources": [
+        "structural_motif",
+        "sequence_composition"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "sequence_composition"
+    },
+    {
+      "go_id": "GO:0004252",
+      "go_name": "serine-type endopeptidase activity",
+      "namespace": "MF",
+      "weighted_score": 1.7,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    }
+  ],
+  "go_terms_bp": [
+    {
+      "go_id": "GO:0000724",
+      "go_name": "double-strand break repair via homologous recombination",
+      "namespace": "BP",
+      "weighted_score": 13.0,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "domain_annotation"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0006281",
+      "go_name": "DNA repair",
+      "namespace": "BP",
+      "weighted_score": 9.5,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "domain_annotation"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:1990391",
+      "go_name": "C:DNA repair complex",
+      "namespace": "BP",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0071479",
+      "go_name": "P:cellular response to ionizing radiation",
+      "namespace": "BP",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0006302",
+      "go_name": "P:double-strand break repair",
+      "namespace": "BP",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0033600",
+      "go_name": "P:negative regulation of mammary gland epithelial cell proliferation",
+      "namespace": "BP",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0006289",
+      "go_name": "P:nucleotide-excision repair",
+      "namespace": "BP",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0045893",
+      "go_name": "P:positive regulation of DNA-templated transcription",
+      "namespace": "BP",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0006355",
+      "go_name": "P:regulation of DNA-templated transcription",
+      "namespace": "BP",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0055114",
+      "go_name": "oxidation-reduction process",
+      "namespace": "BP",
+      "weighted_score": 1.4,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0006351",
+      "go_name": "DNA-templated transcription",
+      "namespace": "BP",
+      "weighted_score": 1.3,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0030193",
+      "go_name": "regulation of blood coagulation",
+      "namespace": "BP",
+      "weighted_score": 1.2,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0045944",
+      "go_name": "positive regulation of transcription by RNA pol II",
+      "namespace": "BP",
+      "weighted_score": 1.2,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0042493",
+      "go_name": "response to drug",
+      "namespace": "BP",
+      "weighted_score": 1.1,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0006508",
+      "go_name": "proteolysis",
+      "namespace": "BP",
+      "weighted_score": 1.1,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    }
+  ],
+  "go_terms_cc": [
+    {
+      "go_id": "GO:0005634",
+      "go_name": "C:nucleus",
+      "namespace": "CC",
+      "weighted_score": 7.76,
+      "n_sources": 3,
+      "sources": [
+        "experimental_homolog",
+        "ai_esm2",
+        "structural_motif"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005737",
+      "go_name": "C:cytoplasm",
+      "namespace": "CC",
+      "weighted_score": 6.5,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "sequence_baseline"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0033593",
+      "go_name": "C:BRCA2-MAGE-D1 complex",
+      "namespace": "CC",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0032991",
+      "go_name": "C:protein-containing complex",
+      "namespace": "CC",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0000781",
+      "go_name": "C:chromosome, telomeric region",
+      "namespace": "CC",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005829",
+      "go_name": "C:cytosol",
+      "namespace": "CC",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0000152",
+      "go_name": "C:nuclear ubiquitin ligase complex",
+      "namespace": "CC",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005694",
+      "go_name": "C:chromosome",
+      "namespace": "CC",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0043234",
+      "go_name": "protein complex",
+      "namespace": "CC",
+      "weighted_score": 1.1,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0072562",
+      "go_name": "blood microparticle",
+      "namespace": "CC",
+      "weighted_score": 1.0,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    }
+  ],
+  "active_sites": [
+    {
+      "residue_number": 236,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 153.33,
+      "plddt": 35.23,
+      "motifs": [
+        "serine_protease_triad",
+        "zinc_binding_cluster",
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 6,
+      "confidence": "HIGH",
+      "coords": [
+        -58.551,
+        22.987,
+        10.02
+      ],
+      "domain_context": "breast cancer type 2 susceptibility protein brca2"
+    },
+    {
+      "residue_number": 477,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 162.18,
+      "plddt": 29.74,
+      "motifs": [
+        "serine_protease_triad",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 6,
+      "confidence": "HIGH",
+      "coords": [
+        52.979,
+        1.746,
+        61.578
+      ],
+      "domain_context": "breast cancer type 2 susceptibility protein brca2"
+    },
+    {
+      "residue_number": 738,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 99.79,
+      "plddt": 28.84,
+      "motifs": [
+        "cysteine_protease_dyad"
+      ],
+      "evidence_score": 6,
+      "confidence": "HIGH",
+      "coords": [
+        -8.339,
+        71.395,
+        -58.749
+      ],
+      "domain_context": "breast cancer type 2 susceptibility protein brca2"
+    },
+    {
+      "residue_number": 739,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 175.63,
+      "plddt": 36.47,
+      "motifs": [
+        "cysteine_protease_dyad"
+      ],
+      "evidence_score": 6,
+      "confidence": "HIGH",
+      "coords": [
+        -6.543,
+        69.317,
+        -60.387
+      ],
+      "domain_context": "breast cancer type 2 susceptibility protein brca2"
+    },
+    {
+      "residue_number": 1265,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 140.02,
+      "plddt": 34.33,
+      "motifs": [
+        "cysteine_protease_dyad",
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 6,
+      "confidence": "HIGH",
+      "coords": [
+        20.292,
+        0.219,
+        25.471
+      ],
+      "domain_context": "breast cancer type 2 susceptibility protein brca2"
+    },
+    {
+      "residue_number": 1266,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 148.77,
+      "plddt": 33.09,
+      "motifs": [
+        "serine_protease_triad",
+        "cysteine_protease_dyad",
+        "zinc_binding_cluster",
+        "acid_base_pair"
+      ],
+      "evidence_score": 6,
+      "confidence": "HIGH",
+      "coords": [
+        19.949,
+        4.059,
+        25.672
+      ],
+      "domain_context": "breast cancer type 2 susceptibility protein brca2"
+    },
+    {
+      "residue_number": 1362,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 111.54,
+      "plddt": 34.32,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad"
+      ],
+      "evidence_score": 6,
+      "confidence": "HIGH",
+      "coords": [
+        27.433,
+        -4.057,
+        33.331
+      ],
+      "domain_context": "breast cancer type 2 susceptibility protein brca2"
+    },
+    {
+      "residue_number": 1399,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 104.78,
+      "plddt": 43.27,
+      "motifs": [
+        "cysteine_protease_dyad",
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 6,
+      "confidence": "HIGH",
+      "coords": [
+        -33.093,
+        17.123,
+        6.867
+      ],
+      "domain_context": "breast cancer type 2 susceptibility protein brca2"
+    },
+    {
+      "residue_number": 1400,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 248.41,
+      "plddt": 34.42,
+      "motifs": [
+        "cysteine_protease_dyad",
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 6,
+      "confidence": "HIGH",
+      "coords": [
+        -32.854,
+        17.865,
+        3.103
+      ],
+      "domain_context": "breast cancer type 2 susceptibility protein brca2"
+    },
+    {
+      "residue_number": 1022,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 128.59,
+      "plddt": 84.66,
+      "motifs": [
+        "acid_base_pair"
+      ],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        -4.132,
+        31.825,
+        -21.793
+      ],
+      "domain_context": "breast cancer type 2 susceptibility protein brca2"
+    },
+    {
+      "residue_number": 52,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 156.57,
+      "plddt": 37.61,
+      "motifs": [
+        "zinc_binding_cluster",
+        "acid_base_pair"
+      ],
+      "evidence_score": 6,
+      "confidence": "HIGH",
+      "coords": [
+        26.316,
+        -40.569,
+        1.119
+      ],
+      "domain_context": "breast cancer type 2 susceptibility protein brca2"
+    },
+    {
+      "residue_number": 223,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 149.08,
+      "plddt": 37.24,
+      "motifs": [
+        "acid_base_pair"
+      ],
+      "evidence_score": 6,
+      "confidence": "HIGH",
+      "coords": [
+        -68.725,
+        3.081,
+        -22.575
+      ],
+      "domain_context": "breast cancer type 2 susceptibility protein brca2"
+    },
+    {
+      "residue_number": 282,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 157.26,
+      "plddt": 38.84,
+      "motifs": [
+        "acid_base_pair"
+      ],
+      "evidence_score": 6,
+      "confidence": "HIGH",
+      "coords": [
+        -10.234,
+        74.814,
+        -39.192
+      ],
+      "domain_context": "breast cancer type 2 susceptibility protein brca2"
+    },
+    {
+      "residue_number": 334,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 167.07,
+      "plddt": 39.29,
+      "motifs": [
+        "acid_base_pair"
+      ],
+      "evidence_score": 6,
+      "confidence": "HIGH",
+      "coords": [
+        -16.258,
+        -17.54,
+        -41.516
+      ],
+      "domain_context": "breast cancer type 2 susceptibility protein brca2"
+    },
+    {
+      "residue_number": 341,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 103.32,
+      "plddt": 30.88,
+      "motifs": [
+        "zinc_binding_cluster",
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 6,
+      "confidence": "HIGH",
+      "coords": [
+        -3.979,
+        -11.71,
+        -55.178
+      ],
+      "domain_context": "breast cancer type 2 susceptibility protein brca2"
+    },
+    {
+      "residue_number": 473,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 143.08,
+      "plddt": 28.48,
+      "motifs": [
+        "zinc_binding_cluster",
+        "acid_base_pair"
+      ],
+      "evidence_score": 6,
+      "confidence": "HIGH",
+      "coords": [
+        47.417,
+        11.957,
+        68.644
+      ],
+      "domain_context": "breast cancer type 2 susceptibility protein brca2"
+    },
+    {
+      "residue_number": 480,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 102.18,
+      "plddt": 29.28,
+      "motifs": [
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 6,
+      "confidence": "HIGH",
+      "coords": [
+        52.826,
+        -7.551,
+        57.191
+      ],
+      "domain_context": "breast cancer type 2 susceptibility protein brca2"
+    },
+    {
+      "residue_number": 595,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 166.5,
+      "plddt": 38.67,
+      "motifs": [
+        "zinc_binding_cluster",
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 6,
+      "confidence": "HIGH",
+      "coords": [
+        -42.116,
+        -2.708,
+        7.055
+      ],
+      "domain_context": "breast cancer type 2 susceptibility protein brca2"
+    },
+    {
+      "residue_number": 763,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 161.42,
+      "plddt": 35.75,
+      "motifs": [
+        "zinc_binding_cluster",
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 6,
+      "confidence": "HIGH",
+      "coords": [
+        8.518,
+        20.062,
+        -97.998
+      ],
+      "domain_context": "breast cancer type 2 susceptibility protein brca2"
+    },
+    {
+      "residue_number": 910,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 137.05,
+      "plddt": 34.26,
+      "motifs": [
+        "zinc_binding_cluster",
+        "acid_base_pair"
+      ],
+      "evidence_score": 6,
+      "confidence": "HIGH",
+      "coords": [
+        35.843,
+        61.769,
+        -28.804
+      ],
+      "domain_context": "breast cancer type 2 susceptibility protein brca2"
+    },
+    {
+      "residue_number": 1159,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 123.76,
+      "plddt": 26.18,
+      "motifs": [
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 6,
+      "confidence": "HIGH",
+      "coords": [
+        37.298,
+        44.934,
+        25.874
+      ],
+      "domain_context": "breast cancer type 2 susceptibility protein brca2"
+    },
+    {
+      "residue_number": 1165,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 120.83,
+      "plddt": 30.52,
+      "motifs": [
+        "zinc_binding_cluster",
+        "acid_base_pair"
+      ],
+      "evidence_score": 6,
+      "confidence": "HIGH",
+      "coords": [
+        39.71,
+        57.632,
+        14.195
+      ],
+      "domain_context": "breast cancer type 2 susceptibility protein brca2"
+    },
+    {
+      "residue_number": 1256,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 170.47,
+      "plddt": 29.34,
+      "motifs": [
+        "acid_base_pair"
+      ],
+      "evidence_score": 6,
+      "confidence": "HIGH",
+      "coords": [
+        1.133,
+        -10.51,
+        42.229
+      ],
+      "domain_context": "breast cancer type 2 susceptibility protein brca2"
+    },
+    {
+      "residue_number": 1278,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 149.55,
+      "plddt": 31.68,
+      "motifs": [
+        "zinc_binding_cluster",
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 6,
+      "confidence": "HIGH",
+      "coords": [
+        4.079,
+        32.226,
+        19.728
+      ],
+      "domain_context": "breast cancer type 2 susceptibility protein brca2"
+    },
+    {
+      "residue_number": 1223,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 172.97,
+      "plddt": 85.63,
+      "motifs": [],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        -17.465,
+        24.925,
+        -3.693
+      ],
+      "domain_context": "breast cancer type 2 susceptibility protein brca2"
+    },
+    {
+      "residue_number": 19,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 47.49,
+      "plddt": 77.05,
+      "motifs": [],
+      "evidence_score": 4,
+      "confidence": "MEDIUM",
+      "coords": [
+        -19.119,
+        -23.115,
+        2.366
+      ],
+      "domain_context": "breast cancer type 2 susceptibility protein brca2"
+    },
+    {
+      "residue_number": 114,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 123.56,
+      "plddt": 41.52,
+      "motifs": [],
+      "evidence_score": 4,
+      "confidence": "MEDIUM",
+      "coords": [
+        90.923,
+        -3.912,
+        -14.749
+      ],
+      "domain_context": "breast cancer type 2 susceptibility protein brca2"
+    },
+    {
+      "residue_number": 132,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 109.29,
+      "plddt": 30.77,
+      "motifs": [],
+      "evidence_score": 4,
+      "confidence": "MEDIUM",
+      "coords": [
+        69.261,
+        21.802,
+        -16.37
+      ],
+      "domain_context": "breast cancer type 2 susceptibility protein brca2"
+    },
+    {
+      "residue_number": 138,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 100.35,
+      "plddt": 30.99,
+      "motifs": [],
+      "evidence_score": 4,
+      "confidence": "MEDIUM",
+      "coords": [
+        68.357,
+        14.831,
+        -34.632
+      ],
+      "domain_context": "breast cancer type 2 susceptibility protein brca2"
+    },
+    {
+      "residue_number": 148,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 109.42,
+      "plddt": 28.27,
+      "motifs": [],
+      "evidence_score": 4,
+      "confidence": "MEDIUM",
+      "coords": [
+        46.88,
+        -3.22,
+        -52.68
+      ],
+      "domain_context": "breast cancer type 2 susceptibility protein brca2"
+    }
+  ],
   "binding_pockets": [],
   "allosteric_sites": [],
-  "ppi_partners": [],
+  "ppi_partners": [
+    {
+      "partner_id": "9606.ENSP00000481021",
+      "partner_name": "SEM1",
+      "combined_score": 999,
+      "experimental_score": 879,
+      "database_score": 900,
+      "textmining_score": 996,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1400,
+        787,
+        1217,
+        1,
+        993,
+        563,
+        395,
+        841,
+        329,
+        296,
+        890,
+        1190,
+        107,
+        645,
+        892
+      ],
+      "interface_letters": [
+        "H",
+        "R",
+        "R",
+        "M",
+        "W",
+        "W",
+        "W",
+        "R",
+        "R",
+        "Y",
+        "F",
+        "R",
+        "R",
+        "R",
+        "F"
+      ],
+      "interface_charge": 7.1,
+      "interface_hydrophobicity": -2.08,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000493712",
+      "partner_name": "RAD51",
+      "combined_score": 999,
+      "experimental_score": 996,
+      "database_score": 900,
+      "textmining_score": 999,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "cooperative",
+      "interface_residues": [
+        16,
+        1010,
+        1015,
+        1018,
+        1022,
+        1025,
+        1026,
+        1028,
+        1032,
+        1108,
+        1223,
+        1226,
+        1236,
+        1239,
+        6
+      ],
+      "interface_letters": [
+        "K",
+        "R",
+        "K",
+        "K",
+        "H",
+        "K",
+        "K",
+        "K",
+        "K",
+        "K",
+        "H",
+        "K",
+        "K",
+        "K",
+        "K"
+      ],
+      "interface_charge": 13.2,
+      "interface_hydrophobicity": -3.847,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000261584",
+      "partner_name": "PALB2",
+      "combined_score": 999,
+      "experimental_score": 997,
+      "database_score": 900,
+      "textmining_score": 999,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1400,
+        787,
+        1217,
+        1,
+        993,
+        563,
+        395,
+        841,
+        329,
+        296,
+        890,
+        1190,
+        107,
+        645,
+        892
+      ],
+      "interface_letters": [
+        "H",
+        "R",
+        "R",
+        "M",
+        "W",
+        "W",
+        "W",
+        "R",
+        "R",
+        "Y",
+        "F",
+        "R",
+        "R",
+        "R",
+        "F"
+      ],
+      "interface_charge": 7.1,
+      "interface_hydrophobicity": -2.08,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000260947",
+      "partner_name": "BARD1",
+      "combined_score": 999,
+      "experimental_score": 793,
+      "database_score": 720,
+      "textmining_score": 995,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1400,
+        787,
+        1217,
+        1,
+        993,
+        563,
+        395,
+        841,
+        329,
+        296,
+        890,
+        1190,
+        107,
+        645,
+        892
+      ],
+      "interface_letters": [
+        "H",
+        "R",
+        "R",
+        "M",
+        "W",
+        "W",
+        "W",
+        "R",
+        "R",
+        "Y",
+        "F",
+        "R",
+        "R",
+        "R",
+        "F"
+      ],
+      "interface_charge": 7.1,
+      "interface_hydrophobicity": -2.08,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000287647",
+      "partner_name": "FANCD2",
+      "combined_score": 999,
+      "experimental_score": 842,
+      "database_score": 900,
+      "textmining_score": 999,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1400,
+        787,
+        1217,
+        1,
+        993,
+        563,
+        395,
+        841,
+        329,
+        296,
+        890,
+        1190,
+        107,
+        645,
+        892
+      ],
+      "interface_letters": [
+        "H",
+        "R",
+        "R",
+        "M",
+        "W",
+        "W",
+        "W",
+        "R",
+        "R",
+        "Y",
+        "F",
+        "R",
+        "R",
+        "R",
+        "F"
+      ],
+      "interface_charge": 7.1,
+      "interface_hydrophobicity": -2.08,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000418960",
+      "partner_name": "BRCA1",
+      "combined_score": 999,
+      "experimental_score": 896,
+      "database_score": 900,
+      "textmining_score": 999,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "cooperative",
+      "interface_residues": [
+        16,
+        1010,
+        1015,
+        1018,
+        1022,
+        1025,
+        1026,
+        1028,
+        1032,
+        1108,
+        1223,
+        1226,
+        1236,
+        1239,
+        6
+      ],
+      "interface_letters": [
+        "K",
+        "R",
+        "K",
+        "K",
+        "H",
+        "K",
+        "K",
+        "K",
+        "K",
+        "K",
+        "H",
+        "K",
+        "K",
+        "K",
+        "K"
+      ],
+      "interface_charge": 13.2,
+      "interface_hydrophobicity": -3.847,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000336701",
+      "partner_name": "RAD51C",
+      "combined_score": 999,
+      "experimental_score": 635,
+      "database_score": 900,
+      "textmining_score": 976,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "cooperative",
+      "interface_residues": [
+        16,
+        1010,
+        1015,
+        1018,
+        1022,
+        1025,
+        1026,
+        1028,
+        1032,
+        1108,
+        1223,
+        1226,
+        1236,
+        1239,
+        6
+      ],
+      "interface_letters": [
+        "K",
+        "R",
+        "K",
+        "K",
+        "H",
+        "K",
+        "K",
+        "K",
+        "K",
+        "K",
+        "H",
+        "K",
+        "K",
+        "K",
+        "K"
+      ],
+      "interface_charge": 13.2,
+      "interface_hydrophobicity": -3.847,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000451974",
+      "partner_name": "XRCC3",
+      "combined_score": 999,
+      "experimental_score": 886,
+      "database_score": 500,
+      "textmining_score": 988,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1400,
+        787,
+        1217,
+        1,
+        993,
+        563,
+        395,
+        841,
+        329,
+        296,
+        890,
+        1190,
+        107,
+        645,
+        892
+      ],
+      "interface_letters": [
+        "H",
+        "R",
+        "R",
+        "M",
+        "W",
+        "W",
+        "W",
+        "R",
+        "R",
+        "Y",
+        "F",
+        "R",
+        "R",
+        "R",
+        "F"
+      ],
+      "interface_charge": 7.1,
+      "interface_hydrophobicity": -2.08,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000259008",
+      "partner_name": "BRIP1",
+      "combined_score": 998,
+      "experimental_score": 292,
+      "database_score": 900,
+      "textmining_score": 975,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1400,
+        787,
+        1217,
+        1,
+        993,
+        563,
+        395,
+        841,
+        329,
+        296,
+        890,
+        1190,
+        107,
+        645,
+        892
+      ],
+      "interface_letters": [
+        "H",
+        "R",
+        "R",
+        "M",
+        "W",
+        "W",
+        "W",
+        "R",
+        "R",
+        "Y",
+        "F",
+        "R",
+        "R",
+        "R",
+        "F"
+      ],
+      "interface_charge": 7.1,
+      "interface_hydrophobicity": -2.08,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000357748",
+      "partner_name": "BCCIP",
+      "combined_score": 997,
+      "experimental_score": 510,
+      "database_score": 0,
+      "textmining_score": 994,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1400,
+        787,
+        1217,
+        1,
+        993,
+        563,
+        395,
+        841,
+        329,
+        296,
+        890,
+        1190,
+        107,
+        645,
+        892
+      ],
+      "interface_letters": [
+        "H",
+        "R",
+        "R",
+        "M",
+        "W",
+        "W",
+        "W",
+        "R",
+        "R",
+        "Y",
+        "F",
+        "R",
+        "R",
+        "R",
+        "F"
+      ],
+      "interface_charge": 7.1,
+      "interface_hydrophobicity": -2.08,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000367910",
+      "partner_name": "FANCG",
+      "combined_score": 997,
+      "experimental_score": 735,
+      "database_score": 0,
+      "textmining_score": 990,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1400,
+        787,
+        1217,
+        1,
+        993,
+        563,
+        395,
+        841,
+        329,
+        296,
+        890,
+        1190,
+        107,
+        645,
+        892
+      ],
+      "interface_letters": [
+        "H",
+        "R",
+        "R",
+        "M",
+        "W",
+        "W",
+        "W",
+        "R",
+        "R",
+        "Y",
+        "F",
+        "R",
+        "R",
+        "R",
+        "F"
+      ],
+      "interface_charge": 7.1,
+      "interface_hydrophobicity": -2.08,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000433205",
+      "partner_name": "EMSY",
+      "combined_score": 997,
+      "experimental_score": 292,
+      "database_score": 0,
+      "textmining_score": 996,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1400,
+        787,
+        1217,
+        1,
+        993,
+        563,
+        395,
+        841,
+        329,
+        296,
+        890,
+        1190,
+        107,
+        645,
+        892
+      ],
+      "interface_letters": [
+        "H",
+        "R",
+        "R",
+        "M",
+        "W",
+        "W",
+        "W",
+        "R",
+        "R",
+        "Y",
+        "F",
+        "R",
+        "R",
+        "R",
+        "F"
+      ],
+      "interface_charge": 7.1,
+      "interface_hydrophobicity": -2.08,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000310842",
+      "partner_name": "FANCI",
+      "combined_score": 996,
+      "experimental_score": 230,
+      "database_score": 540,
+      "textmining_score": 987,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1400,
+        787,
+        1217,
+        1,
+        993,
+        563,
+        395,
+        841,
+        329,
+        296,
+        890,
+        1190,
+        107,
+        645,
+        892
+      ],
+      "interface_letters": [
+        "H",
+        "R",
+        "R",
+        "M",
+        "W",
+        "W",
+        "W",
+        "R",
+        "R",
+        "Y",
+        "F",
+        "R",
+        "R",
+        "R",
+        "F"
+      ],
+      "interface_charge": 7.1,
+      "interface_hydrophobicity": -2.08,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000300093",
+      "partner_name": "PLK1",
+      "combined_score": 996,
+      "experimental_score": 982,
+      "database_score": 0,
+      "textmining_score": 745,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1400,
+        787,
+        1217,
+        1,
+        993,
+        563,
+        395,
+        841,
+        329,
+        296,
+        890,
+        1190,
+        107,
+        645,
+        892
+      ],
+      "interface_letters": [
+        "H",
+        "R",
+        "R",
+        "M",
+        "W",
+        "W",
+        "W",
+        "R",
+        "R",
+        "Y",
+        "F",
+        "R",
+        "R",
+        "R",
+        "F"
+      ],
+      "interface_charge": 7.1,
+      "interface_hydrophobicity": -2.08,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000269305",
+      "partner_name": "TP53",
+      "combined_score": 995,
+      "experimental_score": 828,
+      "database_score": 0,
+      "textmining_score": 974,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1400,
+        787,
+        1217,
+        1,
+        993,
+        563,
+        395,
+        841,
+        329,
+        296,
+        890,
+        1190,
+        107,
+        645,
+        892
+      ],
+      "interface_letters": [
+        "H",
+        "R",
+        "R",
+        "M",
+        "W",
+        "W",
+        "W",
+        "R",
+        "R",
+        "Y",
+        "F",
+        "R",
+        "R",
+        "R",
+        "F"
+      ],
+      "interface_charge": 7.1,
+      "interface_hydrophobicity": -2.08,
+      "binding_mode": "electrostatic"
+    }
+  ],
   "mean_plddt": 0.0,
-  "n_evidence_sources": 0,
-  "overall_confidence": "VERY LOW",
+  "n_evidence_sources": 8,
+  "overall_confidence": "HIGH",
   "validation_suggestions": [
+    "Alanine scanning mutagenesis of predicted active site residues (H236, H477, C738) to confirm functional importance",
+    "Co-immunoprecipitation with SEM1 (unknown interaction, predicted interface: [1400, 787, 1217])",
+    "Co-immunoprecipitation with RAD51 (cooperative interaction, predicted interface: [16, 1010, 1015])",
+    "Enzyme activity assay consistent with EC 3.4.21 using appropriate substrate panel",
     "GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation"
   ],
-  "modules_run": [],
-  "modules_missing": [
-    "structure",
+  "modules_run": [
     "physico",
     "active",
-    "pockets",
-    "allosteric",
-    "chem_env",
     "homology",
     "esm2",
     "go",
     "ec",
     "foldseek",
     "ppi"
+  ],
+  "modules_missing": [
+    "structure",
+    "pockets",
+    "allosteric",
+    "chem_env"
   ]
 }

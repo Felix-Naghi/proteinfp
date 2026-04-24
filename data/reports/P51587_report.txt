@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-23 16:53:03
+  Generated: 2026-04-24 10:25:23
 ======================================================================
 
   Protein    : unknown
@@ -9,25 +9,69 @@
   Organism   : unknown
   Length     : 0 aa
   Mean pLDDT : 0.0
-  Confidence : VERY LOW
+  Confidence : HIGH
 
 ──────────────────────────────────────────────────────────────────────
   FUNCTIONAL PREDICTION
 ──────────────────────────────────────────────────────────────────────
-  Top function     : Function not determined
-  Enzyme           : no (non-enzyme)
-  Location         : unknown
-  Evidence sources : 0
+  Top function     : Involved in double-strand break repair and/or homologous recombination. Binds RAD51 and potentiates recombinational DNA repair by promoting assembly of RAD51 onto single-stranded DNA (ssDNA). Acts by 
+  Enzyme           : yes — 3.4.21
+  Location         : membrane
+  Evidence sources : 8
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
 ──────────────────────────────────────────────────────────────────────
 
+  Molecular Function:
+    [HIGH  ] GO:0005813 C:centrosome (score=5.1, 1 sources)
+    [HIGH  ] GO:0030141 C:secretory granule (score=5.1, 1 sources)
+    [HIGH  ] GO:0043015 F:gamma-tubulin binding (score=5.1, 1 sources)
+    [HIGH  ] GO:0003697 F:single-stranded DNA binding (score=5.1, 1 sources)
+    [HIGH  ] GO:0000800 C:lateral element (score=5.1, 1 sources)
+
+  Biological Process:
+    [HIGH  ] GO:0000724 double-strand break repair via homologous rec (score=13.0, 2 sources)
+    [HIGH  ] GO:0006281 DNA repair (score=9.5, 2 sources)
+    [HIGH  ] GO:1990391 C:DNA repair complex (score=5.1, 1 sources)
+    [HIGH  ] GO:0071479 P:cellular response to ionizing radiation (score=5.1, 1 sources)
+    [HIGH  ] GO:0006302 P:double-strand break repair (score=5.1, 1 sources)
+
+  Cellular Component:
+    [HIGH  ] GO:0005634 C:nucleus (score=7.8, 3 sources)
+    [HIGH  ] GO:0005737 C:cytoplasm (score=6.5, 2 sources)
+    [HIGH  ] GO:0033593 C:BRCA2-MAGE-D1 complex (score=5.1, 1 sources)
+
+──────────────────────────────────────────────────────────────────────
+  ACTIVE SITES
+──────────────────────────────────────────────────────────────────────
+  H236 [HIGH  ] motifs: serine_protease_triad, zinc_binding_cluster
+  H477 [HIGH  ] motifs: serine_protease_triad, zinc_binding_cluster
+  C738 [HIGH  ] motifs: cysteine_protease_dyad
+  H739 [HIGH  ] motifs: cysteine_protease_dyad
+  C1265 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
+
+──────────────────────────────────────────────────────────────────────
+  PROTEIN INTERACTIONS (top 8)
+──────────────────────────────────────────────────────────────────────
+  SEM1            STRING=999  type=unknown
+  RAD51           STRING=999  type=cooperative
+  PALB2           STRING=999  type=unknown
+  BARD1           STRING=999  type=unknown
+  FANCD2          STRING=999  type=unknown
+  BRCA1           STRING=999  type=cooperative
+  RAD51C          STRING=999  type=cooperative
+  XRCC3           STRING=999  type=unknown
+
 ──────────────────────────────────────────────────────────────────────
   VALIDATION SUGGESTIONS
 ──────────────────────────────────────────────────────────────────────
-  1. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+  1. Alanine scanning mutagenesis of predicted active site residues (H236, H477, C738) to confirm functional importance
+  2. Co-immunoprecipitation with SEM1 (unknown interaction, predicted interface: [1400, 787, 1217])
+  3. Co-immunoprecipitation with RAD51 (cooperative interaction, predicted interface: [16, 1010, 1015])
+  4. Enzyme activity assay consistent with EC 3.4.21 using appropriate substrate panel
+  5. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: 
+  Modules run: physico, active, homology, esm2, go, ec, foldseek, ppi
 ======================================================================
