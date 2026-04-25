@@ -1,0 +1,81 @@
+# Module 14 — Molecular Dynamics
+
+A short MD simulation that produces dynamic descriptors for every site
+predicted by Modules 03–05.
+
+---
+
+## What it adds to the pipeline
+
+| Static (Modules 01–13) | Dynamic (Module 14) |
+|------------------------|---------------------|
+| Active site residues   | RMSF, stability score per site |
+| Binding pocket lining  | Pocket volume drift (cryptic-pocket signal) |
+| Allosteric site geom.  | Allosteric site flexibility |
+| Chemical environment   | H-bond persistence over time |
+| Single conformer       | Ensemble (Rg trace, RMSD vs frame 0) |
+
+---
+
+## Install (one extra dep)
+
+Add to `requirements.txt`:
+
+```
+openmm>=8.1
+```
+
+Then re-run `setup.bat` (or just `pip install openmm` inside the activated
+`.venv`). OpenMM ships pre-built CUDA binaries — your RTX 5060 will be
+auto-detected.
+
+Verify:
+```bat
+python -c "import openmm; print(openmm.Platform.getPlatformByName('CUDA').getName())"
+```
+
+---
+
+## Run it
+
+Standalone, uses `data/structures/<UID>.pdb` from Module 01 and any site
+JSONs already present in `data/intermediate/`:
+
+```bat
+:: Quick test — implicit solvent, 1 ns, ~30 s on CPU
+python pipeline\14_molecular_dynamics.py --uniprot P04637 --implicit
+
+:: Production — explicit solvent + ions, 5 ns on GPU, ~5 min on RTX 5060
+python pipeline\14_molecular_dynamics.py --uniprot P04637 --ns 5
+```
+
+Output:
+```
+data/intermediate/P04637_md.json          ← descriptors (consumed by Module 13)
+data/intermediate/md/P04637_traj.dcd      ← trajectory
+data/intermediate/md/P04637_top.pdb       ← reference topology
+```
+
+---
+
+## Run from VS Code
+
+Press **F5** with one of the new configurations selected:
+
+- **Module 14: MD (prompt for UniProt)** — asks for the accession + ns length
+- **Module 14: MD P04637 (GPU, explicit)** — full quality run on TP53
+
+Both use the project's `.venv` interpreter automatically because of the
+existing `proteinFP.code-workspace` setting.
+
+---
+
+## Tests
+
+```bat
+:: Fast — synthetic trajectory, no OpenMM needed
+python -m pytest tests\test_14_molecular_dynamics.py -v
+
+:: Slow — runs a real 100 ps implicit-solvent simulation
+python -m pytest tests\test_14_molecular_dynamics.py -v -k "Integration"
+```

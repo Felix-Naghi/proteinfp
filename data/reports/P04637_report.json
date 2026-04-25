@@ -4,7 +4,7 @@
   "protein_name": "Cellular tumor antigen p53",
   "organism": "Homo sapiens",
   "sequence_length": 393,
-  "generated_at": "2026-04-19 15:20:29",
+  "generated_at": "2026-04-25 11:34:06",
   "top_function": "DNA binding",
   "is_enzyme": false,
   "ec_number": "3.4.21",
@@ -2707,7 +2707,7 @@
     }
   ],
   "mean_plddt": 75.05,
-  "n_evidence_sources": 12,
+  "n_evidence_sources": 13,
   "overall_confidence": "HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (C141, C176, H193) to confirm functional importance",
@@ -2729,7 +2729,8 @@
     "go",
     "ec",
     "foldseek",
-    "ppi"
+    "ppi",
+    "md"
   ],
   "modules_missing": []
 }

@@ -64827,3 +64827,501 @@ UnicodeEncodeError: 'charmap' codec can't encode characters in position 392-461:
 2026-04-24 10:25:23 [__main__] INFO    [3/5] Generating validation suggestions...
 2026-04-24 10:25:23 [__main__] INFO    [4/5] Computing overall confidence...
 2026-04-24 10:25:23 [__main__] INFO    [5/5] Assembling final report...
+2026-04-24 19:51:03 [__main__] INFO    Loaded binding pocket data for P04637
+2026-04-24 19:51:03 [__main__] INFO  ── ADMET Module: Profiling candidates for P04637 ──
+2026-04-24 19:51:03 [__main__] INFO    No molecules provided — using representative drug-like probes
+2026-04-24 19:51:03 [__main__] INFO    Target pocket: P1
+2026-04-24 19:51:03 [__main__] INFO    Profiling 5 molecules...
+2026-04-24 19:51:03 [__main__] INFO      Profiling probe_hydrophobic: isobutylbenzene probe
+2026-04-24 19:51:03 [__main__] WARNING    RDKit not available — using fallback property estimation
+2026-04-24 19:51:03 [__main__] INFO      Profiling probe_aromatic: benzoic acid probe
+2026-04-24 19:51:03 [__main__] WARNING    RDKit not available — using fallback property estimation
+2026-04-24 19:51:03 [__main__] INFO      Profiling probe_basic: nicotine-like probe
+2026-04-24 19:51:03 [__main__] WARNING    RDKit not available — using fallback property estimation
+2026-04-24 19:51:03 [__main__] INFO      Profiling probe_polar: 4-hydroxybenzamide probe
+2026-04-24 19:51:03 [__main__] WARNING    RDKit not available — using fallback property estimation
+2026-04-24 19:51:03 [__main__] INFO      Profiling probe_scaffold: anthranilic acid probe
+2026-04-24 19:51:03 [__main__] WARNING    RDKit not available — using fallback property estimation
+2026-04-24 19:51:03 [__main__] INFO  
+──────────────────────────────────────────────────────────────────────
+  ADMET Profiling: P04637
+  Molecules profiled : 5
+  Pass / Warn / Fail : 4 / 1 / 0
+  Mean drug-likeness : 79.4/100
+  Top molecule       : probe_aromatic
+──────────────────────────────────────────────────────────────────────
+  [probe_aromatic] benzoic acid probe
+    MW=129.5  LogP=2.50  HBD=1  HBA=2  TPSA=18.4
+    Lipinski: ✓ compliant  Veber: ✓  Egan: ✓
+    Caco-2: 20.6×10⁻⁶ cm/s (high)  hERG IC50: 56.8 µM (safe)
+    HLM t½: 32 min (stable)  fu: 0.21 (moderate binding)
+    log BB: 0.07 (cns_penetrant)  LD50: 573 mg/kg (moderate)
+    log S: -2.89 (moderate)  Drug-likeness: 87/100  ADMET: PASS
+  [probe_polar] 4-hydroxybenzamide probe
+    MW=145.0  LogP=2.20  HBD=2  HBA=3  TPSA=30.4
+    Lipinski: ✓ compliant  Veber: ✓  Egan: ✓
+    Caco-2: 13.0×10⁻⁶ cm/s (high)  hERG IC50: 71.0 µM (safe)
+    HLM t½: 49 min (stable)  fu: 0.28 (moderate binding)
+    log BB: -0.17 (cns_penetrant)  LD50: 751 mg/kg (moderate)
+    log S: -2.80 (moderate)  Drug-likeness: 87/100  ADMET: PASS
+  [probe_basic] nicotine-like probe
+    MW=166.0  LogP=4.40  HBD=1  HBA=2  TPSA=24.0
+    Lipinski: ✓ compliant  Veber: ✓  Egan: ✓
+    Caco-2: 90.0×10⁻⁶ cm/s (high)  hERG IC50: 25.4 µM (safe)
+    HLM t½: 19 min (moderate)  fu: 0.10 (moderate binding)
+    log BB: 0.23 (cns_penetrant)  LD50: 525 mg/kg (moderate)
+    log S: -4.25 (low)  Drug-likeness: 78/100  ADMET: PASS
+  [probe_hydrophobic] isobutylbenzene probe
+    MW=135.0  LogP=5.00  HBD=0  HBA=0  TPSA=0.0
+    Lipinski: ✓ compliant  Veber: ✓  Egan: ✓
+    Caco-2: 225.9×10⁻⁶ cm/s (high)  hERG IC50: 19.5 µM (safe)
+    HLM t½: 8 min (unstable)  fu: 0.06 (moderate binding)
+    log BB: 0.72 (cns_penetrant)  LD50: 305 mg/kg (toxic)
+    log S: -4.43 (low)  Drug-likeness: 73/100  ADMET: WARN
+    Flags: Toxicity: toxic; HLM: rapid metabolism
+  [probe_scaffold] anthranilic acid probe
+    MW=257.0  LogP=5.20  HBD=3  HBA=4  TPSA=39.6
+    Lipinski: ✓ compliant  Veber: ✓  Egan: ✓
+    Caco-2: 126.8×10⁻⁶ cm/s (high)  hERG IC50: 17.9 µM (safe)
+    HLM t½: 28 min (moderate)  fu: 0.06 (moderate binding)
+    log BB: 0.00 (cns_penetrant)  LD50: 745 mg/kg (moderate)
+    log S: -6.73 (insoluble)  Drug-likeness: 72/100  ADMET: PASS
+──────────────────────────────────────────────────────────────────────
+2026-04-24 19:51:38 [__main__] INFO    Loaded binding pocket data for P04637
+2026-04-24 19:51:38 [__main__] INFO  ── ADMET Module: Profiling candidates for P04637 ──
+2026-04-24 19:51:38 [__main__] INFO    No molecules provided — using representative drug-like probes
+2026-04-24 19:51:38 [__main__] INFO    Target pocket: P1
+2026-04-24 19:51:38 [__main__] INFO    Profiling 5 molecules...
+2026-04-24 19:51:38 [__main__] INFO      Profiling probe_hydrophobic: isobutylbenzene probe
+2026-04-24 19:51:38 [__main__] WARNING    RDKit not available — using fallback property estimation
+2026-04-24 19:51:38 [__main__] INFO      Profiling probe_aromatic: benzoic acid probe
+2026-04-24 19:51:38 [__main__] WARNING    RDKit not available — using fallback property estimation
+2026-04-24 19:51:38 [__main__] INFO      Profiling probe_basic: nicotine-like probe
+2026-04-24 19:51:38 [__main__] WARNING    RDKit not available — using fallback property estimation
+2026-04-24 19:51:38 [__main__] INFO      Profiling probe_polar: 4-hydroxybenzamide probe
+2026-04-24 19:51:38 [__main__] WARNING    RDKit not available — using fallback property estimation
+2026-04-24 19:51:38 [__main__] INFO      Profiling probe_scaffold: anthranilic acid probe
+2026-04-24 19:51:38 [__main__] WARNING    RDKit not available — using fallback property estimation
+2026-04-24 19:51:38 [__main__] INFO  
+──────────────────────────────────────────────────────────────────────
+  ADMET Profiling: P04637
+  Molecules profiled : 5
+  Pass / Warn / Fail : 4 / 1 / 0
+  Mean drug-likeness : 79.4/100
+  Top molecule       : probe_aromatic
+──────────────────────────────────────────────────────────────────────
+  [probe_aromatic] benzoic acid probe
+    MW=129.5  LogP=2.50  HBD=1  HBA=2  TPSA=18.4
+    Lipinski: ✓ compliant  Veber: ✓  Egan: ✓
+    Caco-2: 20.6×10⁻⁶ cm/s (high)  hERG IC50: 56.8 µM (safe)
+    HLM t½: 32 min (stable)  fu: 0.21 (moderate binding)
+    log BB: 0.07 (cns_penetrant)  LD50: 573 mg/kg (moderate)
+    log S: -2.89 (moderate)  Drug-likeness: 87/100  ADMET: PASS
+  [probe_polar] 4-hydroxybenzamide probe
+    MW=145.0  LogP=2.20  HBD=2  HBA=3  TPSA=30.4
+    Lipinski: ✓ compliant  Veber: ✓  Egan: ✓
+    Caco-2: 13.0×10⁻⁶ cm/s (high)  hERG IC50: 71.0 µM (safe)
+    HLM t½: 49 min (stable)  fu: 0.28 (moderate binding)
+    log BB: -0.17 (cns_penetrant)  LD50: 751 mg/kg (moderate)
+    log S: -2.80 (moderate)  Drug-likeness: 87/100  ADMET: PASS
+  [probe_basic] nicotine-like probe
+    MW=166.0  LogP=4.40  HBD=1  HBA=2  TPSA=24.0
+    Lipinski: ✓ compliant  Veber: ✓  Egan: ✓
+    Caco-2: 90.0×10⁻⁶ cm/s (high)  hERG IC50: 25.4 µM (safe)
+    HLM t½: 19 min (moderate)  fu: 0.10 (moderate binding)
+    log BB: 0.23 (cns_penetrant)  LD50: 525 mg/kg (moderate)
+    log S: -4.25 (low)  Drug-likeness: 78/100  ADMET: PASS
+  [probe_hydrophobic] isobutylbenzene probe
+    MW=135.0  LogP=5.00  HBD=0  HBA=0  TPSA=0.0
+    Lipinski: ✓ compliant  Veber: ✓  Egan: ✓
+    Caco-2: 225.9×10⁻⁶ cm/s (high)  hERG IC50: 19.5 µM (safe)
+    HLM t½: 8 min (unstable)  fu: 0.06 (moderate binding)
+    log BB: 0.72 (cns_penetrant)  LD50: 305 mg/kg (toxic)
+    log S: -4.43 (low)  Drug-likeness: 73/100  ADMET: WARN
+    Flags: Toxicity: toxic; HLM: rapid metabolism
+  [probe_scaffold] anthranilic acid probe
+    MW=257.0  LogP=5.20  HBD=3  HBA=4  TPSA=39.6
+    Lipinski: ✓ compliant  Veber: ✓  Egan: ✓
+    Caco-2: 126.8×10⁻⁶ cm/s (high)  hERG IC50: 17.9 µM (safe)
+    HLM t½: 28 min (moderate)  fu: 0.06 (moderate binding)
+    log BB: 0.00 (cns_penetrant)  LD50: 745 mg/kg (moderate)
+    log S: -6.73 (insoluble)  Drug-likeness: 72/100  ADMET: PASS
+──────────────────────────────────────────────────────────────────────
+2026-04-24 19:51:46 [utils.pdb_parser] INFO  Parsing structure: P04637.pdb
+2026-04-24 19:51:46 [utils.pdb_parser] INFO    → 393 residues | mean pLDDT: 75.0 | disordered: 158 residues in 4 region(s)
+2026-04-24 19:51:46 [__main__] INFO    Sequence length: 393 aa
+2026-04-24 19:51:46 [__main__] INFO    Loaded active site data
+2026-04-24 19:51:46 [__main__] INFO    Loaded PPI data
+2026-04-24 19:51:46 [__main__] INFO    Loaded ESM-2 embeddings
+2026-04-24 19:51:46 [__main__] INFO    Loaded physicochemical (SASA) data
+2026-04-24 19:51:46 [__main__] INFO    Focused mutations: ['R175H', 'R248W', 'R273H']
+2026-04-24 19:51:46 [__main__] INFO  ── Mutational Impact Module: P04637  [mode=focused] ──
+2026-04-24 19:51:46 [__main__] INFO    Active site residues: 119
+2026-04-24 19:51:46 [__main__] INFO    Interface residues: 15
+2026-04-24 19:51:46 [__main__] INFO    Focused mode: 3 specific mutations
+2026-04-24 19:51:46 [__main__] INFO    Computing ΔΔG for 3 mutations...
+2026-04-24 19:51:46 [__main__] INFO    Building residue profiles...
+2026-04-24 19:51:46 [__main__] INFO  
+──────────────────────────────────────────────────────────────────────
+  Mutational Impact: P04637  [mode=focused]
+  Residues scanned  : 3
+  Mutations modelled: 3
+  Destabilising     : 2  Neutral: 1  Stabilising: 0
+  Mean ΔΔG          : +1.73 kcal/mol
+──────────────────────────────────────────────────────────────────────
+  Active site sensitivity:
+    Res 175: mean ΔΔG = +2.84 kcal/mol
+    Res 273: mean ΔΔG = +1.74 kcal/mol
+    Res 248: mean ΔΔG = +0.60 kcal/mol
+──────────────────────────────────────────────────────────────────────
+  Most destabilising mutations (top 10):
+    R175H     ΔΔG=+2.84  evo=0.27  destabilising  [ACTIVE SITE, buried]
+    R273H     ΔΔG=+1.74  evo=0.27  destabilising  [ACTIVE SITE]
+    R248W     ΔΔG=+0.60  evo=0.27  neutral  [ACTIVE SITE]
+──────────────────────────────────────────────────────────────────────
+2026-04-24 20:00:32 [__main__] INFO    Loaded binding pocket data (10 pockets)
+2026-04-24 20:00:32 [__main__] INFO    Loaded chemical environment data
+2026-04-24 20:00:32 [__main__] INFO  ── De Novo Design: P04637  [seed=7822] ──
+2026-04-24 20:00:32 [__main__] INFO    Pocket P1: center=[1.29, -2.95, 2.53]  box=[14.2, 14.2, 14.2]
+2026-04-24 20:00:32 [__main__] INFO    Chem env: charged pocket (q=+1.1) → upweighted polar fragments
+2026-04-24 20:00:32 [__main__] ERROR    Receptor not found at: data\structures\P04637.pdbqt
+2026-04-24 20:01:50 [__main__] INFO    Loaded binding pocket data (10 pockets)
+2026-04-24 20:01:50 [__main__] INFO    Loaded chemical environment data
+2026-04-24 20:01:50 [__main__] INFO  ── De Novo Design: P04637  [seed=318621] ──
+2026-04-24 20:01:50 [__main__] INFO    Pocket P1: center=[1.29, -2.95, 2.53]  box=[14.2, 14.2, 14.2]
+2026-04-24 20:01:50 [__main__] INFO    Chem env: charged pocket (q=+1.1) → upweighted polar fragments
+2026-04-24 20:01:50 [__main__] INFO    PDBQT not found — auto-converting from P04637.pdb...
+2026-04-24 20:07:29 [__main__] INFO    Loaded active site data (18 HIGH-confidence residues)
+2026-04-24 20:07:29 [__main__] INFO    Loaded allosteric data (8 sites)
+2026-04-24 20:07:29 [__main__] INFO    Loaded pocket data (10 pockets)
+2026-04-24 20:07:29 [__main__] INFO  ── De Novo Design: P04637  [seed=456735] ──
+2026-04-24 20:07:29 [__main__] INFO    Target: ACTIVE SITE  center=[3.162, 2.859, -2.968]  box=[30.0, 30.0, 30.0]  (18 high-conf residues)
+2026-04-24 20:07:29 [__main__] INFO    Chem env: hydrophobic active site → aromatic fragments
+2026-04-24 20:07:29 [__main__] INFO    Vina: C:\Users\adria\Documents\proteinFP\pipeline\vina.exe
+2026-04-24 20:07:29 [__main__] INFO    Receptor: C:\Users\adria\Documents\proteinFP\data\structures\P04637.pdbqt
+2026-04-24 20:07:29 [__main__] INFO    Workers: 8
+2026-04-24 20:07:29 [__main__] INFO    Building initial population (40 molecules)...
+2026-04-24 20:07:29 [__main__] INFO    Initial population: 40 molecules
+2026-04-24 20:07:29 [__main__] INFO    Starting evolution: 30 generations × 40 molecules
+2026-04-24 20:07:36 [__main__] INFO    Gen 1: score=-5.87  LE=0.652  QED=0.64  div=0.30  ↑ IMPROVED
+2026-04-24 20:07:37 [__main__] INFO    Gen time: 0m 7s  ETA: 3m 48s
+2026-04-24 20:07:59 [__main__] INFO    Gen 2: score=-8.77  LE=0.381  QED=0.47  div=0.20  ↑ IMPROVED
+2026-04-24 20:07:59 [__main__] INFO    Gen time: 0m 22s  ETA: 7m 8s
+2026-04-25 10:21:53 [__main__] INFO  ── Module 14: Molecular dynamics for P04637 ──
+2026-04-25 10:21:53 [utils.pdb_parser] INFO  Parsing structure: P04637.pdb
+2026-04-25 10:21:53 [utils.pdb_parser] INFO    → 393 residues | mean pLDDT: 75.0 | disordered: 158 residues in 4 region(s)
+2026-04-25 10:21:53 [__main__] INFO    Loaded structure: 393 residues from P04637.pdb
+2026-04-25 10:21:53 [__main__] INFO    [1/5] Building OpenMM system...
+2026-04-25 10:21:59 [__main__] INFO      Platform: OpenCL  |  Atoms: 6036  |  FF: amber14-all.xml + OBC2
+2026-04-25 10:21:59 [__main__] INFO    [2/5] Equilibrating (100 ps NVT)...
+2026-04-25 10:23:38 [__main__] INFO    [3/5] Running production (1.0 ns, 100 frames)...
+2026-04-25 10:39:26 [__main__] INFO    [4/5] Computing trajectory descriptors...
+2026-04-25 10:39:26 [__main__] INFO    [5/5] Mapping dynamics to predicted sites...
+2026-04-25 10:39:26 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  Molecular Dynamics: P04637
+  Platform   : OpenCL
+  Forcefield : amber14-all.xml + OBC2  (implicit)
+  Production : 1.0 ns (100 frames)
+  Wall time  : 1052.7 s
+  Mean Rg    : 30.85 ± 1.02 Å
+  Mean RMSD  : 10.09 Å vs frame 0
+  Flexible   : 388/393 residues (> 1.5 Å)
+  Helix/Sheet: 0% / 0%
+  [acti act_135] RMSF=2.70Å (max 2.70)  H-bond persist=0%  stability=0.27
+  [acti act_141] RMSF=2.77Å (max 2.77)  H-bond persist=0%  stability=0.27
+  [acti act_176] RMSF=2.51Å (max 2.51)  H-bond persist=0%  stability=0.29
+  [acti act_193] RMSF=1.98Å (max 1.98)  H-bond persist=0%  stability=0.34
+  [acti act_214] RMSF=2.74Å (max 2.74)  H-bond persist=0%  stability=0.27
+  [acti act_238] RMSF=1.69Å (max 1.69)  H-bond persist=0%  stability=0.37
+────────────────────────────────────────────────────────────
+2026-04-25 10:39:26 [__main__] INFO    Result saved to C:\Users\adria\Documents\proteinFP\data\intermediate\P04637_md.json
+2026-04-25 10:59:37 [utils.pdb_parser] INFO  Parsing structure: P04637.pdb
+2026-04-25 10:59:37 [utils.pdb_parser] INFO    → 393 residues | mean pLDDT: 75.0 | disordered: 158 residues in 4 region(s)
+2026-04-25 11:02:38 [utils.pdb_parser] INFO  Parsing structure: P04637.pdb
+2026-04-25 11:02:39 [utils.pdb_parser] INFO    → 393 residues | mean pLDDT: 75.0 | disordered: 158 residues in 4 region(s)
+2026-04-25 11:02:39 [__main__] INFO  ── Module 02: Physicochemical analysis for P04637 ──
+2026-04-25 11:02:39 [__main__] INFO    [1/4] Computing SASA (freesasa)...
+2026-04-25 11:02:39 [__main__] INFO    [2/4] Assigning secondary structure (DSSP)...
+2026-04-25 11:02:39 [__main__] WARNING      DSSP not available ([WinError 2] The system cannot find the file specified).
+    Install mkdssp: https://github.com/PDB-REDO/dssp/releases
+    Falling back to coil for all residues.
+2026-04-25 11:02:39 [__main__] INFO    [3/4] Building per-residue physicochemical profile...
+2026-04-25 11:02:39 [__main__] INFO    [4/4] Detecting surface patches...
+2026-04-25 11:02:39 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  Physicochemical profile: P04637
+  Total SASA      : 35641.0 Å²
+  Exposed residues: 327/393 (83.2%)
+  Net charge (pH7): -2.8 (negative)
+  Mean hydrophob. : -0.76
+  2° structure    : helix 0% | strand 0% | coil 100%
+  Hydrophob. patches: 6
+  Positive patches  : 6
+  Negative patches  : 2
+────────────────────────────────────────────────────────────
+2026-04-25 11:03:40 [utils.pdb_parser] INFO  Parsing structure: P04637.pdb
+2026-04-25 11:03:40 [utils.pdb_parser] INFO    → 393 residues | mean pLDDT: 75.0 | disordered: 158 residues in 4 region(s)
+2026-04-25 11:03:40 [__main__] INFO  ── Module 02: Physicochemical analysis for P04637 ──
+2026-04-25 11:03:40 [__main__] INFO    [1/4] Computing SASA (freesasa)...
+2026-04-25 11:03:40 [__main__] INFO    [2/4] Assigning secondary structure (DSSP)...
+2026-04-25 11:03:40 [__main__] WARNING      DSSP not available ([WinError 2] The system cannot find the file specified).
+    Install mkdssp: https://github.com/PDB-REDO/dssp/releases
+    Falling back to coil for all residues.
+2026-04-25 11:03:40 [__main__] INFO    [3/4] Building per-residue physicochemical profile...
+2026-04-25 11:03:40 [__main__] INFO    [4/4] Detecting surface patches...
+2026-04-25 11:03:40 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  Physicochemical profile: P04637
+  Total SASA      : 35641.0 Å²
+  Exposed residues: 327/393 (83.2%)
+  Net charge (pH7): -2.8 (negative)
+  Mean hydrophob. : -0.76
+  2° structure    : helix 0% | strand 0% | coil 100%
+  Hydrophob. patches: 6
+  Positive patches  : 6
+  Negative patches  : 2
+────────────────────────────────────────────────────────────
+2026-04-25 11:04:35 [utils.pdb_parser] INFO  Parsing structure: P04637.pdb
+2026-04-25 11:04:35 [utils.pdb_parser] INFO    → 393 residues | mean pLDDT: 75.0 | disordered: 158 residues in 4 region(s)
+2026-04-25 11:04:35 [__main__] INFO  ── Module 02: Physicochemical analysis for P04637 ──
+2026-04-25 11:04:35 [__main__] INFO    [1/4] Computing SASA (freesasa)...
+2026-04-25 11:04:35 [__main__] INFO    [2/4] Assigning secondary structure (DSSP)...
+2026-04-25 11:04:35 [__main__] WARNING      DSSP not available (DSSP failed to produce an output).
+    Install mkdssp: https://github.com/PDB-REDO/dssp/releases
+    Falling back to coil for all residues.
+2026-04-25 11:04:35 [__main__] INFO    [3/4] Building per-residue physicochemical profile...
+2026-04-25 11:04:35 [__main__] INFO    [4/4] Detecting surface patches...
+2026-04-25 11:04:35 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  Physicochemical profile: P04637
+  Total SASA      : 35641.0 Å²
+  Exposed residues: 327/393 (83.2%)
+  Net charge (pH7): -2.8 (negative)
+  Mean hydrophob. : -0.76
+  2° structure    : helix 0% | strand 0% | coil 100%
+  Hydrophob. patches: 6
+  Positive patches  : 6
+  Negative patches  : 2
+────────────────────────────────────────────────────────────
+2026-04-25 11:04:53 [utils.pdb_parser] INFO  Parsing structure: P04637.pdb
+2026-04-25 11:04:53 [utils.pdb_parser] INFO    → 393 residues | mean pLDDT: 75.0 | disordered: 158 residues in 4 region(s)
+2026-04-25 11:04:53 [__main__] INFO  ── Module 02: Physicochemical analysis for P04637 ──
+2026-04-25 11:04:53 [__main__] INFO    [1/4] Computing SASA (freesasa)...
+2026-04-25 11:04:53 [__main__] INFO    [2/4] Assigning secondary structure (DSSP)...
+2026-04-25 11:04:54 [__main__] WARNING      DSSP not available (DSSP failed to produce an output).
+    Install mkdssp: https://github.com/PDB-REDO/dssp/releases
+    Falling back to coil for all residues.
+2026-04-25 11:04:54 [__main__] INFO    [3/4] Building per-residue physicochemical profile...
+2026-04-25 11:04:54 [__main__] INFO    [4/4] Detecting surface patches...
+2026-04-25 11:04:54 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  Physicochemical profile: P04637
+  Total SASA      : 35641.0 Å²
+  Exposed residues: 327/393 (83.2%)
+  Net charge (pH7): -2.8 (negative)
+  Mean hydrophob. : -0.76
+  2° structure    : helix 0% | strand 0% | coil 100%
+  Hydrophob. patches: 6
+  Positive patches  : 6
+  Negative patches  : 2
+────────────────────────────────────────────────────────────
+2026-04-25 11:05:45 [utils.pdb_parser] INFO  Parsing structure: P04637.pdb
+2026-04-25 11:05:45 [utils.pdb_parser] INFO    → 393 residues | mean pLDDT: 75.0 | disordered: 158 residues in 4 region(s)
+2026-04-25 11:05:45 [__main__] INFO  ── Module 02: Physicochemical analysis for P04637 ──
+2026-04-25 11:05:45 [__main__] INFO    [1/4] Computing SASA (freesasa)...
+2026-04-25 11:05:45 [__main__] INFO    [2/4] Assigning secondary structure (DSSP)...
+2026-04-25 11:05:45 [__main__] INFO    [3/4] Building per-residue physicochemical profile...
+2026-04-25 11:05:45 [__main__] INFO    [4/4] Detecting surface patches...
+2026-04-25 11:05:45 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  Physicochemical profile: P04637
+  Total SASA      : 35641.0 Å²
+  Exposed residues: 327/393 (83.2%)
+  Net charge (pH7): -2.8 (negative)
+  Mean hydrophob. : -0.76
+  2° structure    : helix 0% | strand 0% | coil 100%
+  Hydrophob. patches: 6
+  Positive patches  : 6
+  Negative patches  : 2
+────────────────────────────────────────────────────────────
+2026-04-25 11:06:00 [utils.pdb_parser] INFO  Parsing structure: P04637.pdb
+2026-04-25 11:06:00 [utils.pdb_parser] INFO    → 393 residues | mean pLDDT: 75.0 | disordered: 158 residues in 4 region(s)
+2026-04-25 11:06:00 [__main__] INFO  ── Module 02: Physicochemical analysis for P04637 ──
+2026-04-25 11:06:00 [__main__] INFO    [1/4] Computing SASA (freesasa)...
+2026-04-25 11:06:00 [__main__] INFO    [2/4] Assigning secondary structure (DSSP)...
+2026-04-25 11:06:00 [__main__] INFO    [3/4] Building per-residue physicochemical profile...
+2026-04-25 11:06:00 [__main__] INFO    [4/4] Detecting surface patches...
+2026-04-25 11:06:00 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  Physicochemical profile: P04637
+  Total SASA      : 35641.0 Å²
+  Exposed residues: 327/393 (83.2%)
+  Net charge (pH7): -2.8 (negative)
+  Mean hydrophob. : -0.76
+  2° structure    : helix 0% | strand 0% | coil 100%
+  Hydrophob. patches: 6
+  Positive patches  : 6
+  Negative patches  : 2
+────────────────────────────────────────────────────────────
+2026-04-25 11:10:55 [utils.pdb_parser] INFO  Parsing structure: P04637.pdb
+2026-04-25 11:10:55 [utils.pdb_parser] INFO    → 393 residues | mean pLDDT: 75.0 | disordered: 158 residues in 4 region(s)
+2026-04-25 11:10:55 [__main__] INFO  ── Module 02: Physicochemical analysis for P04637 ──
+2026-04-25 11:10:55 [__main__] INFO    [1/4] Computing SASA (freesasa)...
+2026-04-25 11:10:55 [__main__] INFO    [2/4] Assigning secondary structure (DSSP)...
+2026-04-25 11:10:57 [__main__] WARNING      pydssp failed (too many values to unpack (expected 2)) — falling back to coil.
+2026-04-25 11:10:57 [__main__] INFO    [3/4] Building per-residue physicochemical profile...
+2026-04-25 11:10:57 [__main__] INFO    [4/4] Detecting surface patches...
+2026-04-25 11:10:57 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  Physicochemical profile: P04637
+  Total SASA      : 35641.0 Å²
+  Exposed residues: 327/393 (83.2%)
+  Net charge (pH7): -2.8 (negative)
+  Mean hydrophob. : -0.76
+  2° structure    : helix 0% | strand 0% | coil 100%
+  Hydrophob. patches: 6
+  Positive patches  : 6
+  Negative patches  : 2
+────────────────────────────────────────────────────────────
+2026-04-25 11:12:45 [utils.pdb_parser] INFO  Parsing structure: P04637.pdb
+2026-04-25 11:12:45 [utils.pdb_parser] INFO    → 393 residues | mean pLDDT: 75.0 | disordered: 158 residues in 4 region(s)
+2026-04-25 11:12:45 [__main__] INFO  ── Module 02: Physicochemical analysis for P04637 ──
+2026-04-25 11:12:45 [__main__] INFO    [1/4] Computing SASA (freesasa)...
+2026-04-25 11:12:45 [__main__] INFO    [2/4] Assigning secondary structure (DSSP)...
+2026-04-25 11:12:48 [__main__] WARNING      pydssp failed (name '_iter_std_residues' is not defined) — falling back to coil.
+2026-04-25 11:12:48 [__main__] INFO    [3/4] Building per-residue physicochemical profile...
+2026-04-25 11:12:48 [__main__] INFO    [4/4] Detecting surface patches...
+2026-04-25 11:12:48 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  Physicochemical profile: P04637
+  Total SASA      : 35641.0 Å²
+  Exposed residues: 327/393 (83.2%)
+  Net charge (pH7): -2.8 (negative)
+  Mean hydrophob. : -0.76
+  2° structure    : helix 0% | strand 0% | coil 100%
+  Hydrophob. patches: 6
+  Positive patches  : 6
+  Negative patches  : 2
+────────────────────────────────────────────────────────────
+2026-04-25 11:14:22 [utils.pdb_parser] INFO  Parsing structure: P04637.pdb
+2026-04-25 11:14:22 [utils.pdb_parser] INFO    → 393 residues | mean pLDDT: 75.0 | disordered: 158 residues in 4 region(s)
+2026-04-25 11:14:22 [__main__] INFO  ── Module 02: Physicochemical analysis for P04637 ──
+2026-04-25 11:14:22 [__main__] INFO    [1/4] Computing SASA (freesasa)...
+2026-04-25 11:14:22 [__main__] INFO    [2/4] Assigning secondary structure (DSSP)...
+2026-04-25 11:14:22 [__main__] WARNING      SS assignment failed (name '_iter_std_residues' is not defined) — falling back to coil.
+2026-04-25 11:14:22 [__main__] INFO    [3/4] Building per-residue physicochemical profile...
+2026-04-25 11:14:22 [__main__] INFO    [4/4] Detecting surface patches...
+2026-04-25 11:14:22 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  Physicochemical profile: P04637
+  Total SASA      : 35641.0 Å²
+  Exposed residues: 327/393 (83.2%)
+  Net charge (pH7): -2.8 (negative)
+  Mean hydrophob. : -0.76
+  2° structure    : helix 0% | strand 0% | coil 100%
+  Hydrophob. patches: 6
+  Positive patches  : 6
+  Negative patches  : 2
+────────────────────────────────────────────────────────────
+2026-04-25 11:15:08 [utils.pdb_parser] INFO  Parsing structure: P04637.pdb
+2026-04-25 11:15:08 [utils.pdb_parser] INFO    → 393 residues | mean pLDDT: 75.0 | disordered: 158 residues in 4 region(s)
+2026-04-25 11:15:08 [__main__] INFO  ── Module 02: Physicochemical analysis for P04637 ──
+2026-04-25 11:15:08 [__main__] INFO    [1/4] Computing SASA (freesasa)...
+2026-04-25 11:15:08 [__main__] INFO    [2/4] Assigning secondary structure (DSSP)...
+2026-04-25 11:15:08 [__main__] WARNING      SS assignment failed (name '_iter_std_residues' is not defined) — falling back to coil.
+2026-04-25 11:15:08 [__main__] INFO    [3/4] Building per-residue physicochemical profile...
+2026-04-25 11:15:08 [__main__] INFO    [4/4] Detecting surface patches...
+2026-04-25 11:15:08 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  Physicochemical profile: P04637
+  Total SASA      : 35641.0 Å²
+  Exposed residues: 327/393 (83.2%)
+  Net charge (pH7): -2.8 (negative)
+  Mean hydrophob. : -0.76
+  2° structure    : helix 0% | strand 0% | coil 100%
+  Hydrophob. patches: 6
+  Positive patches  : 6
+  Negative patches  : 2
+────────────────────────────────────────────────────────────
+2026-04-25 11:17:11 [utils.pdb_parser] INFO  Parsing structure: P04637.pdb
+2026-04-25 11:17:11 [utils.pdb_parser] INFO    → 393 residues | mean pLDDT: 75.0 | disordered: 158 residues in 4 region(s)
+2026-04-25 11:17:33 [utils.pdb_parser] INFO  Parsing structure: P04637.pdb
+2026-04-25 11:17:33 [utils.pdb_parser] INFO    → 393 residues | mean pLDDT: 75.0 | disordered: 158 residues in 4 region(s)
+2026-04-25 11:17:33 [__main__] INFO  ── Module 02: Physicochemical analysis for P04637 ──
+2026-04-25 11:17:33 [__main__] INFO    [1/4] Computing SASA (freesasa)...
+2026-04-25 11:17:33 [__main__] INFO    [2/4] Assigning secondary structure (DSSP)...
+2026-04-25 11:17:33 [__main__] WARNING      SS assignment failed (name '_iter_std_residues' is not defined) — falling back to coil.
+2026-04-25 11:17:33 [__main__] INFO    [3/4] Building per-residue physicochemical profile...
+2026-04-25 11:17:33 [__main__] INFO    [4/4] Detecting surface patches...
+2026-04-25 11:17:33 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  Physicochemical profile: P04637
+  Total SASA      : 35641.0 Å²
+  Exposed residues: 327/393 (83.2%)
+  Net charge (pH7): -2.8 (negative)
+  Mean hydrophob. : -0.76
+  2° structure    : helix 0% | strand 0% | coil 100%
+  Hydrophob. patches: 6
+  Positive patches  : 6
+  Negative patches  : 2
+────────────────────────────────────────────────────────────
+2026-04-25 11:19:20 [utils.pdb_parser] INFO  Parsing structure: P04637.pdb
+2026-04-25 11:19:20 [utils.pdb_parser] INFO    → 393 residues | mean pLDDT: 75.0 | disordered: 158 residues in 4 region(s)
+2026-04-25 11:19:20 [__main__] INFO  ── Module 02: Physicochemical analysis for P04637 ──
+2026-04-25 11:19:20 [__main__] INFO    [1/4] Computing SASA (freesasa)...
+2026-04-25 11:19:20 [__main__] INFO    [2/4] Assigning secondary structure (DSSP)...
+2026-04-25 11:19:20 [__main__] INFO    [3/4] Building per-residue physicochemical profile...
+2026-04-25 11:19:20 [__main__] INFO    [4/4] Detecting surface patches...
+2026-04-25 11:19:20 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  Physicochemical profile: P04637
+  Total SASA      : 35641.0 Å²
+  Exposed residues: 327/393 (83.2%)
+  Net charge (pH7): -2.8 (negative)
+  Mean hydrophob. : -0.76
+  2° structure    : helix 21% | strand 71% | coil 8%
+  Hydrophob. patches: 6
+  Positive patches  : 6
+  Negative patches  : 2
+────────────────────────────────────────────────────────────
+2026-04-25 11:32:05 [__main__] INFO  ── Module 13: Consensus scoring for P04637 ──
+2026-04-25 11:32:05 [__main__] INFO    Loaded: P04637_structure.json
+2026-04-25 11:32:05 [__main__] INFO    Loaded: P04637_physicochemical.json
+2026-04-25 11:32:05 [__main__] INFO    Loaded: P04637_active_sites.json
+2026-04-25 11:32:05 [__main__] INFO    Loaded: P04637_binding_pockets.json
+2026-04-25 11:32:05 [__main__] INFO    Loaded: P04637_allosteric.json
+2026-04-25 11:32:05 [__main__] INFO    Loaded: P04637_chemical_env.json
+2026-04-25 11:32:05 [__main__] INFO    Loaded: P04637_homology.json
+2026-04-25 11:32:05 [__main__] INFO    Loaded: P04637_esm2.json
+2026-04-25 11:32:05 [__main__] INFO    Loaded: P04637_go_predictions.json
+2026-04-25 11:32:05 [__main__] INFO    Loaded: P04637_ec_prediction.json
+2026-04-25 11:32:05 [__main__] INFO    Loaded: P04637_foldseek.json
+2026-04-25 11:32:05 [__main__] INFO    Loaded: P04637_ppi.json
+2026-04-25 11:32:05 [__main__] INFO    Loaded: P04637_md.json
+2026-04-25 11:32:05 [__main__] INFO    13/13 modules available
+2026-04-25 11:32:05 [__main__] INFO    [1/5] Aggregating GO evidence...
+2026-04-25 11:32:05 [__main__] INFO    [2/5] Extracting site predictions...
+2026-04-25 11:32:05 [__main__] INFO    [3/5] Generating validation suggestions...
+2026-04-25 11:32:05 [__main__] INFO    [4/5] Computing overall confidence...
+2026-04-25 11:32:05 [__main__] INFO    [5/5] Assembling final report...
+2026-04-25 11:34:06 [__main__] INFO  ── Module 13: Consensus scoring for P04637 ──
+2026-04-25 11:34:06 [__main__] INFO    Loaded: P04637_structure.json
+2026-04-25 11:34:06 [__main__] INFO    Loaded: P04637_physicochemical.json
+2026-04-25 11:34:06 [__main__] INFO    Loaded: P04637_active_sites.json
+2026-04-25 11:34:06 [__main__] INFO    Loaded: P04637_binding_pockets.json
+2026-04-25 11:34:06 [__main__] INFO    Loaded: P04637_allosteric.json
+2026-04-25 11:34:06 [__main__] INFO    Loaded: P04637_chemical_env.json
+2026-04-25 11:34:06 [__main__] INFO    Loaded: P04637_homology.json
+2026-04-25 11:34:06 [__main__] INFO    Loaded: P04637_esm2.json
+2026-04-25 11:34:06 [__main__] INFO    Loaded: P04637_go_predictions.json
+2026-04-25 11:34:06 [__main__] INFO    Loaded: P04637_ec_prediction.json
+2026-04-25 11:34:06 [__main__] INFO    Loaded: P04637_foldseek.json
+2026-04-25 11:34:06 [__main__] INFO    Loaded: P04637_ppi.json
+2026-04-25 11:34:06 [__main__] INFO    Loaded: P04637_md.json
+2026-04-25 11:34:06 [__main__] INFO    13/13 modules available
+2026-04-25 11:34:06 [__main__] INFO    [1/5] Aggregating GO evidence...
+2026-04-25 11:34:06 [__main__] INFO    [2/5] Extracting site predictions...
+2026-04-25 11:34:06 [__main__] INFO    [3/5] Generating validation suggestions...
+2026-04-25 11:34:06 [__main__] INFO    [4/5] Computing overall confidence...
+2026-04-25 11:34:06 [__main__] INFO    [5/5] Assembling final report...
