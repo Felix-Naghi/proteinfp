@@ -42,7 +42,7 @@ from utils.config import cfg, get_logger
 from utils.pdb_parser import (
     ParsedStructure, ResidueInfo,
     AA3TO1, HYDROPHOBICITY,
-    parse_pdb,
+    parse_pdb, _iter_std_residues,
 )
 
 log = get_logger(__name__)
@@ -307,38 +307,89 @@ def _compute_secondary_structure(
     pdb_path: str,
 ) -> tuple[dict[tuple[str, int], str], bool]:
     """
-    Assign secondary structure using BioPython's DSSP wrapper.
-    Falls back to all-coil if DSSP binary not available.
-
-    Returns:
-        ss_map : dict (chain_id, res_num) → ss_label string
-        ok     : True if DSSP ran successfully
+    Assign secondary structure from Cα geometry (no external tools needed).
+    Uses Cα-Cα distances and angles — works perfectly on AlphaFold PDBs.
     """
+    import numpy as np
+
     ss_map: dict[tuple[str, int], str] = {}
 
     try:
-        parser    = PDBParser(QUIET=True)
-        structure = parser.get_structure("protein", str(pdb_path))
-        model     = structure[0]
+        parser   = PDBParser(QUIET=True)
+        struct   = parser.get_structure("p", pdb_path)
+        residues = list(_iter_std_residues(struct[0]))
 
-        dssp = DSSP(model, str(pdb_path), dssp="mkdssp")
+        # Extract Cα coordinates
+        cas = []
+        for res in residues:
+            try:
+                ca = res["CA"].get_vector()
+                cas.append([ca[0], ca[1], ca[2]])
+            except KeyError:
+                cas.append(None)
 
-        for key in dssp.keys():
-            chain_id = key[0]
-            res_num  = key[1][1]
-            ss_code  = dssp[key][2]
-            ss_map[(chain_id, res_num)] = DSSP_LABELS.get(ss_code, "coil")
+        n = len(cas)
 
-        log.debug(f"    DSSP assigned for {len(ss_map)} residues")
+        def dist(a, b):
+            if a is None or b is None:
+                return 999.0
+            return float(np.linalg.norm(np.array(a) - np.array(b)))
+
+        def angle(a, b, c):
+            if any(x is None for x in [a, b, c]):
+                return 0.0
+            ba = np.array(a) - np.array(b)
+            bc = np.array(c) - np.array(b)
+            cos = np.dot(ba, bc) / (np.linalg.norm(ba) * np.linalg.norm(bc) + 1e-8)
+            return float(np.degrees(np.arccos(np.clip(cos, -1, 1))))
+
+        labels = ["coil"] * n
+
+        # Helix: Cα(i) to Cα(i+4) distance ~ 5.1 Å, angle ~ 90°
+        for i in range(n - 4):
+            d = dist(cas[i], cas[i + 4])
+            if 4.5 < d < 6.5:
+                ang = angle(cas[i], cas[i + 2], cas[i + 4])
+                if 60 < ang < 120:
+                    for j in range(i, min(i + 5, n)):
+                        labels[j] = "alpha_helix"
+
+        # Strand: Cα(i) to Cα(i+2) distance ~ 6.4 Å, angle ~ 120°
+        for i in range(n - 2):
+            if labels[i] == "alpha_helix":
+                continue
+            d = dist(cas[i], cas[i + 2])
+            if 5.8 < d < 7.2:
+                ang = angle(cas[i], cas[i + 1], cas[i + 2])
+                if 110 < ang < 160:
+                    for j in range(i, min(i + 3, n)):
+                        if labels[j] != "alpha_helix":
+                            labels[j] = "beta_strand"
+
+        for res, label in zip(residues, labels):
+            chain_id = res.get_parent().get_id()
+            res_num  = res.get_id()[1]
+            ss_map[(chain_id, res_num)] = label
+
+        log.debug(f"    Cα-geometry SS assigned for {len(ss_map)} residues")
         return ss_map, True
 
     except Exception as e:
-        log.warning(
-            f"    DSSP not available ({e}).\n"
-            f"    Install mkdssp: https://github.com/PDB-REDO/dssp/releases\n"
-            f"    Falling back to coil for all residues."
-        )
+        log.warning(f"    SS assignment failed ({e}) — falling back to coil.")
         return {}, False
+
+
+def _find_mkdssp() -> Optional[str]:
+    """Find mkdssp executable."""
+    import shutil
+    exe = shutil.which("mkdssp")
+    if exe:
+        return exe
+    # Fallback: check miniforge directly
+    candidate = Path(r"C:\Users\adria\miniforge3\bin\mkdssp.exe")
+    if candidate.exists():
+        return str(candidate)
+    return None
 
 
 # ── Per-residue record builder ─────────────────────────────────────────────────

@@ -292,6 +292,7 @@ def build_consensus_report(uniprot_id: str) -> ConsensusReport:
         "ec":           f"{uid}_ec_prediction.json",
         "foldseek":     f"{uid}_foldseek.json",
         "ppi":          f"{uid}_ppi.json",
+        "md":           f"{uid}_md.json",       # ← ADD THIS LINE
     }
 
     for key, filename in module_files.items():
@@ -423,7 +424,8 @@ def build_consensus_report(uniprot_id: str) -> ConsensusReport:
     log.info("  [4/5] Computing overall confidence...")
     n_sources      = len(modules_run)
     n_exp_hits     = modules_data.get("homology", {}).get("n_experimental_hits", 0)
-    overall_conf   = _overall_confidence(n_sources, n_exp_hits, mean_plddt, go_mf)
+    overall_conf = _overall_confidence(n_sources, n_exp_hits, mean_plddt, go_mf,
+                                   md_data=modules_data.get("md"))
 
     # ── Assemble report ───────────────────────────────────────────────────────
     log.info("  [5/5] Assembling final report...")
@@ -698,28 +700,33 @@ def _extract_location(modules_data: dict, physico_data: Optional[dict] = None) -
     # Fall back to top CC term
     return cc_terms[0].get("go_name", "unknown")
 
-
 def _overall_confidence(
     n_sources:   int,
     n_exp_hits:  int,
     mean_plddt:  float,
     go_mf:       list[RankedGOTerm],
+    md_data:     Optional[dict] = None,
 ) -> str:
     score = 0
     if n_sources >= 10: score += 3
     elif n_sources >= 7: score += 2
     elif n_sources >= 4: score += 1
-
     if n_exp_hits >= 5:  score += 3
     elif n_exp_hits >= 2: score += 2
     elif n_exp_hits >= 1: score += 1
-
     if mean_plddt >= 80:  score += 2
     elif mean_plddt >= 70: score += 1
-
     if go_mf and go_mf[0].confidence == "HIGH": score += 2
     elif go_mf and go_mf[0].confidence == "MEDIUM": score += 1
-
+    # MD stability bonus — rigid active sites = higher confidence
+    if md_data:
+        sites = md_data.get("site_dynamics", [])
+        active = [s for s in sites if s.get("site_type") == "active"]
+        if active:
+            mean_stab = sum(s.get("stability_score", 0) for s in active) / len(active)
+            if mean_stab >= 0.5:   score += 2
+            elif mean_stab >= 0.3: score += 1
+            elif mean_stab < 0.15: score -= 1  # very floppy = penalise
     if score >= 8:   return "VERY HIGH"
     if score >= 6:   return "HIGH"
     if score >= 4:   return "MEDIUM"
@@ -829,8 +836,7 @@ def main(uniprot: str) -> None:
     report.to_json(json_out)
     text = report.to_text_report()
     # Windows console safe output
-    safe_text = text.encode('ascii', errors='replace').decode('ascii')
-    click.echo(safe_text)
+    click.echo(text)
     text_out.write_text(text, encoding="utf-8")
     click.echo(f"\nReports saved to:")
     click.echo(f"  JSON : {json_out}")

@@ -1,0 +1,5901 @@
+{
+  "uniprot_id": "P04637",
+  "n_atoms": 6036,
+  "n_residues": 393,
+  "forcefield": "amber14-all.xml + OBC2",
+  "solvent_model": "implicit",
+  "platform": "OpenCL",
+  "temperature_K": 300.0,
+  "timestep_fs": 2.0,
+  "production_ns": 1.0,
+  "n_frames": 100,
+  "wall_time_sec": 1052.7185063362122,
+  "mean_rg": 30.85100746154785,
+  "rg_std": 1.0176323652267456,
+  "mean_rmsd_to_ref": 10.091423034667969,
+  "helix_fraction": 0.0,
+  "sheet_fraction": 0.0,
+  "rmsf_per_residue": [
+    11.557611465454102,
+    11.022224426269531,
+    9.046067237854004,
+    7.229090690612793,
+    7.334672927856445,
+    6.176767826080322,
+    6.8861470222473145,
+    6.959305286407471,
+    6.345635414123535,
+    6.387284278869629,
+    5.926753997802734,
+    5.6772541999816895,
+    6.779176712036133,
+    6.505331039428711,
+    6.535304546356201,
+    6.519819259643555,
+    6.430270195007324,
+    5.5870442390441895,
+    5.012271404266357,
+    5.331437110900879,
+    5.265720844268799,
+    4.449336051940918,
+    4.400155067443848,
+    4.964818954467773,
+    4.966870307922363,
+    4.723627090454102,
+    5.6040358543396,
+    5.8689422607421875,
+    6.474860191345215,
+    5.59297513961792,
+    5.224732398986816,
+    6.216242790222168,
+    7.080582618713379,
+    6.777193069458008,
+    6.189877986907959,
+    6.3989739418029785,
+    6.40806770324707,
+    5.791893005371094,
+    4.922738552093506,
+    3.7896409034729004,
+    4.208507537841797,
+    4.456311225891113,
+    4.002325534820557,
+    4.204673767089844,
+    5.4184041023254395,
+    6.015130519866943,
+    7.342203617095947,
+    7.839662075042725,
+    8.48095417022705,
+    7.094573974609375,
+    6.65304708480835,
+    7.975566864013672,
+    8.032082557678223,
+    6.602147102355957,
+    6.418539047241211,
+    7.5824666023254395,
+    8.124053955078125,
+    9.223713874816895,
+    10.615106582641602,
+    11.584329605102539,
+    11.997461318969727,
+    11.320225715637207,
+    12.597814559936523,
+    12.451911926269531,
+    12.21614933013916,
+    12.498800277709961,
+    13.339224815368652,
+    14.324469566345215,
+    14.502455711364746,
+    14.023184776306152,
+    13.213215827941895,
+    12.54804801940918,
+    12.331437110900879,
+    11.504769325256348,
+    11.180203437805176,
+    11.201375961303711,
+    11.025721549987793,
+    11.042318344116211,
+    10.912318229675293,
+    10.861075401306152,
+    10.711417198181152,
+    9.288520812988281,
+    9.612448692321777,
+    8.561546325683594,
+    7.668934345245361,
+    6.006059646606445,
+    5.543899059295654,
+    5.264743804931641,
+    4.388258457183838,
+    4.104127407073975,
+    4.253722190856934,
+    4.237058639526367,
+    3.651336908340454,
+    4.255997180938721,
+    4.108023643493652,
+    4.2699761390686035,
+    3.7141146659851074,
+    3.1155452728271484,
+    3.006730556488037,
+    2.7418181896209717,
+    2.903902292251587,
+    2.3023719787597656,
+    2.3851258754730225,
+    2.509415626525879,
+    2.9291799068450928,
+    3.4932146072387695,
+    3.4479339122772217,
+    3.170185089111328,
+    2.7321455478668213,
+    2.6750335693359375,
+    2.6708433628082275,
+    3.315098762512207,
+    3.5815927982330322,
+    4.537647247314453,
+    5.1905341148376465,
+    5.17501163482666,
+    5.554417610168457,
+    5.202292442321777,
+    5.187915325164795,
+    4.639379978179932,
+    4.618135452270508,
+    4.253464698791504,
+    3.652561902999878,
+    3.4401557445526123,
+    3.7450172901153564,
+    3.561521053314209,
+    4.028102397918701,
+    4.29359245300293,
+    4.6743364334106445,
+    3.9850106239318848,
+    3.3270416259765625,
+    2.9550118446350098,
+    2.670008420944214,
+    2.886528491973877,
+    2.7049155235290527,
+    2.828874111175537,
+    2.454477548599243,
+    2.4655866622924805,
+    2.855733633041382,
+    3.0311527252197266,
+    2.768441677093506,
+    3.0664117336273193,
+    2.865455150604248,
+    3.3058555126190186,
+    3.054306983947754,
+    3.37888503074646,
+    3.5682806968688965,
+    4.089778900146484,
+    4.405299186706543,
+    4.546543598175049,
+    4.133948802947998,
+    4.6802473068237305,
+    5.232580661773682,
+    4.9420857429504395,
+    4.04850435256958,
+    3.4853408336639404,
+    2.721890687942505,
+    2.294365882873535,
+    1.6900237798690796,
+    1.5465383529663086,
+    1.465456485748291,
+    2.074902296066284,
+    2.6220476627349854,
+    3.0695462226867676,
+    3.8629846572875977,
+    4.2705535888671875,
+    4.581376552581787,
+    3.8224987983703613,
+    3.2896034717559814,
+    3.7803359031677246,
+    3.3395915031433105,
+    2.6660001277923584,
+    1.9981637001037598,
+    1.9683432579040527,
+    1.9167131185531616,
+    2.506930112838745,
+    3.0780704021453857,
+    3.1076438426971436,
+    2.7317116260528564,
+    3.2729671001434326,
+    3.741292953491211,
+    3.47249698638916,
+    3.475541591644287,
+    2.9615983963012695,
+    2.7343287467956543,
+    3.139172077178955,
+    3.7452340126037598,
+    3.706122398376465,
+    3.0513060092926025,
+    2.965573787689209,
+    2.713292360305786,
+    2.3720531463623047,
+    1.9777246713638306,
+    1.4312924146652222,
+    1.4772098064422607,
+    2.1120760440826416,
+    2.705078363418579,
+    3.142498731613159,
+    4.246540546417236,
+    4.325292587280273,
+    4.677206039428711,
+    4.5106682777404785,
+    3.748126983642578,
+    3.6940014362335205,
+    3.2839791774749756,
+    3.5411479473114014,
+    3.7085440158843994,
+    4.113595485687256,
+    4.800610542297363,
+    4.928743839263916,
+    4.296197891235352,
+    3.950015068054199,
+    3.0910637378692627,
+    2.7352375984191895,
+    2.3231546878814697,
+    2.43329119682312,
+    2.946582555770874,
+    3.4521708488464355,
+    4.032799243927002,
+    3.982531785964966,
+    4.401548862457275,
+    5.038179874420166,
+    4.92050313949585,
+    5.335601329803467,
+    6.227212905883789,
+    6.271742343902588,
+    5.285072326660156,
+    4.6099138259887695,
+    4.0964250564575195,
+    4.057361125946045,
+    3.768634557723999,
+    3.221031904220581,
+    3.056608200073242,
+    2.2973415851593018,
+    2.1185476779937744,
+    1.620452642440796,
+    1.7253923416137695,
+    1.6893900632858276,
+    2.190667152404785,
+    2.366452693939209,
+    3.0024900436401367,
+    2.7560644149780273,
+    3.278053045272827,
+    3.290422201156616,
+    3.1216578483581543,
+    2.613503932952881,
+    3.449899435043335,
+    3.472811460494995,
+    3.3905417919158936,
+    3.109903335571289,
+    2.0727906227111816,
+    1.7756186723709106,
+    1.2619880437850952,
+    1.3532932996749878,
+    1.5907944440841675,
+    2.0064523220062256,
+    2.5934267044067383,
+    3.168060302734375,
+    3.9408817291259766,
+    4.617829322814941,
+    4.740439414978027,
+    4.0711236000061035,
+    3.71826434135437,
+    2.9941394329071045,
+    2.8189313411712646,
+    2.2962002754211426,
+    1.9001390933990479,
+    1.7886497974395752,
+    1.7404214143753052,
+    2.0612940788269043,
+    2.298903703689575,
+    2.0813136100769043,
+    2.387648344039917,
+    2.218292236328125,
+    2.7130424976348877,
+    3.173884630203247,
+    3.685823917388916,
+    3.5687508583068848,
+    4.395232200622559,
+    4.612428188323975,
+    4.106068134307861,
+    4.2245354652404785,
+    5.104291915893555,
+    5.107639789581299,
+    4.786931037902832,
+    5.057135105133057,
+    5.732931613922119,
+    5.779014587402344,
+    5.548508167266846,
+    5.954644680023193,
+    6.414836406707764,
+    6.6093549728393555,
+    6.813817501068115,
+    6.604997158050537,
+    6.49240255355835,
+    6.354478359222412,
+    5.473950386047363,
+    5.352994441986084,
+    5.905770301818848,
+    5.793548107147217,
+    6.493053436279297,
+    7.813582420349121,
+    9.479607582092285,
+    9.094905853271484,
+    9.155912399291992,
+    8.141860008239746,
+    8.134600639343262,
+    8.13419246673584,
+    7.850490570068359,
+    7.874472141265869,
+    7.590433597564697,
+    7.594526290893555,
+    7.194807529449463,
+    6.70039701461792,
+    6.122018337249756,
+    5.950198650360107,
+    5.4358811378479,
+    5.438495635986328,
+    5.643851280212402,
+    5.504055023193359,
+    5.7231926918029785,
+    5.2397685050964355,
+    4.717250347137451,
+    5.339189052581787,
+    4.766818523406982,
+    4.120979309082031,
+    3.7036197185516357,
+    4.3220720291137695,
+    4.004395008087158,
+    5.3767805099487305,
+    6.042928218841553,
+    6.942746639251709,
+    8.194256782531738,
+    9.037849426269531,
+    8.771125793457031,
+    9.47298526763916,
+    8.45264720916748,
+    7.259870529174805,
+    7.374299049377441,
+    7.114992618560791,
+    6.054671287536621,
+    5.819354057312012,
+    5.9032158851623535,
+    5.215340614318848,
+    4.681576251983643,
+    4.974542617797852,
+    4.949169635772705,
+    4.344525337219238,
+    4.434081554412842,
+    4.99326753616333,
+    4.924991130828857,
+    5.020991325378418,
+    5.438002586364746,
+    5.72917366027832,
+    6.154575824737549,
+    6.627822399139404,
+    7.01338529586792,
+    7.609978199005127,
+    8.634963035583496,
+    8.831343650817871,
+    8.242069244384766,
+    7.979187488555908,
+    7.862181663513184,
+    7.6010355949401855,
+    7.477558135986328,
+    7.106182098388672,
+    7.052603721618652,
+    7.374245643615723,
+    8.114361763000488,
+    8.271927833557129,
+    8.57543659210205,
+    8.079620361328125,
+    8.265795707702637,
+    9.938765525817871,
+    10.307741165161133,
+    10.297906875610352,
+    10.419709205627441,
+    9.942015647888184,
+    9.21633243560791,
+    7.05741548538208,
+    6.710780143737793,
+    6.823453903198242,
+    6.756717681884766,
+    7.0776567459106445,
+    8.013341903686523,
+    8.633197784423828,
+    9.82831859588623,
+    10.857067108154297,
+    11.896160125732422,
+    12.370260238647461,
+    12.505577087402344,
+    14.077119827270508,
+    15.579305648803711
+  ],
+  "flexible_residues": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290,
+    291,
+    292,
+    293,
+    294,
+    295,
+    296,
+    297,
+    298,
+    299,
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309,
+    310,
+    311,
+    312,
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    341,
+    342,
+    343,
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    357,
+    358,
+    359,
+    360,
+    361,
+    362,
+    363,
+    364,
+    365,
+    366,
+    367,
+    368,
+    369,
+    370,
+    371,
+    372,
+    373,
+    374,
+    375,
+    376,
+    377,
+    378,
+    379,
+    380,
+    381,
+    382,
+    383,
+    384,
+    385,
+    386,
+    387,
+    388,
+    389,
+    390,
+    391,
+    392,
+    393
+  ],
+  "site_dynamics": [
+    {
+      "site_id": "act_135",
+      "site_type": "active",
+      "residue_numbers": [
+        135
+      ],
+      "mean_rmsf": 2.7049155235290527,
+      "max_rmsf": 2.7049155235290527,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.26991168722990677
+    },
+    {
+      "site_id": "act_141",
+      "site_type": "active",
+      "residue_numbers": [
+        141
+      ],
+      "mean_rmsf": 2.768441677093506,
+      "max_rmsf": 2.768441677093506,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.26536167617466544
+    },
+    {
+      "site_id": "act_176",
+      "site_type": "active",
+      "residue_numbers": [
+        176
+      ],
+      "mean_rmsf": 2.506930112838745,
+      "max_rmsf": 2.506930112838745,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.28514968015445646
+    },
+    {
+      "site_id": "act_193",
+      "site_type": "active",
+      "residue_numbers": [
+        193
+      ],
+      "mean_rmsf": 1.9777246713638306,
+      "max_rmsf": 1.9777246713638306,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.33582688474082095
+    },
+    {
+      "site_id": "act_214",
+      "site_type": "active",
+      "residue_numbers": [
+        214
+      ],
+      "mean_rmsf": 2.7352375984191895,
+      "max_rmsf": 2.7352375984191895,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.2677205863485674
+    },
+    {
+      "site_id": "act_238",
+      "site_type": "active",
+      "residue_numbers": [
+        238
+      ],
+      "mean_rmsf": 1.6893900632858276,
+      "max_rmsf": 1.6893900632858276,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.37183152182031404
+    },
+    {
+      "site_id": "act_242",
+      "site_type": "active",
+      "residue_numbers": [
+        242
+      ],
+      "mean_rmsf": 2.7560644149780273,
+      "max_rmsf": 2.7560644149780273,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.266236115656672
+    },
+    {
+      "site_id": "act_275",
+      "site_type": "active",
+      "residue_numbers": [
+        275
+      ],
+      "mean_rmsf": 2.7130424976348877,
+      "max_rmsf": 2.7130424976348877,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.26932091421980064
+    },
+    {
+      "site_id": "act_124",
+      "site_type": "active",
+      "residue_numbers": [
+        124
+      ],
+      "mean_rmsf": 3.4401557445526123,
+      "max_rmsf": 3.4401557445526123,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.225217325141544
+    },
+    {
+      "site_id": "act_168",
+      "site_type": "active",
+      "residue_numbers": [
+        168
+      ],
+      "mean_rmsf": 3.8224987983703613,
+      "max_rmsf": 3.8224987983703613,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.20736137878104274
+    },
+    {
+      "site_id": "act_178",
+      "site_type": "active",
+      "residue_numbers": [
+        178
+      ],
+      "mean_rmsf": 3.1076438426971436,
+      "max_rmsf": 3.1076438426971436,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.24344856523475616
+    },
+    {
+      "site_id": "act_179",
+      "site_type": "active",
+      "residue_numbers": [
+        179
+      ],
+      "mean_rmsf": 2.7317116260528564,
+      "max_rmsf": 2.7317116260528564,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.26797354678172974
+    },
+    {
+      "site_id": "act_182",
+      "site_type": "active",
+      "residue_numbers": [
+        182
+      ],
+      "mean_rmsf": 3.47249698638916,
+      "max_rmsf": 3.47249698638916,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.22358874763766876
+    },
+    {
+      "site_id": "act_229",
+      "site_type": "active",
+      "residue_numbers": [
+        229
+      ],
+      "mean_rmsf": 4.0964250564575195,
+      "max_rmsf": 4.0964250564575195,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.1962159727499439
+    },
+    {
+      "site_id": "act_233",
+      "site_type": "active",
+      "residue_numbers": [
+        233
+      ],
+      "mean_rmsf": 3.056608200073242,
+      "max_rmsf": 3.056608200073242,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.24651135891850362
+    },
+    {
+      "site_id": "act_277",
+      "site_type": "active",
+      "residue_numbers": [
+        277
+      ],
+      "mean_rmsf": 3.685823917388916,
+      "max_rmsf": 3.685823917388916,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.2134096410001745
+    },
+    {
+      "site_id": "act_296",
+      "site_type": "active",
+      "residue_numbers": [
+        296
+      ],
+      "mean_rmsf": 6.354478359222412,
+      "max_rmsf": 6.354478359222412,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.1359715742104284
+    },
+    {
+      "site_id": "act_297",
+      "site_type": "active",
+      "residue_numbers": [
+        297
+      ],
+      "mean_rmsf": 5.473950386047363,
+      "max_rmsf": 5.473950386047363,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.15446519364053155
+    },
+    {
+      "site_id": "act_95",
+      "site_type": "active",
+      "residue_numbers": [
+        95
+      ],
+      "mean_rmsf": 4.108023643493652,
+      "max_rmsf": 4.108023643493652,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.1957704329097518
+    },
+    {
+      "site_id": "act_115",
+      "site_type": "active",
+      "residue_numbers": [
+        115
+      ],
+      "mean_rmsf": 5.1905341148376465,
+      "max_rmsf": 5.1905341148376465,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.16153695003524363
+    },
+    {
+      "site_id": "act_132",
+      "site_type": "active",
+      "residue_numbers": [
+        132
+      ],
+      "mean_rmsf": 2.9550118446350098,
+      "max_rmsf": 2.9550118446350098,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.2528437434028179
+    },
+    {
+      "site_id": "act_175",
+      "site_type": "active",
+      "residue_numbers": [
+        175
+      ],
+      "mean_rmsf": 1.9167131185531616,
+      "max_rmsf": 1.9167131185531616,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.34285168247744946
+    },
+    {
+      "site_id": "act_196",
+      "site_type": "active",
+      "residue_numbers": [
+        196
+      ],
+      "mean_rmsf": 2.1120760440826416,
+      "max_rmsf": 2.1120760440826416,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.32132890900960415
+    },
+    {
+      "site_id": "act_213",
+      "site_type": "active",
+      "residue_numbers": [
+        213
+      ],
+      "mean_rmsf": 3.0910637378692627,
+      "max_rmsf": 3.0910637378692627,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.2444352041605754
+    },
+    {
+      "site_id": "act_215",
+      "site_type": "active",
+      "residue_numbers": [
+        215
+      ],
+      "mean_rmsf": 2.3231546878814697,
+      "max_rmsf": 2.3231546878814697,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.30091888398896827
+    },
+    {
+      "site_id": "act_258",
+      "site_type": "active",
+      "residue_numbers": [
+        258
+      ],
+      "mean_rmsf": 3.168060302734375,
+      "max_rmsf": 3.168060302734375,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.23991975340279253
+    },
+    {
+      "site_id": "act_271",
+      "site_type": "active",
+      "residue_numbers": [
+        271
+      ],
+      "mean_rmsf": 2.298903703689575,
+      "max_rmsf": 2.298903703689575,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.30313100648605634
+    },
+    {
+      "site_id": "act_281",
+      "site_type": "active",
+      "residue_numbers": [
+        281
+      ],
+      "mean_rmsf": 4.106068134307861,
+      "max_rmsf": 4.106068134307861,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.1958454085798352
+    },
+    {
+      "site_id": "act_365",
+      "site_type": "active",
+      "residue_numbers": [
+        365
+      ],
+      "mean_rmsf": 7.477558135986328,
+      "max_rmsf": 7.477558135986328,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.11795849511843592
+    },
+    {
+      "site_id": "act_368",
+      "site_type": "active",
+      "residue_numbers": [
+        368
+      ],
+      "mean_rmsf": 7.374245643615723,
+      "max_rmsf": 7.374245643615723,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.11941374095735661
+    },
+    {
+      "site_id": "act_380",
+      "site_type": "active",
+      "residue_numbers": [
+        380
+      ],
+      "mean_rmsf": 7.05741548538208,
+      "max_rmsf": 7.05741548538208,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.12410927571182341
+    },
+    {
+      "site_id": "act_101",
+      "site_type": "active",
+      "residue_numbers": [
+        101
+      ],
+      "mean_rmsf": 2.903902292251587,
+      "max_rmsf": 2.903902292251587,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.2561539519021228
+    },
+    {
+      "site_id": "act_108",
+      "site_type": "active",
+      "residue_numbers": [
+        108
+      ],
+      "mean_rmsf": 3.170185089111328,
+      "max_rmsf": 3.170185089111328,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.2397975098541972
+    },
+    {
+      "site_id": "act_109",
+      "site_type": "active",
+      "residue_numbers": [
+        109
+      ],
+      "mean_rmsf": 2.7321455478668213,
+      "max_rmsf": 2.7321455478668213,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.26794239055643715
+    },
+    {
+      "site_id": "act_110",
+      "site_type": "active",
+      "residue_numbers": [
+        110
+      ],
+      "mean_rmsf": 2.6750335693359375,
+      "max_rmsf": 2.6750335693359375,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.27210635797830157
+    },
+    {
+      "site_id": "act_112",
+      "site_type": "active",
+      "residue_numbers": [
+        112
+      ],
+      "mean_rmsf": 3.315098762512207,
+      "max_rmsf": 3.315098762512207,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.23174440610434838
+    },
+    {
+      "site_id": "act_120",
+      "site_type": "active",
+      "residue_numbers": [
+        120
+      ],
+      "mean_rmsf": 4.639379978179932,
+      "max_rmsf": 4.639379978179932,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.1773244583392557
+    },
+    {
+      "site_id": "act_125",
+      "site_type": "active",
+      "residue_numbers": [
+        125
+      ],
+      "mean_rmsf": 3.7450172901153564,
+      "max_rmsf": 3.7450172901153564,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.21074738801967335
+    },
+    {
+      "site_id": "act_127",
+      "site_type": "active",
+      "residue_numbers": [
+        127
+      ],
+      "mean_rmsf": 4.028102397918701,
+      "max_rmsf": 4.028102397918701,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.1988821867299149
+    },
+    {
+      "site_id": "act_133",
+      "site_type": "active",
+      "residue_numbers": [
+        133
+      ],
+      "mean_rmsf": 2.670008420944214,
+      "max_rmsf": 2.670008420944214,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.27247893882017893
+    },
+    {
+      "site_id": "act_134",
+      "site_type": "active",
+      "residue_numbers": [
+        134
+      ],
+      "mean_rmsf": 2.886528491973877,
+      "max_rmsf": 2.886528491973877,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.25729902715626907
+    },
+    {
+      "site_id": "act_143",
+      "site_type": "active",
+      "residue_numbers": [
+        143
+      ],
+      "mean_rmsf": 2.865455150604248,
+      "max_rmsf": 2.865455150604248,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.25870174689355274
+    },
+    {
+      "site_id": "act_145",
+      "site_type": "active",
+      "residue_numbers": [
+        145
+      ],
+      "mean_rmsf": 3.054306983947754,
+      "max_rmsf": 3.054306983947754,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.24665127824787492
+    },
+    {
+      "site_id": "act_151",
+      "site_type": "active",
+      "residue_numbers": [
+        151
+      ],
+      "mean_rmsf": 4.133948802947998,
+      "max_rmsf": 4.133948802947998,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.19478184110947572
+    },
+    {
+      "site_id": "act_155",
+      "site_type": "active",
+      "residue_numbers": [
+        155
+      ],
+      "mean_rmsf": 4.04850435256958,
+      "max_rmsf": 4.04850435256958,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.19807846644541793
+    },
+    {
+      "site_id": "act_156",
+      "site_type": "active",
+      "residue_numbers": [
+        156
+      ],
+      "mean_rmsf": 3.4853408336639404,
+      "max_rmsf": 3.4853408336639404,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.22294849758008914
+    },
+    {
+      "site_id": "act_157",
+      "site_type": "active",
+      "residue_numbers": [
+        157
+      ],
+      "mean_rmsf": 2.721890687942505,
+      "max_rmsf": 2.721890687942505,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.2686806475105826
+    },
+    {
+      "site_id": "act_159",
+      "site_type": "active",
+      "residue_numbers": [
+        159
+      ],
+      "mean_rmsf": 1.6900237798690796,
+      "max_rmsf": 1.6900237798690796,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.3717439256424227
+    },
+    {
+      "site_id": "act_161",
+      "site_type": "active",
+      "residue_numbers": [
+        161
+      ],
+      "mean_rmsf": 1.465456485748291,
+      "max_rmsf": 1.465456485748291,
+      "flexible_fraction": 0.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.40560440055647135
+    },
+    {
+      "site_id": "act_162",
+      "site_type": "active",
+      "residue_numbers": [
+        162
+      ],
+      "mean_rmsf": 2.074902296066284,
+      "max_rmsf": 2.074902296066284,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.3252135852509193
+    },
+    {
+      "site_id": "act_163",
+      "site_type": "active",
+      "residue_numbers": [
+        163
+      ],
+      "mean_rmsf": 2.6220476627349854,
+      "max_rmsf": 2.6220476627349854,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.2760869246112864
+    },
+    {
+      "site_id": "act_164",
+      "site_type": "active",
+      "residue_numbers": [
+        164
+      ],
+      "mean_rmsf": 3.0695462226867676,
+      "max_rmsf": 3.0695462226867676,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.24572764266080432
+    },
+    {
+      "site_id": "act_171",
+      "site_type": "active",
+      "residue_numbers": [
+        171
+      ],
+      "mean_rmsf": 3.3395915031433105,
+      "max_rmsf": 3.3395915031433105,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.23043643607368727
+    },
+    {
+      "site_id": "act_172",
+      "site_type": "active",
+      "residue_numbers": [
+        172
+      ],
+      "mean_rmsf": 2.6660001277923584,
+      "max_rmsf": 2.6660001277923584,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.27277685901287557
+    },
+    {
+      "site_id": "act_173",
+      "site_type": "active",
+      "residue_numbers": [
+        173
+      ],
+      "mean_rmsf": 1.9981637001037598,
+      "max_rmsf": 1.9981637001037598,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.3335374916204183
+    },
+    {
+      "site_id": "act_180",
+      "site_type": "active",
+      "residue_numbers": [
+        180
+      ],
+      "mean_rmsf": 3.2729671001434326,
+      "max_rmsf": 3.2729671001434326,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.23402941716224132
+    },
+    {
+      "site_id": "act_181",
+      "site_type": "active",
+      "residue_numbers": [
+        181
+      ],
+      "mean_rmsf": 3.741292953491211,
+      "max_rmsf": 3.741292953491211,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.2109129323602876
+    },
+    {
+      "site_id": "act_189",
+      "site_type": "active",
+      "residue_numbers": [
+        189
+      ],
+      "mean_rmsf": 3.0513060092926025,
+      "max_rmsf": 3.0513060092926025,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.24683398333926637
+    },
+    {
+      "site_id": "act_194",
+      "site_type": "active",
+      "residue_numbers": [
+        194
+      ],
+      "mean_rmsf": 1.4312924146652222,
+      "max_rmsf": 1.4312924146652222,
+      "flexible_fraction": 0.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.4113038785331362
+    },
+    {
+      "site_id": "act_195",
+      "site_type": "active",
+      "residue_numbers": [
+        195
+      ],
+      "mean_rmsf": 1.4772098064422607,
+      "max_rmsf": 1.4772098064422607,
+      "flexible_fraction": 0.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.4036799779329907
+    },
+    {
+      "site_id": "act_197",
+      "site_type": "active",
+      "residue_numbers": [
+        197
+      ],
+      "mean_rmsf": 2.705078363418579,
+      "max_rmsf": 2.705078363418579,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.2698998244877407
+    },
+    {
+      "site_id": "act_198",
+      "site_type": "active",
+      "residue_numbers": [
+        198
+      ],
+      "mean_rmsf": 3.142498731613159,
+      "max_rmsf": 3.142498731613159,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.2414001946140809
+    },
+    {
+      "site_id": "act_202",
+      "site_type": "active",
+      "residue_numbers": [
+        202
+      ],
+      "mean_rmsf": 4.5106682777404785,
+      "max_rmsf": 4.5106682777404785,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.18146619422536295
+    },
+    {
+      "site_id": "act_204",
+      "site_type": "active",
+      "residue_numbers": [
+        204
+      ],
+      "mean_rmsf": 3.6940014362335205,
+      "max_rmsf": 3.6940014362335205,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.2130378555662315
+    },
+    {
+      "site_id": "act_207",
+      "site_type": "active",
+      "residue_numbers": [
+        207
+      ],
+      "mean_rmsf": 3.7085440158843994,
+      "max_rmsf": 3.7085440158843994,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.21237987722456733
+    },
+    {
+      "site_id": "act_208",
+      "site_type": "active",
+      "residue_numbers": [
+        208
+      ],
+      "mean_rmsf": 4.113595485687256,
+      "max_rmsf": 4.113595485687256,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.19555711882157262
+    },
+    {
+      "site_id": "act_209",
+      "site_type": "active",
+      "residue_numbers": [
+        209
+      ],
+      "mean_rmsf": 4.800610542297363,
+      "max_rmsf": 4.800610542297363,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.17239564571834615
+    },
+    {
+      "site_id": "act_216",
+      "site_type": "active",
+      "residue_numbers": [
+        216
+      ],
+      "mean_rmsf": 2.43329119682312,
+      "max_rmsf": 2.43329119682312,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.2912657105593945
+    },
+    {
+      "site_id": "act_217",
+      "site_type": "active",
+      "residue_numbers": [
+        217
+      ],
+      "mean_rmsf": 2.946582555770874,
+      "max_rmsf": 2.946582555770874,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.25338377846366195
+    },
+    {
+      "site_id": "act_218",
+      "site_type": "active",
+      "residue_numbers": [
+        218
+      ],
+      "mean_rmsf": 3.4521708488464355,
+      "max_rmsf": 3.4521708488464355,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.22460952958692085
+    },
+    {
+      "site_id": "act_230",
+      "site_type": "active",
+      "residue_numbers": [
+        230
+      ],
+      "mean_rmsf": 4.057361125946045,
+      "max_rmsf": 4.057361125946045,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.19773157880097736
+    },
+    {
+      "site_id": "act_232",
+      "site_type": "active",
+      "residue_numbers": [
+        232
+      ],
+      "mean_rmsf": 3.221031904220581,
+      "max_rmsf": 3.221031904220581,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.23690889400767307
+    },
+    {
+      "site_id": "act_234",
+      "site_type": "active",
+      "residue_numbers": [
+        234
+      ],
+      "mean_rmsf": 2.2973415851593018,
+      "max_rmsf": 2.2973415851593018,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.30327461507197406
+    },
+    {
+      "site_id": "act_235",
+      "site_type": "active",
+      "residue_numbers": [
+        235
+      ],
+      "mean_rmsf": 2.1185476779937744,
+      "max_rmsf": 2.1185476779937744,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.32066208480843894
+    },
+    {
+      "site_id": "act_236",
+      "site_type": "active",
+      "residue_numbers": [
+        236
+      ],
+      "mean_rmsf": 1.620452642440796,
+      "max_rmsf": 1.620452642440796,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.3816134601343375
+    },
+    {
+      "site_id": "act_237",
+      "site_type": "active",
+      "residue_numbers": [
+        237
+      ],
+      "mean_rmsf": 1.7253923416137695,
+      "max_rmsf": 1.7253923416137695,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.3669196484965083
+    },
+    {
+      "site_id": "act_240",
+      "site_type": "active",
+      "residue_numbers": [
+        240
+      ],
+      "mean_rmsf": 2.366452693939209,
+      "max_rmsf": 2.366452693939209,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.29704858226594105
+    },
+    {
+      "site_id": "act_245",
+      "site_type": "active",
+      "residue_numbers": [
+        245
+      ],
+      "mean_rmsf": 3.1216578483581543,
+      "max_rmsf": 3.1216578483581543,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.24262081831910087
+    },
+    {
+      "site_id": "act_246",
+      "site_type": "active",
+      "residue_numbers": [
+        246
+      ],
+      "mean_rmsf": 2.613503932952881,
+      "max_rmsf": 2.613503932952881,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.2767397015624169
+    },
+    {
+      "site_id": "act_248",
+      "site_type": "active",
+      "residue_numbers": [
+        248
+      ],
+      "mean_rmsf": 3.472811460494995,
+      "max_rmsf": 3.472811460494995,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.2235730275761126
+    },
+    {
+      "site_id": "act_249",
+      "site_type": "active",
+      "residue_numbers": [
+        249
+      ],
+      "mean_rmsf": 3.3905417919158936,
+      "max_rmsf": 3.3905417919158936,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.22776232351124748
+    },
+    {
+      "site_id": "act_251",
+      "site_type": "active",
+      "residue_numbers": [
+        251
+      ],
+      "mean_rmsf": 2.0727906227111816,
+      "max_rmsf": 2.0727906227111816,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.32543707749201634
+    },
+    {
+      "site_id": "act_252",
+      "site_type": "active",
+      "residue_numbers": [
+        252
+      ],
+      "mean_rmsf": 1.7756186723709106,
+      "max_rmsf": 1.7756186723709106,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.36028003772788003
+    },
+    {
+      "site_id": "act_253",
+      "site_type": "active",
+      "residue_numbers": [
+        253
+      ],
+      "mean_rmsf": 1.2619880437850952,
+      "max_rmsf": 1.2619880437850952,
+      "flexible_fraction": 0.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.442088985725429
+    },
+    {
+      "site_id": "act_254",
+      "site_type": "active",
+      "residue_numbers": [
+        254
+      ],
+      "mean_rmsf": 1.3532932996749878,
+      "max_rmsf": 1.3532932996749878,
+      "flexible_fraction": 0.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.42493640726300863
+    },
+    {
+      "site_id": "act_255",
+      "site_type": "active",
+      "residue_numbers": [
+        255
+      ],
+      "mean_rmsf": 1.5907944440841675,
+      "max_rmsf": 1.5907944440841675,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.3859819918494132
+    },
+    {
+      "site_id": "act_256",
+      "site_type": "active",
+      "residue_numbers": [
+        256
+      ],
+      "mean_rmsf": 2.0064523220062256,
+      "max_rmsf": 2.0064523220062256,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.3326179472996576
+    },
+    {
+      "site_id": "act_257",
+      "site_type": "active",
+      "residue_numbers": [
+        257
+      ],
+      "mean_rmsf": 2.5934267044067383,
+      "max_rmsf": 2.5934267044067383,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.2782859043079039
+    },
+    {
+      "site_id": "act_259",
+      "site_type": "active",
+      "residue_numbers": [
+        259
+      ],
+      "mean_rmsf": 3.9408817291259766,
+      "max_rmsf": 3.9408817291259766,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.2023930251366078
+    },
+    {
+      "site_id": "act_266",
+      "site_type": "active",
+      "residue_numbers": [
+        266
+      ],
+      "mean_rmsf": 2.2962002754211426,
+      "max_rmsf": 2.2962002754211426,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.3033796239435827
+    },
+    {
+      "site_id": "act_267",
+      "site_type": "active",
+      "residue_numbers": [
+        267
+      ],
+      "mean_rmsf": 1.9001390933990479,
+      "max_rmsf": 1.9001390933990479,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.3448110479514866
+    },
+    {
+      "site_id": "act_269",
+      "site_type": "active",
+      "residue_numbers": [
+        269
+      ],
+      "mean_rmsf": 1.7404214143753052,
+      "max_rmsf": 1.7404214143753052,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.364907380578164
+    },
+    {
+      "site_id": "act_270",
+      "site_type": "active",
+      "residue_numbers": [
+        270
+      ],
+      "mean_rmsf": 2.0612940788269043,
+      "max_rmsf": 2.0612940788269043,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.32665924091265436
+    },
+    {
+      "site_id": "act_272",
+      "site_type": "active",
+      "residue_numbers": [
+        272
+      ],
+      "mean_rmsf": 2.0813136100769043,
+      "max_rmsf": 2.0813136100769043,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.3245369107284869
+    },
+    {
+      "site_id": "act_273",
+      "site_type": "active",
+      "residue_numbers": [
+        273
+      ],
+      "mean_rmsf": 2.387648344039917,
+      "max_rmsf": 2.387648344039917,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.29519002518645626
+    },
+    {
+      "site_id": "act_274",
+      "site_type": "active",
+      "residue_numbers": [
+        274
+      ],
+      "mean_rmsf": 2.218292236328125,
+      "max_rmsf": 2.218292236328125,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.31072380211839895
+    },
+    {
+      "site_id": "act_278",
+      "site_type": "active",
+      "residue_numbers": [
+        278
+      ],
+      "mean_rmsf": 3.5687508583068848,
+      "max_rmsf": 3.5687508583068848,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.2188782078545176
+    },
+    {
+      "site_id": "act_279",
+      "site_type": "active",
+      "residue_numbers": [
+        279
+      ],
+      "mean_rmsf": 4.395232200622559,
+      "max_rmsf": 4.395232200622559,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.18534883445509712
+    },
+    {
+      "site_id": "act_280",
+      "site_type": "active",
+      "residue_numbers": [
+        280
+      ],
+      "mean_rmsf": 4.612428188323975,
+      "max_rmsf": 4.612428188323975,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.17817599913
+    },
+    {
+      "site_id": "act_282",
+      "site_type": "active",
+      "residue_numbers": [
+        282
+      ],
+      "mean_rmsf": 4.2245354652404785,
+      "max_rmsf": 4.2245354652404785,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.19140457685724052
+    },
+    {
+      "site_id": "act_283",
+      "site_type": "active",
+      "residue_numbers": [
+        283
+      ],
+      "mean_rmsf": 5.104291915893555,
+      "max_rmsf": 5.104291915893555,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.16381916425004694
+    },
+    {
+      "site_id": "act_285",
+      "site_type": "active",
+      "residue_numbers": [
+        285
+      ],
+      "mean_rmsf": 4.786931037902832,
+      "max_rmsf": 4.786931037902832,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.17280316517516292
+    },
+    {
+      "site_id": "act_286",
+      "site_type": "active",
+      "residue_numbers": [
+        286
+      ],
+      "mean_rmsf": 5.057135105133057,
+      "max_rmsf": 5.057135105133057,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.16509455091278388
+    },
+    {
+      "site_id": "act_287",
+      "site_type": "active",
+      "residue_numbers": [
+        287
+      ],
+      "mean_rmsf": 5.732931613922119,
+      "max_rmsf": 5.732931613922119,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.14852371260272942
+    },
+    {
+      "site_id": "act_290",
+      "site_type": "active",
+      "residue_numbers": [
+        290
+      ],
+      "mean_rmsf": 5.954644680023193,
+      "max_rmsf": 5.954644680023193,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.1437887981355023
+    },
+    {
+      "site_id": "act_291",
+      "site_type": "active",
+      "residue_numbers": [
+        291
+      ],
+      "mean_rmsf": 6.414836406707764,
+      "max_rmsf": 6.414836406707764,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.134864742139875
+    },
+    {
+      "site_id": "act_292",
+      "site_type": "active",
+      "residue_numbers": [
+        292
+      ],
+      "mean_rmsf": 6.6093549728393555,
+      "max_rmsf": 6.6093549728393555,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.13141718366003102
+    },
+    {
+      "site_id": "act_326",
+      "site_type": "active",
+      "residue_numbers": [
+        326
+      ],
+      "mean_rmsf": 4.120979309082031,
+      "max_rmsf": 4.120979309082031,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.19527514946731087
+    },
+    {
+      "site_id": "act_333",
+      "site_type": "active",
+      "residue_numbers": [
+        333
+      ],
+      "mean_rmsf": 8.194256782531738,
+      "max_rmsf": 8.194256782531738,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.10876354920823074
+    },
+    {
+      "site_id": "act_335",
+      "site_type": "active",
+      "residue_numbers": [
+        335
+      ],
+      "mean_rmsf": 8.771125793457031,
+      "max_rmsf": 8.771125793457031,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.10234235247177176
+    },
+    {
+      "site_id": "act_336",
+      "site_type": "active",
+      "residue_numbers": [
+        336
+      ],
+      "mean_rmsf": 9.47298526763916,
+      "max_rmsf": 9.47298526763916,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.09548375887531654
+    },
+    {
+      "site_id": "act_337",
+      "site_type": "active",
+      "residue_numbers": [
+        337
+      ],
+      "mean_rmsf": 8.45264720916748,
+      "max_rmsf": 8.45264720916748,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.10579047095190096
+    },
+    {
+      "site_id": "act_339",
+      "site_type": "active",
+      "residue_numbers": [
+        339
+      ],
+      "mean_rmsf": 7.374299049377441,
+      "max_rmsf": 7.374299049377441,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.11941297941519555
+    },
+    {
+      "site_id": "act_342",
+      "site_type": "active",
+      "residue_numbers": [
+        342
+      ],
+      "mean_rmsf": 5.819354057312012,
+      "max_rmsf": 5.819354057312012,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.14664145483511828
+    },
+    {
+      "site_id": "act_343",
+      "site_type": "active",
+      "residue_numbers": [
+        343
+      ],
+      "mean_rmsf": 5.9032158851623535,
+      "max_rmsf": 5.9032158851623535,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.14486002127637088
+    },
+    {
+      "site_id": "act_346",
+      "site_type": "active",
+      "residue_numbers": [
+        346
+      ],
+      "mean_rmsf": 4.974542617797852,
+      "max_rmsf": 4.974542617797852,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.16737682931929418
+    },
+    {
+      "site_id": "act_349",
+      "site_type": "active",
+      "residue_numbers": [
+        349
+      ],
+      "mean_rmsf": 4.434081554412842,
+      "max_rmsf": 4.434081554412842,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.18402373795585242
+    },
+    {
+      "site_id": "act_351",
+      "site_type": "active",
+      "residue_numbers": [
+        351
+      ],
+      "mean_rmsf": 4.924991130828857,
+      "max_rmsf": 4.924991130828857,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.16877662395084603
+    },
+    {
+      "site_id": "act_352",
+      "site_type": "active",
+      "residue_numbers": [
+        352
+      ],
+      "mean_rmsf": 5.020991325378418,
+      "max_rmsf": 5.020991325378418,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.16608560716322743
+    },
+    {
+      "site_id": "act_21",
+      "site_type": "active",
+      "residue_numbers": [
+        21
+      ],
+      "mean_rmsf": 5.265720844268799,
+      "max_rmsf": 5.265720844268799,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.1595985561525122
+    },
+    {
+      "site_id": "act_24",
+      "site_type": "active",
+      "residue_numbers": [
+        24
+      ],
+      "mean_rmsf": 4.964818954467773,
+      "max_rmsf": 4.964818954467773,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.16764968184842882
+    },
+    {
+      "site_id": "act_48",
+      "site_type": "active",
+      "residue_numbers": [
+        48
+      ],
+      "mean_rmsf": 7.839662075042725,
+      "max_rmsf": 7.839662075042725,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.11312649641023373
+    },
+    {
+      "site_id": "act_49",
+      "site_type": "active",
+      "residue_numbers": [
+        49
+      ],
+      "mean_rmsf": 8.48095417022705,
+      "max_rmsf": 8.48095417022705,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.1054746159558803
+    },
+    {
+      "site_id": "act_51",
+      "site_type": "active",
+      "residue_numbers": [
+        51
+      ],
+      "mean_rmsf": 6.65304708480835,
+      "max_rmsf": 6.65304708480835,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.13066690808489156
+    },
+    {
+      "site_id": "act_184",
+      "site_type": "active",
+      "residue_numbers": [
+        184
+      ],
+      "mean_rmsf": 2.9615983963012695,
+      "max_rmsf": 2.9615983963012695,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.2524233655116697
+    },
+    {
+      "site_id": "act_185",
+      "site_type": "active",
+      "residue_numbers": [
+        185
+      ],
+      "mean_rmsf": 2.7343287467956543,
+      "max_rmsf": 2.7343287467956543,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.2677857435176477
+    },
+    {
+      "site_id": "act_186",
+      "site_type": "active",
+      "residue_numbers": [
+        186
+      ],
+      "mean_rmsf": 3.139172077178955,
+      "max_rmsf": 3.139172077178955,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.2415942080575563
+    },
+    {
+      "site_id": "act_294",
+      "site_type": "active",
+      "residue_numbers": [
+        294
+      ],
+      "mean_rmsf": 6.604997158050537,
+      "max_rmsf": 6.604997158050537,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.1314924883228148
+    },
+    {
+      "site_id": "act_298",
+      "site_type": "active",
+      "residue_numbers": [
+        298
+      ],
+      "mean_rmsf": 5.352994441986084,
+      "max_rmsf": 5.352994441986084,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.15740608765389982
+    },
+    {
+      "site_id": "act_319",
+      "site_type": "active",
+      "residue_numbers": [
+        319
+      ],
+      "mean_rmsf": 5.643851280212402,
+      "max_rmsf": 5.643851280212402,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.15051510905705134
+    },
+    {
+      "site_id": "act_320",
+      "site_type": "active",
+      "residue_numbers": [
+        320
+      ],
+      "mean_rmsf": 5.504055023193359,
+      "max_rmsf": 5.504055023193359,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.15375023680365796
+    },
+    {
+      "site_id": "act_321",
+      "site_type": "active",
+      "residue_numbers": [
+        321
+      ],
+      "mean_rmsf": 5.7231926918029785,
+      "max_rmsf": 5.7231926918029785,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.14873885753999222
+    },
+    {
+      "site_id": "act_324",
+      "site_type": "active",
+      "residue_numbers": [
+        324
+      ],
+      "mean_rmsf": 5.339189052581787,
+      "max_rmsf": 5.339189052581787,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.1577488842350783
+    },
+    {
+      "site_id": "act_357",
+      "site_type": "active",
+      "residue_numbers": [
+        357
+      ],
+      "mean_rmsf": 7.01338529586792,
+      "max_rmsf": 7.01338529586792,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.12479120410142355
+    },
+    {
+      "site_id": "act_358",
+      "site_type": "active",
+      "residue_numbers": [
+        358
+      ],
+      "mean_rmsf": 7.609978199005127,
+      "max_rmsf": 7.609978199005127,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.11614431266684842
+    },
+    {
+      "site_id": "act_370",
+      "site_type": "active",
+      "residue_numbers": [
+        370
+      ],
+      "mean_rmsf": 8.271927833557129,
+      "max_rmsf": 8.271927833557129,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.10785243564782525
+    },
+    {
+      "site_id": "act_372",
+      "site_type": "active",
+      "residue_numbers": [
+        372
+      ],
+      "mean_rmsf": 8.079620361328125,
+      "max_rmsf": 8.079620361328125,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.11013676345535273
+    },
+    {
+      "site_id": "act_373",
+      "site_type": "active",
+      "residue_numbers": [
+        373
+      ],
+      "mean_rmsf": 8.265795707702637,
+      "max_rmsf": 8.265795707702637,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.10792381264878331
+    },
+    {
+      "site_id": "act_379",
+      "site_type": "active",
+      "residue_numbers": [
+        379
+      ],
+      "mean_rmsf": 9.21633243560791,
+      "max_rmsf": 9.21633243560791,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.09788248437517649
+    },
+    {
+      "site_id": "act_381",
+      "site_type": "active",
+      "residue_numbers": [
+        381
+      ],
+      "mean_rmsf": 6.710780143737793,
+      "max_rmsf": 6.710780143737793,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.12968856346035706
+    },
+    {
+      "site_id": "act_382",
+      "site_type": "active",
+      "residue_numbers": [
+        382
+      ],
+      "mean_rmsf": 6.823453903198242,
+      "max_rmsf": 6.823453903198242,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.12782078253074364
+    },
+    {
+      "site_id": "act_386",
+      "site_type": "active",
+      "residue_numbers": [
+        386
+      ],
+      "mean_rmsf": 8.633197784423828,
+      "max_rmsf": 8.633197784423828,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.10380768903311903
+    },
+    {
+      "site_id": "act_388",
+      "site_type": "active",
+      "residue_numbers": [
+        388
+      ],
+      "mean_rmsf": 10.857067108154297,
+      "max_rmsf": 10.857067108154297,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.08433788818756738
+    },
+    {
+      "site_id": "act_96",
+      "site_type": "active",
+      "residue_numbers": [
+        96
+      ],
+      "mean_rmsf": 4.2699761390686035,
+      "max_rmsf": 4.2699761390686035,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.18975417983139795
+    },
+    {
+      "site_id": "act_97",
+      "site_type": "active",
+      "residue_numbers": [
+        97
+      ],
+      "mean_rmsf": 3.7141146659851074,
+      "max_rmsf": 3.7141146659851074,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.21212890878865168
+    },
+    {
+      "site_id": "act_98",
+      "site_type": "active",
+      "residue_numbers": [
+        98
+      ],
+      "mean_rmsf": 3.1155452728271484,
+      "max_rmsf": 3.1155452728271484,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.2429811686442842
+    },
+    {
+      "site_id": "act_99",
+      "site_type": "active",
+      "residue_numbers": [
+        99
+      ],
+      "mean_rmsf": 3.006730556488037,
+      "max_rmsf": 3.006730556488037,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.2495800468490988
+    },
+    {
+      "site_id": "act_100",
+      "site_type": "active",
+      "residue_numbers": [
+        100
+      ],
+      "mean_rmsf": 2.7418181896209717,
+      "max_rmsf": 2.7418181896209717,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.2672497564883812
+    },
+    {
+      "site_id": "act_102",
+      "site_type": "active",
+      "residue_numbers": [
+        102
+      ],
+      "mean_rmsf": 2.3023719787597656,
+      "max_rmsf": 2.3023719787597656,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.30281264691918763
+    },
+    {
+      "site_id": "act_103",
+      "site_type": "active",
+      "residue_numbers": [
+        103
+      ],
+      "mean_rmsf": 2.3851258754730225,
+      "max_rmsf": 2.3851258754730225,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.295409989698024
+    },
+    {
+      "site_id": "act_104",
+      "site_type": "active",
+      "residue_numbers": [
+        104
+      ],
+      "mean_rmsf": 2.509415626525879,
+      "max_rmsf": 2.509415626525879,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.28494772532541063
+    },
+    {
+      "site_id": "act_105",
+      "site_type": "active",
+      "residue_numbers": [
+        105
+      ],
+      "mean_rmsf": 2.9291799068450928,
+      "max_rmsf": 2.9291799068450928,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.25450603528178556
+    },
+    {
+      "site_id": "act_106",
+      "site_type": "active",
+      "residue_numbers": [
+        106
+      ],
+      "mean_rmsf": 3.4932146072387695,
+      "max_rmsf": 3.4932146072387695,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.22255780936636219
+    },
+    {
+      "site_id": "act_107",
+      "site_type": "active",
+      "residue_numbers": [
+        107
+      ],
+      "mean_rmsf": 3.4479339122772217,
+      "max_rmsf": 3.4479339122772217,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.22482348427880014
+    },
+    {
+      "site_id": "act_111",
+      "site_type": "active",
+      "residue_numbers": [
+        111
+      ],
+      "mean_rmsf": 2.6708433628082275,
+      "max_rmsf": 2.6708433628082275,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.2724169628515533
+    },
+    {
+      "site_id": "act_113",
+      "site_type": "active",
+      "residue_numbers": [
+        113
+      ],
+      "mean_rmsf": 3.5815927982330322,
+      "max_rmsf": 3.5815927982330322,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.2182647048829103
+    },
+    {
+      "site_id": "act_114",
+      "site_type": "active",
+      "residue_numbers": [
+        114
+      ],
+      "mean_rmsf": 4.537647247314453,
+      "max_rmsf": 4.537647247314453,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.18058210560178994
+    },
+    {
+      "site_id": "act_116",
+      "site_type": "active",
+      "residue_numbers": [
+        116
+      ],
+      "mean_rmsf": 5.17501163482666,
+      "max_rmsf": 5.17501163482666,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.16194301470786965
+    },
+    {
+      "site_id": "act_117",
+      "site_type": "active",
+      "residue_numbers": [
+        117
+      ],
+      "mean_rmsf": 5.554417610168457,
+      "max_rmsf": 5.554417610168457,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.1525688565294665
+    },
+    {
+      "site_id": "act_118",
+      "site_type": "active",
+      "residue_numbers": [
+        118
+      ],
+      "mean_rmsf": 5.202292442321777,
+      "max_rmsf": 5.202292442321777,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.16123070772613524
+    },
+    {
+      "site_id": "act_119",
+      "site_type": "active",
+      "residue_numbers": [
+        119
+      ],
+      "mean_rmsf": 5.187915325164795,
+      "max_rmsf": 5.187915325164795,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.16160531414081175
+    },
+    {
+      "site_id": "act_121",
+      "site_type": "active",
+      "residue_numbers": [
+        121
+      ],
+      "mean_rmsf": 4.618135452270508,
+      "max_rmsf": 4.618135452270508,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.17799499647091296
+    },
+    {
+      "site_id": "act_122",
+      "site_type": "active",
+      "residue_numbers": [
+        122
+      ],
+      "mean_rmsf": 4.253464698791504,
+      "max_rmsf": 4.253464698791504,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.1903505700209688
+    },
+    {
+      "site_id": "act_123",
+      "site_type": "active",
+      "residue_numbers": [
+        123
+      ],
+      "mean_rmsf": 3.652561902999878,
+      "max_rmsf": 3.652561902999878,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.21493534548250076
+    },
+    {
+      "site_id": "act_126",
+      "site_type": "active",
+      "residue_numbers": [
+        126
+      ],
+      "mean_rmsf": 3.561521053314209,
+      "max_rmsf": 3.561521053314209,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.2192251199352554
+    },
+    {
+      "site_id": "act_128",
+      "site_type": "active",
+      "residue_numbers": [
+        128
+      ],
+      "mean_rmsf": 4.29359245300293,
+      "max_rmsf": 4.29359245300293,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.18890762915318948
+    },
+    {
+      "site_id": "act_129",
+      "site_type": "active",
+      "residue_numbers": [
+        129
+      ],
+      "mean_rmsf": 4.6743364334106445,
+      "max_rmsf": 4.6743364334106445,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.1762320602127102
+    },
+    {
+      "site_id": "act_130",
+      "site_type": "active",
+      "residue_numbers": [
+        130
+      ],
+      "mean_rmsf": 3.9850106239318848,
+      "max_rmsf": 3.9850106239318848,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.2006013778986209
+    },
+    {
+      "site_id": "act_131",
+      "site_type": "active",
+      "residue_numbers": [
+        131
+      ],
+      "mean_rmsf": 3.3270416259765625,
+      "max_rmsf": 3.3270416259765625,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.23110477930156537
+    },
+    {
+      "site_id": "act_136",
+      "site_type": "active",
+      "residue_numbers": [
+        136
+      ],
+      "mean_rmsf": 2.828874111175537,
+      "max_rmsf": 2.828874111175537,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.26117338177331223
+    },
+    {
+      "site_id": "act_137",
+      "site_type": "active",
+      "residue_numbers": [
+        137
+      ],
+      "mean_rmsf": 2.454477548599243,
+      "max_rmsf": 2.454477548599243,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.2894793745020836
+    },
+    {
+      "site_id": "act_138",
+      "site_type": "active",
+      "residue_numbers": [
+        138
+      ],
+      "mean_rmsf": 2.4655866622924805,
+      "max_rmsf": 2.4655866622924805,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.28855143369535635
+    },
+    {
+      "site_id": "act_139",
+      "site_type": "active",
+      "residue_numbers": [
+        139
+      ],
+      "mean_rmsf": 2.855733633041382,
+      "max_rmsf": 2.855733633041382,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.25935401538907793
+    },
+    {
+      "site_id": "act_140",
+      "site_type": "active",
+      "residue_numbers": [
+        140
+      ],
+      "mean_rmsf": 3.0311527252197266,
+      "max_rmsf": 3.0311527252197266,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.24806800142891952
+    },
+    {
+      "site_id": "act_142",
+      "site_type": "active",
+      "residue_numbers": [
+        142
+      ],
+      "mean_rmsf": 3.0664117336273193,
+      "max_rmsf": 3.0664117336273193,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.24591705550386564
+    },
+    {
+      "site_id": "act_144",
+      "site_type": "active",
+      "residue_numbers": [
+        144
+      ],
+      "mean_rmsf": 3.3058555126190186,
+      "max_rmsf": 3.3058555126190186,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.23224188481692787
+    },
+    {
+      "site_id": "act_146",
+      "site_type": "active",
+      "residue_numbers": [
+        146
+      ],
+      "mean_rmsf": 3.37888503074646,
+      "max_rmsf": 3.37888503074646,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.22836863561807924
+    },
+    {
+      "site_id": "act_147",
+      "site_type": "active",
+      "residue_numbers": [
+        147
+      ],
+      "mean_rmsf": 3.5682806968688965,
+      "max_rmsf": 3.5682806968688965,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.21890073451165137
+    },
+    {
+      "site_id": "act_148",
+      "site_type": "active",
+      "residue_numbers": [
+        148
+      ],
+      "mean_rmsf": 4.089778900146484,
+      "max_rmsf": 4.089778900146484,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.1964721885996305
+    },
+    {
+      "site_id": "act_149",
+      "site_type": "active",
+      "residue_numbers": [
+        149
+      ],
+      "mean_rmsf": 4.405299186706543,
+      "max_rmsf": 4.405299186706543,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.18500363540640596
+    },
+    {
+      "site_id": "act_150",
+      "site_type": "active",
+      "residue_numbers": [
+        150
+      ],
+      "mean_rmsf": 4.546543598175049,
+      "max_rmsf": 4.546543598175049,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.18029246183677794
+    },
+    {
+      "site_id": "act_152",
+      "site_type": "active",
+      "residue_numbers": [
+        152
+      ],
+      "mean_rmsf": 4.6802473068237305,
+      "max_rmsf": 4.6802473068237305,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.17604867288061407
+    },
+    {
+      "site_id": "act_153",
+      "site_type": "active",
+      "residue_numbers": [
+        153
+      ],
+      "mean_rmsf": 5.232580661773682,
+      "max_rmsf": 5.232580661773682,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.16044718139522926
+    },
+    {
+      "site_id": "act_154",
+      "site_type": "active",
+      "residue_numbers": [
+        154
+      ],
+      "mean_rmsf": 4.9420857429504395,
+      "max_rmsf": 4.9420857429504395,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.16829107543363508
+    },
+    {
+      "site_id": "act_158",
+      "site_type": "active",
+      "residue_numbers": [
+        158
+      ],
+      "mean_rmsf": 2.294365882873535,
+      "max_rmsf": 2.294365882873535,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.3035485539717108
+    },
+    {
+      "site_id": "act_160",
+      "site_type": "active",
+      "residue_numbers": [
+        160
+      ],
+      "mean_rmsf": 1.5465383529663086,
+      "max_rmsf": 1.5465383529663086,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.392689942735463
+    },
+    {
+      "site_id": "act_165",
+      "site_type": "active",
+      "residue_numbers": [
+        165
+      ],
+      "mean_rmsf": 3.8629846572875977,
+      "max_rmsf": 3.8629846572875977,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.20563503084498008
+    },
+    {
+      "site_id": "act_166",
+      "site_type": "active",
+      "residue_numbers": [
+        166
+      ],
+      "mean_rmsf": 4.2705535888671875,
+      "max_rmsf": 4.2705535888671875,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.18973339007732817
+    },
+    {
+      "site_id": "act_167",
+      "site_type": "active",
+      "residue_numbers": [
+        167
+      ],
+      "mean_rmsf": 4.581376552581787,
+      "max_rmsf": 4.581376552581787,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.17916727004155064
+    },
+    {
+      "site_id": "act_169",
+      "site_type": "active",
+      "residue_numbers": [
+        169
+      ],
+      "mean_rmsf": 3.2896034717559814,
+      "max_rmsf": 3.2896034717559814,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.2331217807390114
+    },
+    {
+      "site_id": "act_170",
+      "site_type": "active",
+      "residue_numbers": [
+        170
+      ],
+      "mean_rmsf": 3.7803359031677246,
+      "max_rmsf": 3.7803359031677246,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.20919032056666617
+    },
+    {
+      "site_id": "act_174",
+      "site_type": "active",
+      "residue_numbers": [
+        174
+      ],
+      "mean_rmsf": 1.9683432579040527,
+      "max_rmsf": 1.9683432579040527,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.3368882616042526
+    },
+    {
+      "site_id": "act_177",
+      "site_type": "active",
+      "residue_numbers": [
+        177
+      ],
+      "mean_rmsf": 3.0780704021453857,
+      "max_rmsf": 3.0780704021453857,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.24521401088954262
+    },
+    {
+      "site_id": "act_188",
+      "site_type": "active",
+      "residue_numbers": [
+        188
+      ],
+      "mean_rmsf": 3.706122398376465,
+      "max_rmsf": 3.706122398376465,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.21248916100120635
+    },
+    {
+      "site_id": "act_190",
+      "site_type": "active",
+      "residue_numbers": [
+        190
+      ],
+      "mean_rmsf": 2.965573787689209,
+      "max_rmsf": 2.965573787689209,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.25217031721977184
+    },
+    {
+      "site_id": "act_191",
+      "site_type": "active",
+      "residue_numbers": [
+        191
+      ],
+      "mean_rmsf": 2.713292360305786,
+      "max_rmsf": 2.713292360305786,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.2693027919615925
+    },
+    {
+      "site_id": "act_192",
+      "site_type": "active",
+      "residue_numbers": [
+        192
+      ],
+      "mean_rmsf": 2.3720531463623047,
+      "max_rmsf": 2.3720531463623047,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.29655523107006115
+    },
+    {
+      "site_id": "act_199",
+      "site_type": "active",
+      "residue_numbers": [
+        199
+      ],
+      "mean_rmsf": 4.246540546417236,
+      "max_rmsf": 4.246540546417236,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.1906017862918988
+    },
+    {
+      "site_id": "act_200",
+      "site_type": "active",
+      "residue_numbers": [
+        200
+      ],
+      "mean_rmsf": 4.325292587280273,
+      "max_rmsf": 4.325292587280273,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.18778310930530837
+    },
+    {
+      "site_id": "act_201",
+      "site_type": "active",
+      "residue_numbers": [
+        201
+      ],
+      "mean_rmsf": 4.677206039428711,
+      "max_rmsf": 4.677206039428711,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.17614298178627116
+    },
+    {
+      "site_id": "act_203",
+      "site_type": "active",
+      "residue_numbers": [
+        203
+      ],
+      "mean_rmsf": 3.748126983642578,
+      "max_rmsf": 3.748126983642578,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.21060936311202844
+    },
+    {
+      "site_id": "act_205",
+      "site_type": "active",
+      "residue_numbers": [
+        205
+      ],
+      "mean_rmsf": 3.2839791774749756,
+      "max_rmsf": 3.2839791774749756,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.23342783859874197
+    },
+    {
+      "site_id": "act_206",
+      "site_type": "active",
+      "residue_numbers": [
+        206
+      ],
+      "mean_rmsf": 3.5411479473114014,
+      "max_rmsf": 3.5411479473114014,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.22020863702360824
+    },
+    {
+      "site_id": "act_210",
+      "site_type": "active",
+      "residue_numbers": [
+        210
+      ],
+      "mean_rmsf": 4.928743839263916,
+      "max_rmsf": 4.928743839263916,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.16866979365466314
+    },
+    {
+      "site_id": "act_211",
+      "site_type": "active",
+      "residue_numbers": [
+        211
+      ],
+      "mean_rmsf": 4.296197891235352,
+      "max_rmsf": 4.296197891235352,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.18881469698382955
+    },
+    {
+      "site_id": "act_212",
+      "site_type": "active",
+      "residue_numbers": [
+        212
+      ],
+      "mean_rmsf": 3.950015068054199,
+      "max_rmsf": 3.950015068054199,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.2020195870622046
+    },
+    {
+      "site_id": "act_219",
+      "site_type": "active",
+      "residue_numbers": [
+        219
+      ],
+      "mean_rmsf": 4.032799243927002,
+      "max_rmsf": 4.032799243927002,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.1986965804778889
+    },
+    {
+      "site_id": "act_220",
+      "site_type": "active",
+      "residue_numbers": [
+        220
+      ],
+      "mean_rmsf": 3.982531785964966,
+      "max_rmsf": 3.982531785964966,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.20070117822767292
+    },
+    {
+      "site_id": "act_221",
+      "site_type": "active",
+      "residue_numbers": [
+        221
+      ],
+      "mean_rmsf": 4.401548862457275,
+      "max_rmsf": 4.401548862457275,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.18513208441940845
+    },
+    {
+      "site_id": "act_222",
+      "site_type": "active",
+      "residue_numbers": [
+        222
+      ],
+      "mean_rmsf": 5.038179874420166,
+      "max_rmsf": 5.038179874420166,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.16561282055149573
+    },
+    {
+      "site_id": "act_223",
+      "site_type": "active",
+      "residue_numbers": [
+        223
+      ],
+      "mean_rmsf": 4.92050313949585,
+      "max_rmsf": 4.92050313949585,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.16890456375725413
+    },
+    {
+      "site_id": "act_224",
+      "site_type": "active",
+      "residue_numbers": [
+        224
+      ],
+      "mean_rmsf": 5.335601329803467,
+      "max_rmsf": 5.335601329803467,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.15783821423483105
+    },
+    {
+      "site_id": "act_225",
+      "site_type": "active",
+      "residue_numbers": [
+        225
+      ],
+      "mean_rmsf": 6.227212905883789,
+      "max_rmsf": 6.227212905883789,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.13836592515295684
+    },
+    {
+      "site_id": "act_226",
+      "site_type": "active",
+      "residue_numbers": [
+        226
+      ],
+      "mean_rmsf": 6.271742343902588,
+      "max_rmsf": 6.271742343902588,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.13751862383277477
+    },
+    {
+      "site_id": "act_227",
+      "site_type": "active",
+      "residue_numbers": [
+        227
+      ],
+      "mean_rmsf": 5.285072326660156,
+      "max_rmsf": 5.285072326660156,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.15910715868108283
+    },
+    {
+      "site_id": "act_228",
+      "site_type": "active",
+      "residue_numbers": [
+        228
+      ],
+      "mean_rmsf": 4.6099138259887695,
+      "max_rmsf": 4.6099138259887695,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.1782558575797278
+    },
+    {
+      "site_id": "act_231",
+      "site_type": "active",
+      "residue_numbers": [
+        231
+      ],
+      "mean_rmsf": 3.768634557723999,
+      "max_rmsf": 3.768634557723999,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.20970363484453833
+    },
+    {
+      "site_id": "act_239",
+      "site_type": "active",
+      "residue_numbers": [
+        239
+      ],
+      "mean_rmsf": 2.190667152404785,
+      "max_rmsf": 2.190667152404785,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.31341407681660133
+    },
+    {
+      "site_id": "act_241",
+      "site_type": "active",
+      "residue_numbers": [
+        241
+      ],
+      "mean_rmsf": 3.0024900436401367,
+      "max_rmsf": 3.0024900436401367,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.24984446909217842
+    },
+    {
+      "site_id": "act_243",
+      "site_type": "active",
+      "residue_numbers": [
+        243
+      ],
+      "mean_rmsf": 3.278053045272827,
+      "max_rmsf": 3.278053045272827,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.23375119228710411
+    },
+    {
+      "site_id": "act_244",
+      "site_type": "active",
+      "residue_numbers": [
+        244
+      ],
+      "mean_rmsf": 3.290422201156616,
+      "max_rmsf": 3.290422201156616,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.23307729475444608
+    },
+    {
+      "site_id": "act_247",
+      "site_type": "active",
+      "residue_numbers": [
+        247
+      ],
+      "mean_rmsf": 3.449899435043335,
+      "max_rmsf": 3.449899435043335,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.22472417963536778
+    },
+    {
+      "site_id": "act_250",
+      "site_type": "active",
+      "residue_numbers": [
+        250
+      ],
+      "mean_rmsf": 3.109903335571289,
+      "max_rmsf": 3.109903335571289,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.24331472503136062
+    },
+    {
+      "site_id": "act_260",
+      "site_type": "active",
+      "residue_numbers": [
+        260
+      ],
+      "mean_rmsf": 4.617829322814941,
+      "max_rmsf": 4.617829322814941,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.1780046958598107
+    },
+    {
+      "site_id": "act_261",
+      "site_type": "active",
+      "residue_numbers": [
+        261
+      ],
+      "mean_rmsf": 4.740439414978027,
+      "max_rmsf": 4.740439414978027,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.17420269211286984
+    },
+    {
+      "site_id": "act_262",
+      "site_type": "active",
+      "residue_numbers": [
+        262
+      ],
+      "mean_rmsf": 4.0711236000061035,
+      "max_rmsf": 4.0711236000061035,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.19719495695170916
+    },
+    {
+      "site_id": "act_263",
+      "site_type": "active",
+      "residue_numbers": [
+        263
+      ],
+      "mean_rmsf": 3.71826434135437,
+      "max_rmsf": 3.71826434135437,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.21194234312716603
+    },
+    {
+      "site_id": "act_264",
+      "site_type": "active",
+      "residue_numbers": [
+        264
+      ],
+      "mean_rmsf": 2.9941394329071045,
+      "max_rmsf": 2.9941394329071045,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.2503668228908467
+    },
+    {
+      "site_id": "act_265",
+      "site_type": "active",
+      "residue_numbers": [
+        265
+      ],
+      "mean_rmsf": 2.8189313411712646,
+      "max_rmsf": 2.8189313411712646,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.26185335913719265
+    },
+    {
+      "site_id": "act_268",
+      "site_type": "active",
+      "residue_numbers": [
+        268
+      ],
+      "mean_rmsf": 1.7886497974395752,
+      "max_rmsf": 1.7886497974395752,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.3585964795286089
+    },
+    {
+      "site_id": "act_276",
+      "site_type": "active",
+      "residue_numbers": [
+        276
+      ],
+      "mean_rmsf": 3.173884630203247,
+      "max_rmsf": 3.173884630203247,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.23958496427135434
+    },
+    {
+      "site_id": "act_284",
+      "site_type": "active",
+      "residue_numbers": [
+        284
+      ],
+      "mean_rmsf": 5.107639789581299,
+      "max_rmsf": 5.107639789581299,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.16372936755468903
+    },
+    {
+      "site_id": "act_288",
+      "site_type": "active",
+      "residue_numbers": [
+        288
+      ],
+      "mean_rmsf": 5.779014587402344,
+      "max_rmsf": 5.779014587402344,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.14751406522392377
+    },
+    {
+      "site_id": "act_289",
+      "site_type": "active",
+      "residue_numbers": [
+        289
+      ],
+      "mean_rmsf": 5.548508167266846,
+      "max_rmsf": 5.548508167266846,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.15270653627624176
+    },
+    {
+      "site_id": "act_327",
+      "site_type": "active",
+      "residue_numbers": [
+        327
+      ],
+      "mean_rmsf": 3.7036197185516357,
+      "max_rmsf": 3.7036197185516357,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.21260222123312414
+    },
+    {
+      "site_id": "act_328",
+      "site_type": "active",
+      "residue_numbers": [
+        328
+      ],
+      "mean_rmsf": 4.3220720291137695,
+      "max_rmsf": 4.3220720291137695,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.18789674294703596
+    },
+    {
+      "site_id": "act_329",
+      "site_type": "active",
+      "residue_numbers": [
+        329
+      ],
+      "mean_rmsf": 4.004395008087158,
+      "max_rmsf": 4.004395008087158,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.1998243540695706
+    },
+    {
+      "site_id": "act_330",
+      "site_type": "active",
+      "residue_numbers": [
+        330
+      ],
+      "mean_rmsf": 5.3767805099487305,
+      "max_rmsf": 5.3767805099487305,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.15681894624408832
+    },
+    {
+      "site_id": "act_331",
+      "site_type": "active",
+      "residue_numbers": [
+        331
+      ],
+      "mean_rmsf": 6.042928218841553,
+      "max_rmsf": 6.042928218841553,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.14198639669857147
+    },
+    {
+      "site_id": "act_332",
+      "site_type": "active",
+      "residue_numbers": [
+        332
+      ],
+      "mean_rmsf": 6.942746639251709,
+      "max_rmsf": 6.942746639251709,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.12590103215154433
+    },
+    {
+      "site_id": "act_334",
+      "site_type": "active",
+      "residue_numbers": [
+        334
+      ],
+      "mean_rmsf": 9.037849426269531,
+      "max_rmsf": 9.037849426269531,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.09962293291458948
+    },
+    {
+      "site_id": "act_338",
+      "site_type": "active",
+      "residue_numbers": [
+        338
+      ],
+      "mean_rmsf": 7.259870529174805,
+      "max_rmsf": 7.259870529174805,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.12106727296364828
+    },
+    {
+      "site_id": "act_340",
+      "site_type": "active",
+      "residue_numbers": [
+        340
+      ],
+      "mean_rmsf": 7.114992618560791,
+      "max_rmsf": 7.114992618560791,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.12322870112201678
+    },
+    {
+      "site_id": "act_341",
+      "site_type": "active",
+      "residue_numbers": [
+        341
+      ],
+      "mean_rmsf": 6.054671287536621,
+      "max_rmsf": 6.054671287536621,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.14175004890258808
+    },
+    {
+      "site_id": "act_344",
+      "site_type": "active",
+      "residue_numbers": [
+        344
+      ],
+      "mean_rmsf": 5.215340614318848,
+      "max_rmsf": 5.215340614318848,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.16089222812603524
+    },
+    {
+      "site_id": "act_345",
+      "site_type": "active",
+      "residue_numbers": [
+        345
+      ],
+      "mean_rmsf": 4.681576251983643,
+      "max_rmsf": 4.681576251983643,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.17600749433766097
+    },
+    {
+      "site_id": "act_347",
+      "site_type": "active",
+      "residue_numbers": [
+        347
+      ],
+      "mean_rmsf": 4.949169635772705,
+      "max_rmsf": 4.949169635772705,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.16809068512468386
+    },
+    {
+      "site_id": "act_348",
+      "site_type": "active",
+      "residue_numbers": [
+        348
+      ],
+      "mean_rmsf": 4.344525337219238,
+      "max_rmsf": 4.344525337219238,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.18710735507903886
+    },
+    {
+      "site_id": "act_350",
+      "site_type": "active",
+      "residue_numbers": [
+        350
+      ],
+      "mean_rmsf": 4.99326753616333,
+      "max_rmsf": 4.99326753616333,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.16685388962965655
+    },
+    {
+      "site_id": "act_353",
+      "site_type": "active",
+      "residue_numbers": [
+        353
+      ],
+      "mean_rmsf": 5.438002586364746,
+      "max_rmsf": 5.438002586364746,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.15532767913419798
+    },
+    {
+      "site_id": "act_354",
+      "site_type": "active",
+      "residue_numbers": [
+        354
+      ],
+      "mean_rmsf": 5.72917366027832,
+      "max_rmsf": 5.72917366027832,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.14860665669886125
+    },
+    {
+      "site_id": "serine_protease_triad",
+      "site_type": "active",
+      "residue_numbers": [
+        215,
+        214,
+        207
+      ],
+      "mean_rmsf": 2.922312021255493,
+      "max_rmsf": 3.7085440158843994,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 5.880369186401367,
+      "stability_score": 0.2549516699795622
+    },
+    {
+      "site_id": "serine_protease_triad",
+      "site_type": "active",
+      "residue_numbers": [
+        215,
+        214,
+        208
+      ],
+      "mean_rmsf": 3.0573291778564453,
+      "max_rmsf": 4.113595485687256,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 26.610628128051758,
+      "stability_score": 0.24646755443400248
+    },
+    {
+      "site_id": "serine_protease_triad",
+      "site_type": "active",
+      "residue_numbers": [
+        95,
+        214,
+        207
+      ],
+      "mean_rmsf": 3.517268419265747,
+      "max_rmsf": 4.108023643493652,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 80.53246307373047,
+      "stability_score": 0.22137272067674552
+    },
+    {
+      "site_id": "serine_protease_triad",
+      "site_type": "active",
+      "residue_numbers": [
+        95,
+        214,
+        208
+      ],
+      "mean_rmsf": 3.652285575866699,
+      "max_rmsf": 4.113595485687256,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 60.036800384521484,
+      "stability_score": 0.21494811178131615
+    },
+    {
+      "site_id": "serine_protease_triad",
+      "site_type": "active",
+      "residue_numbers": [
+        185,
+        193,
+        207
+      ],
+      "mean_rmsf": 2.806865692138672,
+      "max_rmsf": 3.7085440158843994,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 178.1356658935547,
+      "stability_score": 0.26268328879188974
+    },
+    {
+      "site_id": "serine_protease_triad",
+      "site_type": "active",
+      "residue_numbers": [
+        185,
+        193,
+        208
+      ],
+      "mean_rmsf": 2.941883087158203,
+      "max_rmsf": 4.113595485687256,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 286.3516540527344,
+      "stability_score": 0.2536858597500728
+    },
+    {
+      "site_id": "serine_protease_triad",
+      "site_type": "active",
+      "residue_numbers": [
+        215,
+        193,
+        184
+      ],
+      "mean_rmsf": 2.420825958251953,
+      "max_rmsf": 2.9615983963012695,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 93.10458374023438,
+      "stability_score": 0.29232706141852405
+    },
+    {
+      "site_id": "serine_protease_triad",
+      "site_type": "active",
+      "residue_numbers": [
+        215,
+        193,
+        207
+      ],
+      "mean_rmsf": 2.6698076725006104,
+      "max_rmsf": 3.7085440158843994,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 63.8499755859375,
+      "stability_score": 0.2724938441579417
+    },
+    {
+      "site_id": "serine_protease_triad",
+      "site_type": "active",
+      "residue_numbers": [
+        215,
+        193,
+        208
+      ],
+      "mean_rmsf": 2.8048248291015625,
+      "max_rmsf": 4.113595485687256,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 89.20991516113281,
+      "stability_score": 0.2628241890011349
+    },
+    {
+      "site_id": "cysteine_protease_dyad",
+      "site_type": "active",
+      "residue_numbers": [
+        141,
+        233
+      ],
+      "mean_rmsf": 2.912524938583374,
+      "max_rmsf": 3.056608200073242,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 10.16483211517334,
+      "stability_score": 0.25558942516595806
+    },
+    {
+      "site_id": "cysteine_protease_dyad",
+      "site_type": "active",
+      "residue_numbers": [
+        176,
+        178
+      ],
+      "mean_rmsf": 2.8072869777679443,
+      "max_rmsf": 3.1076438426971436,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 9.928093910217285,
+      "stability_score": 0.26265422224259516
+    },
+    {
+      "site_id": "cysteine_protease_dyad",
+      "site_type": "active",
+      "residue_numbers": [
+        176,
+        179
+      ],
+      "mean_rmsf": 2.619320869445801,
+      "max_rmsf": 2.7317116260528564,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 9.135794639587402,
+      "stability_score": 0.2762949282673361
+    },
+    {
+      "site_id": "cysteine_protease_dyad",
+      "site_type": "active",
+      "residue_numbers": [
+        182,
+        179
+      ],
+      "mean_rmsf": 3.1021041870117188,
+      "max_rmsf": 3.47249698638916,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 5.907018661499023,
+      "stability_score": 0.24377732851502126
+    },
+    {
+      "site_id": "zinc_binding_cluster",
+      "site_type": "active",
+      "residue_numbers": [
+        176,
+        178,
+        179,
+        180,
+        182
+      ],
+      "mean_rmsf": 3.018350124359131,
+      "max_rmsf": 3.47249698638916,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 35.53083801269531,
+      "stability_score": 0.24885835456149696
+    },
+    {
+      "site_id": "zinc_binding_cluster",
+      "site_type": "active",
+      "residue_numbers": [
+        176,
+        178,
+        179,
+        180,
+        182,
+        238
+      ],
+      "mean_rmsf": 2.796856641769409,
+      "max_rmsf": 3.47249698638916,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 71.03861236572266,
+      "stability_score": 0.263375759042085
+    },
+    {
+      "site_id": "zinc_binding_cluster",
+      "site_type": "active",
+      "residue_numbers": [
+        193,
+        207,
+        208,
+        214
+      ],
+      "mean_rmsf": 3.133775234222412,
+      "max_rmsf": 4.113595485687256,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 64.52654266357422,
+      "stability_score": 0.24190962094921592
+    },
+    {
+      "site_id": "zinc_binding_cluster",
+      "site_type": "active",
+      "residue_numbers": [
+        141,
+        198,
+        233
+      ],
+      "mean_rmsf": 2.989182710647583,
+      "max_rmsf": 3.142498731613159,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 46.79905319213867,
+      "stability_score": 0.25067791388218097
+    },
+    {
+      "site_id": "zinc_binding_cluster",
+      "site_type": "active",
+      "residue_numbers": [
+        294,
+        296,
+        297,
+        298,
+        324
+      ],
+      "mean_rmsf": 5.825121879577637,
+      "max_rmsf": 6.604997158050537,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 907.2507934570312,
+      "stability_score": 0.14651753003740992
+    },
+    {
+      "site_id": "zinc_binding_cluster",
+      "site_type": "active",
+      "residue_numbers": [
+        296,
+        297,
+        298
+      ],
+      "mean_rmsf": 5.7271409034729,
+      "max_rmsf": 6.354478359222412,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 19.382551193237305,
+      "stability_score": 0.1486515615398732
+    },
+    {
+      "site_id": "zinc_binding_cluster",
+      "site_type": "active",
+      "residue_numbers": [
+        124,
+        135,
+        141
+      ],
+      "mean_rmsf": 2.9711711406707764,
+      "max_rmsf": 3.4401557445526123,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 18.980253219604492,
+      "stability_score": 0.25181488396672036
+    },
+    {
+      "site_id": "zinc_binding_cluster",
+      "site_type": "active",
+      "residue_numbers": [
+        124,
+        135,
+        275
+      ],
+      "mean_rmsf": 2.952704429626465,
+      "max_rmsf": 3.4401557445526123,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 23.130332946777344,
+      "stability_score": 0.25299134246030663
+    },
+    {
+      "site_id": "zinc_binding_cluster",
+      "site_type": "active",
+      "residue_numbers": [
+        124,
+        141,
+        233
+      ],
+      "mean_rmsf": 3.0884017944335938,
+      "max_rmsf": 3.4401557445526123,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 62.051204681396484,
+      "stability_score": 0.24459435502682528
+    },
+    {
+      "site_id": "zinc_binding_cluster",
+      "site_type": "active",
+      "residue_numbers": [
+        176,
+        178,
+        179,
+        180,
+        242
+      ],
+      "mean_rmsf": 2.875063419342041,
+      "max_rmsf": 3.2729671001434326,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 131.90879821777344,
+      "stability_score": 0.2580602926415571
+    },
+    {
+      "site_id": "zinc_binding_cluster",
+      "site_type": "active",
+      "residue_numbers": [
+        178,
+        179,
+        180,
+        182,
+        184
+      ],
+      "mean_rmsf": 3.109283685684204,
+      "max_rmsf": 3.47249698638916,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 32.023807525634766,
+      "stability_score": 0.24335141511007605
+    },
+    {
+      "site_id": "zinc_binding_cluster",
+      "site_type": "active",
+      "residue_numbers": [
+        179,
+        238,
+        242
+      ],
+      "mean_rmsf": 2.3923885822296143,
+      "max_rmsf": 2.7560644149780273,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 111.84747314453125,
+      "stability_score": 0.29477755149817175
+    },
+    {
+      "site_id": "zinc_binding_cluster",
+      "site_type": "active",
+      "residue_numbers": [
+        176,
+        238,
+        242
+      ],
+      "mean_rmsf": 2.3174614906311035,
+      "max_rmsf": 2.7560644149780273,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 37.35466003417969,
+      "stability_score": 0.301435300100428
+    },
+    {
+      "site_id": "zinc_binding_cluster",
+      "site_type": "active",
+      "residue_numbers": [
+        135,
+        275,
+        277
+      ],
+      "mean_rmsf": 3.0345942974090576,
+      "max_rmsf": 3.685823917388916,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 19.273712158203125,
+      "stability_score": 0.2478563955345353
+    },
+    {
+      "site_id": "zinc_binding_cluster",
+      "site_type": "active",
+      "residue_numbers": [
+        275,
+        277,
+        281
+      ],
+      "mean_rmsf": 3.5016448497772217,
+      "max_rmsf": 4.106068134307861,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 19.875659942626953,
+      "stability_score": 0.22214102475220546
+    },
+    {
+      "site_id": "zinc_binding_cluster",
+      "site_type": "active",
+      "residue_numbers": [
+        48,
+        49,
+        51
+      ],
+      "mean_rmsf": 7.657887935638428,
+      "max_rmsf": 8.48095417022705,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 15.163641929626465,
+      "stability_score": 0.11550161048905522
+    },
+    {
+      "site_id": "zinc_binding_cluster",
+      "site_type": "active",
+      "residue_numbers": [
+        182,
+        184,
+        186
+      ],
+      "mean_rmsf": 3.191088914871216,
+      "max_rmsf": 3.47249698638916,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 64.69905090332031,
+      "stability_score": 0.23860147572906554
+    },
+    {
+      "site_id": "zinc_binding_cluster",
+      "site_type": "active",
+      "residue_numbers": [
+        207,
+        208,
+        214
+      ],
+      "mean_rmsf": 3.5191256999969482,
+      "max_rmsf": 4.113595485687256,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 9.647555351257324,
+      "stability_score": 0.22128174040405102
+    },
+    {
+      "site_id": "zinc_binding_cluster",
+      "site_type": "active",
+      "residue_numbers": [
+        277,
+        281,
+        285
+      ],
+      "mean_rmsf": 4.192941188812256,
+      "max_rmsf": 4.786931037902832,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 124.73609924316406,
+      "stability_score": 0.19256909786585177
+    },
+    {
+      "site_id": "zinc_binding_cluster",
+      "site_type": "active",
+      "residue_numbers": [
+        296,
+        324,
+        326
+      ],
+      "mean_rmsf": 5.271548748016357,
+      "max_rmsf": 6.354478359222412,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 548.4845581054688,
+      "stability_score": 0.15945024748731998
+    },
+    {
+      "site_id": "zinc_binding_cluster",
+      "site_type": "active",
+      "residue_numbers": [
+        281,
+        285,
+        286,
+        287
+      ],
+      "mean_rmsf": 4.920766353607178,
+      "max_rmsf": 5.732931613922119,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 29.943204879760742,
+      "stability_score": 0.1688970549210675
+    },
+    {
+      "site_id": "zinc_binding_cluster",
+      "site_type": "active",
+      "residue_numbers": [
+        285,
+        286,
+        287
+      ],
+      "mean_rmsf": 5.192332744598389,
+      "max_rmsf": 5.732931613922119,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 3.835456371307373,
+      "stability_score": 0.16149002988773598
+    },
+    {
+      "site_id": "zinc_binding_cluster",
+      "site_type": "active",
+      "residue_numbers": [
+        336,
+        339,
+        343
+      ],
+      "mean_rmsf": 7.583499908447266,
+      "max_rmsf": 9.47298526763916,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 109.23184967041016,
+      "stability_score": 0.11650259342530797
+    },
+    {
+      "site_id": "zinc_binding_cluster",
+      "site_type": "active",
+      "residue_numbers": [
+        339,
+        343,
+        346
+      ],
+      "mean_rmsf": 6.084019184112549,
+      "max_rmsf": 7.374299049377441,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 42.48872756958008,
+      "stability_score": 0.14116280235981252
+    },
+    {
+      "site_id": "zinc_binding_cluster",
+      "site_type": "active",
+      "residue_numbers": [
+        343,
+        346,
+        349
+      ],
+      "mean_rmsf": 5.103946685791016,
+      "max_rmsf": 5.9032158851623535,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 60.62649154663086,
+      "stability_score": 0.1638284296171583
+    },
+    {
+      "site_id": "zinc_binding_cluster",
+      "site_type": "active",
+      "residue_numbers": [
+        346,
+        349,
+        352
+      ],
+      "mean_rmsf": 4.809872150421143,
+      "max_rmsf": 5.020991325378418,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 59.308963775634766,
+      "stability_score": 0.17212082712138727
+    },
+    {
+      "site_id": "dna_binding_cluster",
+      "site_type": "active",
+      "residue_numbers": [
+        164,
+        248,
+        249
+      ],
+      "mean_rmsf": 3.3109664916992188,
+      "max_rmsf": 3.472811460494995,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 20.929574966430664,
+      "stability_score": 0.23196654437595457
+    },
+    {
+      "site_id": "dna_binding_cluster",
+      "site_type": "active",
+      "residue_numbers": [
+        101,
+        110,
+        267
+      ],
+      "mean_rmsf": 2.4930248260498047,
+      "max_rmsf": 2.903902292251587,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 94.3644790649414,
+      "stability_score": 0.28628482470045336
+    },
+    {
+      "site_id": "dna_binding_cluster",
+      "site_type": "active",
+      "residue_numbers": [
+        120,
+        280,
+        282,
+        283
+      ],
+      "mean_rmsf": 4.645158767700195,
+      "max_rmsf": 5.104291915893555,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 32.432960510253906,
+      "stability_score": 0.17714293630175332
+    },
+    {
+      "site_id": "dna_binding_cluster",
+      "site_type": "active",
+      "residue_numbers": [
+        280,
+        282,
+        283
+      ],
+      "mean_rmsf": 4.647085189819336,
+      "max_rmsf": 5.104291915893555,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 8.251803398132324,
+      "stability_score": 0.17708250652970803
+    },
+    {
+      "site_id": "dna_binding_cluster",
+      "site_type": "active",
+      "residue_numbers": [
+        290,
+        291,
+        292
+      ],
+      "mean_rmsf": 6.3262786865234375,
+      "max_rmsf": 6.6093549728393555,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 10.259211540222168,
+      "stability_score": 0.1364949441302967
+    },
+    {
+      "site_id": "dna_binding_cluster",
+      "site_type": "active",
+      "residue_numbers": [
+        333,
+        335,
+        337
+      ],
+      "mean_rmsf": 8.472676277160645,
+      "max_rmsf": 8.771125793457031,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 23.459001541137695,
+      "stability_score": 0.10556678711918799
+    },
+    {
+      "site_id": "dna_binding_cluster",
+      "site_type": "active",
+      "residue_numbers": [
+        319,
+        320,
+        321
+      ],
+      "mean_rmsf": 5.62369966506958,
+      "max_rmsf": 5.7231926918029785,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 8.486510276794434,
+      "stability_score": 0.1509730287551459
+    },
+    {
+      "site_id": "dna_binding_cluster",
+      "site_type": "active",
+      "residue_numbers": [
+        370,
+        372,
+        373
+      ],
+      "mean_rmsf": 8.205780982971191,
+      "max_rmsf": 8.271927833557129,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 30.885692596435547,
+      "stability_score": 0.10862739422649692
+    },
+    {
+      "site_id": "dna_binding_cluster",
+      "site_type": "active",
+      "residue_numbers": [
+        379,
+        381,
+        382
+      ],
+      "mean_rmsf": 7.583522319793701,
+      "max_rmsf": 9.21633243560791,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 38.65559005737305,
+      "stability_score": 0.11650228924016293
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        21,
+        24
+      ],
+      "mean_rmsf": 5.115269660949707,
+      "max_rmsf": 5.265720844268799,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 12.586175918579102,
+      "stability_score": 0.1635250864546011
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        207,
+        209
+      ],
+      "mean_rmsf": 4.254577159881592,
+      "max_rmsf": 4.800610542297363,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 11.051349639892578,
+      "stability_score": 0.19031027037435955
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        207,
+        213
+      ],
+      "mean_rmsf": 3.399803876876831,
+      "max_rmsf": 3.7085440158843994,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 7.875277519226074,
+      "stability_score": 0.22728285805090084
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        207,
+        214
+      ],
+      "mean_rmsf": 3.221890926361084,
+      "max_rmsf": 3.7085440158843994,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 2.801492214202881,
+      "stability_score": 0.23686069049204836
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        208,
+        209
+      ],
+      "mean_rmsf": 4.4571027755737305,
+      "max_rmsf": 4.800610542297363,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 1.975974440574646,
+      "stability_score": 0.18324741921226972
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        208,
+        213
+      ],
+      "mean_rmsf": 3.602329730987549,
+      "max_rmsf": 4.113595485687256,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 6.948036193847656,
+      "stability_score": 0.2172812593732662
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        208,
+        214
+      ],
+      "mean_rmsf": 3.4244165420532227,
+      "max_rmsf": 4.113595485687256,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 13.65571403503418,
+      "stability_score": 0.22601850221270842
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        259,
+        156
+      ],
+      "mean_rmsf": 3.713111400604248,
+      "max_rmsf": 3.9408817291259766,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 4.8072710037231445,
+      "stability_score": 0.21217406401041025
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        281,
+        280
+      ],
+      "mean_rmsf": 4.359248161315918,
+      "max_rmsf": 4.612428188323975,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 3.159057378768921,
+      "stability_score": 0.18659333733007402
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        281,
+        282
+      ],
+      "mean_rmsf": 4.16530179977417,
+      "max_rmsf": 4.2245354652404785,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 2.6916730403900146,
+      "stability_score": 0.19359952985587806
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        281,
+        283
+      ],
+      "mean_rmsf": 4.605179786682129,
+      "max_rmsf": 5.104291915893555,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 5.617214679718018,
+      "stability_score": 0.17840640943863986
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        324,
+        296
+      ],
+      "mean_rmsf": 5.8468337059021,
+      "max_rmsf": 6.354478359222412,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 355.59539794921875,
+      "stability_score": 0.14605291189385558
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        352,
+        351
+      ],
+      "mean_rmsf": 4.972990989685059,
+      "max_rmsf": 5.020991325378418,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 3.4168059825897217,
+      "stability_score": 0.16742030947760186
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        171,
+        168
+      ],
+      "mean_rmsf": 3.581045150756836,
+      "max_rmsf": 3.8224987983703613,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 6.4455718994140625,
+      "stability_score": 0.21829079764358789
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        180,
+        175
+      ],
+      "mean_rmsf": 2.5948400497436523,
+      "max_rmsf": 3.2729671001434326,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 11.675912857055664,
+      "stability_score": 0.2781764935748142
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        180,
+        181
+      ],
+      "mean_rmsf": 3.5071301460266113,
+      "max_rmsf": 3.741292953491211,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 2.2030928134918213,
+      "stability_score": 0.22187067326679671
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        180,
+        178
+      ],
+      "mean_rmsf": 3.190305471420288,
+      "max_rmsf": 3.2729671001434326,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 5.459733486175537,
+      "stability_score": 0.23864608602414225
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        180,
+        179
+      ],
+      "mean_rmsf": 3.0023393630981445,
+      "max_rmsf": 3.2729671001434326,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 3.078235149383545,
+      "stability_score": 0.24985387526606853
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        198,
+        196
+      ],
+      "mean_rmsf": 2.6272873878479004,
+      "max_rmsf": 3.142498731613159,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 15.234490394592285,
+      "stability_score": 0.27568810879176253
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        198,
+        233
+      ],
+      "mean_rmsf": 3.0995535850524902,
+      "max_rmsf": 3.142498731613159,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 36.67508316040039,
+      "stability_score": 0.24392899842708024
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        204,
+        202
+      ],
+      "mean_rmsf": 4.102334976196289,
+      "max_rmsf": 4.5106682777404785,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 9.93836784362793,
+      "stability_score": 0.19598870020593676
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        258,
+        156
+      ],
+      "mean_rmsf": 3.3267006874084473,
+      "max_rmsf": 3.4853408336639404,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 4.658091068267822,
+      "stability_score": 0.2311229900672809
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        271,
+        273
+      ],
+      "mean_rmsf": 2.343276023864746,
+      "max_rmsf": 2.387648344039917,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 7.334301471710205,
+      "stability_score": 0.29910781905588046
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        271,
+        132
+      ],
+      "mean_rmsf": 2.626957893371582,
+      "max_rmsf": 2.9550118446350098,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 3.4373996257781982,
+      "stability_score": 0.2757131539430171
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        285,
+        282
+      ],
+      "mean_rmsf": 4.505733489990234,
+      "max_rmsf": 4.786931037902832,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 5.474541187286377,
+      "stability_score": 0.1816288423364593
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        285,
+        283
+      ],
+      "mean_rmsf": 4.945611476898193,
+      "max_rmsf": 5.104291915893555,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 4.910284042358398,
+      "stability_score": 0.1681912792124952
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        286,
+        282
+      ],
+      "mean_rmsf": 4.640835285186768,
+      "max_rmsf": 5.057135105133057,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 6.522469997406006,
+      "stability_score": 0.17727870952482352
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        286,
+        283
+      ],
+      "mean_rmsf": 5.080713272094727,
+      "max_rmsf": 5.104291915893555,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 4.465464115142822,
+      "stability_score": 0.16445439132760045
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        286,
+        290
+      ],
+      "mean_rmsf": 5.505889892578125,
+      "max_rmsf": 5.954644680023193,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 10.594615936279297,
+      "stability_score": 0.1537068743110444
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        287,
+        283
+      ],
+      "mean_rmsf": 5.418611526489258,
+      "max_rmsf": 5.732931613922119,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 8.75304126739502,
+      "stability_score": 0.15579693456646423
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        287,
+        290
+      ],
+      "mean_rmsf": 5.843788146972656,
+      "max_rmsf": 5.954644680023193,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 7.310631275177002,
+      "stability_score": 0.1461179070018918
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        287,
+        291
+      ],
+      "mean_rmsf": 6.073884010314941,
+      "max_rmsf": 6.414836406707764,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 13.18513298034668,
+      "stability_score": 0.14136505469157082
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        294,
+        290
+      ],
+      "mean_rmsf": 6.279820919036865,
+      "max_rmsf": 6.604997158050537,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 15.1963529586792,
+      "stability_score": 0.1373660164338633
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        294,
+        291
+      ],
+      "mean_rmsf": 6.50991678237915,
+      "max_rmsf": 6.604997158050537,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 9.813335418701172,
+      "stability_score": 0.13315726778042922
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        294,
+        292
+      ],
+      "mean_rmsf": 6.607175827026367,
+      "max_rmsf": 6.6093549728393555,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 7.201056480407715,
+      "stability_score": 0.1314548293267067
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        294,
+        296
+      ],
+      "mean_rmsf": 6.479737758636475,
+      "max_rmsf": 6.604997158050537,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 13.267066955566406,
+      "stability_score": 0.13369452676938448
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        298,
+        296
+      ],
+      "mean_rmsf": 5.853736400604248,
+      "max_rmsf": 6.354478359222412,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 22.192062377929688,
+      "stability_score": 0.14590581568206165
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        298,
+        297
+      ],
+      "mean_rmsf": 5.4134721755981445,
+      "max_rmsf": 5.473950386047363,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 3.120349407196045,
+      "stability_score": 0.15592178037425355
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        336,
+        335
+      ],
+      "mean_rmsf": 9.122055053710938,
+      "max_rmsf": 9.47298526763916,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 2.7316575050354004,
+      "stability_score": 0.09879416726086478
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        336,
+        337
+      ],
+      "mean_rmsf": 8.96281623840332,
+      "max_rmsf": 9.47298526763916,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 3.2266509532928467,
+      "stability_score": 0.10037322540842768
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        339,
+        335
+      ],
+      "mean_rmsf": 8.072711944580078,
+      "max_rmsf": 8.771125793457031,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 11.626202583312988,
+      "stability_score": 0.1102206270967731
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        339,
+        337
+      ],
+      "mean_rmsf": 7.913473129272461,
+      "max_rmsf": 8.45264720916748,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 9.869046211242676,
+      "stability_score": 0.11218971387437418
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        339,
+        342
+      ],
+      "mean_rmsf": 6.596826553344727,
+      "max_rmsf": 7.374299049377441,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 7.644273281097412,
+      "stability_score": 0.13163391226297255
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        343,
+        342
+      ],
+      "mean_rmsf": 5.861285209655762,
+      "max_rmsf": 5.9032158851623535,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 2.7953600883483887,
+      "stability_score": 0.1457452896131935
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        346,
+        342
+      ],
+      "mean_rmsf": 5.396948337554932,
+      "max_rmsf": 5.819354057312012,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 11.924145698547363,
+      "stability_score": 0.15632453901952634
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        349,
+        351
+      ],
+      "mean_rmsf": 4.67953634262085,
+      "max_rmsf": 4.924991130828857,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 7.395127773284912,
+      "stability_score": 0.17607071064863458
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        358,
+        357
+      ],
+      "mean_rmsf": 7.311681747436523,
+      "max_rmsf": 7.609978199005127,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 3.430478811264038,
+      "stability_score": 0.12031259501826072
+    },
+    {
+      "site_id": "acid_base_pair",
+      "site_type": "active",
+      "residue_numbers": [
+        388,
+        386
+      ],
+      "mean_rmsf": 9.745132446289062,
+      "max_rmsf": 10.857067108154297,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 16.349624633789062,
+      "stability_score": 0.09306539542426578
+    },
+    {
+      "site_id": "hrd_catalytic_loop",
+      "site_type": "active",
+      "residue_numbers": [
+        178,
+        181,
+        184
+      ],
+      "mean_rmsf": 3.2701785564422607,
+      "max_rmsf": 3.741292953491211,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 41.11576461791992,
+      "stability_score": 0.2341822447895854
+    },
+    {
+      "site_id": "hrd_catalytic_loop",
+      "site_type": "active",
+      "residue_numbers": [
+        179,
+        181,
+        184
+      ],
+      "mean_rmsf": 3.1448676586151123,
+      "max_rmsf": 3.741292953491211,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 30.981889724731445,
+      "stability_score": 0.24126222653249227
+    },
+    {
+      "site_id": "haem_binding",
+      "site_type": "active",
+      "residue_numbers": [
+        214
+      ],
+      "mean_rmsf": 2.7352375984191895,
+      "max_rmsf": 2.7352375984191895,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 0.0,
+      "stability_score": 0.2677205863485674
+    },
+    {
+      "site_id": "P1",
+      "site_type": "pocket",
+      "residue_numbers": [
+        138,
+        193,
+        194,
+        195,
+        196,
+        197,
+        234,
+        235,
+        236,
+        237,
+        238
+      ],
+      "mean_rmsf": 1.9654629230499268,
+      "max_rmsf": 2.705078363418579,
+      "flexible_fraction": 0.8181818181818182,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 95.35630798339844,
+      "stability_score": 0.33721547898212045
+    },
+    {
+      "site_id": "P2",
+      "site_type": "pocket",
+      "residue_numbers": [
+        173,
+        174,
+        175,
+        176,
+        193,
+        194,
+        237,
+        238,
+        239,
+        240,
+        242,
+        245,
+        246
+      ],
+      "mean_rmsf": 2.174022912979126,
+      "max_rmsf": 3.1216578483581543,
+      "flexible_fraction": 0.9230769230769231,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 121.40943145751953,
+      "stability_score": 0.3150575869855343
+    },
+    {
+      "site_id": "P3",
+      "site_type": "pocket",
+      "residue_numbers": [
+        156,
+        157,
+        158,
+        159,
+        160,
+        215,
+        216,
+        217,
+        254,
+        255,
+        256,
+        257,
+        258
+      ],
+      "mean_rmsf": 2.3194780349731445,
+      "max_rmsf": 3.4853408336639404,
+      "flexible_fraction": 0.9230769230769231,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 98.8215103149414,
+      "stability_score": 0.30125218165755696
+    },
+    {
+      "site_id": "P4",
+      "site_type": "pocket",
+      "residue_numbers": [
+        100,
+        159,
+        160,
+        161,
+        162,
+        251,
+        252,
+        253,
+        254,
+        255,
+        268,
+        269,
+        270,
+        271
+      ],
+      "mean_rmsf": 1.8187495470046997,
+      "max_rmsf": 2.7418181896209717,
+      "flexible_fraction": 0.7857142857142857,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 206.5500946044922,
+      "stability_score": 0.35476724104936336
+    },
+    {
+      "site_id": "P5",
+      "site_type": "pocket",
+      "residue_numbers": [
+        158,
+        159,
+        160,
+        195,
+        196,
+        197,
+        216,
+        217,
+        232,
+        233,
+        234,
+        235,
+        253,
+        255
+      ],
+      "mean_rmsf": 2.1965339183807373,
+      "max_rmsf": 3.221031904220581,
+      "flexible_fraction": 0.8571428571428571,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 155.1511688232422,
+      "stability_score": 0.3128388515603702
+    },
+    {
+      "site_id": "P6",
+      "site_type": "pocket",
+      "residue_numbers": [
+        133,
+        134,
+        135,
+        136,
+        137,
+        235,
+        236,
+        237,
+        238,
+        239,
+        240,
+        272,
+        273,
+        274,
+        275
+      ],
+      "mean_rmsf": 2.3104004859924316,
+      "max_rmsf": 2.886528491973877,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 109.46360778808594,
+      "stability_score": 0.3020782543475878
+    },
+    {
+      "site_id": "P7",
+      "site_type": "pocket",
+      "residue_numbers": [
+        159,
+        160,
+        161,
+        192,
+        193,
+        194,
+        195,
+        196,
+        205,
+        206,
+        207,
+        213,
+        214,
+        215,
+        216
+      ],
+      "mean_rmsf": 2.345919609069824,
+      "max_rmsf": 3.7085440158843994,
+      "flexible_fraction": 0.8,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 140.5228729248047,
+      "stability_score": 0.29887149628140736
+    },
+    {
+      "site_id": "P8",
+      "site_type": "pocket",
+      "residue_numbers": [
+        126,
+        127,
+        128,
+        130,
+        131,
+        132,
+        133,
+        134,
+        269,
+        270,
+        271,
+        272
+      ],
+      "mean_rmsf": 2.990729331970215,
+      "max_rmsf": 4.29359245300293,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 137.76876831054688,
+      "stability_score": 0.25058076276656477
+    },
+    {
+      "site_id": "P9",
+      "site_type": "pocket",
+      "residue_numbers": [
+        107,
+        109,
+        151,
+        152,
+        155,
+        156,
+        157,
+        220,
+        256,
+        257,
+        258,
+        259,
+        264,
+        265,
+        266
+      ],
+      "mean_rmsf": 3.270042657852173,
+      "max_rmsf": 4.6802473068237305,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 149.2611541748047,
+      "stability_score": 0.23418969788536
+    },
+    {
+      "site_id": "P10",
+      "site_type": "pocket",
+      "residue_numbers": [
+        131,
+        132,
+        133,
+        161,
+        162,
+        164,
+        250,
+        251,
+        252,
+        253,
+        254,
+        269,
+        270,
+        271,
+        272,
+        273
+      ],
+      "mean_rmsf": 2.2315711975097656,
+      "max_rmsf": 3.3270416259765625,
+      "flexible_fraction": 0.8125,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 153.914306640625,
+      "stability_score": 0.30944699617653343
+    },
+    {
+      "site_id": "A1",
+      "site_type": "allo",
+      "residue_numbers": [
+        28,
+        29,
+        30,
+        31,
+        32,
+        33
+      ],
+      "mean_rmsf": 6.076389312744141,
+      "max_rmsf": 7.080582618713379,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 75.12117004394531,
+      "stability_score": 0.1413150062559534
+    },
+    {
+      "site_id": "A2",
+      "site_type": "allo",
+      "residue_numbers": [
+        25,
+        26,
+        27
+      ],
+      "mean_rmsf": 5.098177433013916,
+      "max_rmsf": 5.6040358543396,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 13.310168266296387,
+      "stability_score": 0.163983421437734
+    },
+    {
+      "site_id": "A3",
+      "site_type": "allo",
+      "residue_numbers": [
+        34,
+        35,
+        36
+      ],
+      "mean_rmsf": 6.455348491668701,
+      "max_rmsf": 6.777193069458008,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 12.837947845458984,
+      "stability_score": 0.1341318921734501
+    },
+    {
+      "site_id": "A4",
+      "site_type": "allo",
+      "residue_numbers": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "mean_rmsf": 5.001540184020996,
+      "max_rmsf": 5.5870442390441895,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 44.160301208496094,
+      "stability_score": 0.16662389475662995
+    },
+    {
+      "site_id": "A5",
+      "site_type": "allo",
+      "residue_numbers": [
+        37,
+        38,
+        39
+      ],
+      "mean_rmsf": 5.707566738128662,
+      "max_rmsf": 6.40806770324707,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 13.756233215332031,
+      "stability_score": 0.14908535972002704
+    },
+    {
+      "site_id": "A6",
+      "site_type": "allo",
+      "residue_numbers": [
+        15,
+        16,
+        17
+      ],
+      "mean_rmsf": 6.495131015777588,
+      "max_rmsf": 6.535304546356201,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 9.694764137268066,
+      "stability_score": 0.13341994928373568
+    },
+    {
+      "site_id": "A7",
+      "site_type": "allo",
+      "residue_numbers": [
+        12,
+        13,
+        14
+      ],
+      "mean_rmsf": 6.320587158203125,
+      "max_rmsf": 6.779176712036133,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 8.214690208435059,
+      "stability_score": 0.13660106469457772
+    },
+    {
+      "site_id": "A8",
+      "site_type": "allo",
+      "residue_numbers": [
+        40,
+        41,
+        42,
+        43
+      ],
+      "mean_rmsf": 4.114196300506592,
+      "max_rmsf": 4.456311225891113,
+      "flexible_fraction": 1.0,
+      "hbond_persistence": 0.0,
+      "pocket_vol_drift": 12.482925415039062,
+      "stability_score": 0.19553414480804032
+    }
+  ],
+  "trajectory_path": "C:\\Users\\adria\\Documents\\proteinFP\\data\\intermediate\\md\\P04637_traj.dcd",
+  "topology_path": "C:\\Users\\adria\\Documents\\proteinFP\\data\\intermediate\\md\\P04637_top.pdb"
+}
