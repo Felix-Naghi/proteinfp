@@ -1,0 +1,46 @@
+{
+  "uniprot_id": "P00748",
+  "sequence_length": 615,
+  "is_enzyme": true,
+  "enzyme_confidence": 0.9,
+  "top_prediction": {
+    "ec_class": "3",
+    "ec_name": "Hydrolase",
+    "ec_full": "EC 3.4.21",
+    "score": 0.9,
+    "evidence": [
+      "go_prediction",
+      "structural_motif",
+      "sequence_composition",
+      "homology_inference"
+    ]
+  },
+  "all_predictions": [
+    {
+      "ec_class": "3",
+      "ec_name": "Hydrolase",
+      "ec_full": "EC 3.4.21",
+      "score": 0.9,
+      "evidence": [
+        "go_prediction",
+        "structural_motif",
+        "sequence_composition",
+        "homology_inference"
+      ]
+    },
+    {
+      "ec_class": "2",
+      "ec_name": "Transferase",
+      "ec_full": "EC 2.x.x.x",
+      "score": 0.74,
+      "evidence": [
+        "sequence_composition",
+        "ml_ensemble"
+      ]
+    }
+  ],
+  "specific_ec": "3.4.21",
+  "specific_ec_name": "Serine-type endopeptidase",
+  "non_enzyme_score": 0.4,
+  "ml_enzyme_prob": 0.924
+}

@@ -1,0 +1,94 @@
+======================================================================
+  ProteinFP Prediction Report
+  Generated: 2026-04-26 15:11:15
+======================================================================
+
+  Protein    : Beta-2 adrenergic receptor
+  Gene       : ADRB2
+  UniProt    : P07550
+  Organism   : Homo sapiens
+  Length     : 413 aa
+  Mean pLDDT : 79.1
+  Confidence : VERY HIGH
+
+──────────────────────────────────────────────────────────────────────
+  FUNCTIONAL PREDICTION
+──────────────────────────────────────────────────────────────────────
+  Top function     : G protein-coupled receptor for catecholamines that couples to both G(s) and G(i) proteins, activating bifurcated signaling pathways (PubMed:2831218, PubMed:7915137). ADRB2 binds epinephrine (Epi) with
+  Enzyme           : no (non-enzyme)
+  Location         : membrane
+  Evidence sources : 12
+
+──────────────────────────────────────────────────────────────────────
+  GENE ONTOLOGY PREDICTIONS
+──────────────────────────────────────────────────────────────────────
+
+  Molecular Function:
+    [HIGH  ] GO:0004941 beta2-adrenergic receptor activity (score=8.2, 2 sources)
+    [HIGH  ] GO:0004930 G protein-coupled receptor activity (score=3.8, 1 sources)
+    [HIGH  ] GO:0097746 blood vessel diameter maintenance (score=3.8, 1 sources)
+    [HIGH  ] GO:0004935 adrenergic receptor activity (score=3.8, 1 sources)
+    [HIGH  ] GO:0051380 F:norepinephrine binding (score=3.5, 1 sources)
+
+  Biological Process:
+    [HIGH  ] GO:0006940 regulation of smooth muscle contraction (score=8.2, 2 sources)
+    [HIGH  ] GO:0007186 G protein-coupled receptor signaling pathway (score=7.5, 1 sources)
+    [HIGH  ] GO:0007189 adenylate cyclase-activating G protein-couple (score=3.8, 1 sources)
+    [HIGH  ] GO:0071880 P:adenylate cyclase-activating adrenergic rec (score=3.5, 1 sources)
+    [HIGH  ] GO:0071881 P:adenylate cyclase-inhibiting adrenergic rec (score=3.5, 1 sources)
+
+  Cellular Component:
+    [HIGH  ] GO:0016020 membrane (score=21.0, 2 sources)
+    [HIGH  ] GO:0005634 C:nucleus (score=6.5, 3 sources)
+    [HIGH  ] GO:0005769 C:early endosome (score=3.5, 1 sources)
+
+──────────────────────────────────────────────────────────────────────
+  ACTIVE SITES
+──────────────────────────────────────────────────────────────────────
+  C106 [HIGH  ] motifs: zinc_binding_cluster, zinc_binding_cluster
+  C116 [HIGH  ] motifs: zinc_binding_cluster, zinc_binding_cluster
+  C184 [HIGH  ] motifs: zinc_binding_cluster, zinc_binding_cluster
+  C191 [HIGH  ] motifs: zinc_binding_cluster, zinc_binding_cluster
+  C265 [HIGH  ] motifs: zinc_binding_cluster
+
+──────────────────────────────────────────────────────────────────────
+  BINDING POCKETS
+──────────────────────────────────────────────────────────────────────
+  P1: vol=1660Å³  druggability=0.98 (high)
+  P2: vol=560Å³  druggability=0.98 (high)
+  P3: vol=1460Å³  druggability=0.97 (high)
+  P4: vol=980Å³  druggability=0.97 (high)
+  P5: vol=920Å³  druggability=0.97 (high)
+
+──────────────────────────────────────────────────────────────────────
+  ALLOSTERIC SITES
+──────────────────────────────────────────────────────────────────────
+  A1 [HIGH  ] corr=1.00 residues=[393, 394, 395]
+  A2 [HIGH  ] corr=0.99 residues=[385, 386, 387]
+  A3 [HIGH  ] corr=0.99 residues=[396, 397, 398]
+  A4 [HIGH  ] corr=0.98 residues=[399, 400, 401]
+
+──────────────────────────────────────────────────────────────────────
+  PROTEIN INTERACTIONS (top 8)
+──────────────────────────────────────────────────────────────────────
+  ARRB2           STRING=999  type=unknown
+  ARRB1           STRING=999  type=unknown
+  SLC9A3R1        STRING=997  type=unknown
+  GNAS            STRING=993  type=unknown
+  SAG             STRING=985  type=unknown
+  GRK2            STRING=983  type=unknown
+  AKAP12          STRING=983  type=unknown
+  SNX27           STRING=958  type=unknown
+
+──────────────────────────────────────────────────────────────────────
+  VALIDATION SUGGESTIONS
+──────────────────────────────────────────────────────────────────────
+  1. Alanine scanning mutagenesis of predicted active site residues (C106, C116, C184) to confirm functional importance
+  2. Thermal shift assay or SPR binding assay against pocket P1 (vol=1660Å³, druggability=0.98)
+  3. Co-immunoprecipitation with ARRB2 (unknown interaction, predicted interface: [1, 413, 404])
+  4. Co-immunoprecipitation with ARRB1 (unknown interaction, predicted interface: [1, 413, 404])
+  5. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+
+──────────────────────────────────────────────────────────────────────
+  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi
+======================================================================

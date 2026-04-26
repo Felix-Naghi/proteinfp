@@ -1,0 +1,170 @@
+{
+  "uniprot_id": "P60709",
+  "length": 375,
+  "n_contacts": 1879,
+  "enm_computed": true,
+  "allosteric_residues": [
+    {
+      "residue_number": 1,
+      "chain_id": "A",
+      "one_letter": "M",
+      "correlation_score": 0.319,
+      "min_dist_active": 15.9,
+      "sasa": 225.5,
+      "is_exposed": true,
+      "plddt": 35.53
+    },
+    {
+      "residue_number": 2,
+      "chain_id": "A",
+      "one_letter": "D",
+      "correlation_score": 0.398,
+      "min_dist_active": 13.0,
+      "sasa": 147.0,
+      "is_exposed": true,
+      "plddt": 45.19
+    },
+    {
+      "residue_number": 3,
+      "chain_id": "A",
+      "one_letter": "D",
+      "correlation_score": 0.398,
+      "min_dist_active": 11.8,
+      "sasa": 115.1,
+      "is_exposed": true,
+      "plddt": 53.38
+    },
+    {
+      "residue_number": 45,
+      "chain_id": "A",
+      "one_letter": "V",
+      "correlation_score": 0.623,
+      "min_dist_active": 10.5,
+      "sasa": 118.6,
+      "is_exposed": true,
+      "plddt": 60.44
+    },
+    {
+      "residue_number": 46,
+      "chain_id": "A",
+      "one_letter": "G",
+      "correlation_score": 0.573,
+      "min_dist_active": 11.1,
+      "sasa": 82.3,
+      "is_exposed": true,
+      "plddt": 64.62
+    },
+    {
+      "residue_number": 232,
+      "chain_id": "A",
+      "one_letter": "S",
+      "correlation_score": 0.731,
+      "min_dist_active": 10.0,
+      "sasa": 97.9,
+      "is_exposed": true,
+      "plddt": 95.5
+    },
+    {
+      "residue_number": 244,
+      "chain_id": "A",
+      "one_letter": "D",
+      "correlation_score": 0.635,
+      "min_dist_active": 11.2,
+      "sasa": 114.0,
+      "is_exposed": true,
+      "plddt": 92.75
+    }
+  ],
+  "allosteric_sites": [
+    {
+      "site_id": "A1",
+      "residue_numbers": [
+        45,
+        46
+      ],
+      "residue_letters": [
+        "V",
+        "G"
+      ],
+      "size": 2,
+      "centre": [
+        8.38,
+        12.4,
+        34.87
+      ],
+      "mean_correlation": 0.598,
+      "min_dist_active": 10.7,
+      "mean_sasa": 100.4,
+      "mean_hydrophobicity": 1.9,
+      "net_charge": 0.0,
+      "coupled_active_residues": [
+        40,
+        50,
+        51,
+        52,
+        61
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "site_id": "A2",
+      "residue_numbers": [
+        1,
+        2,
+        3
+      ],
+      "residue_letters": [
+        "D",
+        "M",
+        "D"
+      ],
+      "size": 3,
+      "centre": [
+        34.69,
+        -0.63,
+        -0.6
+      ],
+      "mean_correlation": 0.372,
+      "min_dist_active": 13.5,
+      "mean_sasa": 162.5,
+      "mean_hydrophobicity": -1.7,
+      "net_charge": -2.0,
+      "coupled_active_residues": [
+        7,
+        100,
+        101
+      ],
+      "confidence": "LOW"
+    }
+  ],
+  "n_sites": 2,
+  "communication_pathways": [
+    [
+      45,
+      44,
+      49,
+      48,
+      47,
+      46,
+      43,
+      41,
+      42,
+      40,
+      38,
+      39,
+      64,
+      65,
+      66,
+      36
+    ],
+    [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  ]
+}

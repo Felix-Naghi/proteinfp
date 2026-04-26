@@ -4,7 +4,7 @@
   "protein_name": "Protein Mdm4",
   "organism": "Homo sapiens",
   "sequence_length": 490,
-  "generated_at": "2026-04-19 18:49:47",
+  "generated_at": "2026-04-26 09:09:30",
   "top_function": "metal ion binding",
   "is_enzyme": false,
   "ec_number": "2.x.x.x",
@@ -19,7 +19,7 @@
       "sources": [
         "sequence_composition"
       ],
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "top_evidence": "sequence_composition"
     },
     {
@@ -31,7 +31,7 @@
       "sources": [
         "sequence_composition"
       ],
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "top_evidence": "sequence_composition"
     },
     {
@@ -43,7 +43,7 @@
       "sources": [
         "ai_esm2"
       ],
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "top_evidence": "ai_esm2"
     }
   ],
@@ -1033,5 +1033,7 @@
     "foldseek",
     "ppi"
   ],
-  "modules_missing": []
+  "modules_missing": [
+    "md"
+  ]
 }

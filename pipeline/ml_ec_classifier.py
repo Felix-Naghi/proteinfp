@@ -278,7 +278,9 @@ class _GBMModel:
                 n_jobs=-1,
                 **kwargs,
             )
-            self._model.fit(X, y_shifted)
+            from sklearn.utils.class_weight import compute_sample_weight
+            sw = compute_sample_weight("balanced", y_shifted)
+            self._model.fit(X, y_shifted, sample_weight=sw)
 
         elif self.kind == "lgb":
             from lightgbm import LGBMClassifier
@@ -293,15 +295,25 @@ class _GBMModel:
                 n_jobs=-1,
                 device="gpu" if _cuda_available() else "cpu",
                 verbose=-1,
+                class_weight="balanced",
                 **kwargs,
             )
-            # Pass as plain numpy to avoid feature-name warnings
-            self._model.fit(np.asarray(X), y)
+            # Suppress sklearn's feature-name warning (harmless — model
+            # was trained without feature names, as intended).
+            import warnings as _w
+            with _w.catch_warnings():
+                _w.filterwarnings(
+                    'ignore',
+                    message='X does not have valid feature names',
+                    category=UserWarning,
+                )
+                self._model.fit(np.ascontiguousarray(X, dtype=np.float32), y)
 
         return self
 
     # ------------------------------------------------------------------
     def predict(self, X: np.ndarray) -> np.ndarray:
+        X = np.ascontiguousarray(X, dtype=np.float32)
         raw = self._model.predict(X)
         if self.kind == "xgb":
             return raw + self._label_offset
@@ -311,8 +323,9 @@ class _GBMModel:
     def predict_proba(self, X: np.ndarray) -> np.ndarray:
         """Always returns shape (n_samples, N_CLASSES) regardless of how many
         classes were present in the training fold."""
-        # Ensure plain numpy float32 — avoids XGBoost cuda/cpu device mismatch
-        X = np.asarray(X, dtype=np.float32)
+        # Contiguous CPU float32 — eliminates XGBoost device-mismatch warning
+        # and LightGBM feature-name warning simultaneously.
+        X = np.ascontiguousarray(X, dtype=np.float32)
         raw_proba = self._model.predict_proba(X)   # shape (n, k)
 
         if raw_proba.shape[1] == N_CLASSES:
@@ -422,7 +435,7 @@ class _FeaturePreprocessor:
 
     def transform(self, X: np.ndarray) -> np.ndarray:
         X_scaled = self._scaler.transform(X)
-        return self._pca.transform(X_scaled)
+        return np.ascontiguousarray(self._pca.transform(X_scaled), dtype=np.float32)
 
     def fit_transform(self, X: np.ndarray) -> np.ndarray:
         self.fit(X)
@@ -652,7 +665,8 @@ class ECClassifierEnsemble:
             random_state=42,
             verbose=False,
         )
-        mlp.fit(X, y)
+        from sklearn.utils.class_weight import compute_sample_weight
+        mlp.fit(X, y, sample_weight=compute_sample_weight("balanced", y))
         return mlp
 
     def _sklearn_mlp_to_numpy(self, mlp, input_dim: int) -> _NumpyMLP:

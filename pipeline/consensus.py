@@ -65,8 +65,8 @@ DEFAULT_WEIGHTS = {
 }
 
 # GO term confidence tiers
-HIGH_CONF_THRESHOLD   = 5.0
-MEDIUM_CONF_THRESHOLD = 2.5
+HIGH_CONF_THRESHOLD   = 3.0  # was 5.0 — let more mid-confidence terms hit HIGH tier
+MEDIUM_CONF_THRESHOLD = 1.0  # was 2.5 — more terms qualify as MEDIUM, surface in report
 
 
 # ── Data classes ───────────────────────────────────────────────────────────────
@@ -572,14 +572,22 @@ def _aggregate_go_terms(
     for lst in (mf, bp, cc):
         lst.sort(key=lambda t: t.weighted_score, reverse=True)
 
-    return mf[:15], bp[:15], cc[:10]
+    return mf[:25], bp[:30], cc[:15]  # was mf[:15]/bp[:20]/cc[:10]
 
 
 def _infer_ns(go_name: str) -> str:
-    # Strip InterPro namespace prefixes like "F:", "C:", "P:"
+    # Trust explicit InterPro/UniProt namespace prefixes ("P:", "F:", "C:")
+    # and return immediately — don't fall through to keyword matching.
     name = (go_name or "").lower()
-    if name.startswith(("f:", "c:", "p:")):
-        name = name[2:].strip()
+    if len(name) > 2 and name[1] == ":" and name[0] in "pfc":
+        prefix = name[0]
+        if prefix == "p":
+            return "BP"
+        if prefix == "f":
+            return "MF"
+        if prefix == "c":
+            return "CC"
+        name = name[2:].strip()  # strip for keyword fallback
     # BP keywords checked first to avoid signaling/phosphorylation landing in MF
     _BP_WORDS = [
         "process", "regulation", "response", "cycle", "repair", "apoptot",

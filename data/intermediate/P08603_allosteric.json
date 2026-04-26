@@ -1,0 +1,634 @@
+{
+  "uniprot_id": "P08603",
+  "length": 1231,
+  "n_contacts": 5620,
+  "enm_computed": true,
+  "allosteric_residues": [
+    {
+      "residue_number": 1,
+      "chain_id": "A",
+      "one_letter": "M",
+      "correlation_score": 0.631,
+      "min_dist_active": 22.0,
+      "sasa": 225.1,
+      "is_exposed": true,
+      "plddt": 28.22
+    },
+    {
+      "residue_number": 2,
+      "chain_id": "A",
+      "one_letter": "R",
+      "correlation_score": 0.647,
+      "min_dist_active": 18.2,
+      "sasa": 210.9,
+      "is_exposed": true,
+      "plddt": 35.0
+    },
+    {
+      "residue_number": 3,
+      "chain_id": "A",
+      "one_letter": "L",
+      "correlation_score": 0.661,
+      "min_dist_active": 15.2,
+      "sasa": 190.9,
+      "is_exposed": true,
+      "plddt": 40.28
+    },
+    {
+      "residue_number": 4,
+      "chain_id": "A",
+      "one_letter": "L",
+      "correlation_score": 0.673,
+      "min_dist_active": 13.2,
+      "sasa": 178.7,
+      "is_exposed": true,
+      "plddt": 48.97
+    },
+    {
+      "residue_number": 5,
+      "chain_id": "A",
+      "one_letter": "A",
+      "correlation_score": 0.691,
+      "min_dist_active": 10.2,
+      "sasa": 91.8,
+      "is_exposed": true,
+      "plddt": 46.47
+    },
+    {
+      "residue_number": 161,
+      "chain_id": "A",
+      "one_letter": "A",
+      "correlation_score": 0.919,
+      "min_dist_active": 11.2,
+      "sasa": 97.6,
+      "is_exposed": true,
+      "plddt": 43.47
+    },
+    {
+      "residue_number": 162,
+      "chain_id": "A",
+      "one_letter": "M",
+      "correlation_score": 0.944,
+      "min_dist_active": 10.6,
+      "sasa": 98.7,
+      "is_exposed": true,
+      "plddt": 49.53
+    },
+    {
+      "residue_number": 163,
+      "chain_id": "A",
+      "one_letter": "E",
+      "correlation_score": 0.934,
+      "min_dist_active": 12.5,
+      "sasa": 123.7,
+      "is_exposed": true,
+      "plddt": 52.88
+    },
+    {
+      "residue_number": 164,
+      "chain_id": "A",
+      "one_letter": "P",
+      "correlation_score": 0.956,
+      "min_dist_active": 11.1,
+      "sasa": 100.2,
+      "is_exposed": true,
+      "plddt": 53.16
+    },
+    {
+      "residue_number": 165,
+      "chain_id": "A",
+      "one_letter": "D",
+      "correlation_score": 0.95,
+      "min_dist_active": 11.5,
+      "sasa": 129.1,
+      "is_exposed": true,
+      "plddt": 57.47
+    },
+    {
+      "residue_number": 303,
+      "chain_id": "A",
+      "one_letter": "R",
+      "correlation_score": 0.824,
+      "min_dist_active": 10.7,
+      "sasa": 258.9,
+      "is_exposed": true,
+      "plddt": 70.25
+    },
+    {
+      "residue_number": 343,
+      "chain_id": "A",
+      "one_letter": "P",
+      "correlation_score": 0.616,
+      "min_dist_active": 10.8,
+      "sasa": 102.2,
+      "is_exposed": true,
+      "plddt": 76.44
+    },
+    {
+      "residue_number": 424,
+      "chain_id": "A",
+      "one_letter": "K",
+      "correlation_score": 0.403,
+      "min_dist_active": 10.9,
+      "sasa": 194.4,
+      "is_exposed": true,
+      "plddt": 64.81
+    },
+    {
+      "residue_number": 425,
+      "chain_id": "A",
+      "one_letter": "A",
+      "correlation_score": 0.425,
+      "min_dist_active": 10.0,
+      "sasa": 87.0,
+      "is_exposed": true,
+      "plddt": 61.16
+    },
+    {
+      "residue_number": 513,
+      "chain_id": "A",
+      "one_letter": "V",
+      "correlation_score": 0.508,
+      "min_dist_active": 11.7,
+      "sasa": 121.6,
+      "is_exposed": true,
+      "plddt": 77.06
+    },
+    {
+      "residue_number": 520,
+      "chain_id": "A",
+      "one_letter": "K",
+      "correlation_score": 0.485,
+      "min_dist_active": 11.6,
+      "sasa": 171.7,
+      "is_exposed": true,
+      "plddt": 60.78
+    },
+    {
+      "residue_number": 521,
+      "chain_id": "A",
+      "one_letter": "N",
+      "correlation_score": 0.451,
+      "min_dist_active": 13.4,
+      "sasa": 66.5,
+      "is_exposed": true,
+      "plddt": 57.44
+    },
+    {
+      "residue_number": 522,
+      "chain_id": "A",
+      "one_letter": "D",
+      "correlation_score": 0.467,
+      "min_dist_active": 14.2,
+      "sasa": 145.9,
+      "is_exposed": true,
+      "plddt": 57.5
+    },
+    {
+      "residue_number": 523,
+      "chain_id": "A",
+      "one_letter": "F",
+      "correlation_score": 0.475,
+      "min_dist_active": 10.9,
+      "sasa": 132.2,
+      "is_exposed": true,
+      "plddt": 64.12
+    },
+    {
+      "residue_number": 573,
+      "chain_id": "A",
+      "one_letter": "K",
+      "correlation_score": 0.591,
+      "min_dist_active": 10.3,
+      "sasa": 212.0,
+      "is_exposed": true,
+      "plddt": 74.94
+    },
+    {
+      "residue_number": 806,
+      "chain_id": "A",
+      "one_letter": "A",
+      "correlation_score": 0.589,
+      "min_dist_active": 10.1,
+      "sasa": 90.3,
+      "is_exposed": true,
+      "plddt": 42.06
+    },
+    {
+      "residue_number": 807,
+      "chain_id": "A",
+      "one_letter": "Q",
+      "correlation_score": 0.604,
+      "min_dist_active": 11.3,
+      "sasa": 179.8,
+      "is_exposed": true,
+      "plddt": 46.34
+    },
+    {
+      "residue_number": 874,
+      "chain_id": "A",
+      "one_letter": "P",
+      "correlation_score": 0.706,
+      "min_dist_active": 10.4,
+      "sasa": 46.2,
+      "is_exposed": true,
+      "plddt": 77.44
+    },
+    {
+      "residue_number": 884,
+      "chain_id": "A",
+      "one_letter": "S",
+      "correlation_score": 0.633,
+      "min_dist_active": 11.2,
+      "sasa": 128.3,
+      "is_exposed": true,
+      "plddt": 52.09
+    },
+    {
+      "residue_number": 885,
+      "chain_id": "A",
+      "one_letter": "R",
+      "correlation_score": 0.639,
+      "min_dist_active": 11.8,
+      "sasa": 149.7,
+      "is_exposed": true,
+      "plddt": 49.22
+    },
+    {
+      "residue_number": 886,
+      "chain_id": "A",
+      "one_letter": "S",
+      "correlation_score": 0.639,
+      "min_dist_active": 12.7,
+      "sasa": 100.6,
+      "is_exposed": true,
+      "plddt": 48.12
+    },
+    {
+      "residue_number": 887,
+      "chain_id": "A",
+      "one_letter": "S",
+      "correlation_score": 0.622,
+      "min_dist_active": 13.7,
+      "sasa": 109.0,
+      "is_exposed": true,
+      "plddt": 48.72
+    },
+    {
+      "residue_number": 888,
+      "chain_id": "A",
+      "one_letter": "Q",
+      "correlation_score": 0.668,
+      "min_dist_active": 10.7,
+      "sasa": 81.4,
+      "is_exposed": true,
+      "plddt": 52.81
+    },
+    {
+      "residue_number": 1003,
+      "chain_id": "A",
+      "one_letter": "E",
+      "correlation_score": 0.671,
+      "min_dist_active": 12.0,
+      "sasa": 173.9,
+      "is_exposed": true,
+      "plddt": 71.88
+    },
+    {
+      "residue_number": 1004,
+      "chain_id": "A",
+      "one_letter": "K",
+      "correlation_score": 0.695,
+      "min_dist_active": 12.2,
+      "sasa": 153.6,
+      "is_exposed": true,
+      "plddt": 70.19
+    },
+    {
+      "residue_number": 1005,
+      "chain_id": "A",
+      "one_letter": "K",
+      "correlation_score": 0.698,
+      "min_dist_active": 10.2,
+      "sasa": 111.0,
+      "is_exposed": true,
+      "plddt": 71.75
+    },
+    {
+      "residue_number": 1105,
+      "chain_id": "A",
+      "one_letter": "S",
+      "correlation_score": 0.741,
+      "min_dist_active": 10.2,
+      "sasa": 47.6,
+      "is_exposed": true,
+      "plddt": 53.31
+    },
+    {
+      "residue_number": 1106,
+      "chain_id": "A",
+      "one_letter": "T",
+      "correlation_score": 0.724,
+      "min_dist_active": 10.0,
+      "sasa": 129.1,
+      "is_exposed": true,
+      "plddt": 53.56
+    }
+  ],
+  "allosteric_sites": [
+    {
+      "site_id": "A1",
+      "residue_numbers": [
+        162,
+        163,
+        164,
+        165
+      ],
+      "residue_letters": [
+        "P",
+        "M",
+        "E",
+        "D"
+      ],
+      "size": 4,
+      "centre": [
+        -24.4,
+        -31.81,
+        -7.04
+      ],
+      "mean_correlation": 0.946,
+      "min_dist_active": 11.4,
+      "mean_sasa": 112.9,
+      "mean_hydrophobicity": -1.675,
+      "net_charge": -2.0,
+      "coupled_active_residues": [
+        146,
+        152,
+        169,
+        174,
+        175
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "site_id": "A2",
+      "residue_numbers": [
+        1105,
+        1106
+      ],
+      "residue_letters": [
+        "S",
+        "T"
+      ],
+      "size": 2,
+      "centre": [
+        56.03,
+        61.21,
+        -2.93
+      ],
+      "mean_correlation": 0.732,
+      "min_dist_active": 10.5,
+      "mean_sasa": 88.3,
+      "mean_hydrophobicity": -0.75,
+      "net_charge": 0.0,
+      "coupled_active_residues": [
+        1102,
+        1109,
+        1128,
+        1152
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "site_id": "A3",
+      "residue_numbers": [
+        1003,
+        1004,
+        1005
+      ],
+      "residue_letters": [
+        "K",
+        "E",
+        "K"
+      ],
+      "size": 3,
+      "centre": [
+        26.38,
+        18.26,
+        -50.33
+      ],
+      "mean_correlation": 0.688,
+      "min_dist_active": 12.5,
+      "mean_sasa": 146.2,
+      "mean_hydrophobicity": -3.767,
+      "net_charge": 1.0,
+      "coupled_active_residues": [
+        989,
+        1016,
+        1030,
+        1032
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "site_id": "A4",
+      "residue_numbers": [
+        3,
+        4,
+        5
+      ],
+      "residue_letters": [
+        "A",
+        "L",
+        "L"
+      ],
+      "size": 3,
+      "centre": [
+        -56.07,
+        74.78,
+        43.52
+      ],
+      "mean_correlation": 0.675,
+      "min_dist_active": 12.8,
+      "mean_sasa": 153.8,
+      "mean_hydrophobicity": 3.133,
+      "net_charge": 0.0,
+      "coupled_active_residues": [
+        9
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "site_id": "A5",
+      "residue_numbers": [
+        885,
+        886,
+        887,
+        888
+      ],
+      "residue_letters": [
+        "Q",
+        "R",
+        "S",
+        "S"
+      ],
+      "size": 4,
+      "centre": [
+        -19.87,
+        12.31,
+        0.68
+      ],
+      "mean_correlation": 0.642,
+      "min_dist_active": 12.7,
+      "mean_sasa": 110.2,
+      "mean_hydrophobicity": -2.4,
+      "net_charge": 1.0,
+      "coupled_active_residues": [
+        87,
+        870,
+        899,
+        915
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "site_id": "A6",
+      "residue_numbers": [
+        1,
+        2
+      ],
+      "residue_letters": [
+        "R",
+        "M"
+      ],
+      "size": 2,
+      "centre": [
+        -54.45,
+        75.79,
+        50.65
+      ],
+      "mean_correlation": 0.639,
+      "min_dist_active": 20.1,
+      "mean_sasa": 218.0,
+      "mean_hydrophobicity": -1.3,
+      "net_charge": 1.0,
+      "coupled_active_residues": [],
+      "confidence": "HIGH"
+    },
+    {
+      "site_id": "A7",
+      "residue_numbers": [
+        806,
+        807
+      ],
+      "residue_letters": [
+        "Q",
+        "A"
+      ],
+      "size": 2,
+      "centre": [
+        -10.31,
+        -28.52,
+        48.41
+      ],
+      "mean_correlation": 0.597,
+      "min_dist_active": 11.4,
+      "mean_sasa": 135.1,
+      "mean_hydrophobicity": -0.85,
+      "net_charge": 0.0,
+      "coupled_active_residues": [
+        803,
+        811,
+        830
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "site_id": "A8",
+      "residue_numbers": [
+        520,
+        521,
+        522
+      ],
+      "residue_letters": [
+        "K",
+        "N",
+        "D"
+      ],
+      "size": 3,
+      "centre": [
+        6.48,
+        2.15,
+        18.03
+      ],
+      "mean_correlation": 0.468,
+      "min_dist_active": 14.0,
+      "mean_sasa": 128.0,
+      "mean_hydrophobicity": -3.633,
+      "net_charge": 0.0,
+      "coupled_active_residues": [
+        536,
+        537,
+        551
+      ],
+      "confidence": "MEDIUM"
+    }
+  ],
+  "n_sites": 8,
+  "communication_pathways": [
+    [
+      162,
+      159,
+      174,
+      190,
+      191,
+      192,
+      170,
+      146,
+      196,
+      193,
+      197,
+      194,
+      144,
+      143,
+      118,
+      141
+    ],
+    [
+      1105,
+      1104,
+      1082,
+      1102,
+      1083,
+      1077,
+      1057,
+      1058,
+      1075,
+      1076,
+      1074,
+      1073,
+      1089,
+      1099,
+      1100,
+      1101
+    ],
+    [
+      1003,
+      1004,
+      991,
+      1008,
+      989,
+      1032,
+      1033,
+      1035,
+      988,
+      1010,
+      1009,
+      1012,
+      1031,
+      1030,
+      1029,
+      1041
+    ]
+  ]
+}

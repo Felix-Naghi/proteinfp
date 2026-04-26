@@ -1,0 +1,56 @@
+{
+  "uniprot_id": "P21554",
+  "sequence_length": 472,
+  "is_enzyme": false,
+  "enzyme_confidence": 0.85,
+  "top_prediction": {
+    "ec_class": "2",
+    "ec_name": "Transferase",
+    "ec_full": "EC 2.7.10",
+    "score": 0.85,
+    "evidence": [
+      "go_prediction",
+      "structural_motif",
+      "sequence_composition"
+    ]
+  },
+  "all_predictions": [
+    {
+      "ec_class": "2",
+      "ec_name": "Transferase",
+      "ec_full": "EC 2.7.10",
+      "score": 0.85,
+      "evidence": [
+        "go_prediction",
+        "structural_motif",
+        "sequence_composition"
+      ]
+    },
+    {
+      "ec_class": "1",
+      "ec_name": "Oxidoreductase",
+      "ec_full": "EC 1.x.x.x",
+      "score": 0.65,
+      "evidence": [
+        "go_prediction",
+        "structural_motif",
+        "sequence_composition"
+      ]
+    },
+    {
+      "ec_class": "3",
+      "ec_name": "Hydrolase",
+      "ec_full": "EC 3.x.x.x",
+      "score": 0.65,
+      "evidence": [
+        "go_prediction",
+        "structural_motif",
+        "sequence_composition"
+      ]
+    }
+  ],
+  "specific_ec": "2.7.10",
+  "specific_ec_name": "Protein kinase",
+  "non_enzyme_score": 0.4,
+  "ml_enzyme_prob": 0.295
+}

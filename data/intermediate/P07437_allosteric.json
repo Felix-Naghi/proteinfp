@@ -1,0 +1,221 @@
+{
+  "uniprot_id": "P07437",
+  "length": 444,
+  "n_contacts": 2272,
+  "enm_computed": true,
+  "allosteric_residues": [
+    {
+      "residue_number": 281,
+      "chain_id": "A",
+      "one_letter": "Y",
+      "correlation_score": 0.557,
+      "min_dist_active": 10.3,
+      "sasa": 190.9,
+      "is_exposed": true,
+      "plddt": 78.06
+    },
+    {
+      "residue_number": 434,
+      "chain_id": "A",
+      "one_letter": "E",
+      "correlation_score": 0.781,
+      "min_dist_active": 11.0,
+      "sasa": 155.9,
+      "is_exposed": true,
+      "plddt": 51.28
+    },
+    {
+      "residue_number": 435,
+      "chain_id": "A",
+      "one_letter": "D",
+      "correlation_score": 0.78,
+      "min_dist_active": 11.1,
+      "sasa": 108.0,
+      "is_exposed": true,
+      "plddt": 50.06
+    },
+    {
+      "residue_number": 437,
+      "chain_id": "A",
+      "one_letter": "G",
+      "correlation_score": 0.788,
+      "min_dist_active": 12.4,
+      "sasa": 46.2,
+      "is_exposed": true,
+      "plddt": 51.44
+    },
+    {
+      "residue_number": 438,
+      "chain_id": "A",
+      "one_letter": "E",
+      "correlation_score": 0.781,
+      "min_dist_active": 15.1,
+      "sasa": 128.6,
+      "is_exposed": true,
+      "plddt": 45.09
+    },
+    {
+      "residue_number": 439,
+      "chain_id": "A",
+      "one_letter": "E",
+      "correlation_score": 0.774,
+      "min_dist_active": 14.7,
+      "sasa": 120.7,
+      "is_exposed": true,
+      "plddt": 42.78
+    },
+    {
+      "residue_number": 440,
+      "chain_id": "A",
+      "one_letter": "A",
+      "correlation_score": 0.767,
+      "min_dist_active": 13.4,
+      "sasa": 68.6,
+      "is_exposed": true,
+      "plddt": 48.0
+    },
+    {
+      "residue_number": 441,
+      "chain_id": "A",
+      "one_letter": "E",
+      "correlation_score": 0.752,
+      "min_dist_active": 16.5,
+      "sasa": 148.6,
+      "is_exposed": true,
+      "plddt": 43.66
+    },
+    {
+      "residue_number": 442,
+      "chain_id": "A",
+      "one_letter": "E",
+      "correlation_score": 0.735,
+      "min_dist_active": 18.5,
+      "sasa": 154.8,
+      "is_exposed": true,
+      "plddt": 40.25
+    },
+    {
+      "residue_number": 443,
+      "chain_id": "A",
+      "one_letter": "E",
+      "correlation_score": 0.715,
+      "min_dist_active": 15.2,
+      "sasa": 169.4,
+      "is_exposed": true,
+      "plddt": 38.44
+    },
+    {
+      "residue_number": 444,
+      "chain_id": "A",
+      "one_letter": "A",
+      "correlation_score": 0.692,
+      "min_dist_active": 14.8,
+      "sasa": 143.3,
+      "is_exposed": true,
+      "plddt": 39.59
+    }
+  ],
+  "allosteric_sites": [
+    {
+      "site_id": "A1",
+      "residue_numbers": [
+        434,
+        435,
+        437,
+        438,
+        439,
+        440,
+        441
+      ],
+      "residue_letters": [
+        "G",
+        "E",
+        "D",
+        "E",
+        "E",
+        "A",
+        "E"
+      ],
+      "size": 7,
+      "centre": [
+        24.6,
+        -17.78,
+        8.17
+      ],
+      "mean_correlation": 0.775,
+      "min_dist_active": 13.4,
+      "mean_sasa": 110.9,
+      "mean_hydrophobicity": -2.3,
+      "net_charge": -5.0,
+      "coupled_active_residues": [
+        428
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "site_id": "A2",
+      "residue_numbers": [
+        442,
+        443,
+        444
+      ],
+      "residue_letters": [
+        "E",
+        "E",
+        "A"
+      ],
+      "size": 3,
+      "centre": [
+        27.29,
+        -9.17,
+        9.82
+      ],
+      "mean_correlation": 0.714,
+      "min_dist_active": 16.1,
+      "mean_sasa": 155.8,
+      "mean_hydrophobicity": -1.733,
+      "net_charge": -2.0,
+      "coupled_active_residues": [],
+      "confidence": "HIGH"
+    }
+  ],
+  "n_sites": 2,
+  "communication_pathways": [
+    [
+      434,
+      436,
+      437,
+      438,
+      439,
+      440,
+      441,
+      442,
+      443,
+      444,
+      435,
+      433,
+      432,
+      431,
+      430,
+      429
+    ],
+    [
+      442,
+      440,
+      441,
+      439,
+      438,
+      437,
+      436,
+      435,
+      434,
+      433,
+      432,
+      431,
+      430,
+      429,
+      428,
+      427
+    ]
+  ]
+}

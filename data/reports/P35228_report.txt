@@ -1,0 +1,95 @@
+======================================================================
+  ProteinFP Prediction Report
+  Generated: 2026-04-26 15:11:17
+======================================================================
+
+  Protein    : Nitric oxide synthase, inducible
+  Gene       : NOS2
+  UniProt    : P35228
+  Organism   : Homo sapiens
+  Length     : 1153 aa
+  Mean pLDDT : 85.4
+  Confidence : VERY HIGH
+
+──────────────────────────────────────────────────────────────────────
+  FUNCTIONAL PREDICTION
+──────────────────────────────────────────────────────────────────────
+  Top function     : Produces nitric oxide (NO) which is a messenger molecule with diverse functions throughout the body (PubMed:7504305, PubMed:7531687, PubMed:7544004, PubMed:7682706). In macrophages, NO mediates tumori
+  Enzyme           : yes — 3.4.21
+  Location         : integral component of plasma membrane
+  Evidence sources : 12
+
+──────────────────────────────────────────────────────────────────────
+  GENE ONTOLOGY PREDICTIONS
+──────────────────────────────────────────────────────────────────────
+
+  Molecular Function:
+    [HIGH  ] GO:0016491 oxidoreductase activity (score=26.5, 3 sources)
+    [HIGH  ] GO:0010181 FMN binding (score=19.5, 3 sources)
+    [HIGH  ] GO:0004517 nitric-oxide synthase activity (score=17.4, 2 sources)
+    [HIGH  ] GO:0005516 calmodulin binding (score=8.2, 2 sources)
+    [HIGH  ] GO:0050660 flavin adenine dinucleotide binding (score=8.2, 2 sources)
+
+  Biological Process:
+    [HIGH  ] GO:0006809 nitric oxide biosynthetic process (score=17.4, 2 sources)
+    [HIGH  ] GO:0042742 P:defense response to bacterium (score=3.5, 1 sources)
+    [HIGH  ] GO:0018119 P:peptidyl-cysteine S-nitrosylation (score=3.5, 1 sources)
+    [HIGH  ] GO:0032755 P:positive regulation of interleukin-6 produc (score=3.5, 1 sources)
+    [HIGH  ] GO:0032757 P:positive regulation of interleukin-8 produc (score=3.5, 1 sources)
+
+  Cellular Component:
+    [HIGH  ] GO:0005634 C:nucleus (score=6.5, 3 sources)
+    [HIGH  ] GO:0005737 C:cytoplasm (score=4.7, 2 sources)
+    [HIGH  ] GO:0005829 C:cytosol (score=3.5, 1 sources)
+
+──────────────────────────────────────────────────────────────────────
+  ACTIVE SITES
+──────────────────────────────────────────────────────────────────────
+  C977 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
+  H1078 [HIGH  ] motifs: serine_protease_triad, cysteine_protease_dyad
+  H1124 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H968 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H975 [HIGH  ] motifs: serine_protease_triad, zinc_binding_cluster
+
+──────────────────────────────────────────────────────────────────────
+  BINDING POCKETS
+──────────────────────────────────────────────────────────────────────
+  P1: vol=1680Å³  druggability=1.00 (high)
+  P2: vol=1740Å³  druggability=0.99 (high)
+  P3: vol=420Å³  druggability=0.99 (high)
+  P4: vol=1680Å³  druggability=0.99 (high)
+  P5: vol=1560Å³  druggability=0.99 (high)
+
+──────────────────────────────────────────────────────────────────────
+  ALLOSTERIC SITES
+──────────────────────────────────────────────────────────────────────
+  A1 [HIGH  ] corr=0.78 residues=[700, 701]
+  A2 [HIGH  ] corr=0.73 residues=[1132, 1133, 1134, 1135]
+  A3 [HIGH  ] corr=0.69 residues=[77, 78, 79, 80]
+  A4 [HIGH  ] corr=0.66 residues=[1137, 1138, 1139, 1140]
+
+──────────────────────────────────────────────────────────────────────
+  PROTEIN INTERACTIONS (top 8)
+──────────────────────────────────────────────────────────────────────
+  CALM3           STRING=999  type=unknown
+  CALML6          STRING=993  type=unknown
+  CALML3          STRING=993  type=unknown
+  CALML5          STRING=993  type=unknown
+  CALML4          STRING=993  type=unknown
+  ARG1            STRING=980  type=unknown
+  CALM1           STRING=977  type=unknown
+  AKT1            STRING=976  type=unknown
+
+──────────────────────────────────────────────────────────────────────
+  VALIDATION SUGGESTIONS
+──────────────────────────────────────────────────────────────────────
+  1. Alanine scanning mutagenesis of predicted active site residues (C977, H1078, H1124) to confirm functional importance
+  2. Thermal shift assay or SPR binding assay against pocket P1 (vol=1680Å³, druggability=1.00)
+  3. Co-immunoprecipitation with CALM3 (unknown interaction, predicted interface: [1, 1153, 687])
+  4. Co-immunoprecipitation with CALML6 (unknown interaction, predicted interface: [1, 1153, 687])
+  5. Enzyme activity assay consistent with EC 3.4.21 using appropriate substrate panel
+  6. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+
+──────────────────────────────────────────────────────────────────────
+  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi
+======================================================================

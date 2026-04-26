@@ -1,0 +1,94 @@
+======================================================================
+  ProteinFP Prediction Report
+  Generated: 2026-04-26 15:11:17
+======================================================================
+
+  Protein    : Actin, cytoplasmic 1
+  Gene       : ACTB
+  UniProt    : P60709
+  Organism   : Homo sapiens
+  Length     : 375 aa
+  Mean pLDDT : 95.2
+  Confidence : VERY HIGH
+
+──────────────────────────────────────────────────────────────────────
+  FUNCTIONAL PREDICTION
+──────────────────────────────────────────────────────────────────────
+  Top function     : Actin is a highly conserved protein that polymerizes to produce filaments that form cross-linked networks in the cytoplasm of cells (By similarity). Actin exists in both monomeric (G-actin) and polyme
+  Enzyme           : yes — 3.4.21
+  Location         : C:plasma membrane
+  Evidence sources : 12
+
+──────────────────────────────────────────────────────────────────────
+  GENE ONTOLOGY PREDICTIONS
+──────────────────────────────────────────────────────────────────────
+
+  Molecular Function:
+    [HIGH  ] GO:0005524 F:ATP binding (score=5.3, 2 sources)
+    [HIGH  ] GO:0016787 F:hydrolase activity (score=3.5, 1 sources)
+    [HIGH  ] GO:0019901 F:protein kinase binding (score=3.5, 1 sources)
+    [HIGH  ] GO:0098973 F:structural constituent of postsynaptic acti (score=3.5, 1 sources)
+    [MEDIUM] GO:0046872 metal ion binding (score=2.0, 2 sources)
+
+  Biological Process:
+    [HIGH  ] GO:0007409 P:axonogenesis (score=3.5, 1 sources)
+    [HIGH  ] GO:0048870 P:cell motility (score=3.5, 1 sources)
+    [LOW   ] GO:0006351 DNA-templated transcription (score=0.5, 1 sources)
+    [LOW   ] GO:0051085 chaperone cofactor-dependent protein refoldin (score=0.5, 1 sources)
+    [LOW   ] GO:0030193 regulation of blood coagulation (score=0.4, 1 sources)
+
+  Cellular Component:
+    [HIGH  ] GO:0005634 C:nucleus (score=6.5, 3 sources)
+    [HIGH  ] GO:0005737 C:cytoplasm (score=4.7, 2 sources)
+    [HIGH  ] GO:0005856 C:cytoskeleton (score=3.5, 1 sources)
+
+──────────────────────────────────────────────────────────────────────
+  ACTIVE SITES
+──────────────────────────────────────────────────────────────────────
+  H101 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H161 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H275 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  C374 [HIGH  ] motifs: cysteine_protease_dyad
+  H73 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+
+──────────────────────────────────────────────────────────────────────
+  BINDING POCKETS
+──────────────────────────────────────────────────────────────────────
+  P1: vol=880Å³  druggability=0.99 (high)
+  P2: vol=1960Å³  druggability=0.99 (high)
+  P3: vol=1640Å³  druggability=0.99 (high)
+  P4: vol=1380Å³  druggability=0.99 (high)
+  P5: vol=1860Å³  druggability=0.98 (high)
+
+──────────────────────────────────────────────────────────────────────
+  ALLOSTERIC SITES
+──────────────────────────────────────────────────────────────────────
+  A1 [MEDIUM] corr=0.60 residues=[45, 46]
+  A2 [LOW   ] corr=0.37 residues=[1, 2, 3]
+
+──────────────────────────────────────────────────────────────────────
+  PROTEIN INTERACTIONS (top 8)
+──────────────────────────────────────────────────────────────────────
+  PFN3            STRING=999  type=unknown
+  ACTL6A          STRING=999  type=unknown
+  PFN1            STRING=999  type=unknown
+  ACTG1           STRING=999  type=unknown
+  CFL1            STRING=999  type=unknown
+  PFN4            STRING=999  type=unknown
+  SMARCA4         STRING=999  type=unknown
+  SMARCE1         STRING=996  type=unknown
+
+──────────────────────────────────────────────────────────────────────
+  VALIDATION SUGGESTIONS
+──────────────────────────────────────────────────────────────────────
+  1. Alanine scanning mutagenesis of predicted active site residues (H101, H161, H275) to confirm functional importance
+  2. Thermal shift assay or SPR binding assay against pocket P1 (vol=880Å³, druggability=0.99)
+  3. Co-immunoprecipitation with PFN3 (unknown interaction, predicted interface: [1, 95, 41])
+  4. Co-immunoprecipitation with ACTL6A (unknown interaction, predicted interface: [1, 95, 41])
+  5. Enzyme activity assay consistent with EC 3.4.21 using appropriate substrate panel
+  6. EMSA or fluorescence polarisation assay to confirm 'F:ATP binding' (GO:0005524)
+  7. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+
+──────────────────────────────────────────────────────────────────────
+  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi
+======================================================================

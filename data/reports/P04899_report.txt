@@ -1,0 +1,87 @@
+======================================================================
+  ProteinFP Prediction Report
+  Generated: 2026-04-26 15:11:14
+======================================================================
+
+  Protein    : Guanine nucleotide-binding protein G(i) subunit alpha-2
+  Gene       : GNAI2
+  UniProt    : P04899
+  Organism   : Homo sapiens
+  Length     : 355 aa
+  Mean pLDDT : 94.1
+  Confidence : VERY HIGH
+
+──────────────────────────────────────────────────────────────────────
+  FUNCTIONAL PREDICTION
+──────────────────────────────────────────────────────────────────────
+  Top function     : Guanine nucleotide-binding proteins (G proteins) function as transducers downstream of G protein-coupled receptors (GPCRs) in numerous signaling cascades (PubMed:38505600, PubMed:29925945, PubMed:3563
+  Enzyme           : yes — 3.6.5
+  Location         : membrane
+  Evidence sources : 12
+
+──────────────────────────────────────────────────────────────────────
+  GENE ONTOLOGY PREDICTIONS
+──────────────────────────────────────────────────────────────────────
+
+  Molecular Function:
+    [HIGH  ] GO:0003924 GTPase activity (score=15.8, 3 sources)
+    [HIGH  ] GO:0031683 G-protein beta/gamma-subunit complex binding (score=12.8, 2 sources)
+    [HIGH  ] GO:0005525 GTP binding (score=10.8, 3 sources)
+    [HIGH  ] GO:0046872 F:metal ion binding (score=7.7, 3 sources)
+    [HIGH  ] GO:0019001 guanyl nucleotide binding (score=3.8, 1 sources)
+
+  Biological Process:
+    [HIGH  ] GO:0007186 G protein-coupled receptor signaling pathway (score=12.8, 2 sources)
+    [HIGH  ] GO:0007188 adenylate cyclase-modulating G protein-couple (score=8.2, 2 sources)
+    [HIGH  ] GO:0007165 signal transduction (score=3.8, 1 sources)
+    [HIGH  ] GO:0051301 P:cell division (score=3.5, 1 sources)
+    [HIGH  ] GO:0007193 P:adenylate cyclase-inhibiting G protein-coup (score=3.5, 1 sources)
+
+  Cellular Component:
+    [HIGH  ] GO:0005634 C:nucleus (score=6.5, 3 sources)
+    [HIGH  ] GO:0005737 C:cytoplasm (score=4.7, 2 sources)
+    [HIGH  ] GO:0005813 C:centrosome (score=3.5, 1 sources)
+
+──────────────────────────────────────────────────────────────────────
+  ACTIVE SITES
+──────────────────────────────────────────────────────────────────────
+  C215 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
+  H214 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
+  H281 [HIGH  ] motifs: serine_protease_triad
+  H323 [HIGH  ] motifs: serine_protease_triad
+  G40 [MEDIUM] motifs: p_loop_walker_a
+
+──────────────────────────────────────────────────────────────────────
+  BINDING POCKETS
+──────────────────────────────────────────────────────────────────────
+  P1: vol=1440Å³  druggability=0.99 (high)
+  P2: vol=1680Å³  druggability=0.99 (high)
+  P3: vol=440Å³  druggability=0.98 (high)
+  P4: vol=1540Å³  druggability=0.98 (high)
+  P5: vol=980Å³  druggability=0.98 (high)
+
+──────────────────────────────────────────────────────────────────────
+  PROTEIN INTERACTIONS (top 8)
+──────────────────────────────────────────────────────────────────────
+  GNB1            STRING=999  type=unknown
+  ADORA1          STRING=994  type=unknown
+  CNR1            STRING=993  type=unknown
+  GNAI3           STRING=992  type=unknown
+  DRD2            STRING=985  type=unknown
+  GNB2            STRING=982  type=unknown
+  GNB4            STRING=977  type=unknown
+  GNAI1           STRING=975  type=unknown
+
+──────────────────────────────────────────────────────────────────────
+  VALIDATION SUGGESTIONS
+──────────────────────────────────────────────────────────────────────
+  1. Alanine scanning mutagenesis of predicted active site residues (C215, H214, H281) to confirm functional importance
+  2. Thermal shift assay or SPR binding assay against pocket P1 (vol=1440Å³, druggability=0.99)
+  3. Co-immunoprecipitation with GNB1 (unknown interaction, predicted interface: [1, 355, 258])
+  4. Co-immunoprecipitation with ADORA1 (unknown interaction, predicted interface: [1, 355, 258])
+  5. Enzyme activity assay consistent with EC 3.6.5 using appropriate substrate panel
+  6. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+
+──────────────────────────────────────────────────────────────────────
+  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi
+======================================================================

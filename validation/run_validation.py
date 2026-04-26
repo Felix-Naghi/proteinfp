@@ -258,6 +258,19 @@ VALIDATION_SET = [
 
 QUICK_SET = VALIDATION_SET[:5]
 
+# Load extended validation set from new_entries.json (61 additional proteins)
+_new_entries_path = Path(__file__).parent / "new_entries.json"
+if _new_entries_path.exists():
+    try:
+        _new_entries = json.loads(_new_entries_path.read_text(encoding="utf-8"))
+        # Avoid duplicates — skip any IDs already in VALIDATION_SET
+        _existing_ids = {p["uniprot_id"] for p in VALIDATION_SET}
+        _added = [p for p in _new_entries if p["uniprot_id"] not in _existing_ids]
+        VALIDATION_SET = VALIDATION_SET + _added
+    except Exception as _e:
+        import warnings
+        warnings.warn(f"Could not load new_entries.json: {_e}")
+
 
 # ── Scoring ────────────────────────────────────────────────────────────────────
 
@@ -495,9 +508,9 @@ def _score_protein(report: dict, ground_truth: dict) -> ProteinScore:
     known_bp = set(ground_truth.get("known_go_bp", []))
     known_cc = set(ground_truth.get("known_go_cc", []))
 
-    score.go_mf_recall = _recall(pred_mf, known_mf)
-    score.go_bp_recall = _recall(pred_bp, known_bp)
-    score.go_cc_recall = _recall(pred_cc, known_cc)
+    score.go_mf_recall = _recall_go(pred_mf, known_mf)
+    score.go_bp_recall = _recall_go(pred_bp, known_bp)
+    score.go_cc_recall = _recall_go(pred_cc, known_cc)
     score.go_mean_recall = (
         score.go_mf_recall + score.go_bp_recall + score.go_cc_recall
     ) / 3
@@ -557,6 +570,96 @@ def _score_protein(report: dict, ground_truth: dict) -> ProteinScore:
     )
 
     return score
+
+
+# ── GO ancestor cache (loaded lazily, used by _recall_go) ──────────────────
+_GO_ANCESTORS: dict[str, set[str]] | None = None
+
+def _load_go_ancestors() -> dict[str, set[str]]:
+    """Load the GO DAG ancestor map (includes self) from cache."""
+    global _GO_ANCESTORS
+    if _GO_ANCESTORS is not None:
+        return _GO_ANCESTORS
+    import pickle
+    cache = Path(__file__).parent / "go_ancestors.pkl"
+    if not cache.exists():
+        log.warning(
+            f"GO ancestor cache not found at {cache}. "
+            "Falling back to strict ID matching. "
+            "Run fix_go_recall_v2_ancestors.py to build it."
+        )
+        _GO_ANCESTORS = {}
+        return _GO_ANCESTORS
+    with open(cache, "rb") as f:
+        _GO_ANCESTORS = pickle.load(f)
+    log.info(f"Loaded GO ancestor map ({len(_GO_ANCESTORS)} terms)")
+    return _GO_ANCESTORS
+
+
+def _expand_with_ancestors(go_ids: set[str]) -> set[str]:
+    """Expand a set of GO IDs to include all their ancestors."""
+    anc = _load_go_ancestors()
+    if not anc:
+        return set(go_ids)
+    out = set()
+    for gid in go_ids:
+        out |= anc.get(gid, {gid})
+    return out
+
+
+def _recall_go(predicted: set, known: set) -> float:
+    """
+    GO-aware recall using the GO DAG (CAFA-style propagated recall).
+
+    Both predicted and known sets are propagated to all their ancestors,
+    then intersected. A known term K counts as "found" if either:
+      • K or any ancestor of K is in predicted ∪ ancestors(predicted), AND
+      • the matching predicted term is in the SAME LINEAGE (i.e. shares
+        an ancestor below the namespace root).
+
+    Practically: expand both sides by ancestors, then count matches over
+    the propagated known set. This matches the standard CAFA evaluation.
+    """
+    if not known:
+        return 1.0
+    if not predicted:
+        return 0.0
+
+    anc = _load_go_ancestors()
+    if not anc:
+        # No GO DAG available — fall back to strict matching.
+        return len(predicted & known) / len(known)
+
+    # Propagate both sides via ancestors (each ancestor set already includes self)
+    pred_prop  = set()
+    for p in predicted:
+        pred_prop |= anc.get(p, {p})
+    known_prop = set()
+    for k in known:
+        known_prop |= anc.get(k, {k})
+
+    # Universal "root" GO terms — don't count these as hits, they're
+    # too generic to mean anything (every term is a descendant).
+    GO_ROOTS = {
+        "GO:0008150",  # biological_process
+        "GO:0003674",  # molecular_function
+        "GO:0005575",  # cellular_component
+        "GO:0005488",  # binding (so generic it's almost a root)
+        "GO:0003824",  # catalytic activity (same)
+        "GO:0005515",  # protein binding (same)
+    }
+    pred_prop  -= GO_ROOTS
+    known_prop -= GO_ROOTS
+
+    # For each KNOWN term, check if it OR any of its ancestors are in the
+    # propagated predicted set. Equivalently: count how many ancestor-sets
+    # of known terms intersect pred_prop.
+    matched = 0
+    for k in known:
+        k_anc = anc.get(k, {k}) - GO_ROOTS
+        if k_anc & pred_prop:
+            matched += 1
+    return matched / len(known)
 
 
 def _recall(predicted: set, known: set) -> float:

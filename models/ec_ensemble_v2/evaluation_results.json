@@ -1,0 +1,222 @@
+{
+  "top1_accuracy": 0.9552,
+  "top2_accuracy": 0.9719,
+  "macro_f1": 0.9553,
+  "weighted_f1": 0.9553,
+  "binary_enzyme_acc": 0.9948,
+  "n_test": 960,
+  "confusion_matrix": [
+    [
+      119,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      115,
+      2,
+      0,
+      3,
+      0,
+      0,
+      0
+    ],
+    [
+      2,
+      2,
+      113,
+      2,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      3,
+      0,
+      114,
+      0,
+      2,
+      0,
+      1
+    ],
+    [
+      1,
+      2,
+      2,
+      1,
+      111,
+      1,
+      2,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      115,
+      0,
+      0
+    ],
+    [
+      0,
+      2,
+      0,
+      2,
+      0,
+      2,
+      114,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      2,
+      0,
+      1,
+      116
+    ]
+  ],
+  "class_names": [
+    "non-enz",
+    "EC1",
+    "EC2",
+    "EC3",
+    "EC4",
+    "EC5",
+    "EC6",
+    "EC7"
+  ],
+  "top_errors": [
+    {
+      "uniprot_id": "P24327",
+      "true": "EC5",
+      "predicted": "non-enz",
+      "confidence": 0.814
+    },
+    {
+      "uniprot_id": "Q9NQR1",
+      "true": "EC2",
+      "predicted": "non-enz",
+      "confidence": 0.7393
+    },
+    {
+      "uniprot_id": "P0DTE4",
+      "true": "EC2",
+      "predicted": "EC1",
+      "confidence": 0.6872
+    },
+    {
+      "uniprot_id": "Q56NI9",
+      "true": "EC2",
+      "predicted": "non-enz",
+      "confidence": 0.6748
+    },
+    {
+      "uniprot_id": "O66842",
+      "true": "EC7",
+      "predicted": "EC6",
+      "confidence": 0.6208
+    },
+    {
+      "uniprot_id": "P28240",
+      "true": "EC4",
+      "predicted": "EC5",
+      "confidence": 0.6055
+    },
+    {
+      "uniprot_id": "Q8N371",
+      "true": "EC1",
+      "predicted": "EC2",
+      "confidence": 0.6012
+    },
+    {
+      "uniprot_id": "Q97SE5",
+      "true": "EC6",
+      "predicted": "EC5",
+      "confidence": 0.5871
+    },
+    {
+      "uniprot_id": "P27305",
+      "true": "EC6",
+      "predicted": "EC1",
+      "confidence": 0.583
+    },
+    {
+      "uniprot_id": "Q8N8N7",
+      "true": "EC1",
+      "predicted": "EC4",
+      "confidence": 0.5739
+    },
+    {
+      "uniprot_id": "P30147",
+      "true": "EC5",
+      "predicted": "EC1",
+      "confidence": 0.5559
+    },
+    {
+      "uniprot_id": "Q14914",
+      "true": "EC1",
+      "predicted": "EC4",
+      "confidence": 0.5509
+    },
+    {
+      "uniprot_id": "P06865",
+      "true": "EC3",
+      "predicted": "EC1",
+      "confidence": 0.5338
+    },
+    {
+      "uniprot_id": "Q9NSE4",
+      "true": "EC6",
+      "predicted": "EC3",
+      "confidence": 0.5108
+    },
+    {
+      "uniprot_id": "P0AFD1",
+      "true": "EC7",
+      "predicted": "EC4",
+      "confidence": 0.5074
+    },
+    {
+      "uniprot_id": "Q9HKT1",
+      "true": "EC6",
+      "predicted": "EC5",
+      "confidence": 0.5065
+    },
+    {
+      "uniprot_id": "Q6P1H1",
+      "true": "EC7",
+      "predicted": "EC1",
+      "confidence": 0.4396
+    },
+    {
+      "uniprot_id": "Q9ULX7",
+      "true": "EC4",
+      "predicted": "non-enz",
+      "confidence": 0.4292
+    },
+    {
+      "uniprot_id": "O14926",
+      "true": "non-enz",
+      "predicted": "EC1",
+      "confidence": 0.4275
+    },
+    {
+      "uniprot_id": "Q06053",
+      "true": "EC1",
+      "predicted": "EC2",
+      "confidence": 0.4233
+    }
+  ]
+}
