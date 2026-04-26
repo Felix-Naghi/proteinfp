@@ -1,0 +1,805 @@
+{
+  "uniprot_id": "P38646",
+  "length": 679,
+  "n_contacts": 3286,
+  "enm_computed": true,
+  "allosteric_residues": [
+    {
+      "residue_number": 1,
+      "chain_id": "A",
+      "one_letter": "M",
+      "correlation_score": 0.646,
+      "min_dist_active": 30.3,
+      "sasa": 242.4,
+      "is_exposed": true,
+      "plddt": 39.41
+    },
+    {
+      "residue_number": 2,
+      "chain_id": "A",
+      "one_letter": "I",
+      "correlation_score": 0.657,
+      "min_dist_active": 29.4,
+      "sasa": 171.3,
+      "is_exposed": true,
+      "plddt": 39.66
+    },
+    {
+      "residue_number": 3,
+      "chain_id": "A",
+      "one_letter": "S",
+      "correlation_score": 0.665,
+      "min_dist_active": 28.6,
+      "sasa": 94.8,
+      "is_exposed": true,
+      "plddt": 39.53
+    },
+    {
+      "residue_number": 4,
+      "chain_id": "A",
+      "one_letter": "A",
+      "correlation_score": 0.672,
+      "min_dist_active": 27.9,
+      "sasa": 100.6,
+      "is_exposed": true,
+      "plddt": 39.03
+    },
+    {
+      "residue_number": 5,
+      "chain_id": "A",
+      "one_letter": "S",
+      "correlation_score": 0.679,
+      "min_dist_active": 27.2,
+      "sasa": 95.2,
+      "is_exposed": true,
+      "plddt": 37.72
+    },
+    {
+      "residue_number": 6,
+      "chain_id": "A",
+      "one_letter": "R",
+      "correlation_score": 0.684,
+      "min_dist_active": 26.8,
+      "sasa": 236.4,
+      "is_exposed": true,
+      "plddt": 38.19
+    },
+    {
+      "residue_number": 7,
+      "chain_id": "A",
+      "one_letter": "A",
+      "correlation_score": 0.69,
+      "min_dist_active": 26.2,
+      "sasa": 86.2,
+      "is_exposed": true,
+      "plddt": 38.22
+    },
+    {
+      "residue_number": 8,
+      "chain_id": "A",
+      "one_letter": "A",
+      "correlation_score": 0.694,
+      "min_dist_active": 25.9,
+      "sasa": 104.2,
+      "is_exposed": true,
+      "plddt": 34.84
+    },
+    {
+      "residue_number": 9,
+      "chain_id": "A",
+      "one_letter": "A",
+      "correlation_score": 0.698,
+      "min_dist_active": 26.4,
+      "sasa": 113.5,
+      "is_exposed": true,
+      "plddt": 36.25
+    },
+    {
+      "residue_number": 10,
+      "chain_id": "A",
+      "one_letter": "A",
+      "correlation_score": 0.702,
+      "min_dist_active": 26.5,
+      "sasa": 91.6,
+      "is_exposed": true,
+      "plddt": 34.22
+    },
+    {
+      "residue_number": 11,
+      "chain_id": "A",
+      "one_letter": "R",
+      "correlation_score": 0.704,
+      "min_dist_active": 27.5,
+      "sasa": 224.9,
+      "is_exposed": true,
+      "plddt": 33.62
+    },
+    {
+      "residue_number": 12,
+      "chain_id": "A",
+      "one_letter": "L",
+      "correlation_score": 0.706,
+      "min_dist_active": 28.4,
+      "sasa": 182.0,
+      "is_exposed": true,
+      "plddt": 34.81
+    },
+    {
+      "residue_number": 13,
+      "chain_id": "A",
+      "one_letter": "V",
+      "correlation_score": 0.707,
+      "min_dist_active": 26.6,
+      "sasa": 138.9,
+      "is_exposed": true,
+      "plddt": 33.44
+    },
+    {
+      "residue_number": 14,
+      "chain_id": "A",
+      "one_letter": "G",
+      "correlation_score": 0.708,
+      "min_dist_active": 27.0,
+      "sasa": 81.9,
+      "is_exposed": true,
+      "plddt": 44.94
+    },
+    {
+      "residue_number": 15,
+      "chain_id": "A",
+      "one_letter": "A",
+      "correlation_score": 0.708,
+      "min_dist_active": 25.3,
+      "sasa": 98.9,
+      "is_exposed": true,
+      "plddt": 37.09
+    },
+    {
+      "residue_number": 16,
+      "chain_id": "A",
+      "one_letter": "A",
+      "correlation_score": 0.706,
+      "min_dist_active": 24.8,
+      "sasa": 99.9,
+      "is_exposed": true,
+      "plddt": 39.09
+    },
+    {
+      "residue_number": 17,
+      "chain_id": "A",
+      "one_letter": "A",
+      "correlation_score": 0.704,
+      "min_dist_active": 23.0,
+      "sasa": 100.4,
+      "is_exposed": true,
+      "plddt": 38.81
+    },
+    {
+      "residue_number": 18,
+      "chain_id": "A",
+      "one_letter": "S",
+      "correlation_score": 0.701,
+      "min_dist_active": 22.0,
+      "sasa": 98.8,
+      "is_exposed": true,
+      "plddt": 40.38
+    },
+    {
+      "residue_number": 19,
+      "chain_id": "A",
+      "one_letter": "R",
+      "correlation_score": 0.697,
+      "min_dist_active": 20.2,
+      "sasa": 245.5,
+      "is_exposed": true,
+      "plddt": 41.12
+    },
+    {
+      "residue_number": 20,
+      "chain_id": "A",
+      "one_letter": "G",
+      "correlation_score": 0.692,
+      "min_dist_active": 18.0,
+      "sasa": 71.6,
+      "is_exposed": true,
+      "plddt": 41.53
+    },
+    {
+      "residue_number": 21,
+      "chain_id": "A",
+      "one_letter": "P",
+      "correlation_score": 0.686,
+      "min_dist_active": 15.0,
+      "sasa": 130.3,
+      "is_exposed": true,
+      "plddt": 37.81
+    },
+    {
+      "residue_number": 22,
+      "chain_id": "A",
+      "one_letter": "T",
+      "correlation_score": 0.679,
+      "min_dist_active": 13.1,
+      "sasa": 140.9,
+      "is_exposed": true,
+      "plddt": 41.88
+    },
+    {
+      "residue_number": 30,
+      "chain_id": "A",
+      "one_letter": "W",
+      "correlation_score": 0.565,
+      "min_dist_active": 12.3,
+      "sasa": 228.9,
+      "is_exposed": true,
+      "plddt": 31.02
+    },
+    {
+      "residue_number": 31,
+      "chain_id": "A",
+      "one_letter": "N",
+      "correlation_score": 0.541,
+      "min_dist_active": 10.8,
+      "sasa": 159.1,
+      "is_exposed": true,
+      "plddt": 33.38
+    },
+    {
+      "residue_number": 41,
+      "chain_id": "A",
+      "one_letter": "V",
+      "correlation_score": 0.41,
+      "min_dist_active": 10.3,
+      "sasa": 97.8,
+      "is_exposed": true,
+      "plddt": 41.06
+    },
+    {
+      "residue_number": 42,
+      "chain_id": "A",
+      "one_letter": "S",
+      "correlation_score": 0.399,
+      "min_dist_active": 10.7,
+      "sasa": 44.3,
+      "is_exposed": true,
+      "plddt": 40.75
+    },
+    {
+      "residue_number": 43,
+      "chain_id": "A",
+      "one_letter": "R",
+      "correlation_score": 0.386,
+      "min_dist_active": 12.4,
+      "sasa": 191.9,
+      "is_exposed": true,
+      "plddt": 41.97
+    },
+    {
+      "residue_number": 44,
+      "chain_id": "A",
+      "one_letter": "R",
+      "correlation_score": 0.376,
+      "min_dist_active": 14.7,
+      "sasa": 187.6,
+      "is_exposed": true,
+      "plddt": 35.09
+    },
+    {
+      "residue_number": 45,
+      "chain_id": "A",
+      "one_letter": "D",
+      "correlation_score": 0.365,
+      "min_dist_active": 11.8,
+      "sasa": 123.4,
+      "is_exposed": true,
+      "plddt": 38.41
+    },
+    {
+      "residue_number": 46,
+      "chain_id": "A",
+      "one_letter": "Y",
+      "correlation_score": 0.344,
+      "min_dist_active": 12.1,
+      "sasa": 127.5,
+      "is_exposed": true,
+      "plddt": 44.56
+    },
+    {
+      "residue_number": 47,
+      "chain_id": "A",
+      "one_letter": "A",
+      "correlation_score": 0.312,
+      "min_dist_active": 14.7,
+      "sasa": 93.9,
+      "is_exposed": true,
+      "plddt": 32.5
+    },
+    {
+      "residue_number": 659,
+      "chain_id": "A",
+      "one_letter": "R",
+      "correlation_score": 0.893,
+      "min_dist_active": 10.0,
+      "sasa": 202.7,
+      "is_exposed": true,
+      "plddt": 64.75
+    },
+    {
+      "residue_number": 660,
+      "chain_id": "A",
+      "one_letter": "E",
+      "correlation_score": 0.885,
+      "min_dist_active": 10.7,
+      "sasa": 146.5,
+      "is_exposed": true,
+      "plddt": 59.22
+    },
+    {
+      "residue_number": 661,
+      "chain_id": "A",
+      "one_letter": "G",
+      "correlation_score": 0.87,
+      "min_dist_active": 12.2,
+      "sasa": 61.1,
+      "is_exposed": true,
+      "plddt": 56.09
+    },
+    {
+      "residue_number": 662,
+      "chain_id": "A",
+      "one_letter": "S",
+      "correlation_score": 0.864,
+      "min_dist_active": 14.7,
+      "sasa": 97.2,
+      "is_exposed": true,
+      "plddt": 49.88
+    },
+    {
+      "residue_number": 663,
+      "chain_id": "A",
+      "one_letter": "G",
+      "correlation_score": 0.848,
+      "min_dist_active": 16.2,
+      "sasa": 70.3,
+      "is_exposed": true,
+      "plddt": 49.47
+    },
+    {
+      "residue_number": 664,
+      "chain_id": "A",
+      "one_letter": "S",
+      "correlation_score": 0.841,
+      "min_dist_active": 18.1,
+      "sasa": 104.5,
+      "is_exposed": true,
+      "plddt": 40.19
+    },
+    {
+      "residue_number": 665,
+      "chain_id": "A",
+      "one_letter": "S",
+      "correlation_score": 0.812,
+      "min_dist_active": 21.3,
+      "sasa": 116.7,
+      "is_exposed": true,
+      "plddt": 40.72
+    },
+    {
+      "residue_number": 666,
+      "chain_id": "A",
+      "one_letter": "G",
+      "correlation_score": 0.767,
+      "min_dist_active": 24.3,
+      "sasa": 80.3,
+      "is_exposed": true,
+      "plddt": 41.81
+    },
+    {
+      "residue_number": 667,
+      "chain_id": "A",
+      "one_letter": "T",
+      "correlation_score": 0.742,
+      "min_dist_active": 26.9,
+      "sasa": 149.0,
+      "is_exposed": true,
+      "plddt": 35.69
+    },
+    {
+      "residue_number": 668,
+      "chain_id": "A",
+      "one_letter": "G",
+      "correlation_score": 0.718,
+      "min_dist_active": 30.6,
+      "sasa": 75.3,
+      "is_exposed": true,
+      "plddt": 39.69
+    },
+    {
+      "residue_number": 669,
+      "chain_id": "A",
+      "one_letter": "E",
+      "correlation_score": 0.697,
+      "min_dist_active": 33.7,
+      "sasa": 169.9,
+      "is_exposed": true,
+      "plddt": 38.16
+    },
+    {
+      "residue_number": 670,
+      "chain_id": "A",
+      "one_letter": "Q",
+      "correlation_score": 0.679,
+      "min_dist_active": 36.5,
+      "sasa": 165.9,
+      "is_exposed": true,
+      "plddt": 40.44
+    },
+    {
+      "residue_number": 671,
+      "chain_id": "A",
+      "one_letter": "K",
+      "correlation_score": 0.662,
+      "min_dist_active": 38.6,
+      "sasa": 169.9,
+      "is_exposed": true,
+      "plddt": 41.16
+    },
+    {
+      "residue_number": 672,
+      "chain_id": "A",
+      "one_letter": "E",
+      "correlation_score": 0.646,
+      "min_dist_active": 40.0,
+      "sasa": 149.5,
+      "is_exposed": true,
+      "plddt": 38.88
+    },
+    {
+      "residue_number": 673,
+      "chain_id": "A",
+      "one_letter": "D",
+      "correlation_score": 0.631,
+      "min_dist_active": 41.1,
+      "sasa": 118.7,
+      "is_exposed": true,
+      "plddt": 44.25
+    },
+    {
+      "residue_number": 674,
+      "chain_id": "A",
+      "one_letter": "Q",
+      "correlation_score": 0.616,
+      "min_dist_active": 41.2,
+      "sasa": 140.1,
+      "is_exposed": true,
+      "plddt": 42.47
+    },
+    {
+      "residue_number": 675,
+      "chain_id": "A",
+      "one_letter": "K",
+      "correlation_score": 0.602,
+      "min_dist_active": 41.4,
+      "sasa": 151.0,
+      "is_exposed": true,
+      "plddt": 42.72
+    },
+    {
+      "residue_number": 676,
+      "chain_id": "A",
+      "one_letter": "E",
+      "correlation_score": 0.588,
+      "min_dist_active": 41.2,
+      "sasa": 138.8,
+      "is_exposed": true,
+      "plddt": 43.03
+    },
+    {
+      "residue_number": 677,
+      "chain_id": "A",
+      "one_letter": "E",
+      "correlation_score": 0.575,
+      "min_dist_active": 41.0,
+      "sasa": 124.6,
+      "is_exposed": true,
+      "plddt": 47.34
+    },
+    {
+      "residue_number": 678,
+      "chain_id": "A",
+      "one_letter": "K",
+      "correlation_score": 0.56,
+      "min_dist_active": 40.1,
+      "sasa": 176.8,
+      "is_exposed": true,
+      "plddt": 45.16
+    },
+    {
+      "residue_number": 679,
+      "chain_id": "A",
+      "one_letter": "Q",
+      "correlation_score": 0.543,
+      "min_dist_active": 40.1,
+      "sasa": 248.8,
+      "is_exposed": true,
+      "plddt": 52.75
+    }
+  ],
+  "allosteric_sites": [
+    {
+      "site_id": "A1",
+      "residue_numbers": [
+        659,
+        660,
+        661,
+        662,
+        663
+      ],
+      "residue_letters": [
+        "R",
+        "E",
+        "G",
+        "S",
+        "G"
+      ],
+      "size": 5,
+      "centre": [
+        61.94,
+        32.7,
+        3.04
+      ],
+      "mean_correlation": 0.872,
+      "min_dist_active": 12.6,
+      "mean_sasa": 115.6,
+      "mean_hydrophobicity": -1.92,
+      "net_charge": 0.0,
+      "coupled_active_residues": [
+        653
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "site_id": "A2",
+      "residue_numbers": [
+        664,
+        665,
+        666
+      ],
+      "residue_letters": [
+        "S",
+        "S",
+        "G"
+      ],
+      "size": 3,
+      "centre": [
+        68.66,
+        38.7,
+        3.36
+      ],
+      "mean_correlation": 0.807,
+      "min_dist_active": 21.2,
+      "mean_sasa": 100.5,
+      "mean_hydrophobicity": -0.667,
+      "net_charge": 0.0,
+      "coupled_active_residues": [],
+      "confidence": "HIGH"
+    },
+    {
+      "site_id": "A3",
+      "residue_numbers": [
+        667,
+        668,
+        669
+      ],
+      "residue_letters": [
+        "T",
+        "G",
+        "E"
+      ],
+      "size": 3,
+      "centre": [
+        73.82,
+        46.51,
+        5.23
+      ],
+      "mean_correlation": 0.719,
+      "min_dist_active": 30.4,
+      "mean_sasa": 131.4,
+      "mean_hydrophobicity": -1.533,
+      "net_charge": -1.0,
+      "coupled_active_residues": [],
+      "confidence": "HIGH"
+    },
+    {
+      "site_id": "A4",
+      "residue_numbers": [
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "residue_letters": [
+        "G",
+        "L",
+        "V",
+        "A",
+        "A"
+      ],
+      "size": 5,
+      "centre": [
+        -51.26,
+        21.03,
+        39.52
+      ],
+      "mean_correlation": 0.707,
+      "min_dist_active": 26.1,
+      "mean_sasa": 120.3,
+      "mean_hydrophobicity": 2.24,
+      "net_charge": 0.0,
+      "coupled_active_residues": [],
+      "confidence": "HIGH"
+    },
+    {
+      "site_id": "A5",
+      "residue_numbers": [
+        9,
+        10,
+        11
+      ],
+      "residue_letters": [
+        "R",
+        "A",
+        "A"
+      ],
+      "size": 3,
+      "centre": [
+        -40.46,
+        15.57,
+        46.02
+      ],
+      "mean_correlation": 0.701,
+      "min_dist_active": 26.6,
+      "mean_sasa": 143.3,
+      "mean_hydrophobicity": -0.3,
+      "net_charge": 1.0,
+      "coupled_active_residues": [],
+      "confidence": "HIGH"
+    },
+    {
+      "site_id": "A6",
+      "residue_numbers": [
+        17,
+        18,
+        19
+      ],
+      "residue_letters": [
+        "A",
+        "S",
+        "R"
+      ],
+      "size": 3,
+      "centre": [
+        -59.78,
+        23.12,
+        28.85
+      ],
+      "mean_correlation": 0.701,
+      "min_dist_active": 21.6,
+      "mean_sasa": 148.2,
+      "mean_hydrophobicity": -1.167,
+      "net_charge": 1.0,
+      "coupled_active_residues": [],
+      "confidence": "HIGH"
+    },
+    {
+      "site_id": "A7",
+      "residue_numbers": [
+        6,
+        7,
+        8
+      ],
+      "residue_letters": [
+        "A",
+        "R",
+        "A"
+      ],
+      "size": 3,
+      "centre": [
+        -32.27,
+        9.89,
+        49.33
+      ],
+      "mean_correlation": 0.689,
+      "min_dist_active": 26.2,
+      "mean_sasa": 142.3,
+      "mean_hydrophobicity": -0.3,
+      "net_charge": 1.0,
+      "coupled_active_residues": [],
+      "confidence": "HIGH"
+    },
+    {
+      "site_id": "A8",
+      "residue_numbers": [
+        20,
+        21,
+        22
+      ],
+      "residue_letters": [
+        "G",
+        "P",
+        "T"
+      ],
+      "size": 3,
+      "centre": [
+        -59.18,
+        20.35,
+        19.05
+      ],
+      "mean_correlation": 0.686,
+      "min_dist_active": 15.2,
+      "mean_sasa": 114.3,
+      "mean_hydrophobicity": -0.9,
+      "net_charge": 0.0,
+      "coupled_active_residues": [],
+      "confidence": "HIGH"
+    }
+  ],
+  "n_sites": 8,
+  "communication_pathways": [
+    [
+      659,
+      660,
+      661,
+      662,
+      663,
+      664,
+      665,
+      666,
+      667,
+      668,
+      669,
+      670,
+      671,
+      672,
+      673,
+      674
+    ],
+    [
+      664,
+      662,
+      660,
+      659,
+      658,
+      657,
+      656,
+      655,
+      654,
+      653,
+      652,
+      651,
+      650,
+      648,
+      647,
+      603
+    ],
+    [
+      667,
+      668,
+      669,
+      670,
+      671,
+      672,
+      673,
+      674,
+      675,
+      676,
+      677,
+      678,
+      679,
+      666,
+      665,
+      664
+    ]
+  ]
+}

@@ -4,7 +4,7 @@
   "protein_name": "Phosphatidylcholine-sterol acyltransferase",
   "organism": "Homo sapiens",
   "sequence_length": 440,
-  "generated_at": "2026-04-19 21:23:39",
+  "generated_at": "2026-04-26 09:09:37",
   "top_function": "Central enzyme in the extracellular metabolism of plasma lipoproteins. Synthesized mainly in the liver and secreted into plasma where it converts cholesterol and phosphatidylcholines (lecithins) to ch",
   "is_enzyme": true,
   "ec_number": "2.7.10",
@@ -141,7 +141,7 @@
         "structural_motif",
         "sequence_composition"
       ],
-      "confidence": "MEDIUM",
+      "confidence": "HIGH",
       "top_evidence": "sequence_composition"
     },
     {
@@ -153,7 +153,7 @@
       "sources": [
         "structural_motif"
       ],
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
     },
     {
@@ -165,7 +165,7 @@
       "sources": [
         "structural_motif"
       ],
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
     },
     {
@@ -177,7 +177,7 @@
       "sources": [
         "structural_motif"
       ],
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
     },
     {
@@ -189,8 +189,68 @@
       "sources": [
         "structural_motif"
       ],
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0004252",
+      "go_name": "serine-type endopeptidase activity",
+      "namespace": "MF",
+      "weighted_score": 1.3,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0008233",
+      "go_name": "peptidase activity",
+      "namespace": "MF",
+      "weighted_score": 1.3,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0005172",
+      "go_name": "vascular endothelial growth factor receptor binding",
+      "namespace": "MF",
+      "weighted_score": 1.1,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0003824",
+      "go_name": "catalytic activity",
+      "namespace": "MF",
+      "weighted_score": 1.1,
+      "n_sources": 1,
+      "sources": [
+        "active_site"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "active_site"
+    },
+    {
+      "go_id": "GO:0005515",
+      "go_name": "protein binding",
+      "namespace": "MF",
+      "weighted_score": 1.08,
+      "n_sources": 1,
+      "sources": [
+        "ai_esm2"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "ai_esm2"
     }
   ],
   "go_terms_bp": [
@@ -360,7 +420,7 @@
       "sources": [
         "structural_motif"
       ],
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
     },
     {
@@ -372,7 +432,67 @@
       "sources": [
         "structural_motif"
       ],
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0006351",
+      "go_name": "DNA-templated transcription",
+      "namespace": "BP",
+      "weighted_score": 1.3,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0030193",
+      "go_name": "regulation of blood coagulation",
+      "namespace": "BP",
+      "weighted_score": 1.2,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0045944",
+      "go_name": "positive regulation of transcription by RNA pol II",
+      "namespace": "BP",
+      "weighted_score": 1.2,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0007173",
+      "go_name": "epidermal growth factor receptor signaling pathway",
+      "namespace": "BP",
+      "weighted_score": 1.2,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0008283",
+      "go_name": "cell population proliferation",
+      "namespace": "BP",
+      "weighted_score": 1.2,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
     }
   ],
@@ -424,7 +544,7 @@
         "ai_esm2",
         "structural_motif"
       ],
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "top_evidence": "ai_esm2"
     },
     {
@@ -436,7 +556,7 @@
       "sources": [
         "structural_motif"
       ],
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
     },
     {
@@ -448,7 +568,7 @@
       "sources": [
         "structural_motif"
       ],
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
     },
     {
@@ -460,7 +580,7 @@
       "sources": [
         "structural_motif"
       ],
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
     },
     {
@@ -1942,6 +2062,7 @@
     "pockets",
     "allosteric",
     "chem_env",
-    "foldseek"
+    "foldseek",
+    "md"
   ]
 }

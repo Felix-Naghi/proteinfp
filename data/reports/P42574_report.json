@@ -4,7 +4,7 @@
   "protein_name": "Caspase-3",
   "organism": "Homo sapiens",
   "sequence_length": 277,
-  "generated_at": "2026-04-19 14:56:48",
+  "generated_at": "2026-04-26 09:09:51",
   "top_function": "cysteine-type endopeptidase activity",
   "is_enzyme": false,
   "ec_number": "3.4.22",
@@ -57,7 +57,7 @@
       "sources": [
         "ai_esm2"
       ],
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "top_evidence": "ai_esm2"
     }
   ],
@@ -895,5 +895,7 @@
     "foldseek",
     "ppi"
   ],
-  "modules_missing": []
+  "modules_missing": [
+    "md"
+  ]
 }

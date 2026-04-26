@@ -1,0 +1,2744 @@
+{
+  "uniprot_id": "P60709",
+  "gene_name": "ACTB",
+  "protein_name": "Actin, cytoplasmic 1",
+  "organism": "Homo sapiens",
+  "sequence_length": 375,
+  "generated_at": "2026-04-26 15:11:17",
+  "top_function": "Actin is a highly conserved protein that polymerizes to produce filaments that form cross-linked networks in the cytoplasm of cells (By similarity). Actin exists in both monomeric (G-actin) and polyme",
+  "is_enzyme": true,
+  "ec_number": "3.4.21",
+  "subcellular_location": "C:plasma membrane",
+  "go_terms_mf": [
+    {
+      "go_id": "GO:0005524",
+      "go_name": "F:ATP binding",
+      "namespace": "MF",
+      "weighted_score": 5.28,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "structural_motif"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0016787",
+      "go_name": "F:hydrolase activity",
+      "namespace": "MF",
+      "weighted_score": 3.52,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0019901",
+      "go_name": "F:protein kinase binding",
+      "namespace": "MF",
+      "weighted_score": 3.52,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0098973",
+      "go_name": "F:structural constituent of postsynaptic actin cytoskeleton",
+      "namespace": "MF",
+      "weighted_score": 3.52,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0046872",
+      "go_name": "metal ion binding",
+      "namespace": "MF",
+      "weighted_score": 1.96,
+      "n_sources": 2,
+      "sources": [
+        "structural_motif",
+        "sequence_composition"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "sequence_composition"
+    },
+    {
+      "go_id": "GO:0004252",
+      "go_name": "serine-type endopeptidase activity",
+      "namespace": "MF",
+      "weighted_score": 0.59,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0003677",
+      "go_name": "DNA binding",
+      "namespace": "MF",
+      "weighted_score": 0.59,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0008270",
+      "go_name": "zinc ion binding",
+      "namespace": "MF",
+      "weighted_score": 0.56,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0008233",
+      "go_name": "peptidase activity",
+      "namespace": "MF",
+      "weighted_score": 0.56,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0016887",
+      "go_name": "ATPase activity",
+      "namespace": "MF",
+      "weighted_score": 0.52,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0051082",
+      "go_name": "unfolded protein binding",
+      "namespace": "MF",
+      "weighted_score": 0.52,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0042623",
+      "go_name": "ATPase activity, coupled",
+      "namespace": "MF",
+      "weighted_score": 0.49,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0005172",
+      "go_name": "vascular endothelial growth factor receptor binding",
+      "namespace": "MF",
+      "weighted_score": 0.39,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0003824",
+      "go_name": "catalytic activity",
+      "namespace": "MF",
+      "weighted_score": 0.39,
+      "n_sources": 1,
+      "sources": [
+        "active_site"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "active_site"
+    },
+    {
+      "go_id": "GO:0005488",
+      "go_name": "binding",
+      "namespace": "MF",
+      "weighted_score": 0.39,
+      "n_sources": 1,
+      "sources": [
+        "sequence_composition"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "sequence_composition"
+    },
+    {
+      "go_id": "GO:0005515",
+      "go_name": "protein binding",
+      "namespace": "MF",
+      "weighted_score": 0.38,
+      "n_sources": 1,
+      "sources": [
+        "ai_esm2"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "ai_esm2"
+    },
+    {
+      "go_id": "GO:0003700",
+      "go_name": "DNA-binding transcription factor activity",
+      "namespace": "MF",
+      "weighted_score": 0.32,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    }
+  ],
+  "go_terms_bp": [
+    {
+      "go_id": "GO:0007409",
+      "go_name": "P:axonogenesis",
+      "namespace": "BP",
+      "weighted_score": 3.52,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0048870",
+      "go_name": "P:cell motility",
+      "namespace": "BP",
+      "weighted_score": 3.52,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0006351",
+      "go_name": "DNA-templated transcription",
+      "namespace": "BP",
+      "weighted_score": 0.45,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0051085",
+      "go_name": "chaperone cofactor-dependent protein refolding",
+      "namespace": "BP",
+      "weighted_score": 0.45,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0030193",
+      "go_name": "regulation of blood coagulation",
+      "namespace": "BP",
+      "weighted_score": 0.42,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0045944",
+      "go_name": "positive regulation of transcription by RNA pol II",
+      "namespace": "BP",
+      "weighted_score": 0.42,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0006508",
+      "go_name": "proteolysis",
+      "namespace": "BP",
+      "weighted_score": 0.39,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0010819",
+      "go_name": "regulation of T cell chemotaxis",
+      "namespace": "BP",
+      "weighted_score": 0.32,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    }
+  ],
+  "go_terms_cc": [
+    {
+      "go_id": "GO:0005634",
+      "go_name": "C:nucleus",
+      "namespace": "CC",
+      "weighted_score": 6.45,
+      "n_sources": 3,
+      "sources": [
+        "experimental_homolog",
+        "ai_esm2",
+        "structural_motif"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005737",
+      "go_name": "C:cytoplasm",
+      "namespace": "CC",
+      "weighted_score": 4.67,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "sequence_baseline"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005856",
+      "go_name": "C:cytoskeleton",
+      "namespace": "CC",
+      "weighted_score": 3.52,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0097433",
+      "go_name": "C:dense body",
+      "namespace": "CC",
+      "weighted_score": 3.52,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005925",
+      "go_name": "C:focal adhesion",
+      "namespace": "CC",
+      "weighted_score": 3.52,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005886",
+      "go_name": "C:plasma membrane",
+      "namespace": "CC",
+      "weighted_score": 3.52,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0015629",
+      "go_name": "C:actin cytoskeleton",
+      "namespace": "CC",
+      "weighted_score": 3.52,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0032991",
+      "go_name": "C:protein-containing complex",
+      "namespace": "CC",
+      "weighted_score": 3.52,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005829",
+      "go_name": "C:cytosol",
+      "namespace": "CC",
+      "weighted_score": 3.52,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005884",
+      "go_name": "C:actin filament",
+      "namespace": "CC",
+      "weighted_score": 3.0,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0030424",
+      "go_name": "C:axon",
+      "namespace": "CC",
+      "weighted_score": 3.0,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0016020",
+      "go_name": "C:membrane",
+      "namespace": "CC",
+      "weighted_score": 3.0,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0035267",
+      "go_name": "C:NuA4 histone acetyltransferase complex",
+      "namespace": "CC",
+      "weighted_score": 3.0,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0045202",
+      "go_name": "C:synapse",
+      "namespace": "CC",
+      "weighted_score": 3.0,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0043234",
+      "go_name": "protein complex",
+      "namespace": "CC",
+      "weighted_score": 0.39,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    }
+  ],
+  "active_sites": [
+    {
+      "residue_number": 101,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 19.76,
+      "plddt": 97.44,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "zinc_binding_cluster",
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 9,
+      "confidence": "HIGH",
+      "coords": [
+        23.405,
+        6.917,
+        2.05
+      ],
+      "domain_context": "actin-like atpase domain"
+    },
+    {
+      "residue_number": 161,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 3.02,
+      "plddt": 97.69,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "acid_base_pair"
+      ],
+      "evidence_score": 9,
+      "confidence": "HIGH",
+      "coords": [
+        -4.954,
+        2.449,
+        -6.929
+      ],
+      "domain_context": "actin"
+    },
+    {
+      "residue_number": 275,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 17.61,
+      "plddt": 98.5,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 9,
+      "confidence": "HIGH",
+      "coords": [
+        -12.488,
+        -5.535,
+        -9.733
+      ],
+      "domain_context": "actin"
+    },
+    {
+      "residue_number": 374,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 0.82,
+      "plddt": 92.38,
+      "motifs": [
+        "cysteine_protease_dyad"
+      ],
+      "evidence_score": 9,
+      "confidence": "HIGH",
+      "coords": [
+        11.615,
+        10.603,
+        -11.554
+      ],
+      "domain_context": "actin"
+    },
+    {
+      "residue_number": 73,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 73.52,
+      "plddt": 92.31,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "zinc_binding_cluster",
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        -5.1,
+        8.781,
+        1.321
+      ],
+      "domain_context": "actin-like atpase domain"
+    },
+    {
+      "residue_number": 87,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 93.72,
+      "plddt": 98.25,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "acid_base_pair"
+      ],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        14.181,
+        11.324,
+        11.347
+      ],
+      "domain_context": "actin-like atpase domain"
+    },
+    {
+      "residue_number": 88,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 22.23,
+      "plddt": 98.19,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "acid_base_pair"
+      ],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        12.777,
+        8.373,
+        13.367
+      ],
+      "domain_context": "actin-like atpase domain"
+    },
+    {
+      "residue_number": 173,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 118.46,
+      "plddt": 96.25,
+      "motifs": [
+        "serine_protease_triad"
+      ],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        -4.291,
+        8.517,
+        -18.375
+      ],
+      "domain_context": "actin"
+    },
+    {
+      "residue_number": 371,
+      "chain_id": "A",
+      "one_letter": "H",
+      "three_letter": "HIS",
+      "conservation": 7.0,
+      "is_conserved": true,
+      "is_buried": false,
+      "sasa": 44.88,
+      "plddt": 95.94,
+      "motifs": [
+        "cysteine_protease_dyad"
+      ],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        10.159,
+        16.15,
+        -12.409
+      ],
+      "domain_context": "actin"
+    },
+    {
+      "residue_number": 14,
+      "chain_id": "A",
+      "one_letter": "S",
+      "three_letter": "SER",
+      "conservation": 4.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 7.4,
+      "plddt": 94.06,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        -0.475,
+        5.967,
+        5.092
+      ],
+      "domain_context": "actin-like atpase domain"
+    },
+    {
+      "residue_number": 33,
+      "chain_id": "A",
+      "one_letter": "S",
+      "three_letter": "SER",
+      "conservation": 4.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 0.74,
+      "plddt": 97.44,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        3.099,
+        6.231,
+        10.171
+      ],
+      "domain_context": "actin-like atpase domain"
+    },
+    {
+      "residue_number": 81,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 0.41,
+      "plddt": 98.0,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "acid_base_pair"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        5.264,
+        15.441,
+        11.115
+      ],
+      "domain_context": "actin-like atpase domain"
+    },
+    {
+      "residue_number": 154,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 12.67,
+      "plddt": 98.31,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "acid_base_pair"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        -2.283,
+        -1.588,
+        -4.855
+      ],
+      "domain_context": "actin"
+    },
+    {
+      "residue_number": 155,
+      "chain_id": "A",
+      "one_letter": "S",
+      "three_letter": "SER",
+      "conservation": 4.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 1.18,
+      "plddt": 98.44,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        -4.466,
+        -1.322,
+        -1.705
+      ],
+      "domain_context": "actin"
+    },
+    {
+      "residue_number": 281,
+      "chain_id": "A",
+      "one_letter": "S",
+      "three_letter": "SER",
+      "conservation": 4.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 0.0,
+      "plddt": 98.56,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        -8.204,
+        0.913,
+        -15.953
+      ],
+      "domain_context": "actin"
+    },
+    {
+      "residue_number": 300,
+      "chain_id": "A",
+      "one_letter": "S",
+      "three_letter": "SER",
+      "conservation": 4.5,
+      "is_conserved": false,
+      "is_buried": true,
+      "sasa": 0.0,
+      "plddt": 98.44,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad"
+      ],
+      "evidence_score": 5,
+      "confidence": "MEDIUM",
+      "coords": [
+        0.003,
+        -5.237,
+        -3.773
+      ],
+      "domain_context": "actin"
+    },
+    {
+      "residue_number": 52,
+      "chain_id": "A",
+      "one_letter": "S",
+      "three_letter": "SER",
+      "conservation": 4.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 24.94,
+      "plddt": 93.75,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        6.739,
+        14.16,
+        20.212
+      ],
+      "domain_context": "actin-like atpase domain"
+    },
+    {
+      "residue_number": 56,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 83.8,
+      "plddt": 96.25,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        5.323,
+        2.086,
+        18.0
+      ],
+      "domain_context": "actin-like atpase domain"
+    },
+    {
+      "residue_number": 80,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 99.58,
+      "plddt": 97.75,
+      "motifs": [
+        "serine_protease_triad",
+        "zinc_binding_cluster",
+        "zinc_binding_cluster",
+        "acid_base_pair"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        6.654,
+        18.832,
+        9.964
+      ],
+      "domain_context": "actin-like atpase domain"
+    },
+    {
+      "residue_number": 157,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 40.82,
+      "plddt": 96.56,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "acid_base_pair"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -4.29,
+        1.568,
+        4.649
+      ],
+      "domain_context": "actin"
+    },
+    {
+      "residue_number": 179,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 60.83,
+      "plddt": 94.0,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "zinc_binding_cluster",
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -10.264,
+        6.581,
+        -1.607
+      ],
+      "domain_context": "actin"
+    },
+    {
+      "residue_number": 184,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 39.88,
+      "plddt": 97.81,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "acid_base_pair"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -12.331,
+        2.713,
+        5.964
+      ],
+      "domain_context": "actin"
+    },
+    {
+      "residue_number": 271,
+      "chain_id": "A",
+      "one_letter": "S",
+      "three_letter": "SER",
+      "conservation": 4.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 48.22,
+      "plddt": 94.75,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -17.8,
+        4.18,
+        -6.696
+      ],
+      "domain_context": "actin"
+    },
+    {
+      "residue_number": 286,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 106.74,
+      "plddt": 96.56,
+      "motifs": [
+        "serine_protease_triad",
+        "zinc_binding_cluster",
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -4.713,
+        0.662,
+        -25.998
+      ],
+      "domain_context": "actin"
+    },
+    {
+      "residue_number": 311,
+      "chain_id": "A",
+      "one_letter": "D",
+      "three_letter": "ASP",
+      "conservation": 6.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 90.55,
+      "plddt": 98.69,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad",
+        "acid_base_pair",
+        "acid_base_pair"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        -9.782,
+        -15.972,
+        -6.346
+      ],
+      "domain_context": "actin"
+    },
+    {
+      "residue_number": 358,
+      "chain_id": "A",
+      "one_letter": "S",
+      "three_letter": "SER",
+      "conservation": 4.5,
+      "is_conserved": false,
+      "is_buried": false,
+      "sasa": 39.3,
+      "plddt": 97.62,
+      "motifs": [
+        "serine_protease_triad",
+        "serine_protease_triad"
+      ],
+      "evidence_score": 3,
+      "confidence": "MEDIUM",
+      "coords": [
+        22.736,
+        13.849,
+        -6.918
+      ],
+      "domain_context": "actin"
+    },
+    {
+      "residue_number": 217,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 3.67,
+      "plddt": 98.75,
+      "motifs": [
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 9,
+      "confidence": "HIGH",
+      "coords": [
+        -11.728,
+        -11.264,
+        7.895
+      ],
+      "domain_context": "actin"
+    },
+    {
+      "residue_number": 257,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 0.0,
+      "plddt": 98.62,
+      "motifs": [
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 9,
+      "confidence": "HIGH",
+      "coords": [
+        -16.478,
+        -6.136,
+        5.906
+      ],
+      "domain_context": "actin"
+    },
+    {
+      "residue_number": 285,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 2.42,
+      "plddt": 97.81,
+      "motifs": [
+        "zinc_binding_cluster"
+      ],
+      "evidence_score": 9,
+      "confidence": "HIGH",
+      "coords": [
+        -5.406,
+        1.38,
+        -22.294
+      ],
+      "domain_context": "actin"
+    },
+    {
+      "residue_number": 17,
+      "chain_id": "A",
+      "one_letter": "C",
+      "three_letter": "CYS",
+      "conservation": 7.5,
+      "is_conserved": true,
+      "is_buried": true,
+      "sasa": 0.77,
+      "plddt": 97.81,
+      "motifs": [],
+      "evidence_score": 7,
+      "confidence": "HIGH",
+      "coords": [
+        6.28,
+        3.141,
+        7.07
+      ],
+      "domain_context": "actin-like atpase domain"
+    }
+  ],
+  "binding_pockets": [
+    {
+      "pocket_id": "P1",
+      "volume_A3": 880.0,
+      "center": [
+        10.4,
+        5.43,
+        0.26
+      ],
+      "n_lining": 15,
+      "lining_residues": [
+        9,
+        10,
+        11,
+        12,
+        18,
+        19,
+        103,
+        104,
+        105,
+        106,
+        107,
+        134,
+        135,
+        340,
+        343
+      ],
+      "lining_letters": [
+        "W",
+        "T",
+        "A",
+        "E",
+        "L",
+        "L",
+        "G",
+        "V",
+        "V",
+        "D",
+        "K",
+        "A",
+        "V",
+        "N",
+        "V"
+      ],
+      "mean_hydrophobicity": 0.773,
+      "net_charge": -1.0,
+      "burial_score": 1.35,
+      "near_active_site": true,
+      "active_site_residues": [
+        9,
+        10,
+        11,
+        12,
+        18,
+        19,
+        103,
+        104,
+        105,
+        106,
+        107,
+        134,
+        135,
+        340,
+        343
+      ],
+      "druggability_score": 0.991,
+      "druggability_class": "high",
+      "enclosure": 0.957
+    },
+    {
+      "pocket_id": "P2",
+      "volume_A3": 1960.0,
+      "center": [
+        2.46,
+        -2.37,
+        -5.25
+      ],
+      "n_lining": 17,
+      "lining_residues": [
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        152,
+        153,
+        154,
+        155,
+        298,
+        299,
+        300,
+        301,
+        335,
+        338,
+        339
+      ],
+      "lining_letters": [
+        "L",
+        "V",
+        "S",
+        "D",
+        "M",
+        "V",
+        "L",
+        "L",
+        "S",
+        "S",
+        "S",
+        "V",
+        "R",
+        "V",
+        "A",
+        "Q",
+        "G"
+      ],
+      "mean_hydrophobicity": 0.988,
+      "net_charge": 0.0,
+      "burial_score": 1.8,
+      "near_active_site": true,
+      "active_site_residues": [
+        138,
+        139,
+        140,
+        141,
+        142,
+        152,
+        153,
+        154,
+        155,
+        298,
+        299,
+        300,
+        301,
+        335,
+        338,
+        339
+      ],
+      "druggability_score": 0.988,
+      "druggability_class": "high",
+      "enclosure": 0.941
+    },
+    {
+      "pocket_id": "P3",
+      "volume_A3": 1640.0,
+      "center": [
+        -4.64,
+        -4.0,
+        -15.35
+      ],
+      "n_lining": 16,
+      "lining_residues": [
+        150,
+        151,
+        152,
+        153,
+        162,
+        163,
+        164,
+        278,
+        279,
+        281,
+        282,
+        290,
+        293,
+        294,
+        296,
+        297
+      ],
+      "lining_letters": [
+        "R",
+        "L",
+        "Y",
+        "I",
+        "T",
+        "I",
+        "S",
+        "P",
+        "F",
+        "T",
+        "V",
+        "T",
+        "V",
+        "M",
+        "G",
+        "N"
+      ],
+      "mean_hydrophobicity": 0.731,
+      "net_charge": 1.0,
+      "burial_score": 1.75,
+      "near_active_site": true,
+      "active_site_residues": [
+        150,
+        151,
+        152,
+        153,
+        162,
+        163,
+        164,
+        278,
+        281,
+        282,
+        290,
+        293,
+        294,
+        297
+      ],
+      "druggability_score": 0.986,
+      "druggability_class": "high",
+      "enclosure": 0.928
+    },
+    {
+      "pocket_id": "P4",
+      "volume_A3": 1380.0,
+      "center": [
+        8.01,
+        4.08,
+        -7.08
+      ],
+      "n_lining": 13,
+      "lining_residues": [
+        105,
+        106,
+        107,
+        108,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        339,
+        343
+      ],
+      "lining_letters": [
+        "L",
+        "V",
+        "V",
+        "A",
+        "Q",
+        "T",
+        "I",
+        "A",
+        "A",
+        "E",
+        "L",
+        "G",
+        "V"
+      ],
+      "mean_hydrophobicity": 1.692,
+      "net_charge": -1.0,
+      "burial_score": 1.55,
+      "near_active_site": true,
+      "active_site_residues": [
+        105,
+        106,
+        107,
+        108,
+        134,
+        135,
+        138,
+        139,
+        140,
+        339,
+        343
+      ],
+      "druggability_score": 0.986,
+      "druggability_class": "high",
+      "enclosure": 0.928
+    },
+    {
+      "pocket_id": "P5",
+      "volume_A3": 1860.0,
+      "center": [
+        -8.43,
+        -1.17,
+        -0.8
+      ],
+      "n_lining": 16,
+      "lining_residues": [
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        178,
+        180,
+        181,
+        182,
+        261,
+        274,
+        303,
+        304
+      ],
+      "lining_letters": [
+        "T",
+        "L",
+        "L",
+        "I",
+        "L",
+        "S",
+        "D",
+        "V",
+        "T",
+        "H",
+        "T",
+        "G",
+        "G",
+        "A",
+        "D",
+        "G"
+      ],
+      "mean_hydrophobicity": 0.475,
+      "net_charge": -1.9,
+      "burial_score": 1.7,
+      "near_active_site": true,
+      "active_site_residues": [
+        154,
+        155,
+        157,
+        158,
+        159,
+        160,
+        161,
+        178,
+        180,
+        181,
+        182,
+        261,
+        274,
+        303,
+        304
+      ],
+      "druggability_score": 0.985,
+      "druggability_class": "high",
+      "enclosure": 0.927
+    },
+    {
+      "pocket_id": "P6",
+      "volume_A3": 1740.0,
+      "center": [
+        4.28,
+        4.84,
+        -0.78
+      ],
+      "n_lining": 12,
+      "lining_residues": [
+        11,
+        12,
+        13,
+        14,
+        74,
+        105,
+        106,
+        107,
+        108,
+        136,
+        137,
+        339
+      ],
+      "lining_letters": [
+        "G",
+        "V",
+        "Q",
+        "T",
+        "I",
+        "A",
+        "E",
+        "L",
+        "D",
+        "S",
+        "G",
+        "N"
+      ],
+      "mean_hydrophobicity": -0.167,
+      "net_charge": -2.0,
+      "burial_score": 1.65,
+      "near_active_site": true,
+      "active_site_residues": [
+        11,
+        12,
+        13,
+        14,
+        74,
+        105,
+        106,
+        107,
+        108,
+        339
+      ],
+      "druggability_score": 0.979,
+      "druggability_class": "high",
+      "enclosure": 0.897
+    },
+    {
+      "pocket_id": "P7",
+      "volume_A3": 1600.0,
+      "center": [
+        -9.41,
+        -3.47,
+        -9.5
+      ],
+      "n_lining": 12,
+      "lining_residues": [
+        153,
+        161,
+        162,
+        273,
+        274,
+        275,
+        276,
+        277,
+        278,
+        279,
+        281,
+        313
+      ],
+      "lining_letters": [
+        "H",
+        "M",
+        "S",
+        "F",
+        "T",
+        "E",
+        "T",
+        "T",
+        "G",
+        "I",
+        "H",
+        "M"
+      ],
+      "mean_hydrophobicity": -0.175,
+      "net_charge": -0.8,
+      "burial_score": 1.65,
+      "near_active_site": true,
+      "active_site_residues": [
+        153,
+        161,
+        162,
+        273,
+        274,
+        275,
+        276,
+        277,
+        278,
+        281,
+        313
+      ],
+      "druggability_score": 0.977,
+      "druggability_class": "high",
+      "enclosure": 0.887
+    },
+    {
+      "pocket_id": "P8",
+      "volume_A3": 1700.0,
+      "center": [
+        1.89,
+        -1.9,
+        -13.07
+      ],
+      "n_lining": 19,
+      "lining_residues": [
+        138,
+        139,
+        141,
+        142,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        162,
+        163,
+        164,
+        165,
+        166,
+        168,
+        170,
+        297,
+        298
+      ],
+      "lining_letters": [
+        "I",
+        "T",
+        "P",
+        "V",
+        "T",
+        "V",
+        "M",
+        "G",
+        "Y",
+        "T",
+        "T",
+        "V",
+        "L",
+        "S",
+        "A",
+        "G",
+        "V",
+        "I",
+        "A"
+      ],
+      "mean_hydrophobicity": 1.463,
+      "net_charge": 0.0,
+      "burial_score": 1.75,
+      "near_active_site": true,
+      "active_site_residues": [
+        138,
+        139,
+        141,
+        142,
+        150,
+        151,
+        152,
+        153,
+        162,
+        163,
+        164,
+        165,
+        168,
+        170,
+        297,
+        298
+      ],
+      "druggability_score": 0.976,
+      "druggability_class": "high",
+      "enclosure": 0.879
+    },
+    {
+      "pocket_id": "P9",
+      "volume_A3": 1340.0,
+      "center": [
+        18.24,
+        3.67,
+        -3.04
+      ],
+      "n_lining": 18,
+      "lining_residues": [
+        6,
+        7,
+        8,
+        9,
+        21,
+        22,
+        101,
+        102,
+        103,
+        104,
+        105,
+        132,
+        133,
+        343,
+        344,
+        346,
+        347,
+        348
+      ],
+      "lining_letters": [
+        "L",
+        "A",
+        "L",
+        "L",
+        "G",
+        "S",
+        "A",
+        "S",
+        "A",
+        "P",
+        "Y",
+        "M",
+        "L",
+        "V",
+        "A",
+        "F",
+        "V",
+        "H"
+      ],
+      "mean_hydrophobicity": 1.522,
+      "net_charge": 0.1,
+      "burial_score": 1.5,
+      "near_active_site": true,
+      "active_site_residues": [
+        7,
+        8,
+        9,
+        22,
+        101,
+        103,
+        104,
+        105,
+        132,
+        133,
+        343,
+        344,
+        347
+      ],
+      "druggability_score": 0.973,
+      "druggability_class": "high",
+      "enclosure": 0.867
+    },
+    {
+      "pocket_id": "P10",
+      "volume_A3": 1580.0,
+      "center": [
+        7.18,
+        6.27,
+        9.42
+      ],
+      "n_lining": 17,
+      "lining_residues": [
+        12,
+        13,
+        16,
+        17,
+        18,
+        30,
+        31,
+        32,
+        33,
+        34,
+        54,
+        55,
+        82,
+        85,
+        86,
+        88,
+        89
+      ],
+      "lining_letters": [
+        "M",
+        "K",
+        "C",
+        "G",
+        "W",
+        "M",
+        "N",
+        "V",
+        "G",
+        "I",
+        "F",
+        "S",
+        "P",
+        "I",
+        "T",
+        "H",
+        "V"
+      ],
+      "mean_hydrophobicity": 0.653,
+      "net_charge": 1.1,
+      "burial_score": 1.65,
+      "near_active_site": true,
+      "active_site_residues": [
+        12,
+        13,
+        17,
+        18,
+        31,
+        32,
+        33,
+        34,
+        54,
+        55,
+        82,
+        85,
+        86,
+        88,
+        89
+      ],
+      "druggability_score": 0.971,
+      "druggability_class": "high",
+      "enclosure": 0.857
+    }
+  ],
+  "allosteric_sites": [
+    {
+      "site_id": "A1",
+      "residue_numbers": [
+        45,
+        46
+      ],
+      "residue_letters": [
+        "V",
+        "G"
+      ],
+      "size": 2,
+      "centre": [
+        8.38,
+        12.4,
+        34.87
+      ],
+      "mean_correlation": 0.598,
+      "min_dist_active": 10.7,
+      "mean_sasa": 100.4,
+      "mean_hydrophobicity": 1.9,
+      "net_charge": 0.0,
+      "coupled_active_residues": [
+        40,
+        50,
+        51,
+        52,
+        61
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "site_id": "A2",
+      "residue_numbers": [
+        1,
+        2,
+        3
+      ],
+      "residue_letters": [
+        "D",
+        "M",
+        "D"
+      ],
+      "size": 3,
+      "centre": [
+        34.69,
+        -0.63,
+        -0.6
+      ],
+      "mean_correlation": 0.372,
+      "min_dist_active": 13.5,
+      "mean_sasa": 162.5,
+      "mean_hydrophobicity": -1.7,
+      "net_charge": -2.0,
+      "coupled_active_residues": [
+        7,
+        100,
+        101
+      ],
+      "confidence": "LOW"
+    }
+  ],
+  "ppi_partners": [
+    {
+      "partner_id": "9606.ENSP00000351379",
+      "partner_name": "PFN3",
+      "combined_score": 999,
+      "experimental_score": 330,
+      "database_score": 900,
+      "textmining_score": 987,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        95,
+        41,
+        270,
+        375,
+        326,
+        372,
+        354,
+        169,
+        28,
+        2,
+        113,
+        4,
+        215,
+        291
+      ],
+      "interface_letters": [
+        "M",
+        "R",
+        "Q",
+        "E",
+        "F",
+        "K",
+        "R",
+        "Q",
+        "Y",
+        "R",
+        "D",
+        "K",
+        "D",
+        "K",
+        "K"
+      ],
+      "interface_charge": 4.0,
+      "interface_hydrophobicity": -2.88,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000397552",
+      "partner_name": "ACTL6A",
+      "combined_score": 999,
+      "experimental_score": 939,
+      "database_score": 900,
+      "textmining_score": 980,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        95,
+        41,
+        270,
+        375,
+        326,
+        372,
+        354,
+        169,
+        28,
+        2,
+        113,
+        4,
+        215,
+        291
+      ],
+      "interface_letters": [
+        "M",
+        "R",
+        "Q",
+        "E",
+        "F",
+        "K",
+        "R",
+        "Q",
+        "Y",
+        "R",
+        "D",
+        "K",
+        "D",
+        "K",
+        "K"
+      ],
+      "interface_charge": 4.0,
+      "interface_hydrophobicity": -2.88,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000225655",
+      "partner_name": "PFN1",
+      "combined_score": 999,
+      "experimental_score": 972,
+      "database_score": 900,
+      "textmining_score": 992,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        95,
+        41,
+        270,
+        375,
+        326,
+        372,
+        354,
+        169,
+        28,
+        2,
+        113,
+        4,
+        215,
+        291
+      ],
+      "interface_letters": [
+        "M",
+        "R",
+        "Q",
+        "E",
+        "F",
+        "K",
+        "R",
+        "Q",
+        "Y",
+        "R",
+        "D",
+        "K",
+        "D",
+        "K",
+        "K"
+      ],
+      "interface_charge": 4.0,
+      "interface_hydrophobicity": -2.88,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000458162",
+      "partner_name": "ACTG1",
+      "combined_score": 999,
+      "experimental_score": 983,
+      "database_score": 900,
+      "textmining_score": 795,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        95,
+        41,
+        270,
+        375,
+        326,
+        372,
+        354,
+        169,
+        28,
+        2,
+        113,
+        4,
+        215,
+        291
+      ],
+      "interface_letters": [
+        "M",
+        "R",
+        "Q",
+        "E",
+        "F",
+        "K",
+        "R",
+        "Q",
+        "Y",
+        "R",
+        "D",
+        "K",
+        "D",
+        "K",
+        "K"
+      ],
+      "interface_charge": 4.0,
+      "interface_hydrophobicity": -2.88,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000432660",
+      "partner_name": "CFL1",
+      "combined_score": 999,
+      "experimental_score": 987,
+      "database_score": 900,
+      "textmining_score": 834,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        95,
+        41,
+        270,
+        375,
+        326,
+        372,
+        354,
+        169,
+        28,
+        2,
+        113,
+        4,
+        215,
+        291
+      ],
+      "interface_letters": [
+        "M",
+        "R",
+        "Q",
+        "E",
+        "F",
+        "K",
+        "R",
+        "Q",
+        "Y",
+        "R",
+        "D",
+        "K",
+        "D",
+        "K",
+        "K"
+      ],
+      "interface_charge": 4.0,
+      "interface_hydrophobicity": -2.88,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000322170",
+      "partner_name": "PFN4",
+      "combined_score": 999,
+      "experimental_score": 402,
+      "database_score": 900,
+      "textmining_score": 988,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        95,
+        41,
+        270,
+        375,
+        326,
+        372,
+        354,
+        169,
+        28,
+        2,
+        113,
+        4,
+        215,
+        291
+      ],
+      "interface_letters": [
+        "M",
+        "R",
+        "Q",
+        "E",
+        "F",
+        "K",
+        "R",
+        "Q",
+        "Y",
+        "R",
+        "D",
+        "K",
+        "D",
+        "K",
+        "K"
+      ],
+      "interface_charge": 4.0,
+      "interface_hydrophobicity": -2.88,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000343896",
+      "partner_name": "SMARCA4",
+      "combined_score": 999,
+      "experimental_score": 982,
+      "database_score": 650,
+      "textmining_score": 876,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        95,
+        41,
+        270,
+        375,
+        326,
+        372,
+        354,
+        169,
+        28,
+        2,
+        113,
+        4,
+        215,
+        291
+      ],
+      "interface_letters": [
+        "M",
+        "R",
+        "Q",
+        "E",
+        "F",
+        "K",
+        "R",
+        "Q",
+        "Y",
+        "R",
+        "D",
+        "K",
+        "D",
+        "K",
+        "K"
+      ],
+      "interface_charge": 4.0,
+      "interface_hydrophobicity": -2.88,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000323967",
+      "partner_name": "SMARCE1",
+      "combined_score": 996,
+      "experimental_score": 925,
+      "database_score": 800,
+      "textmining_score": 767,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        95,
+        41,
+        270,
+        375,
+        326,
+        372,
+        354,
+        169,
+        28,
+        2,
+        113,
+        4,
+        215,
+        291
+      ],
+      "interface_letters": [
+        "M",
+        "R",
+        "Q",
+        "E",
+        "F",
+        "K",
+        "R",
+        "Q",
+        "Y",
+        "R",
+        "D",
+        "K",
+        "D",
+        "K",
+        "K"
+      ],
+      "interface_charge": 4.0,
+      "interface_hydrophobicity": -2.88,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000298159",
+      "partner_name": "CFL2",
+      "combined_score": 996,
+      "experimental_score": 876,
+      "database_score": 900,
+      "textmining_score": 716,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        95,
+        41,
+        270,
+        375,
+        326,
+        372,
+        354,
+        169,
+        28,
+        2,
+        113,
+        4,
+        215,
+        291
+      ],
+      "interface_letters": [
+        "M",
+        "R",
+        "Q",
+        "E",
+        "F",
+        "K",
+        "R",
+        "Q",
+        "Y",
+        "R",
+        "D",
+        "K",
+        "D",
+        "K",
+        "K"
+      ],
+      "interface_charge": 4.0,
+      "interface_hydrophobicity": -2.88,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000473172",
+      "partner_name": "RUVBL2",
+      "combined_score": 995,
+      "experimental_score": 836,
+      "database_score": 900,
+      "textmining_score": 710,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        95,
+        41,
+        270,
+        375,
+        326,
+        372,
+        354,
+        169,
+        28,
+        2,
+        113,
+        4,
+        215,
+        291
+      ],
+      "interface_letters": [
+        "M",
+        "R",
+        "Q",
+        "E",
+        "F",
+        "K",
+        "R",
+        "Q",
+        "Y",
+        "R",
+        "D",
+        "K",
+        "D",
+        "K",
+        "K"
+      ],
+      "interface_charge": 4.0,
+      "interface_hydrophobicity": -2.88,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000320485",
+      "partner_name": "ARID1A",
+      "combined_score": 995,
+      "experimental_score": 883,
+      "database_score": 800,
+      "textmining_score": 825,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        95,
+        41,
+        270,
+        375,
+        326,
+        372,
+        354,
+        169,
+        28,
+        2,
+        113,
+        4,
+        215,
+        291
+      ],
+      "interface_letters": [
+        "M",
+        "R",
+        "Q",
+        "E",
+        "F",
+        "K",
+        "R",
+        "Q",
+        "Y",
+        "R",
+        "D",
+        "K",
+        "D",
+        "K",
+        "K"
+      ],
+      "interface_charge": 4.0,
+      "interface_hydrophobicity": -2.88,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000318297",
+      "partner_name": "RUVBL1",
+      "combined_score": 993,
+      "experimental_score": 800,
+      "database_score": 900,
+      "textmining_score": 714,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        95,
+        41,
+        270,
+        375,
+        326,
+        372,
+        354,
+        169,
+        28,
+        2,
+        113,
+        4,
+        215,
+        291
+      ],
+      "interface_letters": [
+        "M",
+        "R",
+        "Q",
+        "E",
+        "F",
+        "K",
+        "R",
+        "Q",
+        "Y",
+        "R",
+        "D",
+        "K",
+        "D",
+        "K",
+        "K"
+      ],
+      "interface_charge": 4.0,
+      "interface_hydrophobicity": -2.88,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000216181",
+      "partner_name": "MYH9",
+      "combined_score": 991,
+      "experimental_score": 680,
+      "database_score": 900,
+      "textmining_score": 602,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        95,
+        41,
+        270,
+        375,
+        326,
+        372,
+        354,
+        169,
+        28,
+        2,
+        113,
+        4,
+        215,
+        291
+      ],
+      "interface_letters": [
+        "M",
+        "R",
+        "Q",
+        "E",
+        "F",
+        "K",
+        "R",
+        "Q",
+        "Y",
+        "R",
+        "D",
+        "K",
+        "D",
+        "K",
+        "K"
+      ],
+      "interface_charge": 4.0,
+      "interface_hydrophobicity": -2.88,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000311032",
+      "partner_name": "CASP3",
+      "combined_score": 989,
+      "experimental_score": 95,
+      "database_score": 900,
+      "textmining_score": 893,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "apoptotic",
+      "interface_residues": [
+        1,
+        95,
+        41,
+        270,
+        375,
+        326,
+        372,
+        354,
+        169,
+        28,
+        2,
+        113,
+        4,
+        215,
+        291
+      ],
+      "interface_letters": [
+        "M",
+        "R",
+        "Q",
+        "E",
+        "F",
+        "K",
+        "R",
+        "Q",
+        "Y",
+        "R",
+        "D",
+        "K",
+        "D",
+        "K",
+        "K"
+      ],
+      "interface_charge": 4.0,
+      "interface_hydrophobicity": -2.88,
+      "binding_mode": "electrostatic"
+    },
+    {
+      "partner_id": "9606.ENSP00000254286",
+      "partner_name": "ACTR10",
+      "combined_score": 987,
+      "experimental_score": 946,
+      "database_score": 0,
+      "textmining_score": 772,
+      "coexpression_score": 0,
+      "confidence": "high",
+      "interaction_type": "unknown",
+      "interface_residues": [
+        1,
+        95,
+        41,
+        270,
+        375,
+        326,
+        372,
+        354,
+        169,
+        28,
+        2,
+        113,
+        4,
+        215,
+        291
+      ],
+      "interface_letters": [
+        "M",
+        "R",
+        "Q",
+        "E",
+        "F",
+        "K",
+        "R",
+        "Q",
+        "Y",
+        "R",
+        "D",
+        "K",
+        "D",
+        "K",
+        "K"
+      ],
+      "interface_charge": 4.0,
+      "interface_hydrophobicity": -2.88,
+      "binding_mode": "electrostatic"
+    }
+  ],
+  "mean_plddt": 95.2,
+  "n_evidence_sources": 12,
+  "overall_confidence": "VERY HIGH",
+  "validation_suggestions": [
+    "Alanine scanning mutagenesis of predicted active site residues (H101, H161, H275) to confirm functional importance",
+    "Thermal shift assay or SPR binding assay against pocket P1 (vol=880\u00c5\u00b3, druggability=0.99)",
+    "Co-immunoprecipitation with PFN3 (unknown interaction, predicted interface: [1, 95, 41])",
+    "Co-immunoprecipitation with ACTL6A (unknown interaction, predicted interface: [1, 95, 41])",
+    "Enzyme activity assay consistent with EC 3.4.21 using appropriate substrate panel",
+    "EMSA or fluorescence polarisation assay to confirm 'F:ATP binding' (GO:0005524)",
+    "GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation"
+  ],
+  "modules_run": [
+    "structure",
+    "physico",
+    "active",
+    "pockets",
+    "allosteric",
+    "chem_env",
+    "homology",
+    "esm2",
+    "go",
+    "ec",
+    "foldseek",
+    "ppi"
+  ],
+  "modules_missing": [
+    "md"
+  ]
+}

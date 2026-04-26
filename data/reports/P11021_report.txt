@@ -1,0 +1,95 @@
+======================================================================
+  ProteinFP Prediction Report
+  Generated: 2026-04-26 15:11:23
+======================================================================
+
+  Protein    : Endoplasmic reticulum chaperone BiP
+  Gene       : HSPA5
+  UniProt    : P11021
+  Organism   : Homo sapiens
+  Length     : 654 aa
+  Mean pLDDT : 90.0
+  Confidence : VERY HIGH
+
+──────────────────────────────────────────────────────────────────────
+  FUNCTIONAL PREDICTION
+──────────────────────────────────────────────────────────────────────
+  Top function     : Endoplasmic reticulum chaperone that plays a key role in protein folding and quality control in the endoplasmic reticulum lumen (PubMed:2294010, PubMed:23769672, PubMed:23990668, PubMed:28332555). Inv
+  Enzyme           : no (non-enzyme)
+  Location         : C:membrane
+  Evidence sources : 12
+
+──────────────────────────────────────────────────────────────────────
+  GENE ONTOLOGY PREDICTIONS
+──────────────────────────────────────────────────────────────────────
+
+  Molecular Function:
+    [HIGH  ] GO:0005524 ATP binding (score=10.5, 3 sources)
+    [HIGH  ] GO:0016887 ATP hydrolysis activity (score=8.2, 2 sources)
+    [HIGH  ] GO:0140662 F:ATP-dependent protein folding chaperone (score=3.5, 1 sources)
+    [HIGH  ] GO:0031072 F:heat shock protein binding (score=3.5, 1 sources)
+    [HIGH  ] GO:0051787 F:misfolded protein binding (score=3.5, 1 sources)
+
+  Biological Process:
+    [HIGH  ] GO:1903895 P:negative regulation of IRE1-mediated unfold (score=3.5, 1 sources)
+    [HIGH  ] GO:0031333 P:negative regulation of protein-containing c (score=3.5, 1 sources)
+    [HIGH  ] GO:0031204 P:post-translational protein targeting to mem (score=3.5, 1 sources)
+    [HIGH  ] GO:0035437 P:maintenance of protein localization in endo (score=3.5, 1 sources)
+    [HIGH  ] GO:0030335 P:positive regulation of cell migration (score=3.5, 1 sources)
+
+  Cellular Component:
+    [HIGH  ] GO:0005634 C:nucleus (score=6.5, 3 sources)
+    [HIGH  ] GO:0016020 C:membrane (score=4.8, 2 sources)
+    [HIGH  ] GO:0005737 C:cytoplasm (score=4.7, 2 sources)
+
+──────────────────────────────────────────────────────────────────────
+  ACTIVE SITES
+──────────────────────────────────────────────────────────────────────
+  H167 [HIGH  ] motifs: serine_protease_triad, haem_binding
+  H252 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H608 [HIGH  ] motifs: serine_protease_triad, zinc_binding_cluster
+  D94 [MEDIUM] motifs: serine_protease_triad, serine_protease_triad
+  S107 [MEDIUM] motifs: serine_protease_triad, serine_protease_triad
+
+──────────────────────────────────────────────────────────────────────
+  BINDING POCKETS
+──────────────────────────────────────────────────────────────────────
+  P1: vol=2020Å³  druggability=1.00 (high)
+  P2: vol=2100Å³  druggability=0.99 (high)
+  P3: vol=1740Å³  druggability=0.99 (high)
+  P4: vol=1220Å³  druggability=0.99 (high)
+  P5: vol=1720Å³  druggability=0.98 (high)
+
+──────────────────────────────────────────────────────────────────────
+  ALLOSTERIC SITES
+──────────────────────────────────────────────────────────────────────
+  A1 [HIGH  ] corr=0.87 residues=[636, 637, 638, 639]
+  A2 [HIGH  ] corr=0.75 residues=[640, 641, 642]
+  A3 [HIGH  ] corr=0.68 residues=[643, 644, 645]
+  A4 [HIGH  ] corr=0.62 residues=[646, 647, 648]
+
+──────────────────────────────────────────────────────────────────────
+  PROTEIN INTERACTIONS (top 8)
+──────────────────────────────────────────────────────────────────────
+  PDIA3           STRING=999  type=unknown
+  HSP90B1         STRING=999  type=unknown
+  ATF6            STRING=999  type=unknown
+  EIF2AK3         STRING=999  type=unknown
+  ERN1            STRING=999  type=unknown
+  HYOU1           STRING=999  type=unknown
+  CANX            STRING=998  type=unknown
+  DNAJC10         STRING=998  type=unknown
+
+──────────────────────────────────────────────────────────────────────
+  VALIDATION SUGGESTIONS
+──────────────────────────────────────────────────────────────────────
+  1. Alanine scanning mutagenesis of predicted active site residues (H167, H252, H608) to confirm functional importance
+  2. Thermal shift assay or SPR binding assay against pocket P1 (vol=2020Å³, druggability=1.00)
+  3. Co-immunoprecipitation with PDIA3 (unknown interaction, predicted interface: [654, 1, 17])
+  4. Co-immunoprecipitation with HSP90B1 (unknown interaction, predicted interface: [654, 1, 17])
+  5. EMSA or fluorescence polarisation assay to confirm 'ATP binding' (GO:0005524)
+  6. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+
+──────────────────────────────────────────────────────────────────────
+  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi
+======================================================================

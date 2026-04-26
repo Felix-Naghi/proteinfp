@@ -1,0 +1,86 @@
+======================================================================
+  ProteinFP Prediction Report
+  Generated: 2026-04-26 15:11:13
+======================================================================
+
+  Protein    : Peroxiredoxin-2
+  Gene       : PRDX2
+  UniProt    : P32119
+  Organism   : Homo sapiens
+  Length     : 198 aa
+  Mean pLDDT : 97.7
+  Confidence : VERY HIGH
+
+──────────────────────────────────────────────────────────────────────
+  FUNCTIONAL PREDICTION
+──────────────────────────────────────────────────────────────────────
+  Top function     : Thiol-specific peroxidase that catalyzes the reduction of hydrogen peroxide and organic hydroperoxides to water and alcohols, respectively. Plays a role in cell protection against oxidative stress by 
+  Enzyme           : no (non-enzyme)
+  Location         : membrane
+  Evidence sources : 12
+
+──────────────────────────────────────────────────────────────────────
+  GENE ONTOLOGY PREDICTIONS
+──────────────────────────────────────────────────────────────────────
+
+  Molecular Function:
+    [HIGH  ] GO:0016209 antioxidant activity (score=8.2, 2 sources)
+    [HIGH  ] GO:0016491 oxidoreductase activity (score=3.8, 1 sources)
+    [HIGH  ] GO:0051920 peroxiredoxin activity (score=3.8, 1 sources)
+    [HIGH  ] GO:0008379 F:thioredoxin peroxidase activity (score=3.5, 1 sources)
+    [HIGH  ] GO:0004601 F:peroxidase activity (score=3.5, 1 sources)
+
+  Biological Process:
+    [HIGH  ] GO:0019430 P:removal of superoxide radicals (score=4.8, 2 sources)
+    [HIGH  ] GO:0045454 P:cell redox homeostasis (score=3.5, 1 sources)
+    [HIGH  ] GO:0042744 P:hydrogen peroxide catabolic process (score=3.5, 1 sources)
+    [HIGH  ] GO:0045321 P:leukocyte activation (score=3.5, 1 sources)
+    [HIGH  ] GO:0002357 P:defense response to tumor cell (score=3.5, 1 sources)
+
+  Cellular Component:
+    [HIGH  ] GO:0005634 C:nucleus (score=6.5, 3 sources)
+    [HIGH  ] GO:0005737 C:cytoplasm (score=4.7, 2 sources)
+    [HIGH  ] GO:0005829 C:cytosol (score=3.5, 1 sources)
+
+──────────────────────────────────────────────────────────────────────
+  ACTIVE SITES
+──────────────────────────────────────────────────────────────────────
+  H83 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  D46 [MEDIUM] motifs: serine_protease_triad, serine_protease_triad
+  S76 [MEDIUM] motifs: serine_protease_triad, serine_protease_triad
+  D106 [MEDIUM] motifs: serine_protease_triad, serine_protease_triad
+  D22 [MEDIUM] motifs: serine_protease_triad, serine_protease_triad
+
+──────────────────────────────────────────────────────────────────────
+  BINDING POCKETS
+──────────────────────────────────────────────────────────────────────
+  P1: vol=1520Å³  druggability=1.00 (high)
+  P2: vol=1520Å³  druggability=0.98 (high)
+  P3: vol=1400Å³  druggability=0.97 (high)
+  P4: vol=1400Å³  druggability=0.96 (high)
+  P5: vol=1340Å³  druggability=0.96 (high)
+
+──────────────────────────────────────────────────────────────────────
+  PROTEIN INTERACTIONS (top 8)
+──────────────────────────────────────────────────────────────────────
+  TXN             STRING=981  type=unknown
+  PRDX5           STRING=960  type=unknown
+  SRXN1           STRING=889  type=unknown
+  PRDX1           STRING=873  type=unknown
+  PARK7           STRING=867  type=unknown
+  SOD1            STRING=865  type=unknown
+  CDK5            STRING=836  type=unknown
+  PRDX6           STRING=798  type=unknown
+
+──────────────────────────────────────────────────────────────────────
+  VALIDATION SUGGESTIONS
+──────────────────────────────────────────────────────────────────────
+  1. Alanine scanning mutagenesis of predicted active site residues (H83, C51, C70) to confirm functional importance
+  2. Thermal shift assay or SPR binding assay against pocket P1 (vol=1520Å³, druggability=1.00)
+  3. Co-immunoprecipitation with TXN (unknown interaction, predicted interface: [1, 49, 92])
+  4. Co-immunoprecipitation with PRDX5 (unknown interaction, predicted interface: [1, 49, 92])
+  5. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+
+──────────────────────────────────────────────────────────────────────
+  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi
+======================================================================

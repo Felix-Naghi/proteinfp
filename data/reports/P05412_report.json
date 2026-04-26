@@ -4,7 +4,7 @@
   "protein_name": "Transcription factor Jun",
   "organism": "Homo sapiens",
   "sequence_length": 331,
-  "generated_at": "2026-04-19 15:51:51",
+  "generated_at": "2026-04-26 09:09:38",
   "top_function": "Transcription factor that recognizes and binds to the AP-1 consensus motif 5'-TGA[GC]TCA-3' (PubMed:10995748, PubMed:22083952). Heterodimerizes with proteins of the FOS family to form an AP-1 transcri",
   "is_enzyme": false,
   "ec_number": "3.x.x.x",
@@ -196,6 +196,66 @@
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0003690",
+      "go_name": "F:double-stranded DNA binding",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0070412",
+      "go_name": "F:R-SMAD binding",
+      "namespace": "MF",
+      "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0008270",
+      "go_name": "zinc ion binding",
+      "namespace": "MF",
+      "weighted_score": 1.6,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0046872",
+      "go_name": "metal ion binding",
+      "namespace": "MF",
+      "weighted_score": 1.5,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0005515",
+      "go_name": "protein binding",
+      "namespace": "MF",
+      "weighted_score": 1.08,
+      "n_sources": 1,
+      "sources": [
+        "ai_esm2"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "ai_esm2"
     }
   ],
   "go_terms_bp": [
@@ -283,7 +343,7 @@
       "sources": [
         "structural_motif"
       ],
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
     },
     {
@@ -295,7 +355,7 @@
       "sources": [
         "structural_motif"
       ],
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
     },
     {
@@ -408,7 +468,7 @@
       "sources": [
         "structural_motif"
       ],
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
     },
     {
@@ -1877,6 +1937,7 @@
     "pockets",
     "allosteric",
     "chem_env",
-    "foldseek"
+    "foldseek",
+    "md"
   ]
 }

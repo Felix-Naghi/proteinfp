@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-19 19:12:08
+  Generated: 2026-04-26 15:11:25
 ======================================================================
 
   Protein    : Tyrosine-protein phosphatase non-receptor type 2
@@ -9,38 +9,38 @@
   Organism   : Homo sapiens
   Length     : 415 aa
   Mean pLDDT : 85.9
-  Confidence : HIGH
+  Confidence : VERY HIGH
 
 ──────────────────────────────────────────────────────────────────────
   FUNCTIONAL PREDICTION
 ──────────────────────────────────────────────────────────────────────
-  Top function     : serine-type endopeptidase activity
+  Top function     : Non-receptor type tyrosine-specific phosphatase that dephosphorylates receptor protein tyrosine kinases including INSR, EGFR, CSF1R, PDGFR. Also dephosphorylates non-receptor protein tyrosine kinases 
   Enzyme           : no (non-enzyme)
   Location         : integral component of plasma membrane
-  Evidence sources : 8
+  Evidence sources : 12
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
 ──────────────────────────────────────────────────────────────────────
 
   Molecular Function:
-    [HIGH  ] GO:0004725 protein tyrosine phosphatase activity (score=10.4, 2 sources)
-    [MEDIUM] GO:0046872 metal ion binding (score=3.0, 2 sources)
-    [LOW   ] GO:0004252 serine-type endopeptidase activity (score=1.7, 1 sources)
-    [LOW   ] GO:0003677 DNA binding (score=1.7, 1 sources)
-    [LOW   ] GO:0004672 protein kinase activity (score=1.7, 1 sources)
+    [HIGH  ] GO:0004725 protein tyrosine phosphatase activity (score=12.8, 2 sources)
+    [HIGH  ] GO:0004726 F:non-membrane spanning protein tyrosine phos (score=3.5, 1 sources)
+    [HIGH  ] GO:0019901 F:protein kinase binding (score=3.5, 1 sources)
+    [HIGH  ] GO:0005178 F:integrin binding (score=3.5, 1 sources)
+    [HIGH  ] GO:0030971 F:receptor tyrosine kinase binding (score=3.5, 1 sources)
 
   Biological Process:
-    [HIGH  ] GO:0006470 protein dephosphorylation (score=10.4, 2 sources)
-    [HIGH  ] GO:0016311 dephosphorylation (score=10.4, 2 sources)
-    [LOW   ] GO:0006468 protein phosphorylation (score=1.6, 1 sources)
-    [LOW   ] GO:0018108 peptidyl-tyrosine phosphorylation (score=1.4, 1 sources)
-    [LOW   ] GO:0015671 oxygen transport (score=1.4, 1 sources)
+    [HIGH  ] GO:0006470 protein dephosphorylation (score=7.5, 1 sources)
+    [HIGH  ] GO:0016311 dephosphorylation (score=7.5, 1 sources)
+    [HIGH  ] GO:0030183 P:B cell differentiation (score=3.5, 1 sources)
+    [HIGH  ] GO:0030218 P:erythrocyte differentiation (score=3.5, 1 sources)
+    [HIGH  ] GO:0042593 P:glucose homeostasis (score=3.5, 1 sources)
 
   Cellular Component:
-    [LOW   ] GO:0005634 nucleus (score=1.9, 2 sources)
-    [LOW   ] GO:0005887 integral component of plasma membrane (score=1.3, 1 sources)
-    [LOW   ] GO:0005833 hemoglobin complex (score=1.3, 1 sources)
+    [HIGH  ] GO:0005634 C:nucleus (score=6.5, 3 sources)
+    [HIGH  ] GO:0005737 C:cytoplasm (score=4.7, 2 sources)
+    [HIGH  ] GO:0005829 C:cytosol (score=3.5, 1 sources)
 
 ──────────────────────────────────────────────────────────────────────
   ACTIVE SITES
@@ -50,6 +50,23 @@
   H157 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
   H174 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
   H176 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+
+──────────────────────────────────────────────────────────────────────
+  BINDING POCKETS
+──────────────────────────────────────────────────────────────────────
+  P1: vol=1680Å³  druggability=1.00 (high)
+  P2: vol=920Å³  druggability=0.99 (high)
+  P3: vol=840Å³  druggability=0.99 (high)
+  P4: vol=1480Å³  druggability=0.99 (high)
+  P5: vol=1740Å³  druggability=0.99 (high)
+
+──────────────────────────────────────────────────────────────────────
+  ALLOSTERIC SITES
+──────────────────────────────────────────────────────────────────────
+  A1 [HIGH  ] corr=1.00 residues=[360, 361, 362, 363]
+  A2 [HIGH  ] corr=0.99 residues=[355, 356, 357, 358]
+  A3 [HIGH  ] corr=0.99 residues=[387, 388, 389, 390]
+  A4 [HIGH  ] corr=0.99 residues=[350, 351, 352, 353]
 
 ──────────────────────────────────────────────────────────────────────
   PROTEIN INTERACTIONS (top 8)
@@ -67,10 +84,11 @@
   VALIDATION SUGGESTIONS
 ──────────────────────────────────────────────────────────────────────
   1. Alanine scanning mutagenesis of predicted active site residues (C94, C95, H157) to confirm functional importance
-  2. Co-immunoprecipitation with STAT3 (unknown interaction, predicted interface: [317, 1, 313])
-  3. Co-immunoprecipitation with STAT1 (unknown interaction, predicted interface: [317, 1, 313])
-  4. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+  2. Thermal shift assay or SPR binding assay against pocket P1 (vol=1680Å³, druggability=1.00)
+  3. Co-immunoprecipitation with STAT3 (unknown interaction, predicted interface: [317, 1, 313])
+  4. Co-immunoprecipitation with STAT1 (unknown interaction, predicted interface: [317, 1, 313])
+  5. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi
 ======================================================================

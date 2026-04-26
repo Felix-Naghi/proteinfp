@@ -4,7 +4,7 @@
   "protein_name": "Caspase-1",
   "organism": "Homo sapiens",
   "sequence_length": 404,
-  "generated_at": "2026-04-19 14:59:31",
+  "generated_at": "2026-04-26 09:09:49",
   "top_function": "Thiol protease involved in a variety of inflammatory processes by proteolytically cleaving other proteins, such as the precursors of the inflammatory cytokines interleukin-1 beta (IL1B) and interleuki",
   "is_enzyme": true,
   "ec_number": "3.4.21",
@@ -129,20 +129,8 @@
       "sources": [
         "domain_annotation"
       ],
-      "confidence": "MEDIUM",
+      "confidence": "HIGH",
       "top_evidence": "domain_annotation"
-    },
-    {
-      "go_id": "GO:0005576",
-      "go_name": "C:extracellular region",
-      "namespace": "MF",
-      "weighted_score": 3.0,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "MEDIUM",
-      "top_evidence": "experimental_homolog"
     },
     {
       "go_id": "GO:0046872",
@@ -154,7 +142,7 @@
         "structural_motif",
         "sequence_composition"
       ],
-      "confidence": "MEDIUM",
+      "confidence": "HIGH",
       "top_evidence": "sequence_composition"
     },
     {
@@ -166,7 +154,7 @@
       "sources": [
         "structural_motif"
       ],
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
     },
     {
@@ -178,7 +166,7 @@
       "sources": [
         "structural_motif"
       ],
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
     },
     {
@@ -186,6 +174,66 @@
       "go_name": "zinc ion binding",
       "namespace": "MF",
       "weighted_score": 1.6,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0005172",
+      "go_name": "vascular endothelial growth factor receptor binding",
+      "namespace": "MF",
+      "weighted_score": 1.1,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0003824",
+      "go_name": "catalytic activity",
+      "namespace": "MF",
+      "weighted_score": 1.1,
+      "n_sources": 1,
+      "sources": [
+        "active_site"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "active_site"
+    },
+    {
+      "go_id": "GO:0005488",
+      "go_name": "binding",
+      "namespace": "MF",
+      "weighted_score": 1.1,
+      "n_sources": 1,
+      "sources": [
+        "sequence_composition"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "sequence_composition"
+    },
+    {
+      "go_id": "GO:0005515",
+      "go_name": "protein binding",
+      "namespace": "MF",
+      "weighted_score": 1.08,
+      "n_sources": 1,
+      "sources": [
+        "ai_esm2"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "ai_esm2"
+    },
+    {
+      "go_id": "GO:0003700",
+      "go_name": "DNA-binding transcription factor activity",
+      "namespace": "MF",
+      "weighted_score": 0.9,
       "n_sources": 1,
       "sources": [
         "structural_motif"
@@ -327,7 +375,7 @@
       "sources": [
         "structural_motif"
       ],
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
     },
     {
@@ -339,7 +387,7 @@
       "sources": [
         "structural_motif"
       ],
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
     },
     {
@@ -351,7 +399,7 @@
       "sources": [
         "structural_motif"
       ],
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
     },
     {
@@ -482,6 +530,18 @@
       "go_name": "C:protease inhibitor complex",
       "namespace": "CC",
       "weighted_score": 5.1,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005576",
+      "go_name": "C:extracellular region",
+      "namespace": "CC",
+      "weighted_score": 3.0,
       "n_sources": 1,
       "sources": [
         "experimental_homolog"
@@ -1980,6 +2040,7 @@
     "pockets",
     "allosteric",
     "chem_env",
-    "foldseek"
+    "foldseek",
+    "md"
   ]
 }

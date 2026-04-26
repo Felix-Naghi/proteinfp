@@ -4,7 +4,7 @@
   "protein_name": "Aldo-keto reductase family 1 member A1",
   "organism": "Homo sapiens",
   "sequence_length": 325,
-  "generated_at": "2026-04-19 16:32:17",
+  "generated_at": "2026-04-26 09:09:45",
   "top_function": "zinc ion binding",
   "is_enzyme": true,
   "ec_number": "3.4.21",
@@ -46,7 +46,7 @@
         "structural_motif",
         "sequence_composition"
       ],
-      "confidence": "MEDIUM",
+      "confidence": "HIGH",
       "top_evidence": "sequence_composition"
     },
     {
@@ -58,7 +58,7 @@
       "sources": [
         "structural_motif"
       ],
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
     },
     {
@@ -70,7 +70,7 @@
       "sources": [
         "structural_motif"
       ],
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
     },
     {
@@ -82,7 +82,7 @@
       "sources": [
         "structural_motif"
       ],
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
     },
     {
@@ -94,7 +94,7 @@
       "sources": [
         "structural_motif"
       ],
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
     },
     {
@@ -106,7 +106,7 @@
       "sources": [
         "active_site"
       ],
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "top_evidence": "active_site"
     },
     {
@@ -118,7 +118,7 @@
       "sources": [
         "sequence_composition"
       ],
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "top_evidence": "sequence_composition"
     },
     {
@@ -130,7 +130,7 @@
       "sources": [
         "ai_esm2"
       ],
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "top_evidence": "ai_esm2"
     }
   ],
@@ -157,7 +157,7 @@
       "sources": [
         "structural_motif"
       ],
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
     },
     {
@@ -169,7 +169,7 @@
       "sources": [
         "structural_motif"
       ],
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
     },
     {
@@ -195,7 +195,7 @@
       "sources": [
         "structural_motif"
       ],
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
     },
     {
@@ -1694,6 +1694,7 @@
     "pockets",
     "allosteric",
     "chem_env",
-    "foldseek"
+    "foldseek",
+    "md"
   ]
 }

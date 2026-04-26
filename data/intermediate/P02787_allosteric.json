@@ -1,0 +1,94 @@
+{
+  "uniprot_id": "P02787",
+  "length": 698,
+  "n_contacts": 3587,
+  "enm_computed": true,
+  "allosteric_residues": [
+    {
+      "residue_number": 3,
+      "chain_id": "A",
+      "one_letter": "L",
+      "correlation_score": 0.3,
+      "min_dist_active": 17.6,
+      "sasa": 188.8,
+      "is_exposed": true,
+      "plddt": 43.34
+    },
+    {
+      "residue_number": 4,
+      "chain_id": "A",
+      "one_letter": "A",
+      "correlation_score": 0.305,
+      "min_dist_active": 15.0,
+      "sasa": 96.5,
+      "is_exposed": true,
+      "plddt": 44.78
+    },
+    {
+      "residue_number": 5,
+      "chain_id": "A",
+      "one_letter": "V",
+      "correlation_score": 0.308,
+      "min_dist_active": 12.9,
+      "sasa": 133.6,
+      "is_exposed": true,
+      "plddt": 46.22
+    },
+    {
+      "residue_number": 6,
+      "chain_id": "A",
+      "one_letter": "G",
+      "correlation_score": 0.312,
+      "min_dist_active": 11.1,
+      "sasa": 71.2,
+      "is_exposed": true,
+      "plddt": 40.78
+    }
+  ],
+  "allosteric_sites": [
+    {
+      "site_id": "A1",
+      "residue_numbers": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "residue_letters": [
+        "G",
+        "L",
+        "A",
+        "V"
+      ],
+      "size": 4,
+      "centre": [
+        24.18,
+        59.29,
+        14.17
+      ],
+      "mean_correlation": 0.306,
+      "min_dist_active": 14.0,
+      "mean_sasa": 122.5,
+      "mean_hydrophobicity": 2.35,
+      "net_charge": 0.0,
+      "coupled_active_residues": [
+        11
+      ],
+      "confidence": "LOW"
+    }
+  ],
+  "n_sites": 1,
+  "communication_pathways": [
+    [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  ]
+}

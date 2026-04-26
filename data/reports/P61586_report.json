@@ -4,7 +4,7 @@
   "protein_name": "Transforming protein RhoA",
   "organism": "Homo sapiens",
   "sequence_length": 193,
-  "generated_at": "2026-04-19 18:39:24",
+  "generated_at": "2026-04-26 09:09:52",
   "top_function": "Small GTPase which cycles between an active GTP-bound and an inactive GDP-bound state. Mainly associated with cytoskeleton organization, in active state binds to a variety of effector proteins to regu",
   "is_enzyme": true,
   "ec_number": "3.6.5",
@@ -183,16 +183,101 @@
       "top_evidence": "experimental_homolog"
     },
     {
-      "go_id": "GO:0005856",
-      "go_name": "C:cytoskeleton",
+      "go_id": "GO:0003925",
+      "go_name": "F:G protein activity",
       "namespace": "MF",
       "weighted_score": 3.0,
       "n_sources": 1,
       "sources": [
         "experimental_homolog"
       ],
-      "confidence": "MEDIUM",
+      "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0017022",
+      "go_name": "F:myosin binding",
+      "namespace": "MF",
+      "weighted_score": 3.0,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0046872",
+      "go_name": "metal ion binding",
+      "namespace": "MF",
+      "weighted_score": 3.0,
+      "n_sources": 2,
+      "sources": [
+        "structural_motif",
+        "sequence_composition"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "sequence_composition"
+    },
+    {
+      "go_id": "GO:0003677",
+      "go_name": "DNA binding",
+      "namespace": "MF",
+      "weighted_score": 1.7,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0008270",
+      "go_name": "zinc ion binding",
+      "namespace": "MF",
+      "weighted_score": 1.6,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0005524",
+      "go_name": "ATP binding",
+      "namespace": "MF",
+      "weighted_score": 1.6,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0016887",
+      "go_name": "ATPase activity",
+      "namespace": "MF",
+      "weighted_score": 1.5,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0051082",
+      "go_name": "unfolded protein binding",
+      "namespace": "MF",
+      "weighted_score": 1.5,
+      "n_sources": 1,
+      "sources": [
+        "structural_motif"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "structural_motif"
     }
   ],
   "go_terms_bp": [
@@ -246,6 +331,18 @@
       "top_evidence": "experimental_homolog"
     },
     {
+      "go_id": "GO:0030036",
+      "go_name": "P:actin cytoskeleton organization",
+      "namespace": "BP",
+      "weighted_score": 3.0,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
       "go_id": "GO:0006351",
       "go_name": "DNA-templated transcription",
       "namespace": "BP",
@@ -254,7 +351,7 @@
       "sources": [
         "structural_motif"
       ],
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
     },
     {
@@ -266,7 +363,7 @@
       "sources": [
         "structural_motif"
       ],
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
     },
     {
@@ -278,7 +375,7 @@
       "sources": [
         "structural_motif"
       ],
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
     },
     {
@@ -290,7 +387,7 @@
       "sources": [
         "structural_motif"
       ],
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
     },
     {
@@ -302,7 +399,7 @@
       "sources": [
         "structural_motif"
       ],
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
     },
     {
@@ -314,7 +411,7 @@
       "sources": [
         "structural_motif"
       ],
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
     },
     {
@@ -406,6 +503,42 @@
       "top_evidence": "experimental_homolog"
     },
     {
+      "go_id": "GO:0005856",
+      "go_name": "C:cytoskeleton",
+      "namespace": "CC",
+      "weighted_score": 3.0,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005768",
+      "go_name": "C:endosome",
+      "namespace": "CC",
+      "weighted_score": 3.0,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0098978",
+      "go_name": "C:glutamatergic synapse",
+      "namespace": "CC",
+      "weighted_score": 3.0,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
       "go_id": "GO:0043234",
       "go_name": "protein complex",
       "namespace": "CC",
@@ -414,7 +547,7 @@
       "sources": [
         "structural_motif"
       ],
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
     },
     {
@@ -426,7 +559,7 @@
       "sources": [
         "structural_motif"
       ],
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
     },
     {
@@ -1849,6 +1982,7 @@
     "pockets",
     "allosteric",
     "chem_env",
-    "foldseek"
+    "foldseek",
+    "md"
   ]
 }

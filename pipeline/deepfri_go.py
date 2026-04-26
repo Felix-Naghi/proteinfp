@@ -103,7 +103,7 @@ CC_TERMS = {
     "GO:0005887": "integral component of plasma membrane",
 }
 
-CONFIDENCE_THRESHOLD = 0.3
+CONFIDENCE_THRESHOLD = 0.15  # lowered from 0.3 — lets lightly-supported BP terms through
 
 # Reference protein GO annotations for embedding-based transfer.
 # Used by _embedding_based_go_inference when reference ESM-2 embeddings exist.
@@ -370,16 +370,22 @@ def _add_homology_evidence(
     go_names = homology_result.get("all_go_names", [])
     n_exp    = homology_result.get("n_experimental_hits", 0)
 
-    base_score = 0.7 if n_exp > 0 else 0.5
+# Additive base: each call contributes 0.35× of base_score.
+    # 1 experimental homolog → +0.175 (clears threshold=0.15).
+    # 3 homologs             → +0.525 (MEDIUM confidence).
+    base_score = 0.50 if n_exp > 0 else 0.35
 
     for go_id, go_name in zip(go_terms, go_names):
+        ns = _go_namespace(go_id, go_name)   # correctly resolves "P:..." → BP
         if go_id not in go_evidence:
             go_evidence[go_id] = {
                 "score": 0.0, "name": go_name,
-                "evidence": [], "namespace": _go_namespace(go_id, go_name)
+                "evidence": [], "namespace": ns,
             }
-        go_evidence[go_id]["score"] = max(
-            go_evidence[go_id]["score"], base_score
+        # Always overwrite namespace — first insertion may have been pre-strip
+        go_evidence[go_id]["namespace"] = ns
+        go_evidence[go_id]["score"] = min(
+            1.0, go_evidence[go_id]["score"] + base_score * 0.35
         )
         src = "experimental_homolog" if n_exp > 0 else "sequence_homolog"
         if src not in go_evidence[go_id]["evidence"]:
@@ -392,13 +398,15 @@ def _add_homology_evidence(
         ):
             if not go_id:
                 continue
+            ns = _go_namespace(go_id, go_name)
             if go_id not in go_evidence:
                 go_evidence[go_id] = {
                     "score": 0.0, "name": go_name,
-                    "evidence": [], "namespace": _go_namespace(go_id, go_name)
+                    "evidence": [], "namespace": ns,
                 }
-            go_evidence[go_id]["score"] = max(
-                go_evidence[go_id]["score"], 0.75
+            go_evidence[go_id]["namespace"] = ns
+            go_evidence[go_id]["score"] = min(
+                1.0, go_evidence[go_id]["score"] + 0.75 * 0.35
             )
             if "domain_annotation" not in go_evidence[go_id]["evidence"]:
                 go_evidence[go_id]["evidence"].append("domain_annotation")
@@ -760,7 +768,7 @@ def _add_evidence(
             "score": 0.0, "name": go_name,
             "evidence": [], "namespace": namespace
         }
-    go_evidence[go_id]["score"] = max(go_evidence[go_id]["score"], score)
+    go_evidence[go_id]["score"] = min(1.0, go_evidence[go_id]["score"] + score * 0.35)  # additive
     if source not in go_evidence[go_id]["evidence"]:
         go_evidence[go_id]["evidence"].append(source)
 
@@ -768,6 +776,17 @@ def _add_evidence(
 def _go_namespace(go_id: str, go_name: str) -> str:
     """Infer GO namespace from term name or ID."""
     name_lower = go_name.lower()
+    # Trust explicit namespace prefixes from InterPro/UniProt ("P:", "F:", "C:")
+    # and return immediately — keyword matching below can mis-classify these.
+    if len(name_lower) > 2 and name_lower[1] == ":" and name_lower[0] in "pfc":
+        prefix = name_lower[0]
+        if prefix == "p":
+            return "BP"
+        if prefix == "f":
+            return "MF"
+        if prefix == "c":
+            return "CC"
+        name_lower = name_lower[2:].strip()  # strip for keyword fallback
     # BP keywords checked first — prevents signaling/phosphorylation landing in MF
     _BP_WORDS = [
         "process", "regulation", "response", "signaling", "pathway",

@@ -1,0 +1,83 @@
+{
+  "uniprot_id": "P11021",
+  "sequence_length": 654,
+  "is_enzyme": false,
+  "enzyme_confidence": 0.85,
+  "top_prediction": {
+    "ec_class": "3",
+    "ec_name": "Hydrolase",
+    "ec_full": "EC 3.6.1",
+    "score": 0.85,
+    "evidence": [
+      "go_prediction",
+      "structural_motif",
+      "sequence_composition",
+      "homology_inference"
+    ]
+  },
+  "all_predictions": [
+    {
+      "ec_class": "3",
+      "ec_name": "Hydrolase",
+      "ec_full": "EC 3.6.1",
+      "score": 0.85,
+      "evidence": [
+        "go_prediction",
+        "structural_motif",
+        "sequence_composition",
+        "homology_inference"
+      ]
+    },
+    {
+      "ec_class": "5",
+      "ec_name": "Isomerase",
+      "ec_full": "EC 5.x.x.x",
+      "score": 0.7,
+      "evidence": [
+        "sequence_composition",
+        "ml_ensemble"
+      ]
+    },
+    {
+      "ec_class": "1",
+      "ec_name": "Oxidoreductase",
+      "ec_full": "EC 1.x.x.x",
+      "score": 0.65,
+      "evidence": [
+        "structural_motif",
+        "sequence_composition"
+      ]
+    },
+    {
+      "ec_class": "2",
+      "ec_name": "Transferase",
+      "ec_full": "EC 2.x.x.x",
+      "score": 0.24,
+      "evidence": [
+        "sequence_composition"
+      ]
+    },
+    {
+      "ec_class": "4",
+      "ec_name": "Lyase",
+      "ec_full": "EC 4.x.x.x",
+      "score": 0.24,
+      "evidence": [
+        "sequence_composition"
+      ]
+    },
+    {
+      "ec_class": "6",
+      "ec_name": "Ligase",
+      "ec_full": "EC 6.x.x.x",
+      "score": 0.24,
+      "evidence": [
+        "sequence_composition"
+      ]
+    }
+  ],
+  "specific_ec": "3.6.1",
+  "specific_ec_name": "ATPase",
+  "non_enzyme_score": 1.2,
+  "ml_enzyme_prob": 0.874
+}

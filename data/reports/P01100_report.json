@@ -4,7 +4,7 @@
   "protein_name": "Protein c-Fos",
   "organism": "Homo sapiens",
   "sequence_length": 380,
-  "generated_at": "2026-04-19 16:02:52",
+  "generated_at": "2026-04-26 09:09:33",
   "top_function": "DNA binding",
   "is_enzyme": false,
   "ec_number": "",
@@ -48,7 +48,7 @@
         "structural_motif",
         "sequence_composition"
       ],
-      "confidence": "MEDIUM",
+      "confidence": "HIGH",
       "top_evidence": "sequence_composition"
     },
     {
@@ -60,7 +60,7 @@
       "sources": [
         "structural_motif"
       ],
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
     },
     {
@@ -72,7 +72,7 @@
       "sources": [
         "ai_esm2"
       ],
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "top_evidence": "ai_esm2"
     }
   ],
@@ -114,7 +114,7 @@
         "structural_motif",
         "neural_classifier"
       ],
-      "confidence": "MEDIUM",
+      "confidence": "HIGH",
       "top_evidence": "neural_classifier"
     },
     {
@@ -126,7 +126,7 @@
       "sources": [
         "structural_motif"
       ],
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
     },
     {
@@ -138,7 +138,7 @@
       "sources": [
         "structural_motif"
       ],
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
     },
     {
@@ -178,7 +178,7 @@
       "sources": [
         "structural_motif"
       ],
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
     },
     {
@@ -1639,6 +1639,7 @@
     "pockets",
     "allosteric",
     "chem_env",
-    "foldseek"
+    "foldseek",
+    "md"
   ]
 }

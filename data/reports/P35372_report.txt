@@ -1,0 +1,94 @@
+======================================================================
+  ProteinFP Prediction Report
+  Generated: 2026-04-26 15:11:15
+======================================================================
+
+  Protein    : Mu-type opioid receptor
+  Gene       : OPRM1
+  UniProt    : P35372
+  Organism   : Homo sapiens
+  Length     : 400 aa
+  Mean pLDDT : 76.6
+  Confidence : VERY HIGH
+
+──────────────────────────────────────────────────────────────────────
+  FUNCTIONAL PREDICTION
+──────────────────────────────────────────────────────────────────────
+  Top function     : Receptor for endogenous opioids such as beta-endorphin and endomorphin (PubMed:10529478, PubMed:12589820, PubMed:7891175, PubMed:7905839, PubMed:7957926, PubMed:9689128). Receptor for natural and synt
+  Enzyme           : no (non-enzyme)
+  Location         : membrane
+  Evidence sources : 12
+
+──────────────────────────────────────────────────────────────────────
+  GENE ONTOLOGY PREDICTIONS
+──────────────────────────────────────────────────────────────────────
+
+  Molecular Function:
+    [HIGH  ] GO:0004979 beta-endorphin receptor activity (score=8.2, 2 sources)
+    [HIGH  ] GO:0004930 G protein-coupled receptor activity (score=8.2, 2 sources)
+    [HIGH  ] GO:0004985 G protein-coupled opioid receptor activity (score=8.2, 2 sources)
+    [HIGH  ] GO:0042923 F:neuropeptide binding (score=3.5, 1 sources)
+    [HIGH  ] GO:0001965 F:G-protein alpha-subunit binding (score=3.5, 1 sources)
+
+  Biological Process:
+    [HIGH  ] GO:0007186 G protein-coupled receptor signaling pathway (score=11.3, 1 sources)
+    [HIGH  ] GO:0007197 P:adenylate cyclase-inhibiting G protein-coup (score=3.5, 1 sources)
+    [HIGH  ] GO:0007193 P:adenylate cyclase-inhibiting G protein-coup (score=3.5, 1 sources)
+    [HIGH  ] GO:0038003 P:G protein-coupled opioid receptor signaling (score=3.5, 1 sources)
+    [HIGH  ] GO:0051481 P:negative regulation of cytosolic calcium io (score=3.5, 1 sources)
+
+  Cellular Component:
+    [HIGH  ] GO:0016020 membrane (score=21.0, 2 sources)
+    [HIGH  ] GO:0005886 C:plasma membrane (score=3.5, 1 sources)
+    [HIGH  ] GO:0030424 C:axon (score=3.5, 1 sources)
+
+──────────────────────────────────────────────────────────────────────
+  ACTIVE SITES
+──────────────────────────────────────────────────────────────────────
+  C323 [HIGH  ] motifs: cysteine_protease_dyad
+  C172 [HIGH  ] motifs: cysteine_protease_dyad
+  H173 [HIGH  ] motifs: cysteine_protease_dyad
+  H321 [HIGH  ] motifs: cysteine_protease_dyad
+  H36 [HIGH  ] motifs: serine_protease_triad, acid_base_pair
+
+──────────────────────────────────────────────────────────────────────
+  BINDING POCKETS
+──────────────────────────────────────────────────────────────────────
+  P1: vol=1440Å³  druggability=0.99 (high)
+  P2: vol=500Å³  druggability=0.99 (high)
+  P3: vol=800Å³  druggability=0.98 (high)
+  P4: vol=1200Å³  druggability=0.98 (high)
+  P5: vol=1100Å³  druggability=0.97 (high)
+
+──────────────────────────────────────────────────────────────────────
+  ALLOSTERIC SITES
+──────────────────────────────────────────────────────────────────────
+  A1 [HIGH  ] corr=0.97 residues=[26, 27, 28, 30]
+  A2 [HIGH  ] corr=0.95 residues=[7, 8, 9]
+  A3 [HIGH  ] corr=0.95 residues=[29, 31]
+  A4 [HIGH  ] corr=0.92 residues=[4, 5, 6]
+
+──────────────────────────────────────────────────────────────────────
+  PROTEIN INTERACTIONS (top 8)
+──────────────────────────────────────────────────────────────────────
+  PENK            STRING=999  type=unknown
+  POMC            STRING=999  type=unknown
+  GNAI1           STRING=992  type=unknown
+  PDYN            STRING=987  type=unknown
+  ARRB2           STRING=986  type=unknown
+  ARRB1           STRING=983  type=unknown
+  OPRD1           STRING=967  type=unknown
+  GRK2            STRING=951  type=unknown
+
+──────────────────────────────────────────────────────────────────────
+  VALIDATION SUGGESTIONS
+──────────────────────────────────────────────────────────────────────
+  1. Alanine scanning mutagenesis of predicted active site residues (C323, C172, H173) to confirm functional importance
+  2. Thermal shift assay or SPR binding assay against pocket P1 (vol=1440Å³, druggability=0.99)
+  3. Co-immunoprecipitation with PENK (unknown interaction, predicted interface: [1, 31, 55])
+  4. Co-immunoprecipitation with POMC (unknown interaction, predicted interface: [1, 31, 55])
+  5. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+
+──────────────────────────────────────────────────────────────────────
+  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi
+======================================================================

@@ -1,0 +1,94 @@
+======================================================================
+  ProteinFP Prediction Report
+  Generated: 2026-04-26 15:11:16
+======================================================================
+
+  Protein    : Cannabinoid receptor 1
+  Gene       : CNR1
+  UniProt    : P21554
+  Organism   : Homo sapiens
+  Length     : 472 aa
+  Mean pLDDT : 71.7
+  Confidence : VERY HIGH
+
+──────────────────────────────────────────────────────────────────────
+  FUNCTIONAL PREDICTION
+──────────────────────────────────────────────────────────────────────
+  Top function     : G-protein coupled receptor for endogenous cannabinoids (eCBs), including N-arachidonoylethanolamide (also called anandamide or AEA) and 2-arachidonoylglycerol (2-AG), as well as phytocannabinoids, suc
+  Enzyme           : no (non-enzyme)
+  Location         : membrane
+  Evidence sources : 12
+
+──────────────────────────────────────────────────────────────────────
+  GENE ONTOLOGY PREDICTIONS
+──────────────────────────────────────────────────────────────────────
+
+  Molecular Function:
+    [HIGH  ] GO:0004949 cannabinoid receptor activity (score=12.8, 2 sources)
+    [HIGH  ] GO:0004930 G protein-coupled receptor activity (score=8.2, 2 sources)
+    [HIGH  ] GO:0042802 F:identical protein binding (score=3.5, 1 sources)
+    [HIGH  ] GO:1904483 F:synthetic cannabinoid binding (score=3.5, 1 sources)
+    [MEDIUM] GO:0046872 metal ion binding (score=2.0, 2 sources)
+
+  Biological Process:
+    [HIGH  ] GO:0007186 G protein-coupled receptor signaling pathway (score=17.4, 2 sources)
+    [HIGH  ] GO:0007189 P:adenylate cyclase-activating G protein-coup (score=3.5, 1 sources)
+    [HIGH  ] GO:0007188 P:adenylate cyclase-modulating G protein-coup (score=3.5, 1 sources)
+    [HIGH  ] GO:0007413 P:axonal fasciculation (score=3.5, 1 sources)
+    [HIGH  ] GO:0038171 P:cannabinoid signaling pathway (score=3.5, 1 sources)
+
+  Cellular Component:
+    [HIGH  ] GO:0016020 membrane (score=21.0, 2 sources)
+    [HIGH  ] GO:0005737 C:cytoplasm (score=4.7, 2 sources)
+    [HIGH  ] GO:0005741 C:mitochondrial outer membrane (score=3.5, 1 sources)
+
+──────────────────────────────────────────────────────────────────────
+  ACTIVE SITES
+──────────────────────────────────────────────────────────────────────
+  H178 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  C257 [HIGH  ] motifs: cysteine_protease_dyad, zinc_binding_cluster
+  H154 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H181 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H270 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+
+──────────────────────────────────────────────────────────────────────
+  BINDING POCKETS
+──────────────────────────────────────────────────────────────────────
+  P1: vol=1680Å³  druggability=0.98 (high)
+  P2: vol=880Å³  druggability=0.98 (high)
+  P3: vol=1060Å³  druggability=0.97 (high)
+  P4: vol=1080Å³  druggability=0.97 (high)
+  P5: vol=1200Å³  druggability=0.97 (high)
+
+──────────────────────────────────────────────────────────────────────
+  ALLOSTERIC SITES
+──────────────────────────────────────────────────────────────────────
+  A1 [HIGH  ] corr=1.00 residues=[24, 25, 26, 27]
+  A2 [HIGH  ] corr=1.00 residues=[21, 22, 23]
+  A3 [HIGH  ] corr=1.00 residues=[29, 30, 31]
+  A4 [HIGH  ] corr=0.99 residues=[16, 17, 18, 19]
+
+──────────────────────────────────────────────────────────────────────
+  PROTEIN INTERACTIONS (top 8)
+──────────────────────────────────────────────────────────────────────
+  GNAI1           STRING=995  type=unknown
+  GNAI2           STRING=993  type=unknown
+  DRD2            STRING=990  type=unknown
+  GPR55           STRING=983  type=unknown
+  CNR2            STRING=981  type=unknown
+  FAAH            STRING=972  type=unknown
+  ADORA2A         STRING=956  type=unknown
+  GNB1            STRING=943  type=unknown
+
+──────────────────────────────────────────────────────────────────────
+  VALIDATION SUGGESTIONS
+──────────────────────────────────────────────────────────────────────
+  1. Alanine scanning mutagenesis of predicted active site residues (H178, C257, H154) to confirm functional importance
+  2. Thermal shift assay or SPR binding assay against pocket P1 (vol=1680Å³, druggability=0.98)
+  3. Co-immunoprecipitation with GNAI1 (unknown interaction, predicted interface: [472, 54, 58])
+  4. Co-immunoprecipitation with GNAI2 (unknown interaction, predicted interface: [472, 54, 58])
+  5. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+
+──────────────────────────────────────────────────────────────────────
+  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi
+======================================================================

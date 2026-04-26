@@ -1,0 +1,95 @@
+======================================================================
+  ProteinFP Prediction Report
+  Generated: 2026-04-26 15:11:20
+======================================================================
+
+  Protein    : Fibrinogen gamma chain
+  Gene       : FGG
+  UniProt    : P02679
+  Organism   : Homo sapiens
+  Length     : 453 aa
+  Mean pLDDT : 85.5
+  Confidence : VERY HIGH
+
+──────────────────────────────────────────────────────────────────────
+  FUNCTIONAL PREDICTION
+──────────────────────────────────────────────────────────────────────
+  Top function     : Together with fibrinogen alpha (FGA) and fibrinogen beta (FGB), polymerizes to form an insoluble fibrin matrix. Has a major function in hemostasis as one of the primary components of blood clots. In a
+  Enzyme           : yes — 3.4.21
+  Location         : integral component of plasma membrane
+  Evidence sources : 12
+
+──────────────────────────────────────────────────────────────────────
+  GENE ONTOLOGY PREDICTIONS
+──────────────────────────────────────────────────────────────────────
+
+  Molecular Function:
+    [HIGH  ] GO:0051258 protein polymerization (score=8.2, 2 sources)
+    [HIGH  ] GO:0046872 F:metal ion binding (score=7.7, 3 sources)
+    [HIGH  ] GO:0030168 platelet activation (score=3.8, 1 sources)
+    [HIGH  ] GO:0005198 F:structural molecule activity (score=3.5, 1 sources)
+    [HIGH  ] GO:0050839 F:cell adhesion molecule binding (score=3.5, 1 sources)
+
+  Biological Process:
+    [HIGH  ] GO:0005102 signaling receptor binding (score=8.2, 2 sources)
+    [HIGH  ] GO:0007596 blood coagulation (score=3.8, 1 sources)
+    [HIGH  ] GO:0007160 P:cell-matrix adhesion (score=3.5, 1 sources)
+    [HIGH  ] GO:0072378 P:blood coagulation, fibrin clot formation (score=3.5, 1 sources)
+    [HIGH  ] GO:0042730 P:fibrinolysis (score=3.5, 1 sources)
+
+  Cellular Component:
+    [HIGH  ] GO:0005615 C:extracellular space (score=9.6, 3 sources)
+    [HIGH  ] GO:0005577 fibrinogen complex (score=8.2, 2 sources)
+    [HIGH  ] GO:0072562 C:blood microparticle (score=4.8, 2 sources)
+
+──────────────────────────────────────────────────────────────────────
+  ACTIVE SITES
+──────────────────────────────────────────────────────────────────────
+  H333 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H366 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H369 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H172 [HIGH  ] motifs: serine_protease_triad, acid_base_pair
+  H260 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+
+──────────────────────────────────────────────────────────────────────
+  BINDING POCKETS
+──────────────────────────────────────────────────────────────────────
+  P1: vol=780Å³  druggability=1.00 (high)
+  P2: vol=1320Å³  druggability=0.99 (high)
+  P3: vol=1580Å³  druggability=0.98 (high)
+  P4: vol=1440Å³  druggability=0.98 (high)
+  P5: vol=1560Å³  druggability=0.98 (high)
+
+──────────────────────────────────────────────────────────────────────
+  ALLOSTERIC SITES
+──────────────────────────────────────────────────────────────────────
+  A1 [HIGH  ] corr=0.90 residues=[39, 40, 41]
+  A2 [HIGH  ] corr=0.90 residues=[90, 91, 92, 93]
+  A3 [HIGH  ] corr=0.86 residues=[95, 96, 97, 98]
+  A4 [HIGH  ] corr=0.83 residues=[420, 422]
+
+──────────────────────────────────────────────────────────────────────
+  PROTEIN INTERACTIONS (top 8)
+──────────────────────────────────────────────────────────────────────
+  FGB             STRING=999  type=unknown
+  FGA             STRING=999  type=unknown
+  F2              STRING=999  type=unknown
+  ITGB3           STRING=980  type=unknown
+  AHSG            STRING=970  type=unknown
+  FN1             STRING=963  type=unknown
+  SERPIND1        STRING=960  type=unknown
+  ALB             STRING=945  type=unknown
+
+──────────────────────────────────────────────────────────────────────
+  VALIDATION SUGGESTIONS
+──────────────────────────────────────────────────────────────────────
+  1. Alanine scanning mutagenesis of predicted active site residues (H333, H366, H369) to confirm functional importance
+  2. Thermal shift assay or SPR binding assay against pocket P1 (vol=780Å³, druggability=1.00)
+  3. Co-immunoprecipitation with FGB (unknown interaction, predicted interface: [453, 1, 3])
+  4. Co-immunoprecipitation with FGA (unknown interaction, predicted interface: [453, 1, 3])
+  5. Enzyme activity assay consistent with EC 3.4.21 using appropriate substrate panel
+  6. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+
+──────────────────────────────────────────────────────────────────────
+  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi
+======================================================================

@@ -195,45 +195,174 @@ class ECResult:
 
 # ── ML enzyme classifier ───────────────────────────────────────────────────────
 
+# ── ML Ensemble v5 — singleton cache ─────────────────────────────────────────
+_ML_ENSEMBLE_CACHE: dict = {}
+_ML_CALIBRATOR_CACHE: dict = {}
+
+_ML_MODEL_DIR   = Path("models/ec_ensemble_v5")
+_ML_CACHE_DIR   = Path("data/training_cache_v5")
+_ML_ESM2_CACHE: dict | None = None   # lazy-loaded
+
+
 def _load_enzyme_classifier():
-    """Load the trained enzyme classifier. Returns (clf, available_bool)."""
-    try:
-        model_path = Path(__file__).parent.parent / "models" / "enzyme_classifier.pkl"
-        if not model_path.exists():
-            return None, False
-        with open(model_path, "rb") as f:
-            package = pickle.load(f)
-        return package["classifier"], True
-    except Exception as e:
-        log.debug(f"  Enzyme classifier load failed: {e}")
-        return None, False
-
-
-def _get_ml_enzyme_prob(uniprot_id: str) -> float:
     """
-    Get ML-based enzyme probability from ESM-2 embedding.
-    Returns probability 0-1, or -1 if classifier/embedding unavailable.
+    Load ECClassifierEnsemble v5 + calibrator.
+    Returns (ensemble, available_bool).
+    Falls back to old binary classifier if v5 not found.
+    """
+    key = str(_ML_MODEL_DIR.resolve())
+    if key in _ML_ENSEMBLE_CACHE:
+        return _ML_ENSEMBLE_CACHE[key], True
+
+    try:
+        from pipeline.ml_ec_classifier import ECClassifierEnsemble
+        clf = ECClassifierEnsemble.load(_ML_MODEL_DIR)
+        _ML_ENSEMBLE_CACHE[key] = clf
+
+        # Load calibrator
+        cal_path = _ML_MODEL_DIR / "reject_option.pkl"
+        if cal_path.exists():
+            with open(cal_path, "rb") as f:
+                cal_pkg = pickle.load(f)
+            _ML_CALIBRATOR_CACHE[key] = cal_pkg
+            log.info(f"  ML ensemble v5 + calibrator loaded from {_ML_MODEL_DIR}/")
+        else:
+            _ML_CALIBRATOR_CACHE[key] = None
+            log.info(f"  ML ensemble v5 loaded from {_ML_MODEL_DIR}/ (no calibrator)")
+
+        return clf, True
+
+    except Exception as e:
+        log.warning(f"  ML ensemble v5 load failed: {e}")
+
+    # Fallback: old binary classifier
+    try:
+        old_path = Path(__file__).parent.parent / "models" / "enzyme_classifier.pkl"
+        if old_path.exists():
+            with open(old_path, "rb") as f:
+                package = pickle.load(f)
+            _ML_ENSEMBLE_CACHE[key] = package["classifier"]
+            _ML_CALIBRATOR_CACHE[key] = None
+            log.info("  Loaded legacy enzyme_classifier.pkl (fallback)")
+            return package["classifier"], True
+    except Exception as e2:
+        log.debug(f"  Legacy classifier also failed: {e2}")
+
+    _ML_ENSEMBLE_CACHE[key] = None
+    return None, False
+
+
+def _load_esm2_cache() -> dict:
+    """Lazy-load the ESM-2 embedding cache (shared across all predictions)."""
+    global _ML_ESM2_CACHE
+    if _ML_ESM2_CACHE is not None:
+        return _ML_ESM2_CACHE
+    cache_path = _ML_CACHE_DIR / "esm2_cache.json"
+    if cache_path.exists():
+        try:
+            _ML_ESM2_CACHE = json.loads(cache_path.read_text())
+            log.debug(f"  ESM-2 cache loaded: {len(_ML_ESM2_CACHE)} embeddings")
+        except Exception:
+            _ML_ESM2_CACHE = {}
+    else:
+        _ML_ESM2_CACHE = {}
+    return _ML_ESM2_CACHE
+
+
+def _get_ml_enzyme_prob(
+    uniprot_id:  str,
+    sequence:    str = "",
+    esm2_result: dict | None = None,
+) -> tuple[float, str, float, str]:
+    """
+    Run ECClassifierEnsemble v5 on a protein.
+
+    Returns:
+        (enzyme_prob, top_ec_class, calib_conf, verdict)
+        enzyme_prob  : 0-1  probability of being an enzyme
+        top_ec_class : "1"-"7" or "non-enzyme"
+        calib_conf   : calibrated confidence (0-1), -1 if no calibrator
+        verdict      : "confident" | "uncertain" | "legacy" | "unavailable"
     """
     clf, available = _load_enzyme_classifier()
     if not available:
-        return -1.0
+        return -1.0, "", -1.0, "unavailable"
 
+    # ── Check if this is the new ensemble or old binary clf ──────────────────
+    is_ensemble = hasattr(clf, "_predict_proba_raw")
+
+    if not is_ensemble:
+        # Old binary classifier path (fallback)
+        try:
+            esm2_path = Path(cfg.paths["intermediate"]) / f"{uniprot_id}_esm2.json"
+            if not esm2_path.exists():
+                return -1.0, "", -1.0, "unavailable"
+            esm2_data = json.loads(esm2_path.read_text())
+            emb = np.array(esm2_data.get("protein_embedding", []), dtype=np.float32)
+            if len(emb) == 0:
+                return -1.0, "", -1.0, "unavailable"
+            prob = float(clf.predict_proba(emb.reshape(1, -1))[0][1])
+            return prob, "", -1.0, "legacy"
+        except Exception as e:
+            log.debug(f"  Legacy ML failed: {e}")
+            return -1.0, "", -1.0, "unavailable"
+
+    # ── New ensemble path ────────────────────────────────────────────────────
     try:
-        esm2_path = Path(cfg.paths["intermediate"]) / f"{uniprot_id}_esm2.json"
-        if not esm2_path.exists():
-            return -1.0
+        from pipeline.ml_ec_features import build_feature_vector
 
-        esm2_data = json.loads(esm2_path.read_text())
-        emb = np.array(esm2_data.get("protein_embedding", []), dtype=np.float32)
-        if len(emb) == 0:
-            return -1.0
+        # Get ESM-2 embedding: priority = passed esm2_result > cache > file
+        emb = None
+        if esm2_result:
+            emb = esm2_result.get("protein_embedding")
+        if emb is None:
+            cache = _load_esm2_cache()
+            emb = cache.get(uniprot_id)
+        if emb is None:
+            inter = Path(cfg.paths["intermediate"])
+            esm2_path = inter / f"{uniprot_id}_esm2.json"
+            if esm2_path.exists():
+                data = json.loads(esm2_path.read_text())
+                emb = data.get("protein_embedding")
+        # If still missing: build feature vector with zero embedding (degrades gracefully)
+        if emb is None:
+            log.debug(f"  {uniprot_id}: no ESM-2 embedding, using zeros")
+            emb = [0.0] * 1280
 
-        prob = float(clf.predict_proba(emb.reshape(1, -1))[0][1])
-        return prob
+        feat = build_feature_vector(
+            sequence    = sequence,
+            esm2_result = {"protein_embedding": emb, "contact_map": []},
+        )
+        X_pp  = clf.preprocessor.transform(feat.reshape(1, -1))
+        proba = clf._predict_proba_raw(X_pp)[0]   # shape (8,)
+
+        CLASS_NAMES = ["non-enzyme", "1", "2", "3", "4", "5", "6", "7"]
+        enzyme_prob  = float(proba[1:].sum())
+        top_idx      = int(proba.argmax())
+        top_ec_class = CLASS_NAMES[top_idx]
+        top_raw_conf = float(proba[top_idx])
+
+        # Apply calibrator if available
+        key       = str(_ML_MODEL_DIR.resolve())
+        cal_pkg   = _ML_CALIBRATOR_CACHE.get(key)
+        calib_conf = -1.0
+        verdict    = "no_calibrator"
+        if cal_pkg and cal_pkg.get("calibrator") is not None:
+            calib_conf = float(
+                cal_pkg["calibrator"].predict(np.array([top_raw_conf]))[0]
+            )
+            threshold  = cal_pkg.get("threshold", 0.5)
+            verdict    = "confident" if calib_conf >= threshold else "uncertain"
+
+        log.debug(
+            f"  {uniprot_id}: enzyme_p={enzyme_prob:.3f} "
+            f"top={top_ec_class} calib={calib_conf:.3f} verdict={verdict}"
+        )
+        return enzyme_prob, top_ec_class, calib_conf, verdict
 
     except Exception as e:
-        log.debug(f"  ML enzyme prediction failed: {e}")
-        return -1.0
+        log.warning(f"  ML ensemble prediction failed for {uniprot_id}: {e}")
+        return -1.0, "", -1.0, "unavailable"
 
 
 # ── Main function ──────────────────────────────────────────────────────────────
@@ -244,6 +373,7 @@ def predict_ec_number(
     active_result:   Optional[dict] = None,
     go_result:       Optional[dict] = None,
     homology_result: Optional[dict] = None,
+    esm2_result:     Optional[dict] = None,   # NEW: pass pre-computed embedding
 ) -> ECResult:
     """
     Predict EC number class for a protein.
@@ -254,14 +384,17 @@ def predict_ec_number(
         active_result:   Dict from Module 03 JSON
         go_result:       Dict from Module 09 JSON
         homology_result: Dict from Module 07 JSON
+        esm2_result:     Dict from ESM-2 module (optional, speeds up prediction)
 
     Returns:
         ECResult with enzyme classification and EC predictions.
     """
     log.info(f"── Module 10: EC number prediction for {uniprot_id} ──")
 
-    # ── ML enzyme classification (most reliable signal) ───────────────────────
-    ml_enzyme_prob = _get_ml_enzyme_prob(uniprot_id)
+    # ── ML ensemble classification (most reliable signal) ────────────────────
+    ml_enzyme_prob, ml_ec_class, ml_calib_conf, ml_verdict = _get_ml_enzyme_prob(
+        uniprot_id, sequence, esm2_result
+    )
     if ml_enzyme_prob >= 0:
         # Use the optimal threshold found during training
         try:
@@ -310,50 +443,98 @@ def predict_ec_number(
     if homology_result:
         _add_homology_ec_evidence(ec_scores, homology_result)
 
-    # ── Determine enzyme vs non-enzyme ────────────────────────────────────────
+    # ── Compute enzyme_conf from GO/motif/homology scores ─────────────────────
     max_ec_score = max(v["score"] for v in ec_scores.values())
     enzyme_conf  = float(max_ec_score)
 
-    # Rule-based non-enzyme signals (fallback when ML unavailable)
+    # ── Rule-based non-enzyme signals — MUST run before ML decision ───────────
+    # These signals override an overconfident ML prediction via non_enzyme_score.
     if go_result:
         all_go = (go_result.get("mf_predictions", []) +
                   go_result.get("bp_predictions", []))
+        go_ids = {p.get("go_id", "") for p in all_go}
         for pred in all_go:
             go_name = pred.get("go_name", "").lower()
             go_id   = pred.get("go_id", "")
+            # Transcription factor activity
             if "dna-binding transcription factor activity" in go_name:
                 non_enzyme_score += 0.4
             elif go_id == "GO:0003700":
                 non_enzyme_score += 0.1
-            # Haem binding without enzymatic context = oxygen carrier
-            if go_id == "GO:0020037" and "GO:0016491" not in {
-                p.get("go_id") for p in all_go
-            }:
+            # Nuclear receptor (not a catalytic enzyme)
+            if go_id == "GO:0004879":
                 non_enzyme_score += 0.4
-            # Unfolded protein binding + protein folding = chaperone
+            # Haem binding without oxidoreductase = oxygen carrier not enzyme
+            if go_id == "GO:0020037" and "GO:0016491" not in go_ids:
+                non_enzyme_score += 0.4
+            # Oxygen carrier activity (HBB, HBA1, MB)
+            if go_id == "GO:0005344":
+                non_enzyme_score += 0.5
+            # Oxygen transport
+            if go_id == "GO:0015671":
+                non_enzyme_score += 0.4
+            # Chaperone: unfolded protein binding + protein folding BP
             if go_id == "GO:0051082":
                 bp_ids = {p.get("go_id") for p in go_result.get("bp_predictions", [])}
                 if "GO:0006457" in bp_ids:
                     non_enzyme_score += 0.4
+            # Structural molecule activity (scaffolds, not enzymes)
+            if go_id == "GO:0005198":
+                non_enzyme_score += 0.3
+        if non_enzyme_score > 0:
+            log.info(f"  GO non-enzyme score: {non_enzyme_score:.2f}")
 
-    # ── Final enzyme decision ─────────────────────────────────────────────────
-    if ml_enzyme_prob >= 0.5:
-        # ML classifier confident it's an enzyme
-        is_enzyme = True
-        log.info(f"  Decision: enzyme (ML prob={ml_enzyme_prob:.3f})")
-    elif ml_enzyme_prob >= 0 and ml_enzyme_prob <= 0.25:
-        # ML classifier confident it's not an enzyme
+    # ── Final enzyme decision ───────────────────────────────────────────────────────────────────────
+    # GO non_enzyme_score >= 0.5 ALWAYS overrides ML regardless of confidence.
+    # UniProt curated experimental GO annotations beat any ML prediction.
+    if non_enzyme_score >= 0.5:
         is_enzyme = False
-        log.info(f"  Decision: non-enzyme (ML prob={ml_enzyme_prob:.3f})")
-    elif non_enzyme_score >= 0.35:
-        # Rule-based non-enzyme signal
-        is_enzyme = False
-        log.info(f"  Decision: non-enzyme (rule-based, score={non_enzyme_score:.2f})")
+        log.info(f"  Decision: non-enzyme (GO override, non_enz={non_enzyme_score:.2f})")
+
+    elif ml_verdict == "confident":
+        is_enzyme = (ml_ec_class != "non-enzyme") and (ml_enzyme_prob >= 0.5)
+        log.info(f"  Decision: {'enzyme' if is_enzyme else 'non-enzyme'} (ML confident, p={ml_enzyme_prob:.3f}, calib={ml_calib_conf:.3f})")
+
+    elif ml_verdict in ("uncertain", "no_calibrator") and ml_enzyme_prob >= 0:
+        if non_enzyme_score >= 0.35 and ml_enzyme_prob < 0.75:
+            is_enzyme = False
+            log.info(f"  Decision: non-enzyme (ML uncertain+GO, non_enz={non_enzyme_score:.2f})")
+        else:
+            is_enzyme = ml_enzyme_prob >= 0.5
+            log.info(f"  Decision: {'enzyme' if is_enzyme else 'non-enzyme'} (ML uncertain, p={ml_enzyme_prob:.3f}, non_enz={non_enzyme_score:.2f})")
+
+    elif ml_verdict == "legacy" and ml_enzyme_prob >= 0:
+        if non_enzyme_score >= 0.35:
+            is_enzyme = False
+            log.info(f"  Decision: non-enzyme (legacy+GO, non_enz={non_enzyme_score:.2f})")
+        elif ml_enzyme_prob >= 0.5:
+            is_enzyme = True
+            log.info(f"  Decision: enzyme (legacy ML, p={ml_enzyme_prob:.3f})")
+        elif ml_enzyme_prob <= 0.25:
+            is_enzyme = False
+            log.info(f"  Decision: non-enzyme (legacy ML, p={ml_enzyme_prob:.3f})")
+        else:
+            is_enzyme = enzyme_conf > 0.4 and enzyme_conf > non_enzyme_score
+            log.info(f"  Decision: {'enzyme' if is_enzyme else 'non-enzyme'} (legacy fallback, conf={enzyme_conf:.2f})")
+
     else:
-        # Fall back to enzyme confidence score
-        is_enzyme = enzyme_conf > 0.4 and enzyme_conf > non_enzyme_score
-        log.info(f"  Decision: {'enzyme' if is_enzyme else 'non-enzyme'} "
-                 f"(conf={enzyme_conf:.2f}, non_enz={non_enzyme_score:.2f})")
+        if non_enzyme_score >= 0.35:
+            is_enzyme = False
+            log.info(f"  Decision: non-enzyme (rule-based, score={non_enzyme_score:.2f})")
+        else:
+            is_enzyme = enzyme_conf > 0.4 and enzyme_conf > non_enzyme_score
+            log.info(f"  Decision: {'enzyme' if is_enzyme else 'non-enzyme'} (rule-based only, conf={enzyme_conf:.2f})")
+    # ── Inject ML EC class prediction into ec_scores ──────────────────────────
+    # If ML gave a confident EC class, boost that class's score significantly.
+    # This ensures the final ranked predictions reflect ML's view.
+    if ml_ec_class and ml_ec_class != "non-enzyme" and ml_enzyme_prob > 0.3:
+        if ml_ec_class in ec_scores:
+            ml_ec_boost = min(ml_enzyme_prob * 0.8, 0.95)
+            ec_scores[ml_ec_class]["score"] = max(
+                ec_scores[ml_ec_class]["score"], ml_ec_boost
+            )
+            if "ml_ensemble" not in ec_scores[ml_ec_class]["evidence"]:
+                ec_scores[ml_ec_class]["evidence"].append("ml_ensemble")
 
     # ── Build ranked predictions ───────────────────────────────────────────────
     predictions = []
@@ -384,7 +565,7 @@ def predict_ec_number(
         specific_ec=specific_ec,
         specific_ec_name=specific_ec_name,
         non_enzyme_score=round(non_enzyme_score, 3),
-        ml_enzyme_prob=round(ml_enzyme_prob, 3),
+        ml_enzyme_prob=round(ml_enzyme_prob, 3) if ml_enzyme_prob >= 0 else -1.0,
     )
 
     log.info(result.summary())
