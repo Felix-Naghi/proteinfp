@@ -4,7 +4,7 @@
   "protein_name": "Transcription factor JunB",
   "organism": "Homo sapiens",
   "sequence_length": 347,
-  "generated_at": "2026-04-26 09:09:47",
+  "generated_at": "2026-04-28 18:32:06",
   "top_function": "Transcription factor involved in regulating gene activity following the primary growth factor response. Binds to the DNA sequence 5'-TGA[GC]TCA-3'. Heterodimerizes with proteins of the FOS family to f",
   "is_enzyme": false,
   "ec_number": "3.x.x.x",
@@ -14,13 +14,14 @@
       "go_id": "GO:0003700",
       "go_name": "DNA-binding transcription factor activity",
       "namespace": "MF",
-      "weighted_score": 23.99,
-      "n_sources": 4,
+      "weighted_score": 25.79,
+      "n_sources": 5,
       "sources": [
         "experimental_homolog",
         "domain_annotation",
         "structural_motif",
-        "neural_classifier"
+        "neural_classifier",
+        "category_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -29,12 +30,13 @@
       "go_id": "GO:0003677",
       "go_name": "DNA binding",
       "namespace": "MF",
-      "weighted_score": 15.1,
-      "n_sources": 3,
+      "weighted_score": 16.9,
+      "n_sources": 4,
       "sources": [
         "experimental_homolog",
         "domain_annotation",
-        "structural_motif"
+        "structural_motif",
+        "category_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -264,11 +266,12 @@
       "go_id": "GO:0006355",
       "go_name": "regulation of DNA-templated transcription",
       "namespace": "BP",
-      "weighted_score": 20.0,
-      "n_sources": 2,
+      "weighted_score": 21.8,
+      "n_sources": 3,
       "sources": [
         "experimental_homolog",
-        "domain_annotation"
+        "domain_annotation",
+        "category_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -348,6 +351,18 @@
       "top_evidence": "experimental_homolog"
     },
     {
+      "go_id": "GO:0045892",
+      "go_name": "negative regulation of transcription",
+      "namespace": "BP",
+      "weighted_score": 1.8,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0006351",
       "go_name": "DNA-templated transcription",
       "namespace": "BP",
@@ -399,15 +414,16 @@
   "go_terms_cc": [
     {
       "go_id": "GO:0005634",
-      "go_name": "C:nucleus",
+      "go_name": "nucleus",
       "namespace": "CC",
-      "weighted_score": 14.42,
-      "n_sources": 4,
+      "weighted_score": 16.22,
+      "n_sources": 5,
       "sources": [
         "experimental_homolog",
         "ai_esm2",
         "structural_motif",
-        "neural_classifier"
+        "neural_classifier",
+        "category_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -1928,7 +1944,7 @@
     }
   ],
   "mean_plddt": 59.53,
-  "n_evidence_sources": 8,
+  "n_evidence_sources": 9,
   "overall_confidence": "HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (H331, C336, H30) to confirm functional importance",
@@ -1945,7 +1961,8 @@
     "esm2",
     "go",
     "ec",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "pockets",

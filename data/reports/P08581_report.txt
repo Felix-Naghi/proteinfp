@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 09:09:42
+  Generated: 2026-04-28 18:32:00
 ======================================================================
 
   Protein    : Hepatocyte growth factor receptor
@@ -17,7 +17,7 @@
   Top function     : Receptor tyrosine kinase that transduces signals from the extracellular matrix into the cytoplasm by binding to hepatocyte growth factor/HGF ligand. Regulates many physiological processes including pr
   Enzyme           : yes — 2.7.10
   Location         : membrane
-  Evidence sources : 8
+  Evidence sources : 9
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
@@ -31,7 +31,7 @@
     [HIGH  ] GO:0017154 semaphorin receptor activity (score=9.5, 2 sources)
 
   Biological Process:
-    [HIGH  ] GO:0006468 protein phosphorylation (score=21.8, 3 sources)
+    [HIGH  ] GO:0006468 protein phosphorylation (score=23.5, 4 sources)
     [HIGH  ] GO:0007169 cell surface receptor protein tyrosine kinase (score=9.5, 2 sources)
     [HIGH  ] GO:0071526 semaphorin-plexin signaling pathway (score=9.5, 2 sources)
     [HIGH  ] GO:2001028 P:positive regulation of endothelial cell che (score=5.1, 1 sources)
@@ -73,5 +73,5 @@
   5. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi, category
 ======================================================================

@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 09:09:34
+  Generated: 2026-04-28 18:31:51
 ======================================================================
 
   Protein    : Tumor necrosis factor
@@ -17,7 +17,7 @@
   Top function     : Cytokine that binds to TNFRSF1A/TNFR1 and TNFRSF1B/TNFBR. It is mainly secreted by macrophages and can induce cell death of certain tumor cell lines. It is potent pyrogen causing fever by direct actio
   Enzyme           : no (non-enzyme)
   Location         : membrane
-  Evidence sources : 8
+  Evidence sources : 9
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
@@ -39,8 +39,8 @@
 
   Cellular Component:
     [HIGH  ] GO:0016020 membrane (score=11.2, 1 sources)
+    [HIGH  ] GO:0005886 plasma membrane (score=6.9, 2 sources)
     [HIGH  ] GO:0005615 C:extracellular space (score=5.1, 1 sources)
-    [HIGH  ] GO:0005886 C:plasma membrane (score=5.1, 1 sources)
 
 ──────────────────────────────────────────────────────────────────────
   ACTIVE SITES
@@ -73,5 +73,5 @@
   5. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi, category
 ======================================================================

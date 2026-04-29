@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 09:09:39
+  Generated: 2026-04-28 18:31:57
 ======================================================================
 
   Protein    : Insulin receptor
@@ -17,7 +17,7 @@
   Top function     : Receptor tyrosine kinase which mediates the pleiotropic actions of insulin. Binding of insulin leads to phosphorylation of several intracellular substrates, including, insulin receptor substrates (IRS
   Enzyme           : yes — 2.7.10
   Location         : membrane
-  Evidence sources : 12
+  Evidence sources : 13
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
@@ -35,7 +35,7 @@
     [HIGH  ] GO:0007169 cell surface receptor protein tyrosine kinase (score=13.0, 2 sources)
     [HIGH  ] GO:0046777 protein autophosphorylation (score=9.5, 2 sources)
     [HIGH  ] GO:0008286 P:insulin receptor signaling pathway (score=5.1, 1 sources)
-    [MEDIUM] GO:0007165 signal transduction (score=1.5, 1 sources)
+    [MEDIUM] GO:0007160 cell-matrix adhesion (score=1.6, 1 sources)
 
   Cellular Component:
     [HIGH  ] GO:0016020 membrane (score=14.5, 3 sources)
@@ -92,5 +92,5 @@
   7. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi
+  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi, category
 ======================================================================

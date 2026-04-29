@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 09:09:45
+  Generated: 2026-04-28 18:32:04
 ======================================================================
 
   Protein    : Protein C-ets-1
@@ -17,14 +17,14 @@
   Top function     : Transcription factor (PubMed:10698492, PubMed:11909962). Directly controls the expression of cytokine and chemokine genes in a wide variety of different cellular contexts (PubMed:20378371). May contro
   Enzyme           : no (non-enzyme)
   Location         : integral component of plasma membrane
-  Evidence sources : 8
+  Evidence sources : 9
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
 ──────────────────────────────────────────────────────────────────────
 
   Molecular Function:
-    [HIGH  ] GO:0003700 DNA-binding transcription factor activity (score=18.0, 3 sources)
+    [HIGH  ] GO:0003700 DNA-binding transcription factor activity (score=19.8, 4 sources)
     [HIGH  ] GO:0043565 sequence-specific DNA binding (score=13.0, 2 sources)
     [HIGH  ] GO:0000978 F:RNA polymerase II cis-regulatory region seq (score=9.5, 2 sources)
     [HIGH  ] GO:0000981 F:DNA-binding transcription factor activity,  (score=9.4, 2 sources)
@@ -32,13 +32,13 @@
 
   Biological Process:
     [HIGH  ] GO:0006357 regulation of transcription by RNA polymerase (score=14.6, 3 sources)
+    [HIGH  ] GO:0006355 regulation of DNA-templated transcription (score=6.0, 2 sources)
     [HIGH  ] GO:0010595 P:positive regulation of endothelial cell mig (score=5.1, 1 sources)
     [HIGH  ] GO:0045765 P:regulation of angiogenesis (score=5.1, 1 sources)
     [HIGH  ] GO:0006955 P:immune response (score=5.1, 1 sources)
-    [HIGH  ] GO:0045786 P:negative regulation of cell cycle (score=5.1, 1 sources)
 
   Cellular Component:
-    [HIGH  ] GO:0005634 C:nucleus (score=14.2, 4 sources)
+    [HIGH  ] GO:0005634 nucleus (score=16.0, 5 sources)
     [HIGH  ] GO:0005737 C:cytoplasm (score=6.5, 2 sources)
     [HIGH  ] GO:0005667 C:transcription regulator complex (score=5.1, 1 sources)
 
@@ -73,5 +73,5 @@
   5. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi, category
 ======================================================================

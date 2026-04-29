@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 15:11:23
+  Generated: 2026-04-28 18:31:53
 ======================================================================
 
   Protein    : Complement component C9
@@ -17,7 +17,7 @@
   Top function     : Pore-forming component of the membrane attack complex (MAC), a multiprotein complex activated by the complement cascade, which inserts into a target cell membrane and forms a pore, leading to target c
   Enzyme           : yes — 2.7.10
   Location         : membrane attack complex
-  Evidence sources : 12
+  Evidence sources : 13
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
@@ -28,17 +28,17 @@
     [HIGH  ] GO:0046872 F:metal ion binding (score=7.7, 3 sources)
     [HIGH  ] GO:0001848 F:complement binding (score=3.5, 1 sources)
     [HIGH  ] GO:0044877 F:protein-containing complex binding (score=3.5, 1 sources)
-    [LOW   ] GO:0003677 DNA binding (score=0.6, 1 sources)
+    [MEDIUM] GO:0003823 antigen binding (score=1.8, 1 sources)
 
   Biological Process:
-    [HIGH  ] GO:0006955 immune response (score=8.2, 2 sources)
-    [HIGH  ] GO:0006956 P:complement activation (score=3.5, 1 sources)
+    [HIGH  ] GO:0006955 immune response (score=10.0, 3 sources)
+    [HIGH  ] GO:0006956 complement activation, classical pathway (score=5.3, 2 sources)
+    [HIGH  ] GO:0006958 complement activation (score=5.3, 2 sources)
     [HIGH  ] GO:0006957 P:complement activation, alternative pathway (score=3.5, 1 sources)
-    [HIGH  ] GO:0006958 P:complement activation, classical pathway (score=3.5, 1 sources)
     [HIGH  ] GO:0031640 P:killing of cells of another organism (score=3.5, 1 sources)
 
   Cellular Component:
-    [HIGH  ] GO:0005615 C:extracellular space (score=9.7, 3 sources)
+    [HIGH  ] GO:0005615 extracellular space (score=11.4, 4 sources)
     [HIGH  ] GO:0005579 membrane attack complex (score=8.2, 2 sources)
     [HIGH  ] GO:0016020 C:membrane (score=4.8, 2 sources)
 
@@ -92,5 +92,5 @@
   7. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi
+  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi, category
 ======================================================================

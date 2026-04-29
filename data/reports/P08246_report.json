@@ -4,7 +4,7 @@
   "protein_name": "Neutrophil elastase",
   "organism": "Homo sapiens",
   "sequence_length": 267,
-  "generated_at": "2026-04-26 09:09:41",
+  "generated_at": "2026-04-28 18:31:59",
   "top_function": "Serine protease that modifies the functions of natural killer cells, monocytes and granulocytes. Inhibits C5a-dependent neutrophil enzyme release and chemotaxis (PubMed:15140022). Promotes cleavage of",
   "is_enzyme": true,
   "ec_number": "3.4.21",
@@ -207,6 +207,18 @@
       "top_evidence": "sequence_composition"
     },
     {
+      "go_id": "GO:0003823",
+      "go_name": "antigen binding",
+      "namespace": "MF",
+      "weighted_score": 1.79,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0003677",
       "go_name": "DNA binding",
       "namespace": "MF",
@@ -331,6 +343,42 @@
       "top_evidence": "experimental_homolog"
     },
     {
+      "go_id": "GO:0006958",
+      "go_name": "complement activation",
+      "namespace": "BP",
+      "weighted_score": 1.79,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
+      "go_id": "GO:0006955",
+      "go_name": "immune response",
+      "namespace": "BP",
+      "weighted_score": 1.79,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
+      "go_id": "GO:0006956",
+      "go_name": "complement activation, classical pathway",
+      "namespace": "BP",
+      "weighted_score": 1.79,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0015671",
       "go_name": "oxygen transport",
       "namespace": "BP",
@@ -406,13 +454,14 @@
   "go_terms_cc": [
     {
       "go_id": "GO:0005615",
-      "go_name": "C:extracellular space",
+      "go_name": "extracellular space",
       "namespace": "CC",
-      "weighted_score": 9.45,
-      "n_sources": 2,
+      "weighted_score": 11.24,
+      "n_sources": 3,
       "sources": [
         "experimental_homolog",
-        "neural_classifier"
+        "neural_classifier",
+        "category_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -1951,7 +2000,7 @@
     }
   ],
   "mean_plddt": 88.2,
-  "n_evidence_sources": 8,
+  "n_evidence_sources": 9,
   "overall_confidence": "VERY HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (H53, C71, H70) to confirm functional importance",
@@ -1968,7 +2017,8 @@
     "esm2",
     "go",
     "ec",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "pockets",

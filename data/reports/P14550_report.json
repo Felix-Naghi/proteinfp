@@ -4,7 +4,7 @@
   "protein_name": "Aldo-keto reductase family 1 member A1",
   "organism": "Homo sapiens",
   "sequence_length": 325,
-  "generated_at": "2026-04-26 09:09:45",
+  "generated_at": "2026-04-28 18:32:04",
   "top_function": "zinc ion binding",
   "is_enzyme": true,
   "ec_number": "3.4.21",
@@ -14,14 +14,15 @@
       "go_id": "GO:0016491",
       "go_name": "oxidoreductase activity",
       "namespace": "MF",
-      "weighted_score": 10.38,
-      "n_sources": 2,
+      "weighted_score": 12.14,
+      "n_sources": 3,
       "sources": [
         "sequence_homolog",
-        "domain_annotation"
+        "domain_annotation",
+        "category_classifier"
       ],
       "confidence": "HIGH",
-      "top_evidence": "sequence_homolog"
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0008106",
@@ -147,6 +148,18 @@
       ],
       "confidence": "HIGH",
       "top_evidence": "sequence_homolog"
+    },
+    {
+      "go_id": "GO:0055114",
+      "go_name": "oxidation-reduction process",
+      "namespace": "BP",
+      "weighted_score": 1.76,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0030193",
@@ -1671,7 +1684,7 @@
     }
   ],
   "mean_plddt": 96.86,
-  "n_evidence_sources": 8,
+  "n_evidence_sources": 9,
   "overall_confidence": "HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (H43, H86, H113) to confirm functional importance",
@@ -1688,7 +1701,8 @@
     "esm2",
     "go",
     "ec",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "pockets",

@@ -4,7 +4,7 @@
   "protein_name": "Transcription factor E2F1",
   "organism": "Homo sapiens",
   "sequence_length": 437,
-  "generated_at": "2026-04-26 09:09:54",
+  "generated_at": "2026-04-28 18:32:21",
   "top_function": "DNA binding",
   "is_enzyme": false,
   "ec_number": "2.7.10",
@@ -37,6 +37,19 @@
       "top_evidence": "sequence_homolog"
     },
     {
+      "go_id": "GO:0003677",
+      "go_name": "DNA binding",
+      "namespace": "MF",
+      "weighted_score": 3.5,
+      "n_sources": 2,
+      "sources": [
+        "structural_motif",
+        "category_classifier"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0046872",
       "go_name": "metal ion binding",
       "namespace": "MF",
@@ -50,16 +63,17 @@
       "top_evidence": "sequence_composition"
     },
     {
-      "go_id": "GO:0003677",
-      "go_name": "DNA binding",
+      "go_id": "GO:0003700",
+      "go_name": "DNA-binding transcription factor activity",
       "namespace": "MF",
-      "weighted_score": 1.7,
-      "n_sources": 1,
+      "weighted_score": 2.7,
+      "n_sources": 2,
       "sources": [
-        "structural_motif"
+        "structural_motif",
+        "category_classifier"
       ],
       "confidence": "MEDIUM",
-      "top_evidence": "structural_motif"
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0004672",
@@ -156,18 +170,6 @@
       ],
       "confidence": "MEDIUM",
       "top_evidence": "ai_esm2"
-    },
-    {
-      "go_id": "GO:0003700",
-      "go_name": "DNA-binding transcription factor activity",
-      "namespace": "MF",
-      "weighted_score": 0.9,
-      "n_sources": 1,
-      "sources": [
-        "structural_motif"
-      ],
-      "confidence": "LOW",
-      "top_evidence": "structural_motif"
     }
   ],
   "go_terms_bp": [
@@ -189,14 +191,27 @@
       "go_id": "GO:0006355",
       "go_name": "regulation of DNA-templated transcription",
       "namespace": "BP",
-      "weighted_score": 6.88,
-      "n_sources": 2,
+      "weighted_score": 8.67,
+      "n_sources": 3,
       "sources": [
         "sequence_homolog",
-        "domain_annotation"
+        "domain_annotation",
+        "category_classifier"
       ],
       "confidence": "HIGH",
-      "top_evidence": "sequence_homolog"
+      "top_evidence": "category_classifier"
+    },
+    {
+      "go_id": "GO:0045892",
+      "go_name": "negative regulation of transcription",
+      "namespace": "BP",
+      "weighted_score": 1.8,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0006468",
@@ -325,13 +340,14 @@
       "go_id": "GO:0005634",
       "go_name": "nucleus",
       "namespace": "CC",
-      "weighted_score": 1.9,
-      "n_sources": 2,
+      "weighted_score": 3.7,
+      "n_sources": 3,
       "sources": [
         "ai_esm2",
-        "structural_motif"
+        "structural_motif",
+        "category_classifier"
       ],
-      "confidence": "MEDIUM",
+      "confidence": "HIGH",
       "top_evidence": "ai_esm2"
     },
     {
@@ -1786,7 +1802,7 @@
     }
   ],
   "mean_plddt": 62.03,
-  "n_evidence_sources": 8,
+  "n_evidence_sources": 9,
   "overall_confidence": "MEDIUM",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (H145, H187, H194) to confirm functional importance",
@@ -1803,7 +1819,8 @@
     "esm2",
     "go",
     "ec",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "pockets",

@@ -4,7 +4,7 @@
   "protein_name": "Urokinase-type plasminogen activator",
   "organism": "Homo sapiens",
   "sequence_length": 431,
-  "generated_at": "2026-04-26 15:11:21",
+  "generated_at": "2026-04-28 18:31:49",
   "top_function": "Specifically cleaves the zymogen plasminogen to form the active enzyme plasmin",
   "is_enzyme": true,
   "ec_number": "3.4.21",
@@ -63,6 +63,18 @@
       ],
       "confidence": "MEDIUM",
       "top_evidence": "sequence_composition"
+    },
+    {
+      "go_id": "GO:0003823",
+      "go_name": "antigen binding",
+      "namespace": "MF",
+      "weighted_score": 1.79,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0005172",
@@ -455,6 +467,42 @@
       "top_evidence": "experimental_homolog"
     },
     {
+      "go_id": "GO:0006958",
+      "go_name": "complement activation",
+      "namespace": "BP",
+      "weighted_score": 1.79,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
+      "go_id": "GO:0006955",
+      "go_name": "immune response",
+      "namespace": "BP",
+      "weighted_score": 1.79,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
+      "go_id": "GO:0006956",
+      "go_name": "complement activation, classical pathway",
+      "namespace": "BP",
+      "weighted_score": 1.79,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0006468",
       "go_name": "protein phosphorylation",
       "namespace": "BP",
@@ -565,6 +613,21 @@
   ],
   "go_terms_cc": [
     {
+      "go_id": "GO:0005615",
+      "go_name": "extracellular space",
+      "namespace": "CC",
+      "weighted_score": 11.7,
+      "n_sources": 4,
+      "sources": [
+        "experimental_homolog",
+        "structural_motif",
+        "neural_classifier",
+        "category_classifier"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
       "go_id": "GO:0005576",
       "go_name": "C:extracellular region",
       "namespace": "CC",
@@ -573,20 +636,6 @@
       "sources": [
         "experimental_homolog",
         "embedding_similarity",
-        "neural_classifier"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0005615",
-      "go_name": "C:extracellular space",
-      "namespace": "CC",
-      "weighted_score": 9.91,
-      "n_sources": 3,
-      "sources": [
-        "experimental_homolog",
-        "structural_motif",
         "neural_classifier"
       ],
       "confidence": "HIGH",
@@ -3206,7 +3255,7 @@
     }
   ],
   "mean_plddt": 82.12,
-  "n_evidence_sources": 12,
+  "n_evidence_sources": 13,
   "overall_confidence": "VERY HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (C225, H262, C345) to confirm functional importance",
@@ -3228,7 +3277,8 @@
     "go",
     "ec",
     "foldseek",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "md"

@@ -4,7 +4,7 @@
   "protein_name": "Superoxide dismutase [Cu-Zn]",
   "organism": "Homo sapiens",
   "sequence_length": 154,
-  "generated_at": "2026-04-26 09:09:30",
+  "generated_at": "2026-04-28 18:31:46",
   "top_function": "Destroys radicals which are normally produced within the cells and which are toxic to biological systems (PubMed:24140062). Catalyzes the oxidation of hydrogen sulfide (H2S) to sulfate, playing an imp",
   "is_enzyme": true,
   "ec_number": "1.15.1",
@@ -198,6 +198,18 @@
       "top_evidence": "experimental_homolog"
     },
     {
+      "go_id": "GO:0016491",
+      "go_name": "oxidoreductase activity",
+      "namespace": "MF",
+      "weighted_score": 1.8,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0004252",
       "go_name": "serine-type endopeptidase activity",
       "namespace": "MF",
@@ -358,6 +370,18 @@
       ],
       "confidence": "HIGH",
       "top_evidence": "embedding_similarity"
+    },
+    {
+      "go_id": "GO:0055114",
+      "go_name": "oxidation-reduction process",
+      "namespace": "BP",
+      "weighted_score": 1.8,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0006351",
@@ -2719,7 +2743,7 @@
     }
   ],
   "mean_plddt": 97.93,
-  "n_evidence_sources": 12,
+  "n_evidence_sources": 13,
   "overall_confidence": "VERY HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (H44, H49, H64) to confirm functional importance",
@@ -2742,7 +2766,8 @@
     "go",
     "ec",
     "foldseek",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "md"

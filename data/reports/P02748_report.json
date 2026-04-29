@@ -4,7 +4,7 @@
   "protein_name": "Complement component C9",
   "organism": "Homo sapiens",
   "sequence_length": 559,
-  "generated_at": "2026-04-26 15:11:23",
+  "generated_at": "2026-04-28 18:31:53",
   "top_function": "Pore-forming component of the membrane attack complex (MAC), a multiprotein complex activated by the complement cascade, which inserts into a target cell membrane and forms a pore, leading to target c",
   "is_enzyme": true,
   "ec_number": "2.7.10",
@@ -61,6 +61,18 @@
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0003823",
+      "go_name": "antigen binding",
+      "namespace": "MF",
+      "weighted_score": 1.79,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0003677",
@@ -248,23 +260,38 @@
       "go_id": "GO:0006955",
       "go_name": "immune response",
       "namespace": "BP",
-      "weighted_score": 8.25,
-      "n_sources": 2,
+      "weighted_score": 10.04,
+      "n_sources": 3,
       "sources": [
         "experimental_homolog",
-        "domain_annotation"
+        "domain_annotation",
+        "category_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
     },
     {
       "go_id": "GO:0006956",
-      "go_name": "P:complement activation",
+      "go_name": "complement activation, classical pathway",
       "namespace": "BP",
-      "weighted_score": 3.52,
-      "n_sources": 1,
+      "weighted_score": 5.32,
+      "n_sources": 2,
       "sources": [
-        "experimental_homolog"
+        "experimental_homolog",
+        "category_classifier"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0006958",
+      "go_name": "complement activation",
+      "namespace": "BP",
+      "weighted_score": 5.32,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "category_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -272,18 +299,6 @@
     {
       "go_id": "GO:0006957",
       "go_name": "P:complement activation, alternative pathway",
-      "namespace": "BP",
-      "weighted_score": 3.52,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0006958",
-      "go_name": "P:complement activation, classical pathway",
       "namespace": "BP",
       "weighted_score": 3.52,
       "n_sources": 1,
@@ -513,14 +528,15 @@
   "go_terms_cc": [
     {
       "go_id": "GO:0005615",
-      "go_name": "C:extracellular space",
+      "go_name": "extracellular space",
       "namespace": "CC",
-      "weighted_score": 9.65,
-      "n_sources": 3,
+      "weighted_score": 11.44,
+      "n_sources": 4,
       "sources": [
         "experimental_homolog",
         "structural_motif",
-        "neural_classifier"
+        "neural_classifier",
+        "category_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -2959,7 +2975,7 @@
     }
   ],
   "mean_plddt": 78.76,
-  "n_evidence_sources": 12,
+  "n_evidence_sources": 13,
   "overall_confidence": "VERY HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (H345, C510, H40) to confirm functional importance",
@@ -2982,7 +2998,8 @@
     "go",
     "ec",
     "foldseek",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "md"

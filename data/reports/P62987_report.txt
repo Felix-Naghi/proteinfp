@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 15:11:24
+  Generated: 2026-04-28 18:32:18
 ======================================================================
 
   Protein    : Ubiquitin-ribosomal protein eL40 fusion protein
@@ -17,7 +17,7 @@
   Top function     : Exists either covalently attached to another protein, or free (unanchored). When covalently bound, it is conjugated to target proteins via an isopeptide bond either as a monomer (monoubiquitin), a pol
   Enzyme           : no (non-enzyme)
   Location         : membrane
-  Evidence sources : 12
+  Evidence sources : 13
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
@@ -40,7 +40,7 @@
   Cellular Component:
     [HIGH  ] GO:0003735 structural constituent of ribosome (score=8.2, 2 sources)
     [HIGH  ] GO:0005840 ribosome (score=8.2, 2 sources)
-    [HIGH  ] GO:0005634 C:nucleus (score=6.5, 3 sources)
+    [HIGH  ] GO:0005634 nucleus (score=7.8, 4 sources)
 
 ──────────────────────────────────────────────────────────────────────
   ACTIVE SITES
@@ -83,5 +83,5 @@
   6. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi
+  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi, category
 ======================================================================

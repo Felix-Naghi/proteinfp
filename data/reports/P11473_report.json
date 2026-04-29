@@ -4,7 +4,7 @@
   "protein_name": "Vitamin D3 receptor",
   "organism": "Homo sapiens",
   "sequence_length": 427,
-  "generated_at": "2026-04-26 09:09:44",
+  "generated_at": "2026-04-28 18:32:03",
   "top_function": "Nuclear receptor for calcitriol, the active form of vitamin D3 which mediates the action of this vitamin on cells (PubMed:10678179, PubMed:15728261, PubMed:16913708, PubMed:28698609, PubMed:37478846).",
   "is_enzyme": false,
   "ec_number": "3.4.21",
@@ -28,12 +28,13 @@
       "go_id": "GO:0003677",
       "go_name": "DNA binding",
       "namespace": "MF",
-      "weighted_score": 11.6,
-      "n_sources": 3,
+      "weighted_score": 12.97,
+      "n_sources": 4,
       "sources": [
         "experimental_homolog",
         "domain_annotation",
-        "structural_motif"
+        "structural_motif",
+        "category_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -67,14 +68,15 @@
       "go_id": "GO:0003700",
       "go_name": "DNA-binding transcription factor activity",
       "namespace": "MF",
-      "weighted_score": 5.75,
-      "n_sources": 2,
+      "weighted_score": 7.12,
+      "n_sources": 3,
       "sources": [
         "domain_annotation",
-        "structural_motif"
+        "structural_motif",
+        "category_classifier"
       ],
       "confidence": "HIGH",
-      "top_evidence": "structural_motif"
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0030154",
@@ -287,11 +289,12 @@
       "go_id": "GO:0006355",
       "go_name": "regulation of DNA-templated transcription",
       "namespace": "BP",
-      "weighted_score": 16.5,
-      "n_sources": 2,
+      "weighted_score": 17.87,
+      "n_sources": 3,
       "sources": [
         "experimental_homolog",
-        "domain_annotation"
+        "domain_annotation",
+        "category_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -394,6 +397,18 @@
       "top_evidence": "experimental_homolog"
     },
     {
+      "go_id": "GO:0045892",
+      "go_name": "negative regulation of transcription",
+      "namespace": "BP",
+      "weighted_score": 1.37,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0006351",
       "go_name": "DNA-templated transcription",
       "namespace": "BP",
@@ -459,13 +474,14 @@
       "go_id": "GO:0005634",
       "go_name": "nucleus",
       "namespace": "CC",
-      "weighted_score": 12.35,
-      "n_sources": 4,
+      "weighted_score": 13.72,
+      "n_sources": 5,
       "sources": [
         "experimental_homolog",
         "domain_annotation",
         "ai_esm2",
-        "structural_motif"
+        "structural_motif",
+        "category_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -1275,7 +1291,7 @@
   "allosteric_sites": [],
   "ppi_partners": [],
   "mean_plddt": 83.56,
-  "n_evidence_sources": 8,
+  "n_evidence_sources": 9,
   "overall_confidence": "VERY HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (C76, H229, H75) to confirm functional importance",
@@ -1290,7 +1306,8 @@
     "esm2",
     "go",
     "ec",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "pockets",

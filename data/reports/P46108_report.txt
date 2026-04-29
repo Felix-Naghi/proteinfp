@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 09:09:51
+  Generated: 2026-04-28 18:32:14
 ======================================================================
 
   Protein    : Adapter molecule crk
@@ -17,7 +17,7 @@
   Top function     : Involved in cell branching and adhesion mediated by BCAR1-CRK-RAPGEF1 signaling and activation of RAP1
   Enzyme           : yes — 2.7.10
   Location         : C:plasma membrane
-  Evidence sources : 8
+  Evidence sources : 9
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
@@ -38,9 +38,9 @@
     [HIGH  ] GO:0043087 P:regulation of GTPase activity (score=5.1, 1 sources)
 
   Cellular Component:
+    [HIGH  ] GO:0005886 plasma membrane (score=6.7, 2 sources)
     [HIGH  ] GO:0005737 C:cytoplasm (score=6.5, 2 sources)
     [HIGH  ] GO:0016020 C:membrane (score=6.5, 2 sources)
-    [HIGH  ] GO:0032991 C:protein-containing complex (score=5.1, 1 sources)
 
 ──────────────────────────────────────────────────────────────────────
   ACTIVE SITES
@@ -74,5 +74,5 @@
   6. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi, category
 ======================================================================

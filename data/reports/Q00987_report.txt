@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 09:09:54
+  Generated: 2026-04-28 18:32:20
 ======================================================================
 
   Protein    : E3 ubiquitin-protein ligase Mdm2
@@ -17,7 +17,7 @@
   Top function     : E3 ubiquitin-protein ligase that mediates ubiquitination of p53/TP53, leading to its degradation by the proteasome (PubMed:29681526). Inhibits p53/TP53- and p73/TP73-mediated cell cycle arrest and apo
   Enzyme           : yes — 2.3.2
   Location         : C:endocytic vesicle membrane
-  Evidence sources : 12
+  Evidence sources : 13
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
@@ -33,12 +33,12 @@
   Biological Process:
     [HIGH  ] GO:0043066 negative regulation of apoptotic process (score=14.8, 3 sources)
     [HIGH  ] GO:0051726 regulation of cell cycle (score=11.0, 3 sources)
+    [HIGH  ] GO:0045892 negative regulation of transcription (score=6.9, 2 sources)
     [HIGH  ] GO:0016567 P:protein ubiquitination (score=5.1, 1 sources)
     [HIGH  ] GO:0006915 P:apoptotic process (score=5.1, 1 sources)
-    [HIGH  ] GO:0045931 P:positive regulation of mitotic cell cycle (score=5.1, 1 sources)
 
   Cellular Component:
-    [HIGH  ] GO:0005634 nucleus (score=14.8, 5 sources)
+    [HIGH  ] GO:0005634 nucleus (score=16.6, 6 sources)
     [HIGH  ] GO:0005737 C:cytoplasm (score=7.9, 3 sources)
     [HIGH  ] GO:0005829 C:cytosol (score=5.1, 1 sources)
 
@@ -91,5 +91,5 @@
   6. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi
+  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi, category
 ======================================================================

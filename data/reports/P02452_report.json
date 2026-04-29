@@ -4,7 +4,7 @@
   "protein_name": "Collagen alpha-1(I) chain",
   "organism": "Homo sapiens",
   "sequence_length": 1464,
-  "generated_at": "2026-04-26 09:09:35",
+  "generated_at": "2026-04-28 18:31:52",
   "top_function": "serine-type endopeptidase activity",
   "is_enzyme": false,
   "ec_number": "3.4.21",
@@ -36,6 +36,19 @@
       ],
       "confidence": "HIGH",
       "top_evidence": "sequence_composition"
+    },
+    {
+      "go_id": "GO:0016887",
+      "go_name": "ATPase activity",
+      "namespace": "MF",
+      "weighted_score": 2.3,
+      "n_sources": 2,
+      "sources": [
+        "structural_motif",
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0004252",
@@ -114,18 +127,6 @@
       "go_name": "peptidase activity",
       "namespace": "MF",
       "weighted_score": 1.6,
-      "n_sources": 1,
-      "sources": [
-        "structural_motif"
-      ],
-      "confidence": "MEDIUM",
-      "top_evidence": "structural_motif"
-    },
-    {
-      "go_id": "GO:0016887",
-      "go_name": "ATPase activity",
-      "namespace": "MF",
-      "weighted_score": 1.5,
       "n_sources": 1,
       "sources": [
         "structural_motif"
@@ -240,6 +241,18 @@
       ],
       "confidence": "LOW",
       "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0016829",
+      "go_name": "lyase activity",
+      "namespace": "MF",
+      "weighted_score": 0.33,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier_secondary"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "category_classifier_secondary"
     }
   ],
   "go_terms_bp": [
@@ -422,6 +435,18 @@
       ],
       "confidence": "LOW",
       "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0055085",
+      "go_name": "transmembrane transport",
+      "namespace": "BP",
+      "weighted_score": 0.8,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "category_classifier"
     }
   ],
   "go_terms_cc": [
@@ -1980,7 +2005,7 @@
     }
   ],
   "mean_plddt": 52.73,
-  "n_evidence_sources": 8,
+  "n_evidence_sources": 9,
   "overall_confidence": "MEDIUM",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (C1370, H48, C1265) to confirm functional importance",
@@ -1997,7 +2022,8 @@
     "esm2",
     "go",
     "ec",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "pockets",

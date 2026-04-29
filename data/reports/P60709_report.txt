@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 15:11:17
+  Generated: 2026-04-28 18:32:16
 ======================================================================
 
   Protein    : Actin, cytoplasmic 1
@@ -17,7 +17,7 @@
   Top function     : Actin is a highly conserved protein that polymerizes to produce filaments that form cross-linked networks in the cytoplasm of cells (By similarity). Actin exists in both monomeric (G-actin) and polyme
   Enzyme           : yes — 3.4.21
   Location         : C:plasma membrane
-  Evidence sources : 12
+  Evidence sources : 13
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
@@ -25,7 +25,7 @@
 
   Molecular Function:
     [HIGH  ] GO:0005524 F:ATP binding (score=5.3, 2 sources)
-    [HIGH  ] GO:0016787 F:hydrolase activity (score=3.5, 1 sources)
+    [HIGH  ] GO:0016787 hydrolase activity (score=4.0, 2 sources)
     [HIGH  ] GO:0019901 F:protein kinase binding (score=3.5, 1 sources)
     [HIGH  ] GO:0098973 F:structural constituent of postsynaptic acti (score=3.5, 1 sources)
     [MEDIUM] GO:0046872 metal ion binding (score=2.0, 2 sources)
@@ -33,14 +33,14 @@
   Biological Process:
     [HIGH  ] GO:0007409 P:axonogenesis (score=3.5, 1 sources)
     [HIGH  ] GO:0048870 P:cell motility (score=3.5, 1 sources)
+    [LOW   ] GO:0007010 cytoskeleton organization (score=0.9, 1 sources)
+    [LOW   ] GO:0006508 proteolysis (score=0.8, 2 sources)
     [LOW   ] GO:0006351 DNA-templated transcription (score=0.5, 1 sources)
-    [LOW   ] GO:0051085 chaperone cofactor-dependent protein refoldin (score=0.5, 1 sources)
-    [LOW   ] GO:0030193 regulation of blood coagulation (score=0.4, 1 sources)
 
   Cellular Component:
     [HIGH  ] GO:0005634 C:nucleus (score=6.5, 3 sources)
-    [HIGH  ] GO:0005737 C:cytoplasm (score=4.7, 2 sources)
-    [HIGH  ] GO:0005856 C:cytoskeleton (score=3.5, 1 sources)
+    [HIGH  ] GO:0005737 cytoplasm (score=5.6, 3 sources)
+    [HIGH  ] GO:0005856 cytoskeleton (score=4.4, 2 sources)
 
 ──────────────────────────────────────────────────────────────────────
   ACTIVE SITES
@@ -90,5 +90,5 @@
   7. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi
+  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi, category
 ======================================================================

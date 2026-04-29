@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 15:11:13
+  Generated: 2026-04-28 18:31:46
 ======================================================================
 
   Protein    : Glutamate dehydrogenase 1, mitochondrial
@@ -17,14 +17,14 @@
   Top function     : Mitochondrial glutamate dehydrogenase that catalyzes the conversion of L-glutamate into alpha-ketoglutarate. Plays a key role in glutamine anaplerosis by producing alpha-ketoglutarate, an important in
   Enzyme           : yes — 3.4.21
   Location         : integral component of plasma membrane
-  Evidence sources : 12
+  Evidence sources : 13
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
 ──────────────────────────────────────────────────────────────────────
 
   Molecular Function:
-    [HIGH  ] GO:0016491 oxidoreductase activity (score=19.5, 3 sources)
+    [HIGH  ] GO:0016491 oxidoreductase activity (score=21.3, 4 sources)
     [HIGH  ] GO:0016639 oxidoreductase activity, acting on the CH-NH2 (score=8.2, 2 sources)
     [HIGH  ] GO:0005524 F:ATP binding (score=5.3, 2 sources)
     [HIGH  ] GO:0004352 F:glutamate dehydrogenase (NAD+) activity (score=3.0, 1 sources)
@@ -91,5 +91,5 @@
   6. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi
+  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi, category
 ======================================================================

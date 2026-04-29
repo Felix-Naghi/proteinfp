@@ -4,7 +4,7 @@
   "protein_name": "Serine/threonine-protein kinase B-raf",
   "organism": "Homo sapiens",
   "sequence_length": 766,
-  "generated_at": "2026-04-26 09:09:46",
+  "generated_at": "2026-04-28 18:32:05",
   "top_function": "Protein kinase involved in the transduction of mitogenic signals from the cell membrane to the nucleus (Probable). Phosphorylates MAP2K1, and thereby activates the MAP kinase signal transduction pathw",
   "is_enzyme": true,
   "ec_number": "2.7.10",
@@ -302,6 +302,18 @@
       ],
       "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0016740",
+      "go_name": "transferase activity",
+      "namespace": "MF",
+      "weighted_score": 1.5,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     }
   ],
   "go_terms_bp": [
@@ -309,14 +321,15 @@
       "go_id": "GO:0006468",
       "go_name": "protein phosphorylation",
       "namespace": "BP",
-      "weighted_score": 12.9,
-      "n_sources": 2,
+      "weighted_score": 14.4,
+      "n_sources": 3,
       "sources": [
         "domain_annotation",
-        "structural_motif"
+        "structural_motif",
+        "category_classifier"
       ],
       "confidence": "HIGH",
-      "top_evidence": "structural_motif"
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0071550",
@@ -485,6 +498,18 @@
       ],
       "confidence": "LOW",
       "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0007010",
+      "go_name": "cytoskeleton organization",
+      "namespace": "BP",
+      "weighted_score": 0.15,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier_secondary"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "category_classifier_secondary"
     }
   ],
   "go_terms_cc": [
@@ -504,13 +529,14 @@
     },
     {
       "go_id": "GO:0005737",
-      "go_name": "C:cytoplasm",
+      "go_name": "cytoplasm",
       "namespace": "CC",
-      "weighted_score": 6.5,
-      "n_sources": 2,
+      "weighted_score": 6.65,
+      "n_sources": 3,
       "sources": [
         "experimental_homolog",
-        "sequence_baseline"
+        "sequence_baseline",
+        "category_classifier_secondary"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -634,6 +660,18 @@
       ],
       "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0005856",
+      "go_name": "cytoskeleton",
+      "namespace": "CC",
+      "weighted_score": 0.15,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier_secondary"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "category_classifier_secondary"
     }
   ],
   "active_sites": [
@@ -2114,7 +2152,7 @@
     }
   ],
   "mean_plddt": 66.39,
-  "n_evidence_sources": 8,
+  "n_evidence_sources": 9,
   "overall_confidence": "HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (C532, H568, H574) to confirm functional importance",
@@ -2131,7 +2169,8 @@
     "esm2",
     "go",
     "ec",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "pockets",

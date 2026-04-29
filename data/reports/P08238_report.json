@@ -4,28 +4,29 @@
   "protein_name": "Heat shock protein HSP 90-beta",
   "organism": "Homo sapiens",
   "sequence_length": 724,
-  "generated_at": "2026-04-26 09:09:41",
+  "generated_at": "2026-04-28 18:31:59",
   "top_function": "serine-type endopeptidase activity",
   "is_enzyme": false,
   "ec_number": "3.4.21",
   "subcellular_location": "membrane",
   "go_terms_mf": [
     {
-      "go_id": "GO:0005524",
-      "go_name": "ATP binding",
+      "go_id": "GO:0051082",
+      "go_name": "unfolded protein binding",
       "namespace": "MF",
-      "weighted_score": 10.38,
-      "n_sources": 2,
+      "weighted_score": 11.83,
+      "n_sources": 3,
       "sources": [
         "sequence_homolog",
-        "domain_annotation"
+        "domain_annotation",
+        "category_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "sequence_homolog"
     },
     {
-      "go_id": "GO:0051082",
-      "go_name": "unfolded protein binding",
+      "go_id": "GO:0005524",
+      "go_name": "ATP binding",
       "namespace": "MF",
       "weighted_score": 10.38,
       "n_sources": 2,
@@ -111,6 +112,18 @@
       "top_evidence": "structural_motif"
     },
     {
+      "go_id": "GO:0051087",
+      "go_name": "chaperone binding",
+      "namespace": "MF",
+      "weighted_score": 1.45,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0005172",
       "go_name": "vascular endothelial growth factor receptor binding",
       "namespace": "MF",
@@ -169,6 +182,18 @@
       ],
       "confidence": "LOW",
       "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0005215",
+      "go_name": "transporter activity",
+      "namespace": "MF",
+      "weighted_score": 0.16,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier_secondary"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "category_classifier_secondary"
     }
   ],
   "go_terms_bp": [
@@ -176,11 +201,12 @@
       "go_id": "GO:0006457",
       "go_name": "protein folding",
       "namespace": "BP",
-      "weighted_score": 10.38,
-      "n_sources": 2,
+      "weighted_score": 11.83,
+      "n_sources": 3,
       "sources": [
         "sequence_homolog",
-        "domain_annotation"
+        "domain_annotation",
+        "category_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "sequence_homolog"
@@ -197,6 +223,18 @@
       ],
       "confidence": "HIGH",
       "top_evidence": "sequence_homolog"
+    },
+    {
+      "go_id": "GO:0042026",
+      "go_name": "protein refolding",
+      "namespace": "BP",
+      "weighted_score": 1.45,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0006351",
@@ -257,6 +295,18 @@
       ],
       "confidence": "LOW",
       "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0006810",
+      "go_name": "transport",
+      "namespace": "BP",
+      "weighted_score": 0.16,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier_secondary"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "category_classifier_secondary"
     }
   ],
   "go_terms_cc": [
@@ -272,6 +322,18 @@
       ],
       "confidence": "MEDIUM",
       "top_evidence": "ai_esm2"
+    },
+    {
+      "go_id": "GO:0005829",
+      "go_name": "cytosol",
+      "namespace": "CC",
+      "weighted_score": 1.45,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0043234",
@@ -308,6 +370,30 @@
       ],
       "confidence": "LOW",
       "top_evidence": "sequence_baseline"
+    },
+    {
+      "go_id": "GO:0016021",
+      "go_name": "integral component of membrane",
+      "namespace": "CC",
+      "weighted_score": 0.16,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier_secondary"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "category_classifier_secondary"
+    },
+    {
+      "go_id": "GO:0005886",
+      "go_name": "plasma membrane",
+      "namespace": "CC",
+      "weighted_score": 0.16,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier_secondary"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "category_classifier_secondary"
     }
   ],
   "active_sites": [
@@ -1774,13 +1860,13 @@
     }
   ],
   "mean_plddt": 84.34,
-  "n_evidence_sources": 8,
+  "n_evidence_sources": 9,
   "overall_confidence": "HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (H205, H149, H184) to confirm functional importance",
     "Co-immunoprecipitation with HSPA4 (unknown interaction, predicted interface: [719, 1, 17])",
     "Co-immunoprecipitation with CDC37 (unknown interaction, predicted interface: [719, 1, 17])",
-    "EMSA or fluorescence polarisation assay to confirm 'ATP binding' (GO:0005524)",
+    "EMSA or fluorescence polarisation assay to confirm 'unfolded protein binding' (GO:0051082)",
     "GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation"
   ],
   "modules_run": [
@@ -1791,7 +1877,8 @@
     "esm2",
     "go",
     "ec",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "pockets",

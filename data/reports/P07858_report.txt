@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 09:09:40
+  Generated: 2026-04-28 18:31:58
 ======================================================================
 
   Protein    : Cathepsin B
@@ -17,7 +17,7 @@
   Top function     : Thiol protease which is believed to participate in intracellular degradation and turnover of proteins (PubMed:12220505). Cleaves matrix extracellular phosphoglycoprotein MEPE (PubMed:12220505). Involv
   Enzyme           : yes — 3.4.22
   Location         : C:apical plasma membrane
-  Evidence sources : 8
+  Evidence sources : 9
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
@@ -38,9 +38,9 @@
     [HIGH  ] GO:0050790 regulation of catalytic activity (score=4.2, 1 sources)
 
   Cellular Component:
+    [HIGH  ] GO:0031012 extracellular matrix (score=6.8, 2 sources)
     [HIGH  ] GO:0016324 C:apical plasma membrane (score=5.1, 1 sources)
     [HIGH  ] GO:0005615 C:extracellular space (score=5.1, 1 sources)
-    [HIGH  ] GO:0009897 C:external side of plasma membrane (score=5.1, 1 sources)
 
 ──────────────────────────────────────────────────────────────────────
   ACTIVE SITES
@@ -73,5 +73,5 @@
   5. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi, category
 ======================================================================

@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 09:09:31
+  Generated: 2026-04-28 18:31:47
 ======================================================================
 
   Protein    : Coagulation factor XIII A chain
@@ -17,7 +17,7 @@
   Top function     : Factor XIII is activated by thrombin and calcium ion to a transglutaminase that catalyzes the formation of gamma-glutamyl-epsilon-lysine cross-links between fibrin chains, thus stabilizing the fibrin 
   Enzyme           : yes — 3.4.21
   Location         : C:membrane
-  Evidence sources : 8
+  Evidence sources : 9
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
@@ -38,9 +38,9 @@
     [HIGH  ] GO:0036211 P:protein modification process (score=5.1, 1 sources)
 
   Cellular Component:
+    [HIGH  ] GO:0031012 extracellular matrix (score=6.5, 2 sources)
     [HIGH  ] GO:0005737 C:cytoplasm (score=6.5, 2 sources)
     [HIGH  ] GO:0005829 C:cytosol (score=5.1, 1 sources)
-    [HIGH  ] GO:0016020 C:membrane (score=5.1, 1 sources)
 
 ──────────────────────────────────────────────────────────────────────
   ACTIVE SITES
@@ -73,5 +73,5 @@
   5. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi, category
 ======================================================================

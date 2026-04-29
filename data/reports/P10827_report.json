@@ -4,7 +4,7 @@
   "protein_name": "Thyroid hormone receptor alpha",
   "organism": "Homo sapiens",
   "sequence_length": 490,
-  "generated_at": "2026-04-26 09:09:43",
+  "generated_at": "2026-04-28 18:32:01",
   "top_function": "DNA binding",
   "is_enzyme": false,
   "ec_number": "2.7.10",
@@ -28,29 +28,31 @@
       "go_id": "GO:0003677",
       "go_name": "DNA binding",
       "namespace": "MF",
-      "weighted_score": 8.82,
-      "n_sources": 3,
+      "weighted_score": 10.4,
+      "n_sources": 4,
       "sources": [
         "sequence_homolog",
         "domain_annotation",
-        "structural_motif"
+        "structural_motif",
+        "category_classifier"
       ],
       "confidence": "HIGH",
-      "top_evidence": "structural_motif"
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0003700",
       "go_name": "DNA-binding transcription factor activity",
       "namespace": "MF",
-      "weighted_score": 8.38,
-      "n_sources": 3,
+      "weighted_score": 9.95,
+      "n_sources": 4,
       "sources": [
         "sequence_homolog",
         "domain_annotation",
-        "structural_motif"
+        "structural_motif",
+        "category_classifier"
       ],
       "confidence": "HIGH",
-      "top_evidence": "sequence_homolog"
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0043565",
@@ -265,14 +267,15 @@
       "go_id": "GO:0006355",
       "go_name": "regulation of DNA-templated transcription",
       "namespace": "BP",
-      "weighted_score": 13.88,
-      "n_sources": 2,
+      "weighted_score": 15.45,
+      "n_sources": 3,
       "sources": [
         "sequence_homolog",
-        "domain_annotation"
+        "domain_annotation",
+        "category_classifier"
       ],
       "confidence": "HIGH",
-      "top_evidence": "sequence_homolog"
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0006468",
@@ -285,6 +288,18 @@
       ],
       "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0045892",
+      "go_name": "negative regulation of transcription",
+      "namespace": "BP",
+      "weighted_score": 1.57,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0018108",
@@ -424,13 +439,14 @@
       "go_id": "GO:0005634",
       "go_name": "nucleus",
       "namespace": "CC",
-      "weighted_score": 1.9,
-      "n_sources": 2,
+      "weighted_score": 3.47,
+      "n_sources": 3,
       "sources": [
         "ai_esm2",
-        "structural_motif"
+        "structural_motif",
+        "category_classifier"
       ],
-      "confidence": "MEDIUM",
+      "confidence": "HIGH",
       "top_evidence": "ai_esm2"
     },
     {
@@ -1929,7 +1945,7 @@
     }
   ],
   "mean_plddt": 73.05,
-  "n_evidence_sources": 8,
+  "n_evidence_sources": 9,
   "overall_confidence": "MEDIUM",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (C67, H175, H64) to confirm functional importance",
@@ -1946,7 +1962,8 @@
     "esm2",
     "go",
     "ec",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "pockets",

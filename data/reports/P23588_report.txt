@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 15:11:24
+  Generated: 2026-04-28 18:32:08
 ======================================================================
 
   Protein    : Eukaryotic translation initiation factor 4B
@@ -17,14 +17,14 @@
   Top function     : Required for the binding of mRNA to ribosomes. Functions in close association with EIF4-F and EIF4-A. Binds near the 5'-terminal cap of mRNA in presence of EIF-4F and ATP. Promotes the ATPase activity
   Enzyme           : no (non-enzyme)
   Location         : integral component of plasma membrane
-  Evidence sources : 12
+  Evidence sources : 13
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
 ──────────────────────────────────────────────────────────────────────
 
   Molecular Function:
-    [HIGH  ] GO:0003723 RNA binding (score=8.2, 2 sources)
+    [HIGH  ] GO:0003723 RNA binding (score=10.1, 3 sources)
     [HIGH  ] GO:0003676 nucleic acid binding (score=8.2, 2 sources)
     [HIGH  ] GO:0003743 F:translation initiation factor activity (score=3.5, 1 sources)
     [HIGH  ] GO:0043024 F:ribosomal small subunit binding (score=3.5, 1 sources)
@@ -91,5 +91,5 @@
   6. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi
+  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi, category
 ======================================================================

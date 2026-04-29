@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 09:09:38
+  Generated: 2026-04-28 18:31:56
 ======================================================================
 
   Protein    : Complement factor I
@@ -17,7 +17,7 @@
   Top function     : Trypsin-like serine protease that plays an essential role in regulating the immune response by controlling all complement pathways. Inhibits these pathways by cleaving three peptide bonds in the alpha
   Enzyme           : yes — 2.7.10
   Location         : membrane
-  Evidence sources : 8
+  Evidence sources : 9
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
@@ -32,14 +32,14 @@
 
   Biological Process:
     [HIGH  ] GO:0006508 proteolysis (score=14.5, 3 sources)
-    [HIGH  ] GO:0006958 P:complement activation, classical pathway (score=5.1, 1 sources)
+    [HIGH  ] GO:0006958 complement activation (score=6.8, 2 sources)
+    [HIGH  ] GO:0006956 complement activation, classical pathway (score=6.8, 2 sources)
     [HIGH  ] GO:0045087 P:innate immune response (score=5.1, 1 sources)
     [HIGH  ] GO:0071354 P:cellular response to interleukin-6 (score=5.1, 1 sources)
-    [HIGH  ] GO:0030163 P:protein catabolic process (score=5.1, 1 sources)
 
   Cellular Component:
     [HIGH  ] GO:0016020 membrane (score=14.5, 3 sources)
-    [HIGH  ] GO:0005615 C:extracellular space (score=12.2, 3 sources)
+    [HIGH  ] GO:0005615 extracellular space (score=13.9, 4 sources)
     [HIGH  ] GO:0005886 C:plasma membrane (score=5.1, 1 sources)
 
 ──────────────────────────────────────────────────────────────────────
@@ -74,5 +74,5 @@
   6. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi, category
 ======================================================================

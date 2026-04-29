@@ -1,0 +1,185 @@
+{
+  "uniprot_id": "Q9HAW4",
+  "sequence_length": 1339,
+  "blast_hits": [
+    {
+      "accession": "Q9HAW4",
+      "description": "RecName: Full=Claspin; Short=hClaspin [Homo sapiens]",
+      "organism": "Homo sapiens",
+      "identity_pct": 100.0,
+      "coverage_pct": 100.0,
+      "e_value": 0.0,
+      "bit_score": 2718.7,
+      "reviewed": true,
+      "go_terms": [
+        "GO:0005794",
+        "GO:0005654",
+        "GO:0005634",
+        "GO:0010997",
+        "GO:0000217",
+        "GO:0000077",
+        "GO:0006281",
+        "GO:0000076",
+        "GO:0033314",
+        "GO:0007095"
+      ],
+      "go_names": [
+        "C:Golgi apparatus",
+        "C:nucleoplasm",
+        "C:nucleus",
+        "F:anaphase-promoting complex binding",
+        "F:DNA secondary structure binding",
+        "P:DNA damage checkpoint signaling",
+        "P:DNA repair",
+        "P:DNA replication checkpoint signaling",
+        "P:mitotic DNA replication checkpoint signaling",
+        "P:mitotic G2 DNA damage checkpoint signaling"
+      ],
+      "function_text": "Required for checkpoint mediated cell cycle arrest in response to inhibition of DNA replication or to DNA damage induced by both ionizing and UV irradiation (PubMed:12766152, PubMed:15190204, PubMed:15707391, PubMed:16123041). Adapter protein which binds to BRCA1 and the checkpoint kinase CHEK1 and facilitates the ATR-dependent phosphorylation of both proteins (PubMed:12766152, PubMed:15096610, PubMed:15707391, PubMed:16123041). Also required to maintain normal rates of replication fork progress",
+      "evidence_weight": 3.0
+    },
+    {
+      "accession": "Q80YR7",
+      "description": "RecName: Full=Claspin [Mus musculus]",
+      "organism": "Mus musculus",
+      "identity_pct": 73.7,
+      "coverage_pct": 100.0,
+      "e_value": 0.0,
+      "bit_score": 1802.3,
+      "reviewed": true,
+      "go_terms": [
+        "GO:0005794",
+        "GO:0005654",
+        "GO:0005634",
+        "GO:0010997",
+        "GO:0000217",
+        "GO:0000077",
+        "GO:0006281",
+        "GO:0000076",
+        "GO:0033314",
+        "GO:0007095"
+      ],
+      "go_names": [
+        "C:Golgi apparatus",
+        "C:nucleoplasm",
+        "C:nucleus",
+        "F:anaphase-promoting complex binding",
+        "F:DNA secondary structure binding",
+        "P:DNA damage checkpoint signaling",
+        "P:DNA repair",
+        "P:DNA replication checkpoint signaling",
+        "P:mitotic DNA replication checkpoint signaling",
+        "P:mitotic G2 DNA damage checkpoint signaling"
+      ],
+      "function_text": "Required for checkpoint mediated cell cycle arrest in response to inhibition of DNA replication or to DNA damage induced by both ionizing and UV irradiation (PubMed:27401717). Adapter protein which binds to BRCA1 and the checkpoint kinase CHEK1 and facilitates the ATR-dependent phosphorylation of both proteins (By similarity). Also required to maintain normal rates of replication fork progression during unperturbed DNA replication (PubMed:27401717). Binds directly to DNA, with particular affinit",
+      "evidence_weight": 3.0
+    },
+    {
+      "accession": "Q9DF50",
+      "description": "RecName: Full=Claspin; AltName: Full=xClaspin [Xenopus laevis]",
+      "organism": "Xenopus laevis",
+      "identity_pct": 45.9,
+      "coverage_pct": 99.4,
+      "e_value": 0.0,
+      "bit_score": 829.3,
+      "reviewed": true,
+      "go_terms": [
+        "GO:0005634",
+        "GO:0010997",
+        "GO:0003677",
+        "GO:0006281",
+        "GO:0033314",
+        "GO:0007095"
+      ],
+      "go_names": [
+        "C:nucleus",
+        "F:anaphase-promoting complex binding",
+        "F:DNA binding",
+        "P:DNA repair",
+        "P:mitotic DNA replication checkpoint signaling",
+        "P:mitotic G2 DNA damage checkpoint signaling"
+      ],
+      "function_text": "Required for checkpoint mediated cell cycle arrest in response to inhibition of DNA replication or to DNA damage induced by UV irradiation. Adapter protein which binds to the checkpoint kinase chek1 and facilitates the phosphorylation and activation of this kinase by the ATR-TREX1/ATRIP kinase complex. Also associates with chromatin during S-phase, and this requires the pre-replication complex (pre-RC), cdc45 and cdk2. This may indicate a role for this protein as a sensor which monitors the inte",
+      "evidence_weight": 3.0
+    },
+    {
+      "accession": "Q8IRB5",
+      "description": "RecName: Full=Claspin [Drosophila melanogaster]",
+      "organism": "Drosophila melanogaster",
+      "identity_pct": 27.5,
+      "coverage_pct": 19.3,
+      "e_value": 3.93441e-13,
+      "bit_score": 78.2,
+      "reviewed": true,
+      "go_terms": [
+        "GO:0005634",
+        "GO:0010997",
+        "GO:0033314",
+        "GO:0007095"
+      ],
+      "go_names": [
+        "C:nucleus",
+        "F:anaphase-promoting complex binding",
+        "P:mitotic DNA replication checkpoint signaling",
+        "P:mitotic G2 DNA damage checkpoint signaling"
+      ],
+      "function_text": "Required for checkpoint signaling in response to DNA replication stress; either resulting from normal embryogenesis or induced by the DNA synthesis inhibitor hydroxyurea (HU). It is not required for the G2 arrest resulting from DNA double strand breaks induced by ionizing irradiation (IR). Necessary for the timely phosphorylation of Cdk1 at the mid-blastula transition. May have a minor role in maintaining genomic stability in mitotic cells",
+      "evidence_weight": 3.0
+    }
+  ],
+  "interpro_domains": [
+    {
+      "accession": "IPR024146",
+      "name": "Claspin",
+      "database": "INTERPRO",
+      "start": 1,
+      "end": 1337,
+      "go_terms": [],
+      "go_names": [],
+      "e_value": 0.0
+    },
+    {
+      "accession": "PTHR14396",
+      "name": "CLASPIN",
+      "database": "PANTHER",
+      "start": 1,
+      "end": 1337,
+      "go_terms": [],
+      "go_names": [],
+      "e_value": 0.0
+    }
+  ],
+  "all_go_terms": [
+    "GO:0005634",
+    "GO:0010997",
+    "GO:0033314",
+    "GO:0007095",
+    "GO:0006281",
+    "GO:0005794",
+    "GO:0005654",
+    "GO:0000217",
+    "GO:0000077",
+    "GO:0000076",
+    "GO:0003677"
+  ],
+  "all_go_names": [
+    "C:nucleus",
+    "F:anaphase-promoting complex binding",
+    "P:mitotic DNA replication checkpoint signaling",
+    "P:mitotic G2 DNA damage checkpoint signaling",
+    "P:DNA repair",
+    "C:Golgi apparatus",
+    "C:nucleoplasm",
+    "F:DNA secondary structure binding",
+    "P:DNA damage checkpoint signaling",
+    "P:DNA replication checkpoint signaling",
+    "F:DNA binding"
+  ],
+  "protein_families": [
+    "CLASPIN"
+  ],
+  "top_function": "Required for checkpoint mediated cell cycle arrest in response to inhibition of DNA replication or to DNA damage induced by both ionizing and UV irradiation (PubMed:12766152, PubMed:15190204, PubMed:15707391, PubMed:16123041). Adapter protein which binds to BRCA1 and the checkpoint kinase CHEK1 and facilitates the ATR-dependent phosphorylation of both proteins (PubMed:12766152, PubMed:15096610, PubMed:15707391, PubMed:16123041). Also required to maintain normal rates of replication fork progress",
+  "blast_available": true,
+  "interpro_available": true,
+  "n_experimental_hits": 4
+}

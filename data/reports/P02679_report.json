@@ -4,7 +4,7 @@
   "protein_name": "Fibrinogen gamma chain",
   "organism": "Homo sapiens",
   "sequence_length": 453,
-  "generated_at": "2026-04-26 15:11:20",
+  "generated_at": "2026-04-28 18:31:52",
   "top_function": "Together with fibrinogen alpha (FGA) and fibrinogen beta (FGB), polymerizes to form an insoluble fibrin matrix. Has a major function in hemostasis as one of the primary components of blood clots. In a",
   "is_enzyme": true,
   "ec_number": "3.4.21",
@@ -38,6 +38,19 @@
       "top_evidence": "experimental_homolog"
     },
     {
+      "go_id": "GO:0005201",
+      "go_name": "extracellular matrix structural constituent",
+      "namespace": "MF",
+      "weighted_score": 4.89,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "category_classifier"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
       "go_id": "GO:0030168",
       "go_name": "platelet activation",
       "namespace": "MF",
@@ -64,18 +77,6 @@
     {
       "go_id": "GO:0050839",
       "go_name": "F:cell adhesion molecule binding",
-      "namespace": "MF",
-      "weighted_score": 3.52,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0005201",
-      "go_name": "F:extracellular matrix structural constituent",
       "namespace": "MF",
       "weighted_score": 3.52,
       "n_sources": 1,
@@ -276,6 +277,18 @@
       ],
       "confidence": "LOW",
       "top_evidence": "ai_esm2"
+    },
+    {
+      "go_id": "GO:0003823",
+      "go_name": "antigen binding",
+      "namespace": "MF",
+      "weighted_score": 0.2,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier_secondary"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "category_classifier_secondary"
     }
   ],
   "go_terms_bp": [
@@ -293,6 +306,19 @@
       "top_evidence": "experimental_homolog"
     },
     {
+      "go_id": "GO:0007160",
+      "go_name": "cell-matrix adhesion",
+      "namespace": "BP",
+      "weighted_score": 4.89,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "category_classifier"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
       "go_id": "GO:0007596",
       "go_name": "blood coagulation",
       "namespace": "BP",
@@ -303,18 +329,6 @@
       ],
       "confidence": "HIGH",
       "top_evidence": "domain_annotation"
-    },
-    {
-      "go_id": "GO:0007160",
-      "go_name": "P:cell-matrix adhesion",
-      "namespace": "BP",
-      "weighted_score": 3.52,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
     },
     {
       "go_id": "GO:0072378",
@@ -411,6 +425,18 @@
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0030198",
+      "go_name": "extracellular matrix organization",
+      "namespace": "BP",
+      "weighted_score": 1.36,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0006468",
@@ -519,19 +545,56 @@
       ],
       "confidence": "LOW",
       "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0006958",
+      "go_name": "complement activation",
+      "namespace": "BP",
+      "weighted_score": 0.2,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier_secondary"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "category_classifier_secondary"
+    },
+    {
+      "go_id": "GO:0006955",
+      "go_name": "immune response",
+      "namespace": "BP",
+      "weighted_score": 0.2,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier_secondary"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "category_classifier_secondary"
+    },
+    {
+      "go_id": "GO:0006956",
+      "go_name": "complement activation, classical pathway",
+      "namespace": "BP",
+      "weighted_score": 0.2,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier_secondary"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "category_classifier_secondary"
     }
   ],
   "go_terms_cc": [
     {
       "go_id": "GO:0005615",
-      "go_name": "C:extracellular space",
+      "go_name": "extracellular space",
       "namespace": "CC",
-      "weighted_score": 9.64,
-      "n_sources": 3,
+      "weighted_score": 9.83,
+      "n_sources": 4,
       "sources": [
         "experimental_homolog",
         "structural_motif",
-        "neural_classifier"
+        "neural_classifier",
+        "category_classifier_secondary"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -545,6 +608,19 @@
       "sources": [
         "experimental_homolog",
         "domain_annotation"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0031012",
+      "go_name": "extracellular matrix",
+      "namespace": "CC",
+      "weighted_score": 4.89,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "category_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -589,18 +665,6 @@
     {
       "go_id": "GO:0031091",
       "go_name": "C:platelet alpha granule",
-      "namespace": "CC",
-      "weighted_score": 3.52,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0031012",
-      "go_name": "C:extracellular matrix",
       "namespace": "CC",
       "weighted_score": 3.52,
       "n_sources": 1,
@@ -683,6 +747,18 @@
       "top_evidence": "experimental_homolog"
     },
     {
+      "go_id": "GO:0005578",
+      "go_name": "proteinaceous extracellular matrix",
+      "namespace": "CC",
+      "weighted_score": 1.36,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0005634",
       "go_name": "nucleus",
       "namespace": "CC",
@@ -694,18 +770,6 @@
       ],
       "confidence": "MEDIUM",
       "top_evidence": "ai_esm2"
-    },
-    {
-      "go_id": "GO:0005887",
-      "go_name": "integral component of plasma membrane",
-      "namespace": "CC",
-      "weighted_score": 0.45,
-      "n_sources": 1,
-      "sources": [
-        "structural_motif"
-      ],
-      "confidence": "LOW",
-      "top_evidence": "structural_motif"
     }
   ],
   "active_sites": [
@@ -3071,7 +3135,7 @@
     }
   ],
   "mean_plddt": 85.51,
-  "n_evidence_sources": 12,
+  "n_evidence_sources": 13,
   "overall_confidence": "VERY HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (H333, H366, H369) to confirm functional importance",
@@ -3093,7 +3157,8 @@
     "go",
     "ec",
     "foldseek",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "md"

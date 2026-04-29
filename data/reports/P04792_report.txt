@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 09:09:37
+  Generated: 2026-04-28 18:31:56
 ======================================================================
 
   Protein    : Heat shock protein beta-1
@@ -17,29 +17,29 @@
   Top function     : Small heat shock protein which functions as a molecular chaperone probably maintaining denatured proteins in a folding-competent state (PubMed:10383393, PubMed:20178975). Plays a role in stress resist
   Enzyme           : no (non-enzyme)
   Location         : C:plasma membrane
-  Evidence sources : 8
+  Evidence sources : 9
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
 ──────────────────────────────────────────────────────────────────────
 
   Molecular Function:
+    [HIGH  ] GO:0051082 unfolded protein binding (score=5.3, 2 sources)
     [HIGH  ] GO:0042803 F:protein homodimerization activity (score=5.1, 1 sources)
     [HIGH  ] GO:0005819 C:spindle (score=5.1, 1 sources)
     [HIGH  ] GO:0042802 F:identical protein binding (score=5.1, 1 sources)
-    [HIGH  ] GO:0051082 F:unfolded protein binding (score=5.1, 1 sources)
     [HIGH  ] GO:0030018 C:Z disc (score=5.1, 1 sources)
 
   Biological Process:
+    [HIGH  ] GO:0042026 protein refolding (score=5.3, 2 sources)
+    [HIGH  ] GO:0006457 protein folding (score=5.3, 2 sources)
     [HIGH  ] GO:0044183 F:protein folding chaperone (score=5.1, 1 sources)
     [HIGH  ] GO:0043066 P:negative regulation of apoptotic process (score=5.1, 1 sources)
-    [HIGH  ] GO:0042026 P:protein refolding (score=5.1, 1 sources)
     [HIGH  ] GO:0009408 P:response to heat (score=5.1, 1 sources)
-    [HIGH  ] GO:0099641 P:anterograde axonal protein transport (score=5.1, 1 sources)
 
   Cellular Component:
+    [HIGH  ] GO:0005737 cytoplasm (score=7.9, 3 sources)
     [HIGH  ] GO:0005634 C:nucleus (score=7.8, 3 sources)
-    [HIGH  ] GO:0005737 C:cytoplasm (score=6.5, 2 sources)
     [HIGH  ] GO:1904115 C:axon cytoplasm (score=5.1, 1 sources)
 
 ──────────────────────────────────────────────────────────────────────
@@ -69,8 +69,9 @@
   1. Alanine scanning mutagenesis of predicted active site residues (H103, H124, H25) to confirm functional importance
   2. Co-immunoprecipitation with MAPKAPK2 (unknown interaction, predicted interface: [205, 16, 37])
   3. Co-immunoprecipitation with MAPKAPK5 (unknown interaction, predicted interface: [205, 16, 37])
-  4. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+  4. EMSA or fluorescence polarisation assay to confirm 'unfolded protein binding' (GO:0051082)
+  5. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi, category
 ======================================================================

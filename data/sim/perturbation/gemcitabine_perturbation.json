@@ -1,0 +1,227 @@
+{
+  "drug_name": "gemcitabine",
+  "dose_uM": 10.0,
+  "n_genes": 1246,
+  "n_perturbed": 4,
+  "S_tumor_base": 6.086,
+  "S_tumor_pert": 6.127,
+  "S_normal_base": 6.8401,
+  "delta_S_tumor": 0.041,
+  "delta_S_normal": -0.002,
+  "delta_delta_S": 0.0429,
+  "n_downregulated": 6,
+  "n_upregulated": 20,
+  "downregulated": [
+    [
+      "ERO1L",
+      0.9311,
+      0.8983,
+      -0.0328
+    ],
+    [
+      "MT1X",
+      0.9396,
+      0.9078,
+      -0.0318
+    ],
+    [
+      "LY6D",
+      0.6768,
+      0.6471,
+      -0.0297
+    ],
+    [
+      "PDZK1IP1",
+      0.5995,
+      0.5704,
+      -0.0292
+    ],
+    [
+      "RARRES1",
+      0.5766,
+      0.5476,
+      -0.029
+    ],
+    [
+      "PLAT",
+      0.8319,
+      0.8051,
+      -0.0268
+    ]
+  ],
+  "upregulated": [
+    [
+      "C1QTNF3",
+      0.0003,
+      1.0,
+      0.9997
+    ],
+    [
+      "SMARCD3",
+      0.0005,
+      1.0,
+      0.9995
+    ],
+    [
+      "TNF",
+      0.0008,
+      1.0,
+      0.9992
+    ],
+    [
+      "ARMCX1",
+      0.0008,
+      1.0,
+      0.9992
+    ],
+    [
+      "STAB1",
+      0.0046,
+      1.0,
+      0.9954
+    ],
+    [
+      "CD300E",
+      0.0047,
+      1.0,
+      0.9953
+    ],
+    [
+      "IL1B",
+      0.0048,
+      1.0,
+      0.9952
+    ],
+    [
+      "MS4A6A",
+      0.0049,
+      1.0,
+      0.9951
+    ],
+    [
+      "SLC12A5",
+      0.0049,
+      1.0,
+      0.9951
+    ],
+    [
+      "MARCH1",
+      0.005,
+      1.0,
+      0.995
+    ],
+    [
+      "S100Z",
+      0.005,
+      1.0,
+      0.995
+    ],
+    [
+      "RETN",
+      0.005,
+      1.0,
+      0.995
+    ],
+    [
+      "CSF2RB",
+      0.0051,
+      1.0,
+      0.9949
+    ],
+    [
+      "MNDA",
+      0.0051,
+      1.0,
+      0.9949
+    ],
+    [
+      "FCN1",
+      0.0051,
+      1.0,
+      0.9949
+    ],
+    [
+      "PLXDC2",
+      0.0052,
+      1.0,
+      0.9948
+    ],
+    [
+      "CD163",
+      0.0052,
+      1.0,
+      0.9948
+    ],
+    [
+      "SERPINF1",
+      0.0476,
+      1.0,
+      0.9524
+    ],
+    [
+      "TYROBP",
+      0.0559,
+      1.0,
+      0.9441
+    ],
+    [
+      "HLA-DOA",
+      0.0708,
+      1.0,
+      0.9292
+    ]
+  ],
+  "cascade_depth": {
+    "CLSPN": 0,
+    "TOP2A": 0,
+    "ATAD2": 0,
+    "CENPU": 1,
+    "GINS4": 1,
+    "HELLS": 1,
+    "KIAA0101": 1,
+    "RRM2": 1,
+    "CENPF": 1,
+    "HMGB2": 1,
+    "MKI67": 1,
+    "PRR11": 1,
+    "TUBA1B": 1,
+    "UBE2C": 1,
+    "BRCA2": 1,
+    "CENPW": 1,
+    "HIST1H4C": 1,
+    "HMGB1": 1,
+    "RAD51AP1": 1,
+    "SMC4": 1,
+    "STMN1": 1,
+    "PRC1": 2,
+    "PDE1A": 2,
+    "PTTG1": 2
+  },
+  "selectivity_interpretation": "NON-SELECTIVE \u2014 similar effect on tumor and normal GRN",
+  "dose_scan": {
+    "1.0": {
+      "delta_S_tumor": 0.041,
+      "delta_delta_S": 0.0429
+    },
+    "5.0": {
+      "delta_S_tumor": 0.041,
+      "delta_delta_S": 0.0429
+    },
+    "10.0": {
+      "delta_S_tumor": 0.041,
+      "delta_delta_S": 0.0429
+    },
+    "25.0": {
+      "delta_S_tumor": 0.041,
+      "delta_delta_S": 0.0429
+    },
+    "50.0": {
+      "delta_S_tumor": 0.041,
+      "delta_delta_S": 0.0429
+    },
+    "100.0": {
+      "delta_S_tumor": 0.041,
+      "delta_delta_S": 0.0429
+    }
+  }
+}

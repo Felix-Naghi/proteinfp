@@ -4,7 +4,7 @@
   "protein_name": "Protein C-ets-1",
   "organism": "Homo sapiens",
   "sequence_length": 441,
-  "generated_at": "2026-04-26 09:09:45",
+  "generated_at": "2026-04-28 18:32:04",
   "top_function": "Transcription factor (PubMed:10698492, PubMed:11909962). Directly controls the expression of cytokine and chemokine genes in a wide variety of different cellular contexts (PubMed:20378371). May contro",
   "is_enzyme": false,
   "ec_number": "2.7.10",
@@ -14,12 +14,13 @@
       "go_id": "GO:0003700",
       "go_name": "DNA-binding transcription factor activity",
       "namespace": "MF",
-      "weighted_score": 18.0,
-      "n_sources": 3,
+      "weighted_score": 19.8,
+      "n_sources": 4,
       "sources": [
         "experimental_homolog",
         "domain_annotation",
-        "structural_motif"
+        "structural_motif",
+        "category_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -78,13 +79,14 @@
     },
     {
       "go_id": "GO:0003677",
-      "go_name": "F:DNA binding",
+      "go_name": "DNA binding",
       "namespace": "MF",
-      "weighted_score": 7.25,
-      "n_sources": 2,
+      "weighted_score": 9.05,
+      "n_sources": 3,
       "sources": [
         "experimental_homolog",
-        "structural_motif"
+        "structural_motif",
+        "category_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -287,6 +289,19 @@
       "top_evidence": "experimental_homolog"
     },
     {
+      "go_id": "GO:0006355",
+      "go_name": "regulation of DNA-templated transcription",
+      "namespace": "BP",
+      "weighted_score": 6.05,
+      "n_sources": 2,
+      "sources": [
+        "domain_annotation",
+        "category_classifier"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0010595",
       "go_name": "P:positive regulation of endothelial cell migration",
       "namespace": "BP",
@@ -360,18 +375,6 @@
       "top_evidence": "neural_classifier"
     },
     {
-      "go_id": "GO:0006355",
-      "go_name": "regulation of DNA-templated transcription",
-      "namespace": "BP",
-      "weighted_score": 4.25,
-      "n_sources": 1,
-      "sources": [
-        "domain_annotation"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "domain_annotation"
-    },
-    {
       "go_id": "GO:0030578",
       "go_name": "P:PML body organization",
       "namespace": "BP",
@@ -394,6 +397,18 @@
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0045892",
+      "go_name": "negative regulation of transcription",
+      "namespace": "BP",
+      "weighted_score": 1.8,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0006468",
@@ -495,15 +510,16 @@
   "go_terms_cc": [
     {
       "go_id": "GO:0005634",
-      "go_name": "C:nucleus",
+      "go_name": "nucleus",
       "namespace": "CC",
-      "weighted_score": 14.19,
-      "n_sources": 4,
+      "weighted_score": 15.99,
+      "n_sources": 5,
       "sources": [
         "experimental_homolog",
         "ai_esm2",
         "structural_motif",
-        "neural_classifier"
+        "neural_classifier",
+        "category_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -2006,7 +2022,7 @@
     }
   ],
   "mean_plddt": 65.42,
-  "n_evidence_sources": 8,
+  "n_evidence_sources": 9,
   "overall_confidence": "HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (H128, H430, H76) to confirm functional importance",
@@ -2023,7 +2039,8 @@
     "esm2",
     "go",
     "ec",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "pockets",

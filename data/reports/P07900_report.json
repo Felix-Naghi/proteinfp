@@ -4,28 +4,29 @@
   "protein_name": "Heat shock protein HSP 90-alpha",
   "organism": "Homo sapiens",
   "sequence_length": 732,
-  "generated_at": "2026-04-26 09:09:40",
+  "generated_at": "2026-04-28 18:31:58",
   "top_function": "serine-type endopeptidase activity",
   "is_enzyme": false,
   "ec_number": "3.4.21",
   "subcellular_location": "membrane",
   "go_terms_mf": [
     {
-      "go_id": "GO:0005524",
-      "go_name": "ATP binding",
-      "namespace": "MF",
-      "weighted_score": 10.38,
-      "n_sources": 2,
-      "sources": [
-        "sequence_homolog",
-        "domain_annotation"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "sequence_homolog"
-    },
-    {
       "go_id": "GO:0051082",
       "go_name": "unfolded protein binding",
+      "namespace": "MF",
+      "weighted_score": 12.06,
+      "n_sources": 3,
+      "sources": [
+        "sequence_homolog",
+        "domain_annotation",
+        "category_classifier"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "category_classifier"
+    },
+    {
+      "go_id": "GO:0005524",
+      "go_name": "ATP binding",
       "namespace": "MF",
       "weighted_score": 10.38,
       "n_sources": 2,
@@ -85,6 +86,18 @@
       ],
       "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0051087",
+      "go_name": "chaperone binding",
+      "namespace": "MF",
+      "weighted_score": 1.68,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0008270",
@@ -176,14 +189,15 @@
       "go_id": "GO:0006457",
       "go_name": "protein folding",
       "namespace": "BP",
-      "weighted_score": 10.38,
-      "n_sources": 2,
+      "weighted_score": 12.06,
+      "n_sources": 3,
       "sources": [
         "sequence_homolog",
-        "domain_annotation"
+        "domain_annotation",
+        "category_classifier"
       ],
       "confidence": "HIGH",
-      "top_evidence": "sequence_homolog"
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0140662",
@@ -197,6 +211,18 @@
       ],
       "confidence": "HIGH",
       "top_evidence": "sequence_homolog"
+    },
+    {
+      "go_id": "GO:0042026",
+      "go_name": "protein refolding",
+      "namespace": "BP",
+      "weighted_score": 1.68,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0006351",
@@ -272,6 +298,18 @@
       ],
       "confidence": "MEDIUM",
       "top_evidence": "ai_esm2"
+    },
+    {
+      "go_id": "GO:0005829",
+      "go_name": "cytosol",
+      "namespace": "CC",
+      "weighted_score": 1.68,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0043234",
@@ -2635,14 +2673,14 @@
     }
   ],
   "mean_plddt": 85.22,
-  "n_evidence_sources": 12,
+  "n_evidence_sources": 13,
   "overall_confidence": "HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (H210, H77, H154) to confirm functional importance",
     "Thermal shift assay or SPR binding assay against pocket P1 (vol=560\u00c5\u00b3, druggability=0.98)",
     "Co-immunoprecipitation with STUB1 (unknown interaction, predicted interface: [1, 727, 355])",
     "Co-immunoprecipitation with HDAC6 (unknown interaction, predicted interface: [1, 727, 355])",
-    "EMSA or fluorescence polarisation assay to confirm 'ATP binding' (GO:0005524)",
+    "EMSA or fluorescence polarisation assay to confirm 'unfolded protein binding' (GO:0051082)",
     "GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation"
   ],
   "modules_run": [
@@ -2657,7 +2695,8 @@
     "go",
     "ec",
     "foldseek",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "md"

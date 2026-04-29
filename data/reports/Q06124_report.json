@@ -4,7 +4,7 @@
   "protein_name": "Tyrosine-protein phosphatase non-receptor type 11",
   "organism": "Homo sapiens",
   "sequence_length": 593,
-  "generated_at": "2026-04-26 09:09:55",
+  "generated_at": "2026-04-28 18:32:21",
   "top_function": "Acts downstream of various receptor and cytoplasmic protein tyrosine kinases to participate in the signal transduction from the cell surface to the nucleus (PubMed:10655584, PubMed:14739280, PubMed:18",
   "is_enzyme": true,
   "ec_number": "3.4.21",
@@ -375,6 +375,42 @@
       "top_evidence": "structural_motif"
     },
     {
+      "go_id": "GO:0006958",
+      "go_name": "complement activation",
+      "namespace": "BP",
+      "weighted_score": 1.34,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
+      "go_id": "GO:0006955",
+      "go_name": "immune response",
+      "namespace": "BP",
+      "weighted_score": 1.34,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
+      "go_id": "GO:0006956",
+      "go_name": "complement activation, classical pathway",
+      "namespace": "BP",
+      "weighted_score": 1.34,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0006351",
       "go_name": "DNA-templated transcription",
       "namespace": "BP",
@@ -382,6 +418,19 @@
       "n_sources": 1,
       "sources": [
         "structural_motif"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0006508",
+      "go_name": "proteolysis",
+      "namespace": "BP",
+      "weighted_score": 1.26,
+      "n_sources": 2,
+      "sources": [
+        "structural_motif",
+        "category_classifier_secondary"
       ],
       "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
@@ -413,18 +462,6 @@
     {
       "go_id": "GO:0042493",
       "go_name": "response to drug",
-      "namespace": "BP",
-      "weighted_score": 1.1,
-      "n_sources": 1,
-      "sources": [
-        "structural_motif"
-      ],
-      "confidence": "MEDIUM",
-      "top_evidence": "structural_motif"
-    },
-    {
-      "go_id": "GO:0006508",
-      "go_name": "proteolysis",
       "namespace": "BP",
       "weighted_score": 1.1,
       "n_sources": 1,
@@ -570,6 +607,18 @@
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005615",
+      "go_name": "extracellular space",
+      "namespace": "CC",
+      "weighted_score": 1.34,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0043234",
@@ -2073,7 +2122,7 @@
     }
   ],
   "mean_plddt": 85.94,
-  "n_evidence_sources": 8,
+  "n_evidence_sources": 9,
   "overall_confidence": "VERY HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (H419, H458, C459) to confirm functional importance",
@@ -2090,7 +2139,8 @@
     "esm2",
     "go",
     "ec",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "pockets",

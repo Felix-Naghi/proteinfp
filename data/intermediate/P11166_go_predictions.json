@@ -3,166 +3,10 @@
   "sequence_length": 492,
   "mf_predictions": [
     {
-      "go_id": "GO:0003677",
-      "go_name": "DNA binding",
-      "namespace": "MF",
-      "score": 0.85,
-      "evidence": [
-        "structural_motif"
-      ],
-      "saliency_residues": [
-        9,
-        30,
-        33,
-        37,
-        41,
-        44,
-        45,
-        48,
-        49,
-        53,
-        54,
-        55,
-        56,
-        57,
-        61,
-        64,
-        65,
-        68,
-        91,
-        92
-      ]
-    },
-    {
-      "go_id": "GO:0008270",
-      "go_name": "zinc ion binding",
-      "namespace": "MF",
-      "score": 0.8,
-      "evidence": [
-        "structural_motif"
-      ],
-      "saliency_residues": [
-        9,
-        30,
-        33,
-        37,
-        41,
-        44,
-        45,
-        48,
-        49,
-        53,
-        54,
-        55,
-        56,
-        57,
-        61,
-        64,
-        65,
-        68,
-        91,
-        92
-      ]
-    },
-    {
-      "go_id": "GO:0005525",
-      "go_name": "GTP binding",
-      "namespace": "MF",
-      "score": 0.8,
-      "evidence": [
-        "structural_motif"
-      ],
-      "saliency_residues": [
-        9,
-        30,
-        33,
-        37,
-        41,
-        44,
-        45,
-        48,
-        49,
-        53,
-        54,
-        55,
-        56,
-        57,
-        61,
-        64,
-        65,
-        68,
-        91,
-        92
-      ]
-    },
-    {
-      "go_id": "GO:0003955",
-      "go_name": "NAD(P)H dehydrogenase (quinone) activity",
-      "namespace": "MF",
-      "score": 0.8,
-      "evidence": [
-        "structural_motif"
-      ],
-      "saliency_residues": [
-        9,
-        30,
-        33,
-        37,
-        41,
-        44,
-        45,
-        48,
-        49,
-        53,
-        54,
-        55,
-        56,
-        57,
-        61,
-        64,
-        65,
-        68,
-        91,
-        92
-      ]
-    },
-    {
-      "go_id": "GO:0055056",
-      "go_name": "D-glucose transmembrane transporter activity",
-      "namespace": "MF",
-      "score": 0.75,
-      "evidence": [
-        "experimental_homolog",
-        "domain_annotation"
-      ],
-      "saliency_residues": [
-        9,
-        30,
-        33,
-        37,
-        41,
-        44,
-        45,
-        48,
-        49,
-        53,
-        54,
-        55,
-        56,
-        57,
-        61,
-        64,
-        65,
-        68,
-        91,
-        92
-      ]
-    },
-    {
       "go_id": "GO:0022857",
       "go_name": "transmembrane transporter activity",
       "namespace": "MF",
-      "score": 0.75,
+      "score": 1.0,
       "evidence": [
         "experimental_homolog",
         "domain_annotation"
@@ -194,7 +38,7 @@
       "go_id": "GO:0046872",
       "go_name": "metal ion binding",
       "namespace": "MF",
-      "score": 0.75,
+      "score": 0.49,
       "evidence": [
         "structural_motif",
         "sequence_composition"
@@ -223,10 +67,166 @@
       ]
     },
     {
+      "go_id": "GO:0055056",
+      "go_name": "D-glucose transmembrane transporter activity",
+      "namespace": "MF",
+      "score": 0.437,
+      "evidence": [
+        "experimental_homolog",
+        "domain_annotation"
+      ],
+      "saliency_residues": [
+        9,
+        30,
+        33,
+        37,
+        41,
+        44,
+        45,
+        48,
+        49,
+        53,
+        54,
+        55,
+        56,
+        57,
+        61,
+        64,
+        65,
+        68,
+        91,
+        92
+      ]
+    },
+    {
+      "go_id": "GO:0003677",
+      "go_name": "DNA binding",
+      "namespace": "MF",
+      "score": 0.297,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        9,
+        30,
+        33,
+        37,
+        41,
+        44,
+        45,
+        48,
+        49,
+        53,
+        54,
+        55,
+        56,
+        57,
+        61,
+        64,
+        65,
+        68,
+        91,
+        92
+      ]
+    },
+    {
+      "go_id": "GO:0008270",
+      "go_name": "zinc ion binding",
+      "namespace": "MF",
+      "score": 0.28,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        9,
+        30,
+        33,
+        37,
+        41,
+        44,
+        45,
+        48,
+        49,
+        53,
+        54,
+        55,
+        56,
+        57,
+        61,
+        64,
+        65,
+        68,
+        91,
+        92
+      ]
+    },
+    {
+      "go_id": "GO:0005525",
+      "go_name": "GTP binding",
+      "namespace": "MF",
+      "score": 0.28,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        9,
+        30,
+        33,
+        37,
+        41,
+        44,
+        45,
+        48,
+        49,
+        53,
+        54,
+        55,
+        56,
+        57,
+        61,
+        64,
+        65,
+        68,
+        91,
+        92
+      ]
+    },
+    {
+      "go_id": "GO:0003955",
+      "go_name": "NAD(P)H dehydrogenase (quinone) activity",
+      "namespace": "MF",
+      "score": 0.28,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        9,
+        30,
+        33,
+        37,
+        41,
+        44,
+        45,
+        48,
+        49,
+        53,
+        54,
+        55,
+        56,
+        57,
+        61,
+        64,
+        65,
+        68,
+        91,
+        92
+      ]
+    },
+    {
       "go_id": "GO:0003924",
       "go_name": "GTPase activity",
       "namespace": "MF",
-      "score": 0.75,
+      "score": 0.262,
       "evidence": [
         "structural_motif"
       ],
@@ -257,7 +257,7 @@
       "go_id": "GO:0010181",
       "go_name": "FMN binding",
       "namespace": "MF",
-      "score": 0.75,
+      "score": 0.262,
       "evidence": [
         "structural_motif"
       ],
@@ -285,12 +285,12 @@
       ]
     },
     {
-      "go_id": "GO:0030864",
-      "go_name": "C:cortical actin cytoskeleton",
+      "go_id": "GO:0016491",
+      "go_name": "oxidoreductase activity",
       "namespace": "MF",
-      "score": 0.7,
+      "score": 0.245,
       "evidence": [
-        "experimental_homolog"
+        "structural_motif"
       ],
       "saliency_residues": [
         9,
@@ -316,12 +316,12 @@
       ]
     },
     {
-      "go_id": "GO:0001917",
-      "go_name": "C:photoreceptor inner segment",
+      "go_id": "GO:0004252",
+      "go_name": "serine-type endopeptidase activity",
       "namespace": "MF",
-      "score": 0.7,
+      "score": 0.227,
       "evidence": [
-        "experimental_homolog"
+        "structural_motif"
       ],
       "saliency_residues": [
         9,
@@ -347,12 +347,12 @@
       ]
     },
     {
-      "go_id": "GO:0030496",
-      "go_name": "C:midbody",
+      "go_id": "GO:0008233",
+      "go_name": "peptidase activity",
       "namespace": "MF",
-      "score": 0.7,
+      "score": 0.227,
       "evidence": [
-        "experimental_homolog"
+        "structural_motif"
       ],
       "saliency_residues": [
         9,
@@ -378,12 +378,136 @@
       ]
     },
     {
-      "go_id": "GO:0098793",
-      "go_name": "C:presynapse",
+      "go_id": "GO:0005524",
+      "go_name": "ATP binding",
       "namespace": "MF",
-      "score": 0.7,
+      "score": 0.227,
       "evidence": [
-        "experimental_homolog"
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        9,
+        30,
+        33,
+        37,
+        41,
+        44,
+        45,
+        48,
+        49,
+        53,
+        54,
+        55,
+        56,
+        57,
+        61,
+        64,
+        65,
+        68,
+        91,
+        92
+      ]
+    },
+    {
+      "go_id": "GO:0016655",
+      "go_name": "oxidoreductase activity, acting on NADH or NADPH",
+      "namespace": "MF",
+      "score": 0.227,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        9,
+        30,
+        33,
+        37,
+        41,
+        44,
+        45,
+        48,
+        49,
+        53,
+        54,
+        55,
+        56,
+        57,
+        61,
+        64,
+        65,
+        68,
+        91,
+        92
+      ]
+    },
+    {
+      "go_id": "GO:0005515",
+      "go_name": "protein binding",
+      "namespace": "MF",
+      "score": 0.21,
+      "evidence": [
+        "ai_esm2"
+      ],
+      "saliency_residues": [
+        9,
+        30,
+        33,
+        37,
+        41,
+        44,
+        45,
+        48,
+        49,
+        53,
+        54,
+        55,
+        56,
+        57,
+        61,
+        64,
+        65,
+        68,
+        91,
+        92
+      ]
+    },
+    {
+      "go_id": "GO:0005172",
+      "go_name": "vascular endothelial growth factor receptor binding",
+      "namespace": "MF",
+      "score": 0.193,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        9,
+        30,
+        33,
+        37,
+        41,
+        44,
+        45,
+        48,
+        49,
+        53,
+        54,
+        55,
+        56,
+        57,
+        61,
+        64,
+        65,
+        68,
+        91,
+        92
+      ]
+    },
+    {
+      "go_id": "GO:0003824",
+      "go_name": "catalytic activity",
+      "namespace": "MF",
+      "score": 0.193,
+      "evidence": [
+        "active_site"
       ],
       "saliency_residues": [
         9,
@@ -412,162 +536,7 @@
       "go_id": "GO:0033300",
       "go_name": "F:dehydroascorbic acid transmembrane transporter activity",
       "namespace": "MF",
-      "score": 0.7,
-      "evidence": [
-        "experimental_homolog"
-      ],
-      "saliency_residues": [
-        9,
-        30,
-        33,
-        37,
-        41,
-        44,
-        45,
-        48,
-        49,
-        53,
-        54,
-        55,
-        56,
-        57,
-        61,
-        64,
-        65,
-        68,
-        91,
-        92
-      ]
-    },
-    {
-      "go_id": "GO:0031982",
-      "go_name": "C:vesicle",
-      "namespace": "MF",
-      "score": 0.7,
-      "evidence": [
-        "experimental_homolog"
-      ],
-      "saliency_residues": [
-        9,
-        30,
-        33,
-        37,
-        41,
-        44,
-        45,
-        48,
-        49,
-        53,
-        54,
-        55,
-        56,
-        57,
-        61,
-        64,
-        65,
-        68,
-        91,
-        92
-      ]
-    },
-    {
-      "go_id": "GO:0046323",
-      "go_name": "P:D-glucose import",
-      "namespace": "MF",
-      "score": 0.7,
-      "evidence": [
-        "experimental_homolog"
-      ],
-      "saliency_residues": [
-        9,
-        30,
-        33,
-        37,
-        41,
-        44,
-        45,
-        48,
-        49,
-        53,
-        54,
-        55,
-        56,
-        57,
-        61,
-        64,
-        65,
-        68,
-        91,
-        92
-      ]
-    },
-    {
-      "go_id": "GO:0005901",
-      "go_name": "C:caveola",
-      "namespace": "MF",
-      "score": 0.7,
-      "evidence": [
-        "experimental_homolog"
-      ],
-      "saliency_residues": [
-        9,
-        30,
-        33,
-        37,
-        41,
-        44,
-        45,
-        48,
-        49,
-        53,
-        54,
-        55,
-        56,
-        57,
-        61,
-        64,
-        65,
-        68,
-        91,
-        92
-      ]
-    },
-    {
-      "go_id": "GO:0014704",
-      "go_name": "C:intercalated disc",
-      "namespace": "MF",
-      "score": 0.7,
-      "evidence": [
-        "experimental_homolog"
-      ],
-      "saliency_residues": [
-        9,
-        30,
-        33,
-        37,
-        41,
-        44,
-        45,
-        48,
-        49,
-        53,
-        54,
-        55,
-        56,
-        57,
-        61,
-        64,
-        65,
-        68,
-        91,
-        92
-      ]
-    },
-    {
-      "go_id": "GO:0042383",
-      "go_name": "C:sarcolemma",
-      "namespace": "MF",
-      "score": 0.7,
+      "score": 0.175,
       "evidence": [
         "experimental_homolog"
       ],
@@ -598,7 +567,38 @@
       "go_id": "GO:0015150",
       "go_name": "F:fucose transmembrane transporter activity",
       "namespace": "MF",
-      "score": 0.7,
+      "score": 0.175,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        9,
+        30,
+        33,
+        37,
+        41,
+        44,
+        45,
+        48,
+        49,
+        53,
+        54,
+        55,
+        56,
+        57,
+        61,
+        64,
+        65,
+        68,
+        91,
+        92
+      ]
+    },
+    {
+      "go_id": "GO:0042802",
+      "go_name": "F:identical protein binding",
+      "namespace": "MF",
+      "score": 0.175,
       "evidence": [
         "experimental_homolog"
       ],
@@ -628,10 +628,41 @@
   ],
   "bp_predictions": [
     {
+      "go_id": "GO:0055085",
+      "go_name": "transmembrane transport",
+      "namespace": "BP",
+      "score": 0.787,
+      "evidence": [
+        "domain_annotation"
+      ],
+      "saliency_residues": [
+        9,
+        30,
+        33,
+        37,
+        41,
+        44,
+        45,
+        48,
+        49,
+        53,
+        54,
+        55,
+        56,
+        57,
+        61,
+        64,
+        65,
+        68,
+        91,
+        92
+      ]
+    },
+    {
       "go_id": "GO:1904659",
       "go_name": "D-glucose transmembrane transport",
       "namespace": "BP",
-      "score": 0.75,
+      "score": 0.437,
       "evidence": [
         "experimental_homolog",
         "domain_annotation"
@@ -660,134 +691,10 @@
       ]
     },
     {
-      "go_id": "GO:0055085",
-      "go_name": "transmembrane transport",
-      "namespace": "BP",
-      "score": 0.75,
-      "evidence": [
-        "domain_annotation"
-      ],
-      "saliency_residues": [
-        9,
-        30,
-        33,
-        37,
-        41,
-        44,
-        45,
-        48,
-        49,
-        53,
-        54,
-        55,
-        56,
-        57,
-        61,
-        64,
-        65,
-        68,
-        91,
-        92
-      ]
-    },
-    {
-      "go_id": "GO:1990350",
-      "go_name": "C:glucose transporter complex",
-      "namespace": "BP",
-      "score": 0.7,
-      "evidence": [
-        "experimental_homolog"
-      ],
-      "saliency_residues": [
-        9,
-        30,
-        33,
-        37,
-        41,
-        44,
-        45,
-        48,
-        49,
-        53,
-        54,
-        55,
-        56,
-        57,
-        61,
-        64,
-        65,
-        68,
-        91,
-        92
-      ]
-    },
-    {
-      "go_id": "GO:0042149",
-      "go_name": "P:cellular response to glucose starvation",
-      "namespace": "BP",
-      "score": 0.7,
-      "evidence": [
-        "experimental_homolog"
-      ],
-      "saliency_residues": [
-        9,
-        30,
-        33,
-        37,
-        41,
-        44,
-        45,
-        48,
-        49,
-        53,
-        54,
-        55,
-        56,
-        57,
-        61,
-        64,
-        65,
-        68,
-        91,
-        92
-      ]
-    },
-    {
-      "go_id": "GO:0032868",
-      "go_name": "P:response to insulin",
-      "namespace": "BP",
-      "score": 0.7,
-      "evidence": [
-        "experimental_homolog"
-      ],
-      "saliency_residues": [
-        9,
-        30,
-        33,
-        37,
-        41,
-        44,
-        45,
-        48,
-        49,
-        53,
-        54,
-        55,
-        56,
-        57,
-        61,
-        64,
-        65,
-        68,
-        91,
-        92
-      ]
-    },
-    {
       "go_id": "GO:0055114",
       "go_name": "oxidation-reduction process",
       "namespace": "BP",
-      "score": 0.7,
+      "score": 0.245,
       "evidence": [
         "structural_motif"
       ],
@@ -818,7 +725,7 @@
       "go_id": "GO:0006351",
       "go_name": "DNA-templated transcription",
       "namespace": "BP",
-      "score": 0.65,
+      "score": 0.227,
       "evidence": [
         "structural_motif"
       ],
@@ -849,7 +756,7 @@
       "go_id": "GO:0030193",
       "go_name": "regulation of blood coagulation",
       "namespace": "BP",
-      "score": 0.6,
+      "score": 0.21,
       "evidence": [
         "structural_motif"
       ],
@@ -880,7 +787,7 @@
       "go_id": "GO:0045944",
       "go_name": "positive regulation of transcription by RNA pol II",
       "namespace": "BP",
-      "score": 0.6,
+      "score": 0.21,
       "evidence": [
         "structural_motif"
       ],
@@ -911,7 +818,7 @@
       "go_id": "GO:0042493",
       "go_name": "response to drug",
       "namespace": "BP",
-      "score": 0.55,
+      "score": 0.193,
       "evidence": [
         "structural_motif"
       ],
@@ -942,9 +849,164 @@
       "go_id": "GO:0006508",
       "go_name": "proteolysis",
       "namespace": "BP",
-      "score": 0.55,
+      "score": 0.193,
       "evidence": [
         "structural_motif"
+      ],
+      "saliency_residues": [
+        9,
+        30,
+        33,
+        37,
+        41,
+        44,
+        45,
+        48,
+        49,
+        53,
+        54,
+        55,
+        56,
+        57,
+        61,
+        64,
+        65,
+        68,
+        91,
+        92
+      ]
+    },
+    {
+      "go_id": "GO:0046323",
+      "go_name": "P:D-glucose import",
+      "namespace": "BP",
+      "score": 0.175,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        9,
+        30,
+        33,
+        37,
+        41,
+        44,
+        45,
+        48,
+        49,
+        53,
+        54,
+        55,
+        56,
+        57,
+        61,
+        64,
+        65,
+        68,
+        91,
+        92
+      ]
+    },
+    {
+      "go_id": "GO:0042149",
+      "go_name": "P:cellular response to glucose starvation",
+      "namespace": "BP",
+      "score": 0.175,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        9,
+        30,
+        33,
+        37,
+        41,
+        44,
+        45,
+        48,
+        49,
+        53,
+        54,
+        55,
+        56,
+        57,
+        61,
+        64,
+        65,
+        68,
+        91,
+        92
+      ]
+    },
+    {
+      "go_id": "GO:0045494",
+      "go_name": "P:photoreceptor cell maintenance",
+      "namespace": "BP",
+      "score": 0.175,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        9,
+        30,
+        33,
+        37,
+        41,
+        44,
+        45,
+        48,
+        49,
+        53,
+        54,
+        55,
+        56,
+        57,
+        61,
+        64,
+        65,
+        68,
+        91,
+        92
+      ]
+    },
+    {
+      "go_id": "GO:0065003",
+      "go_name": "P:protein-containing complex assembly",
+      "namespace": "BP",
+      "score": 0.175,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        9,
+        30,
+        33,
+        37,
+        41,
+        44,
+        45,
+        48,
+        49,
+        53,
+        54,
+        55,
+        56,
+        57,
+        61,
+        64,
+        65,
+        68,
+        91,
+        92
+      ]
+    },
+    {
+      "go_id": "GO:0032868",
+      "go_name": "P:response to insulin",
+      "namespace": "BP",
+      "score": 0.175,
+      "evidence": [
+        "experimental_homolog"
       ],
       "saliency_residues": [
         9,
@@ -973,7 +1035,7 @@
       "go_id": "GO:0010819",
       "go_name": "regulation of T cell chemotaxis",
       "namespace": "BP",
-      "score": 0.45,
+      "score": 0.158,
       "evidence": [
         "structural_motif"
       ],
@@ -1006,7 +1068,7 @@
       "go_id": "GO:0016020",
       "go_name": "membrane",
       "namespace": "CC",
-      "score": 0.75,
+      "score": 1.0,
       "evidence": [
         "experimental_homolog",
         "domain_annotation",
@@ -1036,10 +1098,73 @@
       ]
     },
     {
+      "go_id": "GO:0005634",
+      "go_name": "nucleus",
+      "namespace": "CC",
+      "score": 0.333,
+      "evidence": [
+        "ai_esm2",
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        9,
+        30,
+        33,
+        37,
+        41,
+        44,
+        45,
+        48,
+        49,
+        53,
+        54,
+        55,
+        56,
+        57,
+        61,
+        64,
+        65,
+        68,
+        91,
+        92
+      ]
+    },
+    {
+      "go_id": "GO:0043234",
+      "go_name": "protein complex",
+      "namespace": "CC",
+      "score": 0.193,
+      "evidence": [
+        "structural_motif"
+      ],
+      "saliency_residues": [
+        9,
+        30,
+        33,
+        37,
+        41,
+        44,
+        45,
+        48,
+        49,
+        53,
+        54,
+        55,
+        56,
+        57,
+        61,
+        64,
+        65,
+        68,
+        91,
+        92
+      ]
+    },
+    {
       "go_id": "GO:0005886",
       "go_name": "C:plasma membrane",
       "namespace": "CC",
-      "score": 0.7,
+      "score": 0.175,
       "evidence": [
         "experimental_homolog"
       ],
@@ -1070,7 +1195,7 @@
       "go_id": "GO:0016324",
       "go_name": "C:apical plasma membrane",
       "namespace": "CC",
-      "score": 0.7,
+      "score": 0.175,
       "evidence": [
         "experimental_homolog"
       ],
@@ -1101,7 +1226,69 @@
       "go_id": "GO:0016323",
       "go_name": "C:basolateral plasma membrane",
       "namespace": "CC",
-      "score": 0.7,
+      "score": 0.175,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        9,
+        30,
+        33,
+        37,
+        41,
+        44,
+        45,
+        48,
+        49,
+        53,
+        54,
+        55,
+        56,
+        57,
+        61,
+        64,
+        65,
+        68,
+        91,
+        92
+      ]
+    },
+    {
+      "go_id": "GO:0030864",
+      "go_name": "C:cortical actin cytoskeleton",
+      "namespace": "CC",
+      "score": 0.175,
+      "evidence": [
+        "experimental_homolog"
+      ],
+      "saliency_residues": [
+        9,
+        30,
+        33,
+        37,
+        41,
+        44,
+        45,
+        48,
+        49,
+        53,
+        54,
+        55,
+        56,
+        57,
+        61,
+        64,
+        65,
+        68,
+        91,
+        92
+      ]
+    },
+    {
+      "go_id": "GO:0001917",
+      "go_name": "C:photoreceptor inner segment",
+      "namespace": "CC",
+      "score": 0.175,
       "evidence": [
         "experimental_homolog"
       ],
@@ -1132,7 +1319,7 @@
       "go_id": "GO:0005829",
       "go_name": "C:cytosol",
       "namespace": "CC",
-      "score": 0.7,
+      "score": 0.175,
       "evidence": [
         "experimental_homolog"
       ],
@@ -1163,131 +1350,7 @@
       "go_id": "GO:0001939",
       "go_name": "C:female pronucleus",
       "namespace": "CC",
-      "score": 0.7,
-      "evidence": [
-        "experimental_homolog"
-      ],
-      "saliency_residues": [
-        9,
-        30,
-        33,
-        37,
-        41,
-        44,
-        45,
-        48,
-        49,
-        53,
-        54,
-        55,
-        56,
-        57,
-        61,
-        64,
-        65,
-        68,
-        91,
-        92
-      ]
-    },
-    {
-      "go_id": "GO:0000139",
-      "go_name": "C:Golgi membrane",
-      "namespace": "CC",
-      "score": 0.7,
-      "evidence": [
-        "experimental_homolog"
-      ],
-      "saliency_residues": [
-        9,
-        30,
-        33,
-        37,
-        41,
-        44,
-        45,
-        48,
-        49,
-        53,
-        54,
-        55,
-        56,
-        57,
-        61,
-        64,
-        65,
-        68,
-        91,
-        92
-      ]
-    },
-    {
-      "go_id": "GO:0001674",
-      "go_name": "C:female germ cell nucleus",
-      "namespace": "CC",
-      "score": 0.7,
-      "evidence": [
-        "experimental_homolog"
-      ],
-      "saliency_residues": [
-        9,
-        30,
-        33,
-        37,
-        41,
-        44,
-        45,
-        48,
-        49,
-        53,
-        54,
-        55,
-        56,
-        57,
-        61,
-        64,
-        65,
-        68,
-        91,
-        92
-      ]
-    },
-    {
-      "go_id": "GO:0045121",
-      "go_name": "C:membrane raft",
-      "namespace": "CC",
-      "score": 0.7,
-      "evidence": [
-        "experimental_homolog"
-      ],
-      "saliency_residues": [
-        9,
-        30,
-        33,
-        37,
-        41,
-        44,
-        45,
-        48,
-        49,
-        53,
-        54,
-        55,
-        56,
-        57,
-        61,
-        64,
-        65,
-        68,
-        91,
-        92
-      ]
-    },
-    {
-      "go_id": "GO:0065003",
-      "go_name": "P:protein-containing complex assembly",
-      "namespace": "CC",
-      "score": 0.7,
+      "score": 0.175,
       "evidence": [
         "experimental_homolog"
       ],
@@ -1315,8 +1378,8 @@
       ]
     }
   ],
-  "top_mf": "DNA binding",
-  "top_bp": "D-glucose transmembrane transport",
+  "top_mf": "transmembrane transporter activity",
+  "top_bp": "transmembrane transport",
   "top_cc": "membrane",
-  "n_predictions": 42
+  "n_predictions": 44
 }

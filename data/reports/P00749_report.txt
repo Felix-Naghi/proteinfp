@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 15:11:21
+  Generated: 2026-04-28 18:31:49
 ======================================================================
 
   Protein    : Urokinase-type plasminogen activator
@@ -17,7 +17,7 @@
   Top function     : Specifically cleaves the zymogen plasminogen to form the active enzyme plasmin
   Enzyme           : yes — 3.4.21
   Location         : integral component of plasma membrane
-  Evidence sources : 12
+  Evidence sources : 13
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
@@ -28,7 +28,7 @@
     [HIGH  ] GO:0008233 F:peptidase activity (score=7.9, 3 sources)
     [HIGH  ] GO:0048018 F:receptor ligand activity (score=3.5, 1 sources)
     [MEDIUM] GO:0046872 metal ion binding (score=2.0, 2 sources)
-    [MEDIUM] GO:0005172 vascular endothelial growth factor receptor b (score=1.6, 2 sources)
+    [MEDIUM] GO:0003823 antigen binding (score=1.8, 1 sources)
 
   Biological Process:
     [HIGH  ] GO:0006508 proteolysis (score=15.3, 3 sources)
@@ -38,8 +38,8 @@
     [HIGH  ] GO:0033628 P:regulation of cell adhesion mediated by int (score=3.5, 1 sources)
 
   Cellular Component:
+    [HIGH  ] GO:0005615 extracellular space (score=11.7, 4 sources)
     [HIGH  ] GO:0005576 C:extracellular region (score=10.0, 3 sources)
-    [HIGH  ] GO:0005615 C:extracellular space (score=9.9, 3 sources)
     [HIGH  ] GO:1905370 C:serine-type endopeptidase complex (score=3.5, 1 sources)
 
 ──────────────────────────────────────────────────────────────────────
@@ -91,5 +91,5 @@
   6. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi
+  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi, category
 ======================================================================

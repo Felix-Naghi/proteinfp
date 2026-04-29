@@ -4,7 +4,7 @@
   "protein_name": "Cathepsin B",
   "organism": "Homo sapiens",
   "sequence_length": 339,
-  "generated_at": "2026-04-26 09:09:40",
+  "generated_at": "2026-04-28 18:31:58",
   "top_function": "Thiol protease which is believed to participate in intracellular degradation and turnover of proteins (PubMed:12220505). Cleaves matrix extracellular phosphoglycoprotein MEPE (PubMed:12220505). Involv",
   "is_enzyme": true,
   "ec_number": "3.4.22",
@@ -207,6 +207,18 @@
       "top_evidence": "structural_motif"
     },
     {
+      "go_id": "GO:0005201",
+      "go_name": "extracellular matrix structural constituent",
+      "namespace": "MF",
+      "weighted_score": 1.68,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0008270",
       "go_name": "zinc ion binding",
       "namespace": "MF",
@@ -343,6 +355,30 @@
       "top_evidence": "domain_annotation"
     },
     {
+      "go_id": "GO:0007160",
+      "go_name": "cell-matrix adhesion",
+      "namespace": "BP",
+      "weighted_score": 1.68,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
+      "go_id": "GO:0030198",
+      "go_name": "extracellular matrix organization",
+      "namespace": "BP",
+      "weighted_score": 1.68,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0015671",
       "go_name": "oxygen transport",
       "namespace": "BP",
@@ -429,6 +465,19 @@
   ],
   "go_terms_cc": [
     {
+      "go_id": "GO:0031012",
+      "go_name": "extracellular matrix",
+      "namespace": "CC",
+      "weighted_score": 6.78,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "category_classifier"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
       "go_id": "GO:0016324",
       "go_name": "C:apical plasma membrane",
       "namespace": "CC",
@@ -501,18 +550,6 @@
       "top_evidence": "experimental_homolog"
     },
     {
-      "go_id": "GO:0031012",
-      "go_name": "C:extracellular matrix",
-      "namespace": "CC",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
       "go_id": "GO:0070062",
       "go_name": "C:extracellular exosome",
       "namespace": "CC",
@@ -571,6 +608,18 @@
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005578",
+      "go_name": "proteinaceous extracellular matrix",
+      "namespace": "CC",
+      "weighted_score": 1.68,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0005833",
@@ -2106,7 +2155,7 @@
     }
   ],
   "mean_plddt": 92.14,
-  "n_evidence_sources": 8,
+  "n_evidence_sources": 9,
   "overall_confidence": "VERY HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (C59, C122, H224) to confirm functional importance",
@@ -2123,7 +2172,8 @@
     "esm2",
     "go",
     "ec",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "pockets",

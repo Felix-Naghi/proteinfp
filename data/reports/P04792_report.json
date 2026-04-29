@@ -4,12 +4,25 @@
   "protein_name": "Heat shock protein beta-1",
   "organism": "Homo sapiens",
   "sequence_length": 205,
-  "generated_at": "2026-04-26 09:09:37",
+  "generated_at": "2026-04-28 18:31:56",
   "top_function": "Small heat shock protein which functions as a molecular chaperone probably maintaining denatured proteins in a folding-competent state (PubMed:10383393, PubMed:20178975). Plays a role in stress resist",
   "is_enzyme": false,
   "ec_number": "2.7.10",
   "subcellular_location": "C:plasma membrane",
   "go_terms_mf": [
+    {
+      "go_id": "GO:0051082",
+      "go_name": "unfolded protein binding",
+      "namespace": "MF",
+      "weighted_score": 5.29,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "category_classifier_secondary"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
     {
       "go_id": "GO:0042803",
       "go_name": "F:protein homodimerization activity",
@@ -37,18 +50,6 @@
     {
       "go_id": "GO:0042802",
       "go_name": "F:identical protein binding",
-      "namespace": "MF",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0051082",
-      "go_name": "F:unfolded protein binding",
       "namespace": "MF",
       "weighted_score": 5.1,
       "n_sources": 1,
@@ -249,9 +250,71 @@
       ],
       "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0003774",
+      "go_name": "cytoskeletal motor activity",
+      "namespace": "MF",
+      "weighted_score": 1.38,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
+      "go_id": "GO:0005198",
+      "go_name": "structural molecule activity",
+      "namespace": "MF",
+      "weighted_score": 1.38,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
+      "go_id": "GO:0051087",
+      "go_name": "chaperone binding",
+      "namespace": "MF",
+      "weighted_score": 0.19,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier_secondary"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "category_classifier_secondary"
     }
   ],
   "go_terms_bp": [
+    {
+      "go_id": "GO:0042026",
+      "go_name": "protein refolding",
+      "namespace": "BP",
+      "weighted_score": 5.29,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "category_classifier_secondary"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0006457",
+      "go_name": "protein folding",
+      "namespace": "BP",
+      "weighted_score": 5.29,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "category_classifier_secondary"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
     {
       "go_id": "GO:0044183",
       "go_name": "F:protein folding chaperone",
@@ -277,18 +340,6 @@
       "top_evidence": "experimental_homolog"
     },
     {
-      "go_id": "GO:0042026",
-      "go_name": "P:protein refolding",
-      "namespace": "BP",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
       "go_id": "GO:0009408",
       "go_name": "P:response to heat",
       "namespace": "BP",
@@ -303,18 +354,6 @@
     {
       "go_id": "GO:0099641",
       "go_name": "P:anterograde axonal protein transport",
-      "namespace": "BP",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0006457",
-      "go_name": "P:protein folding",
       "namespace": "BP",
       "weighted_score": 5.1,
       "n_sources": 1,
@@ -359,6 +398,18 @@
       ],
       "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0007010",
+      "go_name": "cytoskeleton organization",
+      "namespace": "BP",
+      "weighted_score": 1.38,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0006351",
@@ -471,6 +522,20 @@
   ],
   "go_terms_cc": [
     {
+      "go_id": "GO:0005737",
+      "go_name": "cytoplasm",
+      "namespace": "CC",
+      "weighted_score": 7.88,
+      "n_sources": 3,
+      "sources": [
+        "experimental_homolog",
+        "sequence_baseline",
+        "category_classifier"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
       "go_id": "GO:0005634",
       "go_name": "C:nucleus",
       "namespace": "CC",
@@ -480,19 +545,6 @@
         "experimental_homolog",
         "ai_esm2",
         "structural_motif"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0005737",
-      "go_name": "C:cytoplasm",
-      "namespace": "CC",
-      "weighted_score": 6.5,
-      "n_sources": 2,
-      "sources": [
-        "experimental_homolog",
-        "sequence_baseline"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -570,6 +622,18 @@
       "top_evidence": "experimental_homolog"
     },
     {
+      "go_id": "GO:0005856",
+      "go_name": "cytoskeleton",
+      "namespace": "CC",
+      "weighted_score": 1.38,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0005887",
       "go_name": "integral component of plasma membrane",
       "namespace": "CC",
@@ -616,6 +680,18 @@
       ],
       "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0005829",
+      "go_name": "cytosol",
+      "namespace": "CC",
+      "weighted_score": 0.19,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier_secondary"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "category_classifier_secondary"
     }
   ],
   "active_sites": [
@@ -2037,12 +2113,13 @@
     }
   ],
   "mean_plddt": 68.85,
-  "n_evidence_sources": 8,
+  "n_evidence_sources": 9,
   "overall_confidence": "HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (H103, H124, H25) to confirm functional importance",
     "Co-immunoprecipitation with MAPKAPK2 (unknown interaction, predicted interface: [205, 16, 37])",
     "Co-immunoprecipitation with MAPKAPK5 (unknown interaction, predicted interface: [205, 16, 37])",
+    "EMSA or fluorescence polarisation assay to confirm 'unfolded protein binding' (GO:0051082)",
     "GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation"
   ],
   "modules_run": [
@@ -2053,7 +2130,8 @@
     "esm2",
     "go",
     "ec",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "pockets",

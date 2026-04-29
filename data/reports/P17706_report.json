@@ -4,7 +4,7 @@
   "protein_name": "Tyrosine-protein phosphatase non-receptor type 2",
   "organism": "Homo sapiens",
   "sequence_length": 415,
-  "generated_at": "2026-04-26 15:11:25",
+  "generated_at": "2026-04-28 18:32:06",
   "top_function": "Non-receptor type tyrosine-specific phosphatase that dephosphorylates receptor protein tyrosine kinases including INSR, EGFR, CSF1R, PDGFR. Also dephosphorylates non-receptor protein tyrosine kinases ",
   "is_enzyme": false,
   "ec_number": "3.4.21",
@@ -155,6 +155,18 @@
       ],
       "confidence": "MEDIUM",
       "top_evidence": "sequence_composition"
+    },
+    {
+      "go_id": "GO:0016787",
+      "go_name": "hydrolase activity",
+      "namespace": "MF",
+      "weighted_score": 1.8,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0004252",
@@ -363,6 +375,19 @@
       "top_evidence": "experimental_homolog"
     },
     {
+      "go_id": "GO:0006508",
+      "go_name": "proteolysis",
+      "namespace": "BP",
+      "weighted_score": 2.18,
+      "n_sources": 2,
+      "sources": [
+        "structural_motif",
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0006468",
       "go_name": "protein phosphorylation",
       "namespace": "BP",
@@ -461,18 +486,6 @@
     {
       "go_id": "GO:0019430",
       "go_name": "removal of superoxide radicals",
-      "namespace": "BP",
-      "weighted_score": 0.39,
-      "n_sources": 1,
-      "sources": [
-        "structural_motif"
-      ],
-      "confidence": "LOW",
-      "top_evidence": "structural_motif"
-    },
-    {
-      "go_id": "GO:0006508",
-      "go_name": "proteolysis",
       "namespace": "BP",
       "weighted_score": 0.39,
       "n_sources": 1,
@@ -3093,7 +3106,7 @@
     }
   ],
   "mean_plddt": 85.89,
-  "n_evidence_sources": 12,
+  "n_evidence_sources": 13,
   "overall_confidence": "VERY HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (C94, C95, H157) to confirm functional importance",
@@ -3114,7 +3127,8 @@
     "go",
     "ec",
     "foldseek",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "md"

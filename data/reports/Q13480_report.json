@@ -4,7 +4,7 @@
   "protein_name": "GRB2-associated-binding protein 1",
   "organism": "Homo sapiens",
   "sequence_length": 694,
-  "generated_at": "2026-04-26 09:09:56",
+  "generated_at": "2026-04-28 18:32:23",
   "top_function": "Adapter protein that plays a role in intracellular signaling cascades triggered by activated receptor-type kinases. Plays a role in FGFR1 signaling. Probably involved in signaling by the epidermal gro",
   "is_enzyme": true,
   "ec_number": "3.4.21",
@@ -143,6 +143,19 @@
       "top_evidence": "experimental_homolog"
     },
     {
+      "go_id": "GO:0003677",
+      "go_name": "DNA binding",
+      "namespace": "MF",
+      "weighted_score": 3.43,
+      "n_sources": 2,
+      "sources": [
+        "structural_motif",
+        "category_classifier"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0046872",
       "go_name": "metal ion binding",
       "namespace": "MF",
@@ -156,20 +169,20 @@
       "top_evidence": "sequence_composition"
     },
     {
-      "go_id": "GO:0004252",
-      "go_name": "serine-type endopeptidase activity",
+      "go_id": "GO:0003700",
+      "go_name": "DNA-binding transcription factor activity",
       "namespace": "MF",
-      "weighted_score": 1.7,
+      "weighted_score": 1.73,
       "n_sources": 1,
       "sources": [
-        "structural_motif"
+        "category_classifier"
       ],
       "confidence": "MEDIUM",
-      "top_evidence": "structural_motif"
+      "top_evidence": "category_classifier"
     },
     {
-      "go_id": "GO:0003677",
-      "go_name": "DNA binding",
+      "go_id": "GO:0004252",
+      "go_name": "serine-type endopeptidase activity",
       "namespace": "MF",
       "weighted_score": 1.7,
       "n_sources": 1,
@@ -422,6 +435,30 @@
       "top_evidence": "experimental_homolog"
     },
     {
+      "go_id": "GO:0006355",
+      "go_name": "regulation of DNA-templated transcription",
+      "namespace": "BP",
+      "weighted_score": 1.73,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
+      "go_id": "GO:0045892",
+      "go_name": "negative regulation of transcription",
+      "namespace": "BP",
+      "weighted_score": 1.73,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0006351",
       "go_name": "DNA-templated transcription",
       "namespace": "BP",
@@ -548,13 +585,14 @@
       "go_id": "GO:0005634",
       "go_name": "nucleus",
       "namespace": "CC",
-      "weighted_score": 1.9,
-      "n_sources": 2,
+      "weighted_score": 3.63,
+      "n_sources": 3,
       "sources": [
         "ai_esm2",
-        "structural_motif"
+        "structural_motif",
+        "category_classifier"
       ],
-      "confidence": "MEDIUM",
+      "confidence": "HIGH",
       "top_evidence": "ai_esm2"
     },
     {
@@ -1949,7 +1987,7 @@
     }
   ],
   "mean_plddt": 52.61,
-  "n_evidence_sources": 8,
+  "n_evidence_sources": 9,
   "overall_confidence": "HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (H267, H583, C8) to confirm functional importance",
@@ -1966,7 +2004,8 @@
     "esm2",
     "go",
     "ec",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "pockets",

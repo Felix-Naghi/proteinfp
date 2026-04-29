@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 09:09:44
+  Generated: 2026-04-28 18:32:02
 ======================================================================
 
   Protein    : Heat shock cognate 71 kDa protein
@@ -17,7 +17,7 @@
   Top function     : Molecular chaperone implicated in a wide variety of cellular processes, including protection of the proteome from stress, folding and transport of newly synthesized polypeptides, chaperone-mediated au
   Enzyme           : yes — 3.4.21
   Location         : C:lysosomal membrane
-  Evidence sources : 8
+  Evidence sources : 9
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
@@ -31,16 +31,16 @@
     [HIGH  ] GO:0072318 P:clathrin coat disassembly (score=5.1, 1 sources)
 
   Biological Process:
+    [HIGH  ] GO:0042026 protein refolding (score=6.7, 2 sources)
     [HIGH  ] GO:0140662 F:ATP-dependent protein folding chaperone (score=5.1, 1 sources)
     [HIGH  ] GO:0044183 F:protein folding chaperone (score=5.1, 1 sources)
     [HIGH  ] GO:0006397 P:mRNA processing (score=5.1, 1 sources)
     [HIGH  ] GO:0045892 P:negative regulation of DNA-templated transc (score=5.1, 1 sources)
-    [HIGH  ] GO:0042026 P:protein refolding (score=5.1, 1 sources)
 
   Cellular Component:
     [HIGH  ] GO:0005634 C:nucleus (score=7.8, 3 sources)
+    [HIGH  ] GO:0005829 cytosol (score=6.7, 2 sources)
     [HIGH  ] GO:0005737 C:cytoplasm (score=6.5, 2 sources)
-    [HIGH  ] GO:0005765 C:lysosomal membrane (score=5.1, 1 sources)
 
 ──────────────────────────────────────────────────────────────────────
   ACTIVE SITES
@@ -74,5 +74,5 @@
   6. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi, category
 ======================================================================

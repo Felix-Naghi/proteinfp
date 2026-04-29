@@ -4,7 +4,7 @@
   "protein_name": "Endoplasmic reticulum chaperone BiP",
   "organism": "Homo sapiens",
   "sequence_length": 654,
-  "generated_at": "2026-04-26 15:11:23",
+  "generated_at": "2026-04-28 18:32:02",
   "top_function": "Endoplasmic reticulum chaperone that plays a key role in protein folding and quality control in the endoplasmic reticulum lumen (PubMed:2294010, PubMed:23769672, PubMed:23990668, PubMed:28332555). Inv",
   "is_enzyme": false,
   "ec_number": "3.6.1",
@@ -72,6 +72,30 @@
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0051082",
+      "go_name": "unfolded protein binding",
+      "namespace": "MF",
+      "weighted_score": 1.8,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
+      "go_id": "GO:0051087",
+      "go_name": "chaperone binding",
+      "namespace": "MF",
+      "weighted_score": 1.8,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0046872",
@@ -304,6 +328,30 @@
       "top_evidence": "experimental_homolog"
     },
     {
+      "go_id": "GO:0006457",
+      "go_name": "protein folding",
+      "namespace": "BP",
+      "weighted_score": 1.8,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
+      "go_id": "GO:0042026",
+      "go_name": "protein refolding",
+      "namespace": "BP",
+      "weighted_score": 1.8,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0015671",
       "go_name": "oxygen transport",
       "namespace": "BP",
@@ -404,6 +452,19 @@
       "top_evidence": "experimental_homolog"
     },
     {
+      "go_id": "GO:0005829",
+      "go_name": "cytosol",
+      "namespace": "CC",
+      "weighted_score": 5.32,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "category_classifier"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
       "go_id": "GO:0016020",
       "go_name": "C:membrane",
       "namespace": "CC",
@@ -444,18 +505,6 @@
     {
       "go_id": "GO:0009986",
       "go_name": "C:cell surface",
-      "namespace": "CC",
-      "weighted_score": 3.52,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0005829",
-      "go_name": "C:cytosol",
       "namespace": "CC",
       "weighted_score": 3.52,
       "n_sources": 1,
@@ -2868,7 +2917,7 @@
     }
   ],
   "mean_plddt": 89.99,
-  "n_evidence_sources": 12,
+  "n_evidence_sources": 13,
   "overall_confidence": "VERY HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (H167, H252, H608) to confirm functional importance",
@@ -2890,7 +2939,8 @@
     "go",
     "ec",
     "foldseek",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "md"

@@ -1,0 +1,82 @@
+======================================================================
+  ProteinFP Prediction Report
+  Generated: 2026-04-28 19:27:16
+======================================================================
+
+  Protein    : DNA topoisomerase 2-alpha
+  Gene       : TOP2A
+  UniProt    : P11388
+  Organism   : Homo sapiens
+  Length     : 1531 aa
+  Mean pLDDT : 74.9
+  Confidence : VERY HIGH
+
+──────────────────────────────────────────────────────────────────────
+  FUNCTIONAL PREDICTION
+──────────────────────────────────────────────────────────────────────
+  Top function     : Key decatenating enzyme that alters DNA topology by binding to two double-stranded DNA molecules, generating a double-stranded break in one of the strands, passing the intact strand through the broken
+  Enzyme           : yes — 3.4.21
+  Location         : membrane
+  Evidence sources : 10
+
+──────────────────────────────────────────────────────────────────────
+  GENE ONTOLOGY PREDICTIONS
+──────────────────────────────────────────────────────────────────────
+
+  Molecular Function:
+    [HIGH  ] GO:0005524 ATP binding (score=40.5, 3 sources)
+    [HIGH  ] GO:0003918 DNA topoisomerase type II (double strand cut, (score=38.5, 2 sources)
+    [HIGH  ] GO:0003677 DNA binding (score=37.0, 3 sources)
+    [HIGH  ] GO:0006265 DNA topological change (score=31.5, 2 sources)
+    [HIGH  ] GO:0046872 F:metal ion binding (score=7.7, 3 sources)
+
+  Biological Process:
+    [HIGH  ] GO:0006259 DNA metabolic process (score=3.8, 1 sources)
+    [HIGH  ] GO:0030183 P:B cell differentiation (score=3.5, 1 sources)
+    [HIGH  ] GO:0000712 P:resolution of meiotic recombination interme (score=3.5, 1 sources)
+    [HIGH  ] GO:0000819 P:sister chromatid segregation (score=3.5, 1 sources)
+    [LOW   ] GO:0006351 DNA-templated transcription (score=0.5, 1 sources)
+
+  Cellular Component:
+    [HIGH  ] GO:0005634 C:nucleus (score=6.5, 3 sources)
+    [HIGH  ] GO:0005737 C:cytoplasm (score=4.7, 2 sources)
+    [HIGH  ] GO:0005730 C:nucleolus (score=3.5, 1 sources)
+
+──────────────────────────────────────────────────────────────────────
+  ACTIVE SITES
+──────────────────────────────────────────────────────────────────────
+  H548 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H558 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H559 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H567 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+  H759 [HIGH  ] motifs: serine_protease_triad, serine_protease_triad
+
+──────────────────────────────────────────────────────────────────────
+  BINDING POCKETS
+──────────────────────────────────────────────────────────────────────
+  P1: vol=1340Å³  druggability=1.00 (high)
+  P2: vol=1400Å³  druggability=0.99 (high)
+  P3: vol=1120Å³  druggability=0.99 (high)
+  P4: vol=560Å³  druggability=0.99 (high)
+  P5: vol=700Å³  druggability=0.99 (high)
+
+──────────────────────────────────────────────────────────────────────
+  ALLOSTERIC SITES
+──────────────────────────────────────────────────────────────────────
+  A1 [HIGH  ] corr=1.00 residues=[1384, 1385, 1386, 1387]
+  A2 [HIGH  ] corr=0.99 residues=[1383, 1496]
+  A3 [HIGH  ] corr=0.99 residues=[1490, 1491, 1492]
+  A4 [HIGH  ] corr=0.98 residues=[1389, 1390, 1391]
+
+──────────────────────────────────────────────────────────────────────
+  VALIDATION SUGGESTIONS
+──────────────────────────────────────────────────────────────────────
+  1. Alanine scanning mutagenesis of predicted active site residues (H548, H558, H559) to confirm functional importance
+  2. Thermal shift assay or SPR binding assay against pocket P1 (vol=1340Å³, druggability=1.00)
+  3. Enzyme activity assay consistent with EC 3.4.21 using appropriate substrate panel
+  4. EMSA or fluorescence polarisation assay to confirm 'ATP binding' (GO:0005524)
+  5. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+
+──────────────────────────────────────────────────────────────────────
+  Modules run: structure, physico, active, pockets, allosteric, homology, esm2, go, ec, category
+======================================================================

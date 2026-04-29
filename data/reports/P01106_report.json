@@ -4,12 +4,26 @@
   "protein_name": "Myc proto-oncogene protein",
   "organism": "Homo sapiens",
   "sequence_length": 454,
-  "generated_at": "2026-04-26 09:09:34",
+  "generated_at": "2026-04-28 18:31:50",
   "top_function": "Transcription factor that binds DNA in a non-specific manner, yet also specifically recognizes the core sequence 5'-CAC[GA]TG-3' (PubMed:24940000, PubMed:25956029). Activates the transcription of grow",
   "is_enzyme": false,
   "ec_number": "3.4.22",
   "subcellular_location": "membrane",
   "go_terms_mf": [
+    {
+      "go_id": "GO:0003700",
+      "go_name": "DNA-binding transcription factor activity",
+      "namespace": "MF",
+      "weighted_score": 14.53,
+      "n_sources": 3,
+      "sources": [
+        "domain_annotation",
+        "structural_motif",
+        "category_classifier"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "category_classifier"
+    },
     {
       "go_id": "GO:0046983",
       "go_name": "protein dimerization activity",
@@ -22,19 +36,6 @@
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0003700",
-      "go_name": "DNA-binding transcription factor activity",
-      "namespace": "MF",
-      "weighted_score": 12.75,
-      "n_sources": 2,
-      "sources": [
-        "domain_annotation",
-        "structural_motif"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "structural_motif"
     },
     {
       "go_id": "GO:0000978",
@@ -64,13 +65,14 @@
     },
     {
       "go_id": "GO:0003677",
-      "go_name": "F:DNA binding",
+      "go_name": "DNA binding",
       "namespace": "MF",
-      "weighted_score": 7.25,
-      "n_sources": 2,
+      "weighted_score": 9.03,
+      "n_sources": 3,
       "sources": [
         "experimental_homolog",
-        "structural_motif"
+        "structural_motif",
+        "category_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -262,13 +264,14 @@
       "go_id": "GO:0006355",
       "go_name": "regulation of DNA-templated transcription",
       "namespace": "BP",
-      "weighted_score": 11.25,
-      "n_sources": 1,
+      "weighted_score": 13.03,
+      "n_sources": 2,
       "sources": [
-        "domain_annotation"
+        "domain_annotation",
+        "category_classifier"
       ],
       "confidence": "HIGH",
-      "top_evidence": "domain_annotation"
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0006974",
@@ -368,6 +371,18 @@
       "top_evidence": "neural_classifier"
     },
     {
+      "go_id": "GO:0045892",
+      "go_name": "negative regulation of transcription",
+      "namespace": "BP",
+      "weighted_score": 1.78,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0006351",
       "go_name": "DNA-templated transcription",
       "namespace": "BP",
@@ -407,15 +422,16 @@
   "go_terms_cc": [
     {
       "go_id": "GO:0005634",
-      "go_name": "C:nucleus",
+      "go_name": "nucleus",
       "namespace": "CC",
-      "weighted_score": 14.11,
-      "n_sources": 4,
+      "weighted_score": 15.9,
+      "n_sources": 5,
       "sources": [
         "experimental_homolog",
         "ai_esm2",
         "structural_motif",
-        "neural_classifier"
+        "neural_classifier",
+        "category_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -1888,12 +1904,13 @@
     }
   ],
   "mean_plddt": 60.41,
-  "n_evidence_sources": 8,
+  "n_evidence_sources": 9,
   "overall_confidence": "HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (C315, H316, H374) to confirm functional importance",
     "Co-immunoprecipitation with EP300 (unknown interaction, predicted interface: [181, 80, 1])",
     "Co-immunoprecipitation with FBXW7 (unknown interaction, predicted interface: [181, 80, 1])",
+    "EMSA or fluorescence polarisation assay to confirm 'DNA-binding transcription factor activity' (GO:0003700)",
     "GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation"
   ],
   "modules_run": [
@@ -1904,7 +1921,8 @@
     "esm2",
     "go",
     "ec",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "pockets",

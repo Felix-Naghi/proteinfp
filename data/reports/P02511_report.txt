@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 09:09:35
+  Generated: 2026-04-28 18:31:52
 ======================================================================
 
   Protein    : Alpha-crystallin B chain
@@ -17,7 +17,7 @@
   Top function     : May contribute to the transparency and refractive index of the lens. Has chaperone-like activity, preventing aggregation of various proteins under a wide range of stress conditions. In lens epithelial
   Enzyme           : no (non-enzyme)
   Location         : C:plasma membrane
-  Evidence sources : 8
+  Evidence sources : 9
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
@@ -25,22 +25,22 @@
 
   Molecular Function:
     [HIGH  ] GO:0005212 structural constituent of eye lens (score=9.5, 2 sources)
+    [HIGH  ] GO:0051082 unfolded protein binding (score=6.9, 2 sources)
     [HIGH  ] GO:0046872 F:metal ion binding (score=6.8, 2 sources)
     [HIGH  ] GO:0005764 C:lysosome (score=5.1, 1 sources)
     [HIGH  ] GO:0042803 F:protein homodimerization activity (score=5.1, 1 sources)
-    [HIGH  ] GO:0051082 F:unfolded protein binding (score=5.1, 1 sources)
 
   Biological Process:
+    [HIGH  ] GO:0042026 protein refolding (score=6.9, 2 sources)
     [HIGH  ] GO:0043066 P:negative regulation of apoptotic process (score=5.1, 1 sources)
     [HIGH  ] GO:0045892 P:negative regulation of DNA-templated transc (score=5.1, 1 sources)
-    [HIGH  ] GO:0042026 P:protein refolding (score=5.1, 1 sources)
     [HIGH  ] GO:0009408 P:response to heat (score=5.1, 1 sources)
     [HIGH  ] GO:0060561 P:apoptotic process involved in morphogenesis (score=5.1, 1 sources)
 
   Cellular Component:
     [HIGH  ] GO:0005634 C:nucleus (score=7.8, 3 sources)
+    [HIGH  ] GO:0005829 cytosol (score=6.9, 2 sources)
     [HIGH  ] GO:0005737 C:cytoplasm (score=6.5, 2 sources)
-    [HIGH  ] GO:0032991 C:protein-containing complex (score=5.1, 1 sources)
 
 ──────────────────────────────────────────────────────────────────────
   ACTIVE SITES
@@ -72,5 +72,5 @@
   4. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi, category
 ======================================================================

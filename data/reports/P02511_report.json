@@ -4,7 +4,7 @@
   "protein_name": "Alpha-crystallin B chain",
   "organism": "Homo sapiens",
   "sequence_length": 175,
-  "generated_at": "2026-04-26 09:09:35",
+  "generated_at": "2026-04-28 18:31:52",
   "top_function": "May contribute to the transparency and refractive index of the lens. Has chaperone-like activity, preventing aggregation of various proteins under a wide range of stress conditions. In lens epithelial",
   "is_enzyme": false,
   "ec_number": "2.7.10",
@@ -19,6 +19,19 @@
       "sources": [
         "experimental_homolog",
         "domain_annotation"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0051082",
+      "go_name": "unfolded protein binding",
+      "namespace": "MF",
+      "weighted_score": 6.9,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "category_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -51,18 +64,6 @@
     {
       "go_id": "GO:0042803",
       "go_name": "F:protein homodimerization activity",
-      "namespace": "MF",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0051082",
-      "go_name": "F:unfolded protein binding",
       "namespace": "MF",
       "weighted_score": 5.1,
       "n_sources": 1,
@@ -205,6 +206,18 @@
       "top_evidence": "experimental_homolog"
     },
     {
+      "go_id": "GO:0051087",
+      "go_name": "chaperone binding",
+      "namespace": "MF",
+      "weighted_score": 1.8,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0003677",
       "go_name": "DNA binding",
       "namespace": "MF",
@@ -255,6 +268,19 @@
   ],
   "go_terms_bp": [
     {
+      "go_id": "GO:0042026",
+      "go_name": "protein refolding",
+      "namespace": "BP",
+      "weighted_score": 6.9,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "category_classifier"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
       "go_id": "GO:0043066",
       "go_name": "P:negative regulation of apoptotic process",
       "namespace": "BP",
@@ -269,18 +295,6 @@
     {
       "go_id": "GO:0045892",
       "go_name": "P:negative regulation of DNA-templated transcription",
-      "namespace": "BP",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0042026",
-      "go_name": "P:protein refolding",
       "namespace": "BP",
       "weighted_score": 5.1,
       "n_sources": 1,
@@ -337,6 +351,18 @@
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0006457",
+      "go_name": "protein folding",
+      "namespace": "BP",
+      "weighted_score": 1.8,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0006468",
@@ -487,6 +513,19 @@
       "top_evidence": "experimental_homolog"
     },
     {
+      "go_id": "GO:0005829",
+      "go_name": "cytosol",
+      "namespace": "CC",
+      "weighted_score": 6.9,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "category_classifier"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
       "go_id": "GO:0005737",
       "go_name": "C:cytoplasm",
       "namespace": "CC",
@@ -514,18 +553,6 @@
     {
       "go_id": "GO:0005576",
       "go_name": "C:extracellular region",
-      "namespace": "CC",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0005829",
-      "go_name": "C:cytosol",
       "namespace": "CC",
       "weighted_score": 5.1,
       "n_sources": 1,
@@ -2023,7 +2050,7 @@
     }
   ],
   "mean_plddt": 75.78,
-  "n_evidence_sources": 8,
+  "n_evidence_sources": 9,
   "overall_confidence": "VERY HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (H104, H83, H31) to confirm functional importance",
@@ -2039,7 +2066,8 @@
     "esm2",
     "go",
     "ec",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "pockets",

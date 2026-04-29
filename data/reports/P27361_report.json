@@ -4,7 +4,7 @@
   "protein_name": "Mitogen-activated protein kinase 3",
   "organism": "Homo sapiens",
   "sequence_length": 379,
-  "generated_at": "2026-04-26 09:09:48",
+  "generated_at": "2026-04-28 18:32:08",
   "top_function": "Serine/threonine kinase which acts as an essential component of the MAP kinase signal transduction pathway (PubMed:34497368). MAPK1/ERK2 and MAPK3/ERK1 are the 2 MAPKs which play an important role in ",
   "is_enzyme": true,
   "ec_number": "2.7.10",
@@ -196,6 +196,18 @@
       "top_evidence": "sequence_composition"
     },
     {
+      "go_id": "GO:0016740",
+      "go_name": "transferase activity",
+      "namespace": "MF",
+      "weighted_score": 1.77,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0004252",
       "go_name": "serine-type endopeptidase activity",
       "namespace": "MF",
@@ -285,12 +297,13 @@
       "go_id": "GO:0006468",
       "go_name": "protein phosphorylation",
       "namespace": "BP",
-      "weighted_score": 21.8,
-      "n_sources": 3,
+      "weighted_score": 23.57,
+      "n_sources": 4,
       "sources": [
         "experimental_homolog",
         "domain_annotation",
-        "structural_motif"
+        "structural_motif",
+        "category_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -2074,7 +2087,7 @@
     }
   ],
   "mean_plddt": 87.98,
-  "n_evidence_sources": 8,
+  "n_evidence_sources": 9,
   "overall_confidence": "VERY HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (C144, H158, H164) to confirm functional importance",
@@ -2092,7 +2105,8 @@
     "esm2",
     "go",
     "ec",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "pockets",

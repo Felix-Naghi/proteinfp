@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 09:09:35
+  Generated: 2026-04-28 18:31:54
 ======================================================================
 
   Protein    : Albumin
@@ -17,7 +17,7 @@
   Top function     : Binds water, Ca(2+), Na(+), K(+), fatty acids, hormones, bilirubin and drugs (Probable). Its main function is the regulation of the colloidal osmotic pressure of blood (Probable). Major zinc transport
   Enzyme           : yes — 2.7.10
   Location         : integral component of plasma membrane
-  Evidence sources : 8
+  Evidence sources : 9
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
@@ -38,7 +38,7 @@
     [HIGH  ] GO:0051087 F:protein-folding chaperone binding (score=5.1, 1 sources)
 
   Cellular Component:
-    [HIGH  ] GO:0005615 extracellular space (score=21.5, 3 sources)
+    [HIGH  ] GO:0005615 extracellular space (score=23.0, 4 sources)
     [HIGH  ] GO:0005634 C:nucleus (score=7.8, 3 sources)
     [HIGH  ] GO:0005737 C:cytoplasm (score=6.5, 2 sources)
 
@@ -74,5 +74,5 @@
   6. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi, category
 ======================================================================

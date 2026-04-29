@@ -4,7 +4,7 @@
   "protein_name": "Actin, cytoplasmic 1",
   "organism": "Homo sapiens",
   "sequence_length": 375,
-  "generated_at": "2026-04-26 15:11:17",
+  "generated_at": "2026-04-28 18:32:16",
   "top_function": "Actin is a highly conserved protein that polymerizes to produce filaments that form cross-linked networks in the cytoplasm of cells (By similarity). Actin exists in both monomeric (G-actin) and polyme",
   "is_enzyme": true,
   "ec_number": "3.4.21",
@@ -25,12 +25,13 @@
     },
     {
       "go_id": "GO:0016787",
-      "go_name": "F:hydrolase activity",
+      "go_name": "hydrolase activity",
       "namespace": "MF",
-      "weighted_score": 3.52,
-      "n_sources": 1,
+      "weighted_score": 3.97,
+      "n_sources": 2,
       "sources": [
-        "experimental_homolog"
+        "experimental_homolog",
+        "category_classifier_secondary"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -71,6 +72,30 @@
       ],
       "confidence": "MEDIUM",
       "top_evidence": "sequence_composition"
+    },
+    {
+      "go_id": "GO:0003774",
+      "go_name": "cytoskeletal motor activity",
+      "namespace": "MF",
+      "weighted_score": 0.91,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "category_classifier"
+    },
+    {
+      "go_id": "GO:0005198",
+      "go_name": "structural molecule activity",
+      "namespace": "MF",
+      "weighted_score": 0.91,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0004252",
@@ -243,6 +268,31 @@
       "top_evidence": "experimental_homolog"
     },
     {
+      "go_id": "GO:0007010",
+      "go_name": "cytoskeleton organization",
+      "namespace": "BP",
+      "weighted_score": 0.91,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "category_classifier"
+    },
+    {
+      "go_id": "GO:0006508",
+      "go_name": "proteolysis",
+      "namespace": "BP",
+      "weighted_score": 0.83,
+      "n_sources": 2,
+      "sources": [
+        "structural_motif",
+        "category_classifier_secondary"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
+    {
       "go_id": "GO:0006351",
       "go_name": "DNA-templated transcription",
       "namespace": "BP",
@@ -291,18 +341,6 @@
       "top_evidence": "structural_motif"
     },
     {
-      "go_id": "GO:0006508",
-      "go_name": "proteolysis",
-      "namespace": "BP",
-      "weighted_score": 0.39,
-      "n_sources": 1,
-      "sources": [
-        "structural_motif"
-      ],
-      "confidence": "LOW",
-      "top_evidence": "structural_motif"
-    },
-    {
       "go_id": "GO:0010819",
       "go_name": "regulation of T cell chemotaxis",
       "namespace": "BP",
@@ -332,25 +370,27 @@
     },
     {
       "go_id": "GO:0005737",
-      "go_name": "C:cytoplasm",
+      "go_name": "cytoplasm",
       "namespace": "CC",
-      "weighted_score": 4.67,
-      "n_sources": 2,
+      "weighted_score": 5.58,
+      "n_sources": 3,
       "sources": [
         "experimental_homolog",
-        "sequence_baseline"
+        "sequence_baseline",
+        "category_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
     },
     {
       "go_id": "GO:0005856",
-      "go_name": "C:cytoskeleton",
+      "go_name": "cytoskeleton",
       "namespace": "CC",
-      "weighted_score": 3.52,
-      "n_sources": 1,
+      "weighted_score": 4.44,
+      "n_sources": 2,
       "sources": [
-        "experimental_homolog"
+        "experimental_homolog",
+        "category_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -2713,7 +2753,7 @@
     }
   ],
   "mean_plddt": 95.2,
-  "n_evidence_sources": 12,
+  "n_evidence_sources": 13,
   "overall_confidence": "VERY HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (H101, H161, H275) to confirm functional importance",
@@ -2736,7 +2776,8 @@
     "go",
     "ec",
     "foldseek",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "md"

@@ -4,7 +4,7 @@
   "protein_name": "Albumin",
   "organism": "Homo sapiens",
   "sequence_length": 609,
-  "generated_at": "2026-04-26 09:09:35",
+  "generated_at": "2026-04-28 18:31:54",
   "top_function": "Binds water, Ca(2+), Na(+), K(+), fatty acids, hormones, bilirubin and drugs (Probable). Its main function is the regulation of the colloidal osmotic pressure of blood (Probable). Major zinc transport",
   "is_enzyme": true,
   "ec_number": "2.7.10",
@@ -265,6 +265,18 @@
       ],
       "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0003823",
+      "go_name": "antigen binding",
+      "namespace": "MF",
+      "weighted_score": 1.49,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     }
   ],
   "go_terms_bp": [
@@ -351,6 +363,42 @@
       ],
       "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0006958",
+      "go_name": "complement activation",
+      "namespace": "BP",
+      "weighted_score": 1.49,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
+      "go_id": "GO:0006955",
+      "go_name": "immune response",
+      "namespace": "BP",
+      "weighted_score": 1.49,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
+      "go_id": "GO:0006956",
+      "go_name": "complement activation, classical pathway",
+      "namespace": "BP",
+      "weighted_score": 1.49,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0006281",
@@ -490,12 +538,13 @@
       "go_id": "GO:0005615",
       "go_name": "extracellular space",
       "namespace": "CC",
-      "weighted_score": 21.5,
-      "n_sources": 3,
+      "weighted_score": 22.99,
+      "n_sources": 4,
       "sources": [
         "experimental_homolog",
         "domain_annotation",
-        "structural_motif"
+        "structural_motif",
+        "category_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -2119,7 +2168,7 @@
     }
   ],
   "mean_plddt": 92.68,
-  "n_evidence_sources": 8,
+  "n_evidence_sources": 9,
   "overall_confidence": "VERY HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (H266, C269, C270) to confirm functional importance",
@@ -2137,7 +2186,8 @@
     "esm2",
     "go",
     "ec",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "pockets",

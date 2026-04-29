@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 15:11:13
+  Generated: 2026-04-28 18:32:10
 ======================================================================
 
   Protein    : Peroxiredoxin-2
@@ -17,7 +17,7 @@
   Top function     : Thiol-specific peroxidase that catalyzes the reduction of hydrogen peroxide and organic hydroperoxides to water and alcohols, respectively. Plays a role in cell protection against oxidative stress by 
   Enzyme           : no (non-enzyme)
   Location         : membrane
-  Evidence sources : 12
+  Evidence sources : 13
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
@@ -25,7 +25,7 @@
 
   Molecular Function:
     [HIGH  ] GO:0016209 antioxidant activity (score=8.2, 2 sources)
-    [HIGH  ] GO:0016491 oxidoreductase activity (score=3.8, 1 sources)
+    [HIGH  ] GO:0016491 oxidoreductase activity (score=5.5, 2 sources)
     [HIGH  ] GO:0051920 peroxiredoxin activity (score=3.8, 1 sources)
     [HIGH  ] GO:0008379 F:thioredoxin peroxidase activity (score=3.5, 1 sources)
     [HIGH  ] GO:0004601 F:peroxidase activity (score=3.5, 1 sources)
@@ -82,5 +82,5 @@
   5. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi
+  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi, category
 ======================================================================

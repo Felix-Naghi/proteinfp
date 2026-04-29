@@ -4,7 +4,7 @@
   "protein_name": "Estrogen receptor",
   "organism": "Homo sapiens",
   "sequence_length": 595,
-  "generated_at": "2026-04-26 09:09:36",
+  "generated_at": "2026-04-28 18:31:55",
   "top_function": "Nuclear hormone receptor. The steroid hormones and their receptors are involved in the regulation of eukaryotic gene expression and affect cellular proliferation and differentiation in target tissues.",
   "is_enzyme": false,
   "ec_number": "3.4.24",
@@ -28,12 +28,13 @@
       "go_id": "GO:0003677",
       "go_name": "DNA binding",
       "namespace": "MF",
-      "weighted_score": 15.1,
-      "n_sources": 3,
+      "weighted_score": 16.9,
+      "n_sources": 4,
       "sources": [
         "experimental_homolog",
         "domain_annotation",
-        "structural_motif"
+        "structural_motif",
+        "category_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -81,14 +82,15 @@
       "go_id": "GO:0003700",
       "go_name": "DNA-binding transcription factor activity",
       "namespace": "MF",
-      "weighted_score": 5.75,
-      "n_sources": 2,
+      "weighted_score": 7.55,
+      "n_sources": 3,
       "sources": [
         "domain_annotation",
-        "structural_motif"
+        "structural_motif",
+        "category_classifier"
       ],
       "confidence": "HIGH",
-      "top_evidence": "structural_motif"
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0000785",
@@ -265,13 +267,14 @@
       "go_id": "GO:0006355",
       "go_name": "regulation of DNA-templated transcription",
       "namespace": "BP",
-      "weighted_score": 14.75,
-      "n_sources": 1,
+      "weighted_score": 16.55,
+      "n_sources": 2,
       "sources": [
-        "domain_annotation"
+        "domain_annotation",
+        "category_classifier"
       ],
       "confidence": "HIGH",
-      "top_evidence": "domain_annotation"
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0034056",
@@ -395,6 +398,18 @@
       "top_evidence": "domain_annotation"
     },
     {
+      "go_id": "GO:0045892",
+      "go_name": "negative regulation of transcription",
+      "namespace": "BP",
+      "weighted_score": 1.8,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0006351",
       "go_name": "DNA-templated transcription",
       "namespace": "BP",
@@ -448,14 +463,15 @@
       "go_id": "GO:0005634",
       "go_name": "nucleus",
       "namespace": "CC",
-      "weighted_score": 22.93,
-      "n_sources": 5,
+      "weighted_score": 24.72,
+      "n_sources": 6,
       "sources": [
         "experimental_homolog",
         "domain_annotation",
         "ai_esm2",
         "structural_motif",
-        "neural_classifier"
+        "neural_classifier",
+        "category_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -2010,7 +2026,7 @@
     }
   ],
   "mean_plddt": 66.43,
-  "n_evidence_sources": 8,
+  "n_evidence_sources": 9,
   "overall_confidence": "HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (H377, H398, H474) to confirm functional importance",
@@ -2027,7 +2043,8 @@
     "esm2",
     "go",
     "ec",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "pockets",

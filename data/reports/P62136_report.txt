@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 15:11:25
+  Generated: 2026-04-28 18:32:17
 ======================================================================
 
   Protein    : Serine/threonine-protein phosphatase PP1-alpha catalytic subunit
@@ -17,15 +17,15 @@
   Top function     : Protein phosphatase that associates with over 200 regulatory proteins to form highly specific holoenzymes which dephosphorylate hundreds of biological targets (PubMed:28216226, PubMed:30158517, PubMed
   Enzyme           : yes — 1.10.99
   Location         : membrane
-  Evidence sources : 12
+  Evidence sources : 13
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
 ──────────────────────────────────────────────────────────────────────
 
   Molecular Function:
+    [HIGH  ] GO:0016787 hydrolase activity (score=9.2, 2 sources)
     [HIGH  ] GO:0046872 F:metal ion binding (score=7.7, 3 sources)
-    [HIGH  ] GO:0016787 hydrolase activity (score=7.5, 1 sources)
     [HIGH  ] GO:0004722 F:protein serine/threonine phosphatase activi (score=3.5, 1 sources)
     [HIGH  ] GO:0016791 F:phosphatase activity (score=3.5, 1 sources)
     [HIGH  ] GO:0098641 F:cadherin binding involved in cell-cell adhe (score=3.5, 1 sources)
@@ -88,9 +88,8 @@
   3. Co-immunoprecipitation with PPP1R15A (unknown interaction, predicted interface: [330, 1, 305])
   4. Co-immunoprecipitation with PPP1CC (unknown interaction, predicted interface: [330, 1, 305])
   5. Enzyme activity assay consistent with EC 1.10.99 using appropriate substrate panel
-  6. EMSA or fluorescence polarisation assay to confirm 'F:metal ion binding' (GO:0046872)
-  7. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+  6. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi
+  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi, category
 ======================================================================

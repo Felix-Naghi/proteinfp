@@ -4,7 +4,7 @@
   "protein_name": "Tumor necrosis factor",
   "organism": "Homo sapiens",
   "sequence_length": 233,
-  "generated_at": "2026-04-26 09:09:34",
+  "generated_at": "2026-04-28 18:31:51",
   "top_function": "Cytokine that binds to TNFRSF1A/TNFR1 and TNFRSF1B/TNFBR. It is mainly secreted by macrophages and can induce cell death of certain tumor cell lines. It is potent pyrogen causing fever by direct actio",
   "is_enzyme": false,
   "ec_number": "1.10.99",
@@ -168,6 +168,18 @@
       ],
       "confidence": "HIGH",
       "top_evidence": "sequence_composition"
+    },
+    {
+      "go_id": "GO:0005215",
+      "go_name": "transporter activity",
+      "namespace": "MF",
+      "weighted_score": 1.76,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0003677",
@@ -437,6 +449,18 @@
       "top_evidence": "experimental_homolog"
     },
     {
+      "go_id": "GO:0006810",
+      "go_name": "transport",
+      "namespace": "BP",
+      "weighted_score": 1.76,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0055114",
       "go_name": "oxidation-reduction process",
       "namespace": "BP",
@@ -511,20 +535,21 @@
       "top_evidence": "domain_annotation"
     },
     {
-      "go_id": "GO:0005615",
-      "go_name": "C:extracellular space",
+      "go_id": "GO:0005886",
+      "go_name": "plasma membrane",
       "namespace": "CC",
-      "weighted_score": 5.1,
-      "n_sources": 1,
+      "weighted_score": 6.86,
+      "n_sources": 2,
       "sources": [
-        "experimental_homolog"
+        "experimental_homolog",
+        "category_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
     },
     {
-      "go_id": "GO:0005886",
-      "go_name": "C:plasma membrane",
+      "go_id": "GO:0005615",
+      "go_name": "C:extracellular space",
       "namespace": "CC",
       "weighted_score": 5.1,
       "n_sources": 1,
@@ -570,6 +595,18 @@
       ],
       "confidence": "MEDIUM",
       "top_evidence": "ai_esm2"
+    },
+    {
+      "go_id": "GO:0016021",
+      "go_name": "integral component of membrane",
+      "namespace": "CC",
+      "weighted_score": 1.76,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0005833",
@@ -1987,7 +2024,7 @@
     }
   ],
   "mean_plddt": 84.56,
-  "n_evidence_sources": 8,
+  "n_evidence_sources": 9,
   "overall_confidence": "VERY HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (C49, H52, H154) to confirm functional importance",
@@ -2004,7 +2041,8 @@
     "esm2",
     "go",
     "ec",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "pockets",

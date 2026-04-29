@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 09:09:48
+  Generated: 2026-04-28 18:32:08
 ======================================================================
 
   Protein    : Mitogen-activated protein kinase 3
@@ -17,7 +17,7 @@
   Top function     : Serine/threonine kinase which acts as an essential component of the MAP kinase signal transduction pathway (PubMed:34497368). MAPK1/ERK2 and MAPK3/ERK1 are the 2 MAPKs which play an important role in 
   Enzyme           : yes — 2.7.10
   Location         : C:plasma membrane
-  Evidence sources : 8
+  Evidence sources : 9
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
@@ -31,7 +31,7 @@
     [HIGH  ] GO:0005925 C:focal adhesion (score=5.1, 1 sources)
 
   Biological Process:
-    [HIGH  ] GO:0006468 protein phosphorylation (score=21.8, 3 sources)
+    [HIGH  ] GO:0006468 protein phosphorylation (score=23.6, 4 sources)
     [HIGH  ] GO:0007166 P:cell surface receptor signaling pathway (score=5.1, 1 sources)
     [HIGH  ] GO:0035556 P:intracellular signal transduction (score=5.1, 1 sources)
     [MEDIUM] GO:0018108 peptidyl-tyrosine phosphorylation (score=1.4, 1 sources)
@@ -74,5 +74,5 @@
   6. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi, category
 ======================================================================

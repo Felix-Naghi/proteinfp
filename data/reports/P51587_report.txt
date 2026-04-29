@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 09:09:52
+  Generated: 2026-04-28 18:32:16
 ======================================================================
 
   Protein    : unknown
@@ -17,7 +17,7 @@
   Top function     : Involved in double-strand break repair and/or homologous recombination. Binds RAD51 and potentiates recombinational DNA repair by promoting assembly of RAD51 onto single-stranded DNA (ssDNA). Acts by 
   Enzyme           : yes — 3.4.21
   Location         : membrane
-  Evidence sources : 8
+  Evidence sources : 9
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
@@ -33,13 +33,13 @@
   Biological Process:
     [HIGH  ] GO:0000724 double-strand break repair via homologous rec (score=13.0, 2 sources)
     [HIGH  ] GO:0006281 DNA repair (score=9.5, 2 sources)
+    [HIGH  ] GO:0006355 regulation of DNA-templated transcription (score=5.3, 2 sources)
     [HIGH  ] GO:1990391 C:DNA repair complex (score=5.1, 1 sources)
     [HIGH  ] GO:0071479 P:cellular response to ionizing radiation (score=5.1, 1 sources)
-    [HIGH  ] GO:0006302 P:double-strand break repair (score=5.1, 1 sources)
 
   Cellular Component:
-    [HIGH  ] GO:0005634 C:nucleus (score=7.8, 3 sources)
-    [HIGH  ] GO:0005737 C:cytoplasm (score=6.5, 2 sources)
+    [HIGH  ] GO:0005634 nucleus (score=8.0, 4 sources)
+    [HIGH  ] GO:0005737 cytoplasm (score=7.8, 3 sources)
     [HIGH  ] GO:0033593 C:BRCA2-MAGE-D1 complex (score=5.1, 1 sources)
 
 ──────────────────────────────────────────────────────────────────────
@@ -73,5 +73,5 @@
   5. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: physico, active, homology, esm2, go, ec, foldseek, ppi
+  Modules run: physico, active, homology, esm2, go, ec, foldseek, ppi, category
 ======================================================================

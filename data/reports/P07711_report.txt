@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 09:09:39
+  Generated: 2026-04-28 18:31:58
 ======================================================================
 
   Protein    : Procathepsin L
@@ -17,7 +17,7 @@
   Top function     : Thiol protease important for the overall degradation of proteins in lysosomes (Probable). Plays a critical for normal cellular functions such as general protein turnover, antigen processing and bone r
   Enzyme           : yes — 3.4.21
   Location         : C:apical plasma membrane
-  Evidence sources : 8
+  Evidence sources : 9
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
@@ -39,8 +39,8 @@
 
   Cellular Component:
     [HIGH  ] GO:0005634 C:nucleus (score=7.8, 3 sources)
+    [HIGH  ] GO:0031012 extracellular matrix (score=6.9, 2 sources)
     [HIGH  ] GO:0005615 C:extracellular space (score=5.1, 1 sources)
-    [HIGH  ] GO:0016324 C:apical plasma membrane (score=5.1, 1 sources)
 
 ──────────────────────────────────────────────────────────────────────
   ACTIVE SITES
@@ -73,5 +73,5 @@
   5. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi, category
 ======================================================================

@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 15:11:20
+  Generated: 2026-04-28 18:31:48
 ======================================================================
 
   Protein    : Coagulation factor XII
@@ -17,7 +17,7 @@
   Top function     : Factor XII is a serum glycoprotein that participates in the initiation of blood coagulation, fibrinolysis, and the generation of bradykinin and angiotensin. Prekallikrein is cleaved by factor XII to f
   Enzyme           : yes — 3.4.21
   Location         : C:plasma membrane
-  Evidence sources : 12
+  Evidence sources : 13
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
@@ -38,7 +38,7 @@
     [HIGH  ] GO:0002542 P:Factor XII activation (score=3.5, 1 sources)
 
   Cellular Component:
-    [HIGH  ] GO:0005615 extracellular space (score=12.6, 3 sources)
+    [HIGH  ] GO:0005615 extracellular space (score=14.4, 4 sources)
     [HIGH  ] GO:0005576 extracellular region (score=8.2, 2 sources)
     [HIGH  ] GO:0005737 C:cytoplasm (score=4.7, 2 sources)
 
@@ -91,5 +91,5 @@
   6. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi
+  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi, category
 ======================================================================

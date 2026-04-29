@@ -4,7 +4,7 @@
   "protein_name": "Glutamate dehydrogenase 1, mitochondrial",
   "organism": "Homo sapiens",
   "sequence_length": 558,
-  "generated_at": "2026-04-26 15:11:13",
+  "generated_at": "2026-04-28 18:31:46",
   "top_function": "Mitochondrial glutamate dehydrogenase that catalyzes the conversion of L-glutamate into alpha-ketoglutarate. Plays a key role in glutamine anaplerosis by producing alpha-ketoglutarate, an important in",
   "is_enzyme": true,
   "ec_number": "3.4.21",
@@ -14,12 +14,13 @@
       "go_id": "GO:0016491",
       "go_name": "oxidoreductase activity",
       "namespace": "MF",
-      "weighted_score": 19.5,
-      "n_sources": 3,
+      "weighted_score": 21.27,
+      "n_sources": 4,
       "sources": [
         "experimental_homolog",
         "domain_annotation",
-        "structural_motif"
+        "structural_motif",
+        "category_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -451,6 +452,19 @@
       "top_evidence": "experimental_homolog"
     },
     {
+      "go_id": "GO:0055114",
+      "go_name": "oxidation-reduction process",
+      "namespace": "BP",
+      "weighted_score": 2.26,
+      "n_sources": 2,
+      "sources": [
+        "structural_motif",
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0006468",
       "go_name": "protein phosphorylation",
       "namespace": "BP",
@@ -465,18 +479,6 @@
     {
       "go_id": "GO:0018108",
       "go_name": "peptidyl-tyrosine phosphorylation",
-      "namespace": "BP",
-      "weighted_score": 0.49,
-      "n_sources": 1,
-      "sources": [
-        "structural_motif"
-      ],
-      "confidence": "LOW",
-      "top_evidence": "structural_motif"
-    },
-    {
-      "go_id": "GO:0055114",
-      "go_name": "oxidation-reduction process",
       "namespace": "BP",
       "weighted_score": 0.49,
       "n_sources": 1,
@@ -3032,7 +3034,7 @@
     }
   ],
   "mean_plddt": 90.22,
-  "n_evidence_sources": 12,
+  "n_evidence_sources": 13,
   "overall_confidence": "VERY HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (H139, C254, C112) to confirm functional importance",
@@ -3054,7 +3056,8 @@
     "go",
     "ec",
     "foldseek",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "md"

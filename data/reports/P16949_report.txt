@@ -1,0 +1,81 @@
+======================================================================
+  ProteinFP Prediction Report
+  Generated: 2026-04-28 19:27:59
+======================================================================
+
+  Protein    : Stathmin
+  Gene       : STMN1
+  UniProt    : P16949
+  Organism   : Homo sapiens
+  Length     : 149 aa
+  Mean pLDDT : 88.0
+  Confidence : VERY HIGH
+
+──────────────────────────────────────────────────────────────────────
+  FUNCTIONAL PREDICTION
+──────────────────────────────────────────────────────────────────────
+  Top function     : Involved in the regulation of the microtubule (MT) filament system by destabilizing microtubules. Prevents assembly and promotes disassembly of microtubules (By similarity)
+  Enzyme           : no (non-enzyme)
+  Location         : C:membrane
+  Evidence sources : 10
+
+──────────────────────────────────────────────────────────────────────
+  GENE ONTOLOGY PREDICTIONS
+──────────────────────────────────────────────────────────────────────
+
+  Molecular Function:
+    [HIGH  ] GO:0015631 F:tubulin binding (score=3.5, 1 sources)
+    [HIGH  ] GO:0048306 F:calcium-dependent protein binding (score=3.5, 1 sources)
+    [MEDIUM] GO:0003774 cytoskeletal motor activity (score=1.8, 1 sources)
+    [MEDIUM] GO:0005198 structural molecule activity (score=1.8, 1 sources)
+    [LOW   ] GO:0003677 DNA binding (score=0.6, 1 sources)
+
+  Biological Process:
+    [HIGH  ] GO:0031110 regulation of microtubule polymerization or d (score=12.8, 2 sources)
+    [HIGH  ] GO:0007019 P:microtubule depolymerization (score=3.5, 1 sources)
+    [HIGH  ] GO:0031175 P:neuron projection development (score=3.5, 1 sources)
+    [HIGH  ] GO:0031115 P:negative regulation of microtubule polymeri (score=3.5, 1 sources)
+    [HIGH  ] GO:0007409 P:axonogenesis (score=3.5, 1 sources)
+
+  Cellular Component:
+    [HIGH  ] GO:0005737 cytoplasm (score=6.5, 3 sources)
+    [HIGH  ] GO:0043005 C:neuron projection (score=3.5, 1 sources)
+    [HIGH  ] GO:0005874 C:microtubule (score=3.5, 1 sources)
+
+──────────────────────────────────────────────────────────────────────
+  ACTIVE SITES
+──────────────────────────────────────────────────────────────────────
+  H64 [HIGH  ] motifs: zinc_binding_cluster, acid_base_pair
+  H78 [HIGH  ] motifs: zinc_binding_cluster, zinc_binding_cluster
+  H103 [HIGH  ] motifs: zinc_binding_cluster, zinc_binding_cluster
+  H129 [HIGH  ] motifs: zinc_binding_cluster, zinc_binding_cluster
+  K9 [MEDIUM] motifs: acid_base_pair, acid_base_pair
+
+──────────────────────────────────────────────────────────────────────
+  BINDING POCKETS
+──────────────────────────────────────────────────────────────────────
+  P1: vol=400Å³  druggability=0.72 (high)
+  P2: vol=400Å³  druggability=0.71 (high)
+  P3: vol=400Å³  druggability=0.70 (high)
+  P4: vol=420Å³  druggability=0.70 (high)
+  P5: vol=400Å³  druggability=0.69 (high)
+
+──────────────────────────────────────────────────────────────────────
+  ALLOSTERIC SITES
+──────────────────────────────────────────────────────────────────────
+  A1 [HIGH  ] corr=0.97 residues=[4, 5, 25, 26]
+  A2 [HIGH  ] corr=0.89 residues=[28, 29, 30, 31]
+  A3 [HIGH  ] corr=0.89 residues=[1, 2, 3]
+  A4 [HIGH  ] corr=0.84 residues=[32, 33, 34]
+
+──────────────────────────────────────────────────────────────────────
+  VALIDATION SUGGESTIONS
+──────────────────────────────────────────────────────────────────────
+  1. Alanine scanning mutagenesis of predicted active site residues (H64, H78, H103) to confirm functional importance
+  2. Thermal shift assay or SPR binding assay against pocket P1 (vol=400Å³, druggability=0.72)
+  3. EMSA or fluorescence polarisation assay to confirm 'F:tubulin binding' (GO:0015631)
+  4. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
+
+──────────────────────────────────────────────────────────────────────
+  Modules run: structure, physico, active, pockets, allosteric, homology, esm2, go, ec, category
+======================================================================

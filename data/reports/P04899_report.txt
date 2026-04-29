@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 15:11:14
+  Generated: 2026-04-28 18:31:56
 ======================================================================
 
   Protein    : Guanine nucleotide-binding protein G(i) subunit alpha-2
@@ -17,7 +17,7 @@
   Top function     : Guanine nucleotide-binding proteins (G proteins) function as transducers downstream of G protein-coupled receptors (GPCRs) in numerous signaling cascades (PubMed:38505600, PubMed:29925945, PubMed:3563
   Enzyme           : yes — 3.6.5
   Location         : membrane
-  Evidence sources : 12
+  Evidence sources : 13
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
@@ -31,16 +31,16 @@
     [HIGH  ] GO:0019001 guanyl nucleotide binding (score=3.8, 1 sources)
 
   Biological Process:
-    [HIGH  ] GO:0007186 G protein-coupled receptor signaling pathway (score=12.8, 2 sources)
+    [HIGH  ] GO:0007186 G protein-coupled receptor signaling pathway (score=13.5, 3 sources)
     [HIGH  ] GO:0007188 adenylate cyclase-modulating G protein-couple (score=8.2, 2 sources)
-    [HIGH  ] GO:0007165 signal transduction (score=3.8, 1 sources)
+    [HIGH  ] GO:0007165 signal transduction (score=4.5, 2 sources)
     [HIGH  ] GO:0051301 P:cell division (score=3.5, 1 sources)
     [HIGH  ] GO:0007193 P:adenylate cyclase-inhibiting G protein-coup (score=3.5, 1 sources)
 
   Cellular Component:
     [HIGH  ] GO:0005634 C:nucleus (score=6.5, 3 sources)
-    [HIGH  ] GO:0005737 C:cytoplasm (score=4.7, 2 sources)
-    [HIGH  ] GO:0005813 C:centrosome (score=3.5, 1 sources)
+    [HIGH  ] GO:0005737 cytoplasm (score=4.9, 3 sources)
+    [HIGH  ] GO:0005886 plasma membrane (score=4.2, 2 sources)
 
 ──────────────────────────────────────────────────────────────────────
   ACTIVE SITES
@@ -83,5 +83,5 @@
   6. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi
+  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi, category
 ======================================================================
