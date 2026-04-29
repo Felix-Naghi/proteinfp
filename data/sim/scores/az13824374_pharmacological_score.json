@@ -1,0 +1,255 @@
+{
+  "drug_name": "AZ13824374",
+  "dose_uM": 1.0,
+  "scores": [
+    {
+      "drug_name": "AZ13824374",
+      "target_gene": "ATAD2",
+      "target_uniprot": "Q6PL18",
+      "dose_uM": 1.0,
+      "efficacy": 85.3,
+      "selectivity": 52.1,
+      "network": 16.7,
+      "resistance": 37.5,
+      "safety": 49.2,
+      "druggability": 40.1,
+      "composite": 50.4,
+      "grade": "C",
+      "Kd_uM": 0.278,
+      "pKi": 6.555,
+      "p_binding": 0.310032,
+      "delta_S_tumor": 0.041,
+      "delta_delta_S": 0.0429,
+      "n_resistance": 20,
+      "pocket_vol": 1380.0,
+      "fill_ratio": 0.948,
+      "log2fc_tumor_normal": 5.181943871802539,
+      "modality": "Small molecule inhibitor + PROTAC / protein degrader",
+      "priority": "LOW PRIORITY \u2014 structural modifications needed",
+      "rationale": [
+        "Good selectivity: log2FC=5.2, \u0394\u0394S=+0.043",
+        "High resistance risk: 20 compensatory genes activated",
+        "Tumor-specific target: 5.2 log2FC tumor/normal",
+        "Large druggable pocket: 1380 \u00c5\u00b3 \u2014 good for optimization"
+      ]
+    },
+    {
+      "drug_name": "AZ13824374",
+      "target_gene": "TOP2A",
+      "target_uniprot": "P11388",
+      "dose_uM": 1.0,
+      "efficacy": 84.7,
+      "selectivity": 52.1,
+      "network": 16.7,
+      "resistance": 37.5,
+      "safety": 53.4,
+      "druggability": 38.7,
+      "composite": 50.5,
+      "grade": "C",
+      "Kd_uM": 0.351,
+      "pKi": 6.455,
+      "p_binding": 0.269008,
+      "delta_S_tumor": 0.041,
+      "delta_delta_S": 0.0429,
+      "n_resistance": 20,
+      "pocket_vol": 1340.0,
+      "fill_ratio": 0.976,
+      "log2fc_tumor_normal": 6.466826365179421,
+      "modality": "Small molecule inhibitor + PROTAC / protein degrader",
+      "priority": "LOW PRIORITY \u2014 structural modifications needed",
+      "rationale": [
+        "Good selectivity: log2FC=6.5, \u0394\u0394S=+0.043",
+        "High resistance risk: 20 compensatory genes activated",
+        "Tumor-specific target: 6.5 log2FC tumor/normal",
+        "Large druggable pocket: 1340 \u00c5\u00b3 \u2014 good for optimization"
+      ]
+    },
+    {
+      "drug_name": "AZ13824374",
+      "target_gene": "CLSPN",
+      "target_uniprot": "Q9HAW4",
+      "dose_uM": 1.0,
+      "efficacy": 81.2,
+      "selectivity": 52.1,
+      "network": 16.7,
+      "resistance": 37.5,
+      "safety": 53.4,
+      "druggability": 25.4,
+      "composite": 48.3,
+      "grade": "D",
+      "Kd_uM": 1.373,
+      "pKi": 5.862,
+      "p_binding": 0.090191,
+      "delta_S_tumor": 0.041,
+      "delta_delta_S": 0.0429,
+      "n_resistance": 20,
+      "pocket_vol": 620.0,
+      "fill_ratio": 2.11,
+      "log2fc_tumor_normal": 6.251384970622366,
+      "modality": "Small molecule inhibitor",
+      "priority": "LOW PRIORITY \u2014 structural modifications needed",
+      "rationale": [
+        "Good selectivity: log2FC=6.3, \u0394\u0394S=+0.043",
+        "High resistance risk: 20 compensatory genes activated",
+        "Tumor-specific target: 6.3 log2FC tumor/normal"
+      ]
+    },
+    {
+      "drug_name": "AZ13824374",
+      "target_gene": "CEACAM6",
+      "target_uniprot": "P40199",
+      "dose_uM": 1.0,
+      "efficacy": 39.3,
+      "selectivity": 32.1,
+      "network": 16.7,
+      "resistance": 7.5,
+      "safety": 63.4,
+      "druggability": 40.9,
+      "composite": 32.4,
+      "grade": "F",
+      "Kd_uM": 2.802,
+      "pKi": 5.553,
+      "p_binding": 0.0,
+      "delta_S_tumor": 0.041,
+      "delta_delta_S": 0.0429,
+      "n_resistance": 20,
+      "pocket_vol": 1500.0,
+      "fill_ratio": 0.872,
+      "log2fc_tumor_normal": 7.041162324285786,
+      "modality": "ADC (Antibody-Drug Conjugate) + Naked antibody / bispecific T-cell engager + CAR-T cell therapy",
+      "priority": "DEPRIORITIZED \u2014 insufficient profile",
+      "rationale": [
+        "High resistance risk: 20 compensatory genes activated",
+        "Tumor-specific target: 7.0 log2FC tumor/normal",
+        "Large druggable pocket: 1500 \u00c5\u00b3 \u2014 good for optimization"
+      ]
+    },
+    {
+      "drug_name": "AZ13824374",
+      "target_gene": "HELLS",
+      "target_uniprot": "Q9NRZ9",
+      "dose_uM": 1.0,
+      "efficacy": 77.6,
+      "selectivity": 52.1,
+      "network": 16.7,
+      "resistance": 37.5,
+      "safety": 48.2,
+      "druggability": 26.9,
+      "composite": 47.0,
+      "grade": "D",
+      "Kd_uM": 5.474,
+      "pKi": 5.262,
+      "p_binding": 0.025598,
+      "delta_S_tumor": 0.041,
+      "delta_delta_S": 0.0429,
+      "n_resistance": 20,
+      "pocket_vol": 1000.0,
+      "fill_ratio": 1.308,
+      "log2fc_tumor_normal": 4.969551164990858,
+      "modality": "Small molecule inhibitor + PROTAC / protein degrader",
+      "priority": "LOW PRIORITY \u2014 structural modifications needed",
+      "rationale": [
+        "Good selectivity: log2FC=5.0, \u0394\u0394S=+0.043",
+        "High resistance risk: 20 compensatory genes activated",
+        "Tumor-specific target: 5.0 log2FC tumor/normal",
+        "Large druggable pocket: 1000 \u00c5\u00b3 \u2014 good for optimization"
+      ]
+    }
+  ],
+  "synergy": {
+    "ATAD2+TOP2A": {
+      "gene1": "ATAD2",
+      "gene2": "TOP2A",
+      "overlap": 1.0,
+      "synergy_score": 0.0,
+      "bliss_p": 0.495639,
+      "interpretation": "REDUNDANT"
+    },
+    "ATAD2+CLSPN": {
+      "gene1": "ATAD2",
+      "gene2": "CLSPN",
+      "overlap": 1.0,
+      "synergy_score": 0.0,
+      "bliss_p": 0.372261,
+      "interpretation": "REDUNDANT"
+    },
+    "ATAD2+CEACAM6": {
+      "gene1": "ATAD2",
+      "gene2": "CEACAM6",
+      "overlap": 1.0,
+      "synergy_score": 0.0,
+      "bliss_p": 0.310032,
+      "interpretation": "REDUNDANT"
+    },
+    "ATAD2+HELLS": {
+      "gene1": "ATAD2",
+      "gene2": "HELLS",
+      "overlap": 1.0,
+      "synergy_score": 0.0,
+      "bliss_p": 0.327694,
+      "interpretation": "REDUNDANT"
+    },
+    "TOP2A+CLSPN": {
+      "gene1": "TOP2A",
+      "gene2": "CLSPN",
+      "overlap": 1.0,
+      "synergy_score": 0.0,
+      "bliss_p": 0.334937,
+      "interpretation": "REDUNDANT"
+    },
+    "TOP2A+CEACAM6": {
+      "gene1": "TOP2A",
+      "gene2": "CEACAM6",
+      "overlap": 1.0,
+      "synergy_score": 0.0,
+      "bliss_p": 0.269008,
+      "interpretation": "REDUNDANT"
+    },
+    "TOP2A+HELLS": {
+      "gene1": "TOP2A",
+      "gene2": "HELLS",
+      "overlap": 1.0,
+      "synergy_score": 0.0,
+      "bliss_p": 0.28772,
+      "interpretation": "REDUNDANT"
+    },
+    "CLSPN+CEACAM6": {
+      "gene1": "CLSPN",
+      "gene2": "CEACAM6",
+      "overlap": 1.0,
+      "synergy_score": 0.0,
+      "bliss_p": 0.090191,
+      "interpretation": "REDUNDANT"
+    },
+    "CLSPN+HELLS": {
+      "gene1": "CLSPN",
+      "gene2": "HELLS",
+      "overlap": 1.0,
+      "synergy_score": 0.0,
+      "bliss_p": 0.11348,
+      "interpretation": "REDUNDANT"
+    },
+    "CEACAM6+HELLS": {
+      "gene1": "CEACAM6",
+      "gene2": "HELLS",
+      "overlap": 1.0,
+      "synergy_score": 0.0,
+      "bliss_p": 0.025598,
+      "interpretation": "REDUNDANT"
+    }
+  },
+  "summary": {
+    "best_target": "ATAD2",
+    "best_composite": 50.4,
+    "best_grade": "C",
+    "n_targets": 5,
+    "weights_used": {
+      "efficacy": 0.25,
+      "selectivity": 0.25,
+      "network": 0.2,
+      "resistance": 0.1,
+      "safety": 0.1,
+      "druggability": 0.1
+    }
+  }
+}

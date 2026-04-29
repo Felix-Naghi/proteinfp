@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 09:09:41
+  Generated: 2026-04-28 18:31:59
 ======================================================================
 
   Protein    : Neutrophil elastase
@@ -17,7 +17,7 @@
   Top function     : Serine protease that modifies the functions of natural killer cells, monocytes and granulocytes. Inhibits C5a-dependent neutrophil enzyme release and chemotaxis (PubMed:15140022). Promotes cleavage of
   Enzyme           : yes — 3.4.21
   Location         : C:plasma membrane
-  Evidence sources : 8
+  Evidence sources : 9
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
@@ -38,7 +38,7 @@
     [HIGH  ] GO:0006509 P:membrane protein ectodomain proteolysis (score=5.1, 1 sources)
 
   Cellular Component:
-    [HIGH  ] GO:0005615 C:extracellular space (score=9.4, 2 sources)
+    [HIGH  ] GO:0005615 extracellular space (score=11.2, 3 sources)
     [HIGH  ] GO:0005737 C:cytoplasm (score=6.5, 2 sources)
     [HIGH  ] GO:0005576 C:extracellular region (score=5.1, 1 sources)
 
@@ -73,5 +73,5 @@
   5. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi, category
 ======================================================================

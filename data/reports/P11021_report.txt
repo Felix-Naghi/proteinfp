@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 15:11:23
+  Generated: 2026-04-28 18:32:02
 ======================================================================
 
   Protein    : Endoplasmic reticulum chaperone BiP
@@ -17,7 +17,7 @@
   Top function     : Endoplasmic reticulum chaperone that plays a key role in protein folding and quality control in the endoplasmic reticulum lumen (PubMed:2294010, PubMed:23769672, PubMed:23990668, PubMed:28332555). Inv
   Enzyme           : no (non-enzyme)
   Location         : C:membrane
-  Evidence sources : 12
+  Evidence sources : 13
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
@@ -39,8 +39,8 @@
 
   Cellular Component:
     [HIGH  ] GO:0005634 C:nucleus (score=6.5, 3 sources)
+    [HIGH  ] GO:0005829 cytosol (score=5.3, 2 sources)
     [HIGH  ] GO:0016020 C:membrane (score=4.8, 2 sources)
-    [HIGH  ] GO:0005737 C:cytoplasm (score=4.7, 2 sources)
 
 ──────────────────────────────────────────────────────────────────────
   ACTIVE SITES
@@ -91,5 +91,5 @@
   6. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi
+  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi, category
 ======================================================================

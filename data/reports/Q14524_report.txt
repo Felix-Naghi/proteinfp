@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 09:09:57
+  Generated: 2026-04-28 18:32:23
 ======================================================================
 
   Protein    : Sodium channel protein type 5 subunit alpha
@@ -17,7 +17,7 @@
   Top function     : Pore-forming subunit of Nav1.5, a voltage-gated sodium (Nav) channel that directly mediates the depolarizing phase of action potentials in excitable membranes. Navs, also called VGSCs (voltage-gated s
   Enzyme           : no (non-enzyme)
   Location         : plasma membrane
-  Evidence sources : 8
+  Evidence sources : 9
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
@@ -32,10 +32,10 @@
 
   Biological Process:
     [HIGH  ] GO:0006814 sodium ion transport (score=16.5, 2 sources)
+    [HIGH  ] GO:0055085 transmembrane transport (score=6.0, 2 sources)
     [HIGH  ] GO:0099508 F:voltage-gated monoatomic ion channel activi (score=5.1, 1 sources)
     [HIGH  ] GO:0071456 P:cellular response to hypoxia (score=5.1, 1 sources)
     [HIGH  ] GO:0006811 monoatomic ion transport (score=4.2, 1 sources)
-    [HIGH  ] GO:0055085 transmembrane transport (score=4.2, 1 sources)
 
   Cellular Component:
     [HIGH  ] GO:0001518 voltage-gated sodium channel complex (score=16.5, 2 sources)
@@ -72,5 +72,5 @@
   4. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi, category
 ======================================================================

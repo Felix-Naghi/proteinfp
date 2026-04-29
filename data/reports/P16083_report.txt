@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 09:09:47
+  Generated: 2026-04-28 18:32:05
 ======================================================================
 
   Protein    : Ribosyldihydronicotinamide dehydrogenase [quinone]
@@ -17,7 +17,7 @@
   Top function     : The enzyme apparently serves as a quinone reductase in connection with conjugation reactions of hydroquinones involved in detoxification pathways as well as in biosynthetic processes such as the vitam
   Enzyme           : yes — 3.6.5
   Location         : membrane
-  Evidence sources : 12
+  Evidence sources : 13
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
@@ -25,10 +25,10 @@
 
   Molecular Function:
     [HIGH  ] GO:0008270 F:zinc ion binding (score=7.0, 2 sources)
+    [HIGH  ] GO:0016491 oxidoreductase activity (score=6.9, 2 sources)
     [HIGH  ] GO:0003955 F:NAD(P)H dehydrogenase (quinone) activity (score=5.1, 1 sources)
     [HIGH  ] GO:0050136 F:NADH dehydrogenase (quinone) (non-electroge (score=5.1, 1 sources)
     [HIGH  ] GO:0008753 F:NADPH dehydrogenase (quinone) activity (score=5.1, 1 sources)
-    [HIGH  ] GO:0001512 F:dihydronicotinamide riboside quinone reduct (score=5.1, 1 sources)
 
   Biological Process:
     [HIGH  ] GO:0034599 P:cellular response to oxidative stress (score=5.1, 1 sources)
@@ -87,5 +87,5 @@
   5. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi
+  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi, category
 ======================================================================

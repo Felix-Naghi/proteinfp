@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 09:09:50
+  Generated: 2026-04-28 18:32:13
 ======================================================================
 
   Protein    : Breast cancer type 1 susceptibility protein
@@ -17,7 +17,7 @@
   Top function     : DNA binding
   Enzyme           : yes — 3.4.21
   Location         : integral component of plasma membrane
-  Evidence sources : 12
+  Evidence sources : 13
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
@@ -25,10 +25,10 @@
 
   Molecular Function:
     [HIGH  ] GO:0046872 metal ion binding (score=9.9, 4 sources)
-    [HIGH  ] GO:0003677 DNA binding (score=8.8, 3 sources)
+    [HIGH  ] GO:0003677 DNA binding (score=9.8, 4 sources)
     [HIGH  ] GO:0008270 zinc ion binding (score=8.6, 3 sources)
     [HIGH  ] GO:0004842 ubiquitin-protein transferase activity (score=6.9, 2 sources)
-    [MEDIUM] GO:0004252 serine-type endopeptidase activity (score=1.7, 1 sources)
+    [MEDIUM] GO:0003700 DNA-binding transcription factor activity (score=1.9, 2 sources)
 
   Biological Process:
     [HIGH  ] GO:0006281 DNA repair (score=10.4, 2 sources)
@@ -38,7 +38,7 @@
     [MEDIUM] GO:0018108 peptidyl-tyrosine phosphorylation (score=1.4, 1 sources)
 
   Cellular Component:
-    [HIGH  ] GO:0005634 nucleus (score=9.7, 4 sources)
+    [HIGH  ] GO:0005634 nucleus (score=10.7, 5 sources)
     [MEDIUM] GO:0005887 integral component of plasma membrane (score=1.3, 1 sources)
     [MEDIUM] GO:0005833 hemoglobin complex (score=1.3, 1 sources)
 
@@ -92,5 +92,5 @@
   7. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi
+  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi, category
 ======================================================================

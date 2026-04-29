@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 09:09:30
+  Generated: 2026-04-28 18:31:46
 ======================================================================
 
   Protein    : NADH-cytochrome b5 reductase 3
@@ -17,14 +17,14 @@
   Top function     : Catalyzes the reduction of two molecules of cytochrome b5 using NADH as the electron donor
   Enzyme           : yes — 3.4.21
   Location         : C:endoplasmic reticulum membrane
-  Evidence sources : 8
+  Evidence sources : 9
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
 ──────────────────────────────────────────────────────────────────────
 
   Molecular Function:
-    [HIGH  ] GO:0016491 oxidoreductase activity (score=21.5, 3 sources)
+    [HIGH  ] GO:0016491 oxidoreductase activity (score=23.3, 4 sources)
     [HIGH  ] GO:0004128 F:cytochrome-b5 reductase activity, acting on (score=5.1, 1 sources)
     [HIGH  ] GO:0090524 F:cytochrome-b5 reductase activity, acting on (score=5.1, 1 sources)
     [HIGH  ] GO:0005739 C:mitochondrion (score=5.1, 1 sources)
@@ -35,7 +35,7 @@
     [HIGH  ] GO:0006809 P:nitric oxide biosynthetic process (score=5.1, 1 sources)
     [HIGH  ] GO:0016126 P:sterol biosynthetic process (score=5.1, 1 sources)
     [HIGH  ] GO:0001878 P:response to yeast (score=5.1, 1 sources)
-    [MEDIUM] GO:0055114 oxidation-reduction process (score=1.4, 1 sources)
+    [HIGH  ] GO:0055114 oxidation-reduction process (score=3.2, 2 sources)
 
   Cellular Component:
     [HIGH  ] GO:0005737 C:cytoplasm (score=6.5, 2 sources)
@@ -73,5 +73,5 @@
   5. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi, category
 ======================================================================

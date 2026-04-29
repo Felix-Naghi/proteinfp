@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 09:09:33
+  Generated: 2026-04-28 18:31:48
 ======================================================================
 
   Protein    : Prothrombin
@@ -17,7 +17,7 @@
   Top function     : Thrombin, which cleaves bonds after Arg and Lys, converts fibrinogen to fibrin and activates factors V, VII, VIII, XIII, and, in complex with thrombomodulin, protein C. Functions in blood homeostasis,
   Enzyme           : yes — 3.4.21
   Location         : C:external side of plasma membrane
-  Evidence sources : 12
+  Evidence sources : 13
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
@@ -39,7 +39,7 @@
 
   Cellular Component:
     [HIGH  ] GO:0005576 extracellular region (score=21.5, 3 sources)
-    [HIGH  ] GO:0005615 C:extracellular space (score=12.1, 3 sources)
+    [HIGH  ] GO:0005615 extracellular space (score=13.8, 4 sources)
     [HIGH  ] GO:0009897 C:external side of plasma membrane (score=5.1, 1 sources)
 
 ──────────────────────────────────────────────────────────────────────
@@ -91,5 +91,5 @@
   6. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi
+  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi, category
 ======================================================================

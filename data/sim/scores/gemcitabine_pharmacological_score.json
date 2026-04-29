@@ -1,0 +1,254 @@
+{
+  "drug_name": "gemcitabine",
+  "dose_uM": 10.0,
+  "scores": [
+    {
+      "drug_name": "gemcitabine",
+      "target_gene": "ATAD2",
+      "target_uniprot": "Q6PL18",
+      "dose_uM": 10.0,
+      "efficacy": 33.2,
+      "selectivity": 44.1,
+      "network": 16.7,
+      "resistance": 37.5,
+      "safety": 49.2,
+      "druggability": 75.5,
+      "composite": 38.9,
+      "grade": "D",
+      "Kd_uM": 24.08,
+      "pKi": 4.618,
+      "p_binding": 0.005958,
+      "delta_S_tumor": 0.041,
+      "delta_delta_S": 0.0429,
+      "n_resistance": 20,
+      "pocket_vol": 1380.0,
+      "fill_ratio": 0.418,
+      "log2fc_tumor_normal": 5.181943871802539,
+      "modality": "Small molecule inhibitor + PROTAC / protein degrader",
+      "priority": "DEPRIORITIZED \u2014 insufficient profile",
+      "rationale": [
+        "High resistance risk: 20 compensatory genes activated",
+        "Tumor-specific target: 5.2 log2FC tumor/normal",
+        "Large druggable pocket: 1380 \u00c5\u00b3 \u2014 good for optimization"
+      ]
+    },
+    {
+      "drug_name": "gemcitabine",
+      "target_gene": "TOP2A",
+      "target_uniprot": "P11388",
+      "dose_uM": 10.0,
+      "efficacy": 32.9,
+      "selectivity": 44.0,
+      "network": 16.7,
+      "resistance": 37.5,
+      "safety": 53.4,
+      "druggability": 76.2,
+      "composite": 39.3,
+      "grade": "D",
+      "Kd_uM": 24.353,
+      "pKi": 4.613,
+      "p_binding": 0.005907,
+      "delta_S_tumor": 0.041,
+      "delta_delta_S": 0.0429,
+      "n_resistance": 20,
+      "pocket_vol": 1340.0,
+      "fill_ratio": 0.43,
+      "log2fc_tumor_normal": 6.466826365179421,
+      "modality": "Small molecule inhibitor + PROTAC / protein degrader",
+      "priority": "DEPRIORITIZED \u2014 insufficient profile",
+      "rationale": [
+        "High resistance risk: 20 compensatory genes activated",
+        "Tumor-specific target: 6.5 log2FC tumor/normal",
+        "Large druggable pocket: 1340 \u00c5\u00b3 \u2014 good for optimization"
+      ]
+    },
+    {
+      "drug_name": "gemcitabine",
+      "target_gene": "CLSPN",
+      "target_uniprot": "Q9HAW4",
+      "dose_uM": 10.0,
+      "efficacy": 14.1,
+      "selectivity": 36.0,
+      "network": 16.7,
+      "resistance": 37.5,
+      "safety": 53.4,
+      "druggability": 16.6,
+      "composite": 26.6,
+      "grade": "F",
+      "Kd_uM": 73.345,
+      "pKi": 4.135,
+      "p_binding": 0.001915,
+      "delta_S_tumor": 0.041,
+      "delta_delta_S": 0.0429,
+      "n_resistance": 20,
+      "pocket_vol": 620.0,
+      "fill_ratio": 0.93,
+      "log2fc_tumor_normal": 6.251384970622366,
+      "modality": "Small molecule inhibitor",
+      "priority": "DEPRIORITIZED \u2014 insufficient profile",
+      "rationale": [
+        "Low efficacy: P(bind)=0.0019, Kd=73.3 \u03bcM \u2014 needs affinity optimization",
+        "High resistance risk: 20 compensatory genes activated",
+        "Tumor-specific target: 6.3 log2FC tumor/normal"
+      ]
+    },
+    {
+      "drug_name": "gemcitabine",
+      "target_gene": "HELLS",
+      "target_uniprot": "Q9NRZ9",
+      "dose_uM": 10.0,
+      "efficacy": 9.2,
+      "selectivity": 33.9,
+      "network": 16.7,
+      "resistance": 31.5,
+      "safety": 48.2,
+      "druggability": 55.9,
+      "composite": 27.7,
+      "grade": "F",
+      "Kd_uM": 164.067,
+      "pKi": 3.785,
+      "p_binding": 0.000882,
+      "delta_S_tumor": 0.041,
+      "delta_delta_S": 0.0429,
+      "n_resistance": 20,
+      "pocket_vol": 1000.0,
+      "fill_ratio": 0.576,
+      "log2fc_tumor_normal": 4.969551164990858,
+      "modality": "Small molecule inhibitor + PROTAC / protein degrader",
+      "priority": "DEPRIORITIZED \u2014 insufficient profile",
+      "rationale": [
+        "Low efficacy: P(bind)=0.0009, Kd=164.1 \u03bcM \u2014 needs affinity optimization",
+        "High resistance risk: 20 compensatory genes activated",
+        "Tumor-specific target: 5.0 log2FC tumor/normal",
+        "Large druggable pocket: 1000 \u00c5\u00b3 \u2014 good for optimization"
+      ]
+    },
+    {
+      "drug_name": "gemcitabine",
+      "target_gene": "CEACAM6",
+      "target_uniprot": "P40199",
+      "dose_uM": 10.0,
+      "efficacy": 3.0,
+      "selectivity": 32.1,
+      "network": 16.7,
+      "resistance": 7.5,
+      "safety": 63.4,
+      "druggability": 65.5,
+      "composite": 25.8,
+      "grade": "F",
+      "Kd_uM": 657.112,
+      "pKi": 3.182,
+      "p_binding": 0.0,
+      "delta_S_tumor": 0.041,
+      "delta_delta_S": 0.0429,
+      "n_resistance": 20,
+      "pocket_vol": 1500.0,
+      "fill_ratio": 0.384,
+      "log2fc_tumor_normal": 7.041162324285786,
+      "modality": "ADC (Antibody-Drug Conjugate) + Naked antibody / bispecific T-cell engager + CAR-T cell therapy",
+      "priority": "DEPRIORITIZED \u2014 insufficient profile",
+      "rationale": [
+        "Low efficacy: P(bind)=0.0000, Kd=657.1 \u03bcM \u2014 needs affinity optimization",
+        "High resistance risk: 20 compensatory genes activated",
+        "Tumor-specific target: 7.0 log2FC tumor/normal",
+        "Large druggable pocket: 1500 \u00c5\u00b3 \u2014 good for optimization"
+      ]
+    }
+  ],
+  "synergy": {
+    "ATAD2+TOP2A": {
+      "gene1": "ATAD2",
+      "gene2": "TOP2A",
+      "overlap": 1.0,
+      "synergy_score": 0.0,
+      "bliss_p": 0.01183,
+      "interpretation": "REDUNDANT"
+    },
+    "ATAD2+CLSPN": {
+      "gene1": "ATAD2",
+      "gene2": "CLSPN",
+      "overlap": 1.0,
+      "synergy_score": 0.0,
+      "bliss_p": 0.007862,
+      "interpretation": "REDUNDANT"
+    },
+    "ATAD2+HELLS": {
+      "gene1": "ATAD2",
+      "gene2": "HELLS",
+      "overlap": 1.0,
+      "synergy_score": 0.0,
+      "bliss_p": 0.006835,
+      "interpretation": "REDUNDANT"
+    },
+    "ATAD2+CEACAM6": {
+      "gene1": "ATAD2",
+      "gene2": "CEACAM6",
+      "overlap": 1.0,
+      "synergy_score": 0.0,
+      "bliss_p": 0.005958,
+      "interpretation": "REDUNDANT"
+    },
+    "TOP2A+CLSPN": {
+      "gene1": "TOP2A",
+      "gene2": "CLSPN",
+      "overlap": 1.0,
+      "synergy_score": 0.0,
+      "bliss_p": 0.007811,
+      "interpretation": "REDUNDANT"
+    },
+    "TOP2A+HELLS": {
+      "gene1": "TOP2A",
+      "gene2": "HELLS",
+      "overlap": 1.0,
+      "synergy_score": 0.0,
+      "bliss_p": 0.006784,
+      "interpretation": "REDUNDANT"
+    },
+    "TOP2A+CEACAM6": {
+      "gene1": "TOP2A",
+      "gene2": "CEACAM6",
+      "overlap": 1.0,
+      "synergy_score": 0.0,
+      "bliss_p": 0.005907,
+      "interpretation": "REDUNDANT"
+    },
+    "CLSPN+HELLS": {
+      "gene1": "CLSPN",
+      "gene2": "HELLS",
+      "overlap": 1.0,
+      "synergy_score": 0.0,
+      "bliss_p": 0.002795,
+      "interpretation": "REDUNDANT"
+    },
+    "CLSPN+CEACAM6": {
+      "gene1": "CLSPN",
+      "gene2": "CEACAM6",
+      "overlap": 1.0,
+      "synergy_score": 0.0,
+      "bliss_p": 0.001915,
+      "interpretation": "REDUNDANT"
+    },
+    "HELLS+CEACAM6": {
+      "gene1": "HELLS",
+      "gene2": "CEACAM6",
+      "overlap": 1.0,
+      "synergy_score": 0.0,
+      "bliss_p": 0.000882,
+      "interpretation": "REDUNDANT"
+    }
+  },
+  "summary": {
+    "best_target": "ATAD2",
+    "best_composite": 38.9,
+    "best_grade": "D",
+    "n_targets": 5,
+    "weights_used": {
+      "efficacy": 0.25,
+      "selectivity": 0.25,
+      "network": 0.2,
+      "resistance": 0.1,
+      "safety": 0.1,
+      "druggability": 0.1
+    }
+  }
+}

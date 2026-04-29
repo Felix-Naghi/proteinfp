@@ -4,7 +4,7 @@
   "protein_name": "Tyrosine-protein phosphatase non-receptor type 6",
   "organism": "Homo sapiens",
   "sequence_length": 595,
-  "generated_at": "2026-04-26 09:09:49",
+  "generated_at": "2026-04-28 18:32:09",
   "top_function": "serine-type endopeptidase activity",
   "is_enzyme": false,
   "ec_number": "3.4.21",
@@ -157,6 +157,30 @@
       "top_evidence": "structural_motif"
     },
     {
+      "go_id": "GO:0003774",
+      "go_name": "cytoskeletal motor activity",
+      "namespace": "MF",
+      "weighted_score": 1.23,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
+      "go_id": "GO:0005198",
+      "go_name": "structural molecule activity",
+      "namespace": "MF",
+      "weighted_score": 1.23,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0005172",
       "go_name": "vascular endothelial growth factor receptor binding",
       "namespace": "MF",
@@ -215,6 +239,18 @@
       ],
       "confidence": "LOW",
       "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0003823",
+      "go_name": "antigen binding",
+      "namespace": "MF",
+      "weighted_score": 0.16,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier_secondary"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "category_classifier_secondary"
     }
   ],
   "go_terms_bp": [
@@ -279,6 +315,18 @@
       ],
       "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0007010",
+      "go_name": "cytoskeleton organization",
+      "namespace": "BP",
+      "weighted_score": 1.23,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0030193",
@@ -351,9 +399,58 @@
       ],
       "confidence": "LOW",
       "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0006958",
+      "go_name": "complement activation",
+      "namespace": "BP",
+      "weighted_score": 0.16,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier_secondary"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "category_classifier_secondary"
+    },
+    {
+      "go_id": "GO:0006955",
+      "go_name": "immune response",
+      "namespace": "BP",
+      "weighted_score": 0.16,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier_secondary"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "category_classifier_secondary"
+    },
+    {
+      "go_id": "GO:0006956",
+      "go_name": "complement activation, classical pathway",
+      "namespace": "BP",
+      "weighted_score": 0.16,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier_secondary"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "category_classifier_secondary"
     }
   ],
   "go_terms_cc": [
+    {
+      "go_id": "GO:0005737",
+      "go_name": "cytoplasm",
+      "namespace": "CC",
+      "weighted_score": 2.13,
+      "n_sources": 2,
+      "sources": [
+        "sequence_baseline",
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
     {
       "go_id": "GO:0005634",
       "go_name": "nucleus",
@@ -378,6 +475,18 @@
       ],
       "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0005856",
+      "go_name": "cytoskeleton",
+      "namespace": "CC",
+      "weighted_score": 1.23,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0043234",
@@ -416,16 +525,16 @@
       "top_evidence": "structural_motif"
     },
     {
-      "go_id": "GO:0005737",
-      "go_name": "cytoplasm",
+      "go_id": "GO:0005615",
+      "go_name": "extracellular space",
       "namespace": "CC",
-      "weighted_score": 0.9,
+      "weighted_score": 0.16,
       "n_sources": 1,
       "sources": [
-        "sequence_baseline"
+        "category_classifier_secondary"
       ],
       "confidence": "LOW",
-      "top_evidence": "sequence_baseline"
+      "top_evidence": "category_classifier_secondary"
     }
   ],
   "active_sites": [
@@ -1931,7 +2040,7 @@
     }
   ],
   "mean_plddt": 86.45,
-  "n_evidence_sources": 8,
+  "n_evidence_sources": 9,
   "overall_confidence": "HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (H112, H114, H411) to confirm functional importance",
@@ -1947,7 +2056,8 @@
     "esm2",
     "go",
     "ec",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "pockets",

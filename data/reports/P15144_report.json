@@ -4,7 +4,7 @@
   "protein_name": "Aminopeptidase N",
   "organism": "Homo sapiens",
   "sequence_length": 967,
-  "generated_at": "2026-04-26 09:09:47",
+  "generated_at": "2026-04-28 18:32:05",
   "top_function": "serine-type endopeptidase activity",
   "is_enzyme": true,
   "ec_number": "3.4.21",
@@ -49,6 +49,18 @@
       ],
       "confidence": "HIGH",
       "top_evidence": "sequence_composition"
+    },
+    {
+      "go_id": "GO:0016787",
+      "go_name": "hydrolase activity",
+      "namespace": "MF",
+      "weighted_score": 1.79,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0004252",
@@ -260,15 +272,16 @@
       "go_id": "GO:0006508",
       "go_name": "proteolysis",
       "namespace": "BP",
-      "weighted_score": 8.38,
-      "n_sources": 3,
+      "weighted_score": 10.17,
+      "n_sources": 4,
       "sources": [
         "sequence_homolog",
         "domain_annotation",
-        "structural_motif"
+        "structural_motif",
+        "category_classifier"
       ],
       "confidence": "HIGH",
-      "top_evidence": "sequence_homolog"
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0006468",
@@ -1946,7 +1959,7 @@
     }
   ],
   "mean_plddt": 93.07,
-  "n_evidence_sources": 8,
+  "n_evidence_sources": 9,
   "overall_confidence": "HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (H123, C223, H239) to confirm functional importance",
@@ -1964,7 +1977,8 @@
     "esm2",
     "go",
     "ec",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "pockets",

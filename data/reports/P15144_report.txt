@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 09:09:47
+  Generated: 2026-04-28 18:32:05
 ======================================================================
 
   Protein    : Aminopeptidase N
@@ -17,7 +17,7 @@
   Top function     : serine-type endopeptidase activity
   Enzyme           : yes — 3.4.21
   Location         : integral component of plasma membrane
-  Evidence sources : 8
+  Evidence sources : 9
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
@@ -27,11 +27,11 @@
     [HIGH  ] GO:0008270 zinc ion binding (score=8.6, 3 sources)
     [HIGH  ] GO:0008237 metallopeptidase activity (score=6.9, 2 sources)
     [HIGH  ] GO:0046872 metal ion binding (score=3.0, 2 sources)
+    [MEDIUM] GO:0016787 hydrolase activity (score=1.8, 1 sources)
     [MEDIUM] GO:0004252 serine-type endopeptidase activity (score=1.7, 1 sources)
-    [MEDIUM] GO:0003677 DNA binding (score=1.7, 1 sources)
 
   Biological Process:
-    [HIGH  ] GO:0006508 proteolysis (score=8.4, 3 sources)
+    [HIGH  ] GO:0006508 proteolysis (score=10.2, 4 sources)
     [MEDIUM] GO:0006468 protein phosphorylation (score=1.6, 1 sources)
     [MEDIUM] GO:0018108 peptidyl-tyrosine phosphorylation (score=1.4, 1 sources)
     [MEDIUM] GO:0055114 oxidation-reduction process (score=1.4, 1 sources)
@@ -74,5 +74,5 @@
   6. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi, category
 ======================================================================

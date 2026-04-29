@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 09:09:52
+  Generated: 2026-04-28 18:32:16
 ======================================================================
 
   Protein    : Caspase-7
@@ -17,7 +17,7 @@
   Top function     : Thiol protease involved in different programmed cell death processes, such as apoptosis, pyroptosis or granzyme-mediated programmed cell death, by proteolytically cleaving target proteins (PubMed:1125
   Enzyme           : yes — 3.4.21
   Location         : C:plasma membrane
-  Evidence sources : 8
+  Evidence sources : 9
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
@@ -27,11 +27,11 @@
     [HIGH  ] GO:0004197 cysteine-type endopeptidase activity (score=20.0, 2 sources)
     [HIGH  ] GO:0008234 cysteine-type peptidase activity (score=9.5, 2 sources)
     [HIGH  ] GO:0008233 F:peptidase activity (score=7.0, 2 sources)
+    [HIGH  ] GO:0003723 RNA binding (score=6.5, 2 sources)
     [HIGH  ] GO:0097194 P:execution phase of apoptosis (score=5.1, 1 sources)
-    [HIGH  ] GO:0004190 F:aspartic-type endopeptidase activity (score=5.1, 1 sources)
 
   Biological Process:
-    [HIGH  ] GO:0006508 proteolysis (score=21.5, 3 sources)
+    [HIGH  ] GO:0006508 proteolysis (score=21.7, 4 sources)
     [HIGH  ] GO:0006915 P:apoptotic process (score=5.1, 1 sources)
     [HIGH  ] GO:0043525 P:positive regulation of neuron apoptotic pro (score=5.1, 1 sources)
     [HIGH  ] GO:0031264 C:death-inducing signaling complex (score=5.1, 1 sources)
@@ -73,5 +73,5 @@
   5. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi, category
 ======================================================================

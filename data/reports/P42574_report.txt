@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 09:09:51
+  Generated: 2026-04-28 18:32:14
 ======================================================================
 
   Protein    : Caspase-3
@@ -17,7 +17,7 @@
   Top function     : cysteine-type endopeptidase activity
   Enzyme           : no (non-enzyme)
   Location         : cytoplasm
-  Evidence sources : 12
+  Evidence sources : 13
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
@@ -27,14 +27,17 @@
     [HIGH  ] GO:0004197 cysteine-type endopeptidase activity (score=17.4, 2 sources)
     [HIGH  ] GO:0008234 cysteine-type peptidase activity (score=6.9, 2 sources)
     [MEDIUM] GO:0008233 peptidase activity (score=2.5, 1 sources)
+    [MEDIUM] GO:0005215 transporter activity (score=1.8, 1 sources)
     [MEDIUM] GO:0005515 protein binding (score=1.1, 1 sources)
 
   Biological Process:
     [HIGH  ] GO:0006508 proteolysis (score=17.4, 2 sources)
+    [MEDIUM] GO:0006810 transport (score=1.8, 1 sources)
 
   Cellular Component:
+    [MEDIUM] GO:0016021 integral component of membrane (score=1.8, 1 sources)
+    [MEDIUM] GO:0005886 plasma membrane (score=1.8, 1 sources)
     [LOW   ] GO:0005634 nucleus (score=0.9, 1 sources)
-    [LOW   ] GO:0005737 cytoplasm (score=0.9, 1 sources)
 
 ──────────────────────────────────────────────────────────────────────
   ACTIVE SITES
@@ -63,5 +66,5 @@
   4. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi
+  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi, category
 ======================================================================

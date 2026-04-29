@@ -1,0 +1,65 @@
+{
+  "uniprot_id": "Q9NRZ9",
+  "gene_name": "HELLS",
+  "compartment": "nucleus",
+  "length": 300,
+  "mean_plddt": 68.41,
+  "states": [
+    {
+      "name": "active",
+      "delta_G_kJ_mol": 0.015,
+      "pocket_volume_A3": 1000.0,
+      "pocket_shape": 0.997,
+      "druggability": 0.997,
+      "probability": 0.2648,
+      "accessible": true
+    },
+    {
+      "name": "apo",
+      "delta_G_kJ_mol": 0.0,
+      "pocket_volume_A3": 850.0,
+      "pocket_shape": 0.8474499999999999,
+      "druggability": 0.8474499999999999,
+      "probability": 0.2664,
+      "accessible": true
+    },
+    {
+      "name": "partially_open",
+      "delta_G_kJ_mol": 1.289,
+      "pocket_volume_A3": 700.0,
+      "pocket_shape": 0.6979,
+      "druggability": 0.6979,
+      "probability": 0.1616,
+      "accessible": true
+    },
+    {
+      "name": "inactive",
+      "delta_G_kJ_mol": 3.542,
+      "pocket_volume_A3": 300.0,
+      "pocket_shape": 0.19940000000000002,
+      "druggability": 0.19940000000000002,
+      "probability": 0.0674,
+      "accessible": true
+    },
+    {
+      "name": "allosteric_open",
+      "delta_G_kJ_mol": 0.272,
+      "pocket_volume_A3": 1150.0,
+      "pocket_shape": 0.8973,
+      "druggability": 0.9471499999999999,
+      "probability": 0.2397,
+      "accessible": true
+    }
+  ],
+  "mean_pocket_volume": 900.23,
+  "mean_druggability": 0.843,
+  "conformational_entropy": 1.5229,
+  "pH_effect_kJ": 0.0,
+  "crowding_effect_kJ": -0.498,
+  "ion_effect_kJ": 0.0,
+  "embedding_norm": 7.1969,
+  "n_functional_res": 292,
+  "allostery_score": 1.0,
+  "pdac_vs_normal_ddG": -0.498,
+  "ligandability_shift": -0.0109
+}

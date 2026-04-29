@@ -4,7 +4,7 @@
   "protein_name": "Anaphase-promoting complex subunit CDC26",
   "organism": "Homo sapiens",
   "sequence_length": 85,
-  "generated_at": "2026-04-26 09:09:57",
+  "generated_at": "2026-04-28 18:32:24",
   "top_function": "Component of the anaphase promoting complex/cyclosome (APC/C), a cell cycle-regulated E3 ubiquitin ligase that controls progression through mitosis and the G1 phase of the cell cycle (PubMed:18485873)",
   "is_enzyme": false,
   "ec_number": "2.x.x.x",
@@ -57,6 +57,30 @@
       ],
       "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0051082",
+      "go_name": "unfolded protein binding",
+      "namespace": "MF",
+      "weighted_score": 1.53,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
+      "go_id": "GO:0051087",
+      "go_name": "chaperone binding",
+      "namespace": "MF",
+      "weighted_score": 1.53,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0046872",
@@ -194,6 +218,30 @@
       "top_evidence": "experimental_homolog"
     },
     {
+      "go_id": "GO:0006457",
+      "go_name": "protein folding",
+      "namespace": "BP",
+      "weighted_score": 1.53,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
+      "go_id": "GO:0042026",
+      "go_name": "protein refolding",
+      "namespace": "BP",
+      "weighted_score": 1.53,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0006351",
       "go_name": "DNA-templated transcription",
       "namespace": "BP",
@@ -282,12 +330,13 @@
     },
     {
       "go_id": "GO:0005829",
-      "go_name": "C:cytosol",
+      "go_name": "cytosol",
       "namespace": "CC",
-      "weighted_score": 5.1,
-      "n_sources": 1,
+      "weighted_score": 6.63,
+      "n_sources": 2,
       "sources": [
-        "experimental_homolog"
+        "experimental_homolog",
+        "category_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -1501,7 +1550,7 @@
     }
   ],
   "mean_plddt": 72.99,
-  "n_evidence_sources": 8,
+  "n_evidence_sources": 9,
   "overall_confidence": "VERY HIGH",
   "validation_suggestions": [
     "Co-immunoprecipitation with ANAPC4 (unknown interaction, predicted interface: [85, 1, 3])",
@@ -1516,7 +1565,8 @@
     "esm2",
     "go",
     "ec",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "pockets",

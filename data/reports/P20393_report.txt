@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 09:09:48
+  Generated: 2026-04-28 18:32:07
 ======================================================================
 
   Protein    : Nuclear receptor subfamily 1 group D member 1
@@ -17,7 +17,7 @@
   Top function     : Transcriptional repressor which coordinates circadian rhythm and metabolic pathways in a heme-dependent manner. Integral component of the complex transcription machinery that governs circadian rhythmi
   Enzyme           : no (non-enzyme)
   Location         : membrane
-  Evidence sources : 8
+  Evidence sources : 9
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
@@ -25,20 +25,20 @@
 
   Molecular Function:
     [HIGH  ] GO:0008270 zinc ion binding (score=14.8, 3 sources)
-    [HIGH  ] GO:0003700 DNA-binding transcription factor activity (score=11.0, 3 sources)
+    [HIGH  ] GO:0003700 DNA-binding transcription factor activity (score=12.8, 4 sources)
     [HIGH  ] GO:0000978 F:RNA polymerase II cis-regulatory region seq (score=9.6, 2 sources)
     [HIGH  ] GO:0000981 F:DNA-binding transcription factor activity,  (score=9.6, 2 sources)
     [HIGH  ] GO:1990837 F:sequence-specific double-stranded DNA bindi (score=9.5, 2 sources)
 
   Biological Process:
-    [HIGH  ] GO:0006355 regulation of DNA-templated transcription (score=7.8, 1 sources)
+    [HIGH  ] GO:0006355 regulation of DNA-templated transcription (score=9.6, 2 sources)
+    [HIGH  ] GO:0045892 negative regulation of transcription (score=6.9, 2 sources)
     [HIGH  ] GO:0009755 P:hormone-mediated signaling pathway (score=5.1, 1 sources)
     [HIGH  ] GO:0000122 P:negative regulation of transcription by RNA (score=5.1, 1 sources)
-    [HIGH  ] GO:0045892 P:negative regulation of DNA-templated transc (score=5.1, 1 sources)
     [HIGH  ] GO:0030522 P:intracellular receptor signaling pathway (score=5.1, 1 sources)
 
   Cellular Component:
-    [HIGH  ] GO:0005634 C:nucleus (score=14.2, 4 sources)
+    [HIGH  ] GO:0005634 nucleus (score=16.0, 5 sources)
     [HIGH  ] GO:0005737 C:cytoplasm (score=6.5, 2 sources)
     [HIGH  ] GO:0016604 C:nuclear body (score=3.0, 1 sources)
 
@@ -73,5 +73,5 @@
   5. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi, category
 ======================================================================

@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 15:11:17
+  Generated: 2026-04-28 18:32:11
 ======================================================================
 
   Protein    : Nitric oxide synthase, inducible
@@ -17,14 +17,14 @@
   Top function     : Produces nitric oxide (NO) which is a messenger molecule with diverse functions throughout the body (PubMed:7504305, PubMed:7531687, PubMed:7544004, PubMed:7682706). In macrophages, NO mediates tumori
   Enzyme           : yes — 3.4.21
   Location         : integral component of plasma membrane
-  Evidence sources : 12
+  Evidence sources : 13
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
 ──────────────────────────────────────────────────────────────────────
 
   Molecular Function:
-    [HIGH  ] GO:0016491 oxidoreductase activity (score=26.5, 3 sources)
+    [HIGH  ] GO:0016491 oxidoreductase activity (score=28.3, 4 sources)
     [HIGH  ] GO:0010181 FMN binding (score=19.5, 3 sources)
     [HIGH  ] GO:0004517 nitric-oxide synthase activity (score=17.4, 2 sources)
     [HIGH  ] GO:0005516 calmodulin binding (score=8.2, 2 sources)
@@ -91,5 +91,5 @@
   6. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi
+  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi, category
 ======================================================================

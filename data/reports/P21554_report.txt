@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 15:11:16
+  Generated: 2026-04-28 18:32:07
 ======================================================================
 
   Protein    : Cannabinoid receptor 1
@@ -17,7 +17,7 @@
   Top function     : G-protein coupled receptor for endogenous cannabinoids (eCBs), including N-arachidonoylethanolamide (also called anandamide or AEA) and 2-arachidonoylglycerol (2-AG), as well as phytocannabinoids, suc
   Enzyme           : no (non-enzyme)
   Location         : membrane
-  Evidence sources : 12
+  Evidence sources : 13
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
@@ -25,13 +25,13 @@
 
   Molecular Function:
     [HIGH  ] GO:0004949 cannabinoid receptor activity (score=12.8, 2 sources)
-    [HIGH  ] GO:0004930 G protein-coupled receptor activity (score=8.2, 2 sources)
+    [HIGH  ] GO:0004930 G protein-coupled receptor activity (score=10.1, 3 sources)
     [HIGH  ] GO:0042802 F:identical protein binding (score=3.5, 1 sources)
     [HIGH  ] GO:1904483 F:synthetic cannabinoid binding (score=3.5, 1 sources)
     [MEDIUM] GO:0046872 metal ion binding (score=2.0, 2 sources)
 
   Biological Process:
-    [HIGH  ] GO:0007186 G protein-coupled receptor signaling pathway (score=17.4, 2 sources)
+    [HIGH  ] GO:0007186 G protein-coupled receptor signaling pathway (score=19.1, 3 sources)
     [HIGH  ] GO:0007189 P:adenylate cyclase-activating G protein-coup (score=3.5, 1 sources)
     [HIGH  ] GO:0007188 P:adenylate cyclase-modulating G protein-coup (score=3.5, 1 sources)
     [HIGH  ] GO:0007413 P:axonal fasciculation (score=3.5, 1 sources)
@@ -39,8 +39,8 @@
 
   Cellular Component:
     [HIGH  ] GO:0016020 membrane (score=21.0, 2 sources)
+    [HIGH  ] GO:0005886 plasma membrane (score=5.3, 2 sources)
     [HIGH  ] GO:0005737 C:cytoplasm (score=4.7, 2 sources)
-    [HIGH  ] GO:0005741 C:mitochondrial outer membrane (score=3.5, 1 sources)
 
 ──────────────────────────────────────────────────────────────────────
   ACTIVE SITES
@@ -90,5 +90,5 @@
   5. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi
+  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi, category
 ======================================================================

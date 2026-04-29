@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 09:09:56
+  Generated: 2026-04-28 18:32:22
 ======================================================================
 
   Protein    : Serine/threonine-protein kinase PAK 1
@@ -17,7 +17,7 @@
   Top function     : Protein kinase involved in intracellular signaling pathways downstream of integrins and receptor-type kinases that plays an important role in cytoskeleton dynamics, in cell adhesion, migration, prolif
   Enzyme           : yes — 2.7.10
   Location         : C:plasma membrane
-  Evidence sources : 8
+  Evidence sources : 9
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
@@ -31,7 +31,7 @@
     [HIGH  ] GO:0106310 F:protein serine kinase activity (score=5.1, 1 sources)
 
   Biological Process:
-    [HIGH  ] GO:0006468 protein phosphorylation (score=9.4, 2 sources)
+    [HIGH  ] GO:0006468 protein phosphorylation (score=10.9, 3 sources)
     [HIGH  ] GO:0009267 P:cellular response to starvation (score=5.1, 1 sources)
     [HIGH  ] GO:0035556 P:intracellular signal transduction (score=5.1, 1 sources)
     [HIGH  ] GO:0007409 P:axonogenesis (score=3.0, 1 sources)
@@ -39,7 +39,7 @@
 
   Cellular Component:
     [HIGH  ] GO:0005634 C:nucleus (score=7.8, 3 sources)
-    [HIGH  ] GO:0005737 C:cytoplasm (score=6.5, 2 sources)
+    [HIGH  ] GO:0005737 cytoplasm (score=6.6, 3 sources)
     [HIGH  ] GO:0005829 C:cytosol (score=5.1, 1 sources)
 
 ──────────────────────────────────────────────────────────────────────
@@ -73,5 +73,5 @@
   5. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi, category
 ======================================================================

@@ -4,12 +4,36 @@
   "protein_name": "Protein Mdm4",
   "organism": "Homo sapiens",
   "sequence_length": 490,
-  "generated_at": "2026-04-26 09:09:30",
+  "generated_at": "2026-04-28 18:31:45",
   "top_function": "metal ion binding",
   "is_enzyme": false,
   "ec_number": "2.x.x.x",
   "subcellular_location": "membrane",
   "go_terms_mf": [
+    {
+      "go_id": "GO:0003774",
+      "go_name": "cytoskeletal motor activity",
+      "namespace": "MF",
+      "weighted_score": 1.8,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
+      "go_id": "GO:0005198",
+      "go_name": "structural molecule activity",
+      "namespace": "MF",
+      "weighted_score": 1.8,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
     {
       "go_id": "GO:0046872",
       "go_name": "metal ion binding",
@@ -73,6 +97,18 @@
       ],
       "confidence": "HIGH",
       "top_evidence": "sequence_homolog"
+    },
+    {
+      "go_id": "GO:0007010",
+      "go_name": "cytoskeleton organization",
+      "namespace": "BP",
+      "weighted_score": 1.8,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     }
   ],
   "go_terms_cc": [
@@ -95,13 +131,26 @@
       "go_id": "GO:0005737",
       "go_name": "cytoplasm",
       "namespace": "CC",
-      "weighted_score": 0.9,
+      "weighted_score": 2.7,
+      "n_sources": 2,
+      "sources": [
+        "sequence_baseline",
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
+      "go_id": "GO:0005856",
+      "go_name": "cytoskeleton",
+      "namespace": "CC",
+      "weighted_score": 1.8,
       "n_sources": 1,
       "sources": [
-        "sequence_baseline"
+        "category_classifier"
       ],
-      "confidence": "LOW",
-      "top_evidence": "sequence_baseline"
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     }
   ],
   "active_sites": [
@@ -1011,12 +1060,11 @@
     }
   ],
   "mean_plddt": 75.0,
-  "n_evidence_sources": 12,
+  "n_evidence_sources": 13,
   "overall_confidence": "MEDIUM",
   "validation_suggestions": [
     "Co-immunoprecipitation with MDM2 (inhibitory interaction, predicted interface: [4, 10, 13])",
     "Co-immunoprecipitation with TP53 (unknown interaction, predicted interface: [1, 2, 3])",
-    "EMSA or fluorescence polarisation assay to confirm 'metal ion binding' (GO:0046872)",
     "GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation"
   ],
   "modules_run": [
@@ -1031,7 +1079,8 @@
     "go",
     "ec",
     "foldseek",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "md"

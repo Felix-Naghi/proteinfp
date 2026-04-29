@@ -4,7 +4,7 @@
   "protein_name": "E3 ubiquitin-protein ligase RNF216",
   "organism": "Homo sapiens",
   "sequence_length": 866,
-  "generated_at": "2026-04-26 09:09:58",
+  "generated_at": "2026-04-28 18:32:25",
   "top_function": "E3 ubiquitin ligase which accepts ubiquitin from specific E2 ubiquitin-conjugating enzymes, and then transfers it to substrates promoting their ubiquitination (PubMed:34998453). Plays a role in the re",
   "is_enzyme": true,
   "ec_number": "2.7.10",
@@ -20,6 +20,19 @@
         "experimental_homolog",
         "domain_annotation",
         "structural_motif"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0016740",
+      "go_name": "transferase activity",
+      "namespace": "MF",
+      "weighted_score": 6.89,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "category_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -148,18 +161,6 @@
     {
       "go_id": "GO:0003724",
       "go_name": "F:RNA helicase activity",
-      "namespace": "MF",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0016740",
-      "go_name": "F:transferase activity",
       "namespace": "MF",
       "weighted_score": 5.1,
       "n_sources": 1,
@@ -356,13 +357,14 @@
       "go_id": "GO:0006468",
       "go_name": "protein phosphorylation",
       "namespace": "BP",
-      "weighted_score": 1.6,
-      "n_sources": 1,
+      "weighted_score": 3.39,
+      "n_sources": 2,
       "sources": [
-        "structural_motif"
+        "structural_motif",
+        "category_classifier"
       ],
-      "confidence": "MEDIUM",
-      "top_evidence": "structural_motif"
+      "confidence": "HIGH",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0006281",
@@ -2113,7 +2115,7 @@
     }
   ],
   "mean_plddt": 62.58,
-  "n_evidence_sources": 8,
+  "n_evidence_sources": 9,
   "overall_confidence": "HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (C675, C714, H492) to confirm functional importance",
@@ -2131,7 +2133,8 @@
     "esm2",
     "go",
     "ec",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "pockets",

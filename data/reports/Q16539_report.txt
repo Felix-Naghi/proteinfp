@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 15:11:26
+  Generated: 2026-04-28 18:32:24
 ======================================================================
 
   Protein    : Mitogen-activated protein kinase 14
@@ -17,7 +17,7 @@
   Top function     : Serine/threonine kinase which acts as an essential component of the MAP kinase signal transduction pathway. MAPK14 is one of the four p38 MAPKs which play an important role in the cascades of cellular
   Enzyme           : no (non-enzyme)
   Location         : integral component of plasma membrane
-  Evidence sources : 12
+  Evidence sources : 13
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
@@ -31,7 +31,7 @@
     [HIGH  ] GO:0106310 F:protein serine kinase activity (score=3.5, 1 sources)
 
   Biological Process:
-    [HIGH  ] GO:0006468 protein phosphorylation (score=19.5, 3 sources)
+    [HIGH  ] GO:0006468 protein phosphorylation (score=21.3, 4 sources)
     [HIGH  ] GO:0035556 P:intracellular signal transduction (score=3.5, 1 sources)
     [HIGH  ] GO:0045663 P:positive regulation of myoblast differentia (score=3.5, 1 sources)
     [HIGH  ] GO:1901741 P:positive regulation of myoblast fusion (score=3.5, 1 sources)
@@ -88,5 +88,5 @@
   6. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi
+  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi, category
 ======================================================================

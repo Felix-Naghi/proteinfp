@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 09:09:46
+  Generated: 2026-04-28 18:32:05
 ======================================================================
 
   Protein    : Serine/threonine-protein kinase B-raf
@@ -17,7 +17,7 @@
   Top function     : Protein kinase involved in the transduction of mitogenic signals from the cell membrane to the nucleus (Probable). Phosphorylates MAP2K1, and thereby activates the MAP kinase signal transduction pathw
   Enzyme           : yes — 2.7.10
   Location         : C:plasma membrane
-  Evidence sources : 8
+  Evidence sources : 9
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
@@ -31,7 +31,7 @@
     [HIGH  ] GO:0005739 C:mitochondrion (score=5.1, 1 sources)
 
   Biological Process:
-    [HIGH  ] GO:0006468 protein phosphorylation (score=12.9, 2 sources)
+    [HIGH  ] GO:0006468 protein phosphorylation (score=14.4, 3 sources)
     [HIGH  ] GO:0071550 P:death-inducing signaling complex assembly (score=5.1, 1 sources)
     [HIGH  ] GO:0038133 P:ERBB2-ERBB3 signaling pathway (score=5.1, 1 sources)
     [HIGH  ] GO:0008625 P:extrinsic apoptotic signaling pathway via d (score=5.1, 1 sources)
@@ -39,7 +39,7 @@
 
   Cellular Component:
     [HIGH  ] GO:0005634 C:nucleus (score=7.8, 3 sources)
-    [HIGH  ] GO:0005737 C:cytoplasm (score=6.5, 2 sources)
+    [HIGH  ] GO:0005737 cytoplasm (score=6.7, 3 sources)
     [HIGH  ] GO:0005886 C:plasma membrane (score=5.1, 1 sources)
 
 ──────────────────────────────────────────────────────────────────────
@@ -73,5 +73,5 @@
   5. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi, category
 ======================================================================

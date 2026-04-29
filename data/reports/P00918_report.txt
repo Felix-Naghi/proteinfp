@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 09:09:33
+  Generated: 2026-04-28 18:31:49
 ======================================================================
 
   Protein    : Carbonic anhydrase 2
@@ -17,7 +17,7 @@
   Top function     : carbonate dehydratase activity
   Enzyme           : yes — 4.2.1
   Location         : integral component of plasma membrane
-  Evidence sources : 12
+  Evidence sources : 13
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
@@ -27,8 +27,8 @@
     [HIGH  ] GO:0008270 zinc ion binding (score=14.0, 4 sources)
     [HIGH  ] GO:0004089 carbonate dehydratase activity (score=12.6, 3 sources)
     [HIGH  ] GO:0046872 metal ion binding (score=3.2, 2 sources)
+    [MEDIUM] GO:0016829 lyase activity (score=1.8, 1 sources)
     [MEDIUM] GO:0003677 DNA binding (score=1.7, 1 sources)
-    [MEDIUM] GO:0004672 protein kinase activity (score=1.7, 1 sources)
 
   Biological Process:
     [MEDIUM] GO:0015701 bicarbonate transport (score=2.8, 2 sources)
@@ -84,5 +84,5 @@
   7. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi
+  Modules run: structure, physico, active, pockets, allosteric, chem_env, homology, esm2, go, ec, foldseek, ppi, category
 ======================================================================

@@ -4,7 +4,7 @@
   "protein_name": "Adapter molecule crk",
   "organism": "Homo sapiens",
   "sequence_length": 304,
-  "generated_at": "2026-04-26 09:09:51",
+  "generated_at": "2026-04-28 18:32:14",
   "top_function": "Involved in cell branching and adhesion mediated by BCAR1-CRK-RAPGEF1 signaling and activation of RAP1",
   "is_enzyme": true,
   "ec_number": "2.7.10",
@@ -240,6 +240,18 @@
       "top_evidence": "structural_motif"
     },
     {
+      "go_id": "GO:0005215",
+      "go_name": "transporter activity",
+      "namespace": "MF",
+      "weighted_score": 1.63,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0008270",
       "go_name": "zinc ion binding",
       "namespace": "MF",
@@ -386,6 +398,18 @@
       "top_evidence": "experimental_homolog"
     },
     {
+      "go_id": "GO:0006810",
+      "go_name": "transport",
+      "namespace": "BP",
+      "weighted_score": 1.63,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0006468",
       "go_name": "protein phosphorylation",
       "namespace": "BP",
@@ -496,6 +520,19 @@
   ],
   "go_terms_cc": [
     {
+      "go_id": "GO:0005886",
+      "go_name": "plasma membrane",
+      "namespace": "CC",
+      "weighted_score": 6.73,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "category_classifier"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
       "go_id": "GO:0005737",
       "go_name": "C:cytoplasm",
       "namespace": "CC",
@@ -546,18 +583,6 @@
       "top_evidence": "experimental_homolog"
     },
     {
-      "go_id": "GO:0005886",
-      "go_name": "C:plasma membrane",
-      "namespace": "CC",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
       "go_id": "GO:0098890",
       "go_name": "C:extrinsic component of postsynaptic membrane",
       "namespace": "CC",
@@ -593,6 +618,18 @@
       ],
       "confidence": "MEDIUM",
       "top_evidence": "ai_esm2"
+    },
+    {
+      "go_id": "GO:0016021",
+      "go_name": "integral component of membrane",
+      "namespace": "CC",
+      "weighted_score": 1.63,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0005887",
@@ -2034,7 +2071,7 @@
     }
   ],
   "mean_plddt": 69.85,
-  "n_evidence_sources": 8,
+  "n_evidence_sources": 9,
   "overall_confidence": "HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (C279, H32, H59) to confirm functional importance",
@@ -2052,7 +2089,8 @@
     "esm2",
     "go",
     "ec",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "pockets",

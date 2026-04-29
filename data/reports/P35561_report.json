@@ -4,7 +4,7 @@
   "protein_name": "Inward rectifier potassium channel 2",
   "organism": "Mus musculus",
   "sequence_length": 428,
-  "generated_at": "2026-04-26 09:09:49",
+  "generated_at": "2026-04-28 18:32:12",
   "top_function": "Inward rectifier potassium channels are characterized by a greater tendency to allow potassium to flow into the cell rather than out of it. Their voltage dependence is regulated by the concentration o",
   "is_enzyme": false,
   "ec_number": "2.7.10",
@@ -205,6 +205,18 @@
       "top_evidence": "sequence_composition"
     },
     {
+      "go_id": "GO:0005215",
+      "go_name": "transporter activity",
+      "namespace": "MF",
+      "weighted_score": 1.79,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0003677",
       "go_name": "DNA binding",
       "namespace": "MF",
@@ -338,6 +350,30 @@
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0006810",
+      "go_name": "transport",
+      "namespace": "BP",
+      "weighted_score": 1.79,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
+      "go_id": "GO:0055085",
+      "go_name": "transmembrane transport",
+      "namespace": "BP",
+      "weighted_score": 1.79,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0006468",
@@ -545,6 +581,18 @@
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0016021",
+      "go_name": "integral component of membrane",
+      "namespace": "CC",
+      "weighted_score": 1.79,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0005887",
@@ -1276,7 +1324,7 @@
   "allosteric_sites": [],
   "ppi_partners": [],
   "mean_plddt": 81.0,
-  "n_evidence_sources": 8,
+  "n_evidence_sources": 9,
   "overall_confidence": "VERY HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (C209, H271, H53) to confirm functional importance",
@@ -1290,7 +1338,8 @@
     "esm2",
     "go",
     "ec",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "pockets",

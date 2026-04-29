@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 09:09:57
+  Generated: 2026-04-28 18:32:24
 ======================================================================
 
   Protein    : Anaphase-promoting complex subunit CDC26
@@ -17,7 +17,7 @@
   Top function     : Component of the anaphase promoting complex/cyclosome (APC/C), a cell cycle-regulated E3 ubiquitin ligase that controls progression through mitosis and the G1 phase of the cell cycle (PubMed:18485873)
   Enzyme           : no (non-enzyme)
   Location         : membrane
-  Evidence sources : 8
+  Evidence sources : 9
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
@@ -28,7 +28,7 @@
     [HIGH  ] GO:0005654 C:nucleoplasm (score=5.1, 1 sources)
     [MEDIUM] GO:0003677 DNA binding (score=1.7, 1 sources)
     [MEDIUM] GO:0008270 zinc ion binding (score=1.6, 1 sources)
-    [MEDIUM] GO:0046872 metal ion binding (score=1.5, 1 sources)
+    [MEDIUM] GO:0051082 unfolded protein binding (score=1.5, 1 sources)
 
   Biological Process:
     [HIGH  ] GO:0031145 anaphase-promoting complex-dependent cataboli (score=9.5, 2 sources)
@@ -39,7 +39,7 @@
 
   Cellular Component:
     [HIGH  ] GO:0005680 anaphase-promoting complex (score=9.5, 2 sources)
-    [HIGH  ] GO:0005829 C:cytosol (score=5.1, 1 sources)
+    [HIGH  ] GO:0005829 cytosol (score=6.6, 2 sources)
     [MEDIUM] GO:0005634 nucleus (score=1.9, 2 sources)
 
 ──────────────────────────────────────────────────────────────────────
@@ -71,5 +71,5 @@
   3. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi, category
 ======================================================================

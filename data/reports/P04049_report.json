@@ -4,7 +4,7 @@
   "protein_name": "RAF proto-oncogene serine/threonine-protein kinase",
   "organism": "Homo sapiens",
   "sequence_length": 648,
-  "generated_at": "2026-04-26 09:09:36",
+  "generated_at": "2026-04-28 18:31:55",
   "top_function": "Serine/threonine-protein kinase that acts as a regulatory link between the membrane-associated Ras GTPases and the MAPK/ERK cascade, and this critical regulatory link functions as a switch determining",
   "is_enzyme": true,
   "ec_number": "2.7.10",
@@ -256,6 +256,18 @@
       "top_evidence": "structural_motif"
     },
     {
+      "go_id": "GO:0016740",
+      "go_name": "transferase activity",
+      "namespace": "MF",
+      "weighted_score": 1.61,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0008233",
       "go_name": "peptidase activity",
       "namespace": "MF",
@@ -285,12 +297,13 @@
       "go_id": "GO:0006468",
       "go_name": "protein phosphorylation",
       "namespace": "BP",
-      "weighted_score": 18.3,
-      "n_sources": 3,
+      "weighted_score": 19.91,
+      "n_sources": 4,
       "sources": [
         "experimental_homolog",
         "domain_annotation",
-        "structural_motif"
+        "structural_motif",
+        "category_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -2092,7 +2105,7 @@
     }
   ],
   "mean_plddt": 67.51,
-  "n_evidence_sources": 8,
+  "n_evidence_sources": 9,
   "overall_confidence": "HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (C424, H460, H466) to confirm functional importance",
@@ -2109,7 +2122,8 @@
     "esm2",
     "go",
     "ec",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "pockets",

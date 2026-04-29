@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 09:09:35
+  Generated: 2026-04-28 18:31:52
 ======================================================================
 
   Protein    : Collagen alpha-1(I) chain
@@ -17,7 +17,7 @@
   Top function     : serine-type endopeptidase activity
   Enzyme           : no (non-enzyme)
   Location         : integral component of plasma membrane
-  Evidence sources : 8
+  Evidence sources : 9
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
@@ -26,9 +26,9 @@
   Molecular Function:
     [HIGH  ] GO:0005515 protein binding (score=8.2, 3 sources)
     [HIGH  ] GO:0046872 metal ion binding (score=3.0, 2 sources)
+    [MEDIUM] GO:0016887 ATPase activity (score=2.3, 2 sources)
     [MEDIUM] GO:0004252 serine-type endopeptidase activity (score=1.7, 1 sources)
     [MEDIUM] GO:0003677 DNA binding (score=1.7, 1 sources)
-    [MEDIUM] GO:0004672 protein kinase activity (score=1.7, 1 sources)
 
   Biological Process:
     [MEDIUM] GO:0006468 protein phosphorylation (score=1.6, 1 sources)
@@ -73,5 +73,5 @@
   5. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi, category
 ======================================================================

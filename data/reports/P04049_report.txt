@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 09:09:36
+  Generated: 2026-04-28 18:31:55
 ======================================================================
 
   Protein    : RAF proto-oncogene serine/threonine-protein kinase
@@ -17,7 +17,7 @@
   Top function     : Serine/threonine-protein kinase that acts as a regulatory link between the membrane-associated Ras GTPases and the MAPK/ERK cascade, and this critical regulatory link functions as a switch determining
   Enzyme           : yes — 2.7.10
   Location         : C:plasma membrane
-  Evidence sources : 8
+  Evidence sources : 9
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
@@ -31,7 +31,7 @@
     [HIGH  ] GO:0005739 C:mitochondrion (score=5.1, 1 sources)
 
   Biological Process:
-    [HIGH  ] GO:0006468 protein phosphorylation (score=18.3, 3 sources)
+    [HIGH  ] GO:0006468 protein phosphorylation (score=19.9, 4 sources)
     [HIGH  ] GO:0071550 P:death-inducing signaling complex assembly (score=5.1, 1 sources)
     [HIGH  ] GO:0038133 P:ERBB2-ERBB3 signaling pathway (score=5.1, 1 sources)
     [HIGH  ] GO:0043066 P:negative regulation of apoptotic process (score=5.1, 1 sources)
@@ -73,5 +73,5 @@
   5. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi, category
 ======================================================================

@@ -4,7 +4,7 @@
   "protein_name": "Peroxiredoxin-2",
   "organism": "Homo sapiens",
   "sequence_length": 198,
-  "generated_at": "2026-04-26 15:11:13",
+  "generated_at": "2026-04-28 18:32:10",
   "top_function": "Thiol-specific peroxidase that catalyzes the reduction of hydrogen peroxide and organic hydroperoxides to water and alcohols, respectively. Plays a role in cell protection against oxidative stress by ",
   "is_enzyme": false,
   "ec_number": "3.4.21",
@@ -27,13 +27,14 @@
       "go_id": "GO:0016491",
       "go_name": "oxidoreductase activity",
       "namespace": "MF",
-      "weighted_score": 3.76,
-      "n_sources": 1,
+      "weighted_score": 5.54,
+      "n_sources": 2,
       "sources": [
-        "domain_annotation"
+        "domain_annotation",
+        "category_classifier"
       ],
       "confidence": "HIGH",
-      "top_evidence": "domain_annotation"
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0051920",
@@ -481,6 +482,18 @@
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0055114",
+      "go_name": "oxidation-reduction process",
+      "namespace": "BP",
+      "weighted_score": 1.77,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0015671",
@@ -2724,7 +2737,7 @@
     }
   ],
   "mean_plddt": 97.73,
-  "n_evidence_sources": 12,
+  "n_evidence_sources": 13,
   "overall_confidence": "VERY HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (H83, C51, C70) to confirm functional importance",
@@ -2745,7 +2758,8 @@
     "go",
     "ec",
     "foldseek",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "md"

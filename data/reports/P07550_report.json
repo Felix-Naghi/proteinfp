@@ -4,7 +4,7 @@
   "protein_name": "Beta-2 adrenergic receptor",
   "organism": "Homo sapiens",
   "sequence_length": 413,
-  "generated_at": "2026-04-26 15:11:15",
+  "generated_at": "2026-04-28 18:31:57",
   "top_function": "G protein-coupled receptor for catecholamines that couples to both G(s) and G(i) proteins, activating bifurcated signaling pathways (PubMed:2831218, PubMed:7915137). ADRB2 binds epinephrine (Epi) with",
   "is_enzyme": false,
   "ec_number": "2.7.10",
@@ -27,13 +27,14 @@
       "go_id": "GO:0004930",
       "go_name": "G protein-coupled receptor activity",
       "namespace": "MF",
-      "weighted_score": 3.76,
-      "n_sources": 1,
+      "weighted_score": 5.56,
+      "n_sources": 2,
       "sources": [
-        "domain_annotation"
+        "domain_annotation",
+        "category_classifier"
       ],
       "confidence": "HIGH",
-      "top_evidence": "domain_annotation"
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0097746",
@@ -255,6 +256,19 @@
   ],
   "go_terms_bp": [
     {
+      "go_id": "GO:0007186",
+      "go_name": "G protein-coupled receptor signaling pathway",
+      "namespace": "BP",
+      "weighted_score": 9.33,
+      "n_sources": 2,
+      "sources": [
+        "domain_annotation",
+        "category_classifier"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0006940",
       "go_name": "regulation of smooth muscle contraction",
       "namespace": "BP",
@@ -266,18 +280,6 @@
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0007186",
-      "go_name": "G protein-coupled receptor signaling pathway",
-      "namespace": "BP",
-      "weighted_score": 7.53,
-      "n_sources": 1,
-      "sources": [
-        "domain_annotation"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "domain_annotation"
     },
     {
       "go_id": "GO:0007189",
@@ -386,6 +388,18 @@
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0007165",
+      "go_name": "signal transduction",
+      "namespace": "BP",
+      "weighted_score": 1.8,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0006468",
@@ -525,6 +539,19 @@
       "top_evidence": "experimental_homolog"
     },
     {
+      "go_id": "GO:0005886",
+      "go_name": "plasma membrane",
+      "namespace": "CC",
+      "weighted_score": 4.8,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "category_classifier"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
       "go_id": "GO:0005769",
       "go_name": "C:early endosome",
       "namespace": "CC",
@@ -609,18 +636,6 @@
       "top_evidence": "experimental_homolog"
     },
     {
-      "go_id": "GO:0005886",
-      "go_name": "C:plasma membrane",
-      "namespace": "CC",
-      "weighted_score": 3.0,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
       "go_id": "GO:0043235",
       "go_name": "C:receptor complex",
       "namespace": "CC",
@@ -669,16 +684,16 @@
       "top_evidence": "experimental_homolog"
     },
     {
-      "go_id": "GO:0005887",
-      "go_name": "integral component of plasma membrane",
+      "go_id": "GO:0016021",
+      "go_name": "integral component of membrane",
       "namespace": "CC",
-      "weighted_score": 0.45,
+      "weighted_score": 1.8,
       "n_sources": 1,
       "sources": [
-        "structural_motif"
+        "category_classifier"
       ],
-      "confidence": "LOW",
-      "top_evidence": "structural_motif"
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     }
   ],
   "active_sites": [
@@ -2908,7 +2923,7 @@
     }
   ],
   "mean_plddt": 79.14,
-  "n_evidence_sources": 12,
+  "n_evidence_sources": 13,
   "overall_confidence": "VERY HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (C106, C116, C184) to confirm functional importance",
@@ -2929,7 +2944,8 @@
     "go",
     "ec",
     "foldseek",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "md"

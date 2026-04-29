@@ -4,7 +4,7 @@
   "protein_name": "Caspase-3",
   "organism": "Homo sapiens",
   "sequence_length": 277,
-  "generated_at": "2026-04-26 09:09:51",
+  "generated_at": "2026-04-28 18:32:14",
   "top_function": "cysteine-type endopeptidase activity",
   "is_enzyme": false,
   "ec_number": "3.4.22",
@@ -49,6 +49,18 @@
       "top_evidence": "structural_homolog"
     },
     {
+      "go_id": "GO:0005215",
+      "go_name": "transporter activity",
+      "namespace": "MF",
+      "weighted_score": 1.8,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0005515",
       "go_name": "protein binding",
       "namespace": "MF",
@@ -74,9 +86,45 @@
       ],
       "confidence": "HIGH",
       "top_evidence": "sequence_homolog"
+    },
+    {
+      "go_id": "GO:0006810",
+      "go_name": "transport",
+      "namespace": "BP",
+      "weighted_score": 1.8,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     }
   ],
   "go_terms_cc": [
+    {
+      "go_id": "GO:0016021",
+      "go_name": "integral component of membrane",
+      "namespace": "CC",
+      "weighted_score": 1.8,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
+      "go_id": "GO:0005886",
+      "go_name": "plasma membrane",
+      "namespace": "CC",
+      "weighted_score": 1.8,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
     {
       "go_id": "GO:0005634",
       "go_name": "nucleus",
@@ -873,7 +921,7 @@
     }
   ],
   "mean_plddt": 75.0,
-  "n_evidence_sources": 12,
+  "n_evidence_sources": 13,
   "overall_confidence": "HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (H121, C163) to confirm functional importance",
@@ -893,7 +941,8 @@
     "go",
     "ec",
     "foldseek",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "md"

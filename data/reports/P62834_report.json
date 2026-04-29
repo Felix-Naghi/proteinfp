@@ -4,7 +4,7 @@
   "protein_name": "Ras-related protein Rap-1A",
   "organism": "Homo sapiens",
   "sequence_length": 184,
-  "generated_at": "2026-04-26 09:09:53",
+  "generated_at": "2026-04-28 18:32:18",
   "top_function": "Counteracts the mitogenic function of Ras, at least partly because it can interact with Ras GAPs and RAF in a competitive manner. Together with ITGB1BP1, regulates KRIT1 localization to microtubules a",
   "is_enzyme": false,
   "ec_number": "3.6.5",
@@ -234,6 +234,18 @@
       "top_evidence": "experimental_homolog"
     },
     {
+      "go_id": "GO:0016787",
+      "go_name": "hydrolase activity",
+      "namespace": "MF",
+      "weighted_score": 1.8,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0003677",
       "go_name": "DNA binding",
       "namespace": "MF",
@@ -371,6 +383,19 @@
       "top_evidence": "experimental_homolog"
     },
     {
+      "go_id": "GO:0006508",
+      "go_name": "proteolysis",
+      "namespace": "BP",
+      "weighted_score": 2.9,
+      "n_sources": 2,
+      "sources": [
+        "structural_motif",
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0006351",
       "go_name": "DNA-templated transcription",
       "namespace": "BP",
@@ -399,18 +424,6 @@
       "go_name": "bicarbonate transport",
       "namespace": "BP",
       "weighted_score": 1.2,
-      "n_sources": 1,
-      "sources": [
-        "structural_motif"
-      ],
-      "confidence": "MEDIUM",
-      "top_evidence": "structural_motif"
-    },
-    {
-      "go_id": "GO:0006508",
-      "go_name": "proteolysis",
-      "namespace": "BP",
-      "weighted_score": 1.1,
       "n_sources": 1,
       "sources": [
         "structural_motif"
@@ -1919,7 +1932,7 @@
     }
   ],
   "mean_plddt": 92.26,
-  "n_evidence_sources": 8,
+  "n_evidence_sources": 9,
   "overall_confidence": "VERY HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (C51, C48, C118) to confirm functional importance",
@@ -1936,7 +1949,8 @@
     "esm2",
     "go",
     "ec",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "pockets",

@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 09:09:30
+  Generated: 2026-04-28 18:31:46
 ======================================================================
 
   Protein    : Aldehyde dehydrogenase 1A1
@@ -17,14 +17,14 @@
   Top function     : Cytosolic dehydrogenase that catalyzes the irreversible oxidation of a wide range of aldehydes to their corresponding carboxylic acid (PubMed:12941160, PubMed:15623782, PubMed:17175089, PubMed:1929640
   Enzyme           : yes — 3.4.21
   Location         : membrane
-  Evidence sources : 8
+  Evidence sources : 9
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
 ──────────────────────────────────────────────────────────────────────
 
   Molecular Function:
-    [HIGH  ] GO:0016491 oxidoreductase activity (score=25.0, 3 sources)
+    [HIGH  ] GO:0016491 oxidoreductase activity (score=26.7, 4 sources)
     [HIGH  ] GO:0030424 C:axon (score=5.1, 1 sources)
     [HIGH  ] GO:0045202 C:synapse (score=5.1, 1 sources)
     [HIGH  ] GO:0106373 F:3-deoxyglucosone dehydrogenase activity (score=5.1, 1 sources)
@@ -73,5 +73,5 @@
   5. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi, category
 ======================================================================

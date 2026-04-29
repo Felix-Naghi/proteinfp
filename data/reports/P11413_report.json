@@ -4,7 +4,7 @@
   "protein_name": "Glucose-6-phosphate 1-dehydrogenase",
   "organism": "Homo sapiens",
   "sequence_length": 515,
-  "generated_at": "2026-04-26 15:11:14",
+  "generated_at": "2026-04-28 18:32:03",
   "top_function": "Catalyzes the rate-limiting step of the oxidative pentose-phosphate pathway, which represents a route for the dissimilation of carbohydrates besides glycolysis. The main function of this enzyme is to ",
   "is_enzyme": true,
   "ec_number": "3.4.21",
@@ -108,6 +108,18 @@
       ],
       "confidence": "MEDIUM",
       "top_evidence": "sequence_composition"
+    },
+    {
+      "go_id": "GO:0016491",
+      "go_name": "oxidoreductase activity",
+      "namespace": "MF",
+      "weighted_score": 1.76,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0004252",
@@ -495,6 +507,18 @@
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0055114",
+      "go_name": "oxidation-reduction process",
+      "namespace": "BP",
+      "weighted_score": 1.76,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0006468",
@@ -2830,7 +2854,7 @@
     }
   ],
   "mean_plddt": 94.4,
-  "n_evidence_sources": 12,
+  "n_evidence_sources": 13,
   "overall_confidence": "VERY HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (H32, H129, H186) to confirm functional importance",
@@ -2853,7 +2877,8 @@
     "go",
     "ec",
     "foldseek",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "md"

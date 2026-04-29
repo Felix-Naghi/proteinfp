@@ -4,7 +4,7 @@
   "protein_name": "unknown",
   "organism": "unknown",
   "sequence_length": 0,
-  "generated_at": "2026-04-26 09:09:52",
+  "generated_at": "2026-04-28 18:32:16",
   "top_function": "Involved in double-strand break repair and/or homologous recombination. Binds RAD51 and potentiates recombinational DNA repair by promoting assembly of RAD51 onto single-stranded DNA (ssDNA). Acts by ",
   "is_enzyme": true,
   "ec_number": "3.4.21",
@@ -180,20 +180,21 @@
       "top_evidence": "sequence_composition"
     },
     {
-      "go_id": "GO:0004252",
-      "go_name": "serine-type endopeptidase activity",
+      "go_id": "GO:0003677",
+      "go_name": "DNA binding",
       "namespace": "MF",
-      "weighted_score": 1.7,
-      "n_sources": 1,
+      "weighted_score": 1.89,
+      "n_sources": 2,
       "sources": [
-        "structural_motif"
+        "structural_motif",
+        "category_classifier_secondary"
       ],
       "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
     },
     {
-      "go_id": "GO:0003677",
-      "go_name": "DNA binding",
+      "go_id": "GO:0004252",
+      "go_name": "serine-type endopeptidase activity",
       "namespace": "MF",
       "weighted_score": 1.7,
       "n_sources": 1,
@@ -250,6 +251,42 @@
       ],
       "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0003774",
+      "go_name": "cytoskeletal motor activity",
+      "namespace": "MF",
+      "weighted_score": 1.25,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
+      "go_id": "GO:0005198",
+      "go_name": "structural molecule activity",
+      "namespace": "MF",
+      "weighted_score": 1.25,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
+      "go_id": "GO:0003700",
+      "go_name": "DNA-binding transcription factor activity",
+      "namespace": "MF",
+      "weighted_score": 0.19,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier_secondary"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "category_classifier_secondary"
     }
   ],
   "go_terms_bp": [
@@ -275,6 +312,19 @@
       "sources": [
         "experimental_homolog",
         "domain_annotation"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0006355",
+      "go_name": "regulation of DNA-templated transcription",
+      "namespace": "BP",
+      "weighted_score": 5.29,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "category_classifier_secondary"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -352,18 +402,6 @@
       "top_evidence": "experimental_homolog"
     },
     {
-      "go_id": "GO:0006355",
-      "go_name": "P:regulation of DNA-templated transcription",
-      "namespace": "BP",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
       "go_id": "GO:0055114",
       "go_name": "oxidation-reduction process",
       "namespace": "BP",
@@ -386,6 +424,18 @@
       ],
       "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0007010",
+      "go_name": "cytoskeleton organization",
+      "namespace": "BP",
+      "weighted_score": 1.25,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0030193",
@@ -446,32 +496,46 @@
       ],
       "confidence": "LOW",
       "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0045892",
+      "go_name": "negative regulation of transcription",
+      "namespace": "BP",
+      "weighted_score": 0.19,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier_secondary"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "category_classifier_secondary"
     }
   ],
   "go_terms_cc": [
     {
       "go_id": "GO:0005634",
-      "go_name": "C:nucleus",
+      "go_name": "nucleus",
       "namespace": "CC",
-      "weighted_score": 7.76,
-      "n_sources": 3,
+      "weighted_score": 7.95,
+      "n_sources": 4,
       "sources": [
         "experimental_homolog",
         "ai_esm2",
-        "structural_motif"
+        "structural_motif",
+        "category_classifier_secondary"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
     },
     {
       "go_id": "GO:0005737",
-      "go_name": "C:cytoplasm",
+      "go_name": "cytoplasm",
       "namespace": "CC",
-      "weighted_score": 6.5,
-      "n_sources": 2,
+      "weighted_score": 7.75,
+      "n_sources": 3,
       "sources": [
         "experimental_homolog",
-        "sequence_baseline"
+        "sequence_baseline",
+        "category_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -547,6 +611,18 @@
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005856",
+      "go_name": "cytoskeleton",
+      "namespace": "CC",
+      "weighted_score": 1.25,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0043234",
@@ -1976,7 +2052,7 @@
     }
   ],
   "mean_plddt": 0.0,
-  "n_evidence_sources": 8,
+  "n_evidence_sources": 9,
   "overall_confidence": "HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (H236, H477, C738) to confirm functional importance",
@@ -1993,7 +2069,8 @@
     "go",
     "ec",
     "foldseek",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "structure",

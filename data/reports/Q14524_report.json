@@ -4,7 +4,7 @@
   "protein_name": "Sodium channel protein type 5 subunit alpha",
   "organism": "Homo sapiens",
   "sequence_length": 2016,
-  "generated_at": "2026-04-26 09:09:57",
+  "generated_at": "2026-04-28 18:32:23",
   "top_function": "Pore-forming subunit of Nav1.5, a voltage-gated sodium (Nav) channel that directly mediates the depolarizing phase of action potentials in excitable membranes. Navs, also called VGSCs (voltage-gated s",
   "is_enzyme": false,
   "ec_number": "2.7.10",
@@ -157,6 +157,18 @@
       "top_evidence": "sequence_composition"
     },
     {
+      "go_id": "GO:0005215",
+      "go_name": "transporter activity",
+      "namespace": "MF",
+      "weighted_score": 1.79,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0003677",
       "go_name": "DNA binding",
       "namespace": "MF",
@@ -304,6 +316,19 @@
       "top_evidence": "experimental_homolog"
     },
     {
+      "go_id": "GO:0055085",
+      "go_name": "transmembrane transport",
+      "namespace": "BP",
+      "weighted_score": 6.04,
+      "n_sources": 2,
+      "sources": [
+        "domain_annotation",
+        "category_classifier"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0099508",
       "go_name": "F:voltage-gated monoatomic ion channel activity involved in regulation of presynaptic membrane potential",
       "namespace": "BP",
@@ -340,18 +365,6 @@
       "top_evidence": "domain_annotation"
     },
     {
-      "go_id": "GO:0055085",
-      "go_name": "transmembrane transport",
-      "namespace": "BP",
-      "weighted_score": 4.25,
-      "n_sources": 1,
-      "sources": [
-        "domain_annotation"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "domain_annotation"
-    },
-    {
       "go_id": "GO:0086002",
       "go_name": "P:cardiac muscle cell action potential involved in contraction",
       "namespace": "BP",
@@ -362,6 +375,18 @@
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0006810",
+      "go_name": "transport",
+      "namespace": "BP",
+      "weighted_score": 1.79,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0006468",
@@ -2176,7 +2201,7 @@
     }
   ],
   "mean_plddt": 67.22,
-  "n_evidence_sources": 8,
+  "n_evidence_sources": 9,
   "overall_confidence": "HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (C326, H880, C1198) to confirm functional importance",
@@ -2192,7 +2217,8 @@
     "esm2",
     "go",
     "ec",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "pockets",

@@ -4,7 +4,7 @@
   "protein_name": "Nuclear receptor subfamily 1 group D member 1",
   "organism": "Homo sapiens",
   "sequence_length": 614,
-  "generated_at": "2026-04-26 09:09:48",
+  "generated_at": "2026-04-28 18:32:07",
   "top_function": "Transcriptional repressor which coordinates circadian rhythm and metabolic pathways in a heme-dependent manner. Integral component of the complex transcription machinery that governs circadian rhythmi",
   "is_enzyme": false,
   "ec_number": "3.4.21",
@@ -28,12 +28,13 @@
       "go_id": "GO:0003700",
       "go_name": "DNA-binding transcription factor activity",
       "namespace": "MF",
-      "weighted_score": 11.0,
-      "n_sources": 3,
+      "weighted_score": 12.8,
+      "n_sources": 4,
       "sources": [
         "experimental_homolog",
         "domain_annotation",
-        "structural_motif"
+        "structural_motif",
+        "category_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -79,13 +80,14 @@
     },
     {
       "go_id": "GO:0003677",
-      "go_name": "F:DNA binding",
+      "go_name": "DNA binding",
       "namespace": "MF",
-      "weighted_score": 7.25,
-      "n_sources": 2,
+      "weighted_score": 9.05,
+      "n_sources": 3,
       "sources": [
         "experimental_homolog",
-        "structural_motif"
+        "structural_motif",
+        "category_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -289,13 +291,27 @@
       "go_id": "GO:0006355",
       "go_name": "regulation of DNA-templated transcription",
       "namespace": "BP",
-      "weighted_score": 7.75,
-      "n_sources": 1,
+      "weighted_score": 9.55,
+      "n_sources": 2,
       "sources": [
-        "domain_annotation"
+        "domain_annotation",
+        "category_classifier"
       ],
       "confidence": "HIGH",
-      "top_evidence": "domain_annotation"
+      "top_evidence": "category_classifier"
+    },
+    {
+      "go_id": "GO:0045892",
+      "go_name": "negative regulation of transcription",
+      "namespace": "BP",
+      "weighted_score": 6.9,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "category_classifier"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
     },
     {
       "go_id": "GO:0009755",
@@ -312,18 +328,6 @@
     {
       "go_id": "GO:0000122",
       "go_name": "P:negative regulation of transcription by RNA polymerase II",
-      "namespace": "BP",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0045892",
-      "go_name": "P:negative regulation of DNA-templated transcription",
       "namespace": "BP",
       "weighted_score": 5.1,
       "n_sources": 1,
@@ -458,15 +462,16 @@
   "go_terms_cc": [
     {
       "go_id": "GO:0005634",
-      "go_name": "C:nucleus",
+      "go_name": "nucleus",
       "namespace": "CC",
-      "weighted_score": 14.24,
-      "n_sources": 4,
+      "weighted_score": 16.04,
+      "n_sources": 5,
       "sources": [
         "experimental_homolog",
         "ai_esm2",
         "structural_motif",
-        "neural_classifier"
+        "neural_classifier",
+        "category_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -1973,7 +1978,7 @@
     }
   ],
   "mean_plddt": 62.89,
-  "n_evidence_sources": 8,
+  "n_evidence_sources": 9,
   "overall_confidence": "HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (C132, H143, H147) to confirm functional importance",
@@ -1990,7 +1995,8 @@
     "esm2",
     "go",
     "ec",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "pockets",

@@ -4,7 +4,7 @@
   "protein_name": "Ubiquitin-ribosomal protein eL40 fusion protein",
   "organism": "Homo sapiens",
   "sequence_length": 128,
-  "generated_at": "2026-04-26 15:11:24",
+  "generated_at": "2026-04-28 18:32:18",
   "top_function": "Exists either covalently attached to another protein, or free (unanchored). When covalently bound, it is conjugated to target proteins via an isopeptide bond either as a monomer (monoubiquitin), a pol",
   "is_enzyme": false,
   "ec_number": "1.x.x.x",
@@ -90,13 +90,27 @@
       "go_id": "GO:0003677",
       "go_name": "DNA binding",
       "namespace": "MF",
-      "weighted_score": 0.59,
-      "n_sources": 1,
+      "weighted_score": 1.94,
+      "n_sources": 2,
       "sources": [
-        "structural_motif"
+        "structural_motif",
+        "category_classifier"
       ],
-      "confidence": "LOW",
-      "top_evidence": "structural_motif"
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
+      "go_id": "GO:0003700",
+      "go_name": "DNA-binding transcription factor activity",
+      "namespace": "MF",
+      "weighted_score": 1.66,
+      "n_sources": 2,
+      "sources": [
+        "structural_motif",
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0008270",
@@ -159,16 +173,28 @@
       "top_evidence": "sequence_composition"
     },
     {
-      "go_id": "GO:0003700",
-      "go_name": "DNA-binding transcription factor activity",
+      "go_id": "GO:0051082",
+      "go_name": "unfolded protein binding",
       "namespace": "MF",
-      "weighted_score": 0.32,
+      "weighted_score": 0.16,
       "n_sources": 1,
       "sources": [
-        "structural_motif"
+        "category_classifier_secondary"
       ],
       "confidence": "LOW",
-      "top_evidence": "structural_motif"
+      "top_evidence": "category_classifier_secondary"
+    },
+    {
+      "go_id": "GO:0051087",
+      "go_name": "chaperone binding",
+      "namespace": "MF",
+      "weighted_score": 0.16,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier_secondary"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "category_classifier_secondary"
     }
   ],
   "go_terms_bp": [
@@ -231,6 +257,30 @@
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0006355",
+      "go_name": "regulation of DNA-templated transcription",
+      "namespace": "BP",
+      "weighted_score": 1.34,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
+      "go_id": "GO:0045892",
+      "go_name": "negative regulation of transcription",
+      "namespace": "BP",
+      "weighted_score": 1.34,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0015671",
@@ -327,6 +377,30 @@
       ],
       "confidence": "LOW",
       "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0006457",
+      "go_name": "protein folding",
+      "namespace": "BP",
+      "weighted_score": 0.16,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier_secondary"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "category_classifier_secondary"
+    },
+    {
+      "go_id": "GO:0042026",
+      "go_name": "protein refolding",
+      "namespace": "BP",
+      "weighted_score": 0.16,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier_secondary"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "category_classifier_secondary"
     }
   ],
   "go_terms_cc": [
@@ -358,14 +432,15 @@
     },
     {
       "go_id": "GO:0005634",
-      "go_name": "C:nucleus",
+      "go_name": "nucleus",
       "namespace": "CC",
-      "weighted_score": 6.45,
-      "n_sources": 3,
+      "weighted_score": 7.79,
+      "n_sources": 4,
       "sources": [
         "experimental_homolog",
         "ai_esm2",
-        "structural_motif"
+        "structural_motif",
+        "category_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -421,12 +496,13 @@
     },
     {
       "go_id": "GO:0005829",
-      "go_name": "C:cytosol",
+      "go_name": "cytosol",
       "namespace": "CC",
-      "weighted_score": 3.0,
-      "n_sources": 1,
+      "weighted_score": 3.16,
+      "n_sources": 2,
       "sources": [
-        "experimental_homolog"
+        "experimental_homolog",
+        "category_classifier_secondary"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -2442,7 +2518,7 @@
     }
   ],
   "mean_plddt": 93.5,
-  "n_evidence_sources": 12,
+  "n_evidence_sources": 13,
   "overall_confidence": "VERY HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (C110, C115, H117) to confirm functional importance",
@@ -2464,7 +2540,8 @@
     "go",
     "ec",
     "foldseek",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "md"

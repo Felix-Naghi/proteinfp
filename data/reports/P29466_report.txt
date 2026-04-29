@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 09:09:49
+  Generated: 2026-04-28 18:32:10
 ======================================================================
 
   Protein    : Caspase-1
@@ -17,7 +17,7 @@
   Top function     : Thiol protease involved in a variety of inflammatory processes by proteolytically cleaving other proteins, such as the precursors of the inflammatory cytokines interleukin-1 beta (IL1B) and interleuki
   Enzyme           : yes — 3.4.21
   Location         : C:plasma membrane
-  Evidence sources : 8
+  Evidence sources : 9
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
@@ -31,7 +31,7 @@
     [HIGH  ] GO:0004175 F:endopeptidase activity (score=5.1, 1 sources)
 
   Biological Process:
-    [HIGH  ] GO:0006508 proteolysis (score=21.5, 3 sources)
+    [HIGH  ] GO:0006508 proteolysis (score=23.3, 4 sources)
     [HIGH  ] GO:0042981 regulation of apoptotic process (score=9.5, 2 sources)
     [HIGH  ] GO:0006915 P:apoptotic process (score=5.1, 1 sources)
     [HIGH  ] GO:0001819 P:positive regulation of cytokine production (score=5.1, 1 sources)
@@ -73,5 +73,5 @@
   5. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi, category
 ======================================================================

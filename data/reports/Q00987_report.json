@@ -4,7 +4,7 @@
   "protein_name": "E3 ubiquitin-protein ligase Mdm2",
   "organism": "Homo sapiens",
   "sequence_length": 491,
-  "generated_at": "2026-04-26 09:09:54",
+  "generated_at": "2026-04-28 18:32:20",
   "top_function": "E3 ubiquitin-protein ligase that mediates ubiquitination of p53/TP53, leading to its degradation by the proteasome (PubMed:29681526). Inhibits p53/TP53- and p73/TP73-mediated cell cycle arrest and apo",
   "is_enzyme": true,
   "ec_number": "2.3.2",
@@ -196,6 +196,19 @@
       "top_evidence": "experimental_homolog"
     },
     {
+      "go_id": "GO:0003677",
+      "go_name": "DNA binding",
+      "namespace": "MF",
+      "weighted_score": 3.5,
+      "n_sources": 2,
+      "sources": [
+        "structural_motif",
+        "category_classifier"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0046872",
       "go_name": "metal ion binding",
       "namespace": "MF",
@@ -209,16 +222,16 @@
       "top_evidence": "sequence_composition"
     },
     {
-      "go_id": "GO:0003677",
-      "go_name": "DNA binding",
+      "go_id": "GO:0003700",
+      "go_name": "DNA-binding transcription factor activity",
       "namespace": "MF",
-      "weighted_score": 1.7,
+      "weighted_score": 1.8,
       "n_sources": 1,
       "sources": [
-        "structural_motif"
+        "category_classifier"
       ],
       "confidence": "MEDIUM",
-      "top_evidence": "structural_motif"
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0004672",
@@ -287,6 +300,19 @@
       "top_evidence": "experimental_homolog"
     },
     {
+      "go_id": "GO:0045892",
+      "go_name": "negative regulation of transcription",
+      "namespace": "BP",
+      "weighted_score": 6.9,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "category_classifier"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
       "go_id": "GO:0016567",
       "go_name": "P:protein ubiquitination",
       "namespace": "BP",
@@ -335,18 +361,6 @@
       "top_evidence": "experimental_homolog"
     },
     {
-      "go_id": "GO:0045892",
-      "go_name": "P:negative regulation of DNA-templated transcription",
-      "namespace": "BP",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
       "go_id": "GO:0000122",
       "go_name": "P:negative regulation of transcription by RNA polymerase II",
       "namespace": "BP",
@@ -369,6 +383,18 @@
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0006355",
+      "go_name": "regulation of DNA-templated transcription",
+      "namespace": "BP",
+      "weighted_score": 1.8,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0006468",
@@ -484,14 +510,15 @@
       "go_id": "GO:0005634",
       "go_name": "nucleus",
       "namespace": "CC",
-      "weighted_score": 14.83,
-      "n_sources": 5,
+      "weighted_score": 16.63,
+      "n_sources": 6,
       "sources": [
         "experimental_homolog",
         "domain_annotation",
         "ai_esm2",
         "structural_motif",
-        "embedding_similarity"
+        "embedding_similarity",
+        "category_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -2829,7 +2856,7 @@
     }
   ],
   "mean_plddt": 62.58,
-  "n_evidence_sources": 12,
+  "n_evidence_sources": 13,
   "overall_confidence": "VERY HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (H73, H96, C449) to confirm functional importance",
@@ -2851,7 +2878,8 @@
     "go",
     "ec",
     "foldseek",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "md"

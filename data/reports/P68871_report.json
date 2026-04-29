@@ -4,7 +4,7 @@
   "protein_name": "Hemoglobin subunit beta",
   "organism": "Homo sapiens",
   "sequence_length": 147,
-  "generated_at": "2026-04-26 09:09:53",
+  "generated_at": "2026-04-28 18:32:19",
   "top_function": "Involved in oxygen transport from the lung to the various peripheral tissues",
   "is_enzyme": false,
   "ec_number": "1.15.1",
@@ -221,6 +221,18 @@
       "top_evidence": "experimental_homolog"
     },
     {
+      "go_id": "GO:0005215",
+      "go_name": "transporter activity",
+      "namespace": "MF",
+      "weighted_score": 1.78,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0003677",
       "go_name": "DNA binding",
       "namespace": "MF",
@@ -331,6 +343,30 @@
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0006810",
+      "go_name": "transport",
+      "namespace": "BP",
+      "weighted_score": 1.78,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
+      "go_id": "GO:0055085",
+      "go_name": "transmembrane transport",
+      "namespace": "BP",
+      "weighted_score": 1.78,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0019430",
@@ -492,6 +528,18 @@
       ],
       "confidence": "MEDIUM",
       "top_evidence": "ai_esm2"
+    },
+    {
+      "go_id": "GO:0016021",
+      "go_name": "integral component of membrane",
+      "namespace": "CC",
+      "weighted_score": 1.78,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0043234",
@@ -2538,7 +2586,7 @@
     }
   ],
   "mean_plddt": 97.18,
-  "n_evidence_sources": 12,
+  "n_evidence_sources": 13,
   "overall_confidence": "VERY HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (C94, H93, H98) to confirm functional importance",
@@ -2560,7 +2608,8 @@
     "go",
     "ec",
     "foldseek",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "md"

@@ -4,7 +4,7 @@
   "protein_name": "Ribosyldihydronicotinamide dehydrogenase [quinone]",
   "organism": "Homo sapiens",
   "sequence_length": 231,
-  "generated_at": "2026-04-26 09:09:47",
+  "generated_at": "2026-04-28 18:32:05",
   "top_function": "The enzyme apparently serves as a quinone reductase in connection with conjugation reactions of hydroquinones involved in detoxification pathways as well as in biosynthetic processes such as the vitam",
   "is_enzyme": true,
   "ec_number": "3.6.5",
@@ -19,6 +19,19 @@
       "sources": [
         "experimental_homolog",
         "structural_motif"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0016491",
+      "go_name": "oxidoreductase activity",
+      "namespace": "MF",
+      "weighted_score": 6.9,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "category_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -134,18 +147,6 @@
     {
       "go_id": "GO:1904408",
       "go_name": "F:melatonin binding",
-      "namespace": "MF",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0016491",
-      "go_name": "F:oxidoreductase activity",
       "namespace": "MF",
       "weighted_score": 5.1,
       "n_sources": 1,
@@ -397,6 +398,18 @@
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0055114",
+      "go_name": "oxidation-reduction process",
+      "namespace": "BP",
+      "weighted_score": 1.8,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0006351",
@@ -2585,7 +2598,7 @@
     }
   ],
   "mean_plddt": 98.07,
-  "n_evidence_sources": 12,
+  "n_evidence_sources": 13,
   "overall_confidence": "VERY HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (H228, C180, H12) to confirm functional importance",
@@ -2606,7 +2619,8 @@
     "go",
     "ec",
     "foldseek",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "md"

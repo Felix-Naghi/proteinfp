@@ -4,7 +4,7 @@
   "protein_name": "Rho-related GTP-binding protein RhoG",
   "organism": "Homo sapiens",
   "sequence_length": 191,
-  "generated_at": "2026-04-26 09:09:53",
+  "generated_at": "2026-04-28 18:32:20",
   "top_function": "Plays a role in immunological synaptic F-actin density and architecture organization (PubMed:33513601). Regulates actin reorganization in lymphocytes, possibly through the modulation of Rac1 activity ",
   "is_enzyme": true,
   "ec_number": "3.6.5",
@@ -41,18 +41,6 @@
     {
       "go_id": "GO:0042995",
       "go_name": "C:cell projection",
-      "namespace": "MF",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0005856",
-      "go_name": "C:cytoskeleton",
       "namespace": "MF",
       "weighted_score": 5.1,
       "n_sources": 1,
@@ -254,6 +242,42 @@
       ],
       "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0016787",
+      "go_name": "hydrolase activity",
+      "namespace": "MF",
+      "weighted_score": 1.16,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
+      "go_id": "GO:0003774",
+      "go_name": "cytoskeletal motor activity",
+      "namespace": "MF",
+      "weighted_score": 0.26,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier_secondary"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "category_classifier_secondary"
+    },
+    {
+      "go_id": "GO:0005198",
+      "go_name": "structural molecule activity",
+      "namespace": "MF",
+      "weighted_score": 0.26,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier_secondary"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "category_classifier_secondary"
     }
   ],
   "go_terms_bp": [
@@ -307,6 +331,19 @@
       "top_evidence": "experimental_homolog"
     },
     {
+      "go_id": "GO:0006508",
+      "go_name": "proteolysis",
+      "namespace": "BP",
+      "weighted_score": 2.26,
+      "n_sources": 2,
+      "sources": [
+        "structural_motif",
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0019430",
       "go_name": "removal of superoxide radicals",
       "namespace": "BP",
@@ -355,18 +392,6 @@
       "top_evidence": "structural_motif"
     },
     {
-      "go_id": "GO:0006508",
-      "go_name": "proteolysis",
-      "namespace": "BP",
-      "weighted_score": 1.1,
-      "n_sources": 1,
-      "sources": [
-        "structural_motif"
-      ],
-      "confidence": "MEDIUM",
-      "top_evidence": "structural_motif"
-    },
-    {
       "go_id": "GO:0010819",
       "go_name": "regulation of T cell chemotaxis",
       "namespace": "BP",
@@ -377,9 +402,35 @@
       ],
       "confidence": "LOW",
       "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0007010",
+      "go_name": "cytoskeleton organization",
+      "namespace": "BP",
+      "weighted_score": 0.26,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier_secondary"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "category_classifier_secondary"
     }
   ],
   "go_terms_cc": [
+    {
+      "go_id": "GO:0005737",
+      "go_name": "cytoplasm",
+      "namespace": "CC",
+      "weighted_score": 6.76,
+      "n_sources": 3,
+      "sources": [
+        "experimental_homolog",
+        "sequence_baseline",
+        "category_classifier_secondary"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
     {
       "go_id": "GO:0016020",
       "go_name": "C:membrane",
@@ -394,14 +445,14 @@
       "top_evidence": "experimental_homolog"
     },
     {
-      "go_id": "GO:0005737",
-      "go_name": "C:cytoplasm",
+      "go_id": "GO:0005856",
+      "go_name": "cytoskeleton",
       "namespace": "CC",
-      "weighted_score": 6.5,
+      "weighted_score": 5.36,
       "n_sources": 2,
       "sources": [
         "experimental_homolog",
-        "sequence_baseline"
+        "category_classifier_secondary"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -1930,7 +1981,7 @@
     }
   ],
   "mean_plddt": 93.91,
-  "n_evidence_sources": 8,
+  "n_evidence_sources": 9,
   "overall_confidence": "VERY HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (C105, H95, H98) to confirm functional importance",
@@ -1948,7 +1999,8 @@
     "esm2",
     "go",
     "ec",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "pockets",

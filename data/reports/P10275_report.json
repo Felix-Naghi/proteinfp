@@ -4,7 +4,7 @@
   "protein_name": "Androgen receptor",
   "organism": "Homo sapiens",
   "sequence_length": 920,
-  "generated_at": "2026-04-26 09:09:43",
+  "generated_at": "2026-04-28 18:32:01",
   "top_function": "Steroid hormone receptors are ligand-activated transcription factors that regulate eukaryotic gene expression and affect cellular proliferation and differentiation in target tissues (PubMed:19022849).",
   "is_enzyme": false,
   "ec_number": "3.4.22",
@@ -28,12 +28,13 @@
       "go_id": "GO:0003700",
       "go_name": "DNA-binding transcription factor activity",
       "namespace": "MF",
-      "weighted_score": 11.0,
-      "n_sources": 3,
+      "weighted_score": 12.69,
+      "n_sources": 4,
       "sources": [
         "experimental_homolog",
         "domain_annotation",
-        "structural_motif"
+        "structural_motif",
+        "category_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -81,14 +82,15 @@
       "go_id": "GO:0003677",
       "go_name": "DNA binding",
       "namespace": "MF",
-      "weighted_score": 6.05,
-      "n_sources": 2,
+      "weighted_score": 7.74,
+      "n_sources": 3,
       "sources": [
         "domain_annotation",
-        "structural_motif"
+        "structural_motif",
+        "category_classifier"
       ],
       "confidence": "HIGH",
-      "top_evidence": "structural_motif"
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0000785",
@@ -274,6 +276,19 @@
   ],
   "go_terms_bp": [
     {
+      "go_id": "GO:0006355",
+      "go_name": "regulation of DNA-templated transcription",
+      "namespace": "BP",
+      "weighted_score": 12.94,
+      "n_sources": 2,
+      "sources": [
+        "domain_annotation",
+        "category_classifier"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0045944",
       "go_name": "P:positive regulation of transcription by RNA polymerase II",
       "namespace": "BP",
@@ -286,18 +301,6 @@
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0006355",
-      "go_name": "regulation of DNA-templated transcription",
-      "namespace": "BP",
-      "weighted_score": 11.25,
-      "n_sources": 1,
-      "sources": [
-        "domain_annotation"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "domain_annotation"
     },
     {
       "go_id": "GO:0030521",
@@ -397,6 +400,18 @@
       "top_evidence": "experimental_homolog"
     },
     {
+      "go_id": "GO:0045892",
+      "go_name": "negative regulation of transcription",
+      "namespace": "BP",
+      "weighted_score": 1.69,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0015671",
       "go_name": "oxygen transport",
       "namespace": "BP",
@@ -474,14 +489,15 @@
       "go_id": "GO:0005634",
       "go_name": "nucleus",
       "namespace": "CC",
-      "weighted_score": 19.6,
-      "n_sources": 5,
+      "weighted_score": 21.29,
+      "n_sources": 6,
       "sources": [
         "experimental_homolog",
         "domain_annotation",
         "ai_esm2",
         "structural_motif",
-        "neural_classifier"
+        "neural_classifier",
+        "category_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -2020,7 +2036,7 @@
     }
   ],
   "mean_plddt": 57.25,
-  "n_evidence_sources": 8,
+  "n_evidence_sources": 9,
   "overall_confidence": "HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (H690, H875, C570) to confirm functional importance",
@@ -2037,7 +2053,8 @@
     "esm2",
     "go",
     "ec",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "pockets",

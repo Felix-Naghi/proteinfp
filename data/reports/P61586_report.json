@@ -4,7 +4,7 @@
   "protein_name": "Transforming protein RhoA",
   "organism": "Homo sapiens",
   "sequence_length": 193,
-  "generated_at": "2026-04-26 09:09:52",
+  "generated_at": "2026-04-28 18:32:17",
   "top_function": "Small GTPase which cycles between an active GTP-bound and an inactive GDP-bound state. Mainly associated with cytoskeleton organization, in active state binds to a variety of effector proteins to regu",
   "is_enzyme": true,
   "ec_number": "3.6.5",
@@ -220,6 +220,18 @@
       "top_evidence": "sequence_composition"
     },
     {
+      "go_id": "GO:0016787",
+      "go_name": "hydrolase activity",
+      "namespace": "MF",
+      "weighted_score": 1.78,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0003677",
       "go_name": "DNA binding",
       "namespace": "MF",
@@ -343,6 +355,19 @@
       "top_evidence": "experimental_homolog"
     },
     {
+      "go_id": "GO:0006508",
+      "go_name": "proteolysis",
+      "namespace": "BP",
+      "weighted_score": 2.88,
+      "n_sources": 2,
+      "sources": [
+        "structural_motif",
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0006351",
       "go_name": "DNA-templated transcription",
       "namespace": "BP",
@@ -383,18 +408,6 @@
       "go_name": "bicarbonate transport",
       "namespace": "BP",
       "weighted_score": 1.2,
-      "n_sources": 1,
-      "sources": [
-        "structural_motif"
-      ],
-      "confidence": "MEDIUM",
-      "top_evidence": "structural_motif"
-    },
-    {
-      "go_id": "GO:0006508",
-      "go_name": "proteolysis",
-      "namespace": "BP",
-      "weighted_score": 1.1,
       "n_sources": 1,
       "sources": [
         "structural_motif"
@@ -1958,7 +1971,7 @@
     }
   ],
   "mean_plddt": 93.58,
-  "n_evidence_sources": 8,
+  "n_evidence_sources": 9,
   "overall_confidence": "VERY HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (C16, C107, H105) to confirm functional importance",
@@ -1976,7 +1989,8 @@
     "esm2",
     "go",
     "ec",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "pockets",

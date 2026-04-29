@@ -4,7 +4,7 @@
   "protein_name": "Coagulation factor XII",
   "organism": "Homo sapiens",
   "sequence_length": 615,
-  "generated_at": "2026-04-26 15:11:20",
+  "generated_at": "2026-04-28 18:31:48",
   "top_function": "Factor XII is a serum glycoprotein that participates in the initiation of blood coagulation, fibrinolysis, and the generation of bradykinin and angiotensin. Prekallikrein is cleaved by factor XII to f",
   "is_enzyme": true,
   "ec_number": "3.4.21",
@@ -86,6 +86,18 @@
       ],
       "confidence": "MEDIUM",
       "top_evidence": "sequence_composition"
+    },
+    {
+      "go_id": "GO:0003823",
+      "go_name": "antigen binding",
+      "namespace": "MF",
+      "weighted_score": 1.76,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0003677",
@@ -356,6 +368,42 @@
       "top_evidence": "experimental_homolog"
     },
     {
+      "go_id": "GO:0006958",
+      "go_name": "complement activation",
+      "namespace": "BP",
+      "weighted_score": 1.76,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
+      "go_id": "GO:0006955",
+      "go_name": "immune response",
+      "namespace": "BP",
+      "weighted_score": 1.76,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
+      "go_id": "GO:0006956",
+      "go_name": "complement activation, classical pathway",
+      "namespace": "BP",
+      "weighted_score": 1.76,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0006281",
       "go_name": "DNA repair",
       "namespace": "BP",
@@ -433,12 +481,13 @@
       "go_id": "GO:0005615",
       "go_name": "extracellular space",
       "namespace": "CC",
-      "weighted_score": 12.61,
-      "n_sources": 3,
+      "weighted_score": 14.37,
+      "n_sources": 4,
       "sources": [
         "experimental_homolog",
         "domain_annotation",
-        "neural_classifier"
+        "neural_classifier",
+        "category_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -3063,7 +3112,7 @@
     }
   ],
   "mean_plddt": 76.31,
-  "n_evidence_sources": 12,
+  "n_evidence_sources": 13,
   "overall_confidence": "VERY HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (C198, C200, C413) to confirm functional importance",
@@ -3085,7 +3134,8 @@
     "go",
     "ec",
     "foldseek",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "md"

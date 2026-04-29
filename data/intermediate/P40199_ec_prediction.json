@@ -1,0 +1,34 @@
+{
+  "uniprot_id": "P40199",
+  "sequence_length": 344,
+  "is_enzyme": false,
+  "enzyme_confidence": 0.85,
+  "top_prediction": {
+    "ec_class": "3",
+    "ec_name": "Hydrolase",
+    "ec_full": "EC 3.4.21",
+    "score": 0.85,
+    "evidence": [
+      "go_prediction",
+      "structural_motif",
+      "sequence_composition"
+    ]
+  },
+  "all_predictions": [
+    {
+      "ec_class": "3",
+      "ec_name": "Hydrolase",
+      "ec_full": "EC 3.4.21",
+      "score": 0.85,
+      "evidence": [
+        "go_prediction",
+        "structural_motif",
+        "sequence_composition"
+      ]
+    }
+  ],
+  "specific_ec": "3.4.21",
+  "specific_ec_name": "Serine-type endopeptidase",
+  "non_enzyme_score": 0.0,
+  "ml_enzyme_prob": 0.437
+}

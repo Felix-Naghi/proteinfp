@@ -4,7 +4,7 @@
   "protein_name": "Procathepsin L",
   "organism": "Homo sapiens",
   "sequence_length": 333,
-  "generated_at": "2026-04-26 09:09:39",
+  "generated_at": "2026-04-28 18:31:58",
   "top_function": "Thiol protease important for the overall degradation of proteins in lysosomes (Probable). Plays a critical for normal cellular functions such as general protein turnover, antigen processing and bone r",
   "is_enzyme": true,
   "ec_number": "3.4.21",
@@ -144,6 +144,18 @@
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005201",
+      "go_name": "extracellular matrix structural constituent",
+      "namespace": "MF",
+      "weighted_score": 1.76,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0004252",
@@ -341,6 +353,30 @@
       "top_evidence": "experimental_homolog"
     },
     {
+      "go_id": "GO:0007160",
+      "go_name": "cell-matrix adhesion",
+      "namespace": "BP",
+      "weighted_score": 1.76,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
+      "go_id": "GO:0030198",
+      "go_name": "extracellular matrix organization",
+      "namespace": "BP",
+      "weighted_score": 1.76,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0015671",
       "go_name": "oxygen transport",
       "namespace": "BP",
@@ -441,6 +477,19 @@
       "top_evidence": "experimental_homolog"
     },
     {
+      "go_id": "GO:0031012",
+      "go_name": "extracellular matrix",
+      "namespace": "CC",
+      "weighted_score": 6.86,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "category_classifier"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
       "go_id": "GO:0005615",
       "go_name": "C:extracellular space",
       "namespace": "CC",
@@ -467,18 +516,6 @@
     {
       "go_id": "GO:0005886",
       "go_name": "C:plasma membrane",
-      "namespace": "CC",
-      "weighted_score": 5.1,
-      "n_sources": 1,
-      "sources": [
-        "experimental_homolog"
-      ],
-      "confidence": "HIGH",
-      "top_evidence": "experimental_homolog"
-    },
-    {
-      "go_id": "GO:0031012",
-      "go_name": "C:extracellular matrix",
       "namespace": "CC",
       "weighted_score": 5.1,
       "n_sources": 1,
@@ -585,22 +622,22 @@
       "top_evidence": "experimental_homolog"
     },
     {
+      "go_id": "GO:0005578",
+      "go_name": "proteinaceous extracellular matrix",
+      "namespace": "CC",
+      "weighted_score": 1.76,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0005833",
       "go_name": "hemoglobin complex",
       "namespace": "CC",
       "weighted_score": 1.3,
-      "n_sources": 1,
-      "sources": [
-        "structural_motif"
-      ],
-      "confidence": "MEDIUM",
-      "top_evidence": "structural_motif"
-    },
-    {
-      "go_id": "GO:0043234",
-      "go_name": "protein complex",
-      "namespace": "CC",
-      "weighted_score": 1.1,
       "n_sources": 1,
       "sources": [
         "structural_motif"
@@ -2140,7 +2177,7 @@
     }
   ],
   "mean_plddt": 93.52,
-  "n_evidence_sources": 8,
+  "n_evidence_sources": 9,
   "overall_confidence": "VERY HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (H276, H321, C322) to confirm functional importance",
@@ -2157,7 +2194,8 @@
     "esm2",
     "go",
     "ec",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "pockets",

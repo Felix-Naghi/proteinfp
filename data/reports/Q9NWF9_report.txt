@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 09:09:58
+  Generated: 2026-04-28 18:32:25
 ======================================================================
 
   Protein    : E3 ubiquitin-protein ligase RNF216
@@ -17,7 +17,7 @@
   Top function     : E3 ubiquitin ligase which accepts ubiquitin from specific E2 ubiquitin-conjugating enzymes, and then transfers it to substrates promoting their ubiquitination (PubMed:34998453). Plays a role in the re
   Enzyme           : yes — 2.7.10
   Location         : C:membrane
-  Evidence sources : 8
+  Evidence sources : 9
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
@@ -25,10 +25,10 @@
 
   Molecular Function:
     [HIGH  ] GO:0008270 zinc ion binding (score=11.3, 3 sources)
+    [HIGH  ] GO:0016740 transferase activity (score=6.9, 2 sources)
     [HIGH  ] GO:0003723 F:RNA binding (score=6.5, 2 sources)
     [HIGH  ] GO:0061630 F:ubiquitin protein ligase activity (score=5.1, 1 sources)
     [HIGH  ] GO:0031624 F:ubiquitin conjugating enzyme binding (score=5.1, 1 sources)
-    [HIGH  ] GO:0030136 C:clathrin-coated vesicle (score=5.1, 1 sources)
 
   Biological Process:
     [HIGH  ] GO:0016567 P:protein ubiquitination (score=5.1, 1 sources)
@@ -74,5 +74,5 @@
   6. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi, category
 ======================================================================

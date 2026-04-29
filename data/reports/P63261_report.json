@@ -4,7 +4,7 @@
   "protein_name": "Actin, cytoplasmic 2",
   "organism": "Homo sapiens",
   "sequence_length": 375,
-  "generated_at": "2026-04-26 15:11:18",
+  "generated_at": "2026-04-28 18:32:18",
   "top_function": "metal ion binding",
   "is_enzyme": true,
   "ec_number": "3.4.21",
@@ -22,6 +22,30 @@
       ],
       "confidence": "MEDIUM",
       "top_evidence": "sequence_composition"
+    },
+    {
+      "go_id": "GO:0003774",
+      "go_name": "cytoskeletal motor activity",
+      "namespace": "MF",
+      "weighted_score": 1.09,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
+      "go_id": "GO:0005198",
+      "go_name": "structural molecule activity",
+      "namespace": "MF",
+      "weighted_score": 1.09,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0004252",
@@ -168,6 +192,18 @@
       "top_evidence": "ai_esm2"
     },
     {
+      "go_id": "GO:0016787",
+      "go_name": "hydrolase activity",
+      "namespace": "MF",
+      "weighted_score": 0.35,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier_secondary"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "category_classifier_secondary"
+    },
+    {
       "go_id": "GO:0003700",
       "go_name": "DNA-binding transcription factor activity",
       "namespace": "MF",
@@ -181,6 +217,31 @@
     }
   ],
   "go_terms_bp": [
+    {
+      "go_id": "GO:0007010",
+      "go_name": "cytoskeleton organization",
+      "namespace": "BP",
+      "weighted_score": 1.09,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
+      "go_id": "GO:0006508",
+      "go_name": "proteolysis",
+      "namespace": "BP",
+      "weighted_score": 0.74,
+      "n_sources": 2,
+      "sources": [
+        "structural_motif",
+        "category_classifier_secondary"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "structural_motif"
+    },
     {
       "go_id": "GO:0006351",
       "go_name": "DNA-templated transcription",
@@ -230,18 +291,6 @@
       "top_evidence": "structural_motif"
     },
     {
-      "go_id": "GO:0006508",
-      "go_name": "proteolysis",
-      "namespace": "BP",
-      "weighted_score": 0.39,
-      "n_sources": 1,
-      "sources": [
-        "structural_motif"
-      ],
-      "confidence": "LOW",
-      "top_evidence": "structural_motif"
-    },
-    {
       "go_id": "GO:0010819",
       "go_name": "regulation of T cell chemotaxis",
       "namespace": "BP",
@@ -256,6 +305,19 @@
   ],
   "go_terms_cc": [
     {
+      "go_id": "GO:0005737",
+      "go_name": "cytoplasm",
+      "namespace": "CC",
+      "weighted_score": 1.41,
+      "n_sources": 2,
+      "sources": [
+        "sequence_baseline",
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0005634",
       "go_name": "nucleus",
       "namespace": "CC",
@@ -267,6 +329,18 @@
       ],
       "confidence": "MEDIUM",
       "top_evidence": "ai_esm2"
+    },
+    {
+      "go_id": "GO:0005856",
+      "go_name": "cytoskeleton",
+      "namespace": "CC",
+      "weighted_score": 1.09,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0043234",
@@ -291,18 +365,6 @@
       ],
       "confidence": "LOW",
       "top_evidence": "structural_motif"
-    },
-    {
-      "go_id": "GO:0005737",
-      "go_name": "cytoplasm",
-      "namespace": "CC",
-      "weighted_score": 0.32,
-      "n_sources": 1,
-      "sources": [
-        "sequence_baseline"
-      ],
-      "confidence": "LOW",
-      "top_evidence": "sequence_baseline"
     }
   ],
   "active_sites": [
@@ -2531,7 +2593,7 @@
     }
   ],
   "mean_plddt": 95.37,
-  "n_evidence_sources": 12,
+  "n_evidence_sources": 13,
   "overall_confidence": "HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (H161, H275, C374) to confirm functional importance",
@@ -2554,7 +2616,8 @@
     "go",
     "ec",
     "foldseek",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "md"

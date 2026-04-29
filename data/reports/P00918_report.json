@@ -4,7 +4,7 @@
   "protein_name": "Carbonic anhydrase 2",
   "organism": "Homo sapiens",
   "sequence_length": 260,
-  "generated_at": "2026-04-26 09:09:33",
+  "generated_at": "2026-04-28 18:31:49",
   "top_function": "carbonate dehydratase activity",
   "is_enzyme": true,
   "ec_number": "4.2.1",
@@ -51,6 +51,18 @@
       ],
       "confidence": "HIGH",
       "top_evidence": "embedding_similarity"
+    },
+    {
+      "go_id": "GO:0016829",
+      "go_name": "lyase activity",
+      "namespace": "MF",
+      "weighted_score": 1.8,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0003677",
@@ -2546,7 +2558,7 @@
     }
   ],
   "mean_plddt": 97.37,
-  "n_evidence_sources": 12,
+  "n_evidence_sources": 13,
   "overall_confidence": "HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (H96, H107, H3) to confirm functional importance",
@@ -2569,7 +2581,8 @@
     "go",
     "ec",
     "foldseek",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "md"

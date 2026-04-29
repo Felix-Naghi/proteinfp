@@ -4,7 +4,7 @@
   "protein_name": "Actin, alpha cardiac muscle 1",
   "organism": "Homo sapiens",
   "sequence_length": 377,
-  "generated_at": "2026-04-26 09:09:53",
+  "generated_at": "2026-04-28 18:32:19",
   "top_function": "serine-type endopeptidase activity",
   "is_enzyme": true,
   "ec_number": "3.4.21",
@@ -120,6 +120,30 @@
       "top_evidence": "structural_motif"
     },
     {
+      "go_id": "GO:0003774",
+      "go_name": "cytoskeletal motor activity",
+      "namespace": "MF",
+      "weighted_score": 1.14,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
+      "go_id": "GO:0005198",
+      "go_name": "structural molecule activity",
+      "namespace": "MF",
+      "weighted_score": 1.14,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0005172",
       "go_name": "vascular endothelial growth factor receptor binding",
       "namespace": "MF",
@@ -178,9 +202,34 @@
       ],
       "confidence": "LOW",
       "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0016787",
+      "go_name": "hydrolase activity",
+      "namespace": "MF",
+      "weighted_score": 0.33,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier_secondary"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "category_classifier_secondary"
     }
   ],
   "go_terms_bp": [
+    {
+      "go_id": "GO:0006508",
+      "go_name": "proteolysis",
+      "namespace": "BP",
+      "weighted_score": 1.43,
+      "n_sources": 2,
+      "sources": [
+        "structural_motif",
+        "category_classifier_secondary"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "structural_motif"
+    },
     {
       "go_id": "GO:0006351",
       "go_name": "DNA-templated transcription",
@@ -230,16 +279,16 @@
       "top_evidence": "structural_motif"
     },
     {
-      "go_id": "GO:0006508",
-      "go_name": "proteolysis",
+      "go_id": "GO:0007010",
+      "go_name": "cytoskeleton organization",
       "namespace": "BP",
-      "weighted_score": 1.1,
+      "weighted_score": 1.14,
       "n_sources": 1,
       "sources": [
-        "structural_motif"
+        "category_classifier"
       ],
       "confidence": "MEDIUM",
-      "top_evidence": "structural_motif"
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0010819",
@@ -256,6 +305,19 @@
   ],
   "go_terms_cc": [
     {
+      "go_id": "GO:0005737",
+      "go_name": "cytoplasm",
+      "namespace": "CC",
+      "weighted_score": 2.04,
+      "n_sources": 2,
+      "sources": [
+        "sequence_baseline",
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0005634",
       "go_name": "nucleus",
       "namespace": "CC",
@@ -267,6 +329,18 @@
       ],
       "confidence": "MEDIUM",
       "top_evidence": "ai_esm2"
+    },
+    {
+      "go_id": "GO:0005856",
+      "go_name": "cytoskeleton",
+      "namespace": "CC",
+      "weighted_score": 1.14,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0043234",
@@ -291,18 +365,6 @@
       ],
       "confidence": "MEDIUM",
       "top_evidence": "structural_motif"
-    },
-    {
-      "go_id": "GO:0005737",
-      "go_name": "cytoplasm",
-      "namespace": "CC",
-      "weighted_score": 0.9,
-      "n_sources": 1,
-      "sources": [
-        "sequence_baseline"
-      ],
-      "confidence": "LOW",
-      "top_evidence": "sequence_baseline"
     }
   ],
   "active_sites": [
@@ -1772,7 +1834,7 @@
     }
   ],
   "mean_plddt": 95.36,
-  "n_evidence_sources": 8,
+  "n_evidence_sources": 9,
   "overall_confidence": "HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (H163, H277, C376) to confirm functional importance",
@@ -1790,7 +1852,8 @@
     "esm2",
     "go",
     "ec",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "pockets",

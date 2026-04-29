@@ -4,7 +4,7 @@
   "protein_name": "NADH-cytochrome b5 reductase 3",
   "organism": "Homo sapiens",
   "sequence_length": 301,
-  "generated_at": "2026-04-26 09:09:30",
+  "generated_at": "2026-04-28 18:31:46",
   "top_function": "Catalyzes the reduction of two molecules of cytochrome b5 using NADH as the electron donor",
   "is_enzyme": true,
   "ec_number": "3.4.21",
@@ -14,12 +14,13 @@
       "go_id": "GO:0016491",
       "go_name": "oxidoreductase activity",
       "namespace": "MF",
-      "weighted_score": 21.5,
-      "n_sources": 3,
+      "weighted_score": 23.29,
+      "n_sources": 4,
       "sources": [
         "experimental_homolog",
         "domain_annotation",
-        "structural_motif"
+        "structural_motif",
+        "category_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -307,13 +308,14 @@
       "go_id": "GO:0055114",
       "go_name": "oxidation-reduction process",
       "namespace": "BP",
-      "weighted_score": 1.4,
-      "n_sources": 1,
+      "weighted_score": 3.19,
+      "n_sources": 2,
       "sources": [
-        "structural_motif"
+        "structural_motif",
+        "category_classifier"
       ],
-      "confidence": "MEDIUM",
-      "top_evidence": "structural_motif"
+      "confidence": "HIGH",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0006351",
@@ -2009,7 +2011,7 @@
     }
   ],
   "mean_plddt": 93.85,
-  "n_evidence_sources": 8,
+  "n_evidence_sources": 9,
   "overall_confidence": "VERY HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (C204, H201, H205) to confirm functional importance",
@@ -2026,7 +2028,8 @@
     "esm2",
     "go",
     "ec",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "pockets",

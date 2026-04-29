@@ -1,6 +1,6 @@
 ======================================================================
   ProteinFP Prediction Report
-  Generated: 2026-04-26 09:09:43
+  Generated: 2026-04-28 18:32:01
 ======================================================================
 
   Protein    : Androgen receptor
@@ -17,7 +17,7 @@
   Top function     : Steroid hormone receptors are ligand-activated transcription factors that regulate eukaryotic gene expression and affect cellular proliferation and differentiation in target tissues (PubMed:19022849).
   Enzyme           : no (non-enzyme)
   Location         : C:plasma membrane
-  Evidence sources : 8
+  Evidence sources : 9
 
 ──────────────────────────────────────────────────────────────────────
   GENE ONTOLOGY PREDICTIONS
@@ -25,20 +25,20 @@
 
   Molecular Function:
     [HIGH  ] GO:0008270 zinc ion binding (score=14.8, 3 sources)
-    [HIGH  ] GO:0003700 DNA-binding transcription factor activity (score=11.0, 3 sources)
+    [HIGH  ] GO:0003700 DNA-binding transcription factor activity (score=12.7, 4 sources)
     [HIGH  ] GO:0004879 nuclear receptor activity (score=9.5, 2 sources)
     [HIGH  ] GO:0005496 steroid binding (score=9.5, 2 sources)
     [HIGH  ] GO:0001228 F:DNA-binding transcription activator activit (score=9.3, 2 sources)
 
   Biological Process:
+    [HIGH  ] GO:0006355 regulation of DNA-templated transcription (score=12.9, 2 sources)
     [HIGH  ] GO:0045944 P:positive regulation of transcription by RNA (score=12.2, 3 sources)
-    [HIGH  ] GO:0006355 regulation of DNA-templated transcription (score=11.2, 1 sources)
     [HIGH  ] GO:0030521 androgen receptor signaling pathway (score=9.5, 2 sources)
     [HIGH  ] GO:0030522 P:intracellular receptor signaling pathway (score=5.1, 1 sources)
     [HIGH  ] GO:2001237 P:negative regulation of extrinsic apoptotic  (score=5.1, 1 sources)
 
   Cellular Component:
-    [HIGH  ] GO:0005634 nucleus (score=19.6, 5 sources)
+    [HIGH  ] GO:0005634 nucleus (score=21.3, 6 sources)
     [HIGH  ] GO:0005737 C:cytoplasm (score=6.5, 2 sources)
     [HIGH  ] GO:0005829 C:cytosol (score=5.1, 1 sources)
 
@@ -73,5 +73,5 @@
   5. GFP/mCherry fusion protein + confocal microscopy to confirm predicted subcellular localisation
 
 ──────────────────────────────────────────────────────────────────────
-  Modules run: structure, physico, active, homology, esm2, go, ec, ppi
+  Modules run: structure, physico, active, homology, esm2, go, ec, ppi, category
 ======================================================================

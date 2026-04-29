@@ -4,7 +4,7 @@
   "protein_name": "Cellular tumor antigen p53",
   "organism": "Homo sapiens",
   "sequence_length": 393,
-  "generated_at": "2026-04-26 09:09:37",
+  "generated_at": "2026-04-28 18:31:55",
   "top_function": "DNA binding",
   "is_enzyme": false,
   "ec_number": "3.4.21",
@@ -189,6 +189,42 @@
       ],
       "confidence": "MEDIUM",
       "top_evidence": "sequence_composition"
+    },
+    {
+      "go_id": "GO:0003774",
+      "go_name": "cytoskeletal motor activity",
+      "namespace": "MF",
+      "weighted_score": 1.06,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
+      "go_id": "GO:0005198",
+      "go_name": "structural molecule activity",
+      "namespace": "MF",
+      "weighted_score": 1.06,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
+      "go_id": "GO:0003723",
+      "go_name": "RNA binding",
+      "namespace": "MF",
+      "weighted_score": 0.25,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier_secondary"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "category_classifier_secondary"
     }
   ],
   "go_terms_bp": [
@@ -305,6 +341,18 @@
       "top_evidence": "structural_motif"
     },
     {
+      "go_id": "GO:0007010",
+      "go_name": "cytoskeleton organization",
+      "namespace": "BP",
+      "weighted_score": 1.06,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0010819",
       "go_name": "regulation of T cell chemotaxis",
       "namespace": "BP",
@@ -315,6 +363,30 @@
       ],
       "confidence": "LOW",
       "top_evidence": "structural_motif"
+    },
+    {
+      "go_id": "GO:0006396",
+      "go_name": "RNA processing",
+      "namespace": "BP",
+      "weighted_score": 0.25,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier_secondary"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "category_classifier_secondary"
+    },
+    {
+      "go_id": "GO:0000398",
+      "go_name": "mRNA splicing via spliceosome",
+      "namespace": "BP",
+      "weighted_score": 0.25,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier_secondary"
+      ],
+      "confidence": "LOW",
+      "top_evidence": "category_classifier_secondary"
     }
   ],
   "go_terms_cc": [
@@ -348,6 +420,19 @@
       "top_evidence": "embedding_similarity"
     },
     {
+      "go_id": "GO:0005737",
+      "go_name": "cytoplasm",
+      "namespace": "CC",
+      "weighted_score": 1.96,
+      "n_sources": 2,
+      "sources": [
+        "sequence_baseline",
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0005833",
       "go_name": "hemoglobin complex",
       "namespace": "CC",
@@ -372,6 +457,18 @@
       "top_evidence": "structural_motif"
     },
     {
+      "go_id": "GO:0005856",
+      "go_name": "cytoskeleton",
+      "namespace": "CC",
+      "weighted_score": 1.06,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0072562",
       "go_name": "blood microparticle",
       "namespace": "CC",
@@ -384,16 +481,16 @@
       "top_evidence": "structural_motif"
     },
     {
-      "go_id": "GO:0005737",
-      "go_name": "cytoplasm",
+      "go_id": "GO:0005681",
+      "go_name": "spliceosomal complex",
       "namespace": "CC",
-      "weighted_score": 0.9,
+      "weighted_score": 0.25,
       "n_sources": 1,
       "sources": [
-        "sequence_baseline"
+        "category_classifier_secondary"
       ],
       "confidence": "LOW",
-      "top_evidence": "sequence_baseline"
+      "top_evidence": "category_classifier_secondary"
     }
   ],
   "active_sites": [
@@ -2707,7 +2804,7 @@
     }
   ],
   "mean_plddt": 75.05,
-  "n_evidence_sources": 13,
+  "n_evidence_sources": 14,
   "overall_confidence": "HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (C141, C176, H193) to confirm functional importance",
@@ -2730,7 +2827,8 @@
     "ec",
     "foldseek",
     "ppi",
-    "md"
+    "md",
+    "category"
   ],
   "modules_missing": []
 }

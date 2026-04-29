@@ -4,7 +4,7 @@
   "protein_name": "Mitogen-activated protein kinase 1",
   "organism": "Homo sapiens",
   "sequence_length": 360,
-  "generated_at": "2026-04-26 15:11:25",
+  "generated_at": "2026-04-28 18:32:09",
   "top_function": "Serine/threonine kinase which acts as an essential component of the MAP kinase signal transduction pathway. MAPK1/ERK2 and MAPK3/ERK1 are the 2 MAPKs which play an important role in the MAPK/ERK casca",
   "is_enzyme": true,
   "ec_number": "2.7.10",
@@ -86,6 +86,18 @@
       ],
       "confidence": "MEDIUM",
       "top_evidence": "sequence_composition"
+    },
+    {
+      "go_id": "GO:0016740",
+      "go_name": "transferase activity",
+      "namespace": "MF",
+      "weighted_score": 1.76,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
     },
     {
       "go_id": "GO:0004252",
@@ -249,12 +261,13 @@
       "go_id": "GO:0006468",
       "go_name": "protein phosphorylation",
       "namespace": "BP",
-      "weighted_score": 23.0,
-      "n_sources": 3,
+      "weighted_score": 24.76,
+      "n_sources": 4,
       "sources": [
         "experimental_homolog",
         "domain_annotation",
-        "structural_motif"
+        "structural_motif",
+        "category_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -2819,7 +2832,7 @@
     }
   ],
   "mean_plddt": 90.37,
-  "n_evidence_sources": 12,
+  "n_evidence_sources": 13,
   "overall_confidence": "VERY HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (C127, H141, H147) to confirm functional importance",
@@ -2842,7 +2855,8 @@
     "go",
     "ec",
     "foldseek",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "md"

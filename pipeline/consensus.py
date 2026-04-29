@@ -293,6 +293,7 @@ def build_consensus_report(uniprot_id: str) -> ConsensusReport:
         "foldseek":     f"{uid}_foldseek.json",
         "ppi":          f"{uid}_ppi.json",
         "md":           f"{uid}_md.json",       # ← ADD THIS LINE
+        "category":     f"{uid}_category.json",
     }
 
     for key, filename in module_files.items():
@@ -459,7 +460,137 @@ def build_consensus_report(uniprot_id: str) -> ConsensusReport:
     return report
 
 
+
+
 # ── GO aggregation ─────────────────────────────────────────────────────────────
+CATEGORY_GO_MAP = {
+    "gpcr": [
+        ("GO:0004930", "G protein-coupled receptor activity",          "MF"),
+        ("GO:0007186", "G protein-coupled receptor signaling pathway", "BP"),
+        ("GO:0016021", "integral component of membrane",               "CC"),
+        ("GO:0007165", "signal transduction",                          "BP"),
+        ("GO:0005886", "plasma membrane",                              "CC"),
+    ],
+    "cytoskeletal": [
+        ("GO:0005856", "cytoskeleton",                                 "CC"),
+        ("GO:0003774", "cytoskeletal motor activity",                  "MF"),
+        ("GO:0007010", "cytoskeleton organization",                    "BP"),
+        ("GO:0005198", "structural molecule activity",                 "MF"),
+        ("GO:0005737", "cytoplasm",                                    "CC"),
+    ],
+    "transmembrane": [
+        ("GO:0016021", "integral component of membrane",               "CC"),
+        ("GO:0005886", "plasma membrane",                              "CC"),
+        ("GO:0006810", "transport",                                    "BP"),
+        ("GO:0005215", "transporter activity",                         "MF"),
+    ],
+    "transcription": [
+        ("GO:0003700", "DNA-binding transcription factor activity",    "MF"),
+        ("GO:0006355", "regulation of DNA-templated transcription",    "BP"),
+        ("GO:0005634", "nucleus",                                      "CC"),
+        ("GO:0003677", "DNA binding",                                  "MF"),
+        ("GO:0045892", "negative regulation of transcription",        "BP"),
+    ],
+    "ecm": [
+        ("GO:0031012", "extracellular matrix",                         "CC"),
+        ("GO:0005201", "extracellular matrix structural constituent",  "MF"),
+        ("GO:0007160", "cell-matrix adhesion",                         "BP"),
+        ("GO:0005578", "proteinaceous extracellular matrix",           "CC"),
+        ("GO:0030198", "extracellular matrix organization",            "BP"),
+    ],
+    "transport": [
+        ("GO:0005215", "transporter activity",                         "MF"),
+        ("GO:0006810", "transport",                                    "BP"),
+        ("GO:0016021", "integral component of membrane",               "CC"),
+        ("GO:0055085", "transmembrane transport",                      "BP"),
+    ],
+    "rna_binding": [
+        ("GO:0003723", "RNA binding",                                  "MF"),
+        ("GO:0006396", "RNA processing",                               "BP"),
+        ("GO:0005681", "spliceosomal complex",                         "CC"),
+        ("GO:0000398", "mRNA splicing via spliceosome",                "BP"),
+    ],
+    "chaperone": [
+        ("GO:0051082", "unfolded protein binding",                     "MF"),
+        ("GO:0006457", "protein folding",                              "BP"),
+        ("GO:0005829", "cytosol",                                      "CC"),
+        ("GO:0042026", "protein refolding",                            "BP"),
+        ("GO:0051087", "chaperone binding",                            "MF"),
+    ],
+    "immune": [
+        ("GO:0006958", "complement activation",                        "BP"),
+        ("GO:0005615", "extracellular space",                          "CC"),
+        ("GO:0003823", "antigen binding",                              "MF"),
+        ("GO:0006955", "immune response",                              "BP"),
+        ("GO:0006956", "complement activation, classical pathway",     "BP"),
+    ],
+    "ec_1": [
+        ("GO:0016491", "oxidoreductase activity",                      "MF"),
+        ("GO:0055114", "oxidation-reduction process",                  "BP"),
+    ],
+    "ec_2": [
+        ("GO:0016740", "transferase activity",                         "MF"),
+        ("GO:0006468", "protein phosphorylation",                      "BP"),
+    ],
+    "ec_3": [
+        ("GO:0016787", "hydrolase activity",                           "MF"),
+        ("GO:0006508", "proteolysis",                                  "BP"),
+    ],
+    "ec_4": [
+        ("GO:0016829", "lyase activity",                               "MF"),
+    ],
+    "ec_5": [
+        ("GO:0016853", "isomerase activity",                           "MF"),
+    ],
+    "ec_6": [
+        ("GO:0016874", "ligase activity",                              "MF"),
+        ("GO:0006281", "DNA repair",                                   "BP"),
+    ],
+    "ec_7": [
+        ("GO:0016887", "ATPase activity",                              "MF"),
+        ("GO:0055085", "transmembrane transport",                      "BP"),
+    ],
+}
+ 
+ 
+def _add_category_evidence(
+    evidence:        dict,
+    modules_data:    dict,
+    _add_fn,
+    weights:         dict,
+) -> None:
+    """
+    Boost GO terms based on category classifier prediction.
+    Weight scales with classifier confidence so uncertain predictions
+    contribute less than confident ones.
+    """
+    cat_data = modules_data.get("category", {})
+    if not cat_data:
+        return
+ 
+    top_cat    = cat_data.get("top_category", "")
+    confidence = float(cat_data.get("confidence", 0.0))
+    all_scores = cat_data.get("all_scores", {})
+ 
+    # Base weight for category evidence — sits between domain_annotation (2.0)
+    # and sequence_homolog (1.5). Scaled by classifier confidence.
+    BASE_WEIGHT = 1.8
+ 
+    # Boost top category GO terms
+    go_terms = CATEGORY_GO_MAP.get(top_cat, [])
+    for go_id, go_name, ns in go_terms:
+        weight = BASE_WEIGHT * confidence
+        _add_fn(go_id, go_name, ns, weight, "category_classifier")
+ 
+    # Also softly boost any secondary category with score > 0.15
+    # This handles proteins that legitimately belong to multiple categories
+    for cat, score in all_scores.items():
+        if cat == top_cat or score < 0.15:
+            continue
+        for go_id, go_name, ns in CATEGORY_GO_MAP.get(cat, []):
+            weight = BASE_WEIGHT * score * 0.5   # half weight for secondary
+            _add_fn(go_id, go_name, ns, weight, "category_classifier_secondary")
+
 
 def _aggregate_go_terms(
     modules_data: dict,
@@ -537,7 +668,7 @@ def _aggregate_go_terms(
         for go_id, go_name, ns in _desc_to_go(desc):
             _add(go_id, go_name, ns,
                  weights.get("structural_homolog", 2.5), "structural_homolog")
-
+    _add_category_evidence(evidence, modules_data, _add, weights)
     # Build ranked lists
     mf, bp, cc = [], [], []
     for go_id, ev in evidence.items():

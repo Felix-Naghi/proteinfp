@@ -4,7 +4,7 @@
   "protein_name": "Eukaryotic translation initiation factor 4B",
   "organism": "Homo sapiens",
   "sequence_length": 611,
-  "generated_at": "2026-04-26 15:11:24",
+  "generated_at": "2026-04-28 18:32:08",
   "top_function": "Required for the binding of mRNA to ribosomes. Functions in close association with EIF4-F and EIF4-A. Binds near the 5'-terminal cap of mRNA in presence of EIF-4F and ATP. Promotes the ATPase activity",
   "is_enzyme": false,
   "ec_number": "2.7.10",
@@ -14,11 +14,12 @@
       "go_id": "GO:0003723",
       "go_name": "RNA binding",
       "namespace": "MF",
-      "weighted_score": 8.25,
-      "n_sources": 2,
+      "weighted_score": 10.05,
+      "n_sources": 3,
       "sources": [
         "experimental_homolog",
-        "domain_annotation"
+        "domain_annotation",
+        "category_classifier"
       ],
       "confidence": "HIGH",
       "top_evidence": "experimental_homolog"
@@ -387,6 +388,30 @@
       "top_evidence": "experimental_homolog"
     },
     {
+      "go_id": "GO:0006396",
+      "go_name": "RNA processing",
+      "namespace": "BP",
+      "weighted_score": 1.8,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
+      "go_id": "GO:0000398",
+      "go_name": "mRNA splicing via spliceosome",
+      "namespace": "BP",
+      "weighted_score": 1.8,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0006468",
       "go_name": "protein phosphorylation",
       "namespace": "BP",
@@ -654,6 +679,18 @@
       "top_evidence": "experimental_homolog"
     },
     {
+      "go_id": "GO:0005681",
+      "go_name": "spliceosomal complex",
+      "namespace": "CC",
+      "weighted_score": 1.8,
+      "n_sources": 1,
+      "sources": [
+        "category_classifier"
+      ],
+      "confidence": "MEDIUM",
+      "top_evidence": "category_classifier"
+    },
+    {
       "go_id": "GO:0005634",
       "go_name": "nucleus",
       "namespace": "CC",
@@ -681,18 +718,6 @@
     {
       "go_id": "GO:0043234",
       "go_name": "protein complex",
-      "namespace": "CC",
-      "weighted_score": 0.39,
-      "n_sources": 1,
-      "sources": [
-        "structural_motif"
-      ],
-      "confidence": "LOW",
-      "top_evidence": "structural_motif"
-    },
-    {
-      "go_id": "GO:0005615",
-      "go_name": "extracellular space",
       "namespace": "CC",
       "weighted_score": 0.39,
       "n_sources": 1,
@@ -2821,7 +2846,7 @@
     }
   ],
   "mean_plddt": 51.91,
-  "n_evidence_sources": 12,
+  "n_evidence_sources": 13,
   "overall_confidence": "VERY HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (C457, H458, H404) to confirm functional importance",
@@ -2843,7 +2868,8 @@
     "go",
     "ec",
     "foldseek",
-    "ppi"
+    "ppi",
+    "category"
   ],
   "modules_missing": [
     "md"
