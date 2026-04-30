@@ -154364,3 +154364,157 @@ UnicodeEncodeError: 'charmap' codec can't encode characters in position 392-461:
 2026-04-28 19:49:24 [__main__] INFO    [3/5] Generating validation suggestions...
 2026-04-28 19:49:24 [__main__] INFO    [4/5] Computing overall confidence...
 2026-04-28 19:49:24 [__main__] INFO    [5/5] Assembling final report...
+2026-04-29 22:16:22 [__main__] INFO    Loaded modules: active_sites (18 HIGH), physicochemical, ppi (20 partners), allosteric (8 sites)
+2026-04-29 22:16:23 [__main__] INFO  ══ Module 16: Antibody Design: P04637 [seed=6349] ══
+2026-04-29 22:16:23 [__main__] INFO    Target: P04637 (TP53)
+2026-04-29 22:16:23 [__main__] INFO    Epitope mode: auto
+2026-04-29 22:16:23 [__main__] INFO    [Epitope] Selecting antibody target epitope...
+2026-04-29 22:16:23 [__main__] INFO      active_site: 8 exposed epitope residues  charge=+0.6  hydro=-1.78  SASA=692Å²
+2026-04-29 22:16:23 [__main__] INFO    [Epitope] Selected: ACTIVE SITE (8 residues)
+2026-04-29 22:16:23 [__main__] INFO    Epitope: 8 residues  charge=+0.6  hydro=-1.77  SASA=692Å²  (active_site)
+2026-04-29 22:16:23 [__main__] INFO    Initial population: 30 antibody sequences
+2026-04-29 22:16:23 [__main__] INFO    Starting evolution: 50 generations × 30 sequences
+2026-04-29 22:16:23 [__main__] INFO    Gen   1: fit=0.837  aff=0.561  dev=0.93  H3=QFSNHWGPQFAN  pI=6.7  chg=-0.4  div=0.68  ↑ IMPROVED
+2026-04-29 22:16:23 [__main__] INFO    Gen   2: fit=0.831  aff=0.562  dev=0.94  H3=GGLYRGGWWFDL  pI=8.4  chg=+2.0  div=0.79  stagnant 1
+2026-04-29 22:16:23 [__main__] INFO    Gen   3: fit=0.831  aff=0.562  dev=0.94  H3=GGLYRGGWWFDL  pI=8.4  chg=+2.0  div=0.68  stagnant 2
+2026-04-29 22:16:23 [__main__] INFO    Gen   4: fit=0.831  aff=0.566  dev=0.94  H3=GGLYRAGWWFDL  pI=8.4  chg=+2.0  div=0.59  stagnant 3
+2026-04-29 22:16:23 [__main__] INFO    Gen   5: fit=0.829  aff=0.566  dev=0.94  H3=GGLYRGGWWFDL  pI=8.4  chg=+2.0  div=0.38  stagnant 4
+2026-04-29 22:16:23 [__main__] INFO    Gen   6: fit=0.826  aff=0.566  dev=0.94  H3=GWAYRGGWWFDL  pI=6.3  chg=+0.0  div=0.28  stagnant 5
+2026-04-29 22:16:23 [__main__] INFO    Gen   7: fit=0.824  aff=0.566  dev=0.94  H3=GWAYRGGWWFDL  pI=6.3  chg=+0.0  div=0.32  stagnant 6
+2026-04-29 22:16:23 [__main__] INFO    Gen   8: fit=0.821  aff=0.566  dev=0.94  H3=GWAYRGGWWFDL  pI=6.3  chg=+0.0  div=0.32  stagnant 7
+2026-04-29 22:16:23 [__main__] INFO    Gen   9: fit=0.819  aff=0.569  dev=0.94  H3=GGLYRAYWFDL  pI=8.4  chg=+2.0  div=0.37  stagnant 8
+2026-04-29 22:16:23 [__main__] INFO    HARD RESET gen 9: Randomizing CDR-H3 in 15 sequences
+2026-04-29 22:16:23 [__main__] INFO    Gen  10: fit=0.821  aff=0.581  dev=0.94  H3=RFPYYYCGMDV  pI=8.2  chg=+2.0  div=0.59  stagnant 9
+2026-04-29 22:16:23 [__main__] INFO    HARD RESET gen 10: Randomizing CDR-H3 in 15 sequences
+2026-04-29 22:16:23 [__main__] INFO    Gen  11: fit=0.826  aff=0.566  dev=0.98  H3=GGLYRSGPYFDL  pI=7.8  chg=+1.0  div=0.58  stagnant 10
+2026-04-29 22:16:23 [__main__] INFO    HARD RESET gen 11: Randomizing CDR-H3 in 15 sequences
+2026-04-29 22:16:23 [__main__] INFO    Gen  12: fit=0.823  aff=0.566  dev=0.98  H3=GGLYRSGPYFDL  pI=7.8  chg=+1.0  div=0.58  stagnant 11
+2026-04-29 22:16:23 [__main__] INFO    HARD RESET gen 12: Randomizing CDR-H3 in 15 sequences
+2026-04-29 22:16:24 [__main__] INFO    Gen  13: fit=0.820  aff=0.566  dev=0.98  H3=GGLYRSGPYFDL  pI=7.8  chg=+1.0  div=0.56  stagnant 12
+2026-04-29 22:16:24 [__main__] INFO    HARD RESET gen 13: Randomizing CDR-H3 in 15 sequences
+2026-04-29 22:16:31 [__main__] INFO    Gen  14: fit=0.817  aff=0.566  dev=0.98  H3=GGLYRSGPYFDL  pI=7.8  chg=+1.0  div=0.58  stagnant 13
+2026-04-29 22:16:31 [__main__] INFO    HARD RESET gen 14: Randomizing CDR-H3 in 15 sequences
+2026-04-29 22:16:46 [__main__] INFO    Gen  15: fit=0.814  aff=0.566  dev=0.98  H3=GGLYRSGPYFDL  pI=7.8  chg=+1.0  div=0.58  stagnant 14
+2026-04-29 22:16:46 [__main__] INFO    HARD RESET gen 15: Randomizing CDR-H3 in 15 sequences
+2026-04-29 22:17:02 [__main__] INFO    Gen  16: fit=0.811  aff=0.566  dev=0.98  H3=GGLYRSGPYFDL  pI=7.8  chg=+1.0  div=0.62  stagnant 15
+2026-04-29 22:17:02 [__main__] INFO    HARD RESET gen 16: Randomizing CDR-H3 in 15 sequences
+2026-04-29 22:17:18 [__main__] INFO    Gen  17: fit=0.808  aff=0.566  dev=0.98  H3=GGLYRSGPYFDL  pI=7.8  chg=+1.0  div=0.64  stagnant 16
+2026-04-29 22:17:18 [__main__] INFO    HARD RESET gen 17: Randomizing CDR-H3 in 15 sequences
+2026-04-29 22:17:32 [__main__] INFO    Gen  18: fit=0.805  aff=0.566  dev=0.98  H3=GGLYRSGPYFDL  pI=7.8  chg=+1.0  div=0.65  stagnant 17
+2026-04-29 22:17:32 [__main__] INFO    HARD RESET gen 18: Randomizing CDR-H3 in 15 sequences
+2026-04-29 22:17:48 [__main__] INFO    Gen  19: fit=0.809  aff=0.581  dev=0.98  H3=RFPYYYYGNDV  pI=7.8  chg=+1.0  div=0.66  stagnant 18
+2026-04-29 22:17:48 [__main__] INFO    HARD RESET gen 19: Randomizing CDR-H3 in 15 sequences
+2026-04-29 22:18:04 [__main__] INFO    Gen  20: fit=0.806  aff=0.581  dev=0.98  H3=RFPYYYYGNDV  pI=7.8  chg=+1.0  div=0.61  stagnant 19
+2026-04-29 22:18:04 [__main__] INFO    HARD RESET gen 20: Randomizing CDR-H3 in 15 sequences
+2026-04-29 22:18:24 [__main__] INFO    Gen  21: fit=0.803  aff=0.581  dev=0.98  H3=RFPYYYYGNDV  pI=7.8  chg=+1.0  div=0.66  stagnant 20
+2026-04-29 22:18:24 [__main__] INFO    HARD RESET gen 21: Randomizing CDR-H3 in 15 sequences
+2026-04-29 22:18:40 [__main__] INFO    Gen  22: fit=0.800  aff=0.581  dev=0.98  H3=RFPYYYYGNDV  pI=7.8  chg=+1.0  div=0.61  stagnant 21
+2026-04-29 22:18:40 [__main__] INFO    HARD RESET gen 22: Randomizing CDR-H3 in 15 sequences
+2026-04-29 22:18:55 [__main__] INFO    Gen  23: fit=0.798  aff=0.581  dev=0.98  H3=RFPYYYYGNDV  pI=7.8  chg=+1.0  div=0.61  stagnant 22
+2026-04-29 22:18:55 [__main__] INFO    HARD RESET gen 23: Randomizing CDR-H3 in 15 sequences
+2026-04-29 22:19:12 [__main__] INFO    Gen  24: fit=0.795  aff=0.581  dev=0.98  H3=RFPYYYYGNDV  pI=7.8  chg=+1.0  div=0.64  stagnant 23
+2026-04-29 22:19:12 [__main__] INFO    HARD RESET gen 24: Randomizing CDR-H3 in 15 sequences
+2026-04-29 22:19:26 [__main__] INFO    Gen  25: fit=0.792  aff=0.581  dev=0.98  H3=RFPYYYYGNDV  pI=7.8  chg=+1.0  div=0.64  stagnant 24
+2026-04-29 22:19:26 [__main__] INFO    HARD RESET gen 25: Randomizing CDR-H3 in 15 sequences
+2026-04-29 22:19:44 [__main__] INFO    Gen  26: fit=0.789  aff=0.581  dev=0.98  H3=RFPYYYYGNDV  pI=7.8  chg=+1.0  div=0.61  stagnant 25
+2026-04-29 22:19:44 [__main__] INFO    HARD RESET gen 26: Randomizing CDR-H3 in 15 sequences
+2026-04-29 22:19:58 [__main__] INFO    Gen  27: fit=0.786  aff=0.581  dev=0.98  H3=RFPYYYYGNDV  pI=7.8  chg=+1.0  div=0.58  stagnant 26
+2026-04-29 22:19:58 [__main__] INFO    HARD RESET gen 27: Randomizing CDR-H3 in 15 sequences
+2026-04-29 22:20:14 [__main__] INFO    Gen  28: fit=0.783  aff=0.581  dev=0.98  H3=RFPYYYYGNDV  pI=7.8  chg=+1.0  div=0.62  stagnant 27
+2026-04-29 22:20:15 [__main__] INFO    HARD RESET gen 28: Randomizing CDR-H3 in 15 sequences
+2026-04-29 22:20:29 [__main__] INFO    Gen  29: fit=0.780  aff=0.581  dev=0.98  H3=RFPYYYYGNDV  pI=7.8  chg=+1.0  div=0.60  stagnant 28
+2026-04-29 22:20:29 [__main__] INFO    HARD RESET gen 29: Randomizing CDR-H3 in 15 sequences
+2026-04-29 22:20:46 [__main__] INFO    Gen  30: fit=0.778  aff=0.581  dev=0.98  H3=RFPYYYYGFDV  pI=7.8  chg=+1.0  div=0.62  stagnant 29
+2026-04-29 22:20:46 [__main__] INFO    HARD RESET gen 30: Randomizing CDR-H3 in 15 sequences
+2026-04-29 22:21:01 [__main__] INFO    Gen  31: fit=0.775  aff=0.581  dev=0.98  H3=RFPYYYYGFDV  pI=7.8  chg=+1.0  div=0.58  stagnant 30
+2026-04-29 22:21:01 [__main__] INFO    HARD RESET gen 31: Randomizing CDR-H3 in 15 sequences
+2026-04-29 22:21:16 [__main__] INFO    Gen  32: fit=0.772  aff=0.581  dev=0.98  H3=RFPYYYYGFDV  pI=7.8  chg=+1.0  div=0.64  stagnant 31
+2026-04-29 22:21:16 [__main__] INFO    HARD RESET gen 32: Randomizing CDR-H3 in 15 sequences
+2026-04-29 22:21:37 [__main__] INFO    Gen  33: fit=0.770  aff=0.581  dev=0.98  H3=RFPYYYYGFDV  pI=7.8  chg=+1.0  div=0.53  stagnant 32
+2026-04-29 22:21:37 [__main__] INFO    HARD RESET gen 33: Randomizing CDR-H3 in 15 sequences
+2026-04-29 22:22:01 [__main__] INFO    Gen  34: fit=0.767  aff=0.581  dev=0.98  H3=RFPYYYYGFDV  pI=7.8  chg=+1.0  div=0.59  stagnant 33
+2026-04-29 22:22:01 [__main__] INFO    HARD RESET gen 34: Randomizing CDR-H3 in 15 sequences
+2026-04-29 22:22:22 [__main__] INFO    Gen  35: fit=0.764  aff=0.581  dev=0.98  H3=RFPYYYYGFDV  pI=7.8  chg=+1.0  div=0.63  stagnant 34
+2026-04-29 22:22:22 [__main__] INFO    HARD RESET gen 35: Randomizing CDR-H3 in 15 sequences
+2026-04-29 22:23:10 [__main__] INFO    Loaded modules: active_sites (18 HIGH), physicochemical, ppi (20 partners), allosteric (8 sites)
+2026-04-29 22:23:10 [__main__] INFO  ══ Module 16: Antibody Design: P04637 [seed=655037] ══
+2026-04-29 22:23:10 [__main__] INFO    Target: P04637 (TP53)
+2026-04-29 22:23:10 [__main__] INFO    Epitope mode: auto
+2026-04-29 22:23:10 [__main__] INFO    [Epitope] Selecting antibody target epitope...
+2026-04-29 22:23:10 [__main__] INFO      active_site: 8 exposed epitope residues  charge=+0.6  hydro=-1.78  SASA=692Å²
+2026-04-29 22:23:10 [__main__] INFO    [Epitope] Selected: ACTIVE SITE (8 residues)
+2026-04-29 22:23:10 [__main__] INFO    Epitope: 8 residues  charge=+0.6  hydro=-1.77  SASA=692Å²  (active_site)
+2026-04-29 22:23:10 [__main__] INFO    Initial population: 30 antibody sequences
+2026-04-29 22:23:10 [__main__] INFO    Starting evolution: 50 generations × 30 sequences
+2026-04-29 22:23:10 [__main__] INFO    Gen   1: fit=0.841  aff=0.552  dev=0.94  H3=GTSTDTADKPQ  pI=6.3  chg=+0.0  div=0.69  ↑ IMPROVED
+2026-04-29 22:23:10 [__main__] INFO    Gen   2: fit=0.840  aff=0.589  dev=0.94  H3=SQNPVRDDDK  pI=7.7  chg=+1.1  div=0.72  ↑ IMPROVED
+2026-04-29 22:23:11 [__main__] INFO    Gen   3: fit=0.842  aff=0.600  dev=0.94  H3=SQNPVRDDDK  pI=6.1  chg=-0.8  div=0.61  ↑ IMPROVED
+2026-04-29 22:23:11 [__main__] INFO    Gen   4: fit=0.842  aff=0.600  dev=0.94  H3=SQNPVRDDDK  pI=7.0  chg=+0.2  div=0.40  stagnant 1
+2026-04-29 22:23:11 [__main__] INFO    Gen   5: fit=0.841  aff=0.600  dev=0.94  H3=SQNPVRDDDK  pI=6.1  chg=-0.8  div=0.20  stagnant 2
+2026-04-29 22:23:11 [__main__] INFO    Gen   6: fit=0.839  aff=0.600  dev=0.94  H3=SQNPVRDDDK  pI=6.1  chg=-0.8  div=0.18  stagnant 3
+2026-04-29 22:23:11 [__main__] INFO    Gen   7: fit=0.836  aff=0.600  dev=0.94  H3=SQNPVRDDDK  pI=6.1  chg=-0.8  div=0.21  stagnant 4
+2026-04-29 22:23:11 [__main__] INFO    Gen   8: fit=0.840  aff=0.600  dev=0.96  H3=SQNPGRDDDK  pI=6.1  chg=-0.8  div=0.23  stagnant 5
+2026-04-29 22:23:11 [__main__] INFO    Gen   9: fit=0.837  aff=0.600  dev=0.96  H3=SQNPGRDDDK  pI=6.1  chg=-0.8  div=0.19  stagnant 6
+2026-04-29 22:23:11 [__main__] INFO    Gen  10: fit=0.835  aff=0.600  dev=0.96  H3=SQNPGRDDDK  pI=6.1  chg=-0.8  div=0.26  stagnant 7
+2026-04-29 22:23:11 [__main__] INFO    Gen  11: fit=0.832  aff=0.600  dev=0.96  H3=SQNPGRDDDK  pI=6.1  chg=-0.8  div=0.26  stagnant 8
+2026-04-29 22:23:11 [__main__] INFO    HARD RESET gen 11: replacing 29 sequences with fresh seeds
+2026-04-29 22:23:11 [__main__] INFO    Gen  12: fit=0.830  aff=0.600  dev=0.96  H3=SQNPGRDDDK  pI=6.1  chg=-0.8  div=0.59  stagnant 1
+2026-04-29 22:23:11 [__main__] INFO    Gen  13: fit=0.827  aff=0.600  dev=0.96  H3=SQNPGRDDDK  pI=6.1  chg=-0.8  div=0.54  stagnant 2
+2026-04-29 22:23:22 [__main__] INFO    Gen  14: fit=0.824  aff=0.600  dev=0.96  H3=SQNPGRDDDK  pI=6.1  chg=-0.8  div=0.56  stagnant 3
+2026-04-29 22:23:37 [__main__] INFO    Gen  15: fit=0.822  aff=0.600  dev=0.96  H3=SQNPGRDDDK  pI=6.1  chg=-0.8  div=0.34  stagnant 4
+2026-04-29 22:23:53 [__main__] INFO    Gen  16: fit=0.819  aff=0.600  dev=0.96  H3=SQNPGRDDDK  pI=6.1  chg=-0.8  div=0.25  stagnant 5
+2026-04-29 22:24:10 [__main__] INFO    Gen  17: fit=0.816  aff=0.600  dev=0.96  H3=SQNPGRDDDK  pI=6.1  chg=-0.8  div=0.20  stagnant 6
+2026-04-29 22:24:30 [__main__] INFO    Gen  18: fit=0.814  aff=0.600  dev=0.96  H3=SQNPGRDDDK  pI=6.1  chg=-0.8  div=0.18  stagnant 7
+2026-04-29 22:24:50 [__main__] INFO    Gen  19: fit=0.811  aff=0.600  dev=0.96  H3=SQNPGRDDDK  pI=6.1  chg=-0.8  div=0.18  stagnant 8
+2026-04-29 22:24:50 [__main__] INFO    HARD RESET gen 19: replacing 29 sequences with fresh seeds
+2026-04-29 22:25:04 [__main__] INFO    Gen  20: fit=0.809  aff=0.600  dev=0.96  H3=SQNPGRDDDK  pI=6.1  chg=-0.8  div=0.64  stagnant 1
+2026-04-29 22:25:18 [__main__] INFO    Gen  21: fit=0.806  aff=0.600  dev=0.96  H3=SQNPGRDDDK  pI=6.1  chg=-0.8  div=0.65  stagnant 2
+2026-04-29 22:25:33 [__main__] INFO    Gen  22: fit=0.803  aff=0.600  dev=0.96  H3=SQNPGRDDDK  pI=6.1  chg=-0.8  div=0.44  stagnant 3
+2026-04-29 22:25:52 [__main__] INFO    Gen  23: fit=0.801  aff=0.600  dev=0.96  H3=SQNPGRDDDK  pI=6.1  chg=-0.8  div=0.18  stagnant 4
+2026-04-29 22:26:15 [__main__] INFO    Gen  24: fit=0.798  aff=0.600  dev=0.96  H3=SQNPGRDDDK  pI=6.1  chg=-0.8  div=0.19  stagnant 5
+2026-04-29 22:26:38 [__main__] INFO    Gen  25: fit=0.795  aff=0.600  dev=0.96  H3=SQNPGRDDDK  pI=6.1  chg=-0.8  div=0.22  stagnant 6
+2026-04-29 22:27:16 [__main__] INFO    Loaded modules: active_sites (18 HIGH), physicochemical, ppi (20 partners), allosteric (8 sites)
+2026-04-29 22:27:16 [__main__] INFO  ══ Module 16: Antibody Design: P04637 [seed=446080] ══
+2026-04-29 22:27:16 [__main__] INFO    Target: P04637 (TP53)
+2026-04-29 22:27:16 [__main__] INFO    Epitope mode: auto
+2026-04-29 22:27:16 [__main__] INFO    [Epitope] Selecting antibody target epitope...
+2026-04-29 22:27:16 [__main__] INFO      active_site: 8 exposed epitope residues  charge=+0.6  hydro=-1.78  SASA=692Å²
+2026-04-29 22:27:16 [__main__] INFO    [Epitope] Selected: ACTIVE SITE (8 residues)
+2026-04-29 22:27:16 [__main__] INFO    Epitope: 8 residues  charge=+0.6  hydro=-1.77  SASA=692Å²  (active_site)
+2026-04-29 22:27:16 [__main__] INFO    Initial population: 30 antibody sequences
+2026-04-29 22:27:16 [__main__] INFO    Starting evolution: 50 generations × 30 sequences
+2026-04-29 22:27:16 [__main__] INFO    Gen   1: fit=0.944  aff=0.918  dev=0.93  H3=ENHAMWDKGWYMYRH  pI=8.2  chg=+2.2  div=0.72  ↑ IMPROVED
+2026-04-29 22:27:17 [__main__] INFO    Gen   2: fit=0.938  aff=0.930  dev=0.93  H3=RDPESGNQMTTDFTL  pI=5.6  chg=-0.9  div=0.75  ↑ IMPROVED
+2026-04-29 22:27:17 [__main__] INFO    Gen   3: fit=0.941  aff=0.929  dev=0.93  H3=ENHAMWDKGWYMYRH  pI=8.2  chg=+2.2  div=0.77  stagnant 1
+2026-04-29 22:27:17 [__main__] INFO    Gen   4: fit=0.953  aff=0.964  dev=0.93  H3=ENHAMWDKGYYMYRH  pI=8.2  chg=+2.2  div=0.60  ↑ IMPROVED
+2026-04-29 22:27:17 [__main__] INFO    Gen   5: fit=0.960  aff=0.963  dev=0.94  H3=ENHEMWCKGYYMYRH  pI=8.0  chg=+2.2  div=0.60  stagnant 1
+2026-04-29 22:27:17 [__main__] INFO    Gen   6: fit=0.960  aff=0.963  dev=0.94  H3=ENHEMWCKGYYMYRH  pI=8.0  chg=+2.2  div=0.51  stagnant 2
+2026-04-29 22:27:17 [__main__] INFO    Gen   7: fit=0.961  aff=0.965  dev=0.94  H3=ENHEMWCKGYYMYRH  pI=8.0  chg=+2.2  div=0.40  ↑ IMPROVED
+2026-04-29 22:27:17 [__main__] INFO    Gen   8: fit=0.961  aff=0.965  dev=0.94  H3=ENHEMWCKGYYMYRH  pI=8.0  chg=+2.2  div=0.20  stagnant 1
+2026-04-29 22:27:17 [__main__] INFO    Gen   9: fit=0.963  aff=0.973  dev=0.94  H3=ENHEMYCKGYYMYRH  pI=8.0  chg=+2.2  div=0.22  ↑ IMPROVED
+2026-04-29 22:27:17 [__main__] INFO    Gen  10: fit=0.968  aff=0.985  dev=0.94  H3=ENHEMWCKEYYMYRH  pI=8.0  chg=+2.2  div=0.18  ↑ IMPROVED
+2026-04-29 22:27:17 [__main__] INFO    Gen  11: fit=0.968  aff=0.985  dev=0.94  H3=ENHEMWCKEYYMYRH  pI=8.0  chg=+2.2  div=0.22  stagnant 1
+2026-04-29 22:27:17 [__main__] INFO    Gen  12: fit=0.969  aff=0.985  dev=0.94  H3=ENHEMWCKEYYMYRH  pI=8.0  chg=+2.2  div=0.15  stagnant 2
+2026-04-29 22:27:18 [__main__] INFO    Gen  13: fit=0.970  aff=0.988  dev=0.94  H3=ENHEMYEKGYYMYRH  pI=8.2  chg=+2.2  div=0.27  ↑ IMPROVED
+2026-04-29 22:27:27 [__main__] INFO    Gen  14: fit=0.971  aff=0.988  dev=0.94  H3=ENHEMYEKGYYMYRH  pI=8.2  chg=+2.2  div=0.16  stagnant 1
+2026-04-29 22:27:46 [__main__] INFO    Gen  15: fit=0.971  aff=0.988  dev=0.94  H3=ENHEMYEKGYYMYRH  pI=8.2  chg=+2.2  div=0.28  stagnant 2
+2026-04-29 22:28:03 [__main__] INFO    Gen  16: fit=0.971  aff=0.988  dev=0.94  H3=ENHEMYEKGYYMYRH  pI=8.2  chg=+2.2  div=0.23  stagnant 3
+2026-04-29 22:28:21 [__main__] INFO    Gen  17: fit=0.972  aff=0.989  dev=0.94  H3=ENHEMYEKGYYMYRH  pI=8.2  chg=+2.2  div=0.31  ↑ IMPROVED
+2026-04-29 22:28:40 [__main__] INFO    Gen  18: fit=0.972  aff=0.992  dev=0.94  H3=EQHEMYELYYMYRA  pI=8.2  chg=+2.1  div=0.31  ↑ IMPROVED
+2026-04-29 22:28:59 [__main__] INFO    Gen  19: fit=0.974  aff=0.996  dev=0.94  H3=EQHEMYEGYYDYRA  pI=7.7  chg=+1.1  div=0.33  ↑ IMPROVED
+2026-04-29 22:29:20 [__main__] INFO    Gen  20: fit=0.974  aff=0.996  dev=0.94  H3=EQHEMYEGYYDYRA  pI=7.7  chg=+1.1  div=0.36  stagnant 1
+2026-04-29 22:29:44 [__main__] INFO    Gen  21: fit=0.975  aff=0.994  dev=0.94  H3=EQHEMYELYYMYRA  pI=8.2  chg=+2.1  div=0.33  stagnant 2
+2026-04-29 22:30:04 [__main__] INFO    Gen  22: fit=0.976  aff=0.994  dev=0.94  H3=EQHEMYELYYMYRA  pI=8.2  chg=+2.1  div=0.28  stagnant 3
+2026-04-29 22:30:27 [__main__] INFO    Gen  23: fit=0.977  aff=0.996  dev=0.94  H3=EQHEMYEGYYDYRA  pI=7.7  chg=+1.1  div=0.19  stagnant 4
+2026-04-29 22:30:48 [__main__] INFO    Gen  24: fit=0.977  aff=0.996  dev=0.94  H3=EQHEMYEGYYDYRA  pI=7.7  chg=+1.1  div=0.16  stagnant 5
+2026-04-29 22:31:06 [__main__] INFO    Gen  25: fit=0.977  aff=0.996  dev=0.94  H3=EQHEMYEGYYDYRA  pI=7.7  chg=+1.1  div=0.23  stagnant 6
+2026-04-29 22:31:28 [__main__] INFO    Gen  26: fit=0.978  aff=0.996  dev=0.94  H3=EQHEMYEGYYDYRA  pI=7.7  chg=+1.1  div=0.26  stagnant 7
+2026-04-29 22:31:49 [__main__] INFO    Gen  27: fit=0.978  aff=0.997  dev=0.94  H3=EQHEMYELYYMYRE  pI=7.7  chg=+1.1  div=0.18  ↑ IMPROVED
+2026-04-29 22:32:12 [__main__] INFO    Gen  28: fit=0.979  aff=0.999  dev=0.94  H3=EQHEMYELYYMYRE  pI=7.7  chg=+1.1  div=0.18  ↑ IMPROVED
+2026-04-29 22:32:35 [__main__] INFO    Gen  29: fit=0.980  aff=0.999  dev=0.94  H3=EQHEMYELYYMYRE  pI=7.7  chg=+1.1  div=0.14  stagnant 1
+2026-04-29 22:32:58 [__main__] INFO    Gen  30: fit=0.980  aff=0.999  dev=0.94  H3=EQHEMYELYYMYRE  pI=7.7  chg=+1.1  div=0.21  stagnant 2
+2026-04-29 22:33:21 [__main__] INFO    Gen  31: fit=0.980  aff=0.999  dev=0.94  H3=EQHEMYELYYMYRE  pI=7.7  chg=+1.1  div=0.16  stagnant 3
+2026-04-29 22:33:44 [__main__] INFO    Gen  32: fit=0.981  aff=0.999  dev=0.94  H3=EQHEMYELYYMYRE  pI=7.7  chg=+1.1  div=0.18  stagnant 4
+2026-04-29 22:34:08 [__main__] INFO    Gen  33: fit=0.981  aff=0.999  dev=0.94  H3=EQHEMYEGYYDYRA  pI=7.7  chg=+1.2  div=0.20  ↑ IMPROVED
+2026-04-29 22:34:28 [__main__] INFO    Gen  34: fit=0.982  aff=0.999  dev=0.94  H3=EQHEMYEGYYDYRA  pI=7.7  chg=+1.2  div=0.19  ↑ IMPROVED
+2026-04-29 22:34:44 [__main__] INFO    Gen  35: fit=0.982  aff=0.999  dev=0.94  H3=EQHEMYEGYYDYRA  pI=7.7  chg=+1.2  div=0.24  stagnant 1
