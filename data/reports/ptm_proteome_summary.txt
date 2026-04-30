@@ -1,0 +1,231 @@
+══════════════════════════════════════════════════════════════════════
+  ProteinFP — Proteome-wide PTM Analysis Report
+  Run date : 2026-04-30 13:09:50
+══════════════════════════════════════════════════════════════════════
+
+  Proteins analysed : 112 / 112
+  Proteins skipped  : 0 (already done)
+  Errors            : 0
+
+──────────────────────────────────────────────────────────────────────
+  GLOBAL PTM STATISTICS
+──────────────────────────────────────────────────────────────────────
+  Total PTM sites     : 4,185
+    Known (DB)        : 1,242
+    Predicted (motif) : 2,943
+  Mean sites/protein  : 37.4
+
+──────────────────────────────────────────────────────────────────────
+  TOP KINASES ACROSS PROTEOME
+──────────────────────────────────────────────────────────────────────
+  UniProt               1146  ████████████████████████████████████████
+  CK2                   1011  ████████████████████████████████████████
+  PKC                    607  ████████████████████████████████████████
+  MAPK                   359  ████████████████████████████████
+  HAT                    290  ██████████████████████████
+  ATM                    264  ████████████████████████
+  OST                    215  ███████████████████
+  SCF                     99  █████████
+  PKA                     56  █████
+  CDK                     52  ████
+  SUMO                    48  ████
+  GSK3                     8  
+  PCAF                     8  
+  EGFR                     7  
+  CBP                      4  
+
+──────────────────────────────────────────────────────────────────────
+  MOST FREQUENTLY MODIFIED RESIDUE TYPES
+──────────────────────────────────────────────────────────────────────
+  S        1724 sites
+  T        1149 sites
+  K         652 sites
+  N         372 sites
+  P         124 sites
+  Y         101 sites
+  C          19 sites
+  A          12 sites
+  M           8 sites
+  G           7 sites
+
+──────────────────────────────────────────────────────────────────────
+  PROTEINS WITH DEGRADATION SIGNALS
+──────────────────────────────────────────────────────────────────────
+  P00519
+  P00533
+  P00742
+  P00749
+  P01031
+  P01100
+  P02144
+  P02452
+  P02511
+  P02751
+  P02787
+  P04792
+  P05156
+  P04899
+  P06213
+  P07437
+  P06239
+  P07900
+  P08473
+  P08581
+
+──────────────────────────────────────────────────────────────────────
+  PROTEINS WITH ACTIVATION CLUSTERS (≥3 high-conf activating phospho)
+──────────────────────────────────────────────────────────────────────
+  P00352
+  P00367
+  P00519
+  P01100
+  P01106
+  P02751
+  P04049
+  P04637
+  P04792
+  P05412
+  P07550
+  P07900
+  P08238
+  P11021
+  P11142
+  P11413
+  P12004
+  P14921
+  P16949
+  P20393
+
+──────────────────────────────────────────────────────────────────────
+  TOP 10 PTM-RICHEST PROTEINS
+──────────────────────────────────────────────────────────────────────
+  P02452          161 sites
+  P02751          155 sites
+  P38398          150 sites
+  Q9HAW4          132 sites
+  P11388          127 sites
+  Q14524          114 sites
+  P00519          104 sites
+  P08581           95 sites
+  P06213           93 sites
+  P00533           91 sites
+
+──────────────────────────────────────────────────────────────────────
+  PER-PROTEIN SUMMARY
+──────────────────────────────────────────────────────────────────────
+  UniProt      Gene        Total  Known  Phospho  Ubiq  Acetyl  Pocket Kinase           Status
+  ──────────── ────────── ────── ────── ──────── ───── ─────── ─────── ──────────────── ──────
+  P02452       COL1A1        161    125       36     1       2       0 UniProt          ok
+  P02751       FN1           155     10      136     2       3       5 CK2              ok
+  P38398       BRCA1         150     30      116     7       8       7 CK2              ok
+  Q9HAW4       CLSPN         132     33       94     7      18       6 UniProt          ok
+  P11388       TOP2A         127     35       85     3      33       8 UniProt          ok
+  Q14524       SCN5A         114     34       81     1       4       0 UniProt          ok
+  P00519       ABL1          104     35       85     4      11       0 UniProt          ok
+  P08581       MET            95     27       67     1       6       0 UniProt          ok
+  P06213       INSR           93     29       67     4       2       7 CK2              ok
+  P00533       EGFR           91     46       61     2       7       4 UniProt          ok
+  Q6PL18       ATAD2          87     20       70     2       2       8 CK2              ok
+  P01031       C5             80      4       65     2       7       4 CK2              ok
+  P08603       CFH            70      9       55     2       4       3 CK2              ok
+  Q13480       GAB1           67     14       59     2       5       0 CK2              ok
+  Q13153       PAK1           63     24       46     4       7       0 UniProt          ok
+  P04049       RAF1           55     20       43     0       6       0 UniProt          ok
+  P35228       NOS2           55      4       46     1       3       4 CK2              ok
+  P00367       GLUD1          53     32       26     0      24      19 UniProt          ok
+  Q9NRZ9       HELLS          53      3       37     0       7       4 CK2              ok
+  P08238       HSP90AB1       52     19       28     0      16       0 UniProt          ok
+  P23588       EIF4B          52     23       41     1       7       3 UniProt          ok
+  P02768       ALB            51     34       22     0       4       0 UniProt          ok
+  P07900       HSP90AA1       51     16       28     1      18       8 UniProt          ok
+  P15144       ANPEP          51     10       37     1       2       0 CK2              ok
+  P11142       HSPA8          50     17       26     1      14       0 UniProt          ok
+  P20393       NR1D1          50      7       38     0       5       0 MAPK             ok
+  P01106       MYC            49     24       37     0       8       0 UniProt          ok
+  P38646       HSPA9          47     15       27     0      14       6 UniProt          ok
+  Q00987       MDM2           47     13       38     1       5       7 CK2              ok
+  P04637       TP53           46     34       21     0      10       5 UniProt          ok
+  Q9NWF9       RNF216         46      2       36     1       5       0 CK2              ok
+  P11021       HSPA5          45     14       28     2      10       9 UniProt          ok
+  P10275       AR             44     15       39     0       3       0 UniProt          ok
+  P15056       BRAF           42     14       36     0       2       0 UniProt          ok
+  P06239       LCK            40     10       29     1       3       0 UniProt          ok
+  Q06124       PTPN11         36      5       28     1       4       0 CK2              ok
+  P08473       MME            35      7       22     2       4       0 CK2              ok
+  Q01094       E2F1           34      8       26     1       5       0 CK2              ok
+  Q9BYF1       ACE2           33      9       22     0       2       2 UniProt          ok
+  P00488       F13A1          32      2       21     0       3       0 PKC              ok
+  P00742       F10            32      5       24     2       1       6 CK2              ok
+  P02787       TF             32      7       23     1       3       9 CK2              ok
+  P05156       CFI            32      6       25     1       0       0 CK2              ok
+  P29350       PTPN6          32      7       28     0       1       0 CK2              ok
+  O15151       MDM4           31      2       31     0       0       0 CK2              ok
+  P00734       F2             31      3       26     0       1       7 CK2              ok
+  P00748       F12            31      9       20     0       2       1 UniProt          ok
+  P02748       C9             31      4       22     0       3       5 CK2              ok
+  P49841       GSK3B          31      6       22     1       1       4 CK2              ok
+  P07550       ADRB2          30     14       16     0       4       2 UniProt          ok
+  P11413       G6PD           30     11       19     1       8       5 UniProt          ok
+  P00352       ALDH1A1        29     12       16     0      11       0 UniProt          ok
+  P05412       JUN            28     14       18     0       5       0 UniProt          ok
+  P14921       ETS1           28     12       22     0       3       0 UniProt          ok
+  P10827       THRA           27      0       22     2       2       0 CK2              ok
+  P17706       PTPN2          27      6       22     1       2       6 UniProt          ok
+  P29466       CASP1          27      1       20     1       1       0 CK2              ok
+  P37231       PPARG          27      2       22     2       0       0 CK2              ok
+  Q16539       MAPK14         27      9       19     0       5       5 UniProt          ok
+  P35561       Kcnj2          26      0       22     0       3       0 CK2              ok
+  P40199       CEACAM6        26     12       13     1       0      20 UniProt          ok
+  P01100       FOS            25      7       22     2       0       0 CK2              ok
+  P03372       ESR1           25      8       21     0       1       0 CK2              ok
+  P11473       VDR            25      0       23     1       0       0 CK2              ok
+  P21554       CNR1           25      5       18     0       3       3 CK2              ok
+  P22309       UGT1A1         25      3       17     0       5       6 CK2              ok
+  P07437       TUBB           24      7       18     1       1       2 UniProt          ok
+  P11166       SLC2A1         23      6       17     2       2       6 UniProt          ok
+  P17275       JUNB           23      7       14     0       4       0 UniProt          ok
+  P35372       OPRM1          23     11       16     0       0       3 UniProt          ok
+  P55210       CASP7          23      5       17     0       3       0 CK2              ok
+  P02679       FGG            22      3       16     0       4       5 CK2              ok
+  P45983       MAPK8          22      4       20     0       0       0 CK2              ok
+  Q02750       MAP2K1         22      5       21     0       0       0 CK2              ok
+  P27361       MAPK3          21      5       17     1       2       0 CK2              ok
+  P46108       CRK            21     10       17     0       2       0 UniProt          ok
+  P68871       HBB            21     15       10     1       4      14 UniProt          ok
+  P04180       LCAT           20      6       12     0       1       0 MAPK             ok
+  P04792       HSPB1          20     13       16     2       1       0 UniProt          ok
+  P00749       PLAU           19      4       16     1       0       6 CK2              ok
+  P01116       KRAS           19      9        5     0       7       4 UniProt          ok
+  P04899       GNAI2          19      2       13     1       2       3 CK2              ok
+  P28482       MAPK1          19      8       14     1       2       4 UniProt          ok
+  P60953       CDC42          19      4       10     3       3       0 UniProt          ok
+  P16949       STMN1          18     11       10     1       5       9 UniProt          ok
+  P62136       PPP1CA         18      7       13     1       4       3 UniProt          ok
+  P69905       HBA1           18     17       13     0       1       0 UniProt          ok
+  P00387       CYB5R3         17      4       13     0       2       0 MAPK             ok
+  P68363       TUBA1B         17      6       11     1       2       4 UniProt          ok
+  Q07869       PPARA          17      0       15     0       1       0 CK2              ok
+  P07858       CTSB           15      2       10     0       2       0 CK2              ok
+  P60709       ACTB           15      4        9     1       2       5 UniProt          ok
+  P63261       ACTG1          15      4        9     1       2       5 UniProt          ok
+  P07711       CTSL           14      1        9     0       4       0 CK2              ok
+  P68032       ACTC1          14      3        8     2       1       0 CK2              ok
+  P02511       CRYAB          13      8        7     1       3       0 UniProt          ok
+  P01375       TNF            12      4        9     0       0       0 UniProt          ok
+  P12004       PCNA           12      5        6     1       4       0 UniProt          ok
+  P32119       PRDX2          11      4        8     0       3       4 UniProt          ok
+  P61586       RHOA           11      4        6     1       0       0 UniProt          ok
+  P00441       SOD1           10      8        5     0       3       7 UniProt          ok
+  P00918       CA2            10      4        8     0       2       2 UniProt          ok
+  P14550       AKR1A1         10      5        8     0       2       0 UniProt          ok
+  P84095       RHOG            9      4        6     0       0       0 UniProt          ok
+  P02144       MB              8      2        4     1       2       0 UniProt          ok
+  P16083       NQO2            8      2        6     1       0       3 CK2              ok
+  P62834       RAP1A           8      1        5     0       2       0 CK2              ok
+  P80188       LCN2            7      1        5     0       1       4 CK2              ok
+  Q8NHZ8       CDC26           7      2        5     0       1       0 UniProt          ok
+  P08246       ELANE           6      3        3     0       0       0 UniProt          ok
+  P62987       UBA52           4      2        2     0       1       1 UniProt          ok
+  P42574       CASP3           3      3        1     0       2       0 UniProt          ok
+
+══════════════════════════════════════════════════════════════════════

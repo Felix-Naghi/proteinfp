@@ -49,6 +49,56 @@
       "druggability": 0.9471499999999999,
       "probability": 0.2397,
       "accessible": true
+    },
+    {
+      "name": "ptm_active",
+      "delta_G_kJ_mol": 37.58,
+      "pocket_volume_A3": 300.0,
+      "pocket_shape": 0.6,
+      "druggability": 0.55,
+      "probability": 0.1,
+      "accessible": true,
+      "ptm_driven": true
+    },
+    {
+      "name": "ptm_inactive",
+      "delta_G_kJ_mol": -21.63,
+      "pocket_volume_A3": 300.0,
+      "pocket_shape": 0.6,
+      "druggability": 0.55,
+      "probability": 0.1,
+      "accessible": true,
+      "ptm_driven": true
+    },
+    {
+      "name": "ptm_apo",
+      "delta_G_kJ_mol": 18.79,
+      "pocket_volume_A3": 300.0,
+      "pocket_shape": 0.6,
+      "druggability": 0.55,
+      "probability": 0.1,
+      "accessible": true,
+      "ptm_driven": true
+    },
+    {
+      "name": "ptm_partially_open",
+      "delta_G_kJ_mol": 11.274,
+      "pocket_volume_A3": 300.0,
+      "pocket_shape": 0.6,
+      "druggability": 0.55,
+      "probability": 0.1,
+      "accessible": true,
+      "ptm_driven": true
+    },
+    {
+      "name": "ptm_allosteric_open",
+      "delta_G_kJ_mol": 7.516,
+      "pocket_volume_A3": 300.0,
+      "pocket_shape": 0.6,
+      "druggability": 0.55,
+      "probability": 0.1,
+      "accessible": true,
+      "ptm_driven": true
     }
   ],
   "mean_pocket_volume": 900.23,
@@ -61,5 +111,6 @@
   "n_functional_res": 292,
   "allostery_score": 1.0,
   "pdac_vs_normal_ddG": 391.053,
-  "ligandability_shift": -0.0109
+  "ligandability_shift": -0.0109,
+  "ptm_states_injected": 5
 }
