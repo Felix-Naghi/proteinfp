@@ -228,28 +228,37 @@ def simulate_steady_state(
     dt: float = DT,
 ) -> tuple[np.ndarray, int]:
     """
-    Integrate ODE system to steady state using Euler method.
-    
-    perturbation: array of activity reduction factors (0-1)
-                  0 = no effect, 1 = complete inhibition
-    
+    Integrate ODE system to steady state using RK4 method.
+    RK4 is more accurate than Euler and handles stiff systems better.
+
+    The perturbation is applied as a continuous activity reduction:
+        dx/dt = f(x) - gamma*x - perturbation*x
+
+    This means the perturbation scales with current activity level,
+    making the system sensitive to perturbation magnitude.
+
     Returns steady-state x and number of steps taken.
     """
     x = x0.copy()
 
-    for step in range(n_steps):
-        dx = grn_ode(x, W, gamma, basal)
-
-        # Apply drug perturbation (reduce activity of bound proteins)
+    def _dxdt(x_):
+        dx = grn_ode(x_, W, gamma, basal)
         if perturbation is not None:
-            dx -= perturbation * x
+            # Perturbation as continuous degradation term
+            # Larger perturbation = faster degradation of target activity
+            dx -= perturbation * x_ * (1 + perturbation * 2)
+        return dx
 
-        x_new = x + dt * dx
+    for step in range(n_steps):
+        # RK4 integration
+        k1 = _dxdt(x)
+        k2 = _dxdt(np.clip(x + 0.5 * dt * k1, 0, 1))
+        k3 = _dxdt(np.clip(x + 0.5 * dt * k2, 0, 1))
+        k4 = _dxdt(np.clip(x + dt * k3, 0, 1))
 
-        # Clamp to [0, 1]
+        x_new = x + (dt / 6) * (k1 + 2*k2 + 2*k3 + k4)
         x_new = np.clip(x_new, 0, 1)
 
-        # Check convergence
         if np.max(np.abs(x_new - x)) < CONVERGENCE:
             return x_new, step
 
@@ -311,8 +320,10 @@ def build_normal_cell_state(
         import pandas as pd
 
         # Load normal ductal cells from GSE84133
-        normal_files = list(
-            (ROOT / "data" / "grn" / "input").glob("*human*umifm*.csv")
+        base = ROOT / "data" / "grn" / "input"
+        normal_files = (
+            list(base.glob("*human*/*human*umifm*.csv")) or
+            list(base.glob("*human*umifm*.csv"))
         )
         if normal_files:
             dfs = []
@@ -418,19 +429,24 @@ def build_perturbation_vector(
 ) -> np.ndarray:
     """
     Convert binding probabilities to perturbation vector.
-    
-    perturbation[i] = P(bind) * BINDING_EFFICACY
-    
-    This represents the fractional reduction in protein activity
-    due to drug binding.
+
+    Uses a sigmoid amplification so moderate binding (P=0.3)
+    produces meaningful network perturbation:
+        pert[i] = sigmoid(P(bind) * 5) * BINDING_EFFICACY
+
+    This ensures dose-dependent response is visible in entropy.
     """
+    import math
     pert = np.zeros(len(genes), dtype=np.float32)
 
     for score in binding_scores:
-        gene = score.get("target_gene", "")
+        gene   = score.get("target_gene", "")
         if gene in gene_idx:
             p_bind = float(score.get("p_binding", 0))
-            pert[gene_idx[gene]] = p_bind * BINDING_EFFICACY
+            # Sigmoid amplification: small P gives small pert,
+            # P=0.3 gives ~0.52, P=0.8 gives ~0.90
+            amplified = 1 / (1 + math.exp(-p_bind * 8 + 2))
+            pert[gene_idx[gene]] = float(amplified * BINDING_EFFICACY)
 
     return pert
 

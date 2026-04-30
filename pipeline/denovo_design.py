@@ -1589,9 +1589,31 @@ def run_denovo_design(
     )
 
     result.to_json(out_path)
-    log.info(result.summary())
-    log.info(f"\n  Results saved to: {out_path}")
-    return result
+        # ── Module 15: Selectivity Optimization ──────────────────────────────────
+    if vina_path and result.top_candidates:
+            try:
+                from pipeline.selectivity_optimizer import run_selectivity_optimization
+                log.info("\n  ── Auto-triggering Module 15: Selectivity Optimization ──")
+                sel_result = run_selectivity_optimization(
+                    uniprot_id=uniprot_id,
+                    denovo_result=result,
+                    vina_path=vina_path,
+                    receptor_path=receptor_path,
+                    top_n=min(5, len(result.top_candidates)),
+                    rng_seed=rng_seed,
+                )
+                result.notes = (
+                    f"Selectivty: best_SI={sel_result.best_si:.2f}x  "
+                    f"hERG_safe={sel_result.n_herg_safe}/{len(sel_result.refined_molecules)}"
+                )
+                result.to_json(out_path)
+            except Exception as e:
+                log.warning(f"  Module 15 skipped: {e}")
+            log.info(result.summary())
+            log.info(f"\n  Results saved to: {out_path}")
+            return result
+
+
 
 
 def _fmt_time(s: float) -> str:

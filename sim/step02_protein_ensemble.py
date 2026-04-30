@@ -531,13 +531,21 @@ def build_protein_ensemble(
     active_data = json.loads(active_path.read_text()) \
                   if active_path.exists() else {}
 
+    # Load true length from structure JSON (fixes 300aa truncation bug)
+    struct_path = INTER / f"{uid}_structure.json"
+    struct_data = json.loads(struct_path.read_text()) \
+                  if struct_path.exists() else {}
+    true_length  = struct_data.get("length", report.get("length", 300))
+    true_plddt   = struct_data.get("mean_plddt", report.get("mean_plddt", 70.0))
+    true_sequence = struct_data.get("sequence", active_data.get("sequence", ""))
+
     # Merge into single protein_data dict
     protein_data = {
         **report,
         "active_residues": active_data.get("active_residues", []),
-        "length":          report.get("length", 300),
-        "mean_plddt":      report.get("mean_plddt", 70.0),
-        "sequence":        active_data.get("sequence", ""),
+        "length":          true_length,
+        "mean_plddt":      true_plddt,
+        "sequence":        true_sequence,
     }
 
     gene   = report.get("gene_name", uid)

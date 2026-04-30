@@ -1,28 +1,40 @@
 {
   "drug_name": "AZ13824374",
-  "dose_uM": 1.0,
+  "dose_uM": 10.0,
   "n_genes": 1246,
-  "n_perturbed": 4,
+  "n_perturbed": 5,
   "S_tumor_base": 6.086,
-  "S_tumor_pert": 6.127,
-  "S_normal_base": 6.8401,
-  "delta_S_tumor": 0.041,
-  "delta_S_normal": -0.002,
-  "delta_delta_S": 0.0429,
-  "n_downregulated": 6,
+  "S_tumor_pert": 6.1269,
+  "S_normal_base": 6.4268,
+  "delta_S_tumor": 0.0409,
+  "delta_S_normal": -0.0011,
+  "delta_delta_S": 0.042,
+  "n_downregulated": 8,
   "n_upregulated": 20,
   "downregulated": [
     [
+      "ATAD2",
+      1.0,
+      0.7515,
+      -0.2485
+    ],
+    [
+      "TOP2A",
+      1.0,
+      0.8973,
+      -0.1027
+    ],
+    [
       "ERO1L",
-      0.9311,
+      0.9312,
       0.8983,
-      -0.0328
+      -0.0329
     ],
     [
       "MT1X",
-      0.9396,
+      0.9397,
       0.9078,
-      -0.0318
+      -0.0319
     ],
     [
       "LY6D",
@@ -32,7 +44,7 @@
     ],
     [
       "PDZK1IP1",
-      0.5995,
+      0.5996,
       0.5704,
       -0.0292
     ],
@@ -44,9 +56,9 @@
     ],
     [
       "PLAT",
-      0.8319,
+      0.832,
       0.8051,
-      -0.0268
+      -0.0269
     ]
   ],
   "upregulated": [
@@ -154,9 +166,9 @@
     ],
     [
       "SERPINF1",
-      0.0476,
+      0.0475,
       1.0,
-      0.9524
+      0.9525
     ],
     [
       "TYROBP",
@@ -166,25 +178,25 @@
     ],
     [
       "HLA-DOA",
-      0.0708,
+      0.0707,
       1.0,
-      0.9292
+      0.9293
     ]
   ],
   "cascade_depth": {
+    "CLSPN": 0,
     "HELLS": 0,
     "ATAD2": 0,
-    "CLSPN": 0,
     "TOP2A": 0,
-    "BRCA2": 1,
     "CENPU": 1,
-    "CENPW": 1,
     "GINS4": 1,
+    "KIAA0101": 1,
+    "RRM2": 1,
+    "BRCA2": 1,
+    "CENPW": 1,
     "HIST1H4C": 1,
     "HMGB1": 1,
-    "KIAA0101": 1,
     "RAD51AP1": 1,
-    "RRM2": 1,
     "SMC4": 1,
     "STMN1": 1,
     "TUBA1B": 1,
@@ -200,28 +212,28 @@
   "selectivity_interpretation": "NON-SELECTIVE \u2014 similar effect on tumor and normal GRN",
   "dose_scan": {
     "1.0": {
-      "delta_S_tumor": 0.041,
-      "delta_delta_S": 0.0429
+      "delta_S_tumor": 0.0398,
+      "delta_delta_S": 0.0409
     },
     "5.0": {
-      "delta_S_tumor": 0.041,
-      "delta_delta_S": 0.0429
+      "delta_S_tumor": 0.0361,
+      "delta_delta_S": 0.0372
     },
     "10.0": {
-      "delta_S_tumor": 0.041,
-      "delta_delta_S": 0.0429
+      "delta_S_tumor": 0.0357,
+      "delta_delta_S": 0.0368
     },
     "25.0": {
-      "delta_S_tumor": 0.041,
-      "delta_delta_S": 0.0429
+      "delta_S_tumor": 0.0356,
+      "delta_delta_S": 0.0367
     },
     "50.0": {
-      "delta_S_tumor": 0.041,
-      "delta_delta_S": 0.0429
+      "delta_S_tumor": 0.0355,
+      "delta_delta_S": 0.0366
     },
     "100.0": {
-      "delta_S_tumor": 0.041,
-      "delta_delta_S": 0.0429
+      "delta_S_tumor": 0.0355,
+      "delta_delta_S": 0.0366
     }
   }
 }
