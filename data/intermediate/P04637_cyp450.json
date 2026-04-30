@@ -1,0 +1,1201 @@
+{
+  "uniprot_id": "P04637",
+  "n_molecules": 8,
+  "profiles": [
+    {
+      "molecule_id": "DE1",
+      "smiles": "CC1(c2ccc(-c3ccccc3)cc2)CCCNC1",
+      "name": "P04637_denovo_1",
+      "mw": 251.4,
+      "logp": 3.99,
+      "tpsa": 12.0,
+      "hba": 1,
+      "n_aromatic_rings": 2,
+      "n_rotatable": 2,
+      "has_basic_n": true,
+      "has_acidic_group": false,
+      "has_aromatic_amine": false,
+      "cyp3a4": {
+        "isoform": "CYP3A4",
+        "is_substrate": true,
+        "substrate_probability": 0.3,
+        "substrate_evidence": [
+          "LogP_in_range",
+          "TPSA_ok",
+          "basic_N_present"
+        ],
+        "clint_ul_min_mg": 74.6,
+        "hepatic_t12_min": 65.2,
+        "hepatic_cl_ml_min": 620.22,
+        "clearance_class": "high",
+        "is_inhibitor": false,
+        "inhibitor_probability": 0.13,
+        "estimated_ki_um": 999.0,
+        "ddi_risk": "negligible",
+        "inhibitor_evidence": [
+          "high_LogP_inh",
+          "multi_aromatic"
+        ],
+        "metabolic_liability": "high"
+      },
+      "cyp2d6": {
+        "isoform": "CYP2D6",
+        "is_substrate": true,
+        "substrate_probability": 0.97,
+        "substrate_evidence": [
+          "basic_amine",
+          "basic_ring_N",
+          "MW_in_range",
+          "LogP_in_range",
+          "TPSA_ok",
+          "basic_N_present"
+        ],
+        "clint_ul_min_mg": 95.0,
+        "hepatic_t12_min": 57.0,
+        "hepatic_cl_ml_min": 709.59,
+        "clearance_class": "high",
+        "is_inhibitor": false,
+        "inhibitor_probability": 0.13,
+        "estimated_ki_um": 999.0,
+        "ddi_risk": "negligible",
+        "inhibitor_evidence": [
+          "high_LogP_inh",
+          "multi_aromatic"
+        ],
+        "metabolic_liability": "high"
+      },
+      "cyp2c9": {
+        "isoform": "CYP2C9",
+        "is_substrate": false,
+        "substrate_probability": 0.27,
+        "substrate_evidence": [
+          "MW_in_range",
+          "LogP_in_range",
+          "TPSA_ok"
+        ],
+        "clint_ul_min_mg": 2.0,
+        "hepatic_t12_min": 1452.9,
+        "hepatic_cl_ml_min": 27.82,
+        "clearance_class": "low",
+        "is_inhibitor": false,
+        "inhibitor_probability": 0.13,
+        "estimated_ki_um": 999.0,
+        "ddi_risk": "negligible",
+        "inhibitor_evidence": [
+          "high_LogP_inh",
+          "multi_aromatic"
+        ],
+        "metabolic_liability": "none"
+      },
+      "cyp1a2": {
+        "isoform": "CYP1A2",
+        "is_substrate": false,
+        "substrate_probability": 0.27,
+        "substrate_evidence": [
+          "MW_in_range",
+          "LogP_in_range",
+          "TPSA_ok"
+        ],
+        "clint_ul_min_mg": 2.0,
+        "hepatic_t12_min": 1452.9,
+        "hepatic_cl_ml_min": 27.82,
+        "clearance_class": "low",
+        "is_inhibitor": false,
+        "inhibitor_probability": 0.13,
+        "estimated_ki_um": 999.0,
+        "ddi_risk": "negligible",
+        "inhibitor_evidence": [
+          "high_LogP_inh",
+          "multi_aromatic"
+        ],
+        "metabolic_liability": "none"
+      },
+      "cyp2c19": {
+        "isoform": "CYP2C19",
+        "is_substrate": false,
+        "substrate_probability": 0.27,
+        "substrate_evidence": [
+          "MW_in_range",
+          "LogP_in_range",
+          "TPSA_ok"
+        ],
+        "clint_ul_min_mg": 2.0,
+        "hepatic_t12_min": 1452.9,
+        "hepatic_cl_ml_min": 27.82,
+        "clearance_class": "low",
+        "is_inhibitor": false,
+        "inhibitor_probability": 0.13,
+        "estimated_ki_um": 999.0,
+        "ddi_risk": "negligible",
+        "inhibitor_evidence": [
+          "high_LogP_inh",
+          "multi_aromatic"
+        ],
+        "metabolic_liability": "none"
+      },
+      "primary_clearance_isoform": "CYP3A4",
+      "total_hepatic_cl": 406.88,
+      "predicted_plasma_t12_min": 99.4,
+      "predicted_plasma_t12_h": 1.66,
+      "is_cyp_inhibitor": false,
+      "ddi_isoforms": [],
+      "metabolic_stability_class": "unstable",
+      "overall_metabolic_flag": "warn",
+      "flag_reasons": [
+        "rapid metabolism (t\u00bd=1.7h via CYP3A4)"
+      ],
+      "admet_correction": {
+        "hlm_t12_min": 99.4,
+        "hlm_class": "moderate",
+        "primary_cyp": "CYP3A4",
+        "cyp_inhibitor": false,
+        "ddi_isoforms": [],
+        "isoform_clint": {
+          "CYP3A4": 74.6,
+          "CYP2D6": 95.0,
+          "CYP2C9": 2.0,
+          "CYP1A2": 2.0,
+          "CYP2C19": 2.0
+        }
+      },
+      "selectivity_penalty": 0.2,
+      "denovo_cyp_score": 0.75
+    },
+    {
+      "molecule_id": "DE2",
+      "smiles": "Clc1cc(C2(c3cccnc3)CCNCC2)nc(C2CCCNC2)c1-c1cccnc1N1CCCCC1",
+      "name": "P04637_denovo_2",
+      "mw": 517.1,
+      "logp": 5.32,
+      "tpsa": 66.0,
+      "hba": 6,
+      "n_aromatic_rings": 3,
+      "n_rotatable": 5,
+      "has_basic_n": true,
+      "has_acidic_group": false,
+      "has_aromatic_amine": false,
+      "cyp3a4": {
+        "isoform": "CYP3A4",
+        "is_substrate": true,
+        "substrate_probability": 0.67,
+        "substrate_evidence": [
+          "tertiary_cyclic_N",
+          "MW_in_range",
+          "LogP_in_range",
+          "TPSA_ok",
+          "basic_N_present"
+        ],
+        "clint_ul_min_mg": 195.2,
+        "hepatic_t12_min": 41.6,
+        "hepatic_cl_ml_min": 972.69,
+        "clearance_class": "high",
+        "is_inhibitor": true,
+        "inhibitor_probability": 0.33,
+        "estimated_ki_um": 50.62,
+        "ddi_risk": "negligible",
+        "inhibitor_evidence": [
+          "secondary_amine_3A4",
+          "high_LogP_inh",
+          "multi_aromatic"
+        ],
+        "metabolic_liability": "high"
+      },
+      "cyp2d6": {
+        "isoform": "CYP2D6",
+        "is_substrate": true,
+        "substrate_probability": 0.75,
+        "substrate_evidence": [
+          "basic_amine",
+          "basic_ring_N",
+          "TPSA_ok",
+          "basic_N_present"
+        ],
+        "clint_ul_min_mg": 66.8,
+        "hepatic_t12_min": 69.6,
+        "hepatic_cl_ml_min": 580.47,
+        "clearance_class": "high",
+        "is_inhibitor": false,
+        "inhibitor_probability": 0.13,
+        "estimated_ki_um": 999.0,
+        "ddi_risk": "negligible",
+        "inhibitor_evidence": [
+          "high_LogP_inh",
+          "multi_aromatic"
+        ],
+        "metabolic_liability": "high"
+      },
+      "cyp2c9": {
+        "isoform": "CYP2C9",
+        "is_substrate": false,
+        "substrate_probability": 0.05,
+        "substrate_evidence": [
+          "TPSA_ok"
+        ],
+        "clint_ul_min_mg": 2.0,
+        "hepatic_t12_min": 1452.9,
+        "hepatic_cl_ml_min": 27.82,
+        "clearance_class": "low",
+        "is_inhibitor": false,
+        "inhibitor_probability": 0.13,
+        "estimated_ki_um": 999.0,
+        "ddi_risk": "negligible",
+        "inhibitor_evidence": [
+          "high_LogP_inh",
+          "multi_aromatic"
+        ],
+        "metabolic_liability": "none"
+      },
+      "cyp1a2": {
+        "isoform": "CYP1A2",
+        "is_substrate": false,
+        "substrate_probability": 0.05,
+        "substrate_evidence": [
+          "TPSA_ok"
+        ],
+        "clint_ul_min_mg": 2.0,
+        "hepatic_t12_min": 1452.9,
+        "hepatic_cl_ml_min": 27.82,
+        "clearance_class": "low",
+        "is_inhibitor": false,
+        "inhibitor_probability": 0.13,
+        "estimated_ki_um": 999.0,
+        "ddi_risk": "negligible",
+        "inhibitor_evidence": [
+          "high_LogP_inh",
+          "multi_aromatic"
+        ],
+        "metabolic_liability": "none"
+      },
+      "cyp2c19": {
+        "isoform": "CYP2C19",
+        "is_substrate": false,
+        "substrate_probability": 0.05,
+        "substrate_evidence": [
+          "TPSA_ok"
+        ],
+        "clint_ul_min_mg": 2.0,
+        "hepatic_t12_min": 1452.9,
+        "hepatic_cl_ml_min": 27.82,
+        "clearance_class": "low",
+        "is_inhibitor": false,
+        "inhibitor_probability": 0.13,
+        "estimated_ki_um": 999.0,
+        "ddi_risk": "negligible",
+        "inhibitor_evidence": [
+          "high_LogP_inh",
+          "multi_aromatic"
+        ],
+        "metabolic_liability": "none"
+      },
+      "primary_clearance_isoform": "CYP3A4",
+      "total_hepatic_cl": 505.01,
+      "predicted_plasma_t12_min": 80.0,
+      "predicted_plasma_t12_h": 1.33,
+      "is_cyp_inhibitor": false,
+      "ddi_isoforms": [],
+      "metabolic_stability_class": "unstable",
+      "overall_metabolic_flag": "warn",
+      "flag_reasons": [
+        "rapid metabolism (t\u00bd=1.3h via CYP3A4)"
+      ],
+      "admet_correction": {
+        "hlm_t12_min": 80.0,
+        "hlm_class": "moderate",
+        "primary_cyp": "CYP3A4",
+        "cyp_inhibitor": false,
+        "ddi_isoforms": [],
+        "isoform_clint": {
+          "CYP3A4": 195.2,
+          "CYP2D6": 66.8,
+          "CYP2C9": 2.0,
+          "CYP1A2": 2.0,
+          "CYP2C19": 2.0
+        }
+      },
+      "selectivity_penalty": 0.2,
+      "denovo_cyp_score": 0.75
+    },
+    {
+      "molecule_id": "DE3",
+      "smiles": "c1ccc2cc(C3(c4c(C5CCCNC5)[nH]c5ncc(-c6cnccn6)nc45)CCCCO3)ccc2c1",
+      "name": "P04637_denovo_3",
+      "mw": 490.6,
+      "logp": 5.48,
+      "tpsa": 88.6,
+      "hba": 6,
+      "n_aromatic_rings": 5,
+      "n_rotatable": 4,
+      "has_basic_n": true,
+      "has_acidic_group": false,
+      "has_aromatic_amine": false,
+      "cyp3a4": {
+        "isoform": "CYP3A4",
+        "is_substrate": true,
+        "substrate_probability": 0.62,
+        "substrate_evidence": [
+          "fused_aromatic",
+          "MW_in_range",
+          "LogP_in_range",
+          "TPSA_ok",
+          "basic_N_present"
+        ],
+        "clint_ul_min_mg": 187.4,
+        "hepatic_t12_min": 42.2,
+        "hepatic_cl_ml_min": 958.67,
+        "clearance_class": "high",
+        "is_inhibitor": false,
+        "inhibitor_probability": 0.13,
+        "estimated_ki_um": 999.0,
+        "ddi_risk": "negligible",
+        "inhibitor_evidence": [
+          "high_LogP_inh",
+          "multi_aromatic"
+        ],
+        "metabolic_liability": "high"
+      },
+      "cyp2d6": {
+        "isoform": "CYP2D6",
+        "is_substrate": true,
+        "substrate_probability": 0.75,
+        "substrate_evidence": [
+          "basic_amine",
+          "basic_ring_N",
+          "TPSA_ok",
+          "basic_N_present"
+        ],
+        "clint_ul_min_mg": 70.3,
+        "hepatic_t12_min": 67.5,
+        "hepatic_cl_ml_min": 598.74,
+        "clearance_class": "high",
+        "is_inhibitor": false,
+        "inhibitor_probability": 0.13,
+        "estimated_ki_um": 999.0,
+        "ddi_risk": "negligible",
+        "inhibitor_evidence": [
+          "high_LogP_inh",
+          "multi_aromatic"
+        ],
+        "metabolic_liability": "high"
+      },
+      "cyp2c9": {
+        "isoform": "CYP2C9",
+        "is_substrate": false,
+        "substrate_probability": 0.17,
+        "substrate_evidence": [
+          "MW_in_range",
+          "TPSA_ok"
+        ],
+        "clint_ul_min_mg": 2.0,
+        "hepatic_t12_min": 1452.9,
+        "hepatic_cl_ml_min": 27.82,
+        "clearance_class": "low",
+        "is_inhibitor": false,
+        "inhibitor_probability": 0.13,
+        "estimated_ki_um": 999.0,
+        "ddi_risk": "negligible",
+        "inhibitor_evidence": [
+          "high_LogP_inh",
+          "multi_aromatic"
+        ],
+        "metabolic_liability": "none"
+      },
+      "cyp1a2": {
+        "isoform": "CYP1A2",
+        "is_substrate": false,
+        "substrate_probability": 0.05,
+        "substrate_evidence": [
+          "TPSA_ok"
+        ],
+        "clint_ul_min_mg": 2.0,
+        "hepatic_t12_min": 1452.9,
+        "hepatic_cl_ml_min": 27.82,
+        "clearance_class": "low",
+        "is_inhibitor": false,
+        "inhibitor_probability": 0.13,
+        "estimated_ki_um": 999.0,
+        "ddi_risk": "negligible",
+        "inhibitor_evidence": [
+          "high_LogP_inh",
+          "multi_aromatic"
+        ],
+        "metabolic_liability": "none"
+      },
+      "cyp2c19": {
+        "isoform": "CYP2C19",
+        "is_substrate": false,
+        "substrate_probability": 0.17,
+        "substrate_evidence": [
+          "MW_in_range",
+          "TPSA_ok"
+        ],
+        "clint_ul_min_mg": 2.0,
+        "hepatic_t12_min": 1452.9,
+        "hepatic_cl_ml_min": 27.82,
+        "clearance_class": "low",
+        "is_inhibitor": false,
+        "inhibitor_probability": 0.13,
+        "estimated_ki_um": 999.0,
+        "ddi_risk": "negligible",
+        "inhibitor_evidence": [
+          "high_LogP_inh",
+          "multi_aromatic"
+        ],
+        "metabolic_liability": "none"
+      },
+      "primary_clearance_isoform": "CYP3A4",
+      "total_hepatic_cl": 504.39,
+      "predicted_plasma_t12_min": 80.1,
+      "predicted_plasma_t12_h": 1.34,
+      "is_cyp_inhibitor": false,
+      "ddi_isoforms": [],
+      "metabolic_stability_class": "unstable",
+      "overall_metabolic_flag": "warn",
+      "flag_reasons": [
+        "rapid metabolism (t\u00bd=1.3h via CYP3A4)"
+      ],
+      "admet_correction": {
+        "hlm_t12_min": 80.1,
+        "hlm_class": "moderate",
+        "primary_cyp": "CYP3A4",
+        "cyp_inhibitor": false,
+        "ddi_isoforms": [],
+        "isoform_clint": {
+          "CYP3A4": 187.4,
+          "CYP2D6": 70.3,
+          "CYP2C9": 2.0,
+          "CYP1A2": 2.0,
+          "CYP2C19": 2.0
+        }
+      },
+      "selectivity_penalty": 0.2,
+      "denovo_cyp_score": 0.75
+    },
+    {
+      "molecule_id": "DE4",
+      "smiles": "N#CC1CCC(CC(O)C(O)CC2CCCCC2)CC1O",
+      "name": "P04637_denovo_4",
+      "mw": 295.4,
+      "logp": 2.37,
+      "tpsa": 84.5,
+      "hba": 4,
+      "n_aromatic_rings": 0,
+      "n_rotatable": 5,
+      "has_basic_n": true,
+      "has_acidic_group": false,
+      "has_aromatic_amine": false,
+      "cyp3a4": {
+        "isoform": "CYP3A4",
+        "is_substrate": true,
+        "substrate_probability": 0.3,
+        "substrate_evidence": [
+          "LogP_in_range",
+          "TPSA_ok",
+          "basic_N_present"
+        ],
+        "clint_ul_min_mg": 72.0,
+        "hepatic_t12_min": 66.6,
+        "hepatic_cl_ml_min": 607.36,
+        "clearance_class": "high",
+        "is_inhibitor": false,
+        "inhibitor_probability": 0.0,
+        "estimated_ki_um": 999.0,
+        "ddi_risk": "negligible",
+        "inhibitor_evidence": [],
+        "metabolic_liability": "high"
+      },
+      "cyp2d6": {
+        "isoform": "CYP2D6",
+        "is_substrate": true,
+        "substrate_probability": 0.72,
+        "substrate_evidence": [
+          "basic_amine",
+          "MW_in_range",
+          "LogP_in_range",
+          "TPSA_ok",
+          "basic_N_present"
+        ],
+        "clint_ul_min_mg": 57.6,
+        "hepatic_t12_min": 76.5,
+        "hepatic_cl_ml_min": 528.7,
+        "clearance_class": "high",
+        "is_inhibitor": false,
+        "inhibitor_probability": 0.0,
+        "estimated_ki_um": 999.0,
+        "ddi_risk": "negligible",
+        "inhibitor_evidence": [],
+        "metabolic_liability": "high"
+      },
+      "cyp2c9": {
+        "isoform": "CYP2C9",
+        "is_substrate": false,
+        "substrate_probability": 0.27,
+        "substrate_evidence": [
+          "MW_in_range",
+          "LogP_in_range",
+          "TPSA_ok"
+        ],
+        "clint_ul_min_mg": 2.0,
+        "hepatic_t12_min": 1452.9,
+        "hepatic_cl_ml_min": 27.82,
+        "clearance_class": "low",
+        "is_inhibitor": false,
+        "inhibitor_probability": 0.0,
+        "estimated_ki_um": 999.0,
+        "ddi_risk": "negligible",
+        "inhibitor_evidence": [],
+        "metabolic_liability": "none"
+      },
+      "cyp1a2": {
+        "isoform": "CYP1A2",
+        "is_substrate": false,
+        "substrate_probability": 0.27,
+        "substrate_evidence": [
+          "MW_in_range",
+          "LogP_in_range",
+          "TPSA_ok"
+        ],
+        "clint_ul_min_mg": 2.0,
+        "hepatic_t12_min": 1452.9,
+        "hepatic_cl_ml_min": 27.82,
+        "clearance_class": "low",
+        "is_inhibitor": false,
+        "inhibitor_probability": 0.0,
+        "estimated_ki_um": 999.0,
+        "ddi_risk": "negligible",
+        "inhibitor_evidence": [],
+        "metabolic_liability": "none"
+      },
+      "cyp2c19": {
+        "isoform": "CYP2C19",
+        "is_substrate": false,
+        "substrate_probability": 0.27,
+        "substrate_evidence": [
+          "MW_in_range",
+          "LogP_in_range",
+          "TPSA_ok"
+        ],
+        "clint_ul_min_mg": 2.0,
+        "hepatic_t12_min": 1452.9,
+        "hepatic_cl_ml_min": 27.82,
+        "clearance_class": "low",
+        "is_inhibitor": false,
+        "inhibitor_probability": 0.0,
+        "estimated_ki_um": 999.0,
+        "ddi_risk": "negligible",
+        "inhibitor_evidence": [],
+        "metabolic_liability": "none"
+      },
+      "primary_clearance_isoform": "CYP3A4",
+      "total_hepatic_cl": 356.9,
+      "predicted_plasma_t12_min": 113.3,
+      "predicted_plasma_t12_h": 1.89,
+      "is_cyp_inhibitor": false,
+      "ddi_isoforms": [],
+      "metabolic_stability_class": "unstable",
+      "overall_metabolic_flag": "warn",
+      "flag_reasons": [
+        "rapid metabolism (t\u00bd=1.9h via CYP3A4)"
+      ],
+      "admet_correction": {
+        "hlm_t12_min": 113.3,
+        "hlm_class": "moderate",
+        "primary_cyp": "CYP3A4",
+        "cyp_inhibitor": false,
+        "ddi_isoforms": [],
+        "isoform_clint": {
+          "CYP3A4": 72.0,
+          "CYP2D6": 57.6,
+          "CYP2C9": 2.0,
+          "CYP1A2": 2.0,
+          "CYP2C19": 2.0
+        }
+      },
+      "selectivity_penalty": 0.2,
+      "denovo_cyp_score": 0.75
+    },
+    {
+      "molecule_id": "DE5",
+      "smiles": "OC1CCCC(CC(O)C(O)CC2CCCCC2)C1",
+      "name": "P04637_denovo_5",
+      "mw": 270.4,
+      "logp": 2.62,
+      "tpsa": 60.7,
+      "hba": 3,
+      "n_aromatic_rings": 0,
+      "n_rotatable": 5,
+      "has_basic_n": false,
+      "has_acidic_group": false,
+      "has_aromatic_amine": false,
+      "cyp3a4": {
+        "isoform": "CYP3A4",
+        "is_substrate": false,
+        "substrate_probability": 0.15,
+        "substrate_evidence": [
+          "LogP_in_range",
+          "TPSA_ok"
+        ],
+        "clint_ul_min_mg": 2.0,
+        "hepatic_t12_min": 1452.9,
+        "hepatic_cl_ml_min": 27.82,
+        "clearance_class": "low",
+        "is_inhibitor": false,
+        "inhibitor_probability": 0.0,
+        "estimated_ki_um": 999.0,
+        "ddi_risk": "negligible",
+        "inhibitor_evidence": [],
+        "metabolic_liability": "none"
+      },
+      "cyp2d6": {
+        "isoform": "CYP2D6",
+        "is_substrate": false,
+        "substrate_probability": 0.27,
+        "substrate_evidence": [
+          "MW_in_range",
+          "LogP_in_range",
+          "TPSA_ok"
+        ],
+        "clint_ul_min_mg": 2.0,
+        "hepatic_t12_min": 1452.9,
+        "hepatic_cl_ml_min": 27.82,
+        "clearance_class": "low",
+        "is_inhibitor": false,
+        "inhibitor_probability": 0.0,
+        "estimated_ki_um": 999.0,
+        "ddi_risk": "negligible",
+        "inhibitor_evidence": [],
+        "metabolic_liability": "none"
+      },
+      "cyp2c9": {
+        "isoform": "CYP2C9",
+        "is_substrate": false,
+        "substrate_probability": 0.27,
+        "substrate_evidence": [
+          "MW_in_range",
+          "LogP_in_range",
+          "TPSA_ok"
+        ],
+        "clint_ul_min_mg": 2.0,
+        "hepatic_t12_min": 1452.9,
+        "hepatic_cl_ml_min": 27.82,
+        "clearance_class": "low",
+        "is_inhibitor": false,
+        "inhibitor_probability": 0.0,
+        "estimated_ki_um": 999.0,
+        "ddi_risk": "negligible",
+        "inhibitor_evidence": [],
+        "metabolic_liability": "none"
+      },
+      "cyp1a2": {
+        "isoform": "CYP1A2",
+        "is_substrate": false,
+        "substrate_probability": 0.27,
+        "substrate_evidence": [
+          "MW_in_range",
+          "LogP_in_range",
+          "TPSA_ok"
+        ],
+        "clint_ul_min_mg": 2.0,
+        "hepatic_t12_min": 1452.9,
+        "hepatic_cl_ml_min": 27.82,
+        "clearance_class": "low",
+        "is_inhibitor": false,
+        "inhibitor_probability": 0.0,
+        "estimated_ki_um": 999.0,
+        "ddi_risk": "negligible",
+        "inhibitor_evidence": [],
+        "metabolic_liability": "none"
+      },
+      "cyp2c19": {
+        "isoform": "CYP2C19",
+        "is_substrate": false,
+        "substrate_probability": 0.27,
+        "substrate_evidence": [
+          "MW_in_range",
+          "LogP_in_range",
+          "TPSA_ok"
+        ],
+        "clint_ul_min_mg": 2.0,
+        "hepatic_t12_min": 1452.9,
+        "hepatic_cl_ml_min": 27.82,
+        "clearance_class": "low",
+        "is_inhibitor": false,
+        "inhibitor_probability": 0.0,
+        "estimated_ki_um": 999.0,
+        "ddi_risk": "negligible",
+        "inhibitor_evidence": [],
+        "metabolic_liability": "none"
+      },
+      "primary_clearance_isoform": "CYP3A4",
+      "total_hepatic_cl": 0,
+      "predicted_plasma_t12_min": 9999.0,
+      "predicted_plasma_t12_h": 999.0,
+      "is_cyp_inhibitor": false,
+      "ddi_isoforms": [],
+      "metabolic_stability_class": "stable",
+      "overall_metabolic_flag": "pass",
+      "flag_reasons": [],
+      "admet_correction": {
+        "hlm_t12_min": 9999.0,
+        "hlm_class": "stable",
+        "primary_cyp": "CYP3A4",
+        "cyp_inhibitor": false,
+        "ddi_isoforms": [],
+        "isoform_clint": {
+          "CYP3A4": 2.0,
+          "CYP2D6": 2.0,
+          "CYP2C9": 2.0,
+          "CYP1A2": 2.0,
+          "CYP2C19": 2.0
+        }
+      },
+      "selectivity_penalty": 0.0,
+      "denovo_cyp_score": 1.0
+    },
+    {
+      "molecule_id": "DE6",
+      "smiles": "c1ccc2cc(C3(c4c[nH]c5nccnc45)CCCCO3)ccc2c1",
+      "name": "P04637_denovo_6",
+      "mw": 329.4,
+      "logp": 4.56,
+      "tpsa": 50.8,
+      "hba": 3,
+      "n_aromatic_rings": 4,
+      "n_rotatable": 2,
+      "has_basic_n": false,
+      "has_acidic_group": false,
+      "has_aromatic_amine": false,
+      "cyp3a4": {
+        "isoform": "CYP3A4",
+        "is_substrate": true,
+        "substrate_probability": 0.47,
+        "substrate_evidence": [
+          "fused_aromatic",
+          "MW_in_range",
+          "LogP_in_range",
+          "TPSA_ok"
+        ],
+        "clint_ul_min_mg": 126.4,
+        "hepatic_t12_min": 49.5,
+        "hepatic_cl_ml_min": 816.47,
+        "clearance_class": "high",
+        "is_inhibitor": false,
+        "inhibitor_probability": 0.13,
+        "estimated_ki_um": 999.0,
+        "ddi_risk": "negligible",
+        "inhibitor_evidence": [
+          "high_LogP_inh",
+          "multi_aromatic"
+        ],
+        "metabolic_liability": "high"
+      },
+      "cyp2d6": {
+        "isoform": "CYP2D6",
+        "is_substrate": false,
+        "substrate_probability": 0.17,
+        "substrate_evidence": [
+          "MW_in_range",
+          "TPSA_ok"
+        ],
+        "clint_ul_min_mg": 2.0,
+        "hepatic_t12_min": 1452.9,
+        "hepatic_cl_ml_min": 27.82,
+        "clearance_class": "low",
+        "is_inhibitor": false,
+        "inhibitor_probability": 0.13,
+        "estimated_ki_um": 999.0,
+        "ddi_risk": "negligible",
+        "inhibitor_evidence": [
+          "high_LogP_inh",
+          "multi_aromatic"
+        ],
+        "metabolic_liability": "none"
+      },
+      "cyp2c9": {
+        "isoform": "CYP2C9",
+        "is_substrate": false,
+        "substrate_probability": 0.27,
+        "substrate_evidence": [
+          "MW_in_range",
+          "LogP_in_range",
+          "TPSA_ok"
+        ],
+        "clint_ul_min_mg": 2.0,
+        "hepatic_t12_min": 1452.9,
+        "hepatic_cl_ml_min": 27.82,
+        "clearance_class": "low",
+        "is_inhibitor": false,
+        "inhibitor_probability": 0.13,
+        "estimated_ki_um": 999.0,
+        "ddi_risk": "negligible",
+        "inhibitor_evidence": [
+          "high_LogP_inh",
+          "multi_aromatic"
+        ],
+        "metabolic_liability": "none"
+      },
+      "cyp1a2": {
+        "isoform": "CYP1A2",
+        "is_substrate": false,
+        "substrate_probability": 0.17,
+        "substrate_evidence": [
+          "MW_in_range",
+          "TPSA_ok"
+        ],
+        "clint_ul_min_mg": 2.0,
+        "hepatic_t12_min": 1452.9,
+        "hepatic_cl_ml_min": 27.82,
+        "clearance_class": "low",
+        "is_inhibitor": false,
+        "inhibitor_probability": 0.13,
+        "estimated_ki_um": 999.0,
+        "ddi_risk": "negligible",
+        "inhibitor_evidence": [
+          "high_LogP_inh",
+          "multi_aromatic"
+        ],
+        "metabolic_liability": "none"
+      },
+      "cyp2c19": {
+        "isoform": "CYP2C19",
+        "is_substrate": false,
+        "substrate_probability": 0.17,
+        "substrate_evidence": [
+          "MW_in_range",
+          "TPSA_ok"
+        ],
+        "clint_ul_min_mg": 2.0,
+        "hepatic_t12_min": 1452.9,
+        "hepatic_cl_ml_min": 27.82,
+        "clearance_class": "low",
+        "is_inhibitor": false,
+        "inhibitor_probability": 0.13,
+        "estimated_ki_um": 999.0,
+        "ddi_risk": "negligible",
+        "inhibitor_evidence": [
+          "high_LogP_inh",
+          "multi_aromatic"
+        ],
+        "metabolic_liability": "none"
+      },
+      "primary_clearance_isoform": "CYP3A4",
+      "total_hepatic_cl": 302.09,
+      "predicted_plasma_t12_min": 133.8,
+      "predicted_plasma_t12_h": 2.23,
+      "is_cyp_inhibitor": false,
+      "ddi_isoforms": [],
+      "metabolic_stability_class": "moderate",
+      "overall_metabolic_flag": "pass",
+      "flag_reasons": [],
+      "admet_correction": {
+        "hlm_t12_min": 133.8,
+        "hlm_class": "stable",
+        "primary_cyp": "CYP3A4",
+        "cyp_inhibitor": false,
+        "ddi_isoforms": [],
+        "isoform_clint": {
+          "CYP3A4": 126.4,
+          "CYP2D6": 2.0,
+          "CYP2C9": 2.0,
+          "CYP1A2": 2.0,
+          "CYP2C19": 2.0
+        }
+      },
+      "selectivity_penalty": 0.0,
+      "denovo_cyp_score": 1.0
+    },
+    {
+      "molecule_id": "DE7",
+      "smiles": "Clc1cc(C2(c3cccnc3)CCNCC2)nc(C2CCCNC2)c1-c1cccnc1",
+      "name": "P04637_denovo_7",
+      "mw": 434.0,
+      "logp": 4.33,
+      "tpsa": 62.7,
+      "hba": 5,
+      "n_aromatic_rings": 3,
+      "n_rotatable": 4,
+      "has_basic_n": true,
+      "has_acidic_group": false,
+      "has_aromatic_amine": false,
+      "cyp3a4": {
+        "isoform": "CYP3A4",
+        "is_substrate": true,
+        "substrate_probability": 0.42,
+        "substrate_evidence": [
+          "MW_in_range",
+          "LogP_in_range",
+          "TPSA_ok",
+          "basic_N_present"
+        ],
+        "clint_ul_min_mg": 109.5,
+        "hepatic_t12_min": 53.0,
+        "hepatic_cl_ml_min": 762.82,
+        "clearance_class": "high",
+        "is_inhibitor": false,
+        "inhibitor_probability": 0.13,
+        "estimated_ki_um": 999.0,
+        "ddi_risk": "negligible",
+        "inhibitor_evidence": [
+          "high_LogP_inh",
+          "multi_aromatic"
+        ],
+        "metabolic_liability": "high"
+      },
+      "cyp2d6": {
+        "isoform": "CYP2D6",
+        "is_substrate": true,
+        "substrate_probability": 0.87,
+        "substrate_evidence": [
+          "basic_amine",
+          "basic_ring_N",
+          "MW_in_range",
+          "TPSA_ok",
+          "basic_N_present"
+        ],
+        "clint_ul_min_mg": 76.8,
+        "hepatic_t12_min": 64.1,
+        "hepatic_cl_ml_min": 630.82,
+        "clearance_class": "high",
+        "is_inhibitor": false,
+        "inhibitor_probability": 0.13,
+        "estimated_ki_um": 999.0,
+        "ddi_risk": "negligible",
+        "inhibitor_evidence": [
+          "high_LogP_inh",
+          "multi_aromatic"
+        ],
+        "metabolic_liability": "high"
+      },
+      "cyp2c9": {
+        "isoform": "CYP2C9",
+        "is_substrate": false,
+        "substrate_probability": 0.27,
+        "substrate_evidence": [
+          "MW_in_range",
+          "LogP_in_range",
+          "TPSA_ok"
+        ],
+        "clint_ul_min_mg": 2.0,
+        "hepatic_t12_min": 1452.9,
+        "hepatic_cl_ml_min": 27.82,
+        "clearance_class": "low",
+        "is_inhibitor": false,
+        "inhibitor_probability": 0.13,
+        "estimated_ki_um": 999.0,
+        "ddi_risk": "negligible",
+        "inhibitor_evidence": [
+          "high_LogP_inh",
+          "multi_aromatic"
+        ],
+        "metabolic_liability": "none"
+      },
+      "cyp1a2": {
+        "isoform": "CYP1A2",
+        "is_substrate": false,
+        "substrate_probability": 0.05,
+        "substrate_evidence": [
+          "TPSA_ok"
+        ],
+        "clint_ul_min_mg": 2.0,
+        "hepatic_t12_min": 1452.9,
+        "hepatic_cl_ml_min": 27.82,
+        "clearance_class": "low",
+        "is_inhibitor": false,
+        "inhibitor_probability": 0.13,
+        "estimated_ki_um": 999.0,
+        "ddi_risk": "negligible",
+        "inhibitor_evidence": [
+          "high_LogP_inh",
+          "multi_aromatic"
+        ],
+        "metabolic_liability": "none"
+      },
+      "cyp2c19": {
+        "isoform": "CYP2C19",
+        "is_substrate": false,
+        "substrate_probability": 0.27,
+        "substrate_evidence": [
+          "MW_in_range",
+          "LogP_in_range",
+          "TPSA_ok"
+        ],
+        "clint_ul_min_mg": 2.0,
+        "hepatic_t12_min": 1452.9,
+        "hepatic_cl_ml_min": 27.82,
+        "clearance_class": "low",
+        "is_inhibitor": false,
+        "inhibitor_probability": 0.13,
+        "estimated_ki_um": 999.0,
+        "ddi_risk": "negligible",
+        "inhibitor_evidence": [
+          "high_LogP_inh",
+          "multi_aromatic"
+        ],
+        "metabolic_liability": "none"
+      },
+      "primary_clearance_isoform": "CYP3A4",
+      "total_hepatic_cl": 439.95,
+      "predicted_plasma_t12_min": 91.9,
+      "predicted_plasma_t12_h": 1.53,
+      "is_cyp_inhibitor": false,
+      "ddi_isoforms": [],
+      "metabolic_stability_class": "unstable",
+      "overall_metabolic_flag": "warn",
+      "flag_reasons": [
+        "rapid metabolism (t\u00bd=1.5h via CYP3A4)"
+      ],
+      "admet_correction": {
+        "hlm_t12_min": 91.9,
+        "hlm_class": "moderate",
+        "primary_cyp": "CYP3A4",
+        "cyp_inhibitor": false,
+        "ddi_isoforms": [],
+        "isoform_clint": {
+          "CYP3A4": 109.5,
+          "CYP2D6": 76.8,
+          "CYP2C9": 2.0,
+          "CYP1A2": 2.0,
+          "CYP2C19": 2.0
+        }
+      },
+      "selectivity_penalty": 0.2,
+      "denovo_cyp_score": 0.75
+    },
+    {
+      "molecule_id": "DE8",
+      "smiles": "OCCC1CCCCC1",
+      "name": "P04637_denovo_8",
+      "mw": 128.2,
+      "logp": 1.95,
+      "tpsa": 20.2,
+      "hba": 1,
+      "n_aromatic_rings": 0,
+      "n_rotatable": 2,
+      "has_basic_n": false,
+      "has_acidic_group": false,
+      "has_aromatic_amine": false,
+      "cyp3a4": {
+        "isoform": "CYP3A4",
+        "is_substrate": false,
+        "substrate_probability": 0.05,
+        "substrate_evidence": [
+          "TPSA_ok"
+        ],
+        "clint_ul_min_mg": 2.0,
+        "hepatic_t12_min": 1452.9,
+        "hepatic_cl_ml_min": 27.82,
+        "clearance_class": "low",
+        "is_inhibitor": false,
+        "inhibitor_probability": 0.0,
+        "estimated_ki_um": 999.0,
+        "ddi_risk": "negligible",
+        "inhibitor_evidence": [],
+        "metabolic_liability": "none"
+      },
+      "cyp2d6": {
+        "isoform": "CYP2D6",
+        "is_substrate": false,
+        "substrate_probability": 0.15,
+        "substrate_evidence": [
+          "LogP_in_range",
+          "TPSA_ok"
+        ],
+        "clint_ul_min_mg": 2.0,
+        "hepatic_t12_min": 1452.9,
+        "hepatic_cl_ml_min": 27.82,
+        "clearance_class": "low",
+        "is_inhibitor": false,
+        "inhibitor_probability": 0.0,
+        "estimated_ki_um": 999.0,
+        "ddi_risk": "negligible",
+        "inhibitor_evidence": [],
+        "metabolic_liability": "none"
+      },
+      "cyp2c9": {
+        "isoform": "CYP2C9",
+        "is_substrate": false,
+        "substrate_probability": 0.05,
+        "substrate_evidence": [
+          "TPSA_ok"
+        ],
+        "clint_ul_min_mg": 2.0,
+        "hepatic_t12_min": 1452.9,
+        "hepatic_cl_ml_min": 27.82,
+        "clearance_class": "low",
+        "is_inhibitor": false,
+        "inhibitor_probability": 0.0,
+        "estimated_ki_um": 999.0,
+        "ddi_risk": "negligible",
+        "inhibitor_evidence": [],
+        "metabolic_liability": "none"
+      },
+      "cyp1a2": {
+        "isoform": "CYP1A2",
+        "is_substrate": false,
+        "substrate_probability": 0.15,
+        "substrate_evidence": [
+          "LogP_in_range",
+          "TPSA_ok"
+        ],
+        "clint_ul_min_mg": 2.0,
+        "hepatic_t12_min": 1452.9,
+        "hepatic_cl_ml_min": 27.82,
+        "clearance_class": "low",
+        "is_inhibitor": false,
+        "inhibitor_probability": 0.0,
+        "estimated_ki_um": 999.0,
+        "ddi_risk": "negligible",
+        "inhibitor_evidence": [],
+        "metabolic_liability": "none"
+      },
+      "cyp2c19": {
+        "isoform": "CYP2C19",
+        "is_substrate": false,
+        "substrate_probability": 0.15,
+        "substrate_evidence": [
+          "LogP_in_range",
+          "TPSA_ok"
+        ],
+        "clint_ul_min_mg": 2.0,
+        "hepatic_t12_min": 1452.9,
+        "hepatic_cl_ml_min": 27.82,
+        "clearance_class": "low",
+        "is_inhibitor": false,
+        "inhibitor_probability": 0.0,
+        "estimated_ki_um": 999.0,
+        "ddi_risk": "negligible",
+        "inhibitor_evidence": [],
+        "metabolic_liability": "none"
+      },
+      "primary_clearance_isoform": "CYP3A4",
+      "total_hepatic_cl": 0,
+      "predicted_plasma_t12_min": 9999.0,
+      "predicted_plasma_t12_h": 999.0,
+      "is_cyp_inhibitor": false,
+      "ddi_isoforms": [],
+      "metabolic_stability_class": "stable",
+      "overall_metabolic_flag": "pass",
+      "flag_reasons": [],
+      "admet_correction": {
+        "hlm_t12_min": 9999.0,
+        "hlm_class": "stable",
+        "primary_cyp": "CYP3A4",
+        "cyp_inhibitor": false,
+        "ddi_isoforms": [],
+        "isoform_clint": {
+          "CYP3A4": 2.0,
+          "CYP2D6": 2.0,
+          "CYP2C9": 2.0,
+          "CYP1A2": 2.0,
+          "CYP2C19": 2.0
+        }
+      },
+      "selectivity_penalty": 0.0,
+      "denovo_cyp_score": 1.0
+    }
+  ],
+  "n_stable": 2,
+  "n_moderate": 1,
+  "n_unstable": 5,
+  "n_inhibitors": 0,
+  "best_molecule_id": "DE5"
+}
