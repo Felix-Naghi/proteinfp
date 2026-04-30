@@ -77,8 +77,8 @@ except ImportError:
 
 # ── Evolution hyperparameters ─────────────────────────────────────────────────
 
-MAX_GENERATIONS      = 50
-POP_SIZE             = 40
+MAX_GENERATIONS      = 10
+POP_SIZE             = 20
 ELITISM              = 6
 PARALLEL_WORKERS     = min(8, os.cpu_count() or 2)
 

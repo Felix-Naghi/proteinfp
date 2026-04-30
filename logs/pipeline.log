@@ -154518,3 +154518,520 @@ UnicodeEncodeError: 'charmap' codec can't encode characters in position 392-461:
 2026-04-29 22:34:08 [__main__] INFO    Gen  33: fit=0.981  aff=0.999  dev=0.94  H3=EQHEMYEGYYDYRA  pI=7.7  chg=+1.2  div=0.20  ↑ IMPROVED
 2026-04-29 22:34:28 [__main__] INFO    Gen  34: fit=0.982  aff=0.999  dev=0.94  H3=EQHEMYEGYYDYRA  pI=7.7  chg=+1.2  div=0.19  ↑ IMPROVED
 2026-04-29 22:34:44 [__main__] INFO    Gen  35: fit=0.982  aff=0.999  dev=0.94  H3=EQHEMYEGYYDYRA  pI=7.7  chg=+1.2  div=0.24  stagnant 1
+2026-04-30 06:52:42 [__main__] INFO  ── Module 01: Fetching structure for P04637 ──
+2026-04-30 06:52:42 [__main__] INFO    [1/4] Querying AlphaFold DB...
+2026-04-30 06:52:43 [__main__] INFO    [2/4] .pdb already cached: P04637.pdb  (use --force to re-download)
+2026-04-30 06:52:43 [__main__] INFO    [3/4] Fetching UniProt metadata...
+2026-04-30 06:52:44 [__main__] INFO    [4/4] Parsing structure...
+2026-04-30 06:52:44 [utils.pdb_parser] INFO  Parsing structure: P04637.pdb
+2026-04-30 06:52:44 [utils.pdb_parser] INFO    → 393 residues | mean pLDDT: 75.0 | disordered: 158 residues in 4 region(s)
+2026-04-30 06:52:44 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  Protein    : Cellular tumor antigen p53
+  Gene       : TP53
+  UniProt    : P04637  (Swiss-Prot (reviewed))
+  Organism   : Homo sapiens
+  Length     : 393 aa
+  Mean pLDDT : 75.0
+  High-conf  : 59.8% of residues
+  Disordered : 158 residues in 4 region(s)
+  .pdb saved : C:\Users\adria\Documents\proteinFP\data\structures\P04637.pdb
+────────────────────────────────────────────────────────────
+2026-04-30 06:52:45 [utils.pdb_parser] INFO  Parsing structure: P04637.pdb
+2026-04-30 06:52:45 [utils.pdb_parser] INFO    → 393 residues | mean pLDDT: 75.0 | disordered: 158 residues in 4 region(s)
+2026-04-30 06:52:45 [__main__] INFO  ── Module 02: Physicochemical analysis for P04637 ──
+2026-04-30 06:52:45 [__main__] INFO    [1/4] Computing SASA (freesasa)...
+2026-04-30 06:52:46 [__main__] INFO    [2/4] Assigning secondary structure (DSSP)...
+2026-04-30 06:52:57 [__main__] INFO    [3/4] Building per-residue physicochemical profile...
+2026-04-30 06:52:57 [__main__] INFO    [4/4] Detecting surface patches...
+2026-04-30 06:52:57 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  Physicochemical profile: P04637
+  Total SASA      : 35641.0 Å²
+  Exposed residues: 327/393 (83.2%)
+  Net charge (pH7): -2.8 (negative)
+  Mean hydrophob. : -0.76
+  2° structure    : helix 13% | strand 17% | coil 70%
+  Hydrophob. patches: 6
+  Positive patches  : 6
+  Negative patches  : 2
+────────────────────────────────────────────────────────────
+2026-04-30 06:53:00 [utils.pdb_parser] INFO  Parsing structure: P04637.pdb
+2026-04-30 06:53:00 [utils.pdb_parser] INFO    → 393 residues | mean pLDDT: 75.0 | disordered: 158 residues in 4 region(s)
+2026-04-30 06:53:00 [__main__] INFO    Loading SASA from Module 02 output...
+2026-04-30 06:53:00 [__main__] INFO    Loaded SASA for 393 residues
+2026-04-30 06:53:00 [__main__] INFO  ── Module 03: Active site prediction for P04637 ──
+2026-04-30 06:53:00 [__main__] INFO    [1/3] Querying ConSurf conservation scores...
+2026-04-30 06:53:02 [__main__] INFO      ConSurf API unavailable — using residue-type conservation proxy
+2026-04-30 06:53:02 [__main__] INFO    [2/3] Detecting catalytic motifs...
+2026-04-30 06:53:03 [__main__] INFO    [3/3] Scoring residues...
+2026-04-30 06:53:03 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  Active site prediction: P04637
+  ConSurf conservation : no (API unavailable)
+  Active residues found: 251
+    HIGH confidence    : 18
+    MEDIUM confidence  : 101
+    LOW confidence     : 132
+  Catalytic motifs     : 99
+  Top residues         : C135, C141, C176, H193, H214, C238, C242, C275, C124, H168
+    [serine_protease_triad] S215-H214-D207 (confidence: HIGH)
+    [serine_protease_triad] S215-H214-D208 (confidence: MEDIUM)
+    [serine_protease_triad] S95-H214-D207 (confidence: MEDIUM)
+    [serine_protease_triad] S95-H214-D208 (confidence: MEDIUM)
+    [serine_protease_triad] S185-H193-D207 (confidence: MEDIUM)
+    [serine_protease_triad] S185-H193-D208 (confidence: MEDIUM)
+    [serine_protease_triad] S215-H193-D184 (confidence: MEDIUM)
+    [serine_protease_triad] S215-H193-D207 (confidence: MEDIUM)
+    [serine_protease_triad] S215-H193-D208 (confidence: MEDIUM)
+    [cysteine_protease_dyad] C141-H233 (confidence: MEDIUM)
+    [cysteine_protease_dyad] C176-H178 (confidence: MEDIUM)
+    [cysteine_protease_dyad] C176-H179 (confidence: MEDIUM)
+    [cysteine_protease_dyad] C182-H179 (confidence: MEDIUM)
+    [zinc_binding_cluster] C176-H178-H179-E180-C182 (confidence: HIGH)
+    [zinc_binding_cluster] C176-H178-H179-E180-C182-C238 (confidence: HIGH)
+    [zinc_binding_cluster] H193-D207-D208-H214 (confidence: HIGH)
+    [zinc_binding_cluster] C141-E198-H233 (confidence: MEDIUM)
+    [zinc_binding_cluster] E294-H296-H297-E298-D324 (confidence: HIGH)
+    [zinc_binding_cluster] H296-H297-E298 (confidence: MEDIUM)
+    [zinc_binding_cluster] C124-C135-C141 (confidence: MEDIUM)
+    [zinc_binding_cluster] C124-C135-C275 (confidence: MEDIUM)
+    [zinc_binding_cluster] C124-C141-H233 (confidence: MEDIUM)
+    [zinc_binding_cluster] C176-H178-H179-E180-C242 (confidence: HIGH)
+    [zinc_binding_cluster] H178-H179-E180-C182-D184 (confidence: HIGH)
+    [zinc_binding_cluster] H179-C238-C242 (confidence: MEDIUM)
+    [zinc_binding_cluster] C176-C238-C242 (confidence: MEDIUM)
+    [zinc_binding_cluster] C135-C275-C277 (confidence: MEDIUM)
+    [zinc_binding_cluster] C275-C277-D281 (confidence: MEDIUM)
+    [zinc_binding_cluster] D48-D49-E51 (confidence: MEDIUM)
+    [zinc_binding_cluster] C182-D184-D186 (confidence: MEDIUM)
+    [zinc_binding_cluster] D207-D208-H214 (confidence: MEDIUM)
+    [zinc_binding_cluster] C277-D281-E285 (confidence: MEDIUM)
+    [zinc_binding_cluster] H296-D324-E326 (confidence: MEDIUM)
+    [zinc_binding_cluster] D281-E285-E286-E287 (confidence: HIGH)
+    [zinc_binding_cluster] E285-E286-E287 (confidence: MEDIUM)
+    [zinc_binding_cluster] E336-E339-E343 (confidence: MEDIUM)
+    [zinc_binding_cluster] E339-E343-E346 (confidence: MEDIUM)
+    [zinc_binding_cluster] E343-E346-E349 (confidence: MEDIUM)
+    [zinc_binding_cluster] E346-E349-D352 (confidence: MEDIUM)
+    [dna_binding_cluster] K164-R248-R249 (confidence: MEDIUM)
+    [dna_binding_cluster] K101-R110-R267 (confidence: MEDIUM)
+    [dna_binding_cluster] K120-R280-R282-R283 (confidence: MEDIUM)
+    [dna_binding_cluster] R280-R282-R283 (confidence: MEDIUM)
+    [dna_binding_cluster] R290-K291-K292 (confidence: MEDIUM)
+    [dna_binding_cluster] R333-R335-R337 (confidence: MEDIUM)
+    [dna_binding_cluster] K319-K320-K321 (confidence: MEDIUM)
+    [dna_binding_cluster] K370-K372-K373 (confidence: MEDIUM)
+    [dna_binding_cluster] R379-K381-K382 (confidence: MEDIUM)
+    [acid_base_pair] D/E21-R/K/H24 (confidence: MEDIUM)
+    [acid_base_pair] D/E207-R/K/H209 (confidence: MEDIUM)
+    [acid_base_pair] D/E207-R/K/H213 (confidence: MEDIUM)
+    [acid_base_pair] D/E207-R/K/H214 (confidence: MEDIUM)
+    [acid_base_pair] D/E208-R/K/H209 (confidence: MEDIUM)
+    [acid_base_pair] D/E208-R/K/H213 (confidence: MEDIUM)
+    [acid_base_pair] D/E208-R/K/H214 (confidence: MEDIUM)
+    [acid_base_pair] D/E259-R/K/H156 (confidence: MEDIUM)
+    [acid_base_pair] D/E281-R/K/H280 (confidence: MEDIUM)
+    [acid_base_pair] D/E281-R/K/H282 (confidence: MEDIUM)
+    [acid_base_pair] D/E281-R/K/H283 (confidence: MEDIUM)
+    [acid_base_pair] D/E324-R/K/H296 (confidence: MEDIUM)
+    [acid_base_pair] D/E352-R/K/H351 (confidence: MEDIUM)
+    [acid_base_pair] D/E171-R/K/H168 (confidence: MEDIUM)
+    [acid_base_pair] D/E180-R/K/H175 (confidence: MEDIUM)
+    [acid_base_pair] D/E180-R/K/H181 (confidence: MEDIUM)
+    [acid_base_pair] D/E180-R/K/H178 (confidence: MEDIUM)
+    [acid_base_pair] D/E180-R/K/H179 (confidence: MEDIUM)
+    [acid_base_pair] D/E198-R/K/H196 (confidence: MEDIUM)
+    [acid_base_pair] D/E198-R/K/H233 (confidence: MEDIUM)
+    [acid_base_pair] D/E204-R/K/H202 (confidence: MEDIUM)
+    [acid_base_pair] D/E258-R/K/H156 (confidence: MEDIUM)
+    [acid_base_pair] D/E271-R/K/H273 (confidence: MEDIUM)
+    [acid_base_pair] D/E271-R/K/H132 (confidence: MEDIUM)
+    [acid_base_pair] D/E285-R/K/H282 (confidence: MEDIUM)
+    [acid_base_pair] D/E285-R/K/H283 (confidence: MEDIUM)
+    [acid_base_pair] D/E286-R/K/H282 (confidence: MEDIUM)
+    [acid_base_pair] D/E286-R/K/H283 (confidence: MEDIUM)
+    [acid_base_pair] D/E286-R/K/H290 (confidence: MEDIUM)
+    [acid_base_pair] D/E287-R/K/H283 (confidence: MEDIUM)
+    [acid_base_pair] D/E287-R/K/H290 (confidence: MEDIUM)
+    [acid_base_pair] D/E287-R/K/H291 (confidence: MEDIUM)
+    [acid_base_pair] D/E294-R/K/H290 (confidence: MEDIUM)
+    [acid_base_pair] D/E294-R/K/H291 (confidence: MEDIUM)
+    [acid_base_pair] D/E294-R/K/H292 (confidence: MEDIUM)
+    [acid_base_pair] D/E294-R/K/H296 (confidence: MEDIUM)
+    [acid_base_pair] D/E298-R/K/H296 (confidence: MEDIUM)
+    [acid_base_pair] D/E298-R/K/H297 (confidence: MEDIUM)
+    [acid_base_pair] D/E336-R/K/H335 (confidence: MEDIUM)
+    [acid_base_pair] D/E336-R/K/H337 (confidence: MEDIUM)
+    [acid_base_pair] D/E339-R/K/H335 (confidence: MEDIUM)
+    [acid_base_pair] D/E339-R/K/H337 (confidence: MEDIUM)
+    [acid_base_pair] D/E339-R/K/H342 (confidence: MEDIUM)
+    [acid_base_pair] D/E343-R/K/H342 (confidence: MEDIUM)
+    [acid_base_pair] D/E346-R/K/H342 (confidence: MEDIUM)
+    [acid_base_pair] D/E349-R/K/H351 (confidence: MEDIUM)
+    [acid_base_pair] D/E358-R/K/H357 (confidence: MEDIUM)
+    [acid_base_pair] D/E388-R/K/H386 (confidence: MEDIUM)
+    [hrd_catalytic_loop] H178-R181-D184 (confidence: HIGH)
+    [hrd_catalytic_loop] H179-R181-D184 (confidence: HIGH)
+    [haem_binding] H214 (confidence: MEDIUM)
+────────────────────────────────────────────────────────────
+2026-04-30 06:53:08 [utils.pdb_parser] INFO  Parsing structure: P04637.pdb
+2026-04-30 06:53:08 [utils.pdb_parser] INFO    → 393 residues | mean pLDDT: 75.0 | disordered: 158 residues in 4 region(s)
+2026-04-30 06:53:08 [__main__] INFO    Loaded SASA for 393 residues from Module 02
+2026-04-30 06:53:08 [__main__] INFO    Loaded 119 active site residues from Module 03
+2026-04-30 06:53:08 [__main__] INFO  ── Module 04: Binding pocket detection for P04637 ──
+2026-04-30 06:53:08 [__main__] INFO    [1/3] Finding buried pocket candidate points (393 residues)...
+2026-04-30 06:53:08 [__main__] INFO      Testing 2,380 residue pairs...
+2026-04-30 06:53:08 [__main__] INFO      Candidate pocket points: 1910
+2026-04-30 06:53:08 [__main__] INFO    [2/3] Clustering candidates into pockets...
+2026-04-30 06:53:09 [__main__] INFO      Pocket clusters found: 87
+2026-04-30 06:53:09 [__main__] INFO    [3/3] Scoring pockets...
+2026-04-30 06:53:09 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  Binding pocket detection: P04637
+  Pockets found    : 10
+  Druggable (>0.5) : 10
+  [P1] vol≈580Å³  drug=0.98 (high)  lining=11 residues  *active site*
+  [P2] vol≈1420Å³  drug=0.97 (high)  lining=13 residues  *active site*
+  [P3] vol≈1300Å³  drug=0.96 (high)  lining=15 residues  *active site*
+  [P4] vol≈960Å³  drug=0.96 (high)  lining=15 residues  *active site*
+  [P5] vol≈1540Å³  drug=0.96 (high)  lining=15 residues  *active site*
+  [P6] vol≈1440Å³  drug=0.96 (high)  lining=15 residues  *active site*
+  [P7] vol≈1160Å³  drug=0.96 (high)  lining=14 residues  *active site*
+  [P8] vol≈1060Å³  drug=0.96 (high)  lining=15 residues  *active site*
+  [P9] vol≈1040Å³  drug=0.95 (high)  lining=12 residues  *active site*
+  [P10] vol≈600Å³  drug=0.95 (high)  lining=13 residues  *active site*
+────────────────────────────────────────────────────────────
+2026-04-30 06:53:10 [utils.pdb_parser] INFO  Parsing structure: P04637.pdb
+2026-04-30 06:53:10 [utils.pdb_parser] INFO    → 393 residues | mean pLDDT: 75.0 | disordered: 158 residues in 4 region(s)
+2026-04-30 06:53:10 [__main__] INFO    Loaded SASA for 393 residues from Module 02
+2026-04-30 06:53:10 [__main__] INFO    Loaded 119 active site residues from Module 03
+2026-04-30 06:53:10 [__main__] INFO  ── Module 05: Allosteric site prediction for P04637 ──
+2026-04-30 06:53:10 [__main__] INFO    [1/4] Building elastic network contact map...
+2026-04-30 06:53:11 [__main__] INFO      Contacts: 1455 pairs within 8.0Å
+2026-04-30 06:53:11 [__main__] INFO    [2/4] Computing GNM correlation matrix (pseudo-inverse)...
+2026-04-30 06:53:11 [__main__] INFO      Correlation matrix: (393, 393)
+2026-04-30 06:53:11 [__main__] INFO    [3/4] Scoring allosteric coupling to active site...
+2026-04-30 06:53:11 [__main__] INFO    [4/4] Clustering allosteric candidates into sites...
+2026-04-30 06:53:11 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  Allosteric prediction: P04637
+  ENM contacts used  : 1455
+  Allosteric residues: 106
+  Allosteric sites   : 8
+  [A1] V28, E29, N30, N31, L32 +1 more  corr=0.96  dist_active=25.5Å  (HIGH)
+  [A2] P25, L26, L27  corr=0.96  dist_active=23.9Å  (HIGH)
+  [A3] P34, L35, P36  corr=0.95  dist_active=24.0Å  (HIGH)
+  [A4] L18, T19, F20, S21, D22 +2 more  corr=0.95  dist_active=23.6Å  (HIGH)
+  [A5] S37, Q38, A39  corr=0.95  dist_active=24.4Å  (HIGH)
+  [A6] E15, S16, Q17  corr=0.95  dist_active=22.6Å  (HIGH)
+  [A7] L12, P13, P14  corr=0.94  dist_active=20.8Å  (HIGH)
+  [A8] M40, D41, D42, L43  corr=0.94  dist_active=22.3Å  (HIGH)
+────────────────────────────────────────────────────────────
+2026-04-30 06:53:12 [utils.pdb_parser] INFO  Parsing structure: P04637.pdb
+2026-04-30 06:53:12 [utils.pdb_parser] INFO    → 393 residues | mean pLDDT: 75.0 | disordered: 158 residues in 4 region(s)
+2026-04-30 06:53:12 [__main__] INFO  ── Module 06: Chemical environment mapping for P04637 ──
+2026-04-30 06:53:12 [__main__] INFO    Mapping active site chemical environments...
+2026-04-30 06:53:12 [__main__] INFO      Active core: h-bond heavy | charge=+0.8 | HBD/HBA=18/8
+2026-04-30 06:53:12 [__main__] INFO    Mapping binding pocket chemical environments...
+2026-04-30 06:53:12 [__main__] INFO      P1: h-bond heavy | charge=+1.1 | logP≈8.2
+2026-04-30 06:53:12 [__main__] INFO      P2: metal | charge=+2.1 | logP≈7.5
+2026-04-30 06:53:12 [__main__] INFO      P3: hydrophobic+pi | charge=+1.0 | logP≈9.9
+2026-04-30 06:53:12 [__main__] INFO      P4: hydrophobic+pi | charge=+0.0 | logP≈12.8
+2026-04-30 06:53:12 [__main__] INFO      P5: hydrophobic+pi | charge=+1.0 | logP≈11.5
+2026-04-30 06:53:12 [__main__] INFO    Mapping allosteric site chemical environments...
+2026-04-30 06:53:12 [__main__] INFO      A1: h-bond heavy | charge=-1.0 | aromatic=0
+2026-04-30 06:53:12 [__main__] INFO      A2: hydrophobic | charge=+0.0 | aromatic=0
+2026-04-30 06:53:12 [__main__] INFO      A3: mixed | charge=+0.0 | aromatic=0
+2026-04-30 06:53:12 [__main__] INFO      A4: h-bond heavy | charge=+0.0 | aromatic=2
+2026-04-30 06:53:12 [__main__] INFO      A5: h-bond heavy | charge=+0.0 | aromatic=0
+2026-04-30 06:53:12 [__main__] INFO  
+────────────────────────────────────────────────────────────
+  Chemical environment: P04637
+  Sites mapped: 16
+  [Active active_core] charge=+0.8 (neutral)  HBD/HBA=18/8  hydro=-0.03  aromatic=8  mode=h-bond heavy
+  [Active motif_serine_prote] charge=-0.9 (mixed)  HBD/HBA=2/4  hydro=-2.50  aromatic=1  mode=h-bond heavy
+  [Active motif_serine_prote] charge=-0.9 (mixed)  HBD/HBA=2/4  hydro=-2.50  aromatic=1  mode=h-bond heavy
+  [Pocket P1] charge=+1.1 (positive)  HBD/HBA=8/5  hydro=+0.45  aromatic=3  mode=h-bond heavy
+  [Pocket P2] charge=+2.1 (positive)  HBD/HBA=12/5  hydro=+0.18  aromatic=1  mode=metal
+  [Pocket P3] charge=+1.0 (mixed)  HBD/HBA=9/6  hydro=+1.17  aromatic=2  mode=hydrophobic+pi
+  [Allo A1] charge=-1.0 (neutral)  HBD/HBA=3/5  hydro=-0.55  aromatic=0  mode=h-bond heavy
+  [Allo A2] charge=+0.0 (neutral)  HBD/HBA=0/0  hydro=+2.00  aromatic=0  mode=hydrophobic
+  [Allo A3] charge=+0.0 (neutral)  HBD/HBA=0/0  hydro=+0.20  aromatic=0  mode=mixed
+────────────────────────────────────────────────────────────
+2026-04-30 06:53:23 [__main__] INFO    Loaded active site data (18 HIGH-confidence residues)
+2026-04-30 06:53:23 [__main__] INFO    Loaded allosteric data (8 sites)
+2026-04-30 06:53:23 [__main__] INFO    Loaded pocket data (10 pockets)
+2026-04-30 06:53:23 [__main__] INFO  ── De Novo Design: P04637  [seed=901619] ──
+2026-04-30 06:53:23 [__main__] INFO    Loaded docking cache: 21 entries
+2026-04-30 06:53:23 [__main__] INFO    Target: ACTIVE SITE  center=[3.162, 2.859, -2.968]  box=[30.0, 30.0, 30.0]  (18 high-conf residues)
+2026-04-30 06:53:23 [__main__] INFO    Chem env: hydrophobic active site → aromatic fragments
+2026-04-30 06:53:23 [__main__] INFO    Vina: pipeline\vina.exe
+2026-04-30 06:53:23 [__main__] INFO    Receptor: C:\Users\adria\Documents\proteinFP\data\structures\P04637.pdbqt
+2026-04-30 06:53:23 [__main__] INFO    Workers: 8
+2026-04-30 06:53:23 [__main__] INFO    Building initial population (40 molecules)...
+2026-04-30 06:53:23 [__main__] INFO    Initial population: 40 molecules
+2026-04-30 06:53:23 [__main__] INFO    Starting evolution: 50 generations × 40 molecules
+2026-04-30 06:53:34 [__main__] INFO    Gen 1: score=-2.67  LE=0.223  QED=0.69  div=0.27  ↑ IMPROVED
+2026-04-30 06:53:34 [__main__] INFO    Gen time: 0m 10s  ETA: 8m 52s
+2026-04-30 06:53:42 [__main__] INFO    Gen 2: score=-5.51  LE=0.612  QED=0.60  div=0.30  ↑ IMPROVED
+2026-04-30 06:53:48 [__main__] INFO    Loaded active site data (18 HIGH-confidence residues)
+2026-04-30 06:53:48 [__main__] INFO    Loaded allosteric data (8 sites)
+2026-04-30 06:53:48 [__main__] INFO    Loaded pocket data (10 pockets)
+2026-04-30 06:53:48 [__main__] INFO  ── De Novo Design: P04637  [seed=374186] ──
+2026-04-30 06:53:48 [__main__] INFO    Loaded docking cache: 24 entries
+2026-04-30 06:53:48 [__main__] INFO    Target: ACTIVE SITE  center=[3.162, 2.859, -2.968]  box=[30.0, 30.0, 30.0]  (18 high-conf residues)
+2026-04-30 06:53:48 [__main__] INFO    Chem env: hydrophobic active site → aromatic fragments
+2026-04-30 06:53:48 [__main__] INFO    Vina: pipeline\vina.exe
+2026-04-30 06:53:48 [__main__] INFO    Receptor: C:\Users\adria\Documents\proteinFP\data\structures\P04637.pdbqt
+2026-04-30 06:53:48 [__main__] INFO    Workers: 8
+2026-04-30 06:53:48 [__main__] INFO    Building initial population (40 molecules)...
+2026-04-30 06:53:49 [__main__] INFO    Initial population: 40 molecules
+2026-04-30 06:53:49 [__main__] INFO    Starting evolution: 20 generations × 40 molecules
+2026-04-30 06:53:59 [__main__] INFO    Gen 1: score=-9.12  LE=1.014  QED=0.60  div=0.04  ↑ IMPROVED
+2026-04-30 06:53:59 [__main__] INFO    Gen time: 0m 10s  ETA: 3m 20s
+2026-04-30 06:54:34 [__main__] INFO    Gen 2: score=-9.12  LE=1.014  QED=0.60  div=0.16  stagnant 1
+2026-04-30 06:54:34 [__main__] INFO    Gen time: 0m 34s  ETA: 6m 48s
+2026-04-30 06:56:38 [__main__] INFO    Gen 3: score=-7.00  LE=0.368  QED=0.75  div=0.15  stagnant 2  Surr=-2.75
+2026-04-30 06:56:40 [__main__] INFO    Gen time: 2m 5s  ETA: 16m 10s
+2026-04-30 06:58:38 [__main__] INFO    Gen 4: score=-8.38  LE=0.335  QED=0.73  div=0.16  stagnant 3  Surr=-2.20
+2026-04-30 06:58:39 [__main__] INFO    Stagnation 3: injecting 13 fresh molecules
+2026-04-30 06:58:40 [__main__] INFO    Gen time: 2m 0s  ETA: 19m 25s
+2026-04-30 07:01:51 [__main__] INFO    Loaded active site data (18 HIGH-confidence residues)
+2026-04-30 07:01:51 [__main__] INFO    Loaded allosteric data (8 sites)
+2026-04-30 07:01:51 [__main__] INFO    Loaded pocket data (10 pockets)
+2026-04-30 07:01:51 [__main__] INFO  ── De Novo Design: P04637  [seed=522885] ──
+2026-04-30 07:01:51 [__main__] INFO    Loaded docking cache: 103 entries
+2026-04-30 07:01:51 [__main__] INFO    Target: ACTIVE SITE  center=[3.162, 2.859, -2.968]  box=[30.0, 30.0, 30.0]  (18 high-conf residues)
+2026-04-30 07:01:51 [__main__] INFO    Chem env: hydrophobic active site → aromatic fragments
+2026-04-30 07:01:51 [__main__] INFO    Vina: pipeline\vina.exe
+2026-04-30 07:01:51 [__main__] INFO    Receptor: C:\Users\adria\Documents\proteinFP\data\structures\P04637.pdbqt
+2026-04-30 07:01:51 [__main__] INFO    Workers: 8
+2026-04-30 07:01:51 [__main__] INFO    Building initial population (20 molecules)...
+2026-04-30 07:01:51 [__main__] INFO    Initial population: 20 molecules
+2026-04-30 07:01:51 [__main__] INFO    Starting evolution: 10 generations × 20 molecules
+2026-04-30 07:01:56 [__main__] INFO    Gen 1: score=-5.37  LE=0.596  QED=0.60  div=0.11  ↑ IMPROVED
+2026-04-30 07:01:56 [__main__] INFO    Gen time: 0m 5s  ETA: 0m 46s
+2026-04-30 07:02:17 [__main__] INFO    Gen 2: score=-7.17  LE=0.287  QED=0.59  div=0.19  ↑ IMPROVED
+2026-04-30 07:02:17 [__main__] INFO    Gen time: 0m 21s  ETA: 1m 45s
+2026-04-30 07:02:48 [__main__] INFO    Gen 3: score=-8.33  LE=0.438  QED=0.72  div=0.19  ↑ IMPROVED
+2026-04-30 07:02:48 [__main__] INFO    Gen time: 0m 30s  ETA: 2m 13s
+2026-04-30 07:05:03 [__main__] INFO    Gen 4: score=-9.31  LE=0.252  QED=0.35  div=0.25  ↑ IMPROVED  Surr=-5.16
+2026-04-30 07:05:05 [__main__] INFO    Gen time: 2m 17s  ETA: 4m 51s
+2026-04-30 07:11:15 [__main__] INFO    Gen 5: score=-0.01  LE=0.000  QED=0.27  div=0.50  stagnant 1  Surr=-8.25
+2026-04-30 07:11:15 [__main__] INFO    Top 5 by fitness (gen 5):
+2026-04-30 07:11:15 [__main__] INFO      #1: fit=0.201  score=-0.00  LE=0.000  SMILES=N#CC1CCCC(CC(O)(C(O)CC2CCC(C#N)C(O)C2)C(O)(CC2CCCCC2)C(O)CC2
+2026-04-30 07:11:15 [__main__] INFO      #2: fit=0.195  score=-0.00  LE=0.000  SMILES=c1ccc2cc(C3(c4c(C5CCCNC5)[nH]c5ncc(-c6cncc(C7CCCN7)n6)nc45)C
+2026-04-30 07:11:15 [__main__] INFO      #3: fit=0.190  score=-0.00  LE=0.000  SMILES=O=CNc1ccc2ccc(C3(c4c(C5CCCNC5)[nH]c5ncc(-c6cnccn6)nc45)CCCCO
+2026-04-30 07:11:15 [__main__] INFO      #4: fit=0.189  score=-0.00  LE=0.000  SMILES=N#CC1CCC(CC(O)C(O)(CC2CCCCC2)C(O)(CC2CCCCC2)C(O)CC2CCSCC2)CC
+2026-04-30 07:11:15 [__main__] INFO      #5: fit=0.166  score=-0.00  LE=0.000  SMILES=BrC1CNCC(c2[nH]c3ncc(-c4cnccn4)nc3c2C2(c3ccc4ccccc4c3)CCCCO2
+2026-04-30 07:11:16 [__main__] INFO    Gen time: 6m 10s  ETA: 9m 25s
+2026-04-30 07:16:29 [__main__] INFO    Gen 6: score=-9.38  LE=0.494  QED=0.85  div=0.27  ↑ IMPROVED  Surr=-3.18
+2026-04-30 07:16:31 [__main__] INFO    Gen time: 5m 14s  ETA: 9m 46s
+2026-04-30 07:19:25 [__main__] INFO    Gen 7: score=-5.94  LE=0.192  QED=0.64  div=0.26  stagnant 1  Surr=-2.42
+2026-04-30 07:19:27 [__main__] INFO    Gen time: 2m 56s  ETA: 7m 32s
+2026-04-30 07:22:47 [__main__] INFO    Gen 8: score=-9.36  LE=0.253  QED=0.48  div=0.26  stagnant 2  Surr=-4.03
+2026-04-30 07:22:48 [__main__] INFO    Gen time: 3m 20s  ETA: 5m 14s
+2026-04-30 07:26:04 [__main__] INFO    Gen 9: score=-5.12  LE=0.270  QED=0.77  div=0.22  stagnant 3  Surr=-2.10
+2026-04-30 07:26:04 [__main__] INFO    Stagnation 3: injecting 6 fresh molecules
+2026-04-30 07:26:05 [__main__] INFO    Gen time: 3m 17s  ETA: 2m 41s
+2026-04-30 07:31:48 [__main__] INFO    Gen 10: score=-3.50  LE=0.130  QED=0.60  div=0.18  stagnant 4  Surr=-2.25
+2026-04-30 07:31:48 [__main__] INFO    Top 5 by fitness (gen 10):
+2026-04-30 07:31:48 [__main__] INFO      #1: fit=0.132  score=-3.50  LE=0.130  SMILES=c1cncc(N2CCN(c3ccc4ccccc4c3)C(c3ncc[nH]3)C2)c1
+2026-04-30 07:31:48 [__main__] INFO      #2: fit=0.097  score=-0.00  LE=0.000  SMILES=c1c[nH]c(C2CCC(C3(C4CCCCC4)CCCCO3)OC2)n1
+2026-04-30 07:31:48 [__main__] INFO      #3: fit=0.095  score=-0.00  LE=0.000  SMILES=O=CC1CCC(C2CCCCC2)N1C1CCCNC1
+2026-04-30 07:31:48 [__main__] INFO      #4: fit=0.095  score=-1.08  LE=0.047  SMILES=c1cncc(-c2c(C3CCCNC3)coc2C2CCNCC2)c1
+2026-04-30 07:31:48 [__main__] INFO      #5: fit=0.092  score=-0.00  LE=0.000  SMILES=C1CCC(C2CCCCO2)(N2CCCC2)CC1
+2026-04-30 07:31:48 [__main__] INFO    Stagnation 4: injecting 6 fresh molecules
+2026-04-30 07:31:49 [__main__] INFO    Gen time: 5m 44s  ETA: 0m 0s
+2026-04-30 07:31:49 [__main__] INFO  
+  Final consensus docking on top candidates...
+2026-04-30 07:31:49 [__main__] INFO    Final: score=-9.38  LE=0.494  QED=0.85  CC1(c2ccc(-c3ccccc3)cc2)CCCNC1
+2026-04-30 07:31:49 [__main__] INFO    Final: score=-9.36  LE=0.253  QED=0.48  Clc1cc(C2(c3cccnc3)CCNCC2)nc(C2CCCNC2)c1-c1cccnc1N1CCCCC1
+2026-04-30 07:31:49 [__main__] INFO    Final: score=-9.31  LE=0.252  QED=0.35  c1ccc2cc(C3(c4c(C5CCCNC5)[nH]c5ncc(-c6cnccn6)nc45)CCCCO3)ccc
+2026-04-30 07:31:49 [__main__] INFO    Final: score=-9.21  LE=0.439  QED=0.73  N#CC1CCC(CC(O)C(O)CC2CCCCC2)CC1O
+2026-04-30 07:31:49 [__main__] INFO    Final: score=-8.33  LE=0.438  QED=0.72  OC1CCCC(CC(O)C(O)CC2CCCCC2)C1
+2026-04-30 07:31:49 [__main__] INFO    Final: score=-7.17  LE=0.287  QED=0.59  c1ccc2cc(C3(c4c[nH]c5nccnc45)CCCCO3)ccc2c1
+2026-04-30 07:31:49 [__main__] INFO    Final: score=-5.94  LE=0.192  QED=0.64  Clc1cc(C2(c3cccnc3)CCNCC2)nc(C2CCCNC2)c1-c1cccnc1
+2026-04-30 07:31:49 [__main__] INFO    Final: score=-5.37  LE=0.596  QED=0.60  OCCC1CCCCC1
+2026-04-30 07:31:50 [__main__] INFO  
+  ── Auto-triggering Module 15: Selectivity Optimization ──
+2026-04-30 07:31:50 [pipeline.selectivity_optimizer] INFO  ══ Module 15: Selectivity Optimization: P04637 ══
+2026-04-30 07:31:50 [pipeline.selectivity_optimizer] INFO    Vina: pipeline\vina.exe
+2026-04-30 07:31:50 [pipeline.selectivity_optimizer] INFO    Target: P04637 (TP53)
+2026-04-30 07:31:50 [pipeline.selectivity_optimizer] INFO    Input candidates: 8 → optimizing top 5
+2026-04-30 07:31:50 [pipeline.selectivity_optimizer] INFO    Top candidates:
+2026-04-30 07:31:50 [pipeline.selectivity_optimizer] INFO      #1: score=-9.38  LE=0.494  QED=0.85  CC1(c2ccc(-c3ccccc3)cc2)CCCNC1
+2026-04-30 07:31:50 [pipeline.selectivity_optimizer] INFO      #2: score=-9.36  LE=0.253  QED=0.48  Clc1cc(C2(c3cccnc3)CCNCC2)nc(C2CCCNC2)c1-c1cccnc1N1CCCC
+2026-04-30 07:31:50 [pipeline.selectivity_optimizer] INFO      #3: score=-9.31  LE=0.252  QED=0.35  c1ccc2cc(C3(c4c(C5CCCNC5)[nH]c5ncc(-c6cnccn6)nc45)CCCCO
+2026-04-30 07:31:50 [pipeline.selectivity_optimizer] INFO      #4: score=-9.21  LE=0.439  QED=0.73  N#CC1CCC(CC(O)C(O)CC2CCCCC2)CC1O
+2026-04-30 07:31:50 [pipeline.selectivity_optimizer] INFO      #5: score=-8.33  LE=0.438  QED=0.72  OC1CCCC(CC(O)C(O)CC2CCCCC2)C1
+2026-04-30 07:31:50 [pipeline.selectivity_optimizer] INFO    Receptor: C:\Users\adria\Documents\proteinFP\data\structures\P04637.pdbqt
+2026-04-30 07:31:50 [pipeline.selectivity_optimizer] INFO    Loaded dock cache: 223 entries from C:\Users\adria\Documents\proteinFP\data\intermediate\P04637_dock_cache.json
+2026-04-30 07:31:50 [pipeline.selectivity_optimizer] INFO  
+  ── Building off-target panel ──
+2026-04-30 07:31:50 [pipeline.selectivity_optimizer] INFO    [Panel] Building liability panel...
+2026-04-30 07:32:07 [pipeline.selectivity_optimizer] INFO    [Panel] Scanning pipeline intermediate files...
+2026-04-30 07:32:07 [pipeline.selectivity_optimizer] INFO    [Panel] Final panel: 30 off-target proteins
+2026-04-30 07:32:07 [pipeline.selectivity_optimizer] INFO      SCN5A      [cardiac_Na_channel]  Q14524
+2026-04-30 07:32:07 [pipeline.selectivity_optimizer] INFO      ESR1       [nuclear_receptor]  P03372
+2026-04-30 07:32:07 [pipeline.selectivity_optimizer] INFO      AR         [nuclear_receptor]  P10275
+2026-04-30 07:32:07 [pipeline.selectivity_optimizer] INFO      EGFR       [kinase]  P00533
+2026-04-30 07:32:07 [pipeline.selectivity_optimizer] INFO      ABL1       [kinase]  P00519
+2026-04-30 07:32:07 [pipeline.selectivity_optimizer] INFO      BRAF       [kinase]  P15056
+2026-04-30 07:32:07 [pipeline.selectivity_optimizer] INFO      ALB        [plasma_binding]  P02768
+2026-04-30 07:32:07 [pipeline.selectivity_optimizer] INFO      MDM4       [pipeline_protein]  O15151
+2026-04-30 07:32:07 [pipeline.selectivity_optimizer] INFO      ALDH1A1    [pipeline_protein]  P00352
+2026-04-30 07:32:07 [pipeline.selectivity_optimizer] INFO      GLUD1      [pipeline_protein]  P00367
+2026-04-30 07:32:07 [pipeline.selectivity_optimizer] INFO      CYB5R3     [pipeline_protein]  P00387
+2026-04-30 07:32:07 [pipeline.selectivity_optimizer] INFO      SOD1       [pipeline_protein]  P00441
+2026-04-30 07:32:07 [pipeline.selectivity_optimizer] INFO      F13A1      [pipeline_protein]  P00488
+2026-04-30 07:32:07 [pipeline.selectivity_optimizer] INFO      F2         [pipeline_protein]  P00734
+2026-04-30 07:32:07 [pipeline.selectivity_optimizer] INFO      F10        [pipeline_protein]  P00742
+2026-04-30 07:32:07 [pipeline.selectivity_optimizer] INFO      F12        [pipeline_protein]  P00748
+2026-04-30 07:32:07 [pipeline.selectivity_optimizer] INFO      PLAU       [pipeline_protein]  P00749
+2026-04-30 07:32:07 [pipeline.selectivity_optimizer] INFO      CA2        [pipeline_protein]  P00918
+2026-04-30 07:32:07 [pipeline.selectivity_optimizer] INFO      C5         [pipeline_protein]  P01031
+2026-04-30 07:32:07 [pipeline.selectivity_optimizer] INFO      FOS        [pipeline_protein]  P01100
+2026-04-30 07:32:07 [pipeline.selectivity_optimizer] INFO      MYC        [pipeline_protein]  P01106
+2026-04-30 07:32:07 [pipeline.selectivity_optimizer] INFO      KRAS       [pipeline_protein]  P01116
+2026-04-30 07:32:07 [pipeline.selectivity_optimizer] INFO      TNF        [pipeline_protein]  P01375
+2026-04-30 07:32:07 [pipeline.selectivity_optimizer] INFO      MB         [pipeline_protein]  P02144
+2026-04-30 07:32:07 [pipeline.selectivity_optimizer] INFO      COL1A1     [pipeline_protein]  P02452
+2026-04-30 07:32:07 [pipeline.selectivity_optimizer] INFO      CRYAB      [pipeline_protein]  P02511
+2026-04-30 07:32:07 [pipeline.selectivity_optimizer] INFO      FGG        [pipeline_protein]  P02679
+2026-04-30 07:32:07 [pipeline.selectivity_optimizer] INFO      C9         [pipeline_protein]  P02748
+2026-04-30 07:32:07 [pipeline.selectivity_optimizer] INFO      FN1        [pipeline_protein]  P02751
+2026-04-30 07:32:07 [pipeline.selectivity_optimizer] INFO      TF         [pipeline_protein]  P02787
+2026-04-30 07:32:07 [pipeline.selectivity_optimizer] INFO  
+  ── Selectivity scan + refinement (5 molecules × 30 off-targets) ──
+2026-04-30 07:32:07 [pipeline.selectivity_optimizer] INFO  
+  [1/5] Molecule: CC1(c2ccc(-c3ccccc3)cc2)CCCNC1
+2026-04-30 07:32:07 [pipeline.selectivity_optimizer] INFO    Refining: CC1(c2ccc(-c3ccccc3)cc2)CCCNC1
+2026-04-30 07:32:07 [pipeline.selectivity_optimizer] INFO      Initial score: -9.38  Docking against 30 off-targets...
+2026-04-30 07:32:16 [pipeline.selectivity_optimizer] INFO      Initial SI=0.00  grade=poor  liabilities=0  worst_off=ESR1(0.00)
+2026-04-30 07:32:16 [pipeline.selectivity_optimizer] INFO      Round 1: No improvement (1/4)
+2026-04-30 07:32:16 [pipeline.selectivity_optimizer] INFO      Round 2: No improvement (2/4)
+2026-04-30 07:32:16 [pipeline.selectivity_optimizer] INFO      Round 3: No improvement (3/4)
+2026-04-30 07:32:16 [pipeline.selectivity_optimizer] INFO      Round 4: No improvement (4/4)
+2026-04-30 07:32:16 [pipeline.selectivity_optimizer] INFO      Round 5: No improvement for 4 rounds. Stopping.
+2026-04-30 07:32:16 [pipeline.selectivity_optimizer] INFO  
+  [2/5] Molecule: Clc1cc(C2(c3cccnc3)CCNCC2)nc(C2CCCNC2)c1-c1cccnc1N1CCCCC1
+2026-04-30 07:32:16 [pipeline.selectivity_optimizer] INFO    Refining: Clc1cc(C2(c3cccnc3)CCNCC2)nc(C2CCCNC2)c1-c1cccnc1N1CCCCC1
+2026-04-30 07:32:16 [pipeline.selectivity_optimizer] INFO      Initial score: -9.36  Docking against 30 off-targets...
+2026-04-30 07:32:17 [pipeline.selectivity_optimizer] INFO      Initial SI=0.00  grade=poor  liabilities=0  worst_off=SCN5A(0.00)
+2026-04-30 07:32:17 [pipeline.selectivity_optimizer] INFO      Round 1: No improvement (1/4)
+2026-04-30 07:32:17 [pipeline.selectivity_optimizer] INFO      Round 2: No improvement (2/4)
+2026-04-30 07:32:17 [pipeline.selectivity_optimizer] INFO      Round 3: No improvement (3/4)
+2026-04-30 07:32:17 [pipeline.selectivity_optimizer] INFO      Round 4: No improvement (4/4)
+2026-04-30 07:32:17 [pipeline.selectivity_optimizer] INFO      Round 5: No improvement for 4 rounds. Stopping.
+2026-04-30 07:32:17 [pipeline.selectivity_optimizer] INFO  
+  [3/5] Molecule: c1ccc2cc(C3(c4c(C5CCCNC5)[nH]c5ncc(-c6cnccn6)nc45)CCCCO3)ccc
+2026-04-30 07:32:17 [pipeline.selectivity_optimizer] INFO    Refining: c1ccc2cc(C3(c4c(C5CCCNC5)[nH]c5ncc(-c6cnccn6)nc45)CCCCO3)ccc
+2026-04-30 07:32:17 [pipeline.selectivity_optimizer] INFO      Initial score: -9.31  Docking against 30 off-targets...
+2026-04-30 07:32:18 [pipeline.selectivity_optimizer] INFO      Initial SI=0.00  grade=poor  liabilities=0  worst_off=SCN5A(0.00)
+2026-04-30 07:32:18 [pipeline.selectivity_optimizer] INFO      Round 1: No improvement (1/4)
+2026-04-30 07:32:18 [pipeline.selectivity_optimizer] INFO      Round 2: No improvement (2/4)
+2026-04-30 07:32:18 [pipeline.selectivity_optimizer] INFO      Round 3: No improvement (3/4)
+2026-04-30 07:32:18 [pipeline.selectivity_optimizer] INFO      Round 4: No improvement (4/4)
+2026-04-30 07:32:18 [pipeline.selectivity_optimizer] INFO      Round 5: No improvement for 4 rounds. Stopping.
+2026-04-30 07:32:18 [pipeline.selectivity_optimizer] INFO  
+  [4/5] Molecule: N#CC1CCC(CC(O)C(O)CC2CCCCC2)CC1O
+2026-04-30 07:32:18 [pipeline.selectivity_optimizer] INFO    Refining: N#CC1CCC(CC(O)C(O)CC2CCCCC2)CC1O
+2026-04-30 07:32:18 [pipeline.selectivity_optimizer] INFO      Initial score: -9.21  Docking against 30 off-targets...
+2026-04-30 07:32:18 [pipeline.selectivity_optimizer] INFO      Initial SI=0.00  grade=poor  liabilities=0  worst_off=SCN5A(0.00)
+2026-04-30 07:32:18 [pipeline.selectivity_optimizer] INFO      Round 1: No improvement (1/4)
+2026-04-30 07:32:18 [pipeline.selectivity_optimizer] INFO      Round 2: No improvement (2/4)
+2026-04-30 07:32:18 [pipeline.selectivity_optimizer] INFO      Round 3: No improvement (3/4)
+2026-04-30 07:32:18 [pipeline.selectivity_optimizer] INFO      Round 4: No improvement (4/4)
+2026-04-30 07:32:18 [pipeline.selectivity_optimizer] INFO      Round 5: No improvement for 4 rounds. Stopping.
+2026-04-30 07:32:18 [pipeline.selectivity_optimizer] INFO  
+  [5/5] Molecule: OC1CCCC(CC(O)C(O)CC2CCCCC2)C1
+2026-04-30 07:32:18 [pipeline.selectivity_optimizer] INFO    Refining: OC1CCCC(CC(O)C(O)CC2CCCCC2)C1
+2026-04-30 07:32:18 [pipeline.selectivity_optimizer] INFO      Initial score: -8.33  Docking against 30 off-targets...
+2026-04-30 07:32:19 [pipeline.selectivity_optimizer] INFO      Initial SI=0.00  grade=poor  liabilities=0  worst_off=SCN5A(0.00)
+2026-04-30 07:32:19 [pipeline.selectivity_optimizer] INFO      Round 1: No improvement (1/4)
+2026-04-30 07:32:19 [pipeline.selectivity_optimizer] INFO      Round 2: No improvement (2/4)
+2026-04-30 07:32:19 [pipeline.selectivity_optimizer] INFO      Round 3: No improvement (3/4)
+2026-04-30 07:32:19 [pipeline.selectivity_optimizer] INFO      Round 4: No improvement (4/4)
+2026-04-30 07:32:19 [pipeline.selectivity_optimizer] INFO      Round 5: No improvement for 4 rounds. Stopping.
+2026-04-30 07:32:19 [pipeline.selectivity_optimizer] INFO  
+  ── Computing Pareto front ──
+2026-04-30 07:32:19 [pipeline.selectivity_optimizer] INFO  
+  Results saved: C:\Users\adria\Documents\proteinFP\data\intermediate\P04637_selectivity.json
+2026-04-30 07:32:19 [pipeline.selectivity_optimizer] INFO  
+════════════════════════════════════════════════════════════════════════
+  MODULE 15 — Selectivity Optimization: P04637
+════════════════════════════════════════════════════════════════════════
+  Input molecules  : 8
+  Off-target panel : 30 proteins
+  Refinement rounds: 15 max
+  Best on-target   : -9.38 kcal/mol
+  Best SI          : 0.00x
+  hERG-safe mols   : 5/5
+  Excellent SI (≥5x): 0
+────────────────────────────────────────────────────────────────────────
+  OPTIMIZED CANDIDATES (Pareto front):
+
+  [Rank #1]
+  SMILES    : CC1(c2ccc(-c3ccccc3)cc2)CCCNC1
+  On-target : -9.38 kcal/mol  (Δ +0.00)
+  SI        : 0.00x  (Δ +0.00)  [poor]
+  Liabilities: 0  hERG: SAFE
+  QED=0.85  MW=251  LogP=3.99  LE=0.494
+  Edits: none
+
+  [Rank #2]
+  SMILES    : Clc1cc(C2(c3cccnc3)CCNCC2)nc(C2CCCNC2)c1-c1cccnc1N1CCCCC1
+  On-target : -9.36 kcal/mol  (Δ +0.00)
+  SI        : 0.00x  (Δ +0.00)  [poor]
+  Liabilities: 0  hERG: SAFE
+  QED=0.48  MW=517  LogP=5.32  LE=0.253
+  Edits: none
+
+  [Rank #2]
+  SMILES    : N#CC1CCC(CC(O)C(O)CC2CCCCC2)CC1O
+  On-target : -9.21 kcal/mol  (Δ +0.00)
+  SI        : 0.00x  (Δ +0.00)  [poor]
+  Liabilities: 0  hERG: SAFE
+  QED=0.73  MW=295  LogP=2.37  LE=0.439
+  Edits: none
+
+  [Rank #3]
+  SMILES    : c1ccc2cc(C3(c4c(C5CCCNC5)[nH]c5ncc(-c6cnccn6)nc45)CCCCO3)ccc2c1
+  On-target : -9.31 kcal/mol  (Δ +0.00)
+  SI        : 0.00x  (Δ +0.00)  [poor]
+  Liabilities: 0  hERG: SAFE
+  QED=0.35  MW=491  LogP=5.48  LE=0.252
+  Edits: none
+
+  [Rank #3]
+  SMILES    : OC1CCCC(CC(O)C(O)CC2CCCCC2)C1
+  On-target : -8.33 kcal/mol  (Δ +0.00)
+  SI        : 0.00x  (Δ +0.00)  [poor]
+  Liabilities: 0  hERG: SAFE
+  QED=0.72  MW=270  LogP=2.62  LE=0.438
+  Edits: none
+
+════════════════════════════════════════════════════════════════════════
+2026-04-30 07:32:19 [__main__] INFO  
+──────────────────────────────────────────────────────────────────────
+  De Novo Design: P04637  [pocket=active_site]
+  Generations run  : 10
+  Molecules docked : 127
+  Best score       : -9.38 kcal/mol
+  Best LE          : 0.494 kcal/mol/HA
+  Best SMILES      : CC1(c2ccc(-c3ccccc3)cc2)CCCNC1
+──────────────────────────────────────────────────────────────────────
+  Top candidates:
+  # 1: Score=-9.38  LE=0.494  QED=0.85  MW=251  ADMET✓  CC1(c2ccc(-c3ccccc3)cc2)CCCNC1
+  # 2: Score=-9.36  LE=0.253  QED=0.48  MW=517  ADMET✓  Clc1cc(C2(c3cccnc3)CCNCC2)nc(C2CCCNC2)c1-c1cccnc1N1CCCC
+  # 3: Score=-9.31  LE=0.252  QED=0.35  MW=491  ADMET✓  c1ccc2cc(C3(c4c(C5CCCNC5)[nH]c5ncc(-c6cnccn6)nc45)CCCCO
+  # 4: Score=-9.21  LE=0.439  QED=0.73  MW=295  ADMET✓  N#CC1CCC(CC(O)C(O)CC2CCCCC2)CC1O
+  # 5: Score=-8.33  LE=0.438  QED=0.72  MW=270  ADMET✓  OC1CCCC(CC(O)C(O)CC2CCCCC2)C1
+  # 6: Score=-7.17  LE=0.287  QED=0.59  MW=329  ADMET✓  c1ccc2cc(C3(c4c[nH]c5nccnc45)CCCCO3)ccc2c1
+  # 7: Score=-5.94  LE=0.192  QED=0.64  MW=434  ADMET✓  Clc1cc(C2(c3cccnc3)CCNCC2)nc(C2CCCNC2)c1-c1cccnc1
+  # 8: Score=-5.37  LE=0.596  QED=0.60  MW=128  ADMET✓  OCCC1CCCCC1
+──────────────────────────────────────────────────────────────────────
+2026-04-30 07:32:19 [__main__] INFO  
+  Results saved to: C:\Users\adria\Documents\proteinFP\data\intermediate\P04637_denovo.json
