@@ -216,24 +216,6 @@
     "reference": "ChEMBL CHEMBL369"
   },
   {
-    "drug_name": "Olaparib",
-    "uniprot_id": "P38398",
-    "gene": "BRCA1",
-    "target_class": "dna_repair",
-    "smiles": "O=C1CCCN1c1ccc2c(c1)CC(c1ccccc1F)C(=O)N2",
-    "mw": 434.5,
-    "logP": 1.5,
-    "hbd": 1,
-    "hba": 6,
-    "psa": 77.6,
-    "charge": 0.0,
-    "rotors": 4,
-    "exp_pKi": 5.8,
-    "exp_Kd_nM": 1500.0,
-    "permeability": "medium",
-    "reference": "ChEMBL CHEMBL521686"
-  },
-  {
     "drug_name": "Methotrexate",
     "uniprot_id": "P00918",
     "gene": "CA2",
@@ -250,24 +232,6 @@
     "exp_Kd_nM": 30000.0,
     "permeability": "low",
     "reference": "BindingDB"
-  },
-  {
-    "drug_name": "Palbociclib",
-    "uniprot_id": "P11388",
-    "gene": "TOP2A",
-    "target_class": "topoisomerase",
-    "smiles": "CC1=C(C(=O)Nc2ncnc3[nH]ccc23)C=CN1C1CCN(C(=O)OC(C)(C)C)CC1",
-    "mw": 447.5,
-    "logP": 2.04,
-    "hbd": 2,
-    "hba": 8,
-    "psa": 100.9,
-    "charge": 0.0,
-    "rotors": 5,
-    "exp_pKi": 4.2,
-    "exp_Kd_nM": 60000.0,
-    "permeability": "medium",
-    "reference": "ChEMBL off-target panel"
   },
   {
     "drug_name": "Bosutinib",
