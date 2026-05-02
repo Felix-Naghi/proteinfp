@@ -487,9 +487,1326 @@
   ],
   "initial_profiles": [
     {
-      "smiles": "O=C1CN=C(c2ccccc2-c2cnccn2)c2cc(C3CCCCN3)c(CCO)cc21",
-      "on_target_score": -8.01,
-      "on_target_le": 0.2503,
+      "smiles": "c1ccc(C2(c3cc[nH]n3)NCCCC2C2NCCNC2C2CCCCC2)cc1",
+      "on_target_score": -8.401,
+      "on_target_le": 0.2897,
+      "off_target_scores": {
+        "P03372": 0.0,
+        "P10275": 0.0,
+        "P00519": 0.0,
+        "P15056": 0.0,
+        "P00533": 0.0,
+        "Q14524": 0.0,
+        "O15151": 0.0,
+        "P02768": 0.0,
+        "P00352": 0.0,
+        "P00367": 0.0,
+        "P00387": 0.0,
+        "P00441": 0.0,
+        "P00734": 0.0,
+        "P00742": 0.0,
+        "P00488": 0.0,
+        "P00749": 0.0,
+        "P00748": 0.0,
+        "P00918": 0.0,
+        "P01100": 0.0,
+        "P01106": 0.0,
+        "P02144": 0.0,
+        "P01375": 0.0,
+        "P01116": 0.0,
+        "P01031": 0.0,
+        "P02511": 0.0,
+        "P02679": 0.0,
+        "P02452": 0.0,
+        "P02748": 0.0,
+        "P02787": 0.0,
+        "P02751": 0.0
+      },
+      "off_target_hits": [
+        {
+          "uniprot_id": "P03372",
+          "gene_name": "ESR1",
+          "category": "nuclear_receptor",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            2.166,
+            -7.899,
+            12.534
+          ]
+        },
+        {
+          "uniprot_id": "P10275",
+          "gene_name": "AR",
+          "category": "nuclear_receptor",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -15.691,
+            8.184,
+            9.43
+          ]
+        },
+        {
+          "uniprot_id": "P00519",
+          "gene_name": "ABL1",
+          "category": "kinase",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -7.585,
+            -1.819,
+            3.241
+          ]
+        },
+        {
+          "uniprot_id": "P15056",
+          "gene_name": "BRAF",
+          "category": "kinase",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -7.191,
+            12.716,
+            -1.531
+          ]
+        },
+        {
+          "uniprot_id": "P00533",
+          "gene_name": "EGFR",
+          "category": "kinase",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -14.03,
+            -14.85,
+            12.67
+          ]
+        },
+        {
+          "uniprot_id": "Q14524",
+          "gene_name": "SCN5A",
+          "category": "cardiac_Na_channel",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -8.34,
+            -7.817,
+            -7.209
+          ]
+        },
+        {
+          "uniprot_id": "O15151",
+          "gene_name": "MDM4",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            24.553,
+            0.009,
+            368.25
+          ]
+        },
+        {
+          "uniprot_id": "P02768",
+          "gene_name": "ALB",
+          "category": "plasma_binding",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -6.958,
+            3.398,
+            -0.637
+          ]
+        },
+        {
+          "uniprot_id": "P00352",
+          "gene_name": "ALDH1A1",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -5.105,
+            2.277,
+            -4.988
+          ]
+        },
+        {
+          "uniprot_id": "P00367",
+          "gene_name": "GLUD1",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -8.54,
+            3.76,
+            11.25
+          ]
+        },
+        {
+          "uniprot_id": "P00387",
+          "gene_name": "CYB5R3",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -6.918,
+            -0.868,
+            5.401
+          ]
+        },
+        {
+          "uniprot_id": "P00441",
+          "gene_name": "SOD1",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -8.65,
+            -1.15,
+            -5.21
+          ]
+        },
+        {
+          "uniprot_id": "P00734",
+          "gene_name": "F2",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -7.17,
+            -2.87,
+            5.41
+          ]
+        },
+        {
+          "uniprot_id": "P00742",
+          "gene_name": "F10",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            5.12,
+            -0.89,
+            -5.09
+          ]
+        },
+        {
+          "uniprot_id": "P00488",
+          "gene_name": "F13A1",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -0.289,
+            3.914,
+            -1.382
+          ]
+        },
+        {
+          "uniprot_id": "P00749",
+          "gene_name": "PLAU",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -2.72,
+            8.1,
+            -5.55
+          ]
+        },
+        {
+          "uniprot_id": "P00748",
+          "gene_name": "F12",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            12.57,
+            0.71,
+            26.48
+          ]
+        },
+        {
+          "uniprot_id": "P00918",
+          "gene_name": "CA2",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -0.47,
+            8.0,
+            -2.36
+          ]
+        },
+        {
+          "uniprot_id": "P01100",
+          "gene_name": "FOS",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            0.43,
+            24.312,
+            6.151
+          ]
+        },
+        {
+          "uniprot_id": "P01106",
+          "gene_name": "MYC",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            3.528,
+            3.945,
+            -13.745
+          ]
+        },
+        {
+          "uniprot_id": "P02144",
+          "gene_name": "MB",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -0.454,
+            2.912,
+            0.409
+          ]
+        },
+        {
+          "uniprot_id": "P01375",
+          "gene_name": "TNF",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -5.461,
+            10.874,
+            -14.501
+          ]
+        },
+        {
+          "uniprot_id": "P01116",
+          "gene_name": "KRAS",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            0.18,
+            1.68,
+            -0.74
+          ]
+        },
+        {
+          "uniprot_id": "P01031",
+          "gene_name": "C5",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -38.75,
+            6.92,
+            0.42
+          ]
+        },
+        {
+          "uniprot_id": "P02511",
+          "gene_name": "CRYAB",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -13.952,
+            -3.728,
+            4.631
+          ]
+        },
+        {
+          "uniprot_id": "P02679",
+          "gene_name": "FGG",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            1.03,
+            8.9,
+            -20.45
+          ]
+        },
+        {
+          "uniprot_id": "P02452",
+          "gene_name": "COL1A1",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -2.821,
+            -11.697,
+            -11.408
+          ]
+        },
+        {
+          "uniprot_id": "P02748",
+          "gene_name": "C9",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -12.94,
+            -5.42,
+            6.28
+          ]
+        },
+        {
+          "uniprot_id": "P02787",
+          "gene_name": "TF",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -17.43,
+            -4.32,
+            16.7
+          ]
+        },
+        {
+          "uniprot_id": "P02751",
+          "gene_name": "FN1",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -44.03,
+            11.01,
+            -31.95
+          ]
+        }
+      ],
+      "selectivity_index": 0.0,
+      "worst_off_target": "ESR1",
+      "worst_off_score": 0.0,
+      "n_liabilities": 0,
+      "herg_score": 0.0,
+      "herg_safe": true,
+      "si_grade": "poor",
+      "qed": 0.644,
+      "mw": 393.6,
+      "logp": 3.16
+    },
+    {
+      "smiles": "CC(C)c1c(C2CCCOC2)ccc2c1C(=O)CN=C2c1ccccc1C1CNCCN1",
+      "on_target_score": -7.591,
+      "on_target_le": 0.2372,
+      "off_target_scores": {
+        "P15056": 0.0,
+        "P03372": 0.0,
+        "P10275": 0.0,
+        "P00519": 0.0,
+        "P00533": 0.0,
+        "Q14524": 0.0,
+        "O15151": 0.0,
+        "P02768": 0.0,
+        "P00352": 0.0,
+        "P00387": 0.0,
+        "P00367": 0.0,
+        "P00441": 0.0,
+        "P00488": 0.0,
+        "P00734": 0.0,
+        "P00742": 0.0,
+        "P00748": 0.0,
+        "P00749": 0.0,
+        "P00918": 0.0,
+        "P01100": 0.0,
+        "P01116": 0.0,
+        "P01375": 0.0,
+        "P01106": 0.0,
+        "P02144": 0.0,
+        "P01031": 0.0,
+        "P02511": 0.0,
+        "P02679": 0.0,
+        "P02452": 0.0,
+        "P02748": 0.0,
+        "P02787": 0.0,
+        "P02751": 0.0
+      },
+      "off_target_hits": [
+        {
+          "uniprot_id": "P15056",
+          "gene_name": "BRAF",
+          "category": "kinase",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -7.191,
+            12.716,
+            -1.531
+          ]
+        },
+        {
+          "uniprot_id": "P03372",
+          "gene_name": "ESR1",
+          "category": "nuclear_receptor",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            2.166,
+            -7.899,
+            12.534
+          ]
+        },
+        {
+          "uniprot_id": "P10275",
+          "gene_name": "AR",
+          "category": "nuclear_receptor",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -15.691,
+            8.184,
+            9.43
+          ]
+        },
+        {
+          "uniprot_id": "P00519",
+          "gene_name": "ABL1",
+          "category": "kinase",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -7.585,
+            -1.819,
+            3.241
+          ]
+        },
+        {
+          "uniprot_id": "P00533",
+          "gene_name": "EGFR",
+          "category": "kinase",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -14.03,
+            -14.85,
+            12.67
+          ]
+        },
+        {
+          "uniprot_id": "Q14524",
+          "gene_name": "SCN5A",
+          "category": "cardiac_Na_channel",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -8.34,
+            -7.817,
+            -7.209
+          ]
+        },
+        {
+          "uniprot_id": "O15151",
+          "gene_name": "MDM4",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            24.553,
+            0.009,
+            368.25
+          ]
+        },
+        {
+          "uniprot_id": "P02768",
+          "gene_name": "ALB",
+          "category": "plasma_binding",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -6.958,
+            3.398,
+            -0.637
+          ]
+        },
+        {
+          "uniprot_id": "P00352",
+          "gene_name": "ALDH1A1",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -5.105,
+            2.277,
+            -4.988
+          ]
+        },
+        {
+          "uniprot_id": "P00387",
+          "gene_name": "CYB5R3",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -6.918,
+            -0.868,
+            5.401
+          ]
+        },
+        {
+          "uniprot_id": "P00367",
+          "gene_name": "GLUD1",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -8.54,
+            3.76,
+            11.25
+          ]
+        },
+        {
+          "uniprot_id": "P00441",
+          "gene_name": "SOD1",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -8.65,
+            -1.15,
+            -5.21
+          ]
+        },
+        {
+          "uniprot_id": "P00488",
+          "gene_name": "F13A1",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -0.289,
+            3.914,
+            -1.382
+          ]
+        },
+        {
+          "uniprot_id": "P00734",
+          "gene_name": "F2",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -7.17,
+            -2.87,
+            5.41
+          ]
+        },
+        {
+          "uniprot_id": "P00742",
+          "gene_name": "F10",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            5.12,
+            -0.89,
+            -5.09
+          ]
+        },
+        {
+          "uniprot_id": "P00748",
+          "gene_name": "F12",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            12.57,
+            0.71,
+            26.48
+          ]
+        },
+        {
+          "uniprot_id": "P00749",
+          "gene_name": "PLAU",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -2.72,
+            8.1,
+            -5.55
+          ]
+        },
+        {
+          "uniprot_id": "P00918",
+          "gene_name": "CA2",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -0.47,
+            8.0,
+            -2.36
+          ]
+        },
+        {
+          "uniprot_id": "P01100",
+          "gene_name": "FOS",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            0.43,
+            24.312,
+            6.151
+          ]
+        },
+        {
+          "uniprot_id": "P01116",
+          "gene_name": "KRAS",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            0.18,
+            1.68,
+            -0.74
+          ]
+        },
+        {
+          "uniprot_id": "P01375",
+          "gene_name": "TNF",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -5.461,
+            10.874,
+            -14.501
+          ]
+        },
+        {
+          "uniprot_id": "P01106",
+          "gene_name": "MYC",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            3.528,
+            3.945,
+            -13.745
+          ]
+        },
+        {
+          "uniprot_id": "P02144",
+          "gene_name": "MB",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -0.454,
+            2.912,
+            0.409
+          ]
+        },
+        {
+          "uniprot_id": "P01031",
+          "gene_name": "C5",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -38.75,
+            6.92,
+            0.42
+          ]
+        },
+        {
+          "uniprot_id": "P02511",
+          "gene_name": "CRYAB",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -13.952,
+            -3.728,
+            4.631
+          ]
+        },
+        {
+          "uniprot_id": "P02679",
+          "gene_name": "FGG",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            1.03,
+            8.9,
+            -20.45
+          ]
+        },
+        {
+          "uniprot_id": "P02452",
+          "gene_name": "COL1A1",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -2.821,
+            -11.697,
+            -11.408
+          ]
+        },
+        {
+          "uniprot_id": "P02748",
+          "gene_name": "C9",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -12.94,
+            -5.42,
+            6.28
+          ]
+        },
+        {
+          "uniprot_id": "P02787",
+          "gene_name": "TF",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -17.43,
+            -4.32,
+            16.7
+          ]
+        },
+        {
+          "uniprot_id": "P02751",
+          "gene_name": "FN1",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -44.03,
+            11.01,
+            -31.95
+          ]
+        }
+      ],
+      "selectivity_index": 0.0,
+      "worst_off_target": "BRAF",
+      "worst_off_score": 0.0,
+      "n_liabilities": 0,
+      "herg_score": 0.0,
+      "herg_safe": true,
+      "si_grade": "poor",
+      "qed": 0.769,
+      "mw": 431.6,
+      "logp": 3.97
+    },
+    {
+      "smiles": "O=C1Nc2cc(-c3cccc(C4CCCCN4)n3)cc(-c3ccccn3)c2C1=O",
+      "on_target_score": -7.186,
+      "on_target_le": 0.2478,
+      "off_target_scores": {
+        "P03372": 0.0,
+        "P10275": 0.0,
+        "P15056": 0.0,
+        "P00519": 0.0,
+        "P00533": 0.0,
+        "Q14524": 0.0,
+        "O15151": 0.0,
+        "P00387": 0.0,
+        "P00352": 0.0,
+        "P00367": 0.0,
+        "P02768": 0.0,
+        "P00441": 0.0,
+        "P00742": 0.0,
+        "P00488": 0.0,
+        "P00748": 0.0,
+        "P00734": 0.0,
+        "P00749": 0.0,
+        "P00918": 0.0,
+        "P01100": 0.0,
+        "P01116": 0.0,
+        "P01375": 0.0,
+        "P01106": 0.0,
+        "P02144": 0.0,
+        "P01031": 0.0,
+        "P02511": 0.0,
+        "P02679": 0.0,
+        "P02748": 0.0,
+        "P02452": 0.0,
+        "P02787": 0.0,
+        "P02751": 0.0
+      },
+      "off_target_hits": [
+        {
+          "uniprot_id": "P03372",
+          "gene_name": "ESR1",
+          "category": "nuclear_receptor",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            2.166,
+            -7.899,
+            12.534
+          ]
+        },
+        {
+          "uniprot_id": "P10275",
+          "gene_name": "AR",
+          "category": "nuclear_receptor",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -15.691,
+            8.184,
+            9.43
+          ]
+        },
+        {
+          "uniprot_id": "P15056",
+          "gene_name": "BRAF",
+          "category": "kinase",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -7.191,
+            12.716,
+            -1.531
+          ]
+        },
+        {
+          "uniprot_id": "P00519",
+          "gene_name": "ABL1",
+          "category": "kinase",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -7.585,
+            -1.819,
+            3.241
+          ]
+        },
+        {
+          "uniprot_id": "P00533",
+          "gene_name": "EGFR",
+          "category": "kinase",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -14.03,
+            -14.85,
+            12.67
+          ]
+        },
+        {
+          "uniprot_id": "Q14524",
+          "gene_name": "SCN5A",
+          "category": "cardiac_Na_channel",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -8.34,
+            -7.817,
+            -7.209
+          ]
+        },
+        {
+          "uniprot_id": "O15151",
+          "gene_name": "MDM4",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            24.553,
+            0.009,
+            368.25
+          ]
+        },
+        {
+          "uniprot_id": "P00387",
+          "gene_name": "CYB5R3",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -6.918,
+            -0.868,
+            5.401
+          ]
+        },
+        {
+          "uniprot_id": "P00352",
+          "gene_name": "ALDH1A1",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -5.105,
+            2.277,
+            -4.988
+          ]
+        },
+        {
+          "uniprot_id": "P00367",
+          "gene_name": "GLUD1",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -8.54,
+            3.76,
+            11.25
+          ]
+        },
+        {
+          "uniprot_id": "P02768",
+          "gene_name": "ALB",
+          "category": "plasma_binding",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -6.958,
+            3.398,
+            -0.637
+          ]
+        },
+        {
+          "uniprot_id": "P00441",
+          "gene_name": "SOD1",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -8.65,
+            -1.15,
+            -5.21
+          ]
+        },
+        {
+          "uniprot_id": "P00742",
+          "gene_name": "F10",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            5.12,
+            -0.89,
+            -5.09
+          ]
+        },
+        {
+          "uniprot_id": "P00488",
+          "gene_name": "F13A1",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -0.289,
+            3.914,
+            -1.382
+          ]
+        },
+        {
+          "uniprot_id": "P00748",
+          "gene_name": "F12",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            12.57,
+            0.71,
+            26.48
+          ]
+        },
+        {
+          "uniprot_id": "P00734",
+          "gene_name": "F2",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -7.17,
+            -2.87,
+            5.41
+          ]
+        },
+        {
+          "uniprot_id": "P00749",
+          "gene_name": "PLAU",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -2.72,
+            8.1,
+            -5.55
+          ]
+        },
+        {
+          "uniprot_id": "P00918",
+          "gene_name": "CA2",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -0.47,
+            8.0,
+            -2.36
+          ]
+        },
+        {
+          "uniprot_id": "P01100",
+          "gene_name": "FOS",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            0.43,
+            24.312,
+            6.151
+          ]
+        },
+        {
+          "uniprot_id": "P01116",
+          "gene_name": "KRAS",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            0.18,
+            1.68,
+            -0.74
+          ]
+        },
+        {
+          "uniprot_id": "P01375",
+          "gene_name": "TNF",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -5.461,
+            10.874,
+            -14.501
+          ]
+        },
+        {
+          "uniprot_id": "P01106",
+          "gene_name": "MYC",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            3.528,
+            3.945,
+            -13.745
+          ]
+        },
+        {
+          "uniprot_id": "P02144",
+          "gene_name": "MB",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -0.454,
+            2.912,
+            0.409
+          ]
+        },
+        {
+          "uniprot_id": "P01031",
+          "gene_name": "C5",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -38.75,
+            6.92,
+            0.42
+          ]
+        },
+        {
+          "uniprot_id": "P02511",
+          "gene_name": "CRYAB",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -13.952,
+            -3.728,
+            4.631
+          ]
+        },
+        {
+          "uniprot_id": "P02679",
+          "gene_name": "FGG",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            1.03,
+            8.9,
+            -20.45
+          ]
+        },
+        {
+          "uniprot_id": "P02748",
+          "gene_name": "C9",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -12.94,
+            -5.42,
+            6.28
+          ]
+        },
+        {
+          "uniprot_id": "P02452",
+          "gene_name": "COL1A1",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -2.821,
+            -11.697,
+            -11.408
+          ]
+        },
+        {
+          "uniprot_id": "P02787",
+          "gene_name": "TF",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -17.43,
+            -4.32,
+            16.7
+          ]
+        },
+        {
+          "uniprot_id": "P02751",
+          "gene_name": "FN1",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -44.03,
+            11.01,
+            -31.95
+          ]
+        }
+      ],
+      "selectivity_index": 0.0,
+      "worst_off_target": "ESR1",
+      "worst_off_score": 0.0,
+      "n_liabilities": 0,
+      "herg_score": 0.0,
+      "herg_safe": true,
+      "si_grade": "poor",
+      "qed": 0.672,
+      "mw": 384.4,
+      "logp": 3.76
+    },
+    {
+      "smiles": "CC(O)c1c(C2CCCOC2)ccc2c1C(=O)CN=C2c1ccccc1C1CNCCN1C",
+      "on_target_score": -7.591,
+      "on_target_le": 0.23,
       "off_target_scores": {
         "P03372": 0.0,
         "P15056": 0.0,
@@ -498,29 +1815,29 @@
         "P00533": 0.0,
         "Q14524": 0.0,
         "O15151": 0.0,
+        "P00367": 0.0,
         "P02768": 0.0,
         "P00387": 0.0,
-        "P00352": 0.0,
-        "P00367": 0.0,
         "P00441": 0.0,
-        "P00742": 0.0,
-        "P00734": 0.0,
+        "P00352": 0.0,
         "P00488": 0.0,
+        "P00742": 0.0,
         "P00749": 0.0,
-        "P00748": 0.0,
         "P00918": 0.0,
-        "P02144": 0.0,
-        "P01100": 0.0,
-        "P01375": 0.0,
-        "P01116": 0.0,
+        "P00734": 0.0,
+        "P00748": 0.0,
         "P01106": 0.0,
+        "P01100": 0.0,
+        "P01116": 0.0,
+        "P01375": 0.0,
+        "P02144": 0.0,
         "P01031": 0.0,
         "P02511": 0.0,
-        "P02748": 0.0,
         "P02679": 0.0,
         "P02452": 0.0,
-        "P02751": 0.0,
-        "P02787": 0.0
+        "P02748": 0.0,
+        "P02787": 0.0,
+        "P02751": 0.0
       },
       "off_target_hits": [
         {
@@ -615,6 +1932,19 @@
           ]
         },
         {
+          "uniprot_id": "P00367",
+          "gene_name": "GLUD1",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -8.54,
+            3.76,
+            11.25
+          ]
+        },
+        {
           "uniprot_id": "P02768",
           "gene_name": "ALB",
           "category": "plasma_binding",
@@ -641,32 +1971,6 @@
           ]
         },
         {
-          "uniprot_id": "P00352",
-          "gene_name": "ALDH1A1",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -5.105,
-            2.277,
-            -4.988
-          ]
-        },
-        {
-          "uniprot_id": "P00367",
-          "gene_name": "GLUD1",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -8.54,
-            3.76,
-            11.25
-          ]
-        },
-        {
           "uniprot_id": "P00441",
           "gene_name": "SOD1",
           "category": "pipeline_protein",
@@ -680,29 +1984,16 @@
           ]
         },
         {
-          "uniprot_id": "P00742",
-          "gene_name": "F10",
+          "uniprot_id": "P00352",
+          "gene_name": "ALDH1A1",
           "category": "pipeline_protein",
           "score": 0.0,
           "is_liability": false,
           "is_herg": false,
           "pocket_center": [
-            5.12,
-            -0.89,
-            -5.09
-          ]
-        },
-        {
-          "uniprot_id": "P00734",
-          "gene_name": "F2",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -7.17,
-            -2.87,
-            5.41
+            -5.105,
+            2.277,
+            -4.988
           ]
         },
         {
@@ -719,6 +2010,19 @@
           ]
         },
         {
+          "uniprot_id": "P00742",
+          "gene_name": "F10",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            5.12,
+            -0.89,
+            -5.09
+          ]
+        },
+        {
           "uniprot_id": "P00749",
           "gene_name": "PLAU",
           "category": "pipeline_protein",
@@ -729,19 +2033,6 @@
             -2.72,
             8.1,
             -5.55
-          ]
-        },
-        {
-          "uniprot_id": "P00748",
-          "gene_name": "F12",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            12.57,
-            0.71,
-            26.48
           ]
         },
         {
@@ -758,16 +2049,42 @@
           ]
         },
         {
-          "uniprot_id": "P02144",
-          "gene_name": "MB",
+          "uniprot_id": "P00734",
+          "gene_name": "F2",
           "category": "pipeline_protein",
           "score": 0.0,
           "is_liability": false,
           "is_herg": false,
           "pocket_center": [
-            -0.454,
-            2.912,
-            0.409
+            -7.17,
+            -2.87,
+            5.41
+          ]
+        },
+        {
+          "uniprot_id": "P00748",
+          "gene_name": "F12",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            12.57,
+            0.71,
+            26.48
+          ]
+        },
+        {
+          "uniprot_id": "P01106",
+          "gene_name": "MYC",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            3.528,
+            3.945,
+            -13.745
           ]
         },
         {
@@ -784,19 +2101,6 @@
           ]
         },
         {
-          "uniprot_id": "P01375",
-          "gene_name": "TNF",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -5.461,
-            10.874,
-            -14.501
-          ]
-        },
-        {
           "uniprot_id": "P01116",
           "gene_name": "KRAS",
           "category": "pipeline_protein",
@@ -810,16 +2114,29 @@
           ]
         },
         {
-          "uniprot_id": "P01106",
-          "gene_name": "MYC",
+          "uniprot_id": "P01375",
+          "gene_name": "TNF",
           "category": "pipeline_protein",
           "score": 0.0,
           "is_liability": false,
           "is_herg": false,
           "pocket_center": [
-            3.528,
-            3.945,
-            -13.745
+            -5.461,
+            10.874,
+            -14.501
+          ]
+        },
+        {
+          "uniprot_id": "P02144",
+          "gene_name": "MB",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -0.454,
+            2.912,
+            0.409
           ]
         },
         {
@@ -849,19 +2166,6 @@
           ]
         },
         {
-          "uniprot_id": "P02748",
-          "gene_name": "C9",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -12.94,
-            -5.42,
-            6.28
-          ]
-        },
-        {
           "uniprot_id": "P02679",
           "gene_name": "FGG",
           "category": "pipeline_protein",
@@ -888,16 +2192,16 @@
           ]
         },
         {
-          "uniprot_id": "P02751",
-          "gene_name": "FN1",
+          "uniprot_id": "P02748",
+          "gene_name": "C9",
           "category": "pipeline_protein",
           "score": 0.0,
           "is_liability": false,
           "is_herg": false,
           "pocket_center": [
-            -44.03,
-            11.01,
-            -31.95
+            -12.94,
+            -5.42,
+            6.28
           ]
         },
         {
@@ -912,6 +2216,19 @@
             -4.32,
             16.7
           ]
+        },
+        {
+          "uniprot_id": "P02751",
+          "gene_name": "FN1",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -44.03,
+            11.01,
+            -31.95
+          ]
         }
       ],
       "selectivity_index": 0.0,
@@ -921,1806 +2238,489 @@
       "herg_score": 0.0,
       "herg_safe": true,
       "si_grade": "poor",
-      "qed": 0.652,
-      "mw": 426.5,
+      "qed": 0.753,
+      "mw": 447.6,
+      "logp": 3.24
+    },
+    {
+      "smiles": "CCOC1CCC(C2NCCNC2C2CCCCC2)C(c2ccccc2)(c2cc[nH]n2)N1",
+      "on_target_score": -7.456,
+      "on_target_le": 0.233,
+      "off_target_scores": {
+        "P03372": 0.0,
+        "P10275": 0.0,
+        "P15056": 0.0,
+        "P00519": 0.0,
+        "P00533": 0.0,
+        "Q14524": 0.0,
+        "O15151": 0.0,
+        "P00367": 0.0,
+        "P00387": 0.0,
+        "P02768": 0.0,
+        "P00352": 0.0,
+        "P00441": 0.0,
+        "P00748": 0.0,
+        "P00488": 0.0,
+        "P00742": 0.0,
+        "P00749": 0.0,
+        "P00734": 0.0,
+        "P00918": 0.0,
+        "P01100": 0.0,
+        "P01375": 0.0,
+        "P01106": 0.0,
+        "P01116": 0.0,
+        "P01031": 0.0,
+        "P02144": 0.0,
+        "P02511": 0.0,
+        "P02679": 0.0,
+        "P02748": 0.0,
+        "P02452": 0.0,
+        "P02787": 0.0,
+        "P02751": 0.0
+      },
+      "off_target_hits": [
+        {
+          "uniprot_id": "P03372",
+          "gene_name": "ESR1",
+          "category": "nuclear_receptor",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            2.166,
+            -7.899,
+            12.534
+          ]
+        },
+        {
+          "uniprot_id": "P10275",
+          "gene_name": "AR",
+          "category": "nuclear_receptor",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -15.691,
+            8.184,
+            9.43
+          ]
+        },
+        {
+          "uniprot_id": "P15056",
+          "gene_name": "BRAF",
+          "category": "kinase",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -7.191,
+            12.716,
+            -1.531
+          ]
+        },
+        {
+          "uniprot_id": "P00519",
+          "gene_name": "ABL1",
+          "category": "kinase",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -7.585,
+            -1.819,
+            3.241
+          ]
+        },
+        {
+          "uniprot_id": "P00533",
+          "gene_name": "EGFR",
+          "category": "kinase",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -14.03,
+            -14.85,
+            12.67
+          ]
+        },
+        {
+          "uniprot_id": "Q14524",
+          "gene_name": "SCN5A",
+          "category": "cardiac_Na_channel",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -8.34,
+            -7.817,
+            -7.209
+          ]
+        },
+        {
+          "uniprot_id": "O15151",
+          "gene_name": "MDM4",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            24.553,
+            0.009,
+            368.25
+          ]
+        },
+        {
+          "uniprot_id": "P00367",
+          "gene_name": "GLUD1",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -8.54,
+            3.76,
+            11.25
+          ]
+        },
+        {
+          "uniprot_id": "P00387",
+          "gene_name": "CYB5R3",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -6.918,
+            -0.868,
+            5.401
+          ]
+        },
+        {
+          "uniprot_id": "P02768",
+          "gene_name": "ALB",
+          "category": "plasma_binding",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -6.958,
+            3.398,
+            -0.637
+          ]
+        },
+        {
+          "uniprot_id": "P00352",
+          "gene_name": "ALDH1A1",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -5.105,
+            2.277,
+            -4.988
+          ]
+        },
+        {
+          "uniprot_id": "P00441",
+          "gene_name": "SOD1",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -8.65,
+            -1.15,
+            -5.21
+          ]
+        },
+        {
+          "uniprot_id": "P00748",
+          "gene_name": "F12",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            12.57,
+            0.71,
+            26.48
+          ]
+        },
+        {
+          "uniprot_id": "P00488",
+          "gene_name": "F13A1",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -0.289,
+            3.914,
+            -1.382
+          ]
+        },
+        {
+          "uniprot_id": "P00742",
+          "gene_name": "F10",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            5.12,
+            -0.89,
+            -5.09
+          ]
+        },
+        {
+          "uniprot_id": "P00749",
+          "gene_name": "PLAU",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -2.72,
+            8.1,
+            -5.55
+          ]
+        },
+        {
+          "uniprot_id": "P00734",
+          "gene_name": "F2",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -7.17,
+            -2.87,
+            5.41
+          ]
+        },
+        {
+          "uniprot_id": "P00918",
+          "gene_name": "CA2",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -0.47,
+            8.0,
+            -2.36
+          ]
+        },
+        {
+          "uniprot_id": "P01100",
+          "gene_name": "FOS",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            0.43,
+            24.312,
+            6.151
+          ]
+        },
+        {
+          "uniprot_id": "P01375",
+          "gene_name": "TNF",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -5.461,
+            10.874,
+            -14.501
+          ]
+        },
+        {
+          "uniprot_id": "P01106",
+          "gene_name": "MYC",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            3.528,
+            3.945,
+            -13.745
+          ]
+        },
+        {
+          "uniprot_id": "P01116",
+          "gene_name": "KRAS",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            0.18,
+            1.68,
+            -0.74
+          ]
+        },
+        {
+          "uniprot_id": "P01031",
+          "gene_name": "C5",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -38.75,
+            6.92,
+            0.42
+          ]
+        },
+        {
+          "uniprot_id": "P02144",
+          "gene_name": "MB",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -0.454,
+            2.912,
+            0.409
+          ]
+        },
+        {
+          "uniprot_id": "P02511",
+          "gene_name": "CRYAB",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -13.952,
+            -3.728,
+            4.631
+          ]
+        },
+        {
+          "uniprot_id": "P02679",
+          "gene_name": "FGG",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            1.03,
+            8.9,
+            -20.45
+          ]
+        },
+        {
+          "uniprot_id": "P02748",
+          "gene_name": "C9",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -12.94,
+            -5.42,
+            6.28
+          ]
+        },
+        {
+          "uniprot_id": "P02452",
+          "gene_name": "COL1A1",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -2.821,
+            -11.697,
+            -11.408
+          ]
+        },
+        {
+          "uniprot_id": "P02787",
+          "gene_name": "TF",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -17.43,
+            -4.32,
+            16.7
+          ]
+        },
+        {
+          "uniprot_id": "P02751",
+          "gene_name": "FN1",
+          "category": "pipeline_protein",
+          "score": 0.0,
+          "is_liability": false,
+          "is_herg": false,
+          "pocket_center": [
+            -44.03,
+            11.01,
+            -31.95
+          ]
+        }
+      ],
+      "selectivity_index": 0.0,
+      "worst_off_target": "ESR1",
+      "worst_off_score": 0.0,
+      "n_liabilities": 0,
+      "herg_score": 0.0,
+      "herg_safe": true,
+      "si_grade": "poor",
+      "qed": 0.556,
+      "mw": 437.6,
       "logp": 3.53
-    },
-    {
-      "smiles": "O=C1CN=C(c2ccccc2-c2cnccn2)c2cc(C3NCCCC3Cl)ccc21",
-      "on_target_score": -7.68,
-      "on_target_le": 0.256,
-      "off_target_scores": {
-        "P03372": 0.0,
-        "P15056": 0.0,
-        "P10275": 0.0,
-        "P00519": 0.0,
-        "P00533": 0.0,
-        "Q14524": 0.0,
-        "O15151": 0.0,
-        "P02768": 0.0,
-        "P00352": 0.0,
-        "P00387": 0.0,
-        "P00367": 0.0,
-        "P00441": 0.0,
-        "P00488": 0.0,
-        "P00742": 0.0,
-        "P00748": 0.0,
-        "P00749": 0.0,
-        "P00734": 0.0,
-        "P00918": 0.0,
-        "P01100": 0.0,
-        "P01116": 0.0,
-        "P01375": 0.0,
-        "P01106": 0.0,
-        "P02144": 0.0,
-        "P01031": 0.0,
-        "P02511": 0.0,
-        "P02679": 0.0,
-        "P02748": 0.0,
-        "P02452": 0.0,
-        "P02787": 0.0,
-        "P02751": 0.0
-      },
-      "off_target_hits": [
-        {
-          "uniprot_id": "P03372",
-          "gene_name": "ESR1",
-          "category": "nuclear_receptor",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            2.166,
-            -7.899,
-            12.534
-          ]
-        },
-        {
-          "uniprot_id": "P15056",
-          "gene_name": "BRAF",
-          "category": "kinase",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -7.191,
-            12.716,
-            -1.531
-          ]
-        },
-        {
-          "uniprot_id": "P10275",
-          "gene_name": "AR",
-          "category": "nuclear_receptor",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -15.691,
-            8.184,
-            9.43
-          ]
-        },
-        {
-          "uniprot_id": "P00519",
-          "gene_name": "ABL1",
-          "category": "kinase",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -7.585,
-            -1.819,
-            3.241
-          ]
-        },
-        {
-          "uniprot_id": "P00533",
-          "gene_name": "EGFR",
-          "category": "kinase",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -14.03,
-            -14.85,
-            12.67
-          ]
-        },
-        {
-          "uniprot_id": "Q14524",
-          "gene_name": "SCN5A",
-          "category": "cardiac_Na_channel",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -8.34,
-            -7.817,
-            -7.209
-          ]
-        },
-        {
-          "uniprot_id": "O15151",
-          "gene_name": "MDM4",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            24.553,
-            0.009,
-            368.25
-          ]
-        },
-        {
-          "uniprot_id": "P02768",
-          "gene_name": "ALB",
-          "category": "plasma_binding",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -6.958,
-            3.398,
-            -0.637
-          ]
-        },
-        {
-          "uniprot_id": "P00352",
-          "gene_name": "ALDH1A1",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -5.105,
-            2.277,
-            -4.988
-          ]
-        },
-        {
-          "uniprot_id": "P00387",
-          "gene_name": "CYB5R3",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -6.918,
-            -0.868,
-            5.401
-          ]
-        },
-        {
-          "uniprot_id": "P00367",
-          "gene_name": "GLUD1",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -8.54,
-            3.76,
-            11.25
-          ]
-        },
-        {
-          "uniprot_id": "P00441",
-          "gene_name": "SOD1",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -8.65,
-            -1.15,
-            -5.21
-          ]
-        },
-        {
-          "uniprot_id": "P00488",
-          "gene_name": "F13A1",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -0.289,
-            3.914,
-            -1.382
-          ]
-        },
-        {
-          "uniprot_id": "P00742",
-          "gene_name": "F10",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            5.12,
-            -0.89,
-            -5.09
-          ]
-        },
-        {
-          "uniprot_id": "P00748",
-          "gene_name": "F12",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            12.57,
-            0.71,
-            26.48
-          ]
-        },
-        {
-          "uniprot_id": "P00749",
-          "gene_name": "PLAU",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -2.72,
-            8.1,
-            -5.55
-          ]
-        },
-        {
-          "uniprot_id": "P00734",
-          "gene_name": "F2",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -7.17,
-            -2.87,
-            5.41
-          ]
-        },
-        {
-          "uniprot_id": "P00918",
-          "gene_name": "CA2",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -0.47,
-            8.0,
-            -2.36
-          ]
-        },
-        {
-          "uniprot_id": "P01100",
-          "gene_name": "FOS",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            0.43,
-            24.312,
-            6.151
-          ]
-        },
-        {
-          "uniprot_id": "P01116",
-          "gene_name": "KRAS",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            0.18,
-            1.68,
-            -0.74
-          ]
-        },
-        {
-          "uniprot_id": "P01375",
-          "gene_name": "TNF",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -5.461,
-            10.874,
-            -14.501
-          ]
-        },
-        {
-          "uniprot_id": "P01106",
-          "gene_name": "MYC",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            3.528,
-            3.945,
-            -13.745
-          ]
-        },
-        {
-          "uniprot_id": "P02144",
-          "gene_name": "MB",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -0.454,
-            2.912,
-            0.409
-          ]
-        },
-        {
-          "uniprot_id": "P01031",
-          "gene_name": "C5",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -38.75,
-            6.92,
-            0.42
-          ]
-        },
-        {
-          "uniprot_id": "P02511",
-          "gene_name": "CRYAB",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -13.952,
-            -3.728,
-            4.631
-          ]
-        },
-        {
-          "uniprot_id": "P02679",
-          "gene_name": "FGG",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            1.03,
-            8.9,
-            -20.45
-          ]
-        },
-        {
-          "uniprot_id": "P02748",
-          "gene_name": "C9",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -12.94,
-            -5.42,
-            6.28
-          ]
-        },
-        {
-          "uniprot_id": "P02452",
-          "gene_name": "COL1A1",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -2.821,
-            -11.697,
-            -11.408
-          ]
-        },
-        {
-          "uniprot_id": "P02787",
-          "gene_name": "TF",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -17.43,
-            -4.32,
-            16.7
-          ]
-        },
-        {
-          "uniprot_id": "P02751",
-          "gene_name": "FN1",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -44.03,
-            11.01,
-            -31.95
-          ]
-        }
-      ],
-      "selectivity_index": 0.0,
-      "worst_off_target": "ESR1",
-      "worst_off_score": 0.0,
-      "n_liabilities": 0,
-      "herg_score": 0.0,
-      "herg_safe": true,
-      "si_grade": "poor",
-      "qed": 0.649,
-      "mw": 416.9,
-      "logp": 4.21
-    },
-    {
-      "smiles": "O=C1CN=C(c2ccccc2-c2cnccn2)c2cc(C3CCCC(F)N3)ccc21",
-      "on_target_score": -7.024,
-      "on_target_le": 0.2341,
-      "off_target_scores": {
-        "P03372": 0.0,
-        "P10275": 0.0,
-        "P15056": 0.0,
-        "P00519": 0.0,
-        "P00533": 0.0,
-        "Q14524": 0.0,
-        "O15151": 0.0,
-        "P02768": 0.0,
-        "P00352": 0.0,
-        "P00367": 0.0,
-        "P00387": 0.0,
-        "P00441": 0.0,
-        "P00488": 0.0,
-        "P00734": 0.0,
-        "P00742": 0.0,
-        "P00749": 0.0,
-        "P00748": 0.0,
-        "P00918": 0.0,
-        "P01100": 0.0,
-        "P01116": 0.0,
-        "P01106": 0.0,
-        "P01375": 0.0,
-        "P02144": 0.0,
-        "P01031": 0.0,
-        "P02511": 0.0,
-        "P02679": 0.0,
-        "P02748": 0.0,
-        "P02452": 0.0,
-        "P02787": 0.0,
-        "P02751": 0.0
-      },
-      "off_target_hits": [
-        {
-          "uniprot_id": "P03372",
-          "gene_name": "ESR1",
-          "category": "nuclear_receptor",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            2.166,
-            -7.899,
-            12.534
-          ]
-        },
-        {
-          "uniprot_id": "P10275",
-          "gene_name": "AR",
-          "category": "nuclear_receptor",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -15.691,
-            8.184,
-            9.43
-          ]
-        },
-        {
-          "uniprot_id": "P15056",
-          "gene_name": "BRAF",
-          "category": "kinase",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -7.191,
-            12.716,
-            -1.531
-          ]
-        },
-        {
-          "uniprot_id": "P00519",
-          "gene_name": "ABL1",
-          "category": "kinase",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -7.585,
-            -1.819,
-            3.241
-          ]
-        },
-        {
-          "uniprot_id": "P00533",
-          "gene_name": "EGFR",
-          "category": "kinase",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -14.03,
-            -14.85,
-            12.67
-          ]
-        },
-        {
-          "uniprot_id": "Q14524",
-          "gene_name": "SCN5A",
-          "category": "cardiac_Na_channel",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -8.34,
-            -7.817,
-            -7.209
-          ]
-        },
-        {
-          "uniprot_id": "O15151",
-          "gene_name": "MDM4",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            24.553,
-            0.009,
-            368.25
-          ]
-        },
-        {
-          "uniprot_id": "P02768",
-          "gene_name": "ALB",
-          "category": "plasma_binding",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -6.958,
-            3.398,
-            -0.637
-          ]
-        },
-        {
-          "uniprot_id": "P00352",
-          "gene_name": "ALDH1A1",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -5.105,
-            2.277,
-            -4.988
-          ]
-        },
-        {
-          "uniprot_id": "P00367",
-          "gene_name": "GLUD1",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -8.54,
-            3.76,
-            11.25
-          ]
-        },
-        {
-          "uniprot_id": "P00387",
-          "gene_name": "CYB5R3",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -6.918,
-            -0.868,
-            5.401
-          ]
-        },
-        {
-          "uniprot_id": "P00441",
-          "gene_name": "SOD1",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -8.65,
-            -1.15,
-            -5.21
-          ]
-        },
-        {
-          "uniprot_id": "P00488",
-          "gene_name": "F13A1",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -0.289,
-            3.914,
-            -1.382
-          ]
-        },
-        {
-          "uniprot_id": "P00734",
-          "gene_name": "F2",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -7.17,
-            -2.87,
-            5.41
-          ]
-        },
-        {
-          "uniprot_id": "P00742",
-          "gene_name": "F10",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            5.12,
-            -0.89,
-            -5.09
-          ]
-        },
-        {
-          "uniprot_id": "P00749",
-          "gene_name": "PLAU",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -2.72,
-            8.1,
-            -5.55
-          ]
-        },
-        {
-          "uniprot_id": "P00748",
-          "gene_name": "F12",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            12.57,
-            0.71,
-            26.48
-          ]
-        },
-        {
-          "uniprot_id": "P00918",
-          "gene_name": "CA2",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -0.47,
-            8.0,
-            -2.36
-          ]
-        },
-        {
-          "uniprot_id": "P01100",
-          "gene_name": "FOS",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            0.43,
-            24.312,
-            6.151
-          ]
-        },
-        {
-          "uniprot_id": "P01116",
-          "gene_name": "KRAS",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            0.18,
-            1.68,
-            -0.74
-          ]
-        },
-        {
-          "uniprot_id": "P01106",
-          "gene_name": "MYC",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            3.528,
-            3.945,
-            -13.745
-          ]
-        },
-        {
-          "uniprot_id": "P01375",
-          "gene_name": "TNF",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -5.461,
-            10.874,
-            -14.501
-          ]
-        },
-        {
-          "uniprot_id": "P02144",
-          "gene_name": "MB",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -0.454,
-            2.912,
-            0.409
-          ]
-        },
-        {
-          "uniprot_id": "P01031",
-          "gene_name": "C5",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -38.75,
-            6.92,
-            0.42
-          ]
-        },
-        {
-          "uniprot_id": "P02511",
-          "gene_name": "CRYAB",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -13.952,
-            -3.728,
-            4.631
-          ]
-        },
-        {
-          "uniprot_id": "P02679",
-          "gene_name": "FGG",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            1.03,
-            8.9,
-            -20.45
-          ]
-        },
-        {
-          "uniprot_id": "P02748",
-          "gene_name": "C9",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -12.94,
-            -5.42,
-            6.28
-          ]
-        },
-        {
-          "uniprot_id": "P02452",
-          "gene_name": "COL1A1",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -2.821,
-            -11.697,
-            -11.408
-          ]
-        },
-        {
-          "uniprot_id": "P02787",
-          "gene_name": "TF",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -17.43,
-            -4.32,
-            16.7
-          ]
-        },
-        {
-          "uniprot_id": "P02751",
-          "gene_name": "FN1",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -44.03,
-            11.01,
-            -31.95
-          ]
-        }
-      ],
-      "selectivity_index": 0.0,
-      "worst_off_target": "ESR1",
-      "worst_off_score": 0.0,
-      "n_liabilities": 0,
-      "herg_score": 0.0,
-      "herg_safe": true,
-      "si_grade": "poor",
-      "qed": 0.666,
-      "mw": 400.5,
-      "logp": 4.29
-    },
-    {
-      "smiles": "N#Cc1cnc(-c2ccccc2C2=NCC(=O)c3ccc(C4NCCCC4CO)cc32)cn1",
-      "on_target_score": -7.577,
-      "on_target_le": 0.2296,
-      "off_target_scores": {
-        "P03372": 0.0,
-        "P10275": 0.0,
-        "P15056": 0.0,
-        "P00519": 0.0,
-        "P00533": 0.0,
-        "Q14524": 0.0,
-        "O15151": 0.0,
-        "P02768": 0.0,
-        "P00352": 0.0,
-        "P00387": 0.0,
-        "P00367": 0.0,
-        "P00441": 0.0,
-        "P00488": 0.0,
-        "P00742": 0.0,
-        "P00734": 0.0,
-        "P00748": 0.0,
-        "P00749": 0.0,
-        "P00918": 0.0,
-        "P01100": 0.0,
-        "P01116": 0.0,
-        "P01375": 0.0,
-        "P01106": 0.0,
-        "P02144": 0.0,
-        "P01031": 0.0,
-        "P02511": 0.0,
-        "P02679": 0.0,
-        "P02748": 0.0,
-        "P02452": 0.0,
-        "P02787": 0.0,
-        "P02751": 0.0
-      },
-      "off_target_hits": [
-        {
-          "uniprot_id": "P03372",
-          "gene_name": "ESR1",
-          "category": "nuclear_receptor",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            2.166,
-            -7.899,
-            12.534
-          ]
-        },
-        {
-          "uniprot_id": "P10275",
-          "gene_name": "AR",
-          "category": "nuclear_receptor",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -15.691,
-            8.184,
-            9.43
-          ]
-        },
-        {
-          "uniprot_id": "P15056",
-          "gene_name": "BRAF",
-          "category": "kinase",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -7.191,
-            12.716,
-            -1.531
-          ]
-        },
-        {
-          "uniprot_id": "P00519",
-          "gene_name": "ABL1",
-          "category": "kinase",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -7.585,
-            -1.819,
-            3.241
-          ]
-        },
-        {
-          "uniprot_id": "P00533",
-          "gene_name": "EGFR",
-          "category": "kinase",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -14.03,
-            -14.85,
-            12.67
-          ]
-        },
-        {
-          "uniprot_id": "Q14524",
-          "gene_name": "SCN5A",
-          "category": "cardiac_Na_channel",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -8.34,
-            -7.817,
-            -7.209
-          ]
-        },
-        {
-          "uniprot_id": "O15151",
-          "gene_name": "MDM4",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            24.553,
-            0.009,
-            368.25
-          ]
-        },
-        {
-          "uniprot_id": "P02768",
-          "gene_name": "ALB",
-          "category": "plasma_binding",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -6.958,
-            3.398,
-            -0.637
-          ]
-        },
-        {
-          "uniprot_id": "P00352",
-          "gene_name": "ALDH1A1",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -5.105,
-            2.277,
-            -4.988
-          ]
-        },
-        {
-          "uniprot_id": "P00387",
-          "gene_name": "CYB5R3",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -6.918,
-            -0.868,
-            5.401
-          ]
-        },
-        {
-          "uniprot_id": "P00367",
-          "gene_name": "GLUD1",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -8.54,
-            3.76,
-            11.25
-          ]
-        },
-        {
-          "uniprot_id": "P00441",
-          "gene_name": "SOD1",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -8.65,
-            -1.15,
-            -5.21
-          ]
-        },
-        {
-          "uniprot_id": "P00488",
-          "gene_name": "F13A1",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -0.289,
-            3.914,
-            -1.382
-          ]
-        },
-        {
-          "uniprot_id": "P00742",
-          "gene_name": "F10",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            5.12,
-            -0.89,
-            -5.09
-          ]
-        },
-        {
-          "uniprot_id": "P00734",
-          "gene_name": "F2",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -7.17,
-            -2.87,
-            5.41
-          ]
-        },
-        {
-          "uniprot_id": "P00748",
-          "gene_name": "F12",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            12.57,
-            0.71,
-            26.48
-          ]
-        },
-        {
-          "uniprot_id": "P00749",
-          "gene_name": "PLAU",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -2.72,
-            8.1,
-            -5.55
-          ]
-        },
-        {
-          "uniprot_id": "P00918",
-          "gene_name": "CA2",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -0.47,
-            8.0,
-            -2.36
-          ]
-        },
-        {
-          "uniprot_id": "P01100",
-          "gene_name": "FOS",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            0.43,
-            24.312,
-            6.151
-          ]
-        },
-        {
-          "uniprot_id": "P01116",
-          "gene_name": "KRAS",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            0.18,
-            1.68,
-            -0.74
-          ]
-        },
-        {
-          "uniprot_id": "P01375",
-          "gene_name": "TNF",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -5.461,
-            10.874,
-            -14.501
-          ]
-        },
-        {
-          "uniprot_id": "P01106",
-          "gene_name": "MYC",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            3.528,
-            3.945,
-            -13.745
-          ]
-        },
-        {
-          "uniprot_id": "P02144",
-          "gene_name": "MB",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -0.454,
-            2.912,
-            0.409
-          ]
-        },
-        {
-          "uniprot_id": "P01031",
-          "gene_name": "C5",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -38.75,
-            6.92,
-            0.42
-          ]
-        },
-        {
-          "uniprot_id": "P02511",
-          "gene_name": "CRYAB",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -13.952,
-            -3.728,
-            4.631
-          ]
-        },
-        {
-          "uniprot_id": "P02679",
-          "gene_name": "FGG",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            1.03,
-            8.9,
-            -20.45
-          ]
-        },
-        {
-          "uniprot_id": "P02748",
-          "gene_name": "C9",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -12.94,
-            -5.42,
-            6.28
-          ]
-        },
-        {
-          "uniprot_id": "P02452",
-          "gene_name": "COL1A1",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -2.821,
-            -11.697,
-            -11.408
-          ]
-        },
-        {
-          "uniprot_id": "P02787",
-          "gene_name": "TF",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -17.43,
-            -4.32,
-            16.7
-          ]
-        },
-        {
-          "uniprot_id": "P02751",
-          "gene_name": "FN1",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -44.03,
-            11.01,
-            -31.95
-          ]
-        }
-      ],
-      "selectivity_index": 0.0,
-      "worst_off_target": "ESR1",
-      "worst_off_score": 0.0,
-      "n_liabilities": 0,
-      "herg_score": 0.0,
-      "herg_safe": true,
-      "si_grade": "poor",
-      "qed": 0.649,
-      "mw": 437.5,
-      "logp": 3.08
-    },
-    {
-      "smiles": "O=C1c2cc(CCO)c(C3CCCCN3)cc2C(c2ccccc2-c2cnccn2)=NC1F",
-      "on_target_score": -7.363,
-      "on_target_le": 0.2231,
-      "off_target_scores": {
-        "P03372": 0.0,
-        "P10275": 0.0,
-        "P15056": 0.0,
-        "P00519": 0.0,
-        "P00533": 0.0,
-        "Q14524": 0.0,
-        "O15151": 0.0,
-        "P02768": 0.0,
-        "P00387": 0.0,
-        "P00352": 0.0,
-        "P00367": 0.0,
-        "P00441": 0.0,
-        "P00742": 0.0,
-        "P00488": 0.0,
-        "P00734": 0.0,
-        "P00749": 0.0,
-        "P00748": 0.0,
-        "P00918": 0.0,
-        "P01100": 0.0,
-        "P01106": 0.0,
-        "P01116": 0.0,
-        "P01375": 0.0,
-        "P02144": 0.0,
-        "P01031": 0.0,
-        "P02511": 0.0,
-        "P02679": 0.0,
-        "P02452": 0.0,
-        "P02748": 0.0,
-        "P02787": 0.0,
-        "P02751": 0.0
-      },
-      "off_target_hits": [
-        {
-          "uniprot_id": "P03372",
-          "gene_name": "ESR1",
-          "category": "nuclear_receptor",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            2.166,
-            -7.899,
-            12.534
-          ]
-        },
-        {
-          "uniprot_id": "P10275",
-          "gene_name": "AR",
-          "category": "nuclear_receptor",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -15.691,
-            8.184,
-            9.43
-          ]
-        },
-        {
-          "uniprot_id": "P15056",
-          "gene_name": "BRAF",
-          "category": "kinase",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -7.191,
-            12.716,
-            -1.531
-          ]
-        },
-        {
-          "uniprot_id": "P00519",
-          "gene_name": "ABL1",
-          "category": "kinase",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -7.585,
-            -1.819,
-            3.241
-          ]
-        },
-        {
-          "uniprot_id": "P00533",
-          "gene_name": "EGFR",
-          "category": "kinase",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -14.03,
-            -14.85,
-            12.67
-          ]
-        },
-        {
-          "uniprot_id": "Q14524",
-          "gene_name": "SCN5A",
-          "category": "cardiac_Na_channel",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -8.34,
-            -7.817,
-            -7.209
-          ]
-        },
-        {
-          "uniprot_id": "O15151",
-          "gene_name": "MDM4",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            24.553,
-            0.009,
-            368.25
-          ]
-        },
-        {
-          "uniprot_id": "P02768",
-          "gene_name": "ALB",
-          "category": "plasma_binding",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -6.958,
-            3.398,
-            -0.637
-          ]
-        },
-        {
-          "uniprot_id": "P00387",
-          "gene_name": "CYB5R3",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -6.918,
-            -0.868,
-            5.401
-          ]
-        },
-        {
-          "uniprot_id": "P00352",
-          "gene_name": "ALDH1A1",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -5.105,
-            2.277,
-            -4.988
-          ]
-        },
-        {
-          "uniprot_id": "P00367",
-          "gene_name": "GLUD1",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -8.54,
-            3.76,
-            11.25
-          ]
-        },
-        {
-          "uniprot_id": "P00441",
-          "gene_name": "SOD1",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -8.65,
-            -1.15,
-            -5.21
-          ]
-        },
-        {
-          "uniprot_id": "P00742",
-          "gene_name": "F10",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            5.12,
-            -0.89,
-            -5.09
-          ]
-        },
-        {
-          "uniprot_id": "P00488",
-          "gene_name": "F13A1",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -0.289,
-            3.914,
-            -1.382
-          ]
-        },
-        {
-          "uniprot_id": "P00734",
-          "gene_name": "F2",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -7.17,
-            -2.87,
-            5.41
-          ]
-        },
-        {
-          "uniprot_id": "P00749",
-          "gene_name": "PLAU",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -2.72,
-            8.1,
-            -5.55
-          ]
-        },
-        {
-          "uniprot_id": "P00748",
-          "gene_name": "F12",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            12.57,
-            0.71,
-            26.48
-          ]
-        },
-        {
-          "uniprot_id": "P00918",
-          "gene_name": "CA2",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -0.47,
-            8.0,
-            -2.36
-          ]
-        },
-        {
-          "uniprot_id": "P01100",
-          "gene_name": "FOS",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            0.43,
-            24.312,
-            6.151
-          ]
-        },
-        {
-          "uniprot_id": "P01106",
-          "gene_name": "MYC",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            3.528,
-            3.945,
-            -13.745
-          ]
-        },
-        {
-          "uniprot_id": "P01116",
-          "gene_name": "KRAS",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            0.18,
-            1.68,
-            -0.74
-          ]
-        },
-        {
-          "uniprot_id": "P01375",
-          "gene_name": "TNF",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -5.461,
-            10.874,
-            -14.501
-          ]
-        },
-        {
-          "uniprot_id": "P02144",
-          "gene_name": "MB",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -0.454,
-            2.912,
-            0.409
-          ]
-        },
-        {
-          "uniprot_id": "P01031",
-          "gene_name": "C5",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -38.75,
-            6.92,
-            0.42
-          ]
-        },
-        {
-          "uniprot_id": "P02511",
-          "gene_name": "CRYAB",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -13.952,
-            -3.728,
-            4.631
-          ]
-        },
-        {
-          "uniprot_id": "P02679",
-          "gene_name": "FGG",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            1.03,
-            8.9,
-            -20.45
-          ]
-        },
-        {
-          "uniprot_id": "P02452",
-          "gene_name": "COL1A1",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -2.821,
-            -11.697,
-            -11.408
-          ]
-        },
-        {
-          "uniprot_id": "P02748",
-          "gene_name": "C9",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -12.94,
-            -5.42,
-            6.28
-          ]
-        },
-        {
-          "uniprot_id": "P02787",
-          "gene_name": "TF",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -17.43,
-            -4.32,
-            16.7
-          ]
-        },
-        {
-          "uniprot_id": "P02751",
-          "gene_name": "FN1",
-          "category": "pipeline_protein",
-          "score": 0.0,
-          "is_liability": false,
-          "is_herg": false,
-          "pocket_center": [
-            -44.03,
-            11.01,
-            -31.95
-          ]
-        }
-      ],
-      "selectivity_index": 0.0,
-      "worst_off_target": "ESR1",
-      "worst_off_score": 0.0,
-      "n_liabilities": 0,
-      "herg_score": 0.0,
-      "herg_safe": true,
-      "si_grade": "poor",
-      "qed": 0.584,
-      "mw": 444.5,
-      "logp": 3.82
     }
   ],
   "refined_molecules": [
     {
-      "original_smiles": "O=C1CN=C(c2ccccc2-c2cnccn2)c2cc(C3CCCCN3)c(CCO)cc21",
-      "optimized_smiles": "O=C1CN=C(c2ccccc2-c2cnccn2)c2cc(C3CCCCN3)c(CCO)cc21",
+      "original_smiles": "c1ccc(C2(c3cc[nH]n3)NCCCC2C2NCCNC2C2CCCCC2)cc1",
+      "optimized_smiles": "c1ccc(C2(c3cc[nH]n3)NCCCC2C2NCCNC2C2CCCCC2)cc1",
       "original_profile": {
-        "smiles": "O=C1CN=C(c2ccccc2-c2cnccn2)c2cc(C3CCCCN3)c(CCO)cc21",
-        "on_target_score": -8.01,
-        "on_target_le": 0.2503,
+        "smiles": "c1ccc(C2(c3cc[nH]n3)NCCCC2C2NCCNC2C2CCCCC2)cc1",
+        "on_target_score": -8.401,
+        "on_target_le": 0.2897,
         "off_target_scores": {
           "P03372": 0.0,
-          "P15056": 0.0,
           "P10275": 0.0,
           "P00519": 0.0,
+          "P15056": 0.0,
           "P00533": 0.0,
           "Q14524": 0.0,
           "O15151": 0.0,
           "P02768": 0.0,
-          "P00387": 0.0,
           "P00352": 0.0,
           "P00367": 0.0,
+          "P00387": 0.0,
           "P00441": 0.0,
-          "P00742": 0.0,
           "P00734": 0.0,
+          "P00742": 0.0,
           "P00488": 0.0,
           "P00749": 0.0,
           "P00748": 0.0,
           "P00918": 0.0,
-          "P02144": 0.0,
           "P01100": 0.0,
+          "P01106": 0.0,
+          "P02144": 0.0,
           "P01375": 0.0,
           "P01116": 0.0,
-          "P01106": 0.0,
           "P01031": 0.0,
           "P02511": 0.0,
-          "P02748": 0.0,
           "P02679": 0.0,
           "P02452": 0.0,
-          "P02751": 0.0,
-          "P02787": 0.0
+          "P02748": 0.0,
+          "P02787": 0.0,
+          "P02751": 0.0
         },
         "off_target_hits": [
           {
@@ -2734,19 +2734,6 @@
               2.166,
               -7.899,
               12.534
-            ]
-          },
-          {
-            "uniprot_id": "P15056",
-            "gene_name": "BRAF",
-            "category": "kinase",
-            "score": 0.0,
-            "is_liability": false,
-            "is_herg": false,
-            "pocket_center": [
-              -7.191,
-              12.716,
-              -1.531
             ]
           },
           {
@@ -2773,6 +2760,19 @@
               -7.585,
               -1.819,
               3.241
+            ]
+          },
+          {
+            "uniprot_id": "P15056",
+            "gene_name": "BRAF",
+            "category": "kinase",
+            "score": 0.0,
+            "is_liability": false,
+            "is_herg": false,
+            "pocket_center": [
+              -7.191,
+              12.716,
+              -1.531
             ]
           },
           {
@@ -2828,19 +2828,6 @@
             ]
           },
           {
-            "uniprot_id": "P00387",
-            "gene_name": "CYB5R3",
-            "category": "pipeline_protein",
-            "score": 0.0,
-            "is_liability": false,
-            "is_herg": false,
-            "pocket_center": [
-              -6.918,
-              -0.868,
-              5.401
-            ]
-          },
-          {
             "uniprot_id": "P00352",
             "gene_name": "ALDH1A1",
             "category": "pipeline_protein",
@@ -2867,6 +2854,19 @@
             ]
           },
           {
+            "uniprot_id": "P00387",
+            "gene_name": "CYB5R3",
+            "category": "pipeline_protein",
+            "score": 0.0,
+            "is_liability": false,
+            "is_herg": false,
+            "pocket_center": [
+              -6.918,
+              -0.868,
+              5.401
+            ]
+          },
+          {
             "uniprot_id": "P00441",
             "gene_name": "SOD1",
             "category": "pipeline_protein",
@@ -2880,19 +2880,6 @@
             ]
           },
           {
-            "uniprot_id": "P00742",
-            "gene_name": "F10",
-            "category": "pipeline_protein",
-            "score": 0.0,
-            "is_liability": false,
-            "is_herg": false,
-            "pocket_center": [
-              5.12,
-              -0.89,
-              -5.09
-            ]
-          },
-          {
             "uniprot_id": "P00734",
             "gene_name": "F2",
             "category": "pipeline_protein",
@@ -2903,6 +2890,19 @@
               -7.17,
               -2.87,
               5.41
+            ]
+          },
+          {
+            "uniprot_id": "P00742",
+            "gene_name": "F10",
+            "category": "pipeline_protein",
+            "score": 0.0,
+            "is_liability": false,
+            "is_herg": false,
+            "pocket_center": [
+              5.12,
+              -0.89,
+              -5.09
             ]
           },
           {
@@ -2958,19 +2958,6 @@
             ]
           },
           {
-            "uniprot_id": "P02144",
-            "gene_name": "MB",
-            "category": "pipeline_protein",
-            "score": 0.0,
-            "is_liability": false,
-            "is_herg": false,
-            "pocket_center": [
-              -0.454,
-              2.912,
-              0.409
-            ]
-          },
-          {
             "uniprot_id": "P01100",
             "gene_name": "FOS",
             "category": "pipeline_protein",
@@ -2981,6 +2968,32 @@
               0.43,
               24.312,
               6.151
+            ]
+          },
+          {
+            "uniprot_id": "P01106",
+            "gene_name": "MYC",
+            "category": "pipeline_protein",
+            "score": 0.0,
+            "is_liability": false,
+            "is_herg": false,
+            "pocket_center": [
+              3.528,
+              3.945,
+              -13.745
+            ]
+          },
+          {
+            "uniprot_id": "P02144",
+            "gene_name": "MB",
+            "category": "pipeline_protein",
+            "score": 0.0,
+            "is_liability": false,
+            "is_herg": false,
+            "pocket_center": [
+              -0.454,
+              2.912,
+              0.409
             ]
           },
           {
@@ -3010,19 +3023,6 @@
             ]
           },
           {
-            "uniprot_id": "P01106",
-            "gene_name": "MYC",
-            "category": "pipeline_protein",
-            "score": 0.0,
-            "is_liability": false,
-            "is_herg": false,
-            "pocket_center": [
-              3.528,
-              3.945,
-              -13.745
-            ]
-          },
-          {
             "uniprot_id": "P01031",
             "gene_name": "C5",
             "category": "pipeline_protein",
@@ -3046,19 +3046,6 @@
               -13.952,
               -3.728,
               4.631
-            ]
-          },
-          {
-            "uniprot_id": "P02748",
-            "gene_name": "C9",
-            "category": "pipeline_protein",
-            "score": 0.0,
-            "is_liability": false,
-            "is_herg": false,
-            "pocket_center": [
-              -12.94,
-              -5.42,
-              6.28
             ]
           },
           {
@@ -3088,16 +3075,16 @@
             ]
           },
           {
-            "uniprot_id": "P02751",
-            "gene_name": "FN1",
+            "uniprot_id": "P02748",
+            "gene_name": "C9",
             "category": "pipeline_protein",
             "score": 0.0,
             "is_liability": false,
             "is_herg": false,
             "pocket_center": [
-              -44.03,
-              11.01,
-              -31.95
+              -12.94,
+              -5.42,
+              6.28
             ]
           },
           {
@@ -3112,6 +3099,19 @@
               -4.32,
               16.7
             ]
+          },
+          {
+            "uniprot_id": "P02751",
+            "gene_name": "FN1",
+            "category": "pipeline_protein",
+            "score": 0.0,
+            "is_liability": false,
+            "is_herg": false,
+            "pocket_center": [
+              -44.03,
+              11.01,
+              -31.95
+            ]
           }
         ],
         "selectivity_index": 0.0,
@@ -3121,45 +3121,45 @@
         "herg_score": 0.0,
         "herg_safe": true,
         "si_grade": "poor",
-        "qed": 0.652,
-        "mw": 426.5,
-        "logp": 3.53
+        "qed": 0.644,
+        "mw": 393.6,
+        "logp": 3.16
       },
       "optimized_profile": {
-        "smiles": "O=C1CN=C(c2ccccc2-c2cnccn2)c2cc(C3CCCCN3)c(CCO)cc21",
-        "on_target_score": -8.01,
-        "on_target_le": 0.2503,
+        "smiles": "c1ccc(C2(c3cc[nH]n3)NCCCC2C2NCCNC2C2CCCCC2)cc1",
+        "on_target_score": -8.401,
+        "on_target_le": 0.2897,
         "off_target_scores": {
           "P03372": 0.0,
-          "P15056": 0.0,
           "P10275": 0.0,
           "P00519": 0.0,
+          "P15056": 0.0,
           "P00533": 0.0,
           "Q14524": 0.0,
           "O15151": 0.0,
           "P02768": 0.0,
-          "P00387": 0.0,
           "P00352": 0.0,
           "P00367": 0.0,
+          "P00387": 0.0,
           "P00441": 0.0,
-          "P00742": 0.0,
           "P00734": 0.0,
+          "P00742": 0.0,
           "P00488": 0.0,
           "P00749": 0.0,
           "P00748": 0.0,
           "P00918": 0.0,
-          "P02144": 0.0,
           "P01100": 0.0,
+          "P01106": 0.0,
+          "P02144": 0.0,
           "P01375": 0.0,
           "P01116": 0.0,
-          "P01106": 0.0,
           "P01031": 0.0,
           "P02511": 0.0,
-          "P02748": 0.0,
           "P02679": 0.0,
           "P02452": 0.0,
-          "P02751": 0.0,
-          "P02787": 0.0
+          "P02748": 0.0,
+          "P02787": 0.0,
+          "P02751": 0.0
         },
         "off_target_hits": [
           {
@@ -3173,19 +3173,6 @@
               2.166,
               -7.899,
               12.534
-            ]
-          },
-          {
-            "uniprot_id": "P15056",
-            "gene_name": "BRAF",
-            "category": "kinase",
-            "score": 0.0,
-            "is_liability": false,
-            "is_herg": false,
-            "pocket_center": [
-              -7.191,
-              12.716,
-              -1.531
             ]
           },
           {
@@ -3212,6 +3199,19 @@
               -7.585,
               -1.819,
               3.241
+            ]
+          },
+          {
+            "uniprot_id": "P15056",
+            "gene_name": "BRAF",
+            "category": "kinase",
+            "score": 0.0,
+            "is_liability": false,
+            "is_herg": false,
+            "pocket_center": [
+              -7.191,
+              12.716,
+              -1.531
             ]
           },
           {
@@ -3267,19 +3267,6 @@
             ]
           },
           {
-            "uniprot_id": "P00387",
-            "gene_name": "CYB5R3",
-            "category": "pipeline_protein",
-            "score": 0.0,
-            "is_liability": false,
-            "is_herg": false,
-            "pocket_center": [
-              -6.918,
-              -0.868,
-              5.401
-            ]
-          },
-          {
             "uniprot_id": "P00352",
             "gene_name": "ALDH1A1",
             "category": "pipeline_protein",
@@ -3306,6 +3293,19 @@
             ]
           },
           {
+            "uniprot_id": "P00387",
+            "gene_name": "CYB5R3",
+            "category": "pipeline_protein",
+            "score": 0.0,
+            "is_liability": false,
+            "is_herg": false,
+            "pocket_center": [
+              -6.918,
+              -0.868,
+              5.401
+            ]
+          },
+          {
             "uniprot_id": "P00441",
             "gene_name": "SOD1",
             "category": "pipeline_protein",
@@ -3319,19 +3319,6 @@
             ]
           },
           {
-            "uniprot_id": "P00742",
-            "gene_name": "F10",
-            "category": "pipeline_protein",
-            "score": 0.0,
-            "is_liability": false,
-            "is_herg": false,
-            "pocket_center": [
-              5.12,
-              -0.89,
-              -5.09
-            ]
-          },
-          {
             "uniprot_id": "P00734",
             "gene_name": "F2",
             "category": "pipeline_protein",
@@ -3342,6 +3329,19 @@
               -7.17,
               -2.87,
               5.41
+            ]
+          },
+          {
+            "uniprot_id": "P00742",
+            "gene_name": "F10",
+            "category": "pipeline_protein",
+            "score": 0.0,
+            "is_liability": false,
+            "is_herg": false,
+            "pocket_center": [
+              5.12,
+              -0.89,
+              -5.09
             ]
           },
           {
@@ -3397,19 +3397,6 @@
             ]
           },
           {
-            "uniprot_id": "P02144",
-            "gene_name": "MB",
-            "category": "pipeline_protein",
-            "score": 0.0,
-            "is_liability": false,
-            "is_herg": false,
-            "pocket_center": [
-              -0.454,
-              2.912,
-              0.409
-            ]
-          },
-          {
             "uniprot_id": "P01100",
             "gene_name": "FOS",
             "category": "pipeline_protein",
@@ -3420,6 +3407,32 @@
               0.43,
               24.312,
               6.151
+            ]
+          },
+          {
+            "uniprot_id": "P01106",
+            "gene_name": "MYC",
+            "category": "pipeline_protein",
+            "score": 0.0,
+            "is_liability": false,
+            "is_herg": false,
+            "pocket_center": [
+              3.528,
+              3.945,
+              -13.745
+            ]
+          },
+          {
+            "uniprot_id": "P02144",
+            "gene_name": "MB",
+            "category": "pipeline_protein",
+            "score": 0.0,
+            "is_liability": false,
+            "is_herg": false,
+            "pocket_center": [
+              -0.454,
+              2.912,
+              0.409
             ]
           },
           {
@@ -3449,19 +3462,6 @@
             ]
           },
           {
-            "uniprot_id": "P01106",
-            "gene_name": "MYC",
-            "category": "pipeline_protein",
-            "score": 0.0,
-            "is_liability": false,
-            "is_herg": false,
-            "pocket_center": [
-              3.528,
-              3.945,
-              -13.745
-            ]
-          },
-          {
             "uniprot_id": "P01031",
             "gene_name": "C5",
             "category": "pipeline_protein",
@@ -3485,19 +3485,6 @@
               -13.952,
               -3.728,
               4.631
-            ]
-          },
-          {
-            "uniprot_id": "P02748",
-            "gene_name": "C9",
-            "category": "pipeline_protein",
-            "score": 0.0,
-            "is_liability": false,
-            "is_herg": false,
-            "pocket_center": [
-              -12.94,
-              -5.42,
-              6.28
             ]
           },
           {
@@ -3527,16 +3514,16 @@
             ]
           },
           {
-            "uniprot_id": "P02751",
-            "gene_name": "FN1",
+            "uniprot_id": "P02748",
+            "gene_name": "C9",
             "category": "pipeline_protein",
             "score": 0.0,
             "is_liability": false,
             "is_herg": false,
             "pocket_center": [
-              -44.03,
-              11.01,
-              -31.95
+              -12.94,
+              -5.42,
+              6.28
             ]
           },
           {
@@ -3551,6 +3538,19 @@
               -4.32,
               16.7
             ]
+          },
+          {
+            "uniprot_id": "P02751",
+            "gene_name": "FN1",
+            "category": "pipeline_protein",
+            "score": 0.0,
+            "is_liability": false,
+            "is_herg": false,
+            "pocket_center": [
+              -44.03,
+              11.01,
+              -31.95
+            ]
           }
         ],
         "selectivity_index": 0.0,
@@ -3560,9 +3560,9 @@
         "herg_score": 0.0,
         "herg_safe": true,
         "si_grade": "poor",
-        "qed": 0.652,
-        "mw": 426.5,
-        "logp": 3.53
+        "qed": 0.644,
+        "mw": 393.6,
+        "logp": 3.16
       },
       "refinement_rounds": 0,
       "edits_applied": [],
@@ -3571,15 +3571,15 @@
       "pareto_rank": 1
     },
     {
-      "original_smiles": "O=C1CN=C(c2ccccc2-c2cnccn2)c2cc(C3NCCCC3Cl)ccc21",
-      "optimized_smiles": "O=C1CN=C(c2ccccc2-c2cnccn2)c2cc(C3NCCCC3Cl)ccc21",
+      "original_smiles": "CC(C)c1c(C2CCCOC2)ccc2c1C(=O)CN=C2c1ccccc1C1CNCCN1",
+      "optimized_smiles": "CC(C)c1c(C2CCCOC2)ccc2c1C(=O)CN=C2c1ccccc1C1CNCCN1",
       "original_profile": {
-        "smiles": "O=C1CN=C(c2ccccc2-c2cnccn2)c2cc(C3NCCCC3Cl)ccc21",
-        "on_target_score": -7.68,
-        "on_target_le": 0.256,
+        "smiles": "CC(C)c1c(C2CCCOC2)ccc2c1C(=O)CN=C2c1ccccc1C1CNCCN1",
+        "on_target_score": -7.591,
+        "on_target_le": 0.2372,
         "off_target_scores": {
-          "P03372": 0.0,
           "P15056": 0.0,
+          "P03372": 0.0,
           "P10275": 0.0,
           "P00519": 0.0,
           "P00533": 0.0,
@@ -3591,10 +3591,10 @@
           "P00367": 0.0,
           "P00441": 0.0,
           "P00488": 0.0,
+          "P00734": 0.0,
           "P00742": 0.0,
           "P00748": 0.0,
           "P00749": 0.0,
-          "P00734": 0.0,
           "P00918": 0.0,
           "P01100": 0.0,
           "P01116": 0.0,
@@ -3604,25 +3604,12 @@
           "P01031": 0.0,
           "P02511": 0.0,
           "P02679": 0.0,
-          "P02748": 0.0,
           "P02452": 0.0,
+          "P02748": 0.0,
           "P02787": 0.0,
           "P02751": 0.0
         },
         "off_target_hits": [
-          {
-            "uniprot_id": "P03372",
-            "gene_name": "ESR1",
-            "category": "nuclear_receptor",
-            "score": 0.0,
-            "is_liability": false,
-            "is_herg": false,
-            "pocket_center": [
-              2.166,
-              -7.899,
-              12.534
-            ]
-          },
           {
             "uniprot_id": "P15056",
             "gene_name": "BRAF",
@@ -3634,6 +3621,19 @@
               -7.191,
               12.716,
               -1.531
+            ]
+          },
+          {
+            "uniprot_id": "P03372",
+            "gene_name": "ESR1",
+            "category": "nuclear_receptor",
+            "score": 0.0,
+            "is_liability": false,
+            "is_herg": false,
+            "pocket_center": [
+              2.166,
+              -7.899,
+              12.534
             ]
           },
           {
@@ -3780,6 +3780,19 @@
             ]
           },
           {
+            "uniprot_id": "P00734",
+            "gene_name": "F2",
+            "category": "pipeline_protein",
+            "score": 0.0,
+            "is_liability": false,
+            "is_herg": false,
+            "pocket_center": [
+              -7.17,
+              -2.87,
+              5.41
+            ]
+          },
+          {
             "uniprot_id": "P00742",
             "gene_name": "F10",
             "category": "pipeline_protein",
@@ -3816,19 +3829,6 @@
               -2.72,
               8.1,
               -5.55
-            ]
-          },
-          {
-            "uniprot_id": "P00734",
-            "gene_name": "F2",
-            "category": "pipeline_protein",
-            "score": 0.0,
-            "is_liability": false,
-            "is_herg": false,
-            "pocket_center": [
-              -7.17,
-              -2.87,
-              5.41
             ]
           },
           {
@@ -3949,19 +3949,6 @@
             ]
           },
           {
-            "uniprot_id": "P02748",
-            "gene_name": "C9",
-            "category": "pipeline_protein",
-            "score": 0.0,
-            "is_liability": false,
-            "is_herg": false,
-            "pocket_center": [
-              -12.94,
-              -5.42,
-              6.28
-            ]
-          },
-          {
             "uniprot_id": "P02452",
             "gene_name": "COL1A1",
             "category": "pipeline_protein",
@@ -3972,6 +3959,19 @@
               -2.821,
               -11.697,
               -11.408
+            ]
+          },
+          {
+            "uniprot_id": "P02748",
+            "gene_name": "C9",
+            "category": "pipeline_protein",
+            "score": 0.0,
+            "is_liability": false,
+            "is_herg": false,
+            "pocket_center": [
+              -12.94,
+              -5.42,
+              6.28
             ]
           },
           {
@@ -4002,23 +4002,23 @@
           }
         ],
         "selectivity_index": 0.0,
-        "worst_off_target": "ESR1",
+        "worst_off_target": "BRAF",
         "worst_off_score": 0.0,
         "n_liabilities": 0,
         "herg_score": 0.0,
         "herg_safe": true,
         "si_grade": "poor",
-        "qed": 0.649,
-        "mw": 416.9,
-        "logp": 4.21
+        "qed": 0.769,
+        "mw": 431.6,
+        "logp": 3.97
       },
       "optimized_profile": {
-        "smiles": "O=C1CN=C(c2ccccc2-c2cnccn2)c2cc(C3NCCCC3Cl)ccc21",
-        "on_target_score": -7.68,
-        "on_target_le": 0.256,
+        "smiles": "CC(C)c1c(C2CCCOC2)ccc2c1C(=O)CN=C2c1ccccc1C1CNCCN1",
+        "on_target_score": -7.591,
+        "on_target_le": 0.2372,
         "off_target_scores": {
-          "P03372": 0.0,
           "P15056": 0.0,
+          "P03372": 0.0,
           "P10275": 0.0,
           "P00519": 0.0,
           "P00533": 0.0,
@@ -4030,10 +4030,10 @@
           "P00367": 0.0,
           "P00441": 0.0,
           "P00488": 0.0,
+          "P00734": 0.0,
           "P00742": 0.0,
           "P00748": 0.0,
           "P00749": 0.0,
-          "P00734": 0.0,
           "P00918": 0.0,
           "P01100": 0.0,
           "P01116": 0.0,
@@ -4043,25 +4043,12 @@
           "P01031": 0.0,
           "P02511": 0.0,
           "P02679": 0.0,
-          "P02748": 0.0,
           "P02452": 0.0,
+          "P02748": 0.0,
           "P02787": 0.0,
           "P02751": 0.0
         },
         "off_target_hits": [
-          {
-            "uniprot_id": "P03372",
-            "gene_name": "ESR1",
-            "category": "nuclear_receptor",
-            "score": 0.0,
-            "is_liability": false,
-            "is_herg": false,
-            "pocket_center": [
-              2.166,
-              -7.899,
-              12.534
-            ]
-          },
           {
             "uniprot_id": "P15056",
             "gene_name": "BRAF",
@@ -4073,6 +4060,19 @@
               -7.191,
               12.716,
               -1.531
+            ]
+          },
+          {
+            "uniprot_id": "P03372",
+            "gene_name": "ESR1",
+            "category": "nuclear_receptor",
+            "score": 0.0,
+            "is_liability": false,
+            "is_herg": false,
+            "pocket_center": [
+              2.166,
+              -7.899,
+              12.534
             ]
           },
           {
@@ -4219,6 +4219,19 @@
             ]
           },
           {
+            "uniprot_id": "P00734",
+            "gene_name": "F2",
+            "category": "pipeline_protein",
+            "score": 0.0,
+            "is_liability": false,
+            "is_herg": false,
+            "pocket_center": [
+              -7.17,
+              -2.87,
+              5.41
+            ]
+          },
+          {
             "uniprot_id": "P00742",
             "gene_name": "F10",
             "category": "pipeline_protein",
@@ -4255,19 +4268,6 @@
               -2.72,
               8.1,
               -5.55
-            ]
-          },
-          {
-            "uniprot_id": "P00734",
-            "gene_name": "F2",
-            "category": "pipeline_protein",
-            "score": 0.0,
-            "is_liability": false,
-            "is_herg": false,
-            "pocket_center": [
-              -7.17,
-              -2.87,
-              5.41
             ]
           },
           {
@@ -4388,19 +4388,6 @@
             ]
           },
           {
-            "uniprot_id": "P02748",
-            "gene_name": "C9",
-            "category": "pipeline_protein",
-            "score": 0.0,
-            "is_liability": false,
-            "is_herg": false,
-            "pocket_center": [
-              -12.94,
-              -5.42,
-              6.28
-            ]
-          },
-          {
             "uniprot_id": "P02452",
             "gene_name": "COL1A1",
             "category": "pipeline_protein",
@@ -4411,6 +4398,19 @@
               -2.821,
               -11.697,
               -11.408
+            ]
+          },
+          {
+            "uniprot_id": "P02748",
+            "gene_name": "C9",
+            "category": "pipeline_protein",
+            "score": 0.0,
+            "is_liability": false,
+            "is_herg": false,
+            "pocket_center": [
+              -12.94,
+              -5.42,
+              6.28
             ]
           },
           {
@@ -4441,15 +4441,15 @@
           }
         ],
         "selectivity_index": 0.0,
-        "worst_off_target": "ESR1",
+        "worst_off_target": "BRAF",
         "worst_off_score": 0.0,
         "n_liabilities": 0,
         "herg_score": 0.0,
         "herg_safe": true,
         "si_grade": "poor",
-        "qed": 0.649,
-        "mw": 416.9,
-        "logp": 4.21
+        "qed": 0.769,
+        "mw": 431.6,
+        "logp": 3.97
       },
       "refinement_rounds": 0,
       "edits_applied": [],
@@ -4458,12 +4458,12 @@
       "pareto_rank": 1
     },
     {
-      "original_smiles": "O=C1CN=C(c2ccccc2-c2cnccn2)c2cc(C3CCCC(F)N3)ccc21",
-      "optimized_smiles": "O=C1CN=C(c2ccccc2-c2cnccn2)c2cc(C3CCCC(F)N3)ccc21",
+      "original_smiles": "O=C1Nc2cc(-c3cccc(C4CCCCN4)n3)cc(-c3ccccn3)c2C1=O",
+      "optimized_smiles": "O=C1Nc2cc(-c3cccc(C4CCCCN4)n3)cc(-c3ccccn3)c2C1=O",
       "original_profile": {
-        "smiles": "O=C1CN=C(c2ccccc2-c2cnccn2)c2cc(C3CCCC(F)N3)ccc21",
-        "on_target_score": -7.024,
-        "on_target_le": 0.2341,
+        "smiles": "O=C1Nc2cc(-c3cccc(C4CCCCN4)n3)cc(-c3ccccn3)c2C1=O",
+        "on_target_score": -7.186,
+        "on_target_le": 0.2478,
         "off_target_scores": {
           "P03372": 0.0,
           "P10275": 0.0,
@@ -4472,21 +4472,21 @@
           "P00533": 0.0,
           "Q14524": 0.0,
           "O15151": 0.0,
-          "P02768": 0.0,
+          "P00387": 0.0,
           "P00352": 0.0,
           "P00367": 0.0,
-          "P00387": 0.0,
+          "P02768": 0.0,
           "P00441": 0.0,
-          "P00488": 0.0,
-          "P00734": 0.0,
           "P00742": 0.0,
-          "P00749": 0.0,
+          "P00488": 0.0,
           "P00748": 0.0,
+          "P00734": 0.0,
+          "P00749": 0.0,
           "P00918": 0.0,
           "P01100": 0.0,
           "P01116": 0.0,
-          "P01106": 0.0,
           "P01375": 0.0,
+          "P01106": 0.0,
           "P02144": 0.0,
           "P01031": 0.0,
           "P02511": 0.0,
@@ -4589,16 +4589,16 @@
             ]
           },
           {
-            "uniprot_id": "P02768",
-            "gene_name": "ALB",
-            "category": "plasma_binding",
+            "uniprot_id": "P00387",
+            "gene_name": "CYB5R3",
+            "category": "pipeline_protein",
             "score": 0.0,
             "is_liability": false,
             "is_herg": false,
             "pocket_center": [
-              -6.958,
-              3.398,
-              -0.637
+              -6.918,
+              -0.868,
+              5.401
             ]
           },
           {
@@ -4628,16 +4628,16 @@
             ]
           },
           {
-            "uniprot_id": "P00387",
-            "gene_name": "CYB5R3",
-            "category": "pipeline_protein",
+            "uniprot_id": "P02768",
+            "gene_name": "ALB",
+            "category": "plasma_binding",
             "score": 0.0,
             "is_liability": false,
             "is_herg": false,
             "pocket_center": [
-              -6.918,
-              -0.868,
-              5.401
+              -6.958,
+              3.398,
+              -0.637
             ]
           },
           {
@@ -4654,6 +4654,19 @@
             ]
           },
           {
+            "uniprot_id": "P00742",
+            "gene_name": "F10",
+            "category": "pipeline_protein",
+            "score": 0.0,
+            "is_liability": false,
+            "is_herg": false,
+            "pocket_center": [
+              5.12,
+              -0.89,
+              -5.09
+            ]
+          },
+          {
             "uniprot_id": "P00488",
             "gene_name": "F13A1",
             "category": "pipeline_protein",
@@ -4664,6 +4677,19 @@
               -0.289,
               3.914,
               -1.382
+            ]
+          },
+          {
+            "uniprot_id": "P00748",
+            "gene_name": "F12",
+            "category": "pipeline_protein",
+            "score": 0.0,
+            "is_liability": false,
+            "is_herg": false,
+            "pocket_center": [
+              12.57,
+              0.71,
+              26.48
             ]
           },
           {
@@ -4680,19 +4706,6 @@
             ]
           },
           {
-            "uniprot_id": "P00742",
-            "gene_name": "F10",
-            "category": "pipeline_protein",
-            "score": 0.0,
-            "is_liability": false,
-            "is_herg": false,
-            "pocket_center": [
-              5.12,
-              -0.89,
-              -5.09
-            ]
-          },
-          {
             "uniprot_id": "P00749",
             "gene_name": "PLAU",
             "category": "pipeline_protein",
@@ -4703,19 +4716,6 @@
               -2.72,
               8.1,
               -5.55
-            ]
-          },
-          {
-            "uniprot_id": "P00748",
-            "gene_name": "F12",
-            "category": "pipeline_protein",
-            "score": 0.0,
-            "is_liability": false,
-            "is_herg": false,
-            "pocket_center": [
-              12.57,
-              0.71,
-              26.48
             ]
           },
           {
@@ -4758,19 +4758,6 @@
             ]
           },
           {
-            "uniprot_id": "P01106",
-            "gene_name": "MYC",
-            "category": "pipeline_protein",
-            "score": 0.0,
-            "is_liability": false,
-            "is_herg": false,
-            "pocket_center": [
-              3.528,
-              3.945,
-              -13.745
-            ]
-          },
-          {
             "uniprot_id": "P01375",
             "gene_name": "TNF",
             "category": "pipeline_protein",
@@ -4781,6 +4768,19 @@
               -5.461,
               10.874,
               -14.501
+            ]
+          },
+          {
+            "uniprot_id": "P01106",
+            "gene_name": "MYC",
+            "category": "pipeline_protein",
+            "score": 0.0,
+            "is_liability": false,
+            "is_herg": false,
+            "pocket_center": [
+              3.528,
+              3.945,
+              -13.745
             ]
           },
           {
@@ -4895,14 +4895,14 @@
         "herg_score": 0.0,
         "herg_safe": true,
         "si_grade": "poor",
-        "qed": 0.666,
-        "mw": 400.5,
-        "logp": 4.29
+        "qed": 0.672,
+        "mw": 384.4,
+        "logp": 3.76
       },
       "optimized_profile": {
-        "smiles": "O=C1CN=C(c2ccccc2-c2cnccn2)c2cc(C3CCCC(F)N3)ccc21",
-        "on_target_score": -7.024,
-        "on_target_le": 0.2341,
+        "smiles": "O=C1Nc2cc(-c3cccc(C4CCCCN4)n3)cc(-c3ccccn3)c2C1=O",
+        "on_target_score": -7.186,
+        "on_target_le": 0.2478,
         "off_target_scores": {
           "P03372": 0.0,
           "P10275": 0.0,
@@ -4911,21 +4911,21 @@
           "P00533": 0.0,
           "Q14524": 0.0,
           "O15151": 0.0,
-          "P02768": 0.0,
+          "P00387": 0.0,
           "P00352": 0.0,
           "P00367": 0.0,
-          "P00387": 0.0,
+          "P02768": 0.0,
           "P00441": 0.0,
-          "P00488": 0.0,
-          "P00734": 0.0,
           "P00742": 0.0,
-          "P00749": 0.0,
+          "P00488": 0.0,
           "P00748": 0.0,
+          "P00734": 0.0,
+          "P00749": 0.0,
           "P00918": 0.0,
           "P01100": 0.0,
           "P01116": 0.0,
-          "P01106": 0.0,
           "P01375": 0.0,
+          "P01106": 0.0,
           "P02144": 0.0,
           "P01031": 0.0,
           "P02511": 0.0,
@@ -5028,16 +5028,16 @@
             ]
           },
           {
-            "uniprot_id": "P02768",
-            "gene_name": "ALB",
-            "category": "plasma_binding",
+            "uniprot_id": "P00387",
+            "gene_name": "CYB5R3",
+            "category": "pipeline_protein",
             "score": 0.0,
             "is_liability": false,
             "is_herg": false,
             "pocket_center": [
-              -6.958,
-              3.398,
-              -0.637
+              -6.918,
+              -0.868,
+              5.401
             ]
           },
           {
@@ -5067,16 +5067,16 @@
             ]
           },
           {
-            "uniprot_id": "P00387",
-            "gene_name": "CYB5R3",
-            "category": "pipeline_protein",
+            "uniprot_id": "P02768",
+            "gene_name": "ALB",
+            "category": "plasma_binding",
             "score": 0.0,
             "is_liability": false,
             "is_herg": false,
             "pocket_center": [
-              -6.918,
-              -0.868,
-              5.401
+              -6.958,
+              3.398,
+              -0.637
             ]
           },
           {
@@ -5093,6 +5093,19 @@
             ]
           },
           {
+            "uniprot_id": "P00742",
+            "gene_name": "F10",
+            "category": "pipeline_protein",
+            "score": 0.0,
+            "is_liability": false,
+            "is_herg": false,
+            "pocket_center": [
+              5.12,
+              -0.89,
+              -5.09
+            ]
+          },
+          {
             "uniprot_id": "P00488",
             "gene_name": "F13A1",
             "category": "pipeline_protein",
@@ -5103,6 +5116,19 @@
               -0.289,
               3.914,
               -1.382
+            ]
+          },
+          {
+            "uniprot_id": "P00748",
+            "gene_name": "F12",
+            "category": "pipeline_protein",
+            "score": 0.0,
+            "is_liability": false,
+            "is_herg": false,
+            "pocket_center": [
+              12.57,
+              0.71,
+              26.48
             ]
           },
           {
@@ -5119,19 +5145,6 @@
             ]
           },
           {
-            "uniprot_id": "P00742",
-            "gene_name": "F10",
-            "category": "pipeline_protein",
-            "score": 0.0,
-            "is_liability": false,
-            "is_herg": false,
-            "pocket_center": [
-              5.12,
-              -0.89,
-              -5.09
-            ]
-          },
-          {
             "uniprot_id": "P00749",
             "gene_name": "PLAU",
             "category": "pipeline_protein",
@@ -5142,19 +5155,6 @@
               -2.72,
               8.1,
               -5.55
-            ]
-          },
-          {
-            "uniprot_id": "P00748",
-            "gene_name": "F12",
-            "category": "pipeline_protein",
-            "score": 0.0,
-            "is_liability": false,
-            "is_herg": false,
-            "pocket_center": [
-              12.57,
-              0.71,
-              26.48
             ]
           },
           {
@@ -5197,19 +5197,6 @@
             ]
           },
           {
-            "uniprot_id": "P01106",
-            "gene_name": "MYC",
-            "category": "pipeline_protein",
-            "score": 0.0,
-            "is_liability": false,
-            "is_herg": false,
-            "pocket_center": [
-              3.528,
-              3.945,
-              -13.745
-            ]
-          },
-          {
             "uniprot_id": "P01375",
             "gene_name": "TNF",
             "category": "pipeline_protein",
@@ -5220,6 +5207,19 @@
               -5.461,
               10.874,
               -14.501
+            ]
+          },
+          {
+            "uniprot_id": "P01106",
+            "gene_name": "MYC",
+            "category": "pipeline_protein",
+            "score": 0.0,
+            "is_liability": false,
+            "is_herg": false,
+            "pocket_center": [
+              3.528,
+              3.945,
+              -13.745
             ]
           },
           {
@@ -5334,9 +5334,9 @@
         "herg_score": 0.0,
         "herg_safe": true,
         "si_grade": "poor",
-        "qed": 0.666,
-        "mw": 400.5,
-        "logp": 4.29
+        "qed": 0.672,
+        "mw": 384.4,
+        "logp": 3.76
       },
       "refinement_rounds": 0,
       "edits_applied": [],
@@ -5345,41 +5345,41 @@
       "pareto_rank": 1
     },
     {
-      "original_smiles": "N#Cc1cnc(-c2ccccc2C2=NCC(=O)c3ccc(C4NCCCC4CO)cc32)cn1",
-      "optimized_smiles": "N#Cc1cnc(-c2ccccc2C2=NCC(=O)c3ccc(C4NCCCC4CO)cc32)cn1",
+      "original_smiles": "CC(O)c1c(C2CCCOC2)ccc2c1C(=O)CN=C2c1ccccc1C1CNCCN1C",
+      "optimized_smiles": "CC(O)c1c(C2CCCOC2)ccc2c1C(=O)CN=C2c1ccccc1C1CNCCN1C",
       "original_profile": {
-        "smiles": "N#Cc1cnc(-c2ccccc2C2=NCC(=O)c3ccc(C4NCCCC4CO)cc32)cn1",
-        "on_target_score": -7.577,
-        "on_target_le": 0.2296,
+        "smiles": "CC(O)c1c(C2CCCOC2)ccc2c1C(=O)CN=C2c1ccccc1C1CNCCN1C",
+        "on_target_score": -7.591,
+        "on_target_le": 0.23,
         "off_target_scores": {
           "P03372": 0.0,
-          "P10275": 0.0,
           "P15056": 0.0,
+          "P10275": 0.0,
           "P00519": 0.0,
           "P00533": 0.0,
           "Q14524": 0.0,
           "O15151": 0.0,
-          "P02768": 0.0,
-          "P00352": 0.0,
-          "P00387": 0.0,
           "P00367": 0.0,
+          "P02768": 0.0,
+          "P00387": 0.0,
           "P00441": 0.0,
+          "P00352": 0.0,
           "P00488": 0.0,
           "P00742": 0.0,
-          "P00734": 0.0,
-          "P00748": 0.0,
           "P00749": 0.0,
           "P00918": 0.0,
+          "P00734": 0.0,
+          "P00748": 0.0,
+          "P01106": 0.0,
           "P01100": 0.0,
           "P01116": 0.0,
           "P01375": 0.0,
-          "P01106": 0.0,
           "P02144": 0.0,
           "P01031": 0.0,
           "P02511": 0.0,
           "P02679": 0.0,
-          "P02748": 0.0,
           "P02452": 0.0,
+          "P02748": 0.0,
           "P02787": 0.0,
           "P02751": 0.0
         },
@@ -5398,19 +5398,6 @@
             ]
           },
           {
-            "uniprot_id": "P10275",
-            "gene_name": "AR",
-            "category": "nuclear_receptor",
-            "score": 0.0,
-            "is_liability": false,
-            "is_herg": false,
-            "pocket_center": [
-              -15.691,
-              8.184,
-              9.43
-            ]
-          },
-          {
             "uniprot_id": "P15056",
             "gene_name": "BRAF",
             "category": "kinase",
@@ -5421,6 +5408,19 @@
               -7.191,
               12.716,
               -1.531
+            ]
+          },
+          {
+            "uniprot_id": "P10275",
+            "gene_name": "AR",
+            "category": "nuclear_receptor",
+            "score": 0.0,
+            "is_liability": false,
+            "is_herg": false,
+            "pocket_center": [
+              -15.691,
+              8.184,
+              9.43
             ]
           },
           {
@@ -5476,6 +5476,19 @@
             ]
           },
           {
+            "uniprot_id": "P00367",
+            "gene_name": "GLUD1",
+            "category": "pipeline_protein",
+            "score": 0.0,
+            "is_liability": false,
+            "is_herg": false,
+            "pocket_center": [
+              -8.54,
+              3.76,
+              11.25
+            ]
+          },
+          {
             "uniprot_id": "P02768",
             "gene_name": "ALB",
             "category": "plasma_binding",
@@ -5486,19 +5499,6 @@
               -6.958,
               3.398,
               -0.637
-            ]
-          },
-          {
-            "uniprot_id": "P00352",
-            "gene_name": "ALDH1A1",
-            "category": "pipeline_protein",
-            "score": 0.0,
-            "is_liability": false,
-            "is_herg": false,
-            "pocket_center": [
-              -5.105,
-              2.277,
-              -4.988
             ]
           },
           {
@@ -5515,19 +5515,6 @@
             ]
           },
           {
-            "uniprot_id": "P00367",
-            "gene_name": "GLUD1",
-            "category": "pipeline_protein",
-            "score": 0.0,
-            "is_liability": false,
-            "is_herg": false,
-            "pocket_center": [
-              -8.54,
-              3.76,
-              11.25
-            ]
-          },
-          {
             "uniprot_id": "P00441",
             "gene_name": "SOD1",
             "category": "pipeline_protein",
@@ -5538,6 +5525,19 @@
               -8.65,
               -1.15,
               -5.21
+            ]
+          },
+          {
+            "uniprot_id": "P00352",
+            "gene_name": "ALDH1A1",
+            "category": "pipeline_protein",
+            "score": 0.0,
+            "is_liability": false,
+            "is_herg": false,
+            "pocket_center": [
+              -5.105,
+              2.277,
+              -4.988
             ]
           },
           {
@@ -5567,6 +5567,32 @@
             ]
           },
           {
+            "uniprot_id": "P00749",
+            "gene_name": "PLAU",
+            "category": "pipeline_protein",
+            "score": 0.0,
+            "is_liability": false,
+            "is_herg": false,
+            "pocket_center": [
+              -2.72,
+              8.1,
+              -5.55
+            ]
+          },
+          {
+            "uniprot_id": "P00918",
+            "gene_name": "CA2",
+            "category": "pipeline_protein",
+            "score": 0.0,
+            "is_liability": false,
+            "is_herg": false,
+            "pocket_center": [
+              -0.47,
+              8.0,
+              -2.36
+            ]
+          },
+          {
             "uniprot_id": "P00734",
             "gene_name": "F2",
             "category": "pipeline_protein",
@@ -5593,29 +5619,16 @@
             ]
           },
           {
-            "uniprot_id": "P00749",
-            "gene_name": "PLAU",
+            "uniprot_id": "P01106",
+            "gene_name": "MYC",
             "category": "pipeline_protein",
             "score": 0.0,
             "is_liability": false,
             "is_herg": false,
             "pocket_center": [
-              -2.72,
-              8.1,
-              -5.55
-            ]
-          },
-          {
-            "uniprot_id": "P00918",
-            "gene_name": "CA2",
-            "category": "pipeline_protein",
-            "score": 0.0,
-            "is_liability": false,
-            "is_herg": false,
-            "pocket_center": [
-              -0.47,
-              8.0,
-              -2.36
+              3.528,
+              3.945,
+              -13.745
             ]
           },
           {
@@ -5655,19 +5668,6 @@
               -5.461,
               10.874,
               -14.501
-            ]
-          },
-          {
-            "uniprot_id": "P01106",
-            "gene_name": "MYC",
-            "category": "pipeline_protein",
-            "score": 0.0,
-            "is_liability": false,
-            "is_herg": false,
-            "pocket_center": [
-              3.528,
-              3.945,
-              -13.745
             ]
           },
           {
@@ -5723,19 +5723,6 @@
             ]
           },
           {
-            "uniprot_id": "P02748",
-            "gene_name": "C9",
-            "category": "pipeline_protein",
-            "score": 0.0,
-            "is_liability": false,
-            "is_herg": false,
-            "pocket_center": [
-              -12.94,
-              -5.42,
-              6.28
-            ]
-          },
-          {
             "uniprot_id": "P02452",
             "gene_name": "COL1A1",
             "category": "pipeline_protein",
@@ -5746,6 +5733,19 @@
               -2.821,
               -11.697,
               -11.408
+            ]
+          },
+          {
+            "uniprot_id": "P02748",
+            "gene_name": "C9",
+            "category": "pipeline_protein",
+            "score": 0.0,
+            "is_liability": false,
+            "is_herg": false,
+            "pocket_center": [
+              -12.94,
+              -5.42,
+              6.28
             ]
           },
           {
@@ -5782,43 +5782,43 @@
         "herg_score": 0.0,
         "herg_safe": true,
         "si_grade": "poor",
-        "qed": 0.649,
-        "mw": 437.5,
-        "logp": 3.08
+        "qed": 0.753,
+        "mw": 447.6,
+        "logp": 3.24
       },
       "optimized_profile": {
-        "smiles": "N#Cc1cnc(-c2ccccc2C2=NCC(=O)c3ccc(C4NCCCC4CO)cc32)cn1",
-        "on_target_score": -7.577,
-        "on_target_le": 0.2296,
+        "smiles": "CC(O)c1c(C2CCCOC2)ccc2c1C(=O)CN=C2c1ccccc1C1CNCCN1C",
+        "on_target_score": -7.591,
+        "on_target_le": 0.23,
         "off_target_scores": {
           "P03372": 0.0,
-          "P10275": 0.0,
           "P15056": 0.0,
+          "P10275": 0.0,
           "P00519": 0.0,
           "P00533": 0.0,
           "Q14524": 0.0,
           "O15151": 0.0,
-          "P02768": 0.0,
-          "P00352": 0.0,
-          "P00387": 0.0,
           "P00367": 0.0,
+          "P02768": 0.0,
+          "P00387": 0.0,
           "P00441": 0.0,
+          "P00352": 0.0,
           "P00488": 0.0,
           "P00742": 0.0,
-          "P00734": 0.0,
-          "P00748": 0.0,
           "P00749": 0.0,
           "P00918": 0.0,
+          "P00734": 0.0,
+          "P00748": 0.0,
+          "P01106": 0.0,
           "P01100": 0.0,
           "P01116": 0.0,
           "P01375": 0.0,
-          "P01106": 0.0,
           "P02144": 0.0,
           "P01031": 0.0,
           "P02511": 0.0,
           "P02679": 0.0,
-          "P02748": 0.0,
           "P02452": 0.0,
+          "P02748": 0.0,
           "P02787": 0.0,
           "P02751": 0.0
         },
@@ -5837,19 +5837,6 @@
             ]
           },
           {
-            "uniprot_id": "P10275",
-            "gene_name": "AR",
-            "category": "nuclear_receptor",
-            "score": 0.0,
-            "is_liability": false,
-            "is_herg": false,
-            "pocket_center": [
-              -15.691,
-              8.184,
-              9.43
-            ]
-          },
-          {
             "uniprot_id": "P15056",
             "gene_name": "BRAF",
             "category": "kinase",
@@ -5860,6 +5847,19 @@
               -7.191,
               12.716,
               -1.531
+            ]
+          },
+          {
+            "uniprot_id": "P10275",
+            "gene_name": "AR",
+            "category": "nuclear_receptor",
+            "score": 0.0,
+            "is_liability": false,
+            "is_herg": false,
+            "pocket_center": [
+              -15.691,
+              8.184,
+              9.43
             ]
           },
           {
@@ -5915,6 +5915,19 @@
             ]
           },
           {
+            "uniprot_id": "P00367",
+            "gene_name": "GLUD1",
+            "category": "pipeline_protein",
+            "score": 0.0,
+            "is_liability": false,
+            "is_herg": false,
+            "pocket_center": [
+              -8.54,
+              3.76,
+              11.25
+            ]
+          },
+          {
             "uniprot_id": "P02768",
             "gene_name": "ALB",
             "category": "plasma_binding",
@@ -5925,19 +5938,6 @@
               -6.958,
               3.398,
               -0.637
-            ]
-          },
-          {
-            "uniprot_id": "P00352",
-            "gene_name": "ALDH1A1",
-            "category": "pipeline_protein",
-            "score": 0.0,
-            "is_liability": false,
-            "is_herg": false,
-            "pocket_center": [
-              -5.105,
-              2.277,
-              -4.988
             ]
           },
           {
@@ -5954,19 +5954,6 @@
             ]
           },
           {
-            "uniprot_id": "P00367",
-            "gene_name": "GLUD1",
-            "category": "pipeline_protein",
-            "score": 0.0,
-            "is_liability": false,
-            "is_herg": false,
-            "pocket_center": [
-              -8.54,
-              3.76,
-              11.25
-            ]
-          },
-          {
             "uniprot_id": "P00441",
             "gene_name": "SOD1",
             "category": "pipeline_protein",
@@ -5977,6 +5964,19 @@
               -8.65,
               -1.15,
               -5.21
+            ]
+          },
+          {
+            "uniprot_id": "P00352",
+            "gene_name": "ALDH1A1",
+            "category": "pipeline_protein",
+            "score": 0.0,
+            "is_liability": false,
+            "is_herg": false,
+            "pocket_center": [
+              -5.105,
+              2.277,
+              -4.988
             ]
           },
           {
@@ -6006,6 +6006,32 @@
             ]
           },
           {
+            "uniprot_id": "P00749",
+            "gene_name": "PLAU",
+            "category": "pipeline_protein",
+            "score": 0.0,
+            "is_liability": false,
+            "is_herg": false,
+            "pocket_center": [
+              -2.72,
+              8.1,
+              -5.55
+            ]
+          },
+          {
+            "uniprot_id": "P00918",
+            "gene_name": "CA2",
+            "category": "pipeline_protein",
+            "score": 0.0,
+            "is_liability": false,
+            "is_herg": false,
+            "pocket_center": [
+              -0.47,
+              8.0,
+              -2.36
+            ]
+          },
+          {
             "uniprot_id": "P00734",
             "gene_name": "F2",
             "category": "pipeline_protein",
@@ -6032,29 +6058,16 @@
             ]
           },
           {
-            "uniprot_id": "P00749",
-            "gene_name": "PLAU",
+            "uniprot_id": "P01106",
+            "gene_name": "MYC",
             "category": "pipeline_protein",
             "score": 0.0,
             "is_liability": false,
             "is_herg": false,
             "pocket_center": [
-              -2.72,
-              8.1,
-              -5.55
-            ]
-          },
-          {
-            "uniprot_id": "P00918",
-            "gene_name": "CA2",
-            "category": "pipeline_protein",
-            "score": 0.0,
-            "is_liability": false,
-            "is_herg": false,
-            "pocket_center": [
-              -0.47,
-              8.0,
-              -2.36
+              3.528,
+              3.945,
+              -13.745
             ]
           },
           {
@@ -6094,19 +6107,6 @@
               -5.461,
               10.874,
               -14.501
-            ]
-          },
-          {
-            "uniprot_id": "P01106",
-            "gene_name": "MYC",
-            "category": "pipeline_protein",
-            "score": 0.0,
-            "is_liability": false,
-            "is_herg": false,
-            "pocket_center": [
-              3.528,
-              3.945,
-              -13.745
             ]
           },
           {
@@ -6162,19 +6162,6 @@
             ]
           },
           {
-            "uniprot_id": "P02748",
-            "gene_name": "C9",
-            "category": "pipeline_protein",
-            "score": 0.0,
-            "is_liability": false,
-            "is_herg": false,
-            "pocket_center": [
-              -12.94,
-              -5.42,
-              6.28
-            ]
-          },
-          {
             "uniprot_id": "P02452",
             "gene_name": "COL1A1",
             "category": "pipeline_protein",
@@ -6185,6 +6172,19 @@
               -2.821,
               -11.697,
               -11.408
+            ]
+          },
+          {
+            "uniprot_id": "P02748",
+            "gene_name": "C9",
+            "category": "pipeline_protein",
+            "score": 0.0,
+            "is_liability": false,
+            "is_herg": false,
+            "pocket_center": [
+              -12.94,
+              -5.42,
+              6.28
             ]
           },
           {
@@ -6221,9 +6221,9 @@
         "herg_score": 0.0,
         "herg_safe": true,
         "si_grade": "poor",
-        "qed": 0.649,
-        "mw": 437.5,
-        "logp": 3.08
+        "qed": 0.753,
+        "mw": 447.6,
+        "logp": 3.24
       },
       "refinement_rounds": 0,
       "edits_applied": [],
@@ -6232,12 +6232,12 @@
       "pareto_rank": 2
     },
     {
-      "original_smiles": "O=C1c2cc(CCO)c(C3CCCCN3)cc2C(c2ccccc2-c2cnccn2)=NC1F",
-      "optimized_smiles": "O=C1c2cc(CCO)c(C3CCCCN3)cc2C(c2ccccc2-c2cnccn2)=NC1F",
+      "original_smiles": "CCOC1CCC(C2NCCNC2C2CCCCC2)C(c2ccccc2)(c2cc[nH]n2)N1",
+      "optimized_smiles": "CCOC1CCC(C2NCCNC2C2CCCCC2)C(c2ccccc2)(c2cc[nH]n2)N1",
       "original_profile": {
-        "smiles": "O=C1c2cc(CCO)c(C3CCCCN3)cc2C(c2ccccc2-c2cnccn2)=NC1F",
-        "on_target_score": -7.363,
-        "on_target_le": 0.2231,
+        "smiles": "CCOC1CCC(C2NCCNC2C2CCCCC2)C(c2ccccc2)(c2cc[nH]n2)N1",
+        "on_target_score": -7.456,
+        "on_target_le": 0.233,
         "off_target_scores": {
           "P03372": 0.0,
           "P10275": 0.0,
@@ -6246,27 +6246,27 @@
           "P00533": 0.0,
           "Q14524": 0.0,
           "O15151": 0.0,
-          "P02768": 0.0,
-          "P00387": 0.0,
-          "P00352": 0.0,
           "P00367": 0.0,
+          "P00387": 0.0,
+          "P02768": 0.0,
+          "P00352": 0.0,
           "P00441": 0.0,
-          "P00742": 0.0,
-          "P00488": 0.0,
-          "P00734": 0.0,
-          "P00749": 0.0,
           "P00748": 0.0,
+          "P00488": 0.0,
+          "P00742": 0.0,
+          "P00749": 0.0,
+          "P00734": 0.0,
           "P00918": 0.0,
           "P01100": 0.0,
+          "P01375": 0.0,
           "P01106": 0.0,
           "P01116": 0.0,
-          "P01375": 0.0,
-          "P02144": 0.0,
           "P01031": 0.0,
+          "P02144": 0.0,
           "P02511": 0.0,
           "P02679": 0.0,
-          "P02452": 0.0,
           "P02748": 0.0,
+          "P02452": 0.0,
           "P02787": 0.0,
           "P02751": 0.0
         },
@@ -6363,16 +6363,16 @@
             ]
           },
           {
-            "uniprot_id": "P02768",
-            "gene_name": "ALB",
-            "category": "plasma_binding",
+            "uniprot_id": "P00367",
+            "gene_name": "GLUD1",
+            "category": "pipeline_protein",
             "score": 0.0,
             "is_liability": false,
             "is_herg": false,
             "pocket_center": [
-              -6.958,
-              3.398,
-              -0.637
+              -8.54,
+              3.76,
+              11.25
             ]
           },
           {
@@ -6389,6 +6389,19 @@
             ]
           },
           {
+            "uniprot_id": "P02768",
+            "gene_name": "ALB",
+            "category": "plasma_binding",
+            "score": 0.0,
+            "is_liability": false,
+            "is_herg": false,
+            "pocket_center": [
+              -6.958,
+              3.398,
+              -0.637
+            ]
+          },
+          {
             "uniprot_id": "P00352",
             "gene_name": "ALDH1A1",
             "category": "pipeline_protein",
@@ -6399,19 +6412,6 @@
               -5.105,
               2.277,
               -4.988
-            ]
-          },
-          {
-            "uniprot_id": "P00367",
-            "gene_name": "GLUD1",
-            "category": "pipeline_protein",
-            "score": 0.0,
-            "is_liability": false,
-            "is_herg": false,
-            "pocket_center": [
-              -8.54,
-              3.76,
-              11.25
             ]
           },
           {
@@ -6428,16 +6428,16 @@
             ]
           },
           {
-            "uniprot_id": "P00742",
-            "gene_name": "F10",
+            "uniprot_id": "P00748",
+            "gene_name": "F12",
             "category": "pipeline_protein",
             "score": 0.0,
             "is_liability": false,
             "is_herg": false,
             "pocket_center": [
-              5.12,
-              -0.89,
-              -5.09
+              12.57,
+              0.71,
+              26.48
             ]
           },
           {
@@ -6454,16 +6454,16 @@
             ]
           },
           {
-            "uniprot_id": "P00734",
-            "gene_name": "F2",
+            "uniprot_id": "P00742",
+            "gene_name": "F10",
             "category": "pipeline_protein",
             "score": 0.0,
             "is_liability": false,
             "is_herg": false,
             "pocket_center": [
-              -7.17,
-              -2.87,
-              5.41
+              5.12,
+              -0.89,
+              -5.09
             ]
           },
           {
@@ -6480,16 +6480,16 @@
             ]
           },
           {
-            "uniprot_id": "P00748",
-            "gene_name": "F12",
+            "uniprot_id": "P00734",
+            "gene_name": "F2",
             "category": "pipeline_protein",
             "score": 0.0,
             "is_liability": false,
             "is_herg": false,
             "pocket_center": [
-              12.57,
-              0.71,
-              26.48
+              -7.17,
+              -2.87,
+              5.41
             ]
           },
           {
@@ -6519,6 +6519,19 @@
             ]
           },
           {
+            "uniprot_id": "P01375",
+            "gene_name": "TNF",
+            "category": "pipeline_protein",
+            "score": 0.0,
+            "is_liability": false,
+            "is_herg": false,
+            "pocket_center": [
+              -5.461,
+              10.874,
+              -14.501
+            ]
+          },
+          {
             "uniprot_id": "P01106",
             "gene_name": "MYC",
             "category": "pipeline_protein",
@@ -6545,16 +6558,16 @@
             ]
           },
           {
-            "uniprot_id": "P01375",
-            "gene_name": "TNF",
+            "uniprot_id": "P01031",
+            "gene_name": "C5",
             "category": "pipeline_protein",
             "score": 0.0,
             "is_liability": false,
             "is_herg": false,
             "pocket_center": [
-              -5.461,
-              10.874,
-              -14.501
+              -38.75,
+              6.92,
+              0.42
             ]
           },
           {
@@ -6568,19 +6581,6 @@
               -0.454,
               2.912,
               0.409
-            ]
-          },
-          {
-            "uniprot_id": "P01031",
-            "gene_name": "C5",
-            "category": "pipeline_protein",
-            "score": 0.0,
-            "is_liability": false,
-            "is_herg": false,
-            "pocket_center": [
-              -38.75,
-              6.92,
-              0.42
             ]
           },
           {
@@ -6610,19 +6610,6 @@
             ]
           },
           {
-            "uniprot_id": "P02452",
-            "gene_name": "COL1A1",
-            "category": "pipeline_protein",
-            "score": 0.0,
-            "is_liability": false,
-            "is_herg": false,
-            "pocket_center": [
-              -2.821,
-              -11.697,
-              -11.408
-            ]
-          },
-          {
             "uniprot_id": "P02748",
             "gene_name": "C9",
             "category": "pipeline_protein",
@@ -6633,6 +6620,19 @@
               -12.94,
               -5.42,
               6.28
+            ]
+          },
+          {
+            "uniprot_id": "P02452",
+            "gene_name": "COL1A1",
+            "category": "pipeline_protein",
+            "score": 0.0,
+            "is_liability": false,
+            "is_herg": false,
+            "pocket_center": [
+              -2.821,
+              -11.697,
+              -11.408
             ]
           },
           {
@@ -6669,14 +6669,14 @@
         "herg_score": 0.0,
         "herg_safe": true,
         "si_grade": "poor",
-        "qed": 0.584,
-        "mw": 444.5,
-        "logp": 3.82
+        "qed": 0.556,
+        "mw": 437.6,
+        "logp": 3.53
       },
       "optimized_profile": {
-        "smiles": "O=C1c2cc(CCO)c(C3CCCCN3)cc2C(c2ccccc2-c2cnccn2)=NC1F",
-        "on_target_score": -7.363,
-        "on_target_le": 0.2231,
+        "smiles": "CCOC1CCC(C2NCCNC2C2CCCCC2)C(c2ccccc2)(c2cc[nH]n2)N1",
+        "on_target_score": -7.456,
+        "on_target_le": 0.233,
         "off_target_scores": {
           "P03372": 0.0,
           "P10275": 0.0,
@@ -6685,27 +6685,27 @@
           "P00533": 0.0,
           "Q14524": 0.0,
           "O15151": 0.0,
-          "P02768": 0.0,
-          "P00387": 0.0,
-          "P00352": 0.0,
           "P00367": 0.0,
+          "P00387": 0.0,
+          "P02768": 0.0,
+          "P00352": 0.0,
           "P00441": 0.0,
-          "P00742": 0.0,
-          "P00488": 0.0,
-          "P00734": 0.0,
-          "P00749": 0.0,
           "P00748": 0.0,
+          "P00488": 0.0,
+          "P00742": 0.0,
+          "P00749": 0.0,
+          "P00734": 0.0,
           "P00918": 0.0,
           "P01100": 0.0,
+          "P01375": 0.0,
           "P01106": 0.0,
           "P01116": 0.0,
-          "P01375": 0.0,
-          "P02144": 0.0,
           "P01031": 0.0,
+          "P02144": 0.0,
           "P02511": 0.0,
           "P02679": 0.0,
-          "P02452": 0.0,
           "P02748": 0.0,
+          "P02452": 0.0,
           "P02787": 0.0,
           "P02751": 0.0
         },
@@ -6802,16 +6802,16 @@
             ]
           },
           {
-            "uniprot_id": "P02768",
-            "gene_name": "ALB",
-            "category": "plasma_binding",
+            "uniprot_id": "P00367",
+            "gene_name": "GLUD1",
+            "category": "pipeline_protein",
             "score": 0.0,
             "is_liability": false,
             "is_herg": false,
             "pocket_center": [
-              -6.958,
-              3.398,
-              -0.637
+              -8.54,
+              3.76,
+              11.25
             ]
           },
           {
@@ -6828,6 +6828,19 @@
             ]
           },
           {
+            "uniprot_id": "P02768",
+            "gene_name": "ALB",
+            "category": "plasma_binding",
+            "score": 0.0,
+            "is_liability": false,
+            "is_herg": false,
+            "pocket_center": [
+              -6.958,
+              3.398,
+              -0.637
+            ]
+          },
+          {
             "uniprot_id": "P00352",
             "gene_name": "ALDH1A1",
             "category": "pipeline_protein",
@@ -6838,19 +6851,6 @@
               -5.105,
               2.277,
               -4.988
-            ]
-          },
-          {
-            "uniprot_id": "P00367",
-            "gene_name": "GLUD1",
-            "category": "pipeline_protein",
-            "score": 0.0,
-            "is_liability": false,
-            "is_herg": false,
-            "pocket_center": [
-              -8.54,
-              3.76,
-              11.25
             ]
           },
           {
@@ -6867,16 +6867,16 @@
             ]
           },
           {
-            "uniprot_id": "P00742",
-            "gene_name": "F10",
+            "uniprot_id": "P00748",
+            "gene_name": "F12",
             "category": "pipeline_protein",
             "score": 0.0,
             "is_liability": false,
             "is_herg": false,
             "pocket_center": [
-              5.12,
-              -0.89,
-              -5.09
+              12.57,
+              0.71,
+              26.48
             ]
           },
           {
@@ -6893,16 +6893,16 @@
             ]
           },
           {
-            "uniprot_id": "P00734",
-            "gene_name": "F2",
+            "uniprot_id": "P00742",
+            "gene_name": "F10",
             "category": "pipeline_protein",
             "score": 0.0,
             "is_liability": false,
             "is_herg": false,
             "pocket_center": [
-              -7.17,
-              -2.87,
-              5.41
+              5.12,
+              -0.89,
+              -5.09
             ]
           },
           {
@@ -6919,16 +6919,16 @@
             ]
           },
           {
-            "uniprot_id": "P00748",
-            "gene_name": "F12",
+            "uniprot_id": "P00734",
+            "gene_name": "F2",
             "category": "pipeline_protein",
             "score": 0.0,
             "is_liability": false,
             "is_herg": false,
             "pocket_center": [
-              12.57,
-              0.71,
-              26.48
+              -7.17,
+              -2.87,
+              5.41
             ]
           },
           {
@@ -6958,6 +6958,19 @@
             ]
           },
           {
+            "uniprot_id": "P01375",
+            "gene_name": "TNF",
+            "category": "pipeline_protein",
+            "score": 0.0,
+            "is_liability": false,
+            "is_herg": false,
+            "pocket_center": [
+              -5.461,
+              10.874,
+              -14.501
+            ]
+          },
+          {
             "uniprot_id": "P01106",
             "gene_name": "MYC",
             "category": "pipeline_protein",
@@ -6984,16 +6997,16 @@
             ]
           },
           {
-            "uniprot_id": "P01375",
-            "gene_name": "TNF",
+            "uniprot_id": "P01031",
+            "gene_name": "C5",
             "category": "pipeline_protein",
             "score": 0.0,
             "is_liability": false,
             "is_herg": false,
             "pocket_center": [
-              -5.461,
-              10.874,
-              -14.501
+              -38.75,
+              6.92,
+              0.42
             ]
           },
           {
@@ -7007,19 +7020,6 @@
               -0.454,
               2.912,
               0.409
-            ]
-          },
-          {
-            "uniprot_id": "P01031",
-            "gene_name": "C5",
-            "category": "pipeline_protein",
-            "score": 0.0,
-            "is_liability": false,
-            "is_herg": false,
-            "pocket_center": [
-              -38.75,
-              6.92,
-              0.42
             ]
           },
           {
@@ -7049,19 +7049,6 @@
             ]
           },
           {
-            "uniprot_id": "P02452",
-            "gene_name": "COL1A1",
-            "category": "pipeline_protein",
-            "score": 0.0,
-            "is_liability": false,
-            "is_herg": false,
-            "pocket_center": [
-              -2.821,
-              -11.697,
-              -11.408
-            ]
-          },
-          {
             "uniprot_id": "P02748",
             "gene_name": "C9",
             "category": "pipeline_protein",
@@ -7072,6 +7059,19 @@
               -12.94,
               -5.42,
               6.28
+            ]
+          },
+          {
+            "uniprot_id": "P02452",
+            "gene_name": "COL1A1",
+            "category": "pipeline_protein",
+            "score": 0.0,
+            "is_liability": false,
+            "is_herg": false,
+            "pocket_center": [
+              -2.821,
+              -11.697,
+              -11.408
             ]
           },
           {
@@ -7108,21 +7108,21 @@
         "herg_score": 0.0,
         "herg_safe": true,
         "si_grade": "poor",
-        "qed": 0.584,
-        "mw": 444.5,
-        "logp": 3.82
+        "qed": 0.556,
+        "mw": 437.6,
+        "logp": 3.53
       },
       "refinement_rounds": 0,
       "edits_applied": [],
       "delta_on_target": 0.0,
       "delta_si": 0.0,
-      "pareto_rank": 3
+      "pareto_rank": 2
     }
   ],
   "best_si": 0.0,
-  "best_on_target": -8.01,
+  "best_on_target": -8.401,
   "n_herg_safe": 5,
   "n_excellent_si": 0,
-  "runtime_sec": 48.2,
+  "runtime_sec": 19.5,
   "notes": ""
 }
