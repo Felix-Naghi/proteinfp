@@ -35,6 +35,8 @@ Usage (from orchestrator):
 """
 
 from __future__ import annotations
+from pipeline.ec_model_check import ensure_ec_model
+ensure_ec_model()
 
 import json
 from collections import defaultdict

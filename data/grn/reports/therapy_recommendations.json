@@ -11,10 +11,10 @@
       "tumor_specific": true,
       "highly_specific": true,
       "motif_types": [
+        "acid_base_pair",
         "cysteine_protease_dyad",
         "zinc_binding_cluster",
-        "serine_protease_triad",
-        "acid_base_pair"
+        "serine_protease_triad"
       ],
       "has_atp": false
     },
@@ -38,10 +38,10 @@
       "tumor_specific": true,
       "highly_specific": true,
       "motif_types": [
-        "zinc_binding_cluster",
-        "serine_protease_triad",
+        "p_loop_walker_a",
         "acid_base_pair",
-        "p_loop_walker_a"
+        "zinc_binding_cluster",
+        "serine_protease_triad"
       ],
       "has_atp": true
     },
@@ -66,11 +66,11 @@
       "tumor_specific": true,
       "highly_specific": true,
       "motif_types": [
-        "cysteine_protease_dyad",
-        "zinc_binding_cluster",
         "hrd_catalytic_loop",
+        "zinc_binding_cluster",
         "serine_protease_triad",
-        "acid_base_pair"
+        "acid_base_pair",
+        "cysteine_protease_dyad"
       ],
       "has_atp": false
     },
@@ -93,11 +93,11 @@
       "tumor_specific": true,
       "highly_specific": true,
       "motif_types": [
-        "cysteine_protease_dyad",
-        "zinc_binding_cluster",
         "hrd_catalytic_loop",
+        "zinc_binding_cluster",
         "serine_protease_triad",
-        "p_loop_walker_a"
+        "dna_binding_cluster",
+        "acid_base_pair"
       ],
       "has_atp": true
     },
@@ -105,7 +105,7 @@
     "rationale": [
       "Intracellular with druggable pocket 1380\u00c5\u00b3 (score=0.98) \u2014 small molecule feasible",
       "ATP-binding site \u2014 ATP-competitive inhibitor is the most direct approach",
-      "DNA-binding motif \u2014 consider allosteric inhibition to avoid non-specific genotoxicity",
+      "DNA-binding motif \u2014 consider intercalation or groove-binding small molecules",
       "Chromatin/epigenetic regulator \u2014 PROTAC degradation removes all protein functions, often more effective than catalytic inhibition alone for this target class"
     ],
     "combination": [],
@@ -123,11 +123,11 @@
       "tumor_specific": true,
       "highly_specific": true,
       "motif_types": [
-        "cysteine_protease_dyad",
-        "zinc_binding_cluster",
         "hrd_catalytic_loop",
+        "zinc_binding_cluster",
         "serine_protease_triad",
-        "acid_base_pair"
+        "acid_base_pair",
+        "cysteine_protease_dyad"
       ],
       "has_atp": false
     },
@@ -138,85 +138,5 @@
     ],
     "combination": [],
     "confidence": "HIGH"
-  },
-  {
-    "gene": "STMN1",
-    "uniprot": "P16949",
-    "decisions": {
-      "surface": false,
-      "pocket_volume": 400.0,
-      "pocket_druggability": 0.717,
-      "has_good_pocket": true,
-      "log2fc": 1.17,
-      "tumor_specific": false,
-      "highly_specific": false,
-      "motif_types": [
-        "zinc_binding_cluster",
-        "acid_base_pair",
-        "dna_binding_cluster"
-      ],
-      "has_atp": false
-    },
-    "recommendation": "Deprioritized \u2014 insufficient tumor specificity",
-    "rationale": [
-      "log2FC=1.17 \u2014 not tumor-specific. High normal tissue toxicity risk. DEPRIORITIZE."
-    ],
-    "combination": [],
-    "confidence": "LOW"
-  },
-  {
-    "gene": "SLC2A1",
-    "uniprot": "P11166",
-    "decisions": {
-      "surface": true,
-      "pocket_volume": 1280.0,
-      "pocket_druggability": 0.996,
-      "has_good_pocket": true,
-      "log2fc": 0.44,
-      "tumor_specific": false,
-      "highly_specific": false,
-      "motif_types": [
-        "zinc_binding_cluster",
-        "serine_protease_triad",
-        "p_loop_walker_a",
-        "flavin_binding",
-        "acid_base_pair"
-      ],
-      "has_atp": true
-    },
-    "recommendation": "Deprioritized \u2014 insufficient tumor specificity",
-    "rationale": [
-      "log2FC=0.44 \u2014 not tumor-specific. High normal tissue toxicity risk. DEPRIORITIZE."
-    ],
-    "combination": [
-      "TP53"
-    ],
-    "confidence": "LOW"
-  },
-  {
-    "gene": "LCN2",
-    "uniprot": "P80188",
-    "decisions": {
-      "surface": true,
-      "pocket_volume": 780.0,
-      "pocket_druggability": 0.985,
-      "has_good_pocket": true,
-      "log2fc": -2.37,
-      "tumor_specific": false,
-      "highly_specific": false,
-      "motif_types": [
-        "zinc_binding_cluster",
-        "dna_binding_cluster",
-        "dfg_loop",
-        "acid_base_pair"
-      ],
-      "has_atp": false
-    },
-    "recommendation": "Deprioritized \u2014 insufficient tumor specificity",
-    "rationale": [
-      "log2FC=-2.37 \u2014 not tumor-specific. High normal tissue toxicity risk. DEPRIORITIZE."
-    ],
-    "combination": [],
-    "confidence": "LOW"
   }
 ]

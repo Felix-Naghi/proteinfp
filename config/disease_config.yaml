@@ -1,0 +1,318 @@
+# ══════════════════════════════════════════════════════════════════════════════
+# config/disease_config.yaml
+# ══════════════════════════════════════════════════════════════════════════════
+#
+# Disease context for the GRN + SIM pipeline.
+#
+# This file is the ONLY place you need to edit to switch the entire
+# grn/ and sim/ pipeline to a new disease or organism.
+#
+# HOW TO SWITCH DISEASE
+# ─────────────────────
+# 1. Change `disease.name` and `disease.description`
+# 2. Point `data.scrnaseq_input` to your new scRNA-seq CSV
+# 3. Update `data.normal_cell_type` to the matching normal tissue
+# 4. Replace `driver_genes` with known drivers for your disease
+# 5. Run the pipeline normally — everything reads from here
+#
+# EXAMPLES AT THE BOTTOM OF THIS FILE
+# ─────────────────────────────────────
+# Scroll to the end for ready-to-paste configs for:
+#   - TB (Mycobacterium tuberculosis)
+#   - Leishmaniasis
+#   - Lung adenocarcinoma (LUAD)
+#   - Colorectal cancer (CRC)
+# ══════════════════════════════════════════════════════════════════════════════
+
+
+# ── Disease identity ───────────────────────────────────────────────────────────
+disease:
+  name:         "PDAC"                          # Short identifier (used in filenames)
+  full_name:    "Pancreatic Ductal Adenocarcinoma"
+  description:  "Primary pancreatic tumor — exocrine ductal origin"
+  organism:     "Homo sapiens"
+  organism_id:  9606                            # NCBI taxonomy ID (9606 = human)
+  tissue:       "pancreas"
+  cell_type:    "ductal"                        # Tumor cell type being modelled
+
+
+# ── Input data ─────────────────────────────────────────────────────────────────
+data:
+  # Path to scRNA-seq count matrix (relative to project root).
+  # Accepted formats:
+  #   CSV  — rows = genes, cols = cells  (will be auto-transposed)
+  #   h5ad — AnnData file (preprocessed, skips GRN-01)
+  scrnaseq_input:   "data/grn/input/GSE154778_dgeMtx.csv"
+
+  # GEO accession for reference (informational only, not used by code)
+  geo_accession:    "GSE154778"
+
+  # Column in AnnData.obs that identifies the tumor cluster.
+  # Used by SIM-05 to load baseline expression.
+  # For CSV input: cluster is determined automatically by Leiden algorithm.
+  tumor_cluster_id: "6"                         # Leiden cluster label
+
+  # Normal (non-tumor) cell type label for comparison in SIM-05.
+  # Must match a cluster label OR the `assigned_cluster` column in the
+  # normal reference dataset.
+  normal_cell_type: "ductal"
+
+  # Optional: path to a separate normal-tissue scRNA-seq dataset.
+  # If provided, SIM-05 uses this for the normal baseline instead of
+  # deriving it from non-tumor clusters in the same dataset.
+  # Leave blank ("") to use non-tumor cells from scrnaseq_input.
+  normal_reference: ""                          # e.g. "data/grn/input/GSE84133_normal.csv"
+
+
+# ── Driver genes ───────────────────────────────────────────────────────────────
+# Genes that are known/suspected drivers in this disease.
+# These are force-included in the HVG selection (GRN-01) even if they
+# are not statistically highly variable — ensuring they appear in the GRN.
+#
+# Guidelines:
+#   - Include well-established drivers from literature / COSMIC / OncoKB
+#   - 20–60 genes is a good range; more is fine, fewer risks missing key nodes
+#   - For non-cancer diseases: include known virulence factors, essential
+#     metabolic genes, or pathway hubs relevant to your disease
+#   - Order doesn't matter
+driver_genes:
+  # Core PDAC mutations
+  - KRAS
+  - TP53
+  - SMAD4
+  - CDKN2A
+  # RTK / RAS signalling
+  - EGFR
+  - ERBB2
+  - ERBB3
+  - MET
+  - BRAF
+  - RAF1
+  - MAP2K1
+  - MAPK1
+  - MAPK3
+  # PI3K / AKT / mTOR
+  - PIK3CA
+  - PIK3CB
+  - AKT1
+  - AKT2
+  - MTOR
+  - TSC1
+  - TSC2
+  # Cell cycle
+  - CCND1
+  - CDK4
+  - CDK6
+  - RB1
+  - E2F1
+  # Apoptosis
+  - BCL2
+  - BCL2L1
+  - BAX
+  - CASP3
+  - MDM2
+  # TGF-β / SMAD
+  - TGFB1
+  - TGFB2
+  - SMAD2
+  - SMAD3
+  # Transcription factors
+  - MYC
+  - JUN
+  - FOS
+  - NF2
+  # Invasion / metastasis
+  - MMP2
+  - MMP9
+  - CDH1
+  - VIM
+  # Immune checkpoints
+  - CD274
+  - PDCD1
+  - CTLA4
+  # Stroma / TME
+  - ACTA2
+  - FAP
+  - COL1A1
+
+  # Force-include these metabolic marker genes in HVG selection
+# even if they are not statistically variable
+marker_genes_force_include:
+  - LDHA
+  - LDHB
+  - PKM
+  - SLC16A3
+  - CA9
+  - HK2
+  - MKI67
+  - PCNA
+  - GSS
+  - GCLC
+  - GCLM
+  - SLC7A11
+  - HMGCR
+  - SQLE
+  - NDUFA1
+  - NDUFB1
+  - SDHA
+  - ATP5F1A
+  - ATP5F1B
+  - ATP6V1A
+  - ATP6V1B2
+  - HSPA5
+  - SLC41A1
+  - TRPM7
+
+
+# ── Target selection thresholds ────────────────────────────────────────────────
+# These control which differentially-expressed genes become drug targets.
+# Used by grn/select_targets.py and grn/03_therapy_decision.py.
+target_selection:
+  min_log2fc:   1.5    # Minimum tumor/normal log2 fold-change (~3x upregulation)
+  max_pval:     0.05   # Maximum adjusted p-value
+  top_n:        25     # Maximum number of targets to carry forward
+
+
+# ── GRN preprocessing parameters ──────────────────────────────────────────────
+grn:
+  n_hvg:        3000   # Number of highly variable genes to select
+  min_genes:    200    # Minimum genes per cell (QC filter)
+  min_cells:    10     # Minimum cells per gene (QC filter)
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# READY-TO-USE CONFIGS FOR OTHER DISEASES
+# Copy one of the blocks below and replace the content above.
+# ══════════════════════════════════════════════════════════════════════════════
+
+# ── Lung adenocarcinoma (LUAD) ─────────────────────────────────────────────
+# disease:
+#   name:         "LUAD"
+#   full_name:    "Lung Adenocarcinoma"
+#   organism:     "Homo sapiens"
+#   organism_id:  9606
+#   tissue:       "lung"
+#   cell_type:    "alveolar type II"
+# data:
+#   scrnaseq_input:   "data/grn/input/your_luad_data.csv"
+#   geo_accession:    "GSE131907"
+#   tumor_cluster_id: "5"
+#   normal_cell_type: "alveolar"
+#   normal_reference: ""
+# driver_genes:
+#   - EGFR
+#   - KRAS
+#   - ALK
+#   - ROS1
+#   - MET
+#   - BRAF
+#   - RET
+#   - TP53
+#   - STK11
+#   - KEAP1
+#   - NF1
+#   - PIK3CA
+#   - ERBB2
+#   - MYC
+#   - CDK4
+#   - CDK6
+#   - CDKN2A
+#   - RB1
+#   - SMAD4
+#   - TGFB1
+
+# ── Colorectal cancer (CRC) ────────────────────────────────────────────────
+# disease:
+#   name:         "CRC"
+#   full_name:    "Colorectal Adenocarcinoma"
+#   organism:     "Homo sapiens"
+#   organism_id:  9606
+#   tissue:       "colon"
+#   cell_type:    "colonocyte"
+# data:
+#   scrnaseq_input:   "data/grn/input/your_crc_data.csv"
+#   geo_accession:    "GSE178341"
+#   tumor_cluster_id: "3"
+#   normal_cell_type: "colonocyte"
+#   normal_reference: ""
+# driver_genes:
+#   - APC
+#   - KRAS
+#   - TP53
+#   - SMAD4
+#   - PIK3CA
+#   - BRAF
+#   - FBXW7
+#   - NRAS
+#   - TCF7L2
+#   - CTNNB1
+#   - MLH1
+#   - MSH2
+#   - ERBB2
+#   - MYC
+#   - CDK8
+#   - TGFB1
+#   - CDH1
+#   - VIM
+
+# ── TB (Mycobacterium tuberculosis) ───────────────────────────────────────
+# Note: for bacterial targets, scrnaseq_input should be a bulk RNA-seq
+# or transcriptomics matrix from infected macrophages or M.tb itself.
+# driver_genes should be M.tb essential/virulence genes.
+#
+# disease:
+#   name:         "TB"
+#   full_name:    "Tuberculosis (Mycobacterium tuberculosis H37Rv)"
+#   organism:     "Mycobacterium tuberculosis"
+#   organism_id:  83332
+#   tissue:       "macrophage"
+#   cell_type:    "infected alveolar macrophage"
+# data:
+#   scrnaseq_input:   "data/grn/input/your_mtb_transcriptomics.csv"
+#   geo_accession:    ""
+#   tumor_cluster_id: "infected"
+#   normal_cell_type: "uninfected"
+#   normal_reference: ""
+# driver_genes:
+#   - katG       # isoniazid target
+#   - inhA       # isoniazid target
+#   - rpoB       # rifampicin target
+#   - embB       # ethambutol target
+#   - gyrA       # fluoroquinolone target
+#   - kasA       # fatty acid synthesis
+#   - fabG1
+#   - ndh
+#   - ahpC
+#   - whiB3
+#   - dosR       # dormancy regulator
+#   - sigA
+#   - sigE
+#   - Rv1908c
+#   - icl1       # glyoxylate cycle, essential in persistence
+#   - icl2
+
+# ── Leishmaniasis (L. donovani) ────────────────────────────────────────────
+# disease:
+#   name:         "Leishmania"
+#   full_name:    "Visceral Leishmaniasis (Leishmania donovani)"
+#   organism:     "Leishmania donovani"
+#   organism_id:  5661
+#   tissue:       "macrophage"
+#   cell_type:    "infected macrophage"
+# data:
+#   scrnaseq_input:   "data/grn/input/your_leishmania_data.csv"
+#   geo_accession:    ""
+#   tumor_cluster_id: "infected"
+#   normal_cell_type: "uninfected"
+#   normal_reference: ""
+# driver_genes:
+#   - DHFR-TS    # antifolate target
+#   - TRYR       # trypanothione reductase
+#   - TXN1       # tryparedoxin
+#   - CRK3       # CDK homolog, essential
+#   - PTR1       # pteridine reductase
+#   - LEISHDNMT  # DNA methyltransferase
+#   - HSP83      # chaperone, drug efflux
+#   - HSP70
+#   - LdTopII    # topoisomerase II
+#   - gp63       # major surface protease

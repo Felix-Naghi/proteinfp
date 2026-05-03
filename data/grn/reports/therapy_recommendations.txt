@@ -1,6 +1,7 @@
 ======================================================================
   THERAPY MODALITY DECISION REPORT
   PDAC Drug Targets — ProteinFP + GRN + Tumor/Normal
+  Targets selected: 5  |  Reports found: 5
 ======================================================================
 
 ──────────────────────────────────────────────────────────────────────
@@ -50,7 +51,7 @@
   Rationale:
     • Intracellular with druggable pocket 1380Å³ (score=0.98) — small molecule feasible
     • ATP-binding site — ATP-competitive inhibitor is the most direct approach
-    • DNA-binding motif — consider allosteric inhibition to avoid non-specific genotoxicity
+    • DNA-binding motif — consider intercalation or groove-binding small molecules
     • Chromatin/epigenetic regulator — PROTAC degradation removes all protein functions, often more effective than catalytic inhibition alone for this target class
 
 ──────────────────────────────────────────────────────────────────────
@@ -65,40 +66,6 @@
     • Intracellular with druggable pocket 1000Å³ (score=1.00) — small molecule feasible
     • Chromatin/epigenetic regulator — PROTAC degradation removes all protein functions, often more effective than catalytic inhibition alone for this target class
 
-──────────────────────────────────────────────────────────────────────
-  #6  STMN1  (P16949)  [LOW]
-──────────────────────────────────────────────────────────────────────
-  Recommendation : Deprioritized — insufficient tumor specificity
-  Tumor/Normal   : log2FC = +1.17
-  Location       : INTRACELLULAR
-  Best pocket    : 400Å³  druggability=0.72
-
-  Rationale:
-    • log2FC=1.17 — not tumor-specific. High normal tissue toxicity risk. DEPRIORITIZE.
-
-──────────────────────────────────────────────────────────────────────
-  #7  SLC2A1  (P11166)  [LOW]
-──────────────────────────────────────────────────────────────────────
-  Recommendation : Deprioritized — insufficient tumor specificity
-  Tumor/Normal   : log2FC = +0.44
-  Location       : SURFACE
-  Best pocket    : 1280Å³  druggability=1.00
-  Combo targets  : TP53
-
-  Rationale:
-    • log2FC=0.44 — not tumor-specific. High normal tissue toxicity risk. DEPRIORITIZE.
-
-──────────────────────────────────────────────────────────────────────
-  #8  LCN2  (P80188)  [LOW]
-──────────────────────────────────────────────────────────────────────
-  Recommendation : Deprioritized — insufficient tumor specificity
-  Tumor/Normal   : log2FC = -2.37
-  Location       : SURFACE
-  Best pocket    : 780Å³  druggability=0.98
-
-  Rationale:
-    • log2FC=-2.37 — not tumor-specific. High normal tissue toxicity risk. DEPRIORITIZE.
-
 ======================================================================
   SUMMARY TABLE
 ======================================================================
@@ -109,6 +76,3 @@
   CLSPN        +6.25  INTRACELLULAR   Small molecule inhibitor            HIGH
   ATAD2        +5.18  INTRACELLULAR   Small molecule inhibitor + PROTAC   HIGH
   HELLS        +4.97  INTRACELLULAR   Small molecule inhibitor + PROTAC   HIGH
-  STMN1        +1.17  INTRACELLULAR   Deprioritized — insufficient tumor  LOW
-  SLC2A1       +0.44  SURFACE         Deprioritized — insufficient tumor  LOW
-  LCN2         -2.37  SURFACE         Deprioritized — insufficient tumor  LOW
