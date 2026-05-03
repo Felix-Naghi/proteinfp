@@ -727,7 +727,8 @@ def main(drug_name: str = "gemcitabine", validate: bool = False):
 
     # Build cell environment
     print("\n[1/4] Building PDAC tumor cell environment...")
-    cell_env = build_pdac_cell()
+    from sim.cell_environment_inference import infer_cell_environment
+    cell_env = infer_cell_environment()
     print(f"  Compartments: {len(cell_env)}")
     for name, comp in cell_env.items():
         print(f"    {name:<25} pH={comp.pH:.1f}  "

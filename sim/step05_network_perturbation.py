@@ -58,6 +58,10 @@ Usage:
 """
 
 from __future__ import annotations
+from sim.step05_network_perturbation_patch import (
+    load_baseline_expression_generic  as load_baseline_expression,
+    build_normal_cell_state_generic   as build_normal_cell_state,
+)
 
 import json
 import math

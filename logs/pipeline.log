@@ -180964,3 +180964,377 @@ PDBQT parsing error: Unknown or inappropriate tag found in flex residue or ligan
 ──────────────────────────────────────────────────────────────────────
 2026-05-02 14:53:12 [__main__] INFO  
   Results saved to: C:\Users\adria\Documents\proteinFP\data\intermediate\P04637_denovo.json
+2026-05-02 17:40:35 [__main__] INFO    Loaded active site data (18 HIGH-confidence residues)
+2026-05-02 17:40:35 [__main__] INFO    Loaded allosteric data (8 sites)
+2026-05-02 17:40:35 [__main__] INFO    Loaded pocket data (10 pockets)
+2026-05-02 17:40:35 [__main__] INFO  ── De Novo Design: P04637  [seed=634396] ──
+2026-05-02 17:40:35 [__main__] INFO    Target: ACTIVE SITE  center=[3.162, 2.859, -2.968]  box=[22.0, 22.0, 22.0]  (18 high-conf residues)
+2026-05-02 17:40:35 [__main__] INFO    Chem env: hydrophobic → aromatic fragments
+2026-05-02 17:40:35 [__main__] INFO    Vina: pipeline\vina.exe
+2026-05-02 17:40:35 [__main__] INFO    Receptor: C:\Users\adria\Documents\proteinFP\data\structures\P04637.pdbqt
+2026-05-02 17:40:35 [__main__] INFO    Workers: 8
+2026-05-02 17:40:35 [__main__] INFO    Building initial population (30 molecules)...
+2026-05-02 17:40:35 [__main__] INFO    Initial population: 30 molecules
+2026-05-02 17:40:35 [__main__] INFO    Starting evolution: 30 gens × 30 molecules
+2026-05-02 17:40:42 [__main__] INFO    Gen 1: score=-4.37  LE=0.257  QED=0.73  div=0.13  ↑ IMPROVED  CYP=0.75
+2026-05-02 17:40:42 [__main__] INFO    Gen time: 0m 7s  ETA: 3m 23s
+2026-05-02 17:41:25 [__main__] INFO    Gen 2: score=-6.14  LE=0.236  QED=0.54  div=0.18  ↑ IMPROVED  Surr=-6.68  CYP=0.75
+2026-05-02 17:41:27 [__main__] INFO    Gen time: 0m 44s  ETA: 11m 56s
+2026-05-02 17:42:36 [__main__] INFO    Gen 3: score=-44.64  LE=1.395  QED=0.42  div=0.24  ↑ IMPROVED  Surr=-6.64  CYP=0.75
+2026-05-02 17:42:39 [__main__] INFO    Gen time: 1m 11s  ETA: 18m 28s
+2026-05-02 17:43:46 [__main__] INFO    Gen 4: score=-44.64  LE=1.395  QED=0.42  div=0.30  stagnant 1  Surr=-42.43  CYP=0.75
+2026-05-02 17:43:48 [__main__] INFO    Gen time: 1m 9s  ETA: 20m 50s
+2026-05-02 17:45:09 [__main__] INFO    Gen 5: score=-44.64  LE=1.395  QED=0.42  div=0.20  stagnant 2  Surr=-34.20  CYP=0.75
+2026-05-02 17:45:09 [__main__] INFO    Top 5 by fitness (gen 5):
+2026-05-02 17:45:09 [__main__] INFO      #1: fit=0.697  score=-44.64  LE=1.395  SMILES=O=CNC1CCCN1c1c(-c2ccco2)cc2c([nH]c3ccccc32)c1N1CCNCC1
+2026-05-02 17:45:09 [__main__] INFO      #2: fit=0.564  score=-6.91  LE=0.238  SMILES=O=C(O)C1CC(c2c[nH]c3ccccc23)OC(C2CCCOC2)C1c1ccco1
+2026-05-02 17:45:09 [__main__] INFO      #3: fit=0.528  score=-6.53  LE=0.251  SMILES=Cc1cc2c(c(-c3ccc(N4CCNCC4)o3)c1)N(C(=O)CN)C(=O)C2
+2026-05-02 17:45:09 [__main__] INFO      #4: fit=0.509  score=-6.04  LE=0.263  SMILES=c1ccc(Cc2ccc3cc(C4CNCCN4)ccc3c2)cc1
+2026-05-02 17:45:09 [__main__] INFO      #5: fit=0.472  score=-5.66  LE=0.195  SMILES=Cc1cc(-c2ccc3nc(C#N)nc(C(F)(F)F)c3c2)cc(C2CNCCN2)c1
+2026-05-02 17:45:11 [__main__] INFO    Gen time: 1m 23s  ETA: 22m 59s
+2026-05-02 17:45:59 [__main__] WARNING      [DOCK FAIL] NCCCSc1cc(-c2ccccc2)ncc1CS: No score in Vina output. stderr: WARNING: At low exhaustiveness, it may be impossible to utilize all CPUs.
+^C | stdout: AutoDock Vina v1.2.3
+#######
+2026-05-02 17:45:59 [__main__] WARNING      [DOCK FAIL] CSc1ccc2c(c1N1CCN(c3ccco3)CC1)C(=O)C(=O): No score in Vina output. stderr: WARNING: At low exhaustiveness, it may be impossible to utilize all CPUs.
+^C | stdout: AutoDock Vina v1.2.3
+#######
+2026-05-02 17:45:59 [__main__] WARNING      [DOCK FAIL] SCC1CCC(c2cccnc2)C(c2cccs2)(C2CCNC2)O1: No score in Vina output. stderr: WARNING: At low exhaustiveness, it may be impossible to utilize all CPUs.
+^C | stdout: AutoDock Vina v1.2.3
+#######
+2026-05-02 17:45:59 [__main__] WARNING      [DOCK FAIL] NS(=O)(=O)c1ccc(C2(CC=O)CCNC2)c2cc(C3CCC: No score in Vina output. stderr: WARNING: At low exhaustiveness, it may be impossible to utilize all CPUs.
+^C | stdout: AutoDock Vina v1.2.3
+#######
+2026-05-02 17:45:59 [__main__] WARNING      [DOCK FAIL] O=COc1cc(CSc2cnc3ccccc3c2)c(C2CCCNC2)c2n: No score in Vina output. stderr: WARNING: At low exhaustiveness, it may be impossible to utilize all CPUs.
+^C | stdout: AutoDock Vina v1.2.3
+#######
+2026-05-02 17:45:59 [__main__] WARNING      [DOCK FAIL] O=COc1cc(CSc2cnc3ccccc3c2C2CCNCC2)cc2ncc: No score in Vina output. stderr: WARNING: At low exhaustiveness, it may be impossible to utilize all CPUs.
+^C | stdout: AutoDock Vina v1.2.3
+#######
+2026-05-02 17:45:59 [__main__] WARNING      [DOCK FAIL] Cc1ccccc1-c1c2c(cc(C3CCC(OC=O)CN3)c1N1CC: No score in Vina output. stderr: WARNING: At low exhaustiveness, it may be impossible to utilize all CPUs.
+^C | stdout: AutoDock Vina v1.2.3
+#######
+2026-05-02 17:45:59 [__main__] WARNING      [DOCK FAIL] CC(N)C1(c2cc3ncc(-c4ccc5[nH]c6ccccc6c5c4: No score in Vina output. stderr: WARNING: At low exhaustiveness, it may be impossible to utilize all CPUs.
+^C | stdout: AutoDock Vina v1.2.3
+#######
+2026-05-02 17:46:20 [__main__] INFO    Gen 6: score=-44.64  LE=1.395  QED=0.42  div=0.21  stagnant 3  Surr=-34.97  CYP=0.75
+2026-05-02 17:46:22 [__main__] INFO    Gen time: 1m 10s  ETA: 23m 6s
+2026-05-02 17:47:41 [__main__] INFO    Loaded active site data (18 HIGH-confidence residues)
+2026-05-02 17:47:41 [__main__] INFO    Loaded allosteric data (8 sites)
+2026-05-02 17:47:41 [__main__] INFO    Loaded pocket data (10 pockets)
+2026-05-02 17:47:41 [__main__] INFO  ── De Novo Design: P04637  [seed=334341] ──
+2026-05-02 17:47:41 [__main__] INFO    Target: ACTIVE SITE  center=[3.162, 2.859, -2.968]  box=[22.0, 22.0, 22.0]  (18 high-conf residues)
+2026-05-02 17:47:41 [__main__] INFO    Chem env: hydrophobic → aromatic fragments
+2026-05-02 17:47:41 [__main__] INFO    Vina: pipeline\vina.exe
+2026-05-02 17:47:41 [__main__] INFO    Receptor: C:\Users\adria\Documents\proteinFP\data\structures\P04637.pdbqt
+2026-05-02 17:47:41 [__main__] INFO    Workers: 8
+2026-05-02 17:47:41 [__main__] INFO    Building initial population (30 molecules)...
+2026-05-02 17:47:41 [__main__] INFO    Initial population: 30 molecules
+2026-05-02 17:47:41 [__main__] INFO    Starting evolution: 30 gens × 30 molecules
+2026-05-02 17:47:47 [__main__] INFO    Gen 1: score=-4.91  LE=0.288  QED=0.73  div=0.12  ↑ IMPROVED  CYP=0.75
+2026-05-02 17:47:47 [__main__] INFO    Gen time: 0m 6s  ETA: 3m 11s
+2026-05-02 17:48:32 [__main__] INFO    Gen 2: score=-6.66  LE=0.238  QED=0.66  div=0.17  ↑ IMPROVED  Surr=-6.58  CYP=0.75
+2026-05-02 17:48:33 [__main__] INFO    Gen time: 0m 45s  ETA: 12m 16s
+2026-05-02 17:49:44 [__main__] INFO    Gen 3: score=-6.66  LE=0.238  QED=0.66  div=0.28  stagnant 1  Surr=-6.64  CYP=0.75
+2026-05-02 17:49:46 [__main__] INFO    Gen time: 1m 12s  ETA: 18m 44s
+2026-05-02 17:50:58 [__main__] INFO    Gen 4: score=-6.66  LE=0.238  QED=0.66  div=0.34  stagnant 2  Surr=-6.53  CYP=0.75
+2026-05-02 17:50:59 [__main__] INFO    Gen time: 1m 13s  ETA: 21m 30s
+2026-05-02 17:52:10 [__main__] INFO    Gen 5: score=-6.66  LE=0.238  QED=0.66  div=0.28  stagnant 3  Surr=-6.46  CYP=0.75
+2026-05-02 17:52:10 [__main__] INFO    Top 5 by fitness (gen 5):
+2026-05-02 17:52:10 [__main__] INFO      #1: fit=0.444  score=-6.29  LE=0.197  SMILES=NCC1CCC(C(=O)NC2(F)N=C(c3cc(C(N)=O)ccn3)c3ccccc3C2=O)OC1
+2026-05-02 17:52:10 [__main__] INFO      #2: fit=0.444  score=-5.27  LE=0.182  SMILES=Cc1cccc(C2NCCCC2N(CC2CCCOC2)C(=O)c2cnccn2)c1
+2026-05-02 17:52:10 [__main__] INFO      #3: fit=0.442  score=-5.62  LE=0.256  SMILES=c1ccc(C2=NCCc3c2cccc3C2CCCNC2)cc1
+2026-05-02 17:52:10 [__main__] INFO      #4: fit=0.438  score=-5.39  LE=0.284  SMILES=O=CN(c1ccc2ccccc2c1)C1CCCCC1
+2026-05-02 17:52:10 [__main__] INFO      #5: fit=0.438  score=-5.78  LE=0.181  SMILES=NC(=O)c1cc2c(cc1C1NCCCC1c1cnccn1)C(=O)CN=C2c1ccccc1
+2026-05-02 17:52:11 [__main__] INFO    Gen time: 1m 11s  ETA: 22m 31s
+2026-05-02 17:53:20 [__main__] INFO    Gen 6: score=-7.11  LE=0.245  QED=0.46  div=0.27  ↑ IMPROVED  Surr=-5.71  CYP=0.75
+2026-05-02 17:53:22 [__main__] INFO    Gen time: 1m 11s  ETA: 22m 46s
+2026-05-02 17:54:36 [__main__] INFO    Gen 7: score=-7.11  LE=0.245  QED=0.46  div=0.29  stagnant 1  Surr=-6.96  CYP=0.75
+2026-05-02 17:54:38 [__main__] INFO    Gen time: 1m 15s  ETA: 22m 50s
+2026-05-02 17:55:52 [__main__] INFO    Gen 8: score=-7.11  LE=0.245  QED=0.46  div=0.24  stagnant 2  Surr=-6.79  CYP=0.75
+2026-05-02 17:55:54 [__main__] INFO    Gen time: 1m 15s  ETA: 22m 36s
+2026-05-02 17:57:08 [__main__] INFO    Gen 9: score=-7.11  LE=0.245  QED=0.46  div=0.27  stagnant 3  Surr=-6.81  CYP=0.75
+2026-05-02 17:57:10 [__main__] INFO    Gen time: 1m 16s  ETA: 22m 8s
+2026-05-02 17:58:12 [__main__] INFO    Gen 10: score=-7.11  LE=0.245  QED=0.46  div=0.30  stagnant 4  Surr=-6.80  CYP=0.75
+2026-05-02 17:58:12 [__main__] INFO    Top 5 by fitness (gen 10):
+2026-05-02 17:58:12 [__main__] INFO      #1: fit=0.465  score=-6.03  LE=0.241  SMILES=Cc1c(-c2cc(NC=O)ccn2)[nH]c2c(C3CCCCO3)cccc12
+2026-05-02 17:58:12 [__main__] INFO      #2: fit=0.443  score=-6.20  LE=0.194  SMILES=NC(=O)C1(c2cc3ccccc3nn2)CCCOC1c1ccc2ncncc2c1NC=O
+2026-05-02 17:58:12 [__main__] INFO      #3: fit=0.429  score=-5.72  LE=0.184  SMILES=Nc1c(-c2cccc3ncccc23)c(N[SH](=O)=O)c(C2CCCCN2)c2cncnc12
+2026-05-02 17:58:12 [__main__] INFO      #4: fit=0.428  score=-5.72  LE=0.179  SMILES=O=CNc1cccc(C2=NC(C3CCNCC3)C(=O)c3c2ccc(F)c3-c2ccco2)c1
+2026-05-02 17:58:12 [__main__] INFO      #5: fit=0.427  score=-5.72  LE=0.204  SMILES=c1coc(-c2ncc(-c3cn[nH]c3-c3ccncc3)nc2C2CNCCN2)c1
+2026-05-02 17:58:12 [__main__] INFO    Stagnation 4: injecting 10 unguided molecules
+2026-05-02 17:58:13 [__main__] INFO    Gen time: 1m 3s  ETA: 21m 5s
+2026-05-02 17:59:04 [__main__] INFO    Gen 11: score=-7.11  LE=0.245  QED=0.46  div=0.24  stagnant 5  Surr=-6.81  CYP=0.75
+2026-05-02 17:59:05 [__main__] INFO    Stagnation 5: injecting 10 unguided molecules
+2026-05-02 17:59:06 [__main__] INFO    Gen time: 0m 52s  ETA: 19m 43s
+2026-05-02 18:00:46 [__main__] INFO    Gen 12: score=-7.11  LE=0.245  QED=0.46  div=0.39  stagnant 6  Surr=-6.83  CYP=0.75
+2026-05-02 18:00:47 [__main__] INFO    Stagnation 6: injecting 10 unguided molecules
+2026-05-02 18:00:48 [__main__] INFO    Gen time: 1m 41s  ETA: 19m 40s
+2026-05-02 18:02:30 [__main__] INFO    Gen 13: score=-7.11  LE=0.245  QED=0.46  div=0.29  stagnant 7  Surr=-6.83  CYP=0.75
+2026-05-02 18:02:31 [__main__] INFO    Stagnation 7: injecting 10 unguided molecules
+2026-05-02 18:02:32 [__main__] INFO    Gen time: 1m 44s  ETA: 19m 25s
+2026-05-02 18:04:43 [__main__] INFO    Gen 14: score=-7.11  LE=0.245  QED=0.46  div=0.28  stagnant 8  Surr=-6.88  CYP=0.75
+2026-05-02 18:04:43 [__main__] INFO    Stagnation 8: injecting 10 unguided molecules
+2026-05-02 18:04:44 [__main__] INFO    Gen time: 2m 12s  ETA: 19m 29s
+2026-05-02 18:07:13 [__main__] INFO    Gen 15: score=-7.64  LE=0.231  QED=0.44  div=0.29  ↑ IMPROVED  Surr=-5.56  CYP=0.75
+2026-05-02 18:07:13 [__main__] INFO    Top 5 by fitness (gen 15):
+2026-05-02 18:07:13 [__main__] INFO      #1: fit=0.532  score=-7.64  LE=0.231  SMILES=Cc1cc2nc(C3CNCCN3)c(-c3ccccn3)nc2cc1-c1cccc2ncccc12
+2026-05-02 18:07:13 [__main__] INFO      #2: fit=0.477  score=-6.19  LE=0.221  SMILES=COC1CCCOC1c1c[nH]c2c(-c3ccc4c(c3)NC(=O)C4=O)cccc12
+2026-05-02 18:07:13 [__main__] INFO      #3: fit=0.474  score=-6.60  LE=0.206  SMILES=Cc1n[nH]cc1C1CC(c2cnc3ccccc3c2)CN1c1cccc2c1NC(=O)C2=O
+2026-05-02 18:07:13 [__main__] INFO      #4: fit=0.472  score=-6.30  LE=0.197  SMILES=c1cc(-c2coc(C3(C4CNCC(c5ccoc5)C4)CCCNC3)c2)c2cncnc2c1
+2026-05-02 18:07:13 [__main__] INFO      #5: fit=0.458  score=-6.01  LE=0.207  SMILES=COC1(F)CCCOC1c1c[nH]c2c(-c3ccc4c(c3)NC(=O)C4=O)cccc12
+2026-05-02 18:07:15 [__main__] INFO    Gen time: 2m 30s  ETA: 19m 34s
+2026-05-02 18:08:41 [__main__] INFO    Gen 16: score=-7.64  LE=0.231  QED=0.44  div=0.20  stagnant 1  Surr=-7.42  CYP=0.75
+2026-05-02 18:08:43 [__main__] INFO    Gen time: 1m 28s  ETA: 18m 24s
+2026-05-02 18:10:22 [__main__] INFO    Gen 17: score=-8.51  LE=0.258  QED=0.40  div=0.26  ↑ IMPROVED  Surr=-7.22  CYP=0.75
+2026-05-02 18:10:24 [__main__] INFO    Gen time: 1m 40s  ETA: 17m 22s
+2026-05-02 18:12:06 [__main__] INFO    Gen 18: score=-8.54  LE=0.251  QED=0.39  div=0.21  ↑ IMPROVED  Surr=-7.35  CYP=0.75
+2026-05-02 18:12:08 [__main__] INFO    Gen time: 1m 44s  ETA: 16m 18s
+2026-05-02 18:13:41 [__main__] INFO    Gen 19: score=-8.54  LE=0.251  QED=0.39  div=0.23  stagnant 1  Surr=-8.06  CYP=0.75
+2026-05-02 18:13:44 [__main__] INFO    Gen time: 1m 35s  ETA: 15m 5s
+2026-05-02 18:14:51 [__main__] WARNING      [DOCK FAIL] CNCCN.c1ccc(-c2ccc3c(c2)[nH]c2ccccc23)nc: Disconnected SMILES (contains '.')
+2026-05-02 18:15:14 [__main__] INFO    Gen 20: score=-8.54  LE=0.251  QED=0.39  div=0.25  stagnant 2  Surr=-8.20  CYP=0.75
+2026-05-02 18:15:14 [__main__] INFO    Top 5 by fitness (gen 20):
+2026-05-02 18:15:14 [__main__] INFO      #1: fit=0.548  score=-8.54  LE=0.251  SMILES=Cc1cc2nc(C3CNCC(O)N3)c(-c3ccccn3)nc2nc1-c1cccc2ncccc12
+2026-05-02 18:15:14 [__main__] INFO      #2: fit=0.538  score=-8.51  LE=0.258  SMILES=Cc1cc2nc(C3CNCNN3)c(-c3ccccn3)nc2cc1-c1cccc2ncccc12
+2026-05-02 18:15:14 [__main__] INFO      #3: fit=0.515  score=-8.16  LE=0.240  SMILES=Cc1cc2nc(C3CNCC(O)N3)c(-c3ccccn3)nc2cc1-c1cccc2ncccc12
+2026-05-02 18:15:14 [__main__] INFO      #4: fit=0.511  score=-7.70  LE=0.233  SMILES=Cc1cc2nc(C3CNCCN3)c(-c3ccccn3)nc2nc1-c1ccnc2ncccc12
+2026-05-02 18:15:14 [__main__] INFO      #5: fit=0.507  score=-7.93  LE=0.240  SMILES=Cc1cc2nc(C3CNCNN3)c(-c3ncccn3)nc2cc1-c1cccc2ncccc12
+2026-05-02 18:15:17 [__main__] INFO    Gen time: 1m 32s  ETA: 13m 48s
+2026-05-02 18:16:55 [__main__] INFO    Gen 21: score=-8.54  LE=0.251  QED=0.39  div=0.23  stagnant 3  Surr=-8.29  CYP=0.75
+2026-05-02 18:16:58 [__main__] INFO    Gen time: 1m 41s  ETA: 12m 33s
+2026-05-02 18:18:38 [__main__] WARNING      [DOCK FAIL] Nc1nc2cc[nH]c2nc1C1CCCN(c2nccnc2-c2cccc3: No score in Vina output. stderr: WARNING: At low exhaustiveness, it may be impossible to utilize all CPUs.
+ | stdout: AutoDock Vina v1.2.3
+#########
+2026-05-02 18:18:38 [__main__] INFO    Gen 22: score=-8.54  LE=0.251  QED=0.39  div=0.21  stagnant 4  Surr=-8.33  CYP=0.75
+2026-05-02 18:18:38 [__main__] INFO    Stagnation 4: injecting 10 unguided molecules
+2026-05-02 18:18:41 [__main__] INFO    Gen time: 1m 42s  ETA: 11m 16s
+2026-05-02 18:20:02 [__main__] INFO    Gen 23: score=-8.54  LE=0.251  QED=0.39  div=0.21  stagnant 5  Surr=-8.33  CYP=0.75
+2026-05-02 18:20:02 [__main__] INFO    Stagnation 5: injecting 10 unguided molecules
+2026-05-02 18:20:05 [__main__] INFO    Gen time: 1m 24s  ETA: 9m 51s
+2026-05-02 18:23:17 [__main__] INFO    Gen 24: score=-8.54  LE=0.251  QED=0.39  div=0.20  stagnant 6  Surr=-8.36  CYP=0.75
+2026-05-02 18:23:17 [__main__] INFO    Stagnation 6: injecting 10 unguided molecules
+2026-05-02 18:23:18 [__main__] INFO    Gen time: 3m 13s  ETA: 8m 54s
+2026-05-02 18:26:56 [__main__] INFO    Gen 25: score=-8.54  LE=0.251  QED=0.39  div=0.20  stagnant 7  Surr=-8.39  CYP=0.75
+2026-05-02 18:26:56 [__main__] INFO    Top 5 by fitness (gen 25):
+2026-05-02 18:26:56 [__main__] INFO      #1: fit=0.572  score=-8.54  LE=0.251  SMILES=Cc1cc2nc(C3CNCC(O)N3)c(-c3ccccn3)nc2nc1-c1cccc2ncccc12
+2026-05-02 18:26:56 [__main__] INFO      #2: fit=0.570  score=-8.51  LE=0.258  SMILES=Cc1cc2nc(C3CNCNN3)c(-c3ccccn3)nc2cc1-c1cccc2ncccc12
+2026-05-02 18:26:56 [__main__] INFO      #3: fit=0.554  score=-7.81  LE=0.244  SMILES=Cc1ccc2c(N3C(=O)C(=O)c4ccccc43)cc(N(C)C(=O)C3CCNCC3)nc2c1
+2026-05-02 18:26:56 [__main__] INFO      #4: fit=0.551  score=-8.16  LE=0.240  SMILES=Cc1cc2nc(C3CNCC(O)N3)c(-c3ccccn3)nc2cc1-c1cccc2ncccc12
+2026-05-02 18:26:56 [__main__] INFO      #5: fit=0.530  score=-7.55  LE=0.236  SMILES=Cc1ccc2c(N3C(=O)C(=O)c4ccccc43)cc(N(C)C(=O)C3CCNCC3)cc2c1
+2026-05-02 18:26:56 [__main__] INFO    Stagnation 7: injecting 10 unguided molecules
+2026-05-02 18:26:58 [__main__] INFO    Gen time: 3m 39s  ETA: 7m 51s
+2026-05-02 18:30:13 [__main__] INFO    Gen 26: score=-8.54  LE=0.251  QED=0.39  div=0.19  stagnant 8  Surr=-8.41  CYP=0.75
+2026-05-02 18:30:13 [__main__] INFO    Stagnation 8: injecting 10 unguided molecules
+2026-05-02 18:30:15 [__main__] INFO    Gen time: 3m 16s  ETA: 6m 32s
+2026-05-02 18:33:43 [__main__] INFO    Gen 27: score=-8.54  LE=0.251  QED=0.39  div=0.19  stagnant 9  Surr=-8.42  CYP=0.75
+2026-05-02 18:33:43 [__main__] INFO    Stagnation 9: injecting 10 unguided molecules
+2026-05-02 18:33:45 [__main__] INFO    Gen time: 3m 30s  ETA: 5m 7s
+2026-05-02 18:36:15 [__main__] INFO    Gen 28: score=-8.54  LE=0.251  QED=0.39  div=0.21  stagnant 10  Surr=-8.52  CYP=0.75
+2026-05-02 18:36:15 [__main__] INFO    Stagnation 10: injecting 10 unguided molecules
+2026-05-02 18:36:16 [__main__] INFO    HARD RESET: exploring 24 fresh scaffolds (ignoring c1ccc(-c2nc3nc(-c4cccc5ncccc45)
+2026-05-02 18:36:16 [__main__] INFO    Gen time: 2m 30s  ETA: 3m 28s
+2026-05-02 18:38:00 [__main__] INFO    Gen 29: score=-8.54  LE=0.251  QED=0.39  div=0.21  stagnant 2  Surr=-8.52  CYP=0.75
+2026-05-02 18:38:02 [__main__] INFO    Gen time: 1m 46s  ETA: 1m 44s
+2026-05-02 18:40:40 [__main__] INFO    Gen 30: score=-8.54  LE=0.251  QED=0.39  div=0.20  stagnant 3  Surr=-8.42  CYP=0.75
+2026-05-02 18:40:40 [__main__] INFO    Top 5 by fitness (gen 30):
+2026-05-02 18:40:40 [__main__] INFO      #1: fit=0.599  score=-8.54  LE=0.251  SMILES=Cc1cc2nc(C3CNCC(O)N3)c(-c3ccccn3)nc2nc1-c1cccc2ncccc12
+2026-05-02 18:40:40 [__main__] INFO      #2: fit=0.595  score=-8.51  LE=0.258  SMILES=Cc1cc2nc(C3CNCNN3)c(-c3ccccn3)nc2cc1-c1cccc2ncccc12
+2026-05-02 18:40:40 [__main__] INFO      #3: fit=0.577  score=-7.81  LE=0.260  SMILES=Cc1ccc2c(N3C(=O)Cc4ccccc43)cc(NC(=O)C3CCNCC3)nc2c1
+2026-05-02 18:40:40 [__main__] INFO      #4: fit=0.569  score=-8.16  LE=0.240  SMILES=Cc1cc2nc(C3CNCC(O)N3)c(-c3ccccn3)nc2cc1-c1cccc2ncccc12
+2026-05-02 18:40:40 [__main__] INFO      #5: fit=0.557  score=-7.81  LE=0.244  SMILES=Cc1ccc2c(N3C(=O)C(=O)c4ccccc43)cc(N(C)C(=O)C3CCNCC3)nc2c1
+2026-05-02 18:40:42 [__main__] INFO    Gen time: 2m 40s  ETA: 0m 0s
+2026-05-02 18:40:42 [__main__] INFO  
+  Final consensus docking on top candidates...
+2026-05-02 18:40:43 [__main__] INFO    Final: score=-8.54  LE=0.251  QED=0.39  CYP=0.75  Cc1cc2nc(C3CNCC(O)N3)c(-c3ccccn3)nc2nc1-c1cccc2ncccc12
+2026-05-02 18:40:43 [__main__] INFO    Final: score=-8.51  LE=0.258  QED=0.40  CYP=0.75  Cc1cc2nc(C3CNCNN3)c(-c3ccccn3)nc2cc1-c1cccc2ncccc12
+2026-05-02 18:40:43 [__main__] INFO    Final: score=-8.16  LE=0.240  QED=0.39  CYP=0.75  Cc1cc2nc(C3CNCC(O)N3)c(-c3ccccn3)nc2cc1-c1cccc2ncccc12
+2026-05-02 18:40:43 [__main__] INFO    Final: score=-7.93  LE=0.240  QED=0.40  CYP=0.75  Cc1cc2nc(C3CNCNN3)c(-c3ncccn3)nc2cc1-c1cccc2ncccc12
+2026-05-02 18:40:43 [__main__] INFO    Final: score=-7.82  LE=0.237  QED=0.40  CYP=0.75  Cc1cc2nc(C3CNCNN3)c(-c3ccccn3)nc2cc1-c1ccnc2ncccc12
+2026-05-02 18:40:43 [__main__] INFO    Final: score=-7.81  LE=0.244  QED=0.65  CYP=0.75  Cc1ccc2c(N3C(=O)C(=O)c4ccccc43)cc(N(C)C(=O)C3CCNCC3)nc2c1
+2026-05-02 18:40:43 [__main__] INFO    Final: score=-7.81  LE=0.260  QED=0.70  CYP=0.75  Cc1ccc2c(N3C(=O)Cc4ccccc43)cc(NC(=O)C3CCNCC3)nc2c1
+2026-05-02 18:40:43 [__main__] INFO    Final: score=-7.76  LE=0.228  QED=0.38  CYP=0.75  Cc1cc2cc(C3CNCC(O)N3)c(-c3ccccc3)nc2nc1-c1cccc2ncccc12
+2026-05-02 18:40:43 [__main__] INFO    Final: score=-7.70  LE=0.233  QED=0.45  CYP=0.75  Cc1cc2nc(C3CNCCN3)c(-c3ccccn3)nc2nc1-c1ccnc2ncccc12
+2026-05-02 18:40:43 [__main__] INFO    Final: score=-7.64  LE=0.231  QED=0.44  CYP=0.75  Cc1cc2nc(C3CNCCN3)c(-c3ccccn3)nc2cc1-c1cccc2ncccc12
+2026-05-02 18:40:43 [__main__] INFO  
+  ── Auto-triggering Module 15: Selectivity Optimization ──
+2026-05-02 18:40:43 [pipeline.selectivity_optimizer] INFO  ══ Module 15: Selectivity Optimization: P04637 ══
+2026-05-02 18:40:43 [pipeline.selectivity_optimizer] INFO    Vina: pipeline\vina.exe
+2026-05-02 18:40:43 [pipeline.selectivity_optimizer] INFO    Target: P04637 (TP53)
+2026-05-02 18:40:43 [pipeline.selectivity_optimizer] INFO    Input candidates: 10 → optimizing top 5
+2026-05-02 18:40:43 [pipeline.selectivity_optimizer] INFO    Top candidates:
+2026-05-02 18:40:43 [pipeline.selectivity_optimizer] INFO      #1: score=-8.54  LE=0.251  QED=0.39  Cc1cc2nc(C3CNCC(O)N3)c(-c3ccccn3)nc2nc1-c1cccc2ncccc12
+2026-05-02 18:40:43 [pipeline.selectivity_optimizer] INFO      #2: score=-8.51  LE=0.258  QED=0.40  Cc1cc2nc(C3CNCNN3)c(-c3ccccn3)nc2cc1-c1cccc2ncccc12
+2026-05-02 18:40:43 [pipeline.selectivity_optimizer] INFO      #3: score=-8.16  LE=0.240  QED=0.39  Cc1cc2nc(C3CNCC(O)N3)c(-c3ccccn3)nc2cc1-c1cccc2ncccc12
+2026-05-02 18:40:43 [pipeline.selectivity_optimizer] INFO      #4: score=-7.93  LE=0.240  QED=0.40  Cc1cc2nc(C3CNCNN3)c(-c3ncccn3)nc2cc1-c1cccc2ncccc12
+2026-05-02 18:40:43 [pipeline.selectivity_optimizer] INFO      #5: score=-7.82  LE=0.237  QED=0.40  Cc1cc2nc(C3CNCNN3)c(-c3ccccn3)nc2cc1-c1ccnc2ncccc12
+2026-05-02 18:40:43 [pipeline.selectivity_optimizer] INFO    Receptor: C:\Users\adria\Documents\proteinFP\data\structures\P04637.pdbqt
+2026-05-02 18:40:43 [pipeline.selectivity_optimizer] INFO    Loaded dock cache: 671 entries from C:\Users\adria\Documents\proteinFP\data\intermediate\P04637_dock_cache.json
+2026-05-02 18:40:43 [pipeline.selectivity_optimizer] INFO  
+  ── Building off-target panel ──
+2026-05-02 18:40:43 [pipeline.selectivity_optimizer] INFO    [Panel] Building liability panel...
+2026-05-02 18:41:01 [pipeline.selectivity_optimizer] INFO    [Panel] Scanning pipeline intermediate files...
+2026-05-02 18:41:01 [pipeline.selectivity_optimizer] INFO    [Panel] Final panel: 30 off-target proteins
+2026-05-02 18:41:01 [pipeline.selectivity_optimizer] INFO      SCN5A      [cardiac_Na_channel]  Q14524
+2026-05-02 18:41:01 [pipeline.selectivity_optimizer] INFO      ESR1       [nuclear_receptor]  P03372
+2026-05-02 18:41:01 [pipeline.selectivity_optimizer] INFO      AR         [nuclear_receptor]  P10275
+2026-05-02 18:41:01 [pipeline.selectivity_optimizer] INFO      EGFR       [kinase]  P00533
+2026-05-02 18:41:01 [pipeline.selectivity_optimizer] INFO      ABL1       [kinase]  P00519
+2026-05-02 18:41:01 [pipeline.selectivity_optimizer] INFO      BRAF       [kinase]  P15056
+2026-05-02 18:41:01 [pipeline.selectivity_optimizer] INFO      ALB        [plasma_binding]  P02768
+2026-05-02 18:41:01 [pipeline.selectivity_optimizer] INFO      MDM4       [pipeline_protein]  O15151
+2026-05-02 18:41:01 [pipeline.selectivity_optimizer] INFO      ALDH1A1    [pipeline_protein]  P00352
+2026-05-02 18:41:01 [pipeline.selectivity_optimizer] INFO      GLUD1      [pipeline_protein]  P00367
+2026-05-02 18:41:01 [pipeline.selectivity_optimizer] INFO      CYB5R3     [pipeline_protein]  P00387
+2026-05-02 18:41:01 [pipeline.selectivity_optimizer] INFO      SOD1       [pipeline_protein]  P00441
+2026-05-02 18:41:01 [pipeline.selectivity_optimizer] INFO      F13A1      [pipeline_protein]  P00488
+2026-05-02 18:41:01 [pipeline.selectivity_optimizer] INFO      F2         [pipeline_protein]  P00734
+2026-05-02 18:41:01 [pipeline.selectivity_optimizer] INFO      F10        [pipeline_protein]  P00742
+2026-05-02 18:41:01 [pipeline.selectivity_optimizer] INFO      F12        [pipeline_protein]  P00748
+2026-05-02 18:41:01 [pipeline.selectivity_optimizer] INFO      PLAU       [pipeline_protein]  P00749
+2026-05-02 18:41:01 [pipeline.selectivity_optimizer] INFO      CA2        [pipeline_protein]  P00918
+2026-05-02 18:41:01 [pipeline.selectivity_optimizer] INFO      C5         [pipeline_protein]  P01031
+2026-05-02 18:41:01 [pipeline.selectivity_optimizer] INFO      FOS        [pipeline_protein]  P01100
+2026-05-02 18:41:01 [pipeline.selectivity_optimizer] INFO      MYC        [pipeline_protein]  P01106
+2026-05-02 18:41:01 [pipeline.selectivity_optimizer] INFO      KRAS       [pipeline_protein]  P01116
+2026-05-02 18:41:01 [pipeline.selectivity_optimizer] INFO      TNF        [pipeline_protein]  P01375
+2026-05-02 18:41:01 [pipeline.selectivity_optimizer] INFO      MB         [pipeline_protein]  P02144
+2026-05-02 18:41:01 [pipeline.selectivity_optimizer] INFO      COL1A1     [pipeline_protein]  P02452
+2026-05-02 18:41:01 [pipeline.selectivity_optimizer] INFO      CRYAB      [pipeline_protein]  P02511
+2026-05-02 18:41:01 [pipeline.selectivity_optimizer] INFO      FGG        [pipeline_protein]  P02679
+2026-05-02 18:41:01 [pipeline.selectivity_optimizer] INFO      C9         [pipeline_protein]  P02748
+2026-05-02 18:41:01 [pipeline.selectivity_optimizer] INFO      FN1        [pipeline_protein]  P02751
+2026-05-02 18:41:01 [pipeline.selectivity_optimizer] INFO      TF         [pipeline_protein]  P02787
+2026-05-02 18:41:01 [pipeline.selectivity_optimizer] INFO  
+  ── Selectivity scan + refinement (5 molecules × 30 off-targets) ──
+2026-05-02 18:41:01 [pipeline.selectivity_optimizer] INFO  
+  [1/5] Molecule: Cc1cc2nc(C3CNCC(O)N3)c(-c3ccccn3)nc2nc1-c1cccc2ncccc12
+2026-05-02 18:41:01 [pipeline.selectivity_optimizer] INFO    Refining: Cc1cc2nc(C3CNCC(O)N3)c(-c3ccccn3)nc2nc1-c1cccc2ncccc12
+2026-05-02 18:41:01 [pipeline.selectivity_optimizer] INFO      Initial score: -8.54  Docking against 30 off-targets...
+2026-05-02 18:41:01 [pipeline.selectivity_optimizer] INFO      Initial SI=0.00  grade=poor  liabilities=0  worst_off=BRAF(0.00)
+2026-05-02 18:41:02 [pipeline.selectivity_optimizer] INFO      Round 1: No improvement (1/4)
+2026-05-02 18:41:02 [pipeline.selectivity_optimizer] INFO      Round 2: No improvement (2/4)
+2026-05-02 18:41:02 [pipeline.selectivity_optimizer] INFO      Round 3: No improvement (3/4)
+2026-05-02 18:41:02 [pipeline.selectivity_optimizer] INFO      Round 4: No improvement (4/4)
+2026-05-02 18:41:02 [pipeline.selectivity_optimizer] INFO      Round 5: No improvement for 4 rounds. Stopping.
+2026-05-02 18:41:02 [pipeline.selectivity_optimizer] INFO  
+  [2/5] Molecule: Cc1cc2nc(C3CNCNN3)c(-c3ccccn3)nc2cc1-c1cccc2ncccc12
+2026-05-02 18:41:02 [pipeline.selectivity_optimizer] INFO    Refining: Cc1cc2nc(C3CNCNN3)c(-c3ccccn3)nc2cc1-c1cccc2ncccc12
+2026-05-02 18:41:02 [pipeline.selectivity_optimizer] INFO      Initial score: -8.51  Docking against 30 off-targets...
+2026-05-02 18:41:02 [pipeline.selectivity_optimizer] INFO      Initial SI=0.00  grade=poor  liabilities=0  worst_off=ESR1(0.00)
+2026-05-02 18:41:02 [pipeline.selectivity_optimizer] INFO      Round 1: No improvement (1/4)
+2026-05-02 18:41:02 [pipeline.selectivity_optimizer] INFO      Round 2: No improvement (2/4)
+2026-05-02 18:41:02 [pipeline.selectivity_optimizer] INFO      Round 3: No improvement (3/4)
+2026-05-02 18:41:02 [pipeline.selectivity_optimizer] INFO      Round 4: No improvement (4/4)
+2026-05-02 18:41:02 [pipeline.selectivity_optimizer] INFO      Round 5: No improvement for 4 rounds. Stopping.
+2026-05-02 18:41:02 [pipeline.selectivity_optimizer] INFO  
+  [3/5] Molecule: Cc1cc2nc(C3CNCC(O)N3)c(-c3ccccn3)nc2cc1-c1cccc2ncccc12
+2026-05-02 18:41:02 [pipeline.selectivity_optimizer] INFO    Refining: Cc1cc2nc(C3CNCC(O)N3)c(-c3ccccn3)nc2cc1-c1cccc2ncccc12
+2026-05-02 18:41:02 [pipeline.selectivity_optimizer] INFO      Initial score: -8.16  Docking against 30 off-targets...
+2026-05-02 18:41:03 [pipeline.selectivity_optimizer] INFO      Initial SI=0.00  grade=poor  liabilities=0  worst_off=ESR1(0.00)
+2026-05-02 18:41:03 [pipeline.selectivity_optimizer] INFO      Round 1: No improvement (1/4)
+2026-05-02 18:41:03 [pipeline.selectivity_optimizer] INFO      Round 2: No improvement (2/4)
+2026-05-02 18:41:03 [pipeline.selectivity_optimizer] INFO      Round 3: No improvement (3/4)
+2026-05-02 18:41:03 [pipeline.selectivity_optimizer] INFO      Round 4: No improvement (4/4)
+2026-05-02 18:41:03 [pipeline.selectivity_optimizer] INFO      Round 5: No improvement for 4 rounds. Stopping.
+2026-05-02 18:41:03 [pipeline.selectivity_optimizer] INFO  
+  [4/5] Molecule: Cc1cc2nc(C3CNCNN3)c(-c3ncccn3)nc2cc1-c1cccc2ncccc12
+2026-05-02 18:41:03 [pipeline.selectivity_optimizer] INFO    Refining: Cc1cc2nc(C3CNCNN3)c(-c3ncccn3)nc2cc1-c1cccc2ncccc12
+2026-05-02 18:41:03 [pipeline.selectivity_optimizer] INFO      Initial score: -7.93  Docking against 30 off-targets...
+2026-05-02 18:41:04 [pipeline.selectivity_optimizer] INFO      Initial SI=0.00  grade=poor  liabilities=0  worst_off=BRAF(0.00)
+2026-05-02 18:41:04 [pipeline.selectivity_optimizer] INFO      Round 1: No improvement (1/4)
+2026-05-02 18:41:04 [pipeline.selectivity_optimizer] INFO      Round 2: No improvement (2/4)
+2026-05-02 18:41:04 [pipeline.selectivity_optimizer] INFO      Round 3: No improvement (3/4)
+2026-05-02 18:41:04 [pipeline.selectivity_optimizer] INFO      Round 4: No improvement (4/4)
+2026-05-02 18:41:04 [pipeline.selectivity_optimizer] INFO      Round 5: No improvement for 4 rounds. Stopping.
+2026-05-02 18:41:04 [pipeline.selectivity_optimizer] INFO  
+  [5/5] Molecule: Cc1cc2nc(C3CNCNN3)c(-c3ccccn3)nc2cc1-c1ccnc2ncccc12
+2026-05-02 18:41:04 [pipeline.selectivity_optimizer] INFO    Refining: Cc1cc2nc(C3CNCNN3)c(-c3ccccn3)nc2cc1-c1ccnc2ncccc12
+2026-05-02 18:41:04 [pipeline.selectivity_optimizer] INFO      Initial score: -7.82  Docking against 30 off-targets...
+2026-05-02 18:41:04 [pipeline.selectivity_optimizer] INFO      Initial SI=0.00  grade=poor  liabilities=0  worst_off=BRAF(0.00)
+2026-05-02 18:41:04 [pipeline.selectivity_optimizer] INFO      Round 1: No improvement (1/4)
+2026-05-02 18:41:04 [pipeline.selectivity_optimizer] INFO      Round 2: No improvement (2/4)
+2026-05-02 18:41:04 [pipeline.selectivity_optimizer] INFO      Round 3: No improvement (3/4)
+2026-05-02 18:41:04 [pipeline.selectivity_optimizer] INFO      Round 4: No improvement (4/4)
+2026-05-02 18:41:04 [pipeline.selectivity_optimizer] INFO      Round 5: No improvement for 4 rounds. Stopping.
+2026-05-02 18:41:04 [pipeline.selectivity_optimizer] INFO  
+  ── Computing Pareto front ──
+2026-05-02 18:41:04 [pipeline.selectivity_optimizer] INFO  
+  Results saved: C:\Users\adria\Documents\proteinFP\data\intermediate\P04637_selectivity.json
+2026-05-02 18:41:04 [pipeline.selectivity_optimizer] INFO  
+════════════════════════════════════════════════════════════════════════
+  MODULE 15 — Selectivity Optimization: P04637
+════════════════════════════════════════════════════════════════════════
+  Input molecules  : 10
+  Off-target panel : 30 proteins
+  Refinement rounds: 15 max
+  Best on-target   : -8.54 kcal/mol
+  Best SI          : 0.00x
+  hERG-safe mols   : 5/5
+  Excellent SI (≥5x): 0
+────────────────────────────────────────────────────────────────────────
+  OPTIMIZED CANDIDATES (Pareto front):
+
+  [Rank #1]
+  SMILES    : Cc1cc2nc(C3CNCC(O)N3)c(-c3ccccn3)nc2nc1-c1cccc2ncccc12
+  On-target : -8.54 kcal/mol  (Δ +0.00)
+  SI        : 0.00x  (Δ +0.00)  [poor]
+  Liabilities: 0  hERG: SAFE
+  QED=0.39  MW=450  LogP=3.16  LE=0.251
+  Edits: none
+
+  [Rank #1]
+  SMILES    : Cc1cc2nc(C3CNCNN3)c(-c3ccccn3)nc2cc1-c1cccc2ncccc12
+  On-target : -8.51 kcal/mol  (Δ +0.00)
+  SI        : 0.00x  (Δ +0.00)  [poor]
+  Liabilities: 0  hERG: SAFE
+  QED=0.40  MW=434  LogP=3.91  LE=0.258
+  Edits: none
+
+  [Rank #2]
+  SMILES    : Cc1cc2nc(C3CNCC(O)N3)c(-c3ccccn3)nc2cc1-c1cccc2ncccc12
+  On-target : -8.16 kcal/mol  (Δ +0.00)
+  SI        : 0.00x  (Δ +0.00)  [poor]
+  Liabilities: 0  hERG: SAFE
+  QED=0.39  MW=448  LogP=3.77  LE=0.240
+  Edits: none
+
+  [Rank #2]
+  SMILES    : Cc1cc2nc(C3CNCNN3)c(-c3ncccn3)nc2cc1-c1cccc2ncccc12
+  On-target : -7.93 kcal/mol  (Δ +0.00)
+  SI        : 0.00x  (Δ +0.00)  [poor]
+  Liabilities: 0  hERG: SAFE
+  QED=0.40  MW=434  LogP=3.31  LE=0.240
+  Edits: none
+
+  [Rank #3]
+  SMILES    : Cc1cc2nc(C3CNCNN3)c(-c3ccccn3)nc2cc1-c1ccnc2ncccc12
+  On-target : -7.82 kcal/mol  (Δ +0.00)
+  SI        : 0.00x  (Δ +0.00)  [poor]
+  Liabilities: 0  hERG: SAFE
+  QED=0.40  MW=434  LogP=3.31  LE=0.237
+  Edits: none
+
+════════════════════════════════════════════════════════════════════════
+2026-05-02 18:41:04 [__main__] INFO  
+──────────────────────────────────────────────────────────────────────
+  De Novo Design: P04637  [pocket=active_site]
+  Generations run  : 30
+  Molecules docked : 898
+  Best score       : -8.54 kcal/mol
+  Best LE          : 0.251 kcal/mol/HA
+  Best SMILES      : Cc1cc2nc(C3CNCC(O)N3)c(-c3ccccn3)nc2nc1-c1cccc2ncccc12
+──────────────────────────────────────────────────────────────────────
+  Top candidates:
+  # 1: Score=-8.54  LE=0.251  QED=0.39  MW=450  ADMET✓  Cc1cc2nc(C3CNCC(O)N3)c(-c3ccccn3)nc2nc1-c1cccc2ncccc12
+  # 2: Score=-8.51  LE=0.258  QED=0.40  MW=434  ADMET✓  Cc1cc2nc(C3CNCNN3)c(-c3ccccn3)nc2cc1-c1cccc2ncccc12
+  # 3: Score=-8.16  LE=0.240  QED=0.39  MW=448  ADMET✓  Cc1cc2nc(C3CNCC(O)N3)c(-c3ccccn3)nc2cc1-c1cccc2ncccc12
+  # 4: Score=-7.93  LE=0.240  QED=0.40  MW=434  ADMET✓  Cc1cc2nc(C3CNCNN3)c(-c3ncccn3)nc2cc1-c1cccc2ncccc12
+  # 5: Score=-7.82  LE=0.237  QED=0.40  MW=434  ADMET✓  Cc1cc2nc(C3CNCNN3)c(-c3ccccn3)nc2cc1-c1ccnc2ncccc12
+  # 6: Score=-7.81  LE=0.244  QED=0.65  MW=428  ADMET✓  Cc1ccc2c(N3C(=O)C(=O)c4ccccc43)cc(N(C)C(=O)C3CCNCC3)nc2
+  # 7: Score=-7.81  LE=0.260  QED=0.70  MW=400  ADMET✓  Cc1ccc2c(N3C(=O)Cc4ccccc43)cc(NC(=O)C3CCNCC3)nc2c1
+  # 8: Score=-7.76  LE=0.228  QED=0.38  MW=448  ADMET✓  Cc1cc2cc(C3CNCC(O)N3)c(-c3ccccc3)nc2nc1-c1cccc2ncccc12
+  # 9: Score=-7.70  LE=0.233  QED=0.45  MW=434  ADMET✓  Cc1cc2nc(C3CNCCN3)c(-c3ccccn3)nc2nc1-c1ccnc2ncccc12
+  #10: Score=-7.64  LE=0.231  QED=0.44  MW=432  ADMET✓  Cc1cc2nc(C3CNCCN3)c(-c3ccccn3)nc2cc1-c1cccc2ncccc12
+──────────────────────────────────────────────────────────────────────
+2026-05-02 18:41:04 [__main__] INFO  
+  Results saved to: C:\Users\adria\Documents\proteinFP\data\intermediate\P04637_denovo.json

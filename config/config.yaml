@@ -52,6 +52,9 @@ consensus_weights:
   string_interaction:      1.2
   domain_annotation:       1.0
 
+ec_classifier:
+  model_dir: "models/ec_ensemble"
+
 # GPU settings
 compute:
   device:            "cuda"

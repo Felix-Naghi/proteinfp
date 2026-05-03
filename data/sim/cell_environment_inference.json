@@ -1,0 +1,41 @@
+{
+  "inference_method": "marker_gene_expression",
+  "n_marker_genes_used": 13,
+  "n_marker_genes_total": 53,
+  "data_driven": true,
+  "scores": {
+    "warburg": 0.681877518945807,
+    "prolif": 0.31981366425752644,
+    "nuclear": 0.36654426604509355,
+    "gsh": 0.4123097494244576,
+    "cholesterol": 0.47822362184524536,
+    "oxphos": 0.5,
+    "atp": 0.5,
+    "lysosome": 0.5,
+    "er_stress": 0.4536453396081924,
+    "mg": 0.5
+  },
+  "parameters": {
+    "extracellular_pH": 6.7863,
+    "cytoplasm_pH": 7.3023,
+    "nucleus_pH": 7.4023,
+    "mitochondria_pH": 7.7,
+    "er_pH": 6.9093,
+    "lysosome_pH": 4.6,
+    "cytoplasm_crowding": 1.6158,
+    "nucleus_crowding": 3.3463,
+    "er_crowding": 2.6805,
+    "nuclear_volume_fL": 608.8611,
+    "cytoplasm_volume_fL": 1591.1389,
+    "mitochondria_volume_fL": 120.0,
+    "cytoplasm_atp_mM": 3.5,
+    "mitochondria_atp_mM": 6.5,
+    "mitochondria_nadh_mM": 1.5,
+    "cytoplasm_nadh_mM": 0.1864,
+    "cytoplasm_gsh_mM": 8.2985,
+    "mitochondria_gsh_mM": 6.6388,
+    "er_ca2p_mM": 0.6361,
+    "cytoplasm_mg_mM": 0.55,
+    "plasma_membrane_chol": 0.4196
+  }
+}
