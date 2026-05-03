@@ -1,39 +1,68 @@
-# Python bytecode
+# ── Python ────────────────────────────────────────────────────────────────────
 __pycache__/
 *.py[cod]
 *.pyo
-
-# Distribution / packaging
 *.egg-info/
 dist/
 build/
+.eggs/
 
-# Virtual environments
+# ── Environments ──────────────────────────────────────────────────────────────
 .venv/
 venv/
 env/
 
-# Test / coverage artifacts
+# ── Testing ───────────────────────────────────────────────────────────────────
 .pytest_cache/
 .coverage
 htmlcov/
 
-# Jupyter
+# ── Jupyter ───────────────────────────────────────────────────────────────────
 .ipynb_checkpoints/
 
-# Editor
+# ── Editor / OS ───────────────────────────────────────────────────────────────
 .idea/
-.vscode/
+.vscode/settings.json
 *.swp
-
-# OS
 .DS_Store
-data/grn/input/GSE154778_dgeMtx.csv
-data/grn/input/GSM2230757_human1_umifm_counts.csv/GSM2230757_human1_umifm_counts.csv
-data/grn/input/GSM2230759_human3_umifm_counts.csv/GSM2230759_human3_umifm_counts.csv
-data/grn/input/GSM2230758_human2_umifm_counts.csv/GSM2230758_human2_umifm_counts.csv
-data/grn/input/GSM2230760_human4_umifm_counts.csv/GSM2230760_human4_umifm_counts.csv
-data/grn/intermediate/preprocessed.h5ad
-data/training_cache_v2/esm2_cache.json
-data/training_cache_v5/esm2_cache.json
-models/embedding_cache/embeddings_cache.pkl
+Thumbs.db
+desktop.ini
+
+# ── Vina executable (platform-specific — users install their own) ─────────────
+pipeline/vina.exe
+pipeline/vina
+pipeline/vina_*
+
+# ── Generated data (recreated by running the pipeline) ────────────────────────
+data/structures/*.pdb
+data/structures/*.pdbqt
+data/intermediate/
+data/reports/
+data/sim/
+data/training_cache_v2/
+data/training_cache_v5/
+
+# ── GRN input datasets (too large — users supply their own scRNA-seq data) ────
+data/grn/input/*.csv
+data/grn/input/*.h5ad
+data/grn/input/GSM*/
+data/grn/intermediate/
+data/grn/reports/
+
+# ── ML model binaries (too large for git) ─────────────────────────────────────
+models/ec_ensemble/*.pkl
+models/ec_ensemble/*.npy
+models/ec_ensemble/*.bin
+models/embedding_cache/
+# Keep model metadata so users know what to download
+!models/ec_ensemble/metadata.json
+!models/ec_ensemble/model_card.json
+
+# ── Temporary docking files ───────────────────────────────────────────────────
+_tmp_*/
+test_out.pdbqt
+data/intermediate/*_dock_cache.json
+
+# ── Logs ─────────────────────────────────────────────────────────────────────
+logs/
+*.log
