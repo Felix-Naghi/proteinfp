@@ -55,6 +55,12 @@ except Exception:
     help="Run molecular dynamics simulation (requires OpenMM).",
 )
 @click.option(
+    "--receptor", "-r",
+    default=None,
+    metavar="PATH",
+    help="Path to receptor PDBQT for docking. Auto-prepared from PDB if not provided.",
+)
+@click.option(
     "--therapy", "-t",
     is_flag=True, default=False,
     help="Run therapy decision + epitope/de novo design after pipeline completes.",
@@ -89,6 +95,7 @@ except Exception:
 def main(
     uniprot:     str,
     vina:        str,
+    receptor:    str,
     denovo:      bool,
     md:          bool,
     grn:         bool,
@@ -191,10 +198,11 @@ def main(
         try:
             from proteinfp.therapy import run_therapy
             run_therapy(
-                uniprot_id = uniprot.strip().upper(),
-                vina_path  = vina,
-                run_denovo = denovo,
-                verbose    = True,
+                uniprot_id    = uniprot.strip().upper(),
+                vina_path     = vina,
+                receptor_path = receptor or "",
+                run_denovo    = denovo,
+                verbose       = True,
             )
         except Exception as e:
             click.echo(f"\n  Therapy analysis failed: {e}")
