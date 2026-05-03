@@ -223,7 +223,7 @@ def run_pipeline(
         _run_module(
             "02_physicochemical",
             compute_physicochemical,
-            args=(struct_result,),
+            args=(struct_result.parsed,),   # needs ParsedStructure, not StructureResult
             result=result,
         )
     else:
@@ -441,13 +441,13 @@ def _run_chemical_env(uid: str):
 
 
 def _run_homology(uid: str):
-    from pipeline.homology import run_homology_search
+    from pipeline.homology import run_homology          # correct function name
     from utils.config import cfg
     from utils.pdb_parser import parse_pdb
     inter  = Path(cfg.paths["intermediate"])
     struct = Path(cfg.paths["structures"]) / f"{uid}.pdb"
     parsed = parse_pdb(struct, uid)
-    result = run_homology_search(uid, parsed.sequence)
+    result = run_homology(uid, parsed.sequence)
     result.to_json(inter / f"{uid}_homology.json")
     return result
 
@@ -478,11 +478,11 @@ def _run_ec_prediction(uid: str):
 
 
 def _run_foldseek(uid: str):
-    from pipeline.foldseek import run_foldseek_search
+    from pipeline.foldseek import run_foldseek          # correct function name
     from utils.config import cfg
     inter  = Path(cfg.paths["intermediate"])
     pdb    = Path(cfg.paths["structures"]) / f"{uid}.pdb"
-    result = run_foldseek_search(uid, pdb)
+    result = run_foldseek(uid, pdb)
     result.to_json(inter / f"{uid}_foldseek.json")
     return result
 
@@ -490,8 +490,20 @@ def _run_foldseek(uid: str):
 def _run_ppi(uid: str):
     from pipeline.ppi_network import predict_ppi
     from utils.config import cfg
+    from utils.pdb_parser import parse_pdb
     inter  = Path(cfg.paths["intermediate"])
-    result = predict_ppi(uid)
+    struct = Path(cfg.paths["structures"]) / f"{uid}.pdb"
+    parsed = parse_pdb(struct, uid)
+
+    # Load SASA map from Module 02 if available
+    sasa_map: dict = {}
+    phys_path = inter / f"{uid}_physicochemical.json"
+    if phys_path.exists():
+        phys = json.loads(phys_path.read_text(encoding="utf-8"))
+        for rec in phys.get("residues", []):
+            sasa_map[(rec["chain_id"], rec["residue_number"])] = rec.get("sasa", 50.0)
+
+    result = predict_ppi(uid, parsed.sequence, parsed, sasa_map)
     result.to_json(inter / f"{uid}_ppi.json")
     return result
 
