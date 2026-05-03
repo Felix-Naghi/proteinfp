@@ -1,159 +1,211 @@
 # ProteinFP
 
-Computational pipeline for end-to-end protein function prediction.
-Predicts active sites, binding interfaces, allosteric sites, chemical environment,
-and protein-protein interactions from structure alone + sequence evidence.
+**End-to-end protein function prediction and drug candidate design.**
 
----
+Give it a UniProt ID. Get back active sites, druggable pockets, allosteric sites, EC classification, GO terms, PPI partners, therapy modality recommendations, and — with AutoDock Vina — evolved drug candidate molecules. For any protein, any disease, any organism.
 
-## Quick start (Windows, RTX 5060)
-
-### Step 1 — Open a terminal in your project folder
-
-```
-Win + R → cmd → cd C:\Users\adria\Documents\proteinFP
+```bash
+pip install proteinfp
+proteinfp --uniprot P28593   # Trypanothione reductase (Chagas disease)
 ```
 
-Or right-click the `proteinFP` folder in Explorer → "Open in Terminal"
-
----
-
-### Step 2 — Run the setup script (once only)
-
-```bat
-setup.bat
 ```
+  Protein    : Trypanothione reductase
+  Gene       : TPR
+  Organism   : Trypanosoma cruzi
+  Confidence : VERY HIGH
 
-This will:
-- Create a Python virtual environment in `.venv/`
-- Install PyTorch with CUDA 12.1 support for your RTX 5060
-- Install all pipeline dependencies
-- Create the `data/` directory structure
-- Run the offline unit tests to confirm everything works
-
----
-
-### Step 3 — Open in VS Code
-
-```bat
-code proteinFP.code-workspace
-```
-
-VS Code will auto-detect the `.venv` interpreter and enable:
-- IntelliSense for all modules
-- One-click test runner
-- Pre-configured launch configs (F5 to run)
-
----
-
-### Step 4 — Run Module 01 on your first protein
-
-Activate the virtual environment first (if not already active):
-```bat
-.venv\Scripts\activate
-```
-
-Then run:
-```bat
-python pipeline\01_fetch_structure.py --uniprot P04637
-```
-
-`P04637` is human TP53 — one of the most studied proteins in biology,
-great for validating your pipeline because all its sites are known.
-
-Expected output:
-```
-12:34:01 [pipeline.01_fetch_structure] INFO  ── Module 01: Fetching P04637 ──
-12:34:02 [pipeline.01_fetch_structure] INFO    [1/4] Querying AlphaFold DB...
-12:34:03 [pipeline.01_fetch_structure] INFO    [2/4] Downloading .pdb...
-12:34:05 [pipeline.01_fetch_structure] INFO    [3/4] Fetching UniProt metadata...
-12:34:06 [pipeline.01_fetch_structure] INFO    [4/4] Parsing structure...
-12:34:06 [utils.pdb_parser] INFO  Parsing structure: P04637.pdb
-12:34:06 [utils.pdb_parser] INFO    → 393 residues | mean pLDDT: 72.4 | disordered: 87 residues in 4 region(s)
-
-────────────────────────────────────────────────────────────
-  Protein    : Cellular tumor antigen p53
-  Gene       : TP53
-  UniProt    : P04637  (Swiss-Prot (reviewed))
-  Organism   : Homo sapiens
-  Length     : 393 aa
-  Mean pLDDT : 72.4
-  High-conf  : 68.4% of residues
-  Disordered : 87 residues in 4 region(s)
-  .pdb saved : C:\Users\adria\Documents\proteinFP\data\structures\P04637.pdb
-────────────────────────────────────────────────────────────
+  Top function     : Trypanothione is the parasite analog of glutathione
+  Enzyme           : yes — EC 1.8.1.12
+  Pockets          : 10 (all druggability > 0.90)
+  Therapy          : SMALL_MOLECULE → active site inhibitor
 ```
 
 ---
 
-### Step 5 — Run the tests
+## What it does
 
-```bat
-python -m pytest tests\ -v
+ProteinFP runs 13+ prediction modules in sequence, fusing their outputs into a single ranked, confidence-weighted report.
+
+| Module | What it predicts |
+|--------|-----------------|
+| 01 | AlphaFold structure + UniProt metadata |
+| 02 | Surface charge, hydrophobicity, SASA |
+| 03 | Catalytic residues and active site motifs |
+| 04 | Druggable binding pockets (geometry + druggability score) |
+| 05 | Allosteric sites (elastic network model) |
+| 06 | Chemical environment of each site |
+| 07 | Sequence homologs with known function (BLAST + InterPro) |
+| 08 | ESM-2 protein language model embeddings (650M parameters) |
+| 09 | GO term prediction (Molecular Function, Biological Process, Cellular Component) |
+| 10 | Enzyme class prediction — ML ensemble (XGBoost + LightGBM + MLP, ~97% accuracy) |
+| 11 | Structural analogs via Foldseek (finds same-fold proteins regardless of sequence) |
+| 12 | Protein-protein interactions (STRING DB) |
+| 13 | Consensus report — fuses all evidence into a ranked, confidence-scored output |
+| 14 | Molecular dynamics — RMSF, flexibility, cryptic pockets *(needs OpenMM)* |
+| 15 | De novo molecular design — evolutionary drug candidate generation *(needs Vina + RDKit)* |
+| 17 | Post-translational modification sites and their functional consequences |
+
+**GRN + SIM pipeline** (disease-aware mode — requires scRNA-seq data):
+
+| Module | What it does |
+|--------|-------------|
+| GRN-01 | scRNA-seq preprocessing — HVG selection, QC filtering |
+| GRN-02 | GENIE3 gene regulatory network reconstruction |
+| GRN-03 | Therapy modality decision — surface vs intracellular, ADC vs small molecule |
+| SIM-01 | Tumor cell environment inference from marker gene expression |
+| SIM-02 | Protein conformational ensemble in that environment |
+| SIM-03 | Drug distribution across cell compartments |
+| SIM-04 | Binding probability under real physiological conditions |
+| SIM-05 | GRN perturbation — network-level consequences of drug binding |
+| SIM-06 | Pharmacological scoring — efficacy, selectivity, resistance risk, grade A–F |
+
+---
+
+## Installation
+
+```bash
+pip install proteinfp
 ```
 
-To run the full integration test (requires internet):
-```bat
-python -m pytest tests\ -v -k "Integration"
+**Core pipeline** (Modules 01–13, 17) works out of the box. Optional features:
+
+```bash
+pip install proteinfp[ml]        # ESM-2 embeddings + ML EC classifier
+pip install proteinfp[structure] # SASA/DSSP surface analysis
+pip install proteinfp[chem]      # De novo molecular design (RDKit)
+pip install proteinfp[grn]       # GRN/scRNA-seq modules (scanpy)
+pip install proteinfp[sim]       # Molecular dynamics (OpenMM)
+pip install proteinfp[all]       # Everything
 ```
+
+For de novo design you also need [AutoDock Vina](https://vina.scripps.edu/downloads/).
+
+Check what's available on your machine:
+
+```bash
+proteinfp --check-deps
+```
+
+---
+
+## Quick start
+
+```bash
+# Any protein — just a UniProt ID
+proteinfp --uniprot P04637       # TP53 (human tumour suppressor)
+proteinfp --uniprot P28593       # Trypanothione reductase (Chagas disease)
+proteinfp --uniprot P9WGR1       # InhA (drug-resistant TB)
+
+# Force re-run even if report already exists
+proteinfp --uniprot P04637 --force
+
+# With therapy decision + de novo molecule design
+proteinfp --uniprot P28593 --therapy --denovo --vina /path/to/vina
+
+# With molecular dynamics
+proteinfp --uniprot P28593 --md
+
+# Show all modules and their status
+proteinfp --list-modules
+```
+
+Reports are saved to `data/reports/{UNIPROT}_report.json` and `_report.txt`.
+
+---
+
+## Therapy mode
+
+After the core pipeline runs, `--therapy` makes modality decisions automatically:
+
+- **Surface protein** → antibody path: ranks epitope candidates by immunogenicity and accessibility
+- **Intracellular with druggable pocket** → small molecule path: triggers de novo design
+- **Epigenetic regulator** → adds PROTAC degrader as secondary recommendation
+- **Allosteric site only** → allosteric small molecule
+
+```bash
+proteinfp --uniprot P28593 --therapy --denovo --vina pipeline/vina.exe
+```
+
+```
+  → Primary modality : SMALL_MOLECULE
+  → Confidence       : HIGH
+  • Intracellular with druggable pocket P1 (vol=1800Å³, drug=0.90)
+  • Enzyme (EC 1.8.1.12) — active site inhibition most direct mechanism
+```
+
+---
+
+## Disease-agnostic design
+
+The pipeline works on any protein from any organism. To switch disease context, edit one file:
+
+```yaml
+# config/disease_config.yaml
+disease:
+  name: "TB"
+  organism: "Mycobacterium tuberculosis"
+  organism_id: 83332
+
+data:
+  scrnaseq_input: "data/grn/input/your_mtb_data.csv"
+
+driver_genes:
+  - katG   # isoniazid target
+  - inhA   # isoniazid target
+  - rpoB   # rifampicin target
+  - gyrA   # fluoroquinolone target
+```
+
+Ready-to-use configs for LUAD, CRC, TB, and Leishmaniasis are included in the file.
 
 ---
 
 ## Project structure
 
 ```
-proteinFP/
+proteinfp/
 ├── config/
-│   └── config.yaml          ← edit API keys, thresholds, paths here
-├── data/
-│   ├── input/               ← put your .fasta files here
-│   ├── structures/          ← .pdb files downloaded from AFDB
-│   ├── intermediate/        ← per-module JSON outputs
-│   └── reports/             ← final HTML + JSON reports per protein
-├── pipeline/
-│   ├── 01_fetch_structure.py   ← START HERE (this module)
-│   ├── 02_physicochemical.py   ← next to build
-│   └── ...
-├── utils/
-│   ├── config.py            ← config loader + logger
-│   └── pdb_parser.py        ← shared PDB parsing logic
-├── tests/
-│   └── test_01_fetch_structure.py
-├── setup.bat                ← run once to set up environment
-├── requirements.txt
-└── proteinFP.code-workspace ← open this in VS Code
+│   ├── config.yaml            ← paths, API thresholds, tool settings
+│   └── disease_config.yaml    ← switch disease/organism here
+├── pipeline/                  ← Modules 01–17
+├── proteinfp/                 ← CLI package (pip install proteinfp)
+│   ├── cli.py                 ← proteinfp --uniprot X
+│   ├── orchestrator.py        ← runs all modules gracefully
+│   ├── therapy.py             ← therapy decision + epitope + de novo
+│   └── deps.py                ← optional dependency checker
+├── sim/                       ← SIM-01 to SIM-07 (whole-cell simulation)
+├── grn/                       ← GRN-01 to GRN-03 (gene regulatory network)
+├── utils/                     ← config loader, PDB parser
+├── tests/                     ← test suite (pytest)
+├── validation/                ← validation against known drug-protein pairs
+├── train/                     ← ML model training scripts
+├── models/                    ← EC classifier ensemble (metadata only in repo)
+└── pyproject.toml             ← pip install configuration
 ```
 
 ---
 
-## What each module will predict
+## Running tests
 
-| Module | Predicts |
-|--------|----------|
-| 01 | Structure fetch + pLDDT confidence map |
-| 02 | Physicochemical surface (charge, hydrophobicity, SASA) |
-| 03 | Active site residues (catalytic + metal-binding) |
-| 04 | Binding pockets (geometry + druggability score) |
-| 05 | Allosteric sites (elastic network model) |
-| 06 | Chemical environment of each site (electrostatics, H-bonds) |
-| 07 | Sequence homologs with known function (BLAST, HHpred) |
-| 08-10 | AI function prediction (DeepFRI, ESM-2, CLEAN) |
-| 11 | Structural analogs via Foldseek |
-| 12 | Protein-protein interactions (STRING DB + AF-Multimer) |
-| 13 | Consensus scoring + HTML/JSON report |
+```bash
+python -m pytest tests/ -v
+```
 
 ---
 
-## GPU note (RTX 5060)
+## Reproducibility
 
-Your RTX 5060 is ideal for:
-- ESM-2 (650M parameter model fits in ~3GB VRAM)
-- DeepFRI inference (~1GB VRAM)
-- AlphaFold-Multimer (for PPI) — will use most of your VRAM
+All outputs are deterministic given the same input. Every inference step saves a JSON to `data/intermediate/` so individual modules can be re-run or inspected without rerunning the full pipeline.
 
-Modules 01–07 and 11–13 run on CPU. GPU is only needed for 08–10 and PPI docking.
+---
 
-To verify your GPU is detected after setup:
-```bat
-python -c "import torch; print(torch.cuda.get_device_name(0))"
-```
+## Citation
+
+If you use ProteinFP in your research, please cite this repository. A methods paper describing the pipeline is in preparation.
+
+---
+
+## License
+
+MIT
