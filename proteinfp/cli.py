@@ -55,6 +55,11 @@ except Exception:
     help="Run molecular dynamics simulation (requires OpenMM).",
 )
 @click.option(
+    "--therapy", "-t",
+    is_flag=True, default=False,
+    help="Run therapy decision + epitope/de novo design after pipeline completes.",
+)
+@click.option(
     "--grn", "-g",
     is_flag=True, default=False,
     help="Run GRN modules (requires scRNA-seq data in disease_config.yaml).",
@@ -87,6 +92,7 @@ def main(
     denovo:      bool,
     md:          bool,
     grn:         bool,
+    therapy:     bool,
     force:       bool,
     output_dir:  str,
     check_deps:  bool,
@@ -178,6 +184,20 @@ def main(
         click.echo(f"\n  Pipeline did not complete successfully.")
         click.echo(f"  Failed modules: {', '.join(result.modules_fail)}")
         sys.exit(1)
+
+    # ── --therapy: run therapy decision + epitopes + de novo ──────────────────
+    if therapy and result.success:
+        click.echo(f"\n  Running therapy analysis...")
+        try:
+            from proteinfp.therapy import run_therapy
+            run_therapy(
+                uniprot_id = uniprot.strip().upper(),
+                vina_path  = vina,
+                run_denovo = denovo,
+                verbose    = True,
+            )
+        except Exception as e:
+            click.echo(f"\n  Therapy analysis failed: {e}")
 
 
 # ── Helper: warn about missing optional deps ───────────────────────────────────

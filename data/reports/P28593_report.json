@@ -4,14 +4,238 @@
   "protein_name": "Trypanothione reductase",
   "organism": "Trypanosoma cruzi",
   "sequence_length": 492,
-  "generated_at": "2026-05-03 09:43:04",
-  "top_function": "Function not determined",
+  "generated_at": "2026-05-03 09:47:10",
+  "top_function": "Trypanothione is the parasite analog of glutathione; this enzyme is the equivalent of glutathione reductase",
   "is_enzyme": true,
   "ec_number": "6.x.x.x",
   "subcellular_location": "unknown",
-  "go_terms_mf": [],
-  "go_terms_bp": [],
-  "go_terms_cc": [],
+  "go_terms_mf": [
+    {
+      "go_id": "GO:0016491",
+      "go_name": "oxidoreductase activity",
+      "namespace": "MF",
+      "weighted_score": 10.0,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "domain_annotation"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "domain_annotation"
+    },
+    {
+      "go_id": "GO:0050660",
+      "go_name": "flavin adenine dinucleotide binding",
+      "namespace": "MF",
+      "weighted_score": 6.5,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "domain_annotation"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "domain_annotation"
+    },
+    {
+      "go_id": "GO:0015036",
+      "go_name": "disulfide oxidoreductase activity",
+      "namespace": "MF",
+      "weighted_score": 6.5,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "domain_annotation"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "domain_annotation"
+    },
+    {
+      "go_id": "GO:0016668",
+      "go_name": "oxidoreductase activity, acting on a sulfur group of donors, NAD(P) as acceptor",
+      "namespace": "MF",
+      "weighted_score": 6.5,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "domain_annotation"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "domain_annotation"
+    },
+    {
+      "go_id": "GO:0004362",
+      "go_name": "F:glutathione-disulfide reductase (NADPH) activity",
+      "namespace": "MF",
+      "weighted_score": 3.0,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0015042",
+      "go_name": "F:trypanothione-disulfide reductase (NADPH) activity",
+      "namespace": "MF",
+      "weighted_score": 3.0,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0050661",
+      "go_name": "F:NADP binding",
+      "namespace": "MF",
+      "weighted_score": 3.0,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0004791",
+      "go_name": "F:thioredoxin-disulfide reductase (NADPH) activity",
+      "namespace": "MF",
+      "weighted_score": 3.0,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005524",
+      "go_name": "F:ATP binding",
+      "namespace": "MF",
+      "weighted_score": 3.0,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005507",
+      "go_name": "F:copper ion binding",
+      "namespace": "MF",
+      "weighted_score": 3.0,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    }
+  ],
+  "go_terms_bp": [
+    {
+      "go_id": "GO:0045454",
+      "go_name": "cell redox homeostasis",
+      "namespace": "BP",
+      "weighted_score": 6.5,
+      "n_sources": 2,
+      "sources": [
+        "experimental_homolog",
+        "domain_annotation"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "domain_annotation"
+    },
+    {
+      "go_id": "GO:0006749",
+      "go_name": "P:glutathione metabolic process",
+      "namespace": "BP",
+      "weighted_score": 3.0,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0034599",
+      "go_name": "P:cellular response to oxidative stress",
+      "namespace": "BP",
+      "weighted_score": 3.0,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    }
+  ],
+  "go_terms_cc": [
+    {
+      "go_id": "GO:0005829",
+      "go_name": "C:cytosol",
+      "namespace": "CC",
+      "weighted_score": 3.0,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005739",
+      "go_name": "C:mitochondrion",
+      "namespace": "CC",
+      "weighted_score": 3.0,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0009507",
+      "go_name": "C:chloroplast",
+      "namespace": "CC",
+      "weighted_score": 3.0,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0005737",
+      "go_name": "C:cytoplasm",
+      "namespace": "CC",
+      "weighted_score": 3.0,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    },
+    {
+      "go_id": "GO:0009570",
+      "go_name": "C:chloroplast stroma",
+      "namespace": "CC",
+      "weighted_score": 3.0,
+      "n_sources": 1,
+      "sources": [
+        "experimental_homolog"
+      ],
+      "confidence": "HIGH",
+      "top_evidence": "experimental_homolog"
+    }
+  ],
   "active_sites": [
     {
       "residue_number": 41,
@@ -34,7 +258,7 @@
         0.256,
         6.933
       ],
-      "domain_context": ""
+      "domain_context": "trypanothione-disulfide reductase"
     },
     {
       "residue_number": 73,
@@ -61,7 +285,7 @@
         -10.554,
         18.786
       ],
-      "domain_context": ""
+      "domain_context": "trypanothione-disulfide reductase"
     },
     {
       "residue_number": 175,
@@ -88,7 +312,7 @@
         19.262,
         16.4
       ],
-      "domain_context": ""
+      "domain_context": "trypanothione-disulfide reductase"
     },
     {
       "residue_number": 176,
@@ -111,7 +335,7 @@
         16.94,
         14.207
       ],
-      "domain_context": ""
+      "domain_context": "trypanothione-disulfide reductase"
     },
     {
       "residue_number": 401,
@@ -135,7 +359,7 @@
         -9.992,
         15.586
       ],
-      "domain_context": ""
+      "domain_context": "trypanothione-disulfide reductase"
     },
     {
       "residue_number": 419,
@@ -161,7 +385,7 @@
         0.173,
         -16.438
       ],
-      "domain_context": ""
+      "domain_context": "trypanothione-disulfide reductase"
     },
     {
       "residue_number": 428,
@@ -189,7 +413,7 @@
         -1.217,
         -2.836
       ],
-      "domain_context": ""
+      "domain_context": "trypanothione-disulfide reductase"
     },
     {
       "residue_number": 47,
@@ -211,7 +435,7 @@
         4.076,
         2.826
       ],
-      "domain_context": ""
+      "domain_context": "trypanothione-disulfide reductase"
     },
     {
       "residue_number": 77,
@@ -234,7 +458,7 @@
         -13.932,
         22.108
       ],
-      "domain_context": ""
+      "domain_context": "trypanothione-disulfide reductase"
     },
     {
       "residue_number": 101,
@@ -257,7 +481,7 @@
         -4.496,
         12.546
       ],
-      "domain_context": ""
+      "domain_context": "trypanothione-disulfide reductase"
     },
     {
       "residue_number": 178,
@@ -279,7 +503,7 @@
         11.794,
         9.471
       ],
-      "domain_context": ""
+      "domain_context": "trypanothione-disulfide reductase"
     },
     {
       "residue_number": 232,
@@ -309,7 +533,7 @@
         5.514,
         -1.882
       ],
-      "domain_context": ""
+      "domain_context": "trypanothione-disulfide reductase"
     },
     {
       "residue_number": 266,
@@ -331,7 +555,7 @@
         17.429,
         24.897
       ],
-      "domain_context": ""
+      "domain_context": "trypanothione-disulfide reductase"
     },
     {
       "residue_number": 268,
@@ -353,7 +577,7 @@
         22.048,
         22.05
       ],
-      "domain_context": ""
+      "domain_context": "trypanothione-disulfide reductase"
     },
     {
       "residue_number": 280,
@@ -380,7 +604,7 @@
         13.67,
         23.285
       ],
-      "domain_context": ""
+      "domain_context": "trypanothione-disulfide reductase"
     },
     {
       "residue_number": 347,
@@ -403,7 +627,7 @@
         -5.198,
         -22.169
       ],
-      "domain_context": ""
+      "domain_context": "trypanothione-disulfide reductase"
     },
     {
       "residue_number": 350,
@@ -425,7 +649,7 @@
         -4.205,
         -24.216
       ],
-      "domain_context": ""
+      "domain_context": "trypanothione-disulfide reductase"
     },
     {
       "residue_number": 351,
@@ -447,7 +671,7 @@
         -6.527,
         -25.58
       ],
-      "domain_context": ""
+      "domain_context": "trypanothione-disulfide reductase"
     },
     {
       "residue_number": 364,
@@ -469,7 +693,7 @@
         -1.454,
         -3.779
       ],
-      "domain_context": ""
+      "domain_context": "trypanothione-disulfide reductase"
     },
     {
       "residue_number": 383,
@@ -491,7 +715,7 @@
         9.179,
         -12.934
       ],
-      "domain_context": ""
+      "domain_context": "trypanothione-disulfide reductase"
     },
     {
       "residue_number": 394,
@@ -513,7 +737,7 @@
         -4.717,
         0.733
       ],
-      "domain_context": ""
+      "domain_context": "trypanothione-disulfide reductase"
     },
     {
       "residue_number": 395,
@@ -535,7 +759,7 @@
         -3.8,
         4.381
       ],
-      "domain_context": ""
+      "domain_context": "trypanothione-disulfide reductase"
     },
     {
       "residue_number": 404,
@@ -558,7 +782,7 @@
         -11.154,
         19.702
       ],
-      "domain_context": ""
+      "domain_context": "trypanothione-disulfide reductase"
     },
     {
       "residue_number": 406,
@@ -581,7 +805,7 @@
         -5.866,
         18.11
       ],
-      "domain_context": ""
+      "domain_context": "trypanothione-disulfide reductase"
     },
     {
       "residue_number": 420,
@@ -603,7 +827,7 @@
         0.224,
         -20.29
       ],
-      "domain_context": ""
+      "domain_context": "trypanothione-disulfide reductase"
     },
     {
       "residue_number": 421,
@@ -629,7 +853,7 @@
         -3.0,
         -20.603
       ],
-      "domain_context": ""
+      "domain_context": "trypanothione-disulfide reductase"
     },
     {
       "residue_number": 432,
@@ -656,7 +880,7 @@
         -7.969,
         7.705
       ],
-      "domain_context": ""
+      "domain_context": "trypanothione-disulfide reductase"
     },
     {
       "residue_number": 452,
@@ -678,7 +902,7 @@
         -10.963,
         -14.327
       ],
-      "domain_context": ""
+      "domain_context": "trypanothione-disulfide reductase"
     },
     {
       "residue_number": 221,
@@ -700,7 +924,7 @@
         15.458,
         12.359
       ],
-      "domain_context": ""
+      "domain_context": "trypanothione-disulfide reductase"
     },
     {
       "residue_number": 233,
@@ -726,7 +950,7 @@
         7.861,
         0.307
       ],
-      "domain_context": ""
+      "domain_context": "trypanothione-disulfide reductase"
     }
   ],
   "binding_pockets": [
@@ -1801,8 +2025,8 @@
   ],
   "ppi_partners": [],
   "mean_plddt": 97.62,
-  "n_evidence_sources": 6,
-  "overall_confidence": "LOW",
+  "n_evidence_sources": 9,
+  "overall_confidence": "VERY HIGH",
   "validation_suggestions": [
     "Alanine scanning mutagenesis of predicted active site residues (H41, H73, H175) to confirm functional importance",
     "Thermal shift assay or SPR binding assay against pocket P1 (vol=1800\u00c5\u00b3, druggability=0.90)",
@@ -1815,15 +2039,15 @@
     "pockets",
     "allosteric",
     "chem_env",
-    "ec"
+    "homology",
+    "ec",
+    "foldseek",
+    "ppi"
   ],
   "modules_missing": [
     "physico",
-    "homology",
     "esm2",
     "go",
-    "foldseek",
-    "ppi",
     "md",
     "category"
   ]
