@@ -1,0 +1,124 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "proteinfp"
+version = "0.1.0"
+description = "End-to-end protein function prediction and drug candidate design"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [{ name = "ProteinFP Contributors" }]
+keywords = ["bioinformatics", "drug-discovery", "protein", "cheminformatics"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+]
+
+# ── Core dependencies (always required) ───────────────────────────────────────
+# These are the only packages needed for:
+#   proteinfp --uniprot P04637
+# They are all pure Python or have small compiled wheels on PyPI.
+dependencies = [
+    "requests>=2.28",
+    "tqdm>=4.64",
+    "numpy>=1.24",
+    "click>=8.1",
+    "pyyaml>=6.0",
+    "colorlog>=6.7",
+    "biopython>=1.81",
+    "scipy>=1.10",
+    "scikit-learn>=1.3",
+]
+
+# ── Optional dependency groups ─────────────────────────────────────────────────
+[project.optional-dependencies]
+
+# pip install proteinfp[structure]
+# Adds SASA computation and DSSP secondary structure assignment.
+# Needed for Module 02 (physicochemical surface analysis).
+structure = [
+    "freesasa>=2.1",
+]
+
+# pip install proteinfp[ml]
+# Adds ML-based EC classification and ESM-2 protein language model.
+# Needs a GPU for ESM-2 (falls back to CPU, ~10x slower).
+ml = [
+    "torch>=2.0",
+    "xgboost>=2.0",
+    "lightgbm>=4.0",
+    "fair-esm>=2.0",
+]
+
+# pip install proteinfp[chem]
+# Adds RDKit for de novo molecular design (Module 15).
+# RDKit has its own conda/pip wheel; install separately if conda available.
+chem = [
+    "rdkit>=2023.3",
+]
+
+# pip install proteinfp[grn]
+# Adds scRNA-seq preprocessing and GRN reconstruction.
+grn = [
+    "scanpy>=1.9",
+    "anndata>=0.9",
+]
+
+# pip install proteinfp[sim]
+# Adds molecular dynamics (OpenMM). Large install (~500 MB).
+sim = [
+    "openmm>=8.0",
+]
+
+# pip install proteinfp[all]
+# Everything. Useful for developers and HPC environments.
+all = [
+    "proteinfp[structure]",
+    "proteinfp[ml]",
+    "proteinfp[chem]",
+    "proteinfp[grn]",
+    "proteinfp[sim]",
+]
+
+# pip install proteinfp[dev]
+# Development tools.
+dev = [
+    "pytest>=7.4",
+    "pytest-cov>=4.1",
+    "black>=23.0",
+    "ruff>=0.1",
+    "mypy>=1.5",
+]
+
+# ── CLI entry point ────────────────────────────────────────────────────────────
+# This is what makes `proteinfp --uniprot P04637` work after pip install.
+[project.scripts]
+proteinfp = "proteinfp.cli:main"
+
+# ── Package discovery ──────────────────────────────────────────────────────────
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["proteinfp*", "pipeline*", "utils*", "sim*", "grn*"]
+
+[tool.setuptools.package-data]
+"*" = ["*.yaml", "*.yml", "*.json", "*.md"]
+
+# ── Tool configuration ─────────────────────────────────────────────────────────
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v --tb=short"
+
+[tool.black]
+line-length = 100
+target-version = ["py310", "py311", "py312"]
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "W", "I"]
+ignore = ["E501"]
