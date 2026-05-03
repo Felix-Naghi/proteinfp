@@ -93,7 +93,7 @@ except ImportError:
 MAX_GENERATIONS      = 10
 POP_SIZE             = 30
 ELITISM              = 6
-PARALLEL_WORKERS     = min(8, os.cpu_count() or 2)
+PARALLEL_WORKERS = min(4, (os.cpu_count() or 4) // 2)
 
 # Exhaustiveness: 8 is standard for virtual screening on a 30x30x30 box.
 # The 0.000 no-pose issue was the broken PDBQT, not low exhaustiveness.
@@ -298,7 +298,7 @@ def _admet_prefilter(mol: Chem.Mol, props: dict) -> bool:
     if not props:
         return False
     if props.get("mw", 999)  > ADMET_MW_MAX:  return False
-    if props.get("mw", 0)    < 80:             return False
+    if props.get("mw", 0)    < 150:            return False
     if props.get("logp", 99) > ADMET_LOGP_MAX: return False
     if props.get("hbd", 99)  > ADMET_HBD_MAX:  return False
     if props.get("hba", 99)  > ADMET_HBA_MAX:  return False
@@ -822,32 +822,22 @@ def _dock_molecule(smiles: str, gen_id: int, cand_id: int,
         AllChem.MMFFOptimizeMolecule(mol_h)
         Chem.MolToPDBFile(mol_h, pdb_path)
 
-        try:
-            obabel_result = subprocess.run(
-                f'obabel "{pdb_path}" -O "{pdbqt_path}" --partialcharge gasteiger -h',
-                shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                timeout=30)
-        except subprocess.TimeoutExpired:
-            res["error"] = "obabel timeout (>30s)"; return res
-        except FileNotFoundError:
-            res["error"] = "obabel not found on PATH"; return res
-
-        if not os.path.exists(pdbqt_path):
-            stderr_msg = obabel_result.stderr.decode(errors="ignore")[:200] if obabel_result.stderr else ""
-            res["error"] = f"obabel conversion failed: {stderr_msg}"
-            return res
-
+        # Convert SMILES directly to ligand PDBQT with correct AD4 atom types
+        if not _smiles_to_ligand_pdbqt(smiles, Path(pdbqt_path)):
+            res["error"] = "Ligand PDBQT conversion failed"; return res
         cx, cy, cz = center
         sx, sy, sz = box_size
-        cmd = (f'"{vina_path}" '
-               f'--receptor "{receptor_path}" '
-               f'--ligand "{pdbqt_path}" '
-               f'--center_x {cx} --center_y {cy} --center_z {cz} '
-               f'--size_x {sx} --size_y {sy} --size_z {sz} '
-               f'--exhaustiveness {exhaust} --num_modes 9 '
-               f'--out "{out_path}"')
+        cmd = [vina_path,
+               '--receptor', receptor_path,
+               '--ligand',   pdbqt_path,
+               '--center_x', str(cx), '--center_y', str(cy), '--center_z', str(cz),
+               '--size_x',   str(sx), '--size_y',   str(sy), '--size_z',   str(sz),
+               '--exhaustiveness', str(exhaust),
+               '--num_modes', '9',
+               '--cpu', '1',
+               '--out', out_path]
 
-        r = subprocess.run(cmd, shell=True, stdout=subprocess.PIPE,
+        r = subprocess.run(cmd, shell=False, stdout=subprocess.PIPE,
                            stderr=subprocess.PIPE, timeout=300)
         out = r.stdout.decode(errors="ignore")
         err = r.stderr.decode(errors="ignore")
@@ -968,6 +958,9 @@ def _build_initial_population(chem: ChemicalEngine,
     log.info(f"  Building initial population ({target} molecules)...")
 
     for seed in TINY_SEEDS:
+        mol_check = Chem.MolFromSmiles(seed)
+        if mol_check and mol_check.GetNumHeavyAtoms() < 9:
+            continue
         c = _canonical(seed)
         if c and c not in seen:
             mol = Chem.MolFromSmiles(c)
@@ -1042,12 +1035,8 @@ def _fast_pdb_to_pdbqt(pdb_path: Path, pdbqt_path: Path) -> bool:
         _write_pdbqt_from_pdb(pdb_path, pdbqt_path, mol)
         return pdbqt_path.exists()
     except Exception as e:
-        log.warning(f"  Fast conversion failed ({e}) — falling back to obabel")
-        r = subprocess.run(
-            f'obabel "{pdb_path}" -O "{pdbqt_path}" --partialcharge gasteiger -h',
-            shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=120,
-        )
-        return pdbqt_path.exists()
+        log.warning(f"  Fast conversion failed: {e}")
+        return False
 
 
 def _write_pdbqt_from_pdb(pdb_path: Path, pdbqt_path: Path, mol=None) -> None:
@@ -1121,6 +1110,87 @@ def _write_pdbqt_from_pdb(pdb_path: Path, pdbqt_path: Path, mol=None) -> None:
 
 
 # ── Main evolution loop ───────────────────────────────────────────────────────
+
+
+def _smiles_to_ligand_pdbqt(smiles: str, pdbqt_path: Path) -> bool:
+    """
+    Convert SMILES to Vina-compatible ligand PDBQT using RDKit.
+    Produces correct AutoDock4 atom types and column formatting.
+    """
+    try:
+        from rdkit import Chem
+        from rdkit.Chem import AllChem
+        from rdkit.Chem import rdPartialCharges
+
+        mol = Chem.MolFromSmiles(smiles)
+        if mol is None:
+            return False
+        mol = Chem.AddHs(mol)
+
+        # 3D embedding
+        params = AllChem.ETKDGv3()
+        params.randomSeed = 42
+        ret = AllChem.EmbedMolecule(mol, params)
+        if ret == -1:
+            AllChem.EmbedMolecule(mol, AllChem.ETKDGv2())
+        if mol.GetNumConformers() == 0:
+            return False
+
+        AllChem.MMFFOptimizeMolecule(mol, maxIters=200)
+
+        # Gasteiger charges
+        try:
+            rdPartialCharges.ComputeGasteigerCharges(mol)
+            charges = []
+            for a in mol.GetAtoms():
+                c = float(a.GetDoubleProp("_GasteigerCharge"))
+                charges.append(0.0 if (c != c or abs(c) > 9) else c)
+        except Exception:
+            charges = [0.0] * mol.GetNumAtoms()
+
+        conf = mol.GetConformer()
+
+        # AutoDock4 atom types for Vina
+        # Key: use element symbol for name, proper AD4 type for type field
+        AD4 = {
+            "C": "C", "N": "NA", "O": "OA", "S": "SA", "H": "H",
+            "F": "F", "Cl": "Cl", "Br": "Br", "I": "I", "P": "P",
+        }
+
+        lines = ["ROOT"]
+        for i, atom in enumerate(mol.GetAtoms()):
+            sym  = atom.GetSymbol()         # e.g. "C", "N", "Cl"
+            ad4  = AD4.get(sym, sym[:2])    # AD4 type
+            pos  = conf.GetAtomPosition(i)
+            x, y, z = pos.x, pos.y, pos.z
+            q    = charges[i]
+
+            # Atom name: element symbol padded to 3 chars, NO numbers
+            # Vina rejects names like "C1", "N2" — use "C", "N" etc
+            aname = f"{sym:<3s}"   # left-justify in 3 chars
+
+            # Standard PDBQT/PDB column layout:
+            # HETATM serial  name resName chain resSeq    X       Y       Z     occ   bfac      charge type
+            # Vina PDBQT: cols 1-6 record, 7-11 serial, 13-16 name,
+            # 31-54 XYZ, 55-66 occ/bfac, 67-76 spaces, 77-82 charge, 84-85 type
+            line = (
+                f"HETATM{i+1:5d}  {aname} LIG A   1    "
+                f"{pos.x:8.3f}{pos.y:8.3f}{pos.z:8.3f}"
+                f"  1.00  0.00    "
+                f"{q:6.3f} {ad4}"
+            )
+            lines.append(line)
+
+        lines += ["ENDROOT", "TORSDOF 0"]
+        pdbqt_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+        return True
+
+    except Exception:
+        return False
+
+
+
+
 
 def run_denovo_design(
        uniprot_id:      str,
@@ -1316,43 +1386,38 @@ def run_denovo_design(
         except Exception:
             needs_regen = True
 
-    if not receptor_path or not os.path.exists(receptor_path) or needs_regen:
-        pdbqt_p      = Path(receptor_path) if receptor_path else Path("")
-        pdb_p        = pdbqt_p.with_suffix(".pdb")
-        default_pdb  = Path(cfg.paths["structures"]) / f"{uniprot_id}.pdb"
-        default_pdbqt = default_pdb.with_suffix(".pdbqt")
-        source_pdb   = pdb_p if pdb_p.exists() else (
-            default_pdb if default_pdb.exists() else None)
-        target_pdbqt = pdbqt_p if receptor_path else default_pdbqt
+        if not receptor_path or not os.path.exists(receptor_path) or needs_regen:
+                default_pdb   = Path(cfg.paths["structures"]) / f"{uniprot_id}.pdb"
+                default_pdbqt = default_pdb.with_suffix(".pdbqt")
 
-        if source_pdb:
-            log.info(f"  Converting {source_pdb.name} → PDBQT...")
-            t0 = time.time()
-            ok = _fast_pdb_to_pdbqt(source_pdb, target_pdbqt)
-            if ok:
-                log.info(f"  Converted in {time.time()-t0:.1f}s")
-                receptor_path = str(target_pdbqt)
-            else:
-                return DenovoResult(uniprot_id=uniprot_id, pocket_id=used_pocket_id,
-                                    pocket_center=center, box_size=box_size,
-                                    notes="PDBQT conversion failed")
-        else:
-            return DenovoResult(uniprot_id=uniprot_id, pocket_id=used_pocket_id,
-                                pocket_center=center, box_size=box_size,
-                                notes=f"Receptor not found: {receptor_path}")
+                if receptor_path and Path(receptor_path).name:
+                    source_pdb   = Path(receptor_path).with_suffix(".pdb")
+                    source_pdb   = source_pdb if source_pdb.exists() else (
+                                default_pdb if default_pdb.exists() else None)
+                    target_pdbqt = Path(receptor_path)
+                else:
+                    source_pdb   = default_pdb if default_pdb.exists() else None
+                    target_pdbqt = default_pdbqt
 
-    r = subprocess.run("obabel --version", shell=True,
-                       stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    if r.returncode != 0:
-        return DenovoResult(uniprot_id=uniprot_id, pocket_id=used_pocket_id,
-                            pocket_center=center, box_size=box_size,
-                            notes="obabel not found")
+                if source_pdb:
+                    log.info(f"  Converting {source_pdb.name} → PDBQT...")
+                    t0_conv = time.time()
+                    ok = _fast_pdb_to_pdbqt(source_pdb, target_pdbqt)
+                    if ok:
+                        log.info(f"  Converted in {time.time()-t0_conv:.1f}s → {target_pdbqt.name}")
+                        receptor_path = str(target_pdbqt.resolve())   # ← .resolve() makes it absolute
+                    else:
+                        return DenovoResult(uniprot_id=uniprot_id, pocket_id=used_pocket_id,
+                                            pocket_center=center, box_size=box_size,
+                                            notes="PDBQT conversion failed")
+                else:
+                    return DenovoResult(uniprot_id=uniprot_id, pocket_id=used_pocket_id,
+                                        pocket_center=center, box_size=box_size,
+                                        notes=f"Receptor PDB not found: {default_pdb}")
 
-    log.info(f"  Vina: {vina_path}")
-    log.info(f"  Receptor: {receptor_path}")
-    log.info(f"  Workers: {PARALLEL_WORKERS}")
+        log.info(f"  Receptor: {receptor_path}")
+        assert os.path.exists(receptor_path), f"Receptor missing: {receptor_path}"
 
-    # ── Initialise ────────────────────────────────────────────────────────────
     chem      = ChemicalEngine()
     novelty   = NoveltyArchive()
     surrogate = SurrogateModel()

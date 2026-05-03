@@ -582,12 +582,19 @@ def find_epitopes(
 # ══════════════════════════════════════════════════════════════════════════════
 
 def _run_denovo_for_therapy(
-    uid:       str,
-    vina_path: str,
-    inter_dir: Path,
+    uid:          str,
+    vina_path:    str,
+    inter_dir:    Path,
+    receptor_path: str = "",
 ) -> Optional[str]:
     """
     Trigger de novo molecular design and return the output path.
+
+    receptor_path:
+      - ""  (empty)  → auto-convert PDB to PDBQT using built-in converter
+      - "/path/to/receptor.pdbqt" → use this pre-prepared file
+      - "/path/to/receptor.pdb"   → convert this specific PDB file
+
     Returns None if design fails or Vina is not available.
     """
     from proteinfp.deps import has_rdkit, has_vina
@@ -598,6 +605,23 @@ def _run_denovo_for_therapy(
     if not has_vina(vina_path):
         print(f"  [SKIP] De novo design — Vina not found at {vina_path}")
         return None
+
+    # Resolve receptor path — prefer explicit, fallback to auto-convert from PDB
+    resolved_receptor = ""
+    if receptor_path and Path(receptor_path).exists():
+        resolved_receptor = receptor_path
+        print(f"  Using provided receptor: {Path(receptor_path).name}")
+    else:
+        # Check if PDBQT already exists from a previous run
+        default_pdbqt = ROOT / "data" / "structures" / f"{uid}.pdbqt"
+        if default_pdbqt.exists():
+            resolved_receptor = str(default_pdbqt)
+            print(f"  Using cached receptor: {default_pdbqt.name}")
+        else:
+            # Pass empty string — denovo_design._fast_pdb_to_pdbqt will
+            # auto-convert from data/structures/{uid}.pdb
+            resolved_receptor = ""
+            print(f"  No receptor PDBQT found — will auto-convert from PDB")
 
     try:
         from pipeline.denovo_design import run_denovo_design
@@ -617,6 +641,7 @@ def _run_denovo_for_therapy(
             allosteric_data = _load(f"{uid}_allosteric.json"),
             chem_env_data   = _load(f"{uid}_chemical_env.json"),
             vina_path       = vina_path,
+            receptor_path   = resolved_receptor,   # explicit, never WindowsPath('.')
             consensus_data  = load_consensus_context(uid, inter_dir),
             md_data         = load_md_context(uid, inter_dir),
         )
@@ -625,6 +650,7 @@ def _run_denovo_for_therapy(
 
     except Exception as e:
         print(f"  [FAIL] De novo design: {e}")
+        import traceback; traceback.print_exc()
         return None
 
 
@@ -646,10 +672,11 @@ def _run_pharm_scoring(uid: str) -> Optional[str]:
 # ══════════════════════════════════════════════════════════════════════════════
 
 def run_therapy(
-    uniprot_id:  str,
-    vina_path:   Optional[str] = None,
-    run_denovo:  bool          = True,
-    verbose:     bool          = True,
+    uniprot_id:    str,
+    vina_path:     Optional[str] = None,
+    receptor_path: str           = "",
+    run_denovo:    bool          = True,
+    verbose:       bool          = True,
 ) -> TherapyResult:
     """
     Run the full therapy workflow for a protein.
@@ -657,10 +684,11 @@ def run_therapy(
     Requires a completed consensus report (run `proteinfp --uniprot X` first).
 
     Args:
-        uniprot_id:  UniProt accession
-        vina_path:   Path to AutoDock Vina executable (enables de novo)
-        run_denovo:  Whether to run de novo design if Vina is available
-        verbose:     Print progress
+        uniprot_id:    UniProt accession
+        vina_path:     Path to AutoDock Vina executable (enables de novo)
+        receptor_path: Path to receptor PDBQT (auto-prepared from PDB if empty)
+        run_denovo:    Whether to run de novo design if Vina is available
+        verbose:       Print progress
 
     Returns:
         TherapyResult with decision, epitopes, and de novo paths
@@ -747,7 +775,9 @@ def run_therapy(
         if verbose:
             print("\n  [3/3] Running de novo molecular design...")
         if vina_path:
-            denovo_path = _run_denovo_for_therapy(uid, vina_path, inter_dir)
+            denovo_path = _run_denovo_for_therapy(
+                uid, vina_path, inter_dir, receptor_path
+            )
             if denovo_path:
                 denovo_run = True
                 if verbose:
