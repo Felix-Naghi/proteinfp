@@ -1,9 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(python -m pytest tests/ -v --tb=short)",
-      "Bash(git stash *)",
-      "Bash(python -m pytest tests/test_03_active_sites.py::TestNewMotifs tests/test_08_09_10_ai_prediction.py::TestECPrediction::test_zinc_motif_gives_ec3 -v --tb=line)"
-    ]
-  }
-}
