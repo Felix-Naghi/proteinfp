@@ -2,7 +2,7 @@
 
 **End-to-end protein function prediction and drug candidate design.**
 
-Give it a UniProt ID. Get back active sites, druggable pockets, allosteric sites, EC classification, GO terms, PPI partners, therapy modality recommendations, and — with AutoDock Vina — evolved drug candidate molecules. For any protein, any disease, any organism.
+Give it a UniProt ID. Get back active sites, druggable pockets, allosteric sites, EC classification, GO terms, PPI partners, therapy modality recommendations, and, with AutoDock Vina, evolved drug candidate molecules. For any protein, any disease, any organism.
 
 ```bash
 pip install proteinfp
@@ -92,7 +92,7 @@ proteinfp --check-deps
 ## Quick start
 
 ```bash
-# Any protein — just a UniProt ID
+# Any protein, just a UniProt ID
 proteinfp --uniprot P04637       # TP53 (human tumour suppressor)
 proteinfp --uniprot P28593       # Trypanothione reductase (Chagas disease)
 proteinfp --uniprot P9WGR1       # InhA (drug-resistant TB)
