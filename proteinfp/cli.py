@@ -8,6 +8,8 @@ After `pip install proteinfp`, this is available as:
     proteinfp --uniprot P04637
     proteinfp --uniprot P04637 --denovo --vina /path/to/vina
     proteinfp --uniprot P04637 --md
+    proteinfp --uniprot P04637 --antibody
+    proteinfp --uniprot P04637 --antibody --epitope-mode ppi
     proteinfp --check-deps
     proteinfp --list-modules
 """
@@ -63,12 +65,37 @@ except Exception:
 @click.option(
     "--therapy", "-t",
     is_flag=True, default=False,
-    help="Run therapy decision + epitope/de novo design after pipeline completes.",
+    help="Run therapy decision + all viable design modules automatically.",
+)
+@click.option(
+    "--interactive", "-i",
+    is_flag=True, default=False,
+    help="Interactive therapy mode — score all modalities, pick one, run with guided parameters.",
 )
 @click.option(
     "--grn", "-g",
     is_flag=True, default=False,
     help="Run GRN modules (requires scRNA-seq data in disease_config.yaml).",
+)
+@click.option(
+    "--antibody", "-a",
+    is_flag=True, default=False,
+    help="Run de novo antibody CDR design (Module 16).",
+)
+@click.option(
+    "--epitope-mode", "-e",
+    default="auto",
+    type=click.Choice(["auto", "active", "ppi", "surface", "allosteric"]),
+    show_default=True,
+    help="Epitope selection strategy for antibody design.",
+)
+@click.option(
+    "--ab-generations",
+    default=50,
+    type=int,
+    show_default=True,
+    metavar="N",
+    help="Evolution generations for antibody design.",
 )
 @click.option(
     "--force", "-f",
@@ -93,17 +120,21 @@ except Exception:
 )
 @click.version_option(__version__, "--version", "-V")
 def main(
-    uniprot:     str,
-    vina:        str,
-    receptor:    str,
-    denovo:      bool,
-    md:          bool,
-    grn:         bool,
-    therapy:     bool,
-    force:       bool,
-    output_dir:  str,
-    check_deps:  bool,
-    list_modules: bool,
+    uniprot:        str,
+    vina:           str,
+    receptor:       str,
+    denovo:         bool,
+    md:             bool,
+    grn:            bool,
+    antibody:       bool,
+    epitope_mode:   str,
+    ab_generations: int,
+    therapy:        bool,
+    interactive:    bool,
+    force:          bool,
+    output_dir:     str,
+    check_deps:     bool,
+    list_modules:   bool,
 ) -> None:
     """
     ProteinFP — protein function prediction and drug candidate design.
@@ -123,6 +154,20 @@ def main(
     \b
     With molecular dynamics (requires OpenMM):
         proteinfp --uniprot P04637 --md
+
+    \b
+    Therapy mode — interactive picker (recommended):
+        proteinfp --uniprot P04637 --interactive
+        proteinfp --uniprot P04637 --interactive --vina /path/to/vina
+
+    \b
+    Therapy mode — run all viable modalities automatically:
+        proteinfp --uniprot P04637 --therapy
+
+    \b
+    With antibody CDR design (Module 16):
+        proteinfp --uniprot P04637 --antibody
+        proteinfp --uniprot P04637 --antibody --epitope-mode ppi
 
     \b
     Check what optional features are available:
@@ -174,13 +219,16 @@ def main(
     from proteinfp.orchestrator import run_pipeline
 
     result = run_pipeline(
-        uniprot_id = uniprot.strip().upper(),
-        vina_path  = vina,
-        run_md     = md,
-        run_denovo = denovo,
-        run_grn    = grn,
-        force      = force,
-        verbose    = True,
+        uniprot_id      = uniprot.strip().upper(),
+        vina_path       = vina,
+        run_md          = md,
+        run_denovo      = denovo,
+        run_grn         = grn,
+        run_antibody    = antibody,
+        epitope_mode    = epitope_mode,
+        ab_generations  = ab_generations,
+        force           = force,
+        verbose         = True,
     )
 
     # ── Final output ──────────────────────────────────────────────────────────
@@ -192,20 +240,30 @@ def main(
         click.echo(f"  Failed modules: {', '.join(result.modules_fail)}")
         sys.exit(1)
 
-    # ── --therapy: run therapy decision + epitopes + de novo ──────────────────
-    if therapy and result.success:
-        click.echo(f"\n  Running therapy analysis...")
+    # ── --therapy / --interactive: therapy decision + design modules ─────────────
+    if (therapy or interactive) and result.success:
         try:
-            from proteinfp.therapy import run_therapy
-            run_therapy(
-                uniprot_id    = uniprot.strip().upper(),
-                vina_path     = vina,
-                receptor_path = receptor or "",
-                run_denovo    = denovo,
-                verbose       = True,
-            )
+            from proteinfp.therapy import run_therapy, interactive_design
+            if interactive:
+                click.echo(f"\n  Launching interactive therapy design...")
+                interactive_design(
+                    uniprot_id    = uniprot.strip().upper(),
+                    vina_path     = vina,
+                    receptor_path = receptor or "",
+                    force         = force,
+                )
+            else:
+                click.echo(f"\n  Running therapy analysis...")
+                run_therapy(
+                    uniprot_id    = uniprot.strip().upper(),
+                    vina_path     = vina,
+                    receptor_path = receptor or "",
+                    run_denovo    = denovo,
+                    verbose       = True,
+                )
         except Exception as e:
             click.echo(f"\n  Therapy analysis failed: {e}")
+            import traceback; traceback.print_exc()
 
 
 # ── Helper: warn about missing optional deps ───────────────────────────────────
@@ -269,21 +327,26 @@ def _print_module_table() -> None:
     )
 
     rows = [
-        ("01", "fetch_structure",  True,            "AlphaFold structure + UniProt"),
-        ("02", "physicochemical",  has_freesasa(),  "SASA, charge, hydrophobicity"),
-        ("03", "active_sites",     True,            "Catalytic residue prediction"),
-        ("04", "binding_pockets",  True,            "Druggable pocket detection"),
-        ("05", "allosteric",       True,            "Elastic network allosteric"),
-        ("06", "chemical_env",     True,            "Active site chemistry"),
-        ("07", "homology",         True,            "Sequence/structure homologs"),
-        ("08", "esm2",             has_esm2(),      "Protein language model"),
-        ("10", "ec_prediction",    True,            "EC number (ML or rules)"),
-        ("11", "foldseek",         True,            "Structural analogs"),
-        ("12", "ppi_network",      True,            "Protein interactions"),
-        ("13", "consensus",        True,            "Final report"),
-        ("14", "molecular_dyn",    has_openmm(),    "MD simulation"),
-        ("15", "denovo_design",    has_rdkit() and has_vina(), "De novo molecules"),
-        ("17", "ptm_analysis",     True,            "Post-translational mods"),
+        ("01", "fetch_structure",    True,            "AlphaFold structure + UniProt"),
+        ("02", "physicochemical",    has_freesasa(),  "SASA, charge, hydrophobicity"),
+        ("03", "active_sites",       True,            "Catalytic residue prediction"),
+        ("04", "binding_pockets",    True,            "Druggable pocket detection"),
+        ("05", "allosteric",         True,            "Elastic network allosteric"),
+        ("06", "chemical_env",       True,            "Active site chemistry"),
+        ("07", "homology",           True,            "Sequence/structure homologs"),
+        ("08", "esm2",               has_esm2(),      "Protein language model"),
+        ("10", "ec_prediction",      True,            "EC number (ML or rules)"),
+        ("11", "foldseek",           True,            "Structural analogs"),
+        ("12", "ppi_network",        True,            "Protein interactions"),
+        ("13", "consensus",          True,            "Final report"),
+        ("14", "molecular_dyn",      has_openmm(),    "MD simulation"),
+        ("15", "denovo_design",      has_rdkit() and has_vina(), "De novo small molecules"),
+        ("16", "antibody_design",    True,            "De novo antibody CDR design"),
+        ("17", "ptm_analysis",       True,            "Post-translational mods"),
+        ("18", "adc_design",         True,            "ADC (warhead+linker+CDR co-evolution)"),
+        ("19", "cart_design",        True,            "CAR-T construct design"),
+        ("20", "protac_design",      True,            "PROTAC / protein degrader design"),
+        ("21", "allosteric_drug",    True,            "Allosteric small molecule design"),
     ]
 
     click.echo(f"\n  {'#':<4} {'Module':<20} {'Available':<12} {'Description'}")
