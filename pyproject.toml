@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "proteinfp"
-version = "0.1.0"
+version = "0.1.7"
 description = "End-to-end protein function prediction and drug candidate design"
 readme = "README.md"
 license = { text = "MIT" }
@@ -122,3 +122,8 @@ target-version = ["py310", "py311", "py312"]
 line-length = 100
 select = ["E", "F", "W", "I"]
 ignore = ["E501"]
+
+[project.urls]
+Homepage = "https://github.com/wowcowdowjones/proteinFP2"
+Repository = "https://github.com/wowcowdowjones/proteinFP2"
+"Bug Tracker" = "https://github.com/wowcowdowjones/proteinFP2/issues"
