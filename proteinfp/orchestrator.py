@@ -129,13 +129,16 @@ def _run_module(
 # ── Main orchestrator ──────────────────────────────────────────────────────────
 
 def run_pipeline(
-    uniprot_id:   str,
-    vina_path:    Optional[str]  = None,
-    run_md:       bool           = False,
-    run_denovo:   bool           = False,
-    run_grn:      bool           = False,
-    force:        bool           = False,
-    verbose:      bool           = True,
+    uniprot_id:     str,
+    vina_path:      Optional[str]  = None,
+    run_md:         bool           = False,
+    run_denovo:     bool           = False,
+    run_grn:        bool           = False,
+    run_antibody:   bool           = False,
+    epitope_mode:   str            = "auto",
+    ab_generations: int            = 50,
+    force:          bool           = False,
+    verbose:        bool           = True,
 ) -> RunResult:
     """
     Run the full ProteinFP pipeline for a single protein.

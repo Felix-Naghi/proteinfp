@@ -1,6 +1,6 @@
 {
   "model_version": "ec_ensemble_v5",
-  "created": "2026-04-25T17:53:20.305472",
+  "created": "2026-05-09T17:15:55.817702",
   "training_csv": "data/swissprot_curated_v4.csv",
   "n_training": 5440,
   "n_validation": 960,
@@ -17,21 +17,21 @@
     "EC7"
   ],
   "metrics": {
-    "ec_top1_accuracy": 0.665625,
-    "ec_top2_accuracy": 0.8104166666666667,
-    "macro_f1": 0.6651728602641079,
-    "weighted_f1": 0.6651728602641078,
-    "enzyme_binary_acc": 0.9229166666666667,
-    "train_time_sec": 263.3346230983734,
+    "ec_top1_accuracy": 0.6645833333333333,
+    "ec_top2_accuracy": 0.8041666666666667,
+    "macro_f1": 0.6635479572719178,
+    "weighted_f1": 0.6635479572719178,
+    "enzyme_binary_acc": 0.91875,
+    "train_time_sec": 262.00503277778625,
     "n_train": 5440,
     "n_val": 960,
     "accuracy_95_ci": [
-      0.63328125,
-      0.6917447916666667
+      0.6322916666666667,
+      0.6927083333333334
     ],
     "macro_f1_95_ci": [
-      0.6338353046984992,
-      0.6892685848175262
+      0.6341902548845936,
+      0.6912911901316026
     ]
   },
   "intended_use": "EC class prediction from protein sequence",

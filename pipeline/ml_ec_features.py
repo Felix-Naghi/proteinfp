@@ -247,7 +247,7 @@ def _esm2_features(esm2_result: Optional[dict]) -> np.ndarray:
     if not esm2_result:
         return np.zeros(128, dtype=np.float32)
 
-    raw_emb = esm2_result.get("protein_embedding", [])
+    raw_emb = esm2_result.get("protein_embedding") or esm2_result.get("mean_embedding", [])
     if raw_emb is None:
         return np.zeros(128, dtype=np.float32)
     emb = np.array(raw_emb, dtype=np.float32)

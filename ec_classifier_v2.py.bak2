@@ -1,0 +1,585 @@
+"""
+ec_classifier_v2.py
+═══════════════════
+Complete rebuild of the EC classifier targeting 90%+ binary enzyme accuracy.
+
+Architecture:
+  - Full 1280-dim ESM-2 mean embedding (no lossy compression)
+  - Structural features from pipeline outputs:
+      * Number of binding pockets and their drug scores
+      * Number of high-confidence active site residues
+      * Secondary structure composition (helix/strand/coil fractions)
+      * SASA totals and exposed residue fraction
+      * Number of catalytic motifs detected
+      * Mean pLDDT, disordered fraction
+  - Sequence composition fallback (20-dim AA freq + length)
+  - Single calibrated XGBoost classifier
+  - Isotonic probability calibration on held-out set
+
+Usage:
+  # Build dataset (same CSV, but uses ESM-2 properly now)
+  python ec_classifier_v2.py build --csv data/swissprot_curated_v4_augmented.csv
+
+  # Train
+  python ec_classifier_v2.py train
+
+  # Predict on validation set + score
+  python ec_classifier_v2.py validate
+
+  # Use it: load_model() returns a callable
+  from ec_classifier_v2 import load_model
+  clf = load_model()
+  result = clf.predict_uniprot('P04637')  # → {'is_enzyme': bool, 'prob': float, ...}
+"""
+
+import json
+import pickle
+import sys
+import time
+from pathlib import Path
+from typing import Optional
+
+import click
+import numpy as np
+import pandas as pd
+
+# ── Paths ─────────────────────────────────────────────────────────────────────
+ROOT          = Path(__file__).resolve().parent
+DATA_DIR      = ROOT / "data"
+INTER_DIR     = DATA_DIR / "intermediate"
+MODEL_DIR     = ROOT / "models" / "ec_classifier_v2"
+TRAIN_CACHE   = DATA_DIR / "training_cache_v2"
+DEFAULT_CSV   = DATA_DIR / "swissprot_curated_v4_augmented.csv"
+
+MODEL_DIR.mkdir(parents=True, exist_ok=True)
+TRAIN_CACHE.mkdir(parents=True, exist_ok=True)
+
+# ── Validation hold-out (your 100 proteins) ───────────────────────────────────
+# These are NEVER used for training; performance on these is the real metric.
+VALIDATION_HOLDOUT = {
+    "P00533","P06213","P15056","P00519","P27361","Q02750","P45983","Q13153",
+    "P06239","P08581","P04049","P00734","P42574","P55210","P29466","P08246",
+    "P07711","P07858","P04637","P01106","P10275","P03372","Q01094","P17275",
+    "P05412","P01100","P14921","P00441","P16083","P00387","P00352","P14550",
+    "P11473","Q07869","P37231","P10827","P20393","P07900","P08238","P11142",
+    "P04792","P02511","Q14524","P35561","P01116","P62834","P84095","P61586",
+    "P60953","Q00987","O15151","Q9NWF9","Q8NHZ8","P17706","P29350","Q06124",
+    "P68871","P69905","P02768","P11166","P38398","P51587","P12004","P02452",
+    "P68032","P02144","Q9BYF1","P00918","P08473","P15144","P00488","P04180",
+    "P01375","P05156","P46108","Q13480","P06493","P24941","P11802","P36507",
+    "P45985","P07339","P43235","P08311","P28562","P15923","P17542","P22415",
+    "P00491","P15531","P07737","P08107","P38646","P20585","P52701","P62070",
+    "P55197","Q07812","P10415","Q16611",
+}
+
+# ── Feature dimensions ────────────────────────────────────────────────────────
+ESM2_DIM        = 1280
+STRUCT_DIM      = 16
+COMPOSITION_DIM = 22  # 20 AA freqs + length + log_length
+TOTAL_DIM       = ESM2_DIM + STRUCT_DIM + COMPOSITION_DIM   # 1318
+
+AA_LETTERS = "ACDEFGHIKLMNPQRSTVWY"
+
+
+def composition_features(sequence: str) -> np.ndarray:
+    """20-dim AA composition + length features."""
+    if not sequence:
+        return np.zeros(COMPOSITION_DIM, dtype=np.float32)
+    seq = sequence.upper()
+    L = len(seq)
+    feats = np.zeros(COMPOSITION_DIM, dtype=np.float32)
+    for i, aa in enumerate(AA_LETTERS):
+        feats[i] = seq.count(aa) / L
+    feats[20] = min(L, 2000) / 2000.0
+    feats[21] = np.log1p(L) / 10.0
+    return feats
+
+
+def structural_features(uniprot_id: str, inter_dir: Path = INTER_DIR) -> np.ndarray:
+    """Structural features extracted from existing pipeline JSON outputs."""
+    feats = np.zeros(STRUCT_DIM, dtype=np.float32)
+
+    # 0-1: structure quality
+    struct_path = inter_dir / f"{uniprot_id}_structure.json"
+    if struct_path.exists():
+        try:
+            s = json.loads(struct_path.read_text(encoding="utf-8"))
+            feats[0] = (s.get("mean_plddt", 50) or 50) / 100.0
+            feats[1] = s.get("high_conf_frac", 0) or 0
+        except Exception:
+            pass
+
+    # 2-5: physicochemical
+    phys_path = inter_dir / f"{uniprot_id}_physicochemical.json"
+    if phys_path.exists():
+        try:
+            p = json.loads(phys_path.read_text(encoding="utf-8"))
+            feats[2] = (p.get("total_sasa", 0) or 0) / 50000.0
+            feats[3] = p.get("exposed_fraction", 0) or 0
+            ss = p.get("secondary_structure", {})
+            feats[4] = ss.get("helix_frac", 0) or 0
+            feats[5] = ss.get("strand_frac", 0) or 0
+        except Exception:
+            pass
+
+    # 6-8: active sites
+    as_path = inter_dir / f"{uniprot_id}_active_sites.json"
+    if as_path.exists():
+        try:
+            a = json.loads(as_path.read_text(encoding="utf-8"))
+            residues = a.get("active_residues", [])
+            feats[6] = min(len(residues), 50) / 50.0
+            high_conf = sum(1 for r in residues if r.get("confidence") == "HIGH")
+            feats[7] = min(high_conf, 20) / 20.0
+            motifs = a.get("catalytic_motifs", [])
+            feats[8] = min(len(motifs), 30) / 30.0
+        except Exception:
+            pass
+
+    # 9-11: binding pockets
+    bp_path = inter_dir / f"{uniprot_id}_binding_pockets.json"
+    if bp_path.exists():
+        try:
+            b = json.loads(bp_path.read_text(encoding="utf-8"))
+            pockets = b.get("pockets", [])
+            feats[9] = min(len(pockets), 20) / 20.0
+            druggable = sum(1 for p in pockets if (p.get("druggability_score", 0) or 0) > 0.5)
+            feats[10] = min(druggable, 10) / 10.0
+            if pockets:
+                vols = [p.get("volume_a3", 0) or 0 for p in pockets]
+                feats[11] = min(max(vols), 3000) / 3000.0
+        except Exception:
+            pass
+
+    # 12-14: homology / GO term hints
+    hom_path = inter_dir / f"{uniprot_id}_homology.json"
+    if hom_path.exists():
+        try:
+            h = json.loads(hom_path.read_text(encoding="utf-8"))
+            go_terms = h.get("go_terms", [])
+            feats[12] = min(len(go_terms), 100) / 100.0
+
+            # Catalytic GO terms
+            catalytic_keywords = ["catalytic", "kinase", "phosphat", "transferase",
+                                  "hydrolase", "ligase", "oxidoreduct", "isomerase",
+                                  "protease", "peptidase", "esterase", "synthase"]
+            cat_count = 0
+            for go in go_terms:
+                name = (go.get("name", "") or "").lower()
+                if any(k in name for k in catalytic_keywords):
+                    cat_count += 1
+            feats[13] = min(cat_count, 20) / 20.0
+
+            # InterPro domain count
+            domains = h.get("interpro_domains", [])
+            feats[14] = min(len(domains), 30) / 30.0
+        except Exception:
+            pass
+
+    # 15: PTM count (proxy for regulation)
+    ptm_path = inter_dir / f"{uniprot_id}_ptm.json"
+    if ptm_path.exists():
+        try:
+            ptm = json.loads(ptm_path.read_text(encoding="utf-8"))
+            sites = ptm.get("ptm_sites", [])
+            feats[15] = min(len(sites), 30) / 30.0
+        except Exception:
+            pass
+
+    return feats
+
+
+def esm2_features(uniprot_id: str, inter_dir: Path = INTER_DIR) -> np.ndarray:
+    """Full 1280-dim ESM-2 mean embedding."""
+    esm2_path = inter_dir / f"{uniprot_id}_esm2.json"
+    if not esm2_path.exists():
+        return np.zeros(ESM2_DIM, dtype=np.float32)
+    try:
+        e = json.loads(esm2_path.read_text(encoding="utf-8"))
+        emb = e.get("protein_embedding") or e.get("mean_embedding", [])
+        if not emb:
+            return np.zeros(ESM2_DIM, dtype=np.float32)
+        arr = np.array(emb, dtype=np.float32)
+        if len(arr) != ESM2_DIM:
+            arr = np.interp(
+                np.linspace(0, len(arr) - 1, ESM2_DIM),
+                np.arange(len(arr)), arr
+            ).astype(np.float32)
+        return arr
+    except Exception:
+        return np.zeros(ESM2_DIM, dtype=np.float32)
+
+
+def esm2_features_from_sequence(sequence: str, model=None, tokenizer=None,
+                                  device: str = "cuda") -> tuple[np.ndarray, dict]:
+    """Compute ESM-2 mean embedding from raw sequence (for training proteins
+    without pre-computed JSONs)."""
+    import torch
+    if model is None:
+        return np.zeros(ESM2_DIM, dtype=np.float32), None
+
+    seq = sequence[:1024]  # ESM-2 context limit
+    inputs = tokenizer(seq, return_tensors="pt").to(device)
+    with torch.no_grad():
+        out = model(**inputs, output_hidden_states=False)
+    # Mean pool over sequence length (excluding special tokens)
+    emb = out.last_hidden_state[0, 1:-1, :].mean(dim=0).cpu().numpy().astype(np.float32)
+    return emb, {"protein_embedding": emb.tolist()}
+
+
+def build_full_features(
+    uniprot_id: str,
+    sequence: str,
+    inter_dir: Path = INTER_DIR,
+    cached_esm2: Optional[np.ndarray] = None,
+) -> np.ndarray:
+    """Concatenate ESM-2 + structural + composition features."""
+    if cached_esm2 is not None and len(cached_esm2) == ESM2_DIM:
+        esm = cached_esm2.astype(np.float32)
+    else:
+        esm = esm2_features(uniprot_id, inter_dir)
+    struct = structural_features(uniprot_id, inter_dir)
+    comp = composition_features(sequence)
+    return np.concatenate([esm, struct, comp])
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+#                              CLASSIFIER
+# ══════════════════════════════════════════════════════════════════════════════
+
+class EnzymeClassifierV2:
+    """
+    Calibrated XGBoost binary enzyme classifier.
+
+    Methods:
+      .fit(X, y)
+      .predict(X) -> labels (0/1)
+      .predict_proba(X) -> calibrated probabilities
+      .save(model_dir)
+      .load(model_dir)  [classmethod]
+    """
+
+    def __init__(self, n_estimators: int = 800, max_depth: int = 8,
+                 learning_rate: float = 0.05):
+        self.n_estimators = n_estimators
+        self.max_depth = max_depth
+        self.learning_rate = learning_rate
+        self.model = None
+        self.calibrator = None
+        self.scaler = None
+
+    def fit(self, X: np.ndarray, y: np.ndarray, calibration_split: float = 0.15):
+        from xgboost import XGBClassifier
+        from sklearn.preprocessing import StandardScaler
+        from sklearn.isotonic import IsotonicRegression
+        from sklearn.model_selection import train_test_split
+
+        # Split off calibration set
+        X_train, X_cal, y_train, y_cal = train_test_split(
+            X, y, test_size=calibration_split, stratify=y, random_state=42
+        )
+
+        # Scale features (XGBoost doesn't need it, but helps for stability)
+        self.scaler = StandardScaler()
+        X_train_s = self.scaler.fit_transform(X_train)
+        X_cal_s   = self.scaler.transform(X_cal)
+
+        # Train XGBoost
+        pos_weight = (y_train == 0).sum() / max((y_train == 1).sum(), 1)
+        self.model = XGBClassifier(
+            n_estimators=self.n_estimators,
+            max_depth=self.max_depth,
+            learning_rate=self.learning_rate,
+            scale_pos_weight=pos_weight,
+            objective="binary:logistic",
+            eval_metric="logloss",
+            tree_method="hist",
+            device="cuda" if _has_cuda() else "cpu",
+            random_state=42,
+            n_jobs=-1,
+        )
+        print(f"  Training XGBoost on {len(X_train)} examples...")
+        self.model.fit(
+            X_train_s, y_train,
+            eval_set=[(X_cal_s, y_cal)],
+            verbose=False,
+        )
+
+        # Calibrate on held-out
+        raw_probs = self.model.predict_proba(X_cal_s)[:, 1]
+        self.calibrator = IsotonicRegression(out_of_bounds="clip")
+        self.calibrator.fit(raw_probs, y_cal)
+        print(f"  Calibrated on {len(X_cal)} held-out examples")
+
+        # Report calibration set accuracy
+        cal_preds = (self.calibrator.predict(raw_probs) >= 0.5).astype(int)
+        cal_acc = (cal_preds == y_cal).mean()
+        print(f"  Calibration set accuracy: {cal_acc*100:.2f}%")
+
+        return self
+
+    def predict_proba(self, X: np.ndarray) -> np.ndarray:
+        X_s = self.scaler.transform(X)
+        raw = self.model.predict_proba(X_s)[:, 1]
+        return self.calibrator.predict(raw)
+
+    def predict(self, X: np.ndarray, threshold: float = 0.5) -> np.ndarray:
+        return (self.predict_proba(X) >= threshold).astype(int)
+
+    def save(self, model_dir: Path):
+        model_dir = Path(model_dir)
+        model_dir.mkdir(parents=True, exist_ok=True)
+        with open(model_dir / "model.pkl", "wb") as f:
+            pickle.dump({
+                "scaler":     self.scaler,
+                "model":      self.model,
+                "calibrator": self.calibrator,
+                "n_features": TOTAL_DIM,
+            }, f)
+        print(f"  Saved model to {model_dir}")
+
+    @classmethod
+    def load(cls, model_dir: Path = MODEL_DIR):
+        with open(Path(model_dir) / "model.pkl", "rb") as f:
+            blob = pickle.load(f)
+        clf = cls()
+        clf.scaler     = blob["scaler"]
+        clf.model      = blob["model"]
+        clf.calibrator = blob["calibrator"]
+        return clf
+
+
+def _has_cuda() -> bool:
+    try:
+        import torch
+        return torch.cuda.is_available()
+    except Exception:
+        return False
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+#                              CLI COMMANDS
+# ══════════════════════════════════════════════════════════════════════════════
+
+@click.group()
+def cli():
+    """EC Classifier v2 — production rebuild with proper ESM-2 features."""
+    pass
+
+
+@cli.command("build")
+@click.option("--csv", default=str(DEFAULT_CSV), help="Training CSV path")
+@click.option("--max-proteins", default=0, type=int,
+              help="Max proteins to process (0=all)")
+def build_features(csv: str, max_proteins: int):
+    """
+    Compute ESM-2 + structural + composition features for every training
+    protein and save to a feature matrix.
+    """
+    print("═" * 70)
+    print("  EC CLASSIFIER v2 — Feature extraction")
+    print("═" * 70)
+
+    df = pd.read_csv(csv)
+    if max_proteins > 0:
+        df = df.head(max_proteins)
+
+    # Filter holdout
+    n_before = len(df)
+    df = df[~df["uniprot_id"].isin(VALIDATION_HOLDOUT)].reset_index(drop=True)
+    print(f"  Loaded {n_before} proteins, {n_before - len(df)} excluded as holdout")
+    print(f"  Training pool: {len(df)}")
+    print()
+
+    # Load ESM-2 model
+    print("  Loading ESM-2 model...")
+    import torch
+    from transformers import EsmModel, EsmTokenizer
+    model_name = "facebook/esm2_t33_650M_UR50D"
+    tokenizer = EsmTokenizer.from_pretrained(model_name)
+    model = EsmModel.from_pretrained(model_name)
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    model = model.to(device).eval()
+    print(f"  Model on {device}")
+    print()
+
+    # Load existing cache if present
+    esm2_cache_path = TRAIN_CACHE / "esm2_cache.pkl"
+    if esm2_cache_path.exists():
+        with open(esm2_cache_path, "rb") as f:
+            esm2_cache = pickle.load(f)
+        print(f"  Loaded existing ESM-2 cache: {len(esm2_cache)} entries")
+    else:
+        esm2_cache = {}
+
+    X = np.zeros((len(df), TOTAL_DIM), dtype=np.float32)
+    y = np.zeros(len(df), dtype=np.int32)
+    failed = []
+
+    t_start = time.time()
+    for i, row in df.iterrows():
+        uid = row["uniprot_id"]
+        seq = str(row.get("sequence", ""))
+        ec_class = row.get("ec_class", "non-enzyme")
+        is_enzyme = 1 if str(ec_class) != "non-enzyme" else 0
+
+        # Get or compute ESM-2
+        if uid in esm2_cache:
+            esm_vec = esm2_cache[uid]
+        else:
+            try:
+                seq_clean = "".join(c for c in seq if c in AA_LETTERS)[:1024]
+                if len(seq_clean) < 30:
+                    failed.append(uid)
+                    continue
+                inputs = tokenizer(seq_clean, return_tensors="pt").to(device)
+                with torch.no_grad():
+                    out = model(**inputs)
+                esm_vec = out.last_hidden_state[0, 1:-1, :].mean(dim=0).cpu().numpy().astype(np.float32)
+                esm2_cache[uid] = esm_vec
+            except Exception as e:
+                failed.append(uid)
+                continue
+
+        # Build full feature vector
+        try:
+            feats = build_full_features(uid, seq, INTER_DIR, cached_esm2=esm_vec)
+            X[i] = feats
+            y[i] = is_enzyme
+        except Exception:
+            failed.append(uid)
+
+        if (i + 1) % 100 == 0:
+            elapsed = time.time() - t_start
+            rate = (i + 1) / elapsed
+            eta = (len(df) - i - 1) / rate
+            print(f"  [{i+1}/{len(df)}] {uid}  ({rate:.1f}/s, ETA {eta/60:.1f}m)")
+
+            # Save cache periodically
+            with open(esm2_cache_path, "wb") as f:
+                pickle.dump(esm2_cache, f)
+
+    # Final cache save
+    with open(esm2_cache_path, "wb") as f:
+        pickle.dump(esm2_cache, f)
+
+    # Drop failed rows
+    valid = ~np.isin(np.arange(len(df)), [df.index[df["uniprot_id"] == u].tolist()[0]
+                                           for u in failed if u in df["uniprot_id"].values])
+    X = X[valid]
+    y = y[valid]
+
+    np.save(TRAIN_CACHE / "X.npy", X)
+    np.save(TRAIN_CACHE / "y.npy", y)
+    print()
+    print(f"  Feature matrix: {X.shape}")
+    print(f"  Enzymes: {y.sum()}, Non-enzymes: {(y==0).sum()}")
+    print(f"  Failed: {len(failed)}")
+    print(f"  Saved → {TRAIN_CACHE}/X.npy, y.npy")
+
+
+@cli.command("train")
+def train():
+    """Train the enzyme classifier on extracted features."""
+    print("═" * 70)
+    print("  EC CLASSIFIER v2 — Training")
+    print("═" * 70)
+
+    X_path = TRAIN_CACHE / "X.npy"
+    y_path = TRAIN_CACHE / "y.npy"
+    if not X_path.exists():
+        print(f"ERROR: Run 'build' first to extract features.")
+        sys.exit(1)
+
+    X = np.load(X_path)
+    y = np.load(y_path)
+    print(f"  Training data: {X.shape}, {y.sum()} enzymes / {(y==0).sum()} non-enzymes")
+    print()
+
+    clf = EnzymeClassifierV2(n_estimators=800, max_depth=8, learning_rate=0.05)
+    clf.fit(X, y)
+    clf.save(MODEL_DIR)
+    print()
+    print("Done. Now run: python ec_classifier_v2.py validate")
+
+
+@cli.command("validate")
+def validate():
+    """Score the model on the 100-protein validation set (NEVER seen in training)."""
+    print("═" * 70)
+    print("  EC CLASSIFIER v2 — Validation on 100 hold-out proteins")
+    print("═" * 70)
+
+    clf = EnzymeClassifierV2.load(MODEL_DIR)
+
+    # Load ground truth
+    sys.path.insert(0, str(ROOT / "validation"))
+    gt = {}
+    try:
+        from run_validation import VALIDATION_SET  # type: ignore
+        for p in VALIDATION_SET:
+            gt[p["uniprot_id"]] = p.get("is_enzyme", False)
+    except Exception:
+        pass
+    ne_path = ROOT / "validation" / "new_entries.json"
+    if ne_path.exists():
+        for p in json.loads(ne_path.read_text(encoding="utf-8")):
+            uid = p.get("uniprot_id", "")
+            if uid and uid not in gt:
+                gt[uid] = p.get("is_enzyme", False)
+
+    # Build features for each holdout protein
+    results = []
+    for uid in VALIDATION_HOLDOUT:
+        if uid not in gt:
+            continue
+        struct_path = INTER_DIR / f"{uid}_structure.json"
+        if not struct_path.exists():
+            continue
+        try:
+            seq = json.loads(struct_path.read_text(encoding="utf-8")).get("sequence", "")
+            X = build_full_features(uid, seq).reshape(1, -1)
+            prob = float(clf.predict_proba(X)[0])
+            true_enz = gt[uid]
+            results.append((uid, true_enz, prob))
+        except Exception as e:
+            print(f"  {uid} failed: {e}")
+
+    # Report
+    print(f"\n  Evaluated {len(results)} proteins\n")
+    print(f"  {'UniProt':<10} {'True':>6} {'Prob':>7}  {'Pred':>6}")
+    print("  " + "-" * 35)
+    results.sort(key=lambda x: -x[2])
+    for uid, te, p in results:
+        pred = "Y" if p >= 0.5 else "N"
+        true_str = "Y" if te else "N"
+        flag = "  OK" if (p >= 0.5) == bool(te) else "  WRONG"
+        print(f"  {uid:<10} {true_str:>6} {p:>7.3f}  {pred:>6}{flag}")
+
+    print()
+    print("  Threshold sweep:")
+    print(f"  {'Thresh':>7} {'Acc':>7} {'Prec':>6} {'Rec':>6} {'F1':>6} {'FP':>4} {'FN':>4}")
+    for thresh in [0.3, 0.4, 0.5, 0.6, 0.7, 0.8]:
+        tp = sum(1 for _, t, p in results if p >= thresh and t)
+        tn = sum(1 for _, t, p in results if p <  thresh and not t)
+        fp = sum(1 for _, t, p in results if p >= thresh and not t)
+        fn = sum(1 for _, t, p in results if p <  thresh and t)
+        acc = (tp + tn) / max(len(results), 1)
+        prec = tp / max(tp + fp, 1)
+        rec  = tp / max(tp + fn, 1)
+        f1   = 2 * prec * rec / max(prec + rec, 1e-9)
+        print(f"  {thresh:>7.2f} {acc*100:>6.1f}% {prec*100:>5.1f}% {rec*100:>5.1f}% "
+              f"{f1*100:>5.1f}% {fp:>4} {fn:>4}")
+
+    # Save report
+    report_path = MODEL_DIR / "validation_report.json"
+    report_path.write_text(json.dumps({
+        "n_proteins": len(results),
+        "results": [{"uniprot_id": u, "true_enzyme": bool(t), "prob": p}
+                    for u, t, p in results],
+    }, indent=2), encoding="utf-8")
+    print(f"\n  Report → {report_path}")
+
+
+if __name__ == "__main__":
+    cli()

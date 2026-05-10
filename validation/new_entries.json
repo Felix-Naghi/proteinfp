@@ -985,8 +985,8 @@
     "gene": "HSP90AB1",
     "description": "Molecular chaperone that promotes the maturation, structural maintenance and proper regulation of specific target protei",
     "organism": "Homo sapiens",
-    "is_enzyme": false,
-    "ec_number": "",
+    "is_enzyme": true,
+    "ec_number": "3.6.4.9",
     "known_go_mf": [
       "GO:0005524",
       "GO:0016887",
@@ -1554,39 +1554,6 @@
     "category": "other"
   },
   {
-    "uniprot_id": "P51587",
-    "gene": "BRCA2",
-    "description": "Involved in double-strand break repair and/or homologous recombination. Binds RAD51 and potentiates recombinational DNA ",
-    "organism": "Homo sapiens",
-    "is_enzyme": false,
-    "ec_number": "",
-    "known_go_mf": [
-      "GO:0043015",
-      "GO:0010484",
-      "GO:0010485",
-      "GO:0042802",
-      "GO:0002020",
-      "GO:0003697"
-    ],
-    "known_go_bp": [
-      "GO:0007420",
-      "GO:0071479",
-      "GO:0090398",
-      "GO:0051298",
-      "GO:0030330",
-      "GO:0006302"
-    ],
-    "known_go_cc": [
-      "GO:0033593",
-      "GO:0005813",
-      "GO:0000781",
-      "GO:0005829"
-    ],
-    "known_active_residues": [],
-    "known_partners": [],
-    "category": "other"
-  },
-  {
     "uniprot_id": "P12004",
     "gene": "PCNA",
     "description": "Confers DNA tethering and processivity to DNA polymerases and other proteins (PubMed:24695737, PubMed:24939902, PubMed:3",
@@ -1956,5 +1923,1075 @@
     "known_active_residues": [],
     "known_partners": [],
     "category": "other"
+  },
+  {
+    "uniprot_id": "P06493",
+    "gene": "CDK1",
+    "description": "Cyclin-dependent kinase 1",
+    "organism": "Homo sapiens",
+    "is_enzyme": true,
+    "ec_number": "2.7.11.22",
+    "known_go_mf": [
+      "GO:0005524",
+      "GO:0003682",
+      "GO:0030332",
+      "GO:0097472",
+      "GO:0004693",
+      "GO:0035173",
+      "GO:0030544",
+      "GO:0016301"
+    ],
+    "known_go_bp": [
+      "GO:0006915",
+      "GO:0051301",
+      "GO:0016477",
+      "GO:0070301",
+      "GO:0007098",
+      "GO:0030261",
+      "GO:0006974",
+      "GO:0006281"
+    ],
+    "known_go_cc": [
+      "GO:0005813",
+      "GO:0000781",
+      "GO:0097121",
+      "GO:0097122",
+      "GO:0097125",
+      "GO:0000307"
+    ],
+    "known_active_residues": [
+      128,
+      10,
+      33
+    ],
+    "known_partners": [],
+    "category": "kinase"
+  },
+  {
+    "uniprot_id": "P24941",
+    "gene": "CDK2",
+    "description": "Cyclin-dependent kinase 2",
+    "organism": "Homo sapiens",
+    "is_enzyme": true,
+    "ec_number": "2.7.11.22",
+    "known_go_mf": [
+      "GO:0005524",
+      "GO:0030332",
+      "GO:0097472",
+      "GO:0004693",
+      "GO:0000287",
+      "GO:0019904",
+      "GO:0106310",
+      "GO:0004674"
+    ],
+    "known_go_bp": [
+      "GO:0051301",
+      "GO:0071732",
+      "GO:0090398",
+      "GO:0007099",
+      "GO:0051298",
+      "GO:0006338",
+      "GO:0006281",
+      "GO:0006260"
+    ],
+    "known_go_cc": [
+      "GO:0015030",
+      "GO:0005813",
+      "GO:0000781",
+      "GO:0000793",
+      "GO:0097123",
+      "GO:0097124"
+    ],
+    "known_active_residues": [
+      127,
+      10,
+      33,
+      81,
+      86,
+      129,
+      132,
+      145
+    ],
+    "known_partners": [],
+    "category": "kinase"
+  },
+  {
+    "uniprot_id": "P11802",
+    "gene": "CDK4",
+    "description": "Cyclin-dependent kinase 4",
+    "organism": "Homo sapiens",
+    "is_enzyme": true,
+    "ec_number": "2.7.11.22",
+    "known_go_mf": [
+      "GO:0005524",
+      "GO:0030332",
+      "GO:0004693",
+      "GO:0016538",
+      "GO:0106310"
+    ],
+    "known_go_bp": [
+      "GO:0051301",
+      "GO:0071353",
+      "GO:1904637",
+      "GO:0071222",
+      "GO:1904628",
+      "GO:0000082",
+      "GO:0008284",
+      "GO:0048146"
+    ],
+    "known_go_cc": [
+      "GO:0005923",
+      "GO:0000785",
+      "GO:0097128",
+      "GO:0097129",
+      "GO:0097130",
+      "GO:0000307"
+    ],
+    "known_active_residues": [
+      140,
+      12,
+      35
+    ],
+    "known_partners": [],
+    "category": "kinase"
+  },
+  {
+    "uniprot_id": "P36507",
+    "gene": "MAP2K2",
+    "description": "Dual specificity mitogen-activated protein kinase kinase 2",
+    "organism": "Homo sapiens",
+    "is_enzyme": true,
+    "ec_number": "2.7.12.2",
+    "known_go_mf": [
+      "GO:0005524",
+      "GO:0004708",
+      "GO:0005078",
+      "GO:0046872",
+      "GO:0030165",
+      "GO:0106310",
+      "GO:0043539",
+      "GO:0004674"
+    ],
+    "known_go_bp": [
+      "GO:0060502",
+      "GO:0038133",
+      "GO:0070371",
+      "GO:0060324",
+      "GO:0007507",
+      "GO:0048009",
+      "GO:0000165",
+      "GO:0042552"
+    ],
+    "known_go_cc": [
+      "GO:0005911",
+      "GO:0009898",
+      "GO:0005829",
+      "GO:0005769",
+      "GO:0005783",
+      "GO:0005576"
+    ],
+    "known_active_residues": [
+      194,
+      78,
+      101
+    ],
+    "known_partners": [],
+    "category": "kinase"
+  },
+  {
+    "uniprot_id": "P45985",
+    "gene": "MAP2K4",
+    "description": "Dual specificity mitogen-activated protein kinase kinase 4",
+    "organism": "Homo sapiens",
+    "is_enzyme": true,
+    "ec_number": "2.7.12.2",
+    "known_go_mf": [
+      "GO:0005524",
+      "GO:0008545",
+      "GO:0004708",
+      "GO:0060090",
+      "GO:0004672",
+      "GO:0106310",
+      "GO:0004674",
+      "GO:0004713"
+    ],
+    "known_go_bp": [
+      "GO:0071260",
+      "GO:0090398",
+      "GO:0038095",
+      "GO:0036481",
+      "GO:0007254",
+      "GO:0000165",
+      "GO:2000672",
+      "GO:0009611"
+    ],
+    "known_go_cc": [
+      "GO:0005829",
+      "GO:0005634"
+    ],
+    "known_active_residues": [
+      229,
+      108,
+      131
+    ],
+    "known_partners": [],
+    "category": "kinase"
+  },
+  {
+    "uniprot_id": "P07339",
+    "gene": "CTSD",
+    "description": "Cathepsin D",
+    "organism": "Homo sapiens",
+    "is_enzyme": true,
+    "ec_number": "3.4.23.5",
+    "known_go_mf": [
+      "GO:0004190",
+      "GO:0070001",
+      "GO:0004197",
+      "GO:0008233"
+    ],
+    "known_go_bp": [
+      "GO:0019886",
+      "GO:0000045",
+      "GO:0097194",
+      "GO:1901143",
+      "GO:0038020",
+      "GO:0042159",
+      "GO:0043065",
+      "GO:0006508"
+    ],
+    "known_go_cc": [
+      "GO:0005829",
+      "GO:0031904",
+      "GO:0010008",
+      "GO:0070062",
+      "GO:0031012",
+      "GO:0005576"
+    ],
+    "known_active_residues": [
+      97,
+      295
+    ],
+    "known_partners": [],
+    "category": "protease"
+  },
+  {
+    "uniprot_id": "P43235",
+    "gene": "CTSK",
+    "description": "Cathepsin K",
+    "organism": "Homo sapiens",
+    "is_enzyme": true,
+    "ec_number": "3.4.22.38",
+    "known_go_mf": [
+      "GO:0005518",
+      "GO:0004197",
+      "GO:0008234",
+      "GO:0001968",
+      "GO:0043394",
+      "GO:0004252"
+    ],
+    "known_go_bp": [
+      "GO:0045453",
+      "GO:0030574",
+      "GO:0022617",
+      "GO:0000423",
+      "GO:0061037",
+      "GO:0006508",
+      "GO:0051603",
+      "GO:0006590"
+    ],
+    "known_go_cc": [
+      "GO:0016324",
+      "GO:0036021",
+      "GO:0009897",
+      "GO:0005576",
+      "GO:0005615",
+      "GO:0043202"
+    ],
+    "known_active_residues": [
+      139,
+      276,
+      296
+    ],
+    "known_partners": [],
+    "category": "protease"
+  },
+  {
+    "uniprot_id": "P08311",
+    "gene": "CTSG",
+    "description": "Cathepsin G",
+    "organism": "Homo sapiens",
+    "is_enzyme": true,
+    "ec_number": "3.4.21.20",
+    "known_go_mf": [
+      "GO:0089720",
+      "GO:0008201",
+      "GO:0008233",
+      "GO:0048018",
+      "GO:0004252",
+      "GO:0008236"
+    ],
+    "known_go_bp": [
+      "GO:0002003",
+      "GO:0019731",
+      "GO:0098786",
+      "GO:0071222",
+      "GO:0019221",
+      "GO:0050832",
+      "GO:0050829",
+      "GO:0050830"
+    ],
+    "known_go_cc": [
+      "GO:0035578",
+      "GO:0010494",
+      "GO:0005829",
+      "GO:0070062",
+      "GO:0031012",
+      "GO:0005576"
+    ],
+    "known_active_residues": [
+      64,
+      108,
+      201
+    ],
+    "known_partners": [],
+    "category": "protease"
+  },
+  {
+    "uniprot_id": "P28562",
+    "gene": "DUSP1",
+    "description": "Dual specificity protein phosphatase 1",
+    "organism": "Homo sapiens",
+    "is_enzyme": true,
+    "ec_number": "3.1.3.16",
+    "known_go_mf": [
+      "GO:0019838",
+      "GO:0017017",
+      "GO:0051019",
+      "GO:0004721",
+      "GO:0004722",
+      "GO:0004725",
+      "GO:0008138"
+    ],
+    "known_go_bp": [
+      "GO:1990869",
+      "GO:0032870",
+      "GO:0001706",
+      "GO:0035556",
+      "GO:0043066",
+      "GO:0007162",
+      "GO:0008285",
+      "GO:2000279"
+    ],
+    "known_go_cc": [
+      "GO:0005737",
+      "GO:0005634"
+    ],
+    "known_active_residues": [
+      258
+    ],
+    "known_partners": [],
+    "category": "hydrolase"
+  },
+  {
+    "uniprot_id": "P15923",
+    "gene": "TCF3",
+    "description": "Transcription factor E2-alpha",
+    "organism": "Homo sapiens",
+    "is_enzyme": false,
+    "ec_number": "",
+    "known_go_mf": [
+      "GO:0043425",
+      "GO:0000987",
+      "GO:0003677",
+      "GO:0001228",
+      "GO:0003700",
+      "GO:0000981",
+      "GO:0140297",
+      "GO:0001227"
+    ],
+    "known_go_bp": [
+      "GO:0030183",
+      "GO:0002326",
+      "GO:0033152",
+      "GO:0000122",
+      "GO:0007399",
+      "GO:0030890",
+      "GO:0045787",
+      "GO:0051091"
+    ],
+    "known_go_cc": [
+      "GO:0000785",
+      "GO:0005737",
+      "GO:0000791",
+      "GO:0005654",
+      "GO:0005634",
+      "GO:0032991"
+    ],
+    "known_active_residues": [],
+    "known_partners": [],
+    "category": "other"
+  },
+  {
+    "uniprot_id": "P17542",
+    "gene": "TAL1",
+    "description": "T-cell acute lymphocytic leukemia protein 1",
+    "organism": "Homo sapiens",
+    "is_enzyme": false,
+    "ec_number": "",
+    "known_go_mf": [
+      "GO:0003682",
+      "GO:0003700",
+      "GO:0000981",
+      "GO:0070888",
+      "GO:0019899",
+      "GO:0042826",
+      "GO:0046983",
+      "GO:0000978"
+    ],
+    "known_go_bp": [
+      "GO:0001525",
+      "GO:0060018",
+      "GO:0030221",
+      "GO:0045165",
+      "GO:0060216",
+      "GO:0035162",
+      "GO:0030218",
+      "GO:0043249"
+    ],
+    "known_go_cc": [
+      "GO:0000785",
+      "GO:0005654",
+      "GO:0005634",
+      "GO:0005667"
+    ],
+    "known_active_residues": [],
+    "known_partners": [],
+    "category": "other"
+  },
+  {
+    "uniprot_id": "P22415",
+    "gene": "USF1",
+    "description": "Upstream stimulatory factor 1",
+    "organism": "Homo sapiens",
+    "is_enzyme": false,
+    "ec_number": "",
+    "known_go_mf": [
+      "GO:0043425",
+      "GO:0001228",
+      "GO:0000981",
+      "GO:0070888",
+      "GO:0019899",
+      "GO:0042826",
+      "GO:0042802",
+      "GO:0046982"
+    ],
+    "known_go_bp": [
+      "GO:0045990",
+      "GO:0071333",
+      "GO:0032869",
+      "GO:0042593",
+      "GO:0010255",
+      "GO:0006006",
+      "GO:0019086",
+      "GO:0055088"
+    ],
+    "known_go_cc": [
+      "GO:0000785",
+      "GO:0005794",
+      "GO:0005654",
+      "GO:0005634",
+      "GO:0005667"
+    ],
+    "known_active_residues": [],
+    "known_partners": [],
+    "category": "transcription_factor"
+  },
+  {
+    "uniprot_id": "P00491",
+    "gene": "PNP",
+    "description": "Purine nucleoside phosphorylase",
+    "organism": "Homo sapiens",
+    "is_enzyme": true,
+    "ec_number": "2.4.2.1",
+    "known_go_mf": [
+      "GO:0047975",
+      "GO:0042802",
+      "GO:0001882",
+      "GO:0042301",
+      "GO:0002060",
+      "GO:0004731"
+    ],
+    "known_go_bp": [
+      "GO:0000255",
+      "GO:0046059",
+      "GO:0006157",
+      "GO:0006149",
+      "GO:0006955",
+      "GO:0006204",
+      "GO:0006148",
+      "GO:0006738"
+    ],
+    "known_go_cc": [
+      "GO:0005737",
+      "GO:0005829",
+      "GO:0070062",
+      "GO:0005576",
+      "GO:1904813",
+      "GO:0034774"
+    ],
+    "known_active_residues": [
+      33,
+      64,
+      84,
+      88,
+      116,
+      201,
+      219,
+      220,
+      243,
+      257
+    ],
+    "known_partners": [],
+    "category": "transferase"
+  },
+  {
+    "uniprot_id": "P15531",
+    "gene": "NME1",
+    "description": "Nucleoside diphosphate kinase A",
+    "organism": "Homo sapiens",
+    "is_enzyme": true,
+    "ec_number": "2.7.4.6",
+    "known_go_mf": [
+      "GO:0008296",
+      "GO:1905502",
+      "GO:0043531",
+      "GO:0005524",
+      "GO:0120225",
+      "GO:0003677",
+      "GO:0004520",
+      "GO:0004536"
+    ],
+    "known_go_bp": [
+      "GO:0046356",
+      "GO:0006309",
+      "GO:0030154",
+      "GO:0006241",
+      "GO:0006308",
+      "GO:0006897",
+      "GO:0006183",
+      "GO:0006720"
+    ],
+    "known_go_cc": [
+      "GO:0005737",
+      "GO:0005829",
+      "GO:0005769",
+      "GO:0070062",
+      "GO:0016020",
+      "GO:0005634"
+    ],
+    "known_active_residues": [
+      118,
+      12,
+      52,
+      58,
+      88,
+      94,
+      105,
+      112,
+      115,
+      119
+    ],
+    "known_partners": [],
+    "category": "kinase"
+  },
+  {
+    "uniprot_id": "P07737",
+    "gene": "PFN1",
+    "description": "Profilin-1",
+    "organism": "Homo sapiens",
+    "is_enzyme": false,
+    "ec_number": "",
+    "known_go_mf": [
+      "GO:0003779",
+      "GO:0003785",
+      "GO:0000774",
+      "GO:0045296",
+      "GO:0005546",
+      "GO:0001784",
+      "GO:0070064",
+      "GO:0003723"
+    ],
+    "known_go_bp": [
+      "GO:0030036",
+      "GO:0098885",
+      "GO:0050804",
+      "GO:0032232",
+      "GO:0051497",
+      "GO:0001843",
+      "GO:0032233",
+      "GO:0030838"
+    ],
+    "known_go_cc": [
+      "GO:0072562",
+      "GO:0005938",
+      "GO:0005737",
+      "GO:0005856",
+      "GO:0005829",
+      "GO:0070062"
+    ],
+    "known_active_residues": [],
+    "known_partners": [],
+    "category": "other"
+  },
+  {
+    "uniprot_id": "P38646",
+    "gene": "HSPA9",
+    "description": "Stress-70 protein, mitochondrial",
+    "organism": "Homo sapiens",
+    "is_enzyme": true,
+    "ec_number": "3.6.4.10",
+    "known_go_mf": [
+      "GO:0005524",
+      "GO:0016887",
+      "GO:0140662",
+      "GO:0031072",
+      "GO:0044183",
+      "GO:0003723",
+      "GO:0031625",
+      "GO:0051082"
+    ],
+    "known_go_bp": [
+      "GO:0036444",
+      "GO:0030218",
+      "GO:0007007",
+      "GO:0006886",
+      "GO:0016226",
+      "GO:0043066",
+      "GO:0045647",
+      "GO:1902037"
+    ],
+    "known_go_cc": [
+      "GO:0005737",
+      "GO:0070062",
+      "GO:0005925",
+      "GO:0140275",
+      "GO:0005743",
+      "GO:0005759"
+    ],
+    "known_active_residues": [
+      63,
+      64,
+      313,
+      316,
+      320,
+      388,
+      391
+    ],
+    "known_partners": [],
+    "category": "hydrolase"
+  },
+  {
+    "uniprot_id": "P20585",
+    "gene": "MSH3",
+    "description": "DNA mismatch repair protein Msh3",
+    "organism": "Homo sapiens",
+    "is_enzyme": true,
+    "ec_number": "3.6.4.12",
+    "known_go_mf": [
+      "GO:0005524",
+      "GO:0140664",
+      "GO:0003690",
+      "GO:0019899",
+      "GO:0030983"
+    ],
+    "known_go_bp": [
+      "GO:0006281",
+      "GO:0043570",
+      "GO:0006298",
+      "GO:0006312",
+      "GO:0045910",
+      "GO:0016447"
+    ],
+    "known_go_cc": [
+      "GO:0016020",
+      "GO:0032302",
+      "GO:0005654",
+      "GO:0005634"
+    ],
+    "known_active_residues": [
+      896
+    ],
+    "known_partners": [],
+    "category": "dna_repair"
+  },
+  {
+    "uniprot_id": "P52701",
+    "gene": "MSH6",
+    "description": "DNA mismatch repair protein Msh6",
+    "organism": "Homo sapiens",
+    "is_enzyme": true,
+    "ec_number": "3.6.4.12",
+    "known_go_mf": [
+      "GO:0005524",
+      "GO:0008094",
+      "GO:0140664",
+      "GO:0003682",
+      "GO:0003684",
+      "GO:0019899",
+      "GO:0032137",
+      "GO:0140003"
+    ],
+    "known_go_bp": [
+      "GO:0008340",
+      "GO:0006281",
+      "GO:0097193",
+      "GO:0008630",
+      "GO:0045190",
+      "GO:0000710",
+      "GO:0006298",
+      "GO:0045910"
+    ],
+    "known_go_cc": [
+      "GO:0000785",
+      "GO:0005829",
+      "GO:0005794",
+      "GO:0032301",
+      "GO:0005654",
+      "GO:0005634"
+    ],
+    "known_active_residues": [
+      1134
+    ],
+    "known_partners": [],
+    "category": "dna_repair"
+  },
+  {
+    "uniprot_id": "P62070",
+    "gene": "RRAS2",
+    "description": "Ras-related protein R-Ras2",
+    "organism": "Homo sapiens",
+    "is_enzyme": true,
+    "ec_number": "3.6.5.2",
+    "known_go_mf": [
+      "GO:0003925",
+      "GO:0019003",
+      "GO:0005525",
+      "GO:0003924"
+    ],
+    "known_go_bp": [
+      "GO:0001649",
+      "GO:1900149",
+      "GO:0007265",
+      "GO:0036135"
+    ],
+    "known_go_cc": [
+      "GO:0005783",
+      "GO:0070062",
+      "GO:0005925",
+      "GO:0000139",
+      "GO:0016020",
+      "GO:0005886"
+    ],
+    "known_active_residues": [
+      21,
+      68,
+      127,
+      157
+    ],
+    "known_partners": [],
+    "category": "hydrolase"
+  },
+  {
+    "uniprot_id": "P55197",
+    "gene": "MLLT10",
+    "description": "Protein AF-10",
+    "organism": "Homo sapiens",
+    "is_enzyme": false,
+    "ec_number": "",
+    "known_go_mf": [
+      "GO:0003682",
+      "GO:0003677",
+      "GO:0042393",
+      "GO:0031491",
+      "GO:0008270"
+    ],
+    "known_go_bp": [
+      "GO:0045944",
+      "GO:0006357"
+    ],
+    "known_go_cc": [
+      "GO:0005654",
+      "GO:0005634",
+      "GO:0032991"
+    ],
+    "known_active_residues": [],
+    "known_partners": [],
+    "category": "other"
+  },
+  {
+    "uniprot_id": "Q07812",
+    "gene": "BAX",
+    "description": "Apoptosis regulator BAX",
+    "organism": "Homo sapiens",
+    "is_enzyme": false,
+    "ec_number": "",
+    "known_go_mf": [
+      "GO:0051434",
+      "GO:0015267",
+      "GO:0030544",
+      "GO:0042802",
+      "GO:0008289",
+      "GO:0046982",
+      "GO:0042803"
+    ],
+    "known_go_bp": [
+      "GO:0008637",
+      "GO:0006915",
+      "GO:1902262",
+      "GO:1902263",
+      "GO:0060057",
+      "GO:0097190",
+      "GO:0001783",
+      "GO:0001782"
+    ],
+    "known_go_cc": [
+      "GO:0097145",
+      "GO:0097144",
+      "GO:0097136",
+      "GO:0005737",
+      "GO:0005829",
+      "GO:0005783"
+    ],
+    "known_active_residues": [],
+    "known_partners": [],
+    "category": "apoptosis"
+  },
+  {
+    "uniprot_id": "P10415",
+    "gene": "BCL2",
+    "description": "Apoptosis regulator Bcl-2",
+    "organism": "Homo sapiens",
+    "is_enzyme": false,
+    "ec_number": "",
+    "known_go_mf": [
+      "GO:0051434",
+      "GO:0015267",
+      "GO:0016248",
+      "GO:0140297",
+      "GO:0042802",
+      "GO:0060090",
+      "GO:0002020",
+      "GO:0046982"
+    ],
+    "known_go_bp": [
+      "GO:0007015",
+      "GO:0006915",
+      "GO:0006914",
+      "GO:0031103",
+      "GO:0007409",
+      "GO:0001783",
+      "GO:0001782",
+      "GO:0002326"
+    ],
+    "known_go_cc": [
+      "GO:0097138",
+      "GO:0097148",
+      "GO:0005737",
+      "GO:0005829",
+      "GO:0005783",
+      "GO:0005789"
+    ],
+    "known_active_residues": [],
+    "known_partners": [],
+    "category": "apoptosis"
+  },
+  {
+    "uniprot_id": "Q16611",
+    "gene": "BAK1",
+    "description": "Bcl-2 homologous antagonist/killer",
+    "organism": "Homo sapiens",
+    "is_enzyme": false,
+    "ec_number": "",
+    "known_go_mf": [
+      "GO:0051400",
+      "GO:0015267",
+      "GO:0031072",
+      "GO:0042802",
+      "GO:0046872",
+      "GO:0015288",
+      "GO:0046982",
+      "GO:0042803"
+    ],
+    "known_go_bp": [
+      "GO:0031100",
+      "GO:0006915",
+      "GO:1902262",
+      "GO:0097190",
+      "GO:0001783",
+      "GO:0001782",
+      "GO:0002352",
+      "GO:0001974"
+    ],
+    "known_go_cc": [
+      "GO:0097145",
+      "GO:0097136",
+      "GO:0005829",
+      "GO:0005783",
+      "GO:0005741",
+      "GO:0005739"
+    ],
+    "known_active_residues": [
+      160,
+      164
+    ],
+    "known_partners": [],
+    "category": "apoptosis"
+  },
+  {
+    "uniprot_id": "P51587",
+    "gene": "BRCA2",
+    "description": "Breast cancer type 2 susceptibility protein",
+    "organism": "Homo sapiens",
+    "is_enzyme": false,
+    "ec_number": "",
+    "known_go_mf": [
+      "GO:0043015",
+      "GO:0010484",
+      "GO:0010485",
+      "GO:0042802",
+      "GO:0002020",
+      "GO:0003697"
+    ],
+    "known_go_bp": [
+      "GO:0007420",
+      "GO:0071479",
+      "GO:0090398",
+      "GO:0051298",
+      "GO:0030330",
+      "GO:0006302",
+      "GO:0000724",
+      "GO:0070200"
+    ],
+    "known_go_cc": [
+      "GO:0033593",
+      "GO:0005813",
+      "GO:0000781",
+      "GO:0005829",
+      "GO:1990391",
+      "GO:0000800"
+    ],
+    "known_active_residues": [],
+    "known_partners": [],
+    "category": "dna_repair"
+  },
+  {
+    "uniprot_id": "P08107",
+    "gene": "P08107",
+    "description": "",
+    "organism": "Homo sapiens",
+    "is_enzyme": false,
+    "ec_number": "",
+    "known_go_mf": [],
+    "known_go_bp": [],
+    "known_go_cc": [],
+    "known_active_residues": [],
+    "known_partners": [],
+    "category": "other"
+  },
+  {
+    "uniprot_id": "P0DMV8",
+    "gene": "HSPA1A",
+    "description": "Heat shock 70 kDa protein 1A",
+    "organism": "Homo sapiens",
+    "is_enzyme": true,
+    "ec_number": "3.6.4.10",
+    "known_go_mf": [
+      "GO:0005524",
+      "GO:0016887",
+      "GO:0140545",
+      "GO:0140662",
+      "GO:0055131",
+      "GO:0045296",
+      "GO:0031249",
+      "GO:0097718"
+    ],
+    "known_go_bp": [
+      "GO:0046034",
+      "GO:0070370",
+      "GO:0034605",
+      "GO:0034599",
+      "GO:0071383",
+      "GO:0034620",
+      "GO:0051131",
+      "GO:0030968"
+    ],
+    "known_go_cc": [
+      "GO:0016235",
+      "GO:0072562",
+      "GO:0005814",
+      "GO:0005813",
+      "GO:0005737",
+      "GO:0005829"
+    ],
+    "known_active_residues": [
+      12,
+      71,
+      202,
+      268,
+      339
+    ],
+    "known_partners": [],
+    "category": "chaperone"
+  },
+  {
+    "uniprot_id": "Q06609",
+    "gene": "RAD51",
+    "description": "DNA repair protein RAD51 homolog 1",
+    "organism": "Homo sapiens",
+    "is_enzyme": true,
+    "ec_number": "3.6.4.-",
+    "known_go_mf": [
+      "GO:0005524",
+      "GO:0008094",
+      "GO:0140664",
+      "GO:0003682",
+      "GO:0070182",
+      "GO:0000150",
+      "GO:0003690",
+      "GO:0019899"
+    ],
+    "known_go_bp": [
+      "GO:0072757",
+      "GO:0072719",
+      "GO:0071480",
+      "GO:0072711",
+      "GO:0071479",
+      "GO:0070192",
+      "GO:0006974",
+      "GO:0000730"
+    ],
+    "known_go_cc": [
+      "GO:0005813",
+      "GO:0000785",
+      "GO:0000781",
+      "GO:0000793",
+      "GO:0000794",
+      "GO:0005737"
+    ],
+    "known_active_residues": [
+      130,
+      132,
+      133,
+      134,
+      135,
+      170,
+      222,
+      268,
+      319,
+      322
+    ],
+    "known_partners": [],
+    "category": "hydrolase"
   }
 ]

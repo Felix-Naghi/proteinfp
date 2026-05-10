@@ -38,6 +38,8 @@ from utils.config import cfg, get_logger
 
 log = get_logger(__name__)
 
+
+
 # ── Validation set ─────────────────────────────────────────────────────────────
 # Ground truth from Swiss-Prot experimental annotations.
 # Each entry has: UniProt ID, gene, known function, known GO terms,

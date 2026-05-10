@@ -199,8 +199,8 @@ class ECResult:
 _ML_ENSEMBLE_CACHE: dict = {}
 _ML_CALIBRATOR_CACHE: dict = {}
 
-_ML_MODEL_DIR   = Path("models/ec_ensemble_v5")
-_ML_CACHE_DIR   = Path("data/training_cache_v5")
+_ML_MODEL_DIR   = Path("models/ec_classifier_v2")
+_ML_CACHE_DIR   = Path("data/training_cache_v2")
 _ML_ESM2_CACHE: dict | None = None   # lazy-loaded
 
 
@@ -215,8 +215,15 @@ def _load_enzyme_classifier():
         return _ML_ENSEMBLE_CACHE[key], True
 
     try:
-        from pipeline.ml_ec_classifier import ECClassifierEnsemble
-        clf = ECClassifierEnsemble.load(_ML_MODEL_DIR)
+        # Try new EnzymeClassifierV2 first, fall back to ECClassifierEnsemble
+        try:
+            import sys as _sys
+            _sys.path.insert(0, str(Path(__file__).parent.parent))
+            from ec_classifier_v2 import EnzymeClassifierV2 as _V2
+            clf = _V2.load(_ML_MODEL_DIR)
+        except Exception:
+            from pipeline.ml_ec_classifier import ECClassifierEnsemble
+            clf = ECClassifierEnsemble.load(_ML_MODEL_DIR)
         _ML_ENSEMBLE_CACHE[key] = clf
 
         # Load calibrator
@@ -289,7 +296,7 @@ def _get_ml_enzyme_prob(
         return -1.0, "", -1.0, "unavailable"
 
     # ── Check if this is the new ensemble or old binary clf ──────────────────
-    is_ensemble = hasattr(clf, "_predict_proba_raw")
+    is_ensemble = hasattr(clf, "_predict_proba_raw") or hasattr(clf, "predict_proba")
 
     if not is_ensemble:
         # Old binary classifier path (fallback)
@@ -329,12 +336,29 @@ def _get_ml_enzyme_prob(
             log.debug(f"  {uniprot_id}: no ESM-2 embedding, using zeros")
             emb = [0.0] * 1280
 
+        # Check if this is EnzymeClassifierV2 (1318-dim) or old ensemble (932-dim)
+        if not hasattr(clf, "_predict_proba_raw"):
+            # EnzymeClassifierV2 path — build 1318-dim features directly
+            try:
+                import sys as _sys2
+                _sys2.path.insert(0, str(Path(__file__).parent.parent))
+                from ec_classifier_v2 import build_full_features as _bff
+                _feat_v2 = _bff(uniprot_id, sequence).reshape(1, -1)
+                prob_enzyme = float(clf.predict_proba(_feat_v2)[0])
+                ec_class_v2 = "enzyme" if prob_enzyme >= 0.5 else "non-enzyme"
+                verdict_v2  = "confident" if abs(prob_enzyme - 0.5) > 0.3 else "uncertain"
+                return prob_enzyme, ec_class_v2, prob_enzyme, verdict_v2
+            except Exception as _ev2:
+                log.warning(f"  V2 prediction failed: {_ev2}")
+                return -1.0, "", -1.0, "unavailable"
+
+        # Old ECClassifierEnsemble path — 932-dim features
         feat = build_feature_vector(
             sequence    = sequence,
             esm2_result = {"protein_embedding": emb, "contact_map": []},
         )
         X_pp  = clf.preprocessor.transform(feat.reshape(1, -1))
-        proba = clf._predict_proba_raw(X_pp)[0]   # shape (8,)
+        proba = clf._predict_proba_raw(X_pp)   # shape (8,)
 
         CLASS_NAMES = ["non-enzyme", "1", "2", "3", "4", "5", "6", "7"]
         enzyme_prob  = float(proba[1:].sum())
@@ -487,9 +511,31 @@ def predict_ec_number(
     # ── Final enzyme decision ───────────────────────────────────────────────────────────────────────
     # GO non_enzyme_score >= 0.5 ALWAYS overrides ML regardless of confidence.
     # UniProt curated experimental GO annotations beat any ML prediction.
-    if non_enzyme_score >= 0.5:
+    # But first: check if homology strongly suggests enzyme family
+    _hom_path = Path(cfg.paths["intermediate"]) / f"{uniprot_id}_homology.json"
+    _hom_enzyme_signal = False
+    if _hom_path.exists():
+        try:
+            _hom = json.loads(_hom_path.read_text(encoding="utf-8"))
+            _enzyme_keywords = ["kinase", "protease", "peptidase", "hydrolase",
+                                "transferase", "oxidoreductase", "ligase",
+                                "isomerase", "lyase", "synthase", "reductase",
+                                "phosphatase", "dehydrogenase", "oxidase",
+                                "atpase", "gtpase", "polymerase", "nuclease"]
+            _top_fn = str(_hom.get("top_function", "")).lower()
+            _domains = [str(d.get("name","")).lower()
+                       for d in _hom.get("interpro_domains", [])]
+            _all_text = _top_fn + " ".join(_domains)
+            if any(kw in _all_text for kw in _enzyme_keywords):
+                _hom_enzyme_signal = True
+        except Exception:
+            pass
+
+    if non_enzyme_score >= 0.5 and not _hom_enzyme_signal:
         is_enzyme = False
         log.info(f"  Decision: non-enzyme (GO override, non_enz={non_enzyme_score:.2f})")
+    elif non_enzyme_score >= 0.5 and _hom_enzyme_signal:
+        log.info(f"  Homology enzyme signal overrides non_enzyme_score — keeping enzyme")
 
     elif ml_verdict == "confident":
         is_enzyme = (ml_ec_class != "non-enzyme") and (ml_enzyme_prob >= 0.5)
