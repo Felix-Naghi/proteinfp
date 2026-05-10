@@ -32,3 +32,11 @@ validation/new_entries.json.bak*
 *.py.bak*
 logs/
 *.log
+
+# ── All model binaries across all versions ────────────────────────────────────
+models/**/*.pkl
+models/**/*.npy
+models/**/*.bin
+models/**/*.h5
+models/**/*.pt
+models/**/*.onnx
