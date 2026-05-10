@@ -40,3 +40,20 @@ models/**/*.bin
 models/**/*.h5
 models/**/*.pt
 models/**/*.onnx
+
+# One-off scripts
+add_100_to_ground_truth.py
+batch_100.py
+build_validation_entries.py
+check_go_coverage.py
+check_leakage.py
+ensure_esm2_and_retrain.py
+find_optimal_threshold.py
+rerun_ec_and_score.py
+ec_classifier_v2.py
+ec_classifier_v2.py.bak2
+test_evolutionary.py
+
+# Backup files
+*.bak2
+*.bak_*
