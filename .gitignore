@@ -1,72 +1,34 @@
-# ── Python ────────────────────────────────────────────────────────────────────
-__pycache__/
+﻿__pycache__/
 *.py[cod]
 *.pyo
 *.egg-info/
 dist/
 build/
-.eggs/
-
-# ── Environments ──────────────────────────────────────────────────────────────
 .venv/
 venv/
-env/
-
-# ── Testing ───────────────────────────────────────────────────────────────────
 .pytest_cache/
-.coverage
-htmlcov/
-
-# ── Jupyter ───────────────────────────────────────────────────────────────────
-.ipynb_checkpoints/
-
-# ── Editor / OS ───────────────────────────────────────────────────────────────
 .idea/
-.vscode/settings.json
-*.swp
 .DS_Store
-Thumbs.db
-desktop.ini
-
-# ── Vina executable (platform-specific — users install their own) ─────────────
+*.swp
 pipeline/vina.exe
 pipeline/vina
-pipeline/vina_*
-
-# ── Generated data (recreated by running the pipeline) ────────────────────────
 data/structures/*.pdb
-data/structures/*.pdbqt
 data/intermediate/
 data/reports/
 data/sim/
-data/training_cache_v2/
-data/training_cache_v5/
-
-# ── GRN input datasets (too large — users supply their own scRNA-seq data) ────
-data/grn/input/*.csv
-data/grn/input/*.h5ad
-data/grn/input/GSM*/
+data/training_cache*/
+data/swissprot_curated_v*.csv
 data/grn/intermediate/
 data/grn/reports/
-
-# ── ML model binaries (too large for git) ─────────────────────────────────────
-models/ec_ensemble/*.pkl
-models/ec_ensemble/*.npy
-models/ec_ensemble/*.bin
-models/embedding_cache/
-# Keep model metadata so users know what to download
-!models/ec_ensemble/metadata.json
-!models/ec_ensemble/model_card.json
-
-# ── Temporary docking files ───────────────────────────────────────────────────
-_tmp_*/
-test_out.pdbqt
-data/intermediate/*_dock_cache.json
-
-# ── Logs ─────────────────────────────────────────────────────────────────────
+models/
+!models/ec_classifier_v2/metadata.json
+!models/ec_ensemble_v6/metadata.json
+validation/go-basic.obo
+validation/go_ancestors.pkl
+validation/new_entries.json.bak*
+*.bak
+*.bak2
+*.bak_*
+*.py.bak*
 logs/
 *.log
-data/training_swissprot.csv
-data/swissprot_enzymes.tsv
-data/training_cache/
-models/embedding_cache/
