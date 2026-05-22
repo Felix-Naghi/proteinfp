@@ -121,260 +121,65 @@ def _run_module(
         return ret
     except Exception as e:
         print(f"  [FAIL] {name}: {e}")
+        traceback.print_exc()
         if result:
             result.modules_fail.append(name)
         return None
 
 
-# ── Main orchestrator ──────────────────────────────────────────────────────────
+# ══════════════════════════════════════════════════════════════════════════════
+# Per-module wrapper functions — each computes AND saves its JSON
+# ══════════════════════════════════════════════════════════════════════════════
 
-def run_pipeline(
-    uniprot_id:     str,
-    vina_path:      Optional[str]  = None,
-    run_md:         bool           = False,
-    run_denovo:     bool           = False,
-    run_grn:        bool           = False,
-    run_antibody:   bool           = False,
-    epitope_mode:   str            = "auto",
-    ab_generations: int            = 50,
-    force:          bool           = False,
-    verbose:        bool           = True,
-) -> RunResult:
-    """
-    Run the full ProteinFP pipeline for a single protein.
-
-    Skips modules whose dependencies are not installed rather than crashing.
-    All skips are logged with the install command needed to enable them.
-
-    Args:
-        uniprot_id:  UniProt accession (e.g. "P04637")
-        vina_path:   Path to AutoDock Vina executable (enables de novo)
-        run_md:      Run molecular dynamics if OpenMM is available
-        run_denovo:  Run de novo design if RDKit + Vina are available
-        run_grn:     Run GRN modules if scRNA-seq data is configured
-        force:       Re-run even if outputs already exist
-        verbose:     Print progress to stdout
-
-    Returns:
-        RunResult with lists of run/skipped/failed modules and report path.
-    """
-    from proteinfp.deps import (
-        has_freesasa, has_ml_stack, has_esm2,
-        has_openmm, has_rdkit, has_vina, has_grn_stack,
-        status_report,
-    )
-
-    t_start = time.time()
-    result  = RunResult(uniprot_id=uniprot_id.strip().upper())
-
-    if verbose:
-        print(f"\n{'='*60}")
-        print(f"  ProteinFP  —  {result.uniprot_id}")
-        print(f"{'='*60}")
-
-    uid       = result.uniprot_id
-    sys.path.insert(0, str(ROOT))
-
-    # Resolve config paths
-    try:
-        from utils.config import cfg
-        inter_dir  = Path(cfg.paths["intermediate"])
-        report_dir = Path(cfg.paths["reports"])
-        struct_dir = Path(cfg.paths["structures"])
-    except Exception:
-        # Fallback if running outside the full project
-        inter_dir  = ROOT / "data" / "intermediate"
-        report_dir = ROOT / "data" / "reports"
-        struct_dir = ROOT / "data" / "structures"
-        for d in (inter_dir, report_dir, struct_dir):
-            d.mkdir(parents=True, exist_ok=True)
-
-    # ── Check if report already exists ────────────────────────────────────────
-    report_path = report_dir / f"{uid}_report.json"
-    if report_path.exists() and not force:
-        if verbose:
-            print(f"  Report already exists: {report_path}")
-            print(f"  Use --force to re-run.")
-        result.report_path = str(report_path)
-        result.success     = True
-        result.elapsed_sec = time.time() - t_start
-        return result
-
-    # ══════════════════════════════════════════════════════════════════════════
-    # TIER 1 — Core modules (no optional deps)
-    # ══════════════════════════════════════════════════════════════════════════
-
-    # Module 01: fetch structure
-    from pipeline.fetch_structure import fetch_structure
-    struct_result = _run_module(
-        "01_fetch_structure",
-        fetch_structure,
-        args=(uid,),
-        kwargs={"force": force},
-        result=result,
-    )
-    if struct_result is None:
-        print(f"\n  Cannot continue — Module 01 failed for {uid}.")
-        result.elapsed_sec = time.time() - t_start
-        return result
-
-    pdb_path = struct_dir / f"{uid}.pdb"
-
-    # Module 02: physicochemical (needs freesasa)
-    if has_freesasa():
-        from pipeline.physicochemical import compute_physicochemical
-        _run_module(
-            "02_physicochemical",
-            compute_physicochemical,
-            args=(struct_result.parsed,),   # needs ParsedStructure, not StructureResult
-            result=result,
-        )
-    else:
-        _run_module("02_physicochemical", None,
-                    skip_reason="freesasa not installed "
-                                "(pip install proteinfp[structure])",
-                    result=result)
-
-    # Module 03: active sites
-    _run_module(
-        "03_active_sites",
-        _run_active_sites, args=(uid,), result=result,
-    )
-
-    # Module 04: binding pockets
-    _run_module(
-        "04_binding_pockets",
-        _run_binding_pockets, args=(uid,), result=result,
-    )
-
-    # Module 05: allosteric sites
-    _run_module(
-        "05_allosteric",
-        _run_allosteric, args=(uid,), result=result,
-    )
-
-    # Module 06: chemical environment
-    _run_module(
-        "06_chemical_env",
-        _run_chemical_env, args=(uid,), result=result,
-    )
-
-    # Module 07: homology
-    _run_module(
-        "07_homology",
-        _run_homology, args=(uid,), result=result,
-    )
-
-    # ══════════════════════════════════════════════════════════════════════════
-    # TIER 2 — ML modules (needs torch + xgboost + lightgbm)
-    # ══════════════════════════════════════════════════════════════════════════
-
-    if has_esm2():
-        from pipeline.esm2_embeddings import compute_esm2_embeddings
-        from utils.pdb_parser import parse_pdb
-        try:
-            parsed   = parse_pdb(pdb_path, uid)
-            sequence = parsed.sequence
-            _run_module(
-                "08_esm2",
-                compute_esm2_embeddings,
-                args=(uid, sequence),
-                result=result,
-            )
-        except Exception as e:
-            _run_module("08_esm2", None,
-                        skip_reason=f"ESM-2 failed: {e}", result=result)
-    else:
-        _run_module("08_esm2", None,
-                    skip_reason="fair-esm not installed "
-                                "(pip install proteinfp[ml])",
-                    result=result)
-
-    # Module 10: EC classification
-    _run_module(
-        "10_ec",
-        _run_ec_prediction, args=(uid,), result=result,
-    )
-
-    # ══════════════════════════════════════════════════════════════════════════
-    # TIER 3 — External database modules (internet required, always attempted)
-    # ══════════════════════════════════════════════════════════════════════════
-
-    _run_module("11_foldseek",   _run_foldseek,   args=(uid,), result=result)
-    _run_module("12_ppi",        _run_ppi,        args=(uid,), result=result)
-
-    # ══════════════════════════════════════════════════════════════════════════
-    # MODULE 17: PTM analysis (always available)
-    # ══════════════════════════════════════════════════════════════════════════
-
-    _run_module("17_ptm", _run_ptm, args=(uid,), result=result)
-
-    # ══════════════════════════════════════════════════════════════════════════
-    # TIER 4 — Heavy optional modules
-    # ══════════════════════════════════════════════════════════════════════════
-
-    # Module 14: molecular dynamics (needs OpenMM)
-    if run_md:
-        if has_openmm():
-            from pipeline.molecular_dynamics import run_md as _md
-            _run_module("14_md", _md, args=(uid,), result=result)
-        else:
-            _run_module("14_md", None,
-                        skip_reason="OpenMM not installed "
-                                    "(pip install proteinfp[sim])",
-                        result=result)
-
-    # Module 15: de novo design (needs RDKit + Vina)
-    if run_denovo:
-        vina_ok = has_vina(vina_path)
-        rdkit_ok = has_rdkit()
-        if rdkit_ok and vina_ok:
-            _run_module(
-                "15_denovo",
-                _run_denovo, args=(uid, vina_path), result=result,
-            )
-        elif not rdkit_ok:
-            _run_module("15_denovo", None,
-                        skip_reason="RDKit not installed "
-                                    "(pip install proteinfp[chem])",
-                        result=result)
-        else:
-            vina_hint = (f"Vina not found at {vina_path}"
-                         if vina_path else
-                         "Vina not on PATH — use --vina /path/to/vina")
-            _run_module("15_denovo", None,
-                        skip_reason=vina_hint, result=result)
-
-    # ══════════════════════════════════════════════════════════════════════════
-    # MODULE 13 — Consensus report (always last)
-    # ══════════════════════════════════════════════════════════════════════════
-
-    from pipeline.consensus import build_consensus_report
-    report = _run_module(
-        "13_consensus",
-        build_consensus_report,
-        args=(uid,),
-        result=result,
-    )
-
-    if report is not None:
-        report.to_json(report_path)
-        result.report_path = str(report_path)
-        result.success     = True
-
-    result.elapsed_sec = time.time() - t_start
-
-    if verbose:
-        print(result.summary())
-
+def _run_physicochemical(uid: str):
+    """Module 02 — compute SASA/DSSP and save intermediate JSON."""
+    from pipeline.physicochemical import compute_physicochemical
+    from utils.config import cfg
+    from utils.pdb_parser import parse_pdb
+    inter  = Path(cfg.paths["intermediate"])
+    struct = Path(cfg.paths["structures"]) / f"{uid}.pdb"
+    parsed = parse_pdb(struct, uid)
+    result = compute_physicochemical(parsed)
+    result.to_json(inter / f"{uid}_physicochemical.json")
     return result
 
 
-# ══════════════════════════════════════════════════════════════════════════════
-# MODULE WRAPPERS
-# Thin wrappers that import each module function lazily, so missing optional
-# deps only fail the individual module, not the whole pipeline.
-# ══════════════════════════════════════════════════════════════════════════════
+def _run_esm2(uid: str):
+    """Module 08 — compute ESM-2 embeddings and save intermediate JSON."""
+    from pipeline.esm2_embeddings import compute_esm2_embeddings
+    from utils.config import cfg
+    from utils.pdb_parser import parse_pdb
+    inter  = Path(cfg.paths["intermediate"])
+    struct = Path(cfg.paths["structures"]) / f"{uid}.pdb"
+    parsed = parse_pdb(struct, uid)
+    result = compute_esm2_embeddings(uid, parsed.sequence)
+    result.to_json(inter / f"{uid}_esm2.json")
+    return result
+
+
+def _run_deepfri_go(uid: str):
+    """Module 09 — predict GO terms from ESM-2 embeddings + homology and save JSON."""
+    from pipeline.deepfri_go import predict_go_terms
+    from utils.config import cfg
+    from utils.pdb_parser import parse_pdb
+    inter  = Path(cfg.paths["intermediate"])
+    struct = Path(cfg.paths["structures"]) / f"{uid}.pdb"
+    parsed = parse_pdb(struct, uid)
+
+    def _load(fname):
+        p = inter / fname
+        return json.loads(p.read_text(encoding="utf-8")) if p.exists() else None
+
+    result = predict_go_terms(
+        uniprot_id      = uid,
+        sequence        = parsed.sequence,
+        esm2_result     = _load(f"{uid}_esm2.json"),
+        homology_result = _load(f"{uid}_homology.json"),
+        active_result   = _load(f"{uid}_active_sites.json"),
+    )
+    result.to_json(inter / f"{uid}_go_predictions.json")
+    return result
+
 
 def _run_active_sites(uid: str):
     from pipeline.active_sites import predict_active_sites
@@ -444,7 +249,7 @@ def _run_chemical_env(uid: str):
 
 
 def _run_homology(uid: str):
-    from pipeline.homology import run_homology          # correct function name
+    from pipeline.homology import run_homology
     from utils.config import cfg
     from utils.pdb_parser import parse_pdb
     inter  = Path(cfg.paths["intermediate"])
@@ -481,7 +286,7 @@ def _run_ec_prediction(uid: str):
 
 
 def _run_foldseek(uid: str):
-    from pipeline.foldseek import run_foldseek          # correct function name
+    from pipeline.foldseek import run_foldseek
     from utils.config import cfg
     inter  = Path(cfg.paths["intermediate"])
     pdb    = Path(cfg.paths["structures"]) / f"{uid}.pdb"
@@ -498,7 +303,6 @@ def _run_ppi(uid: str):
     struct = Path(cfg.paths["structures"]) / f"{uid}.pdb"
     parsed = parse_pdb(struct, uid)
 
-    # Load SASA map from Module 02 if available
     sasa_map: dict = {}
     phys_path = inter / f"{uid}_physicochemical.json"
     if phys_path.exists():
@@ -554,4 +358,284 @@ def _run_denovo(uid: str, vina_path: str):
         consensus_data  = load_consensus_context(uid, inter),
         md_data         = load_md_context(uid, inter),
     )
+    return result
+
+
+# ── Main orchestrator ──────────────────────────────────────────────────────────
+
+def run_pipeline(
+    uniprot_id:     str,
+    vina_path:      Optional[str]  = None,
+    run_md:         bool           = False,
+    run_denovo:     bool           = False,
+    run_grn:        bool           = False,
+    run_antibody:   bool           = False,
+    epitope_mode:   str            = "auto",
+    ab_generations: int            = 50,
+    force:          bool           = False,
+    verbose:        bool           = True,
+) -> RunResult:
+    """
+    Run the full ProteinFP pipeline for a single protein.
+
+    Skips modules whose dependencies are not installed rather than crashing.
+    All skips are logged with the install command needed to enable them.
+
+    Args:
+        uniprot_id:  UniProt accession (e.g. "P04637")
+        vina_path:   Path to AutoDock Vina executable (enables de novo)
+        run_md:      Run molecular dynamics if OpenMM is available
+        run_denovo:  Run de novo design if RDKit + Vina are available
+        run_grn:     Run GRN modules if scRNA-seq data is configured
+        force:       Re-run even if outputs already exist
+        verbose:     Print progress to stdout
+
+    Returns:
+        RunResult with lists of run/skipped/failed modules and report path.
+    """
+    from proteinfp.deps import (
+        has_freesasa, has_ml_stack, has_esm2,
+        has_openmm, has_rdkit, has_vina, has_grn_stack,
+        status_report,
+    )
+
+    t_start = time.time()
+    result  = RunResult(uniprot_id=uniprot_id.strip().upper())
+
+    if verbose:
+        print(f"\n{'='*60}")
+        print(f"  ProteinFP  —  {result.uniprot_id}")
+        print(f"{'='*60}")
+
+    uid       = result.uniprot_id
+    sys.path.insert(0, str(ROOT))
+
+    # Resolve config paths
+    try:
+        from utils.config import cfg
+        inter_dir  = Path(cfg.paths["intermediate"])
+        report_dir = Path(cfg.paths["reports"])
+        struct_dir = Path(cfg.paths["structures"])
+    except Exception:
+        inter_dir  = ROOT / "data" / "intermediate"
+        report_dir = ROOT / "data" / "reports"
+        struct_dir = ROOT / "data" / "structures"
+        for d in (inter_dir, report_dir, struct_dir):
+            d.mkdir(parents=True, exist_ok=True)
+
+    # ── Check if report already exists ────────────────────────────────────────
+    report_path = report_dir / f"{uid}_report.json"
+    if report_path.exists() and not force:
+        if verbose:
+            print(f"  Report already exists: {report_path}")
+            print(f"  Use --force to re-run.")
+        result.report_path = str(report_path)
+        result.success     = True
+        result.elapsed_sec = time.time() - t_start
+        return result
+
+    pdb_path = struct_dir / f"{uid}.pdb"
+
+    # ══════════════════════════════════════════════════════════════════════════
+    # TIER 1 — Core modules (no optional deps)
+    # ══════════════════════════════════════════════════════════════════════════
+
+    # Module 01: fetch structure
+    from pipeline.fetch_structure import fetch_structure
+    struct_result = _run_module(
+        "01_fetch_structure",
+        fetch_structure,
+        args=(uid,),
+        kwargs={"force": force},
+        result=result,
+    )
+    if struct_result is None:
+        print(f"\n  Cannot continue — Module 01 failed for {uid}.")
+        result.elapsed_sec = time.time() - t_start
+        return result
+
+    # Module 02: physicochemical (needs freesasa)
+    # FIX: use _run_physicochemical wrapper so the JSON is saved to disk
+    if has_freesasa():
+        _run_module(
+            "02_physicochemical",
+            _run_physicochemical, args=(uid,),
+            result=result,
+        )
+    else:
+        _run_module("02_physicochemical", None,
+                    skip_reason="freesasa not installed "
+                                "(pip install proteinfp[structure])",
+                    result=result)
+
+    # Module 03: active sites
+    _run_module(
+        "03_active_sites",
+        _run_active_sites, args=(uid,), result=result,
+    )
+
+    # Module 04: binding pockets
+    _run_module(
+        "04_binding_pockets",
+        _run_binding_pockets, args=(uid,), result=result,
+    )
+
+    # Module 05: allosteric sites
+    _run_module(
+        "05_allosteric",
+        _run_allosteric, args=(uid,), result=result,
+    )
+
+    # Module 06: chemical environment
+    _run_module(
+        "06_chemical_env",
+        _run_chemical_env, args=(uid,), result=result,
+    )
+
+    # Module 07: homology
+    _run_module(
+        "07_homology",
+        _run_homology, args=(uid,), result=result,
+    )
+
+    # ══════════════════════════════════════════════════════════════════════════
+    # TIER 2 — ML modules (needs torch + xgboost + lightgbm)
+    # ══════════════════════════════════════════════════════════════════════════
+
+    # Module 08: ESM-2 embeddings
+    # FIX: use _run_esm2 wrapper so the JSON is saved to disk
+    if has_esm2():
+        _run_module(
+            "08_esm2",
+            _run_esm2, args=(uid,),
+            result=result,
+        )
+    else:
+        _run_module("08_esm2", None,
+                    skip_reason="fair-esm not installed "
+                                "(pip install proteinfp[ml])",
+                    result=result)
+
+    # Module 09: DeepFRI GO term prediction (uses ESM-2 + homology + active sites)
+    # Runs always — falls back gracefully if ESM-2 JSON is missing
+    _run_module(
+        "09_deepfri_go",
+        _run_deepfri_go, args=(uid,), result=result,
+    )
+
+    # Module 10: EC classification
+    _run_module(
+        "10_ec",
+        _run_ec_prediction, args=(uid,), result=result,
+    )
+
+    # ══════════════════════════════════════════════════════════════════════════
+    # TIER 3 — External database modules (internet required, always attempted)
+    # ══════════════════════════════════════════════════════════════════════════
+
+    _run_module("11_foldseek",   _run_foldseek,   args=(uid,), result=result)
+    _run_module("12_ppi",        _run_ppi,        args=(uid,), result=result)
+
+    # ══════════════════════════════════════════════════════════════════════════
+    # MODULE 17: PTM analysis (always available)
+    # ══════════════════════════════════════════════════════════════════════════
+
+    _run_module("17_ptm", _run_ptm, args=(uid,), result=result)
+
+    # ══════════════════════════════════════════════════════════════════════════
+    # TIER 4 — Heavy optional modules
+    # ══════════════════════════════════════════════════════════════════════════
+
+    # Module 14: molecular dynamics (needs OpenMM)
+    if run_md:
+        if has_openmm():
+            from pipeline.molecular_dynamics import run_md as _md
+            _run_module("14_md", _md, args=(uid,), result=result)
+        else:
+            _run_module("14_md", None,
+                        skip_reason="OpenMM not installed "
+                                    "(pip install proteinfp[sim])",
+                        result=result)
+
+    # Module 15: de novo design (needs RDKit + Vina)
+    if run_denovo:
+        if has_rdkit() and (vina_path or has_vina()):
+            _run_module(
+                "15_denovo",
+                _run_denovo,
+                args=(uid, vina_path or "vina"),
+                result=result,
+            )
+        else:
+            missing = []
+            if not has_rdkit():
+                missing.append("RDKit (pip install proteinfp[chem])")
+            if not (vina_path or has_vina()):
+                missing.append("AutoDock Vina (https://vina.scripps.edu)")
+            _run_module("15_denovo", None,
+                        skip_reason=f"missing: {', '.join(missing)}",
+                        result=result)
+
+    # Module 16: antibody design (always available)
+    if run_antibody:
+        try:
+            from pipeline.antibody_design import run_antibody_design
+            from utils.config import cfg as _cfg
+
+            def _run_ab(uid_: str):
+                _inter = Path(_cfg.paths["intermediate"])
+
+                def _load(fname):
+                    p = _inter / fname
+                    return json.loads(p.read_text(encoding="utf-8")) if p.exists() else None
+
+                res = run_antibody_design(
+                    uniprot_id      = uid_,
+                    active_data     = _load(f"{uid_}_active_sites.json"),
+                    physico_data    = _load(f"{uid_}_physicochemical.json"),
+                    ppi_data        = _load(f"{uid_}_ppi.json"),
+                    allosteric_data = _load(f"{uid_}_allosteric.json"),
+                    epitope_mode    = epitope_mode,
+                    n_generations   = ab_generations,
+                )
+                res.to_json(_inter / f"{uid_}_antibody.json")
+                return res
+
+            _run_module("16_antibody", _run_ab, args=(uid,), result=result)
+        except ImportError as e:
+            _run_module("16_antibody", None,
+                        skip_reason=f"antibody_design not available: {e}",
+                        result=result)
+
+    # ══════════════════════════════════════════════════════════════════════════
+    # MODULE 13: Consensus (always last)
+    # ══════════════════════════════════════════════════════════════════════════
+
+    def _run_consensus(uid_: str):
+        from pipeline.consensus import build_consensus_report
+        from utils.config import cfg as _cfg
+        _report_dir = Path(_cfg.paths["reports"])
+
+        # build_consensus_report loads all intermediate JSONs itself
+        report = build_consensus_report(uid_)
+
+        out_json = _report_dir / f"{uid_}_report.json"
+        out_txt  = _report_dir / f"{uid_}_report.txt"
+        report.to_json(out_json)
+        out_txt.write_text(report.to_text_report(), encoding="utf-8")
+        return report
+
+    consensus_result = _run_module(
+        "13_consensus",
+        _run_consensus, args=(uid,), result=result,
+    )
+
+    # ── Finalise ───────────────────────────────────────────────────────────────
+    result.report_path = str(report_dir / f"{uid}_report.json")
+    result.success     = consensus_result is not None
+    result.elapsed_sec = time.time() - t_start
+
+    if verbose:
+        print(result.summary())
+
     return result

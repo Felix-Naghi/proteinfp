@@ -31,6 +31,19 @@ FIXES in this version:
   [BUG-8] Population could shrink below POP_SIZE when all_seen was exhausted,
            causing ThreadPoolExecutor to dock 0 molecules → infinite reseeding.
            FIX: emergency fill now uses docked_seen (smaller set) as dedup guard.
+
+CLOSED LOOP ADDITIONS (Stage 1 + 2 + 3):
+  [STAGE-1] FeedbackStore records every docking event to disk.
+  [STAGE-2] pocket_refit learns from accumulated events after each run.
+  [STAGE-3] Warm-start: surrogate + fqsar pre-loaded from 1929+ prior events
+            so Gen 1 begins with a fully trained model, not a blank slate.
+  [STAGE-3] Pocket bias: refined pocket model steers fragment pool toward
+            what actually binds (e.g. heavy_atoms → ring-rich fragments).
+  [STAGNATION FIX] Surrogate bypass: when stagnation >= STAGNATION_LIMIT,
+            surrogate ranking is disabled so fresh scaffolds aren't filtered
+            back out before they can be docked and evaluated.
+  [HARD RESET FIX] Surrogate disabled temporarily on hard reset so the fresh
+            scaffolds actually survive into the next generation's docking.
 """
 
 from __future__ import annotations
@@ -95,9 +108,6 @@ POP_SIZE             = 30
 ELITISM              = 6
 PARALLEL_WORKERS = min(4, (os.cpu_count() or 4) // 2)
 
-# Exhaustiveness: 8 is standard for virtual screening on a 30x30x30 box.
-# The 0.000 no-pose issue was the broken PDBQT, not low exhaustiveness.
-# Keep 8 for fast exploration; ramp to 16 for final consensus only.
 EXHAUST_START        = 8
 EXHAUST_END          = 16
 
@@ -105,10 +115,9 @@ SURROGATE_MIN_DATA   = 20
 SURROGATE_CANDIDATES = 80
 
 FQSAR_MIN_DATA       = 15
-FQSAR_GOOD_THRESH    = -6.0  # count more molecules as "good binders" for fragment QSAR
+FQSAR_GOOD_THRESH    = -6.0
 FQSAR_WINDOW         = 300
 
-# Fitness weight schedule (start -> end over generations)
 W_BINDING_START = 0.45;  W_BINDING_END = 0.75
 W_NOVELTY_START = 0.30;  W_NOVELTY_END = 0.05
 W_LE_START      = 0.25;  W_LE_END      = 0.20
@@ -118,8 +127,6 @@ NOVELTY_K            = 10
 NOVELTY_ARCHIVE_MAX  = 500
 NOVELTY_ADD_THRESH   = 0.10
 
-# STAGNATION_HARD raised from 6 to 10 — hard reset was firing every 7 gens,
-# destroying the best scaffold before evolution had time to improve on it.
 STAGNATION_LIMIT     = 4
 STAGNATION_HARD      = 10
 DIVERSITY_MIN        = 0.20
@@ -130,8 +137,6 @@ VALIDATION_INTERVAL  = 5
 TOP_FOR_FINAL        = 10
 CONSENSUS_RUNS       = 2
 
-# ADMET pre-filter thresholds — Lipinski Ro5 + a little headroom
-# Tighter MW cap prevents evolution from growing huge low-LE molecules.
 ADMET_MW_MAX         = 450.0
 ADMET_LOGP_MAX       = 4.5
 ADMET_HBD_MAX        = 5
@@ -141,53 +146,42 @@ BOX_PADDING          = 4.0
 MIN_BOX_SIZE         = 15.0
 MAX_BOX_SIZE         = 22.0
 
-# Vina outputs 0.000 when it can't find a pose (not a real score).
-# Filter these out so they don't pollute fitness and the population.
-MIN_REAL_SCORE       = -0.5  # Vina outputs 0.000 for no pose; anything > -0.5 is not a real score
+MIN_REAL_SCORE       = -0.5
 
 
 # ── Seed library ──────────────────────────────────────────────────────────────
 
-# Seeds are drug-like scaffolds with proven binding potential.
-# Include larger, more complex starting points so the evolution
-# doesn't waste generations growing tiny fragments into drug-sized molecules.
 TINY_SEEDS = [
-    # Small heterocycles (fragment-like)
     "c1ccccc1", "c1ccncc1", "C1CCCCC1", "C1CCNCC1",
     "c1ccoc1", "c1ccsc1", "c1cc[nH]n1", "c1cnc[nH]1",
     "C1CCOCC1", "N1CCNCC1", "c1cnccn1",
-    # Medium scaffolds (drug-like MW range 150-300)
-    "c1ccc2ccccc2c1",           # naphthalene
-    "c1ccnc2ccccc12",           # quinoline
-    "c1ccc2[nH]ccc2c1",         # indole
-    "c1cnc2ccccc2n1",           # benzimidazole
-    "c1ccc2ncncc2c1",           # purine-like
-    "O=C1CCc2ccccc21",          # tetralone
-    "c1ccc(Cc2ccccn2)cc1",      # benzyl-pyridine
-    "NC(=O)c1cccnc1",           # nicotinamide
-    "c1ccc(-c2ccccn2)cc1",      # biphenyl-pyridine
-    "O=C1CN=C(c2ccccc2)c2ccccc21",  # benzodiazepine core
-    "Cc1ccc2c(c1)CC(=O)N2",     # oxindole
-    "c1ccc2c(c1)CCCO2",         # chromane
-    "c1ccc2c(c1)[nH]c1ccccc12", # carbazole
-    "C1CN2CCc3ccccc3C2C1",      # tetrahydroisoquinoline
-    "O=C1Nc2ccccc2C1=O",        # isatin
+    "c1ccc2ccccc2c1",
+    "c1ccnc2ccccc12",
+    "c1ccc2[nH]ccc2c1",
+    "c1cnc2ccccc2n1",
+    "c1ccc2ncncc2c1",
+    "O=C1CCc2ccccc21",
+    "c1ccc(Cc2ccccn2)cc1",
+    "NC(=O)c1cccnc1",
+    "c1ccc(-c2ccccn2)cc1",
+    "O=C1CN=C(c2ccccc2)c2ccccc21",
+    "Cc1ccc2c(c1)CC(=O)N2",
+    "c1ccc2c(c1)CCCO2",
+    "c1ccc2c(c1)[nH]c1ccccc12",
+    "C1CN2CCc3ccccc3C2C1",
+    "O=C1Nc2ccccc2C1=O",
 ]
 
 GROW_FRAGMENTS = [
-    # Atoms/simple
     "C", "CC", "CCC", "N", "O", "S", "F", "Cl", "Br",
-    # Polar groups
     "C(=O)N", "C(=O)O", "S(=O)(=O)N", "C#N", "OC", "NC",
     "C(=O)", "NC(=O)", "C(F)(F)F", "OCC", "NCC",
     "C(=O)NC", "NCC(=O)", "OC(=O)", "SC",
-    # Rings
     "c1ccccc1", "c1ccncc1", "c1cnccn1", "c1cc[nH]n1",
     "c1ccoc1", "c1ccsc1", "C1CCCCC1", "C1CCNCC1",
     "C1CCOCC1", "N1CCNCC1", "N1CCCC1",
     "c1ccc2ccccc2c1", "c1ccnc2ccccc12",
     "c1ccc2[nH]ccc2c1", "c1cnc2[nH]ccc2n1",
-    # Linkers
     "CC(=O)", "CCO", "CCN", "c1cccc(C)c1",
 ]
 
@@ -302,7 +296,6 @@ def _admet_prefilter(mol: Chem.Mol, props: dict) -> bool:
     if props.get("logp", 99) > ADMET_LOGP_MAX: return False
     if props.get("hbd", 99)  > ADMET_HBD_MAX:  return False
     if props.get("hba", 99)  > ADMET_HBA_MAX:  return False
-    # Reject molecules with too many rings or rotatable bonds
     if mol is not None:
         try:
             if rdMolDescriptors.CalcNumRings(mol) > 6:        return False
@@ -726,10 +719,6 @@ def _load_dock_cache(path: str) -> None:
         try:
             with open(path) as f:
                 raw = json.load(f)
-            # CACHE-FIX: only keep entries that actually have a valid docking score.
-            # Old/broken runs wrote AdmetFail / Failed / no-score entries into the
-            # cache, which then caused every molecule to return status="Failed"
-            # instantly without ever calling Vina — resulting in 0 results per gen.
             _DOCK_CACHE = {
                 k: v for k, v in raw.items()
                 if v.get("status") == "OK" and v.get("score") is not None
@@ -738,7 +727,6 @@ def _load_dock_cache(path: str) -> None:
             log.info(f"  Loaded docking cache: {len(_DOCK_CACHE)} OK entries "
                      f"({n_purged} bad entries purged)")
             if _DOCK_CACHE:
-                # Overwrite the file immediately so purged entries are gone for good
                 _save_dock_cache(path)
         except:
             _DOCK_CACHE = {}
@@ -760,9 +748,6 @@ def _dock_molecule(smiles: str, gen_id: int, cand_id: int,
     res = {"smiles": smiles, "generation": gen_id, "candidate_id": cand_id,
            "score": None, "status": "Failed", "error": "", "props": {}}
 
-    # CACHE-FIX: only use the cache if the stored result is a real OK score.
-    # Non-OK entries are purged on load now, but this guard prevents any
-    # future race condition where a bad entry slips through.
     if smiles in _DOCK_CACHE and _DOCK_CACHE[smiles].get("status") == "OK":
         cached = _DOCK_CACHE[smiles].copy()
         cached.update({"generation": gen_id, "candidate_id": cand_id})
@@ -775,8 +760,6 @@ def _dock_molecule(smiles: str, gen_id: int, cand_id: int,
     out_path   = os.path.join(tmpdir, "out.pdbqt")
 
     try:
-        # Reject disconnected SMILES (fragments joined by ".") — Vina
-        # PDBQT writer produces ROOT/BRANCH records that confuse Vina.
         if "." in smiles:
             res["error"] = "Disconnected SMILES (contains '.')"; return res
 
@@ -791,21 +774,15 @@ def _dock_molecule(smiles: str, gen_id: int, cand_id: int,
             res["error"] = "Failed ADMET pre-filter"; res["status"] = "AdmetFail"
             return res
 
-        # Extra sanity checks to catch molecules that produce Vina artifacts
         try:
             n_rings = rdMolDescriptors.CalcNumRings(mol)
             n_rot   = rdMolDescriptors.CalcNumRotatableBonds(mol)
-            # Reject overly rigid (>6 rings) or overly flexible (>12 rotatable bonds)
             if n_rings > 6:
-                res["error"] = f"Too many rings ({n_rings}) — likely to produce artifacts"
-                return res
+                res["error"] = f"Too many rings ({n_rings})"; return res
             if n_rot > 12:
-                res["error"] = f"Too many rotatable bonds ({n_rot}) — too flexible"
-                return res
-            # Reject radical atoms (artifact of bad RDKit mutations)
+                res["error"] = f"Too many rotatable bonds ({n_rot})"; return res
             if any(a.GetNumRadicalElectrons() > 0 for a in mol.GetAtoms()):
-                res["error"] = "Radical atoms present — invalid molecule"
-                return res
+                res["error"] = "Radical atoms present"; return res
         except Exception:
             pass
 
@@ -822,9 +799,9 @@ def _dock_molecule(smiles: str, gen_id: int, cand_id: int,
         AllChem.MMFFOptimizeMolecule(mol_h)
         Chem.MolToPDBFile(mol_h, pdb_path)
 
-        # Convert SMILES directly to ligand PDBQT with correct AD4 atom types
         if not _smiles_to_ligand_pdbqt(smiles, Path(pdbqt_path)):
             res["error"] = "Ligand PDBQT conversion failed"; return res
+
         cx, cy, cz = center
         sx, sy, sz = box_size
         cmd = [vina_path,
@@ -845,30 +822,18 @@ def _dock_molecule(smiles: str, gen_id: int, cand_id: int,
         m = re.search(r"^\s*1\s+(-?\d+\.\d+)", out, re.MULTILINE)
         if m:
             score_raw = float(m.group(1))
-            # Clamp to physical range. Vina drug-like range: -2 to -13 kcal/mol.
-            # Scores below -15 are scoring artifacts (strained geometry, bad charges)
-            # and must not enter the history or corrupt the surrogate model.
             SCORE_MIN = -15.0
             SCORE_MAX = -0.5
             if score_raw < SCORE_MIN:
-                res["error"] = (f"Score {score_raw:.1f} outside physical range "
-                                f"[{SCORE_MIN}, {SCORE_MAX}] — artifact")
-                return res
+                res["error"] = f"Score {score_raw:.1f} outside physical range"; return res
             if score_raw > SCORE_MAX:
-                res["error"] = f"Score {score_raw:.2f} > {SCORE_MAX} — no real pose"
-                return res
+                res["error"] = f"Score {score_raw:.2f} > {SCORE_MAX} — no real pose"; return res
             score = score_raw
             ha    = max(1, props.get("ha", 1))
             le    = round(-score / ha, 4)
-            res.update({
-                "score":  score,
-                "le":     le,
-                "status": "OK",
-            })
-            _DOCK_CACHE[smiles] = {
-                "smiles": smiles, "score": score, "le": le,
-                "status": "OK", "props": props,
-            }
+            res.update({"score": score, "le": le, "status": "OK"})
+            _DOCK_CACHE[smiles] = {"smiles": smiles, "score": score, "le": le,
+                                    "status": "OK", "props": props}
             _save_dock_cache(cache_path)
         else:
             err_snippet = err[:200] if err else "no stderr"
@@ -886,12 +851,6 @@ def _dock_molecule(smiles: str, gen_id: int, cand_id: int,
 
 
 # ── Candidate generation ──────────────────────────────────────────────────────
-# BUG-1/BUG-2 FIX:
-#   - dedup_seen is a READ-ONLY snapshot passed in; we no longer mutate all_seen here.
-#   - The caller is responsible for adding successfully DOCKED molecules to docked_seen.
-#   - This function uses a local gen_seen so it doesn't generate the same molecule
-#     twice within one call, but it won't block molecules that were generated in a
-#     previous generation (they may have changed in the dock cache now).
 
 def _generate_and_screen(chem: ChemicalEngine,
                           parent_pool: List[str],
@@ -903,15 +862,8 @@ def _generate_and_screen(chem: ChemicalEngine,
                           n_candidates: int,
                           n_dock: int,
                           dedup_seen: set) -> List[str]:
-    """
-    Generate candidate molecules and pre-screen with the surrogate.
-
-    dedup_seen: set of SMILES that have already been docked this run.
-                Molecules in this set are skipped (no re-docking).
-                This set is NOT mutated here — the caller handles that.
-    """
     candidates = []
-    gen_seen   = set()   # local dedup within this call only
+    gen_seen   = set()
     attempts   = 0
 
     while len(candidates) < n_candidates and attempts < n_candidates * 15:
@@ -1002,21 +954,9 @@ def _normalize_score(score: float, lo: float = -12.0, hi: float = -1.5) -> float
 
 
 def _le_fitness(score: float, ha: int, qed: float) -> float:
-    """
-    Ligand efficiency fitness — rewards potent, drug-like molecules.
-
-    Uses a CAPPED LE target of 0.3-0.5 kcal/mol/HA so tiny fragments
-    (LE > 0.8) don't permanently dominate over larger drug-like molecules.
-    Also multiplies by a scaled absolute score component so molecules
-    binding at -9 kcal/mol beat molecules binding at -4 kcal/mol even
-    if both have similar LE.
-    """
     le = (-score) / max(1, ha)
-    # Cap LE benefit: sigmoid centered at 0.3, saturates ~0.5
-    # LE=0.3 → 0.50, LE=0.5 → 0.88, LE=1.0 → 0.98 (capped same as 0.5)
-    le_capped = min(le, 0.55)  # don't reward fragments over drug-sized molecules
+    le_capped = min(le, 0.55)
     le_score  = 1.0 / (1.0 + math.exp(-8 * (le_capped - 0.30)))
-    # Absolute score bonus: molecules binding < -7 get extra credit
     abs_bonus = min(0.3, max(0.0, (-score - 5.0) / 20.0))
     return float(max(0.0, min(1.0, le_score * qed + abs_bonus)))
 
@@ -1024,110 +964,61 @@ def _le_fitness(score: float, ha: int, qed: float) -> float:
 # ── PDB → PDBQT conversion ────────────────────────────────────────────────────
 
 def _fast_pdb_to_pdbqt(pdb_path: Path, pdbqt_path: Path) -> bool:
+    """Convert receptor PDB to Vina-compatible receptor PDBQT (no ROOT/BRANCH tags)."""
+    AD4_TYPES = {
+        "C":  "C",  "N":  "NA", "O":  "OA", "S":  "SA", "H":  "HD",
+        "P":  "P",  "F":  "F",  "CL": "Cl", "BR": "Br", "I":  "I",
+        "FE": "Fe", "ZN": "Zn", "MG": "Mg", "CA": "Ca", "MN": "Mn",
+        "CU": "Cu", "K":  "K",  "NA": "Na",
+    }
     try:
-        from rdkit.Chem import MolFromPDBFile, AllChem
-        mol = MolFromPDBFile(str(pdb_path), removeHs=False, sanitize=False)
-        if mol is not None:
-            try:
-                AllChem.ComputeGasteigerCharges(mol)
-            except:
-                pass
-        _write_pdbqt_from_pdb(pdb_path, pdbqt_path, mol)
-        return pdbqt_path.exists()
+        lines_out = []
+        with open(pdb_path, encoding="utf-8", errors="ignore") as f:
+            for line in f:
+                rec = line[:6].strip()
+                if rec not in ("ATOM", "HETATM"):
+                    if rec in ("TER", "END"):
+                        lines_out.append(rec)
+                    continue
+                element = line[76:78].strip().upper() if len(line) > 76 else ""
+                if not element:
+                    atom_name = line[12:16].strip()
+                    element   = "".join(c for c in atom_name if c.isalpha())[:2].upper()
+                ad4_type = AD4_TYPES.get(element, element[:1] if element else "C")
+                try:
+                    occ = float(line[54:60]) if len(line) >= 60 else 1.00
+                except ValueError:
+                    occ = 1.00
+                try:
+                    bfac = float(line[60:66]) if len(line) >= 66 else 0.00
+                except ValueError:
+                    bfac = 0.00
+                head = line[:54].ljust(54)[:54]
+                pdbqt_line = f"{head}{occ:6.2f}{bfac:6.2f}    {'0.000':>6} {ad4_type:<2s}"
+                lines_out.append(pdbqt_line.rstrip())
+
+        if not lines_out:
+            log.error(f"  No ATOM/HETATM records found in {pdb_path}")
+            return False
+        pdbqt_path.write_text("\n".join(lines_out) + "\n", encoding="utf-8")
+        log.info(f"  Wrote receptor PDBQT: {len(lines_out)} atoms → {pdbqt_path.name}")
+        return True
     except Exception as e:
-        log.warning(f"  Fast conversion failed: {e}")
+        log.error(f"  Receptor PDBQT conversion failed: {e}")
         return False
 
 
-def _write_pdbqt_from_pdb(pdb_path: Path, pdbqt_path: Path, mol=None) -> None:
-    """
-    Write an AutoDock4 PDBQT file from a PDB file.
-
-    AutoDock4 PDBQT column spec (78-char lines):
-      Cols  1-30: ATOM/HETATM record + serial + atom name + residue + chain + seq
-      Cols 31-54: X, Y, Z coordinates (each 8.3f)
-      Cols 55-60: Occupancy (6.2f)
-      Cols 61-66: Temperature factor (6.2f)
-      Cols 67-70: 4 spaces
-      Cols 71-76: Partial charge (6.3f, right-justified)
-      Cols 77-78: AD4 atom type (2 chars, left-justified)
-
-    Earlier versions of this function placed the charge directly after col 54,
-    omitting the occupancy and temp-factor columns.  Vina rejects those files
-    with "PDBQT parsing error: Charge ... is not valid".
-    """
-    AD4_TYPES = {
-        "C": "C", "N": "N", "O": "OA", "S": "SA", "H": "HD",
-        "P": "P", "F": "F", "CL": "Cl", "BR": "Br", "I": "I",
-        "FE": "Fe", "ZN": "Zn", "MG": "Mg", "CA": "Ca", "MN": "Mn",
-    }
-    charge_map: dict = {}
-    if mol is not None:
-        try:
-            for atom in mol.GetAtoms():
-                gc = atom.GetDoubleProp("_GasteigerCharge")
-                if gc == gc:  # NaN check
-                    charge_map[atom.GetIdx()] = gc
-        except:
-            pass
-
-    lines_out = []
-    atom_idx  = 0
-    with open(pdb_path) as f:
-        for line in f:
-            rec = line[:6].strip()
-            if rec not in ("ATOM", "HETATM"):
-                if rec in ("ROOT", "ENDROOT", "BRANCH", "ENDBRANCH",
-                           "TORSDOF", "END", "TER"):
-                    lines_out.append(line.rstrip())
-                continue
-            element = line[76:78].strip().upper() if len(line) > 76 else ""
-            if not element:
-                atom_name = line[12:16].strip()
-                element   = "".join(c for c in atom_name if c.isalpha())[:2].upper()
-            ad4_type = AD4_TYPES.get(element, element[:1] if element else "C")
-            charge   = charge_map.get(atom_idx, 0.0)
-            atom_idx += 1
-
-            # Parse occupancy and B-factor from PDB if present (cols 55-60, 61-66)
-            try:
-                occ = float(line[54:60]) if len(line) >= 60 else 1.00
-            except ValueError:
-                occ = 1.00
-            try:
-                temp = float(line[60:66]) if len(line) >= 66 else 0.00
-            except ValueError:
-                temp = 0.00
-
-            # Pad cols 1-54 to exactly 54 chars
-            head = line[:54].ljust(54)[:54]
-            # AutoDock4 PDBQT format: head + occ(6.2f) + temp(6.2f) + 4 spaces + charge(6.3f) + ad4(2s)
-            pdbqt_line = f"{head}{occ:6.2f}{temp:6.2f}    {charge:6.3f} {ad4_type:<2s}"
-            lines_out.append(pdbqt_line.rstrip())
-
-    lines_out.append("END")
-    pdbqt_path.write_text("\n".join(lines_out) + "\n")
-
-
-# ── Main evolution loop ───────────────────────────────────────────────────────
-
-
 def _smiles_to_ligand_pdbqt(smiles: str, pdbqt_path: Path) -> bool:
-    """
-    Convert SMILES to Vina-compatible ligand PDBQT using RDKit.
-    Produces correct AutoDock4 atom types and column formatting.
-    """
+    """Convert SMILES to Vina-compatible ligand PDBQT using RDKit."""
     try:
         from rdkit import Chem
-        from rdkit.Chem import AllChem
-        from rdkit.Chem import rdPartialCharges
+        from rdkit.Chem import AllChem, rdPartialCharges
 
         mol = Chem.MolFromSmiles(smiles)
         if mol is None:
             return False
         mol = Chem.AddHs(mol)
 
-        # 3D embedding
         params = AllChem.ETKDGv3()
         params.randomSeed = 42
         ret = AllChem.EmbedMolecule(mol, params)
@@ -1138,7 +1029,6 @@ def _smiles_to_ligand_pdbqt(smiles: str, pdbqt_path: Path) -> bool:
 
         AllChem.MMFFOptimizeMolecule(mol, maxIters=200)
 
-        # Gasteiger charges
         try:
             rdPartialCharges.ComputeGasteigerCharges(mol)
             charges = []
@@ -1149,30 +1039,16 @@ def _smiles_to_ligand_pdbqt(smiles: str, pdbqt_path: Path) -> bool:
             charges = [0.0] * mol.GetNumAtoms()
 
         conf = mol.GetConformer()
-
-        # AutoDock4 atom types for Vina
-        # Key: use element symbol for name, proper AD4 type for type field
-        AD4 = {
-            "C": "C", "N": "NA", "O": "OA", "S": "SA", "H": "H",
-            "F": "F", "Cl": "Cl", "Br": "Br", "I": "I", "P": "P",
-        }
+        AD4 = {"C": "C", "N": "NA", "O": "OA", "S": "SA", "H": "H",
+               "F": "F", "Cl": "Cl", "Br": "Br", "I": "I", "P": "P"}
 
         lines = ["ROOT"]
         for i, atom in enumerate(mol.GetAtoms()):
-            sym  = atom.GetSymbol()         # e.g. "C", "N", "Cl"
-            ad4  = AD4.get(sym, sym[:2])    # AD4 type
+            sym  = atom.GetSymbol()
+            ad4  = AD4.get(sym, sym[:2])
             pos  = conf.GetAtomPosition(i)
-            x, y, z = pos.x, pos.y, pos.z
             q    = charges[i]
-
-            # Atom name: element symbol padded to 3 chars, NO numbers
-            # Vina rejects names like "C1", "N2" — use "C", "N" etc
-            aname = f"{sym:<3s}"   # left-justify in 3 chars
-
-            # Standard PDBQT/PDB column layout:
-            # HETATM serial  name resName chain resSeq    X       Y       Z     occ   bfac      charge type
-            # Vina PDBQT: cols 1-6 record, 7-11 serial, 13-16 name,
-            # 31-54 XYZ, 55-66 occ/bfac, 67-76 spaces, 77-82 charge, 84-85 type
+            aname = f"{sym:<3s}"
             line = (
                 f"HETATM{i+1:5d}  {aname} LIG A   1    "
                 f"{pos.x:8.3f}{pos.y:8.3f}{pos.z:8.3f}"
@@ -1184,13 +1060,73 @@ def _smiles_to_ligand_pdbqt(smiles: str, pdbqt_path: Path) -> bool:
         lines += ["ENDROOT", "TORSDOF 0"]
         pdbqt_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
         return True
-
     except Exception:
         return False
 
 
+# ── Stage 3: Fragment pool biasing from refined pocket ────────────────────────
+
+def _apply_pocket_bias(fragment_pool: List[str], refined_p1) -> List[str]:
+    """
+    Reshape the fragment pool based on what the Stage 2 refit learned.
+    Called once per run after the refined pocket is loaded.
+    Returns a new pool with biased fragment weights.
+    """
+    if refined_p1 is None or not refined_p1.accepted:
+        return fragment_pool
+
+    top_feat  = refined_p1.top_feature
+    direction = refined_p1.top_feature_direction
+    pool      = list(fragment_pool)
+
+    log.info(f"  Applying refined-pocket bias: {top_feat} ({direction})")
+
+    if top_feat == "heavy_atoms" and direction == "higher_is_better":
+        # Prefer ring-containing fragments — they add more heavy atoms per step
+        ring_frags = [f for f in GROW_FRAGMENTS
+                      if "c1" in f or "C1" in f or "n1" in f or "N1" in f]
+        pool = ring_frags * 2 + pool
+
+    elif top_feat == "logp":
+        if direction == "higher_is_better":
+            lipophilic = ["c1ccccc1", "C(F)(F)F", "c1ccc2ccccc2c1",
+                          "Cc1ccccc1", "c1ccnc2ccccc12"]
+            pool = lipophilic * 3 + pool
+        else:
+            polar = ["C(=O)O", "C(=O)N", "OCC", "NCC", "S(=O)(=O)N", "OC"]
+            pool = polar * 3 + pool
+
+    elif top_feat == "hbd":
+        if direction == "higher_is_better":
+            hbd_frags = ["NC", "OC", "NCC", "OCC", "NC(=O)", "c1cc[nH]n1"]
+            pool = hbd_frags * 3 + pool
+        else:
+            non_hbd = ["c1ccccc1", "CC", "C(F)(F)F", "CCC", "c1ccncc1"]
+            pool = non_hbd * 2 + pool
+
+    elif top_feat in ("tpsa", "hba"):
+        if direction == "higher_is_better":
+            polar = ["C(=O)N", "C(=O)O", "c1ccncc1", "OCC", "NC(=O)", "S(=O)(=O)N"]
+            pool = polar * 3 + pool
+
+    elif top_feat == "aromatic_frac" and direction == "higher_is_better":
+        aromatics = ["c1ccccc1", "c1ccncc1", "c1ccc2ccccc2c1",
+                     "c1cnccn1", "c1ccc2[nH]ccc2c1"]
+        pool = aromatics * 3 + pool
+
+    elif top_feat == "frac_csp3" and direction == "higher_is_better":
+        sp3_frags = ["C1CCCCC1", "C1CCNCC1", "C1CCOCC1", "CCC", "CC(C)C"]
+        pool = sp3_frags * 3 + pool
+
+    elif top_feat == "mw" and direction == "higher_is_better":
+        heavy_frags = ["c1ccc2ccccc2c1", "c1ccnc2ccccc12",
+                       "c1ccc2[nH]ccc2c1", "C1CN2CCc3ccccc3C2C1"]
+        pool = heavy_frags * 2 + pool
+
+    return pool
 
 
+# ── Main evolution loop ───────────────────────────────────────────────────────
 
 def run_denovo_design(
        uniprot_id:      str,
@@ -1202,8 +1138,8 @@ def run_denovo_design(
        receptor_path:   str = "",
        n_generations:   int = MAX_GENERATIONS,
        rng_seed:        Optional[int] = None,
-      consensus_data   = None,   # ConsensusContext — Gap 2
-       md_data          = None,   # MDContext        — Gap 3
+       consensus_data   = None,
+       md_data          = None,
   ) -> DenovoResult:
     seed = rng_seed if rng_seed is not None else random.randint(1, 999999)
     random.seed(seed)
@@ -1216,21 +1152,36 @@ def run_denovo_design(
 
     _load_dock_cache(cache_path)
 
-    # ── Select target site: active > allosteric > pocket ──────────────────────
+    # ── Stage 1+2: open feedback store, refined pocket loaded after target selection
+    from utils.feedback_store import FeedbackStore
+    from pipeline.pocket_refit import load_refined_pocket
+
+    fb         = FeedbackStore(uniprot_id)
+    refined_p1 = None
+
+    pocket_volume_A3      = 0.0
+    pocket_druggability   = 0.0
+    pocket_net_charge     = 0.0
+    pocket_hydrophobicity = 0.0
+
+    # ── Select target site: consensus > active > allosteric > pocket ──────────
     center         = [0.0, 0.0, 0.0]
     box_size       = [20.0, 20.0, 20.0]
-    used_pocket_id = "active_site"
+    used_pocket_id = "P1"
     target_source  = "none"
 
     if consensus_data is not None and consensus_data.has_good_pocket:
         cp = consensus_data.top_pocket
         center         = list(cp.center)
-        # Box size from pocket volume: cube root of volume + padding
-        vol_edge = (cp.volume_A3 ** (1/3)) if cp.volume_A3 > 0 else 10.0
-        edge     = max(MIN_BOX_SIZE, min(MAX_BOX_SIZE, vol_edge + BOX_PADDING * 2))
-        box_size = [round(edge, 1)] * 3
+        vol_edge       = (cp.volume_A3 ** (1/3)) if cp.volume_A3 > 0 else 10.0
+        edge           = max(MIN_BOX_SIZE, min(MAX_BOX_SIZE, vol_edge + BOX_PADDING * 2))
+        box_size       = [round(edge, 1)] * 3
         used_pocket_id = cp.pocket_id
         target_source  = f"consensus_{cp.pocket_id}"
+        pocket_volume_A3      = cp.volume_A3
+        pocket_druggability   = cp.druggability_score
+        pocket_net_charge     = cp.net_charge
+        pocket_hydrophobicity = cp.mean_hydrophobicity
         log.info(
             f"  Target: CONSENSUS POCKET {cp.pocket_id}  "
             f"drug={cp.druggability_score:.2f} ({cp.druggability_class})  "
@@ -1253,8 +1204,10 @@ def run_denovo_design(
             edge       = float(span.max()) + BOX_PADDING * 2
             edge       = max(MIN_BOX_SIZE, min(MAX_BOX_SIZE, edge))
             box_size   = [round(edge, 1)] * 3
-            used_pocket_id = "active_site"
-            target_source  = f"active_site ({len(high_res)} residues)"
+            # NOTE: keep used_pocket_id from consensus — only docking box changes.
+            # This ensures feedback events are tagged to P1, matching the static
+            # pocket descriptor needed for Stage 2 refit.
+            target_source = f"active_site ({len(high_res)} residues)"
             log.info(f"  Target: ACTIVE SITE  center={center}  box={box_size}  "
                      f"({len(high_res)} high-conf residues)")
 
@@ -1277,13 +1230,44 @@ def run_denovo_design(
             center, box_size = _pocket_to_box(top_p)
             used_pocket_id   = top_p.get("pocket_id", "P1")
             target_source    = f"pocket_{used_pocket_id}"
+            pocket_volume_A3      = top_p.get("volume_A3", 0.0)
+            pocket_druggability   = top_p.get("druggability_score", 0.0)
+            pocket_net_charge     = top_p.get("net_charge", 0.0)
+            pocket_hydrophobicity = top_p.get("mean_hydrophobicity", 0.0)
             log.info(f"  Target: POCKET {used_pocket_id}  center={center}")
 
     if target_source == "none":
         log.warning("  No site data — using default box at origin")
 
-    # ── Bias fragment pool from chem env ───────────────────────────────────────
+    # ── Load refined pocket model (Stage 2 output) ────────────────────────────
+    refined_p1 = load_refined_pocket(uniprot_id, used_pocket_id)
+    if refined_p1 and refined_p1.accepted:
+        log.info(
+            f"  Loaded refined pocket model: top_feature={refined_p1.top_feature} "
+            f"({refined_p1.top_feature_direction}), "
+            f"RMSE gain={refined_p1.rmse_gain:+.2f} kcal/mol "
+            f"from {refined_p1.n_events_used} prior events"
+        )
+
+    # Open feedback run tagged to this pocket
+    pocket_snapshot = {
+        "volume_A3":     pocket_volume_A3,
+        "druggability":  pocket_druggability,
+        "center":        center,
+        "net_charge":    pocket_net_charge,
+        "hydrophobicity": pocket_hydrophobicity,
+        "model_version": "refined_v1" if (refined_p1 and refined_p1.accepted) else "static_v0",
+    }
+    fb.start_run(
+        modality        = "small_molecule",
+        target_site     = used_pocket_id,
+        pocket_snapshot = pocket_snapshot,
+    )
+
+    # ── Base fragment pool ────────────────────────────────────────────────────
     fragment_pool = list(GROW_FRAGMENTS)
+
+    # ── Chem env bias ─────────────────────────────────────────────────────────
     if chem_env_data:
         all_envs = (chem_env_data.get("active_envs", []) +
                     chem_env_data.get("binding_envs", []))
@@ -1303,23 +1287,16 @@ def run_denovo_design(
                 fragment_pool = polar_frags * 3 + fragment_pool
                 log.info(f"  Chem env: charged (q={net_charge:+.1f}) → polar fragments")
 
-    
-        # ── Gap 3 fix: adapt strategy to MD flexibility ───────────────────────────
-    # Module 14 computed per-residue RMSF for this protein. If the target
-    # pocket has high RMSF, the pocket is dynamically flexible — the static
-    # AlphaFold structure may not represent the dominant binding conformation.
-    # We adapt the fragment pool, box size, and mutation operators accordingly.
- 
+    # ── Stage 3: Apply refined pocket bias to fragment pool ───────────────────
+    fragment_pool = _apply_pocket_bias(fragment_pool, refined_p1)
+
+    # ── MD flexibility adaptation ─────────────────────────────────────────────
     flex_strategy = {
-        "max_build_steps": 4,
-        "mutation_rate":   1.0,
-        "box_padding":     0.0,
-        "scaffold_bias":   "flexible",
-        "warning":         "",
+        "max_build_steps": 4, "mutation_rate": 1.0,
+        "box_padding": 0.0, "scaffold_bias": "flexible", "warning": "",
     }
- 
+
     if md_data is not None and md_data.source != "none":
-        # Compute RMSF of the target pocket lining residues
         pocket_lining = []
         if consensus_data and consensus_data.top_pocket:
             pocket_lining = consensus_data.top_pocket.lining_residues
@@ -1327,11 +1304,11 @@ def run_denovo_design(
             pockets = pocket_data.get("pockets", [])
             if pockets:
                 pocket_lining = pockets[0].get("lining_residues", [])
- 
+
         pocket_rmsf   = md_data.pocket_rmsf(pocket_lining) if pocket_lining \
                         else md_data.mean_rmsf
         flex_strategy = md_data.flexibility_strategy(pocket_rmsf)
- 
+
         if flex_strategy["warning"]:
             log.warning(flex_strategy["warning"])
         else:
@@ -1340,26 +1317,16 @@ def run_denovo_design(
                 f"strategy={flex_strategy['scaffold_bias']}  "
                 f"box_padding={flex_strategy['box_padding']:.1f}Å"
             )
- 
-        # Expand docking box if pocket is flexible
+
         if flex_strategy["box_padding"] > 0:
-            box_size = [
-                round(b + flex_strategy["box_padding"], 1)
-                for b in box_size
-            ]
+            box_size = [round(b + flex_strategy["box_padding"], 1) for b in box_size]
             box_size = [min(b, MAX_BOX_SIZE) for b in box_size]
             log.info(f"  Box expanded for flexibility: {box_size}")
- 
-        # Bias fragment pool toward appropriate scaffold size
+
         from pipeline.denovo_design_context import get_flexibility_fragments
         flex_frags = get_flexibility_fragments(flex_strategy["scaffold_bias"])
-        # Prepend flexibility-appropriate fragments (3x weight)
         fragment_pool = flex_frags * 3 + fragment_pool
-        log.info(
-            f"  Added {len(flex_frags)} {flex_strategy['scaffold_bias']} "
-            f"fragments to pool"
-        )
-
+        log.info(f"  Added {len(flex_frags)} {flex_strategy['scaffold_bias']} fragments to pool")
 
     # ── Validate tools ────────────────────────────────────────────────────────
     if not vina_path or not os.path.exists(vina_path):
@@ -1368,69 +1335,102 @@ def run_denovo_design(
                             pocket_center=center, box_size=box_size,
                             notes=f"Vina not found: {vina_path}")
 
-    # Detect if existing PDBQT is malformed (charge column wrong from old buggy writer).
-    # Regenerate if so.
-    needs_regen = False
-    if receptor_path and os.path.exists(receptor_path):
+    # ── Receptor PDBQT validation and auto-conversion ─────────────────────────
+    default_pdb   = Path(cfg.paths["structures"]) / f"{uniprot_id}.pdb"
+    default_pdbqt = Path(cfg.paths["structures"]) / f"{uniprot_id}.pdbqt"
+
+    if not receptor_path:
+        receptor_path = str(default_pdbqt)
+
+    needs_regen = not os.path.exists(receptor_path)
+
+    if not needs_regen:
         try:
-            with open(receptor_path) as _f:
+            with open(receptor_path, encoding="utf-8", errors="ignore") as _f:
                 for _l in _f:
-                    if _l.startswith("ATOM") or _l.startswith("HETATM"):
-                        # Correct PDBQT lines are ~78 chars with charge in cols 71-76.
-                        # Buggy writer produces ~68 chars putting charge right after col 54.
+                    stripped = _l.strip()
+                    if stripped == "ROOT":
+                        needs_regen = True
+                        log.warning(f"  Receptor PDBQT contains ROOT tag — regenerating.")
+                        break
+                    if stripped.startswith(("ATOM", "HETATM")):
                         if len(_l.rstrip()) < 76:
                             needs_regen = True
-                            log.warning(f"  Existing PDBQT {Path(receptor_path).name} "
-                                        f"is malformed (line too short) — regenerating.")
+                            log.warning(f"  Receptor PDBQT has short lines — regenerating.")
                         break
         except Exception:
             needs_regen = True
 
-        if not receptor_path or not os.path.exists(receptor_path) or needs_regen:
-                default_pdb   = Path(cfg.paths["structures"]) / f"{uniprot_id}.pdb"
-                default_pdbqt = default_pdb.with_suffix(".pdbqt")
+    if needs_regen:
+        source_pdb = None
+        if receptor_path:
+            candidate = Path(receptor_path).with_suffix(".pdb")
+            if candidate.exists():
+                source_pdb = candidate
+        if source_pdb is None and default_pdb.exists():
+            source_pdb = default_pdb
 
-                if receptor_path and Path(receptor_path).name:
-                    source_pdb   = Path(receptor_path).with_suffix(".pdb")
-                    source_pdb   = source_pdb if source_pdb.exists() else (
-                                default_pdb if default_pdb.exists() else None)
-                    target_pdbqt = Path(receptor_path)
-                else:
-                    source_pdb   = default_pdb if default_pdb.exists() else None
-                    target_pdbqt = default_pdbqt
+        if source_pdb is None:
+            log.error(f"  No source PDB found for {uniprot_id}.")
+            return DenovoResult(uniprot_id=uniprot_id, pocket_id=used_pocket_id,
+                                pocket_center=center, box_size=box_size,
+                                notes=f"Receptor PDB not found: {default_pdb}")
 
-                if source_pdb:
-                    log.info(f"  Converting {source_pdb.name} → PDBQT...")
-                    t0_conv = time.time()
-                    ok = _fast_pdb_to_pdbqt(source_pdb, target_pdbqt)
-                    if ok:
-                        log.info(f"  Converted in {time.time()-t0_conv:.1f}s → {target_pdbqt.name}")
-                        receptor_path = str(target_pdbqt.resolve())   # ← .resolve() makes it absolute
-                    else:
-                        return DenovoResult(uniprot_id=uniprot_id, pocket_id=used_pocket_id,
-                                            pocket_center=center, box_size=box_size,
-                                            notes="PDBQT conversion failed")
-                else:
-                    return DenovoResult(uniprot_id=uniprot_id, pocket_id=used_pocket_id,
-                                        pocket_center=center, box_size=box_size,
-                                        notes=f"Receptor PDB not found: {default_pdb}")
+        target_pdbqt = Path(receptor_path) if receptor_path else default_pdbqt
+        log.info(f"  Converting receptor: {source_pdb.name} → {target_pdbqt.name}")
+        t0_conv = time.time()
+        ok = _fast_pdb_to_pdbqt(source_pdb, target_pdbqt)
+        if not ok:
+            return DenovoResult(uniprot_id=uniprot_id, pocket_id=used_pocket_id,
+                                pocket_center=center, box_size=box_size,
+                                notes="Receptor PDBQT conversion failed")
+        log.info(f"  Converted in {time.time() - t0_conv:.1f}s")
+        receptor_path = str(target_pdbqt.resolve())
 
-        log.info(f"  Receptor: {receptor_path}")
-        assert os.path.exists(receptor_path), f"Receptor missing: {receptor_path}"
+    log.info(f"  Receptor: {receptor_path}")
+    if not os.path.exists(receptor_path):
+        log.error(f"  Receptor missing: {receptor_path}")
+        return DenovoResult(uniprot_id=uniprot_id, pocket_id=used_pocket_id,
+                            pocket_center=center, box_size=box_size,
+                            notes=f"Receptor missing: {receptor_path}")
 
+    # ── Init evolution objects ────────────────────────────────────────────────
     chem      = ChemicalEngine()
     novelty   = NoveltyArchive()
     surrogate = SurrogateModel()
     fqsar     = FragmentQSAR()
 
-    population     = _build_initial_population(chem, POP_SIZE)
+    # ── Stage 3: Warm-start surrogate + fqsar from prior feedback events ──────
+    # This is the key closed-loop addition: rather than starting blind each run,
+    # we load all prior docking events from the feedback store and pre-train the
+    # surrogate so Gen 1 already has a fully trained model.
+    prior_history: List[dict] = []
+    try:
+        for ev in fb.iter_events(modality="small_molecule",
+                                  target_site=used_pocket_id,
+                                  valid_only=True):
+            smi = ev.identity.get("smiles")
+            sc  = ev.score.get("primary")
+            if smi and sc is not None:
+                prior_history.append({"smiles": smi, "score": sc})
 
-    # docked_seen: molecules we've already got a score for (Vina or cache).
-    # Pre-populate with all cache keys so that the generator is forced to 
-    # create genuinely new molecules every generation instead of re-generating
-    # molecules that are already in the cache.
-    # Without this, all 30 population slots get taken by cache hits and only
-    # 1-2 truly new molecules get docked per gen.
+        if len(prior_history) >= SURROGATE_MIN_DATA:
+            surrogate.update(prior_history)
+            fqsar.update(prior_history)
+            log.info(
+                f"  Warm-started surrogate from {len(prior_history)} prior events "
+                f"(trained={surrogate.trained}, n_obs={surrogate.n_obs})"
+            )
+            log.info(f"  Warm-started fragment QSAR (n_obs={fqsar.n_obs})")
+        else:
+            log.info(
+                f"  Prior events: {len(prior_history)} "
+                f"(need {SURROGATE_MIN_DATA} to warm-start surrogate)"
+            )
+    except Exception as e:
+        log.warning(f"  Could not warm-start from feedback store: {e}")
+
+    population  = _build_initial_population(chem, POP_SIZE)
     docked_seen: set = set(_DOCK_CACHE.keys())
 
     full_history:  List[dict] = []
@@ -1448,7 +1448,6 @@ def run_denovo_design(
     for gen in range(1, n_generations + 1):
         gen_start = time.time()
 
-        # Adaptive weights
         t      = min(1.0, (gen - 1) / max(1, n_generations - 1))
         w_bind = W_BINDING_START + t * (W_BINDING_END - W_BINDING_START)
         w_nov  = W_NOVELTY_START + t * (W_NOVELTY_END  - W_NOVELTY_START)
@@ -1465,35 +1464,45 @@ def run_denovo_design(
 
         temperature = max(0.1, 1.0 - 0.8 * t)
 
+        # Update surrogate from current run's history (on top of warm-start)
         if len(full_history) >= SURROGATE_MIN_DATA:
             surrogate.update(full_history)
         fqsar.update(full_history)
 
-        # BUG-2 FIX: surrogate pre-screening uses a snapshot of docked_seen.
-        # We do NOT replace population here — we build a candidate list and
-        # let the actual docking loop pick from it.  The population list drives
-        # which molecules we dock; screened candidates supplement it.
+        # ── Stagnation-aware surrogate pre-screening ──────────────────────────
+        # KEY FIX: when stagnation is high, bypass surrogate ranking entirely.
+        # The surrogate has learned to prefer the current best scaffold, so
+        # leaving it active filters fresh scaffolds out before they can dock.
+        # Disabling it forces exploration instead of continuous exploitation.
         if surrogate.trained:
-            parent_pool = [s for s, _ in population]
-            # Only dedup against current population — not all of docked_seen.
-            # Using docked_seen here caused it to grow to 900+ entries and 
-            # block virtually every generated molecule from being docked.
+            parent_pool      = [s for s, _ in population]
             current_gen_seen = {s for s, _ in population}
-            screened    = _generate_and_screen(
-                chem, parent_pool, surrogate, fqsar,
+
+            use_surrogate_ranking = (stagnation_cnt < STAGNATION_LIMIT)
+            if not use_surrogate_ranking:
+                log.info(
+                    f"  Bypassing surrogate ranking (stagnation={stagnation_cnt}) "
+                    f"— forcing exploration"
+                )
+
+            # Pass untrained dummy surrogate when bypassing, so _generate_and_screen
+            # falls through to random shuffle instead of ranking
+            screen_surrogate = surrogate if use_surrogate_ranking else SurrogateModel()
+
+            screened = _generate_and_screen(
+                chem, parent_pool, screen_surrogate, fqsar,
                 best_smi, stagnation_cnt, temperature,
                 n_candidates=SURROGATE_CANDIDATES,
                 n_dock=POP_SIZE,
                 dedup_seen=current_gen_seen,
             )
             if screened:
-                # Merge screened into population, keeping existing elites
                 existing   = {s for s, _ in population}
                 new_slots  = [(s, "Screened") for s in screened if s not in existing]
                 population = population[:ELITISM] + new_slots
                 population = population[:POP_SIZE]
 
-        # Dock current population
+        # ── Dock current population ───────────────────────────────────────────
         tasks   = [(smi, gen, i) for i, (smi, _) in enumerate(population)]
         results = []
 
@@ -1520,9 +1529,7 @@ def run_denovo_design(
                     f"\rGen {gen}/{n_generations} | Docking: {completed}/{len(futures)}")
                 sys.stdout.flush()
                 res = fut.result()
-                # Mark as docked regardless of outcome
                 docked_seen.add(res["smiles"])
-                # Diagnostic: log first few failures per gen so we can see what's wrong
                 if res.get("status") != "OK" and len([r for r in results if r.get("status") != "OK"]) < 3:
                     err_msg = res.get("error", "unknown")[:150]
                     log.warning(f"    [DOCK FAIL] {res['smiles'][:40]}: {err_msg}")
@@ -1533,8 +1540,6 @@ def run_denovo_design(
                         continue
                     props = res["props"]
                     score = res["score"]
-                    # Vina outputs 0.000 when it cannot find any pose.
-                    # Skip these — they are not real scores and pollute the population.
                     if score >= MIN_REAL_SCORE:
                         continue
                     ha    = max(1, props.get("ha", 1))
@@ -1547,7 +1552,6 @@ def run_denovo_design(
                     le_fit    = _le_fitness(score, ha, qed)
                     norm_bind = _normalize_score(score)
 
-                    # BUG-5 FIX: guard hasattr to avoid AttributeError crash
                     cyp_score = 1.0
                     if CYP_AVAILABLE and w_cyp > 0 and _cyp_profile is not None:
                         try:
@@ -1566,27 +1570,39 @@ def run_denovo_design(
                                w_cyp  * cyp_score)
 
                     res.update({
-                        "le":         le,
-                        "qed":        qed,
-                        "novelty":    nov_score,
-                        "le_fitness": le_fit,
-                        "norm_bind":  norm_bind,
-                        "cyp_score":  round(cyp_score, 3),
-                        "fitness":    fitness,
-                        "w_bind":     round(w_bind, 3),
-                        "w_nov":      round(w_nov, 3),
-                        "w_cyp":      round(w_cyp, 3),
-                        "generation": gen,
+                        "le": le, "qed": qed, "novelty": nov_score,
+                        "le_fitness": le_fit, "norm_bind": norm_bind,
+                        "cyp_score": round(cyp_score, 3), "fitness": fitness,
+                        "w_bind": round(w_bind, 3), "w_nov": round(w_nov, 3),
+                        "w_cyp": round(w_cyp, 3), "generation": gen,
                     })
                     results.append(res)
                     full_history.append(res)
-                    # BUG-7 FIX: only add to hall_of_fame if score is real
+
+                    # Stage 1: record to feedback store
+                    try:
+                        fb.record(
+                            smiles        = smi,
+                            primary_score = float(score),
+                            primary_kind  = "vina_dG_kcal_mol",
+                            secondary     = {"le": le, "qed": qed,
+                                             "fitness": fitness, "novelty": nov_score},
+                            origin        = {
+                                "generation":  gen,
+                                "mutation_op": res.get("origin", "unknown"),
+                                "weights":     {"w_bind": w_bind, "w_nov": w_nov,
+                                                "w_le": w_le, "w_cyp": w_cyp},
+                            },
+                            valid = True,
+                        )
+                    except Exception as e:
+                        log.debug(f"  feedback record failed: {e}")
+
                     if res.get("score") is not None:
                         hall_of_fame.append(res)
 
         sys.stdout.write("\n")
 
-        # BUG-7 FIX: filter out any None-score entries before sorting
         hall_of_fame = [r for r in hall_of_fame if r.get("score") is not None]
         hall_of_fame.sort(key=lambda r: r["score"])
         hall_of_fame = hall_of_fame[:30]
@@ -1594,9 +1610,6 @@ def run_denovo_design(
         if not results:
             log.warning(f"  Gen {gen}: no valid docking results — reseeding")
             stagnation_cnt = 0
-            # Build fresh population from drug-like seeds (MW>100) only,
-            # bypassing the TINY_SEEDS that keep failing ADMET/embedding.
-            # Also exclude anything already in docked_seen.
             new_pop = []
             new_seen_local: set = set()
             drug_seeds = [s for s in TINY_SEEDS
@@ -1611,7 +1624,6 @@ def run_denovo_design(
                         if _admet_prefilter(mol, p):
                             new_pop.append((c, "DrugSeed"))
                             new_seen_local.add(c)
-            # Fill with grown drug seeds
             attempts_r = 0
             while len(new_pop) < POP_SIZE and attempts_r < POP_SIZE * 40:
                 attempts_r += 1
@@ -1636,7 +1648,6 @@ def run_denovo_design(
 
         by_score   = sorted(results, key=lambda r: r["score"])
         by_fitness = sorted(results, key=lambda r: r["fitness"], reverse=True)
-        by_le      = sorted(results, key=lambda r: r.get("le", 0), reverse=True)
         by_novelty = sorted(results, key=lambda r: r.get("novelty", 0), reverse=True)
 
         gen_best = by_score[0]
@@ -1678,35 +1689,33 @@ def run_denovo_design(
                 )
 
         gen_stats.append({
-            "generation":   gen,
-            "best_score":   gen_best["score"],
-            "global_best":  best_score,
-            "best_le":      gen_best.get("le", 0.0),
-            "best_fitness": by_fitness[0]["fitness"],
-            "mean_fitness": round(statistics.mean(r["fitness"] for r in results), 4),
-            "diversity":    div,
-            "scaffolds":    len(scaffold_counts),
-            "mean_qed":     round(statistics.mean(r.get("qed", 0) for r in results), 3),
-            "stagnation":   stagnation_cnt,
-            "archive_size": len(novelty.archive),
-            "exhaust":      gen_exhaust,
+            "generation":    gen,
+            "best_score":    gen_best["score"],
+            "global_best":   best_score,
+            "best_le":       gen_best.get("le", 0.0),
+            "best_fitness":  by_fitness[0]["fitness"],
+            "mean_fitness":  round(statistics.mean(r["fitness"] for r in results), 4),
+            "diversity":     div,
+            "scaffolds":     len(scaffold_counts),
+            "mean_qed":      round(statistics.mean(r.get("qed", 0) for r in results), 3),
+            "stagnation":    stagnation_cnt,
+            "archive_size":  len(novelty.archive),
+            "exhaust":       gen_exhaust,
             "surrogate_obs": surrogate.n_obs,
+            "surrogate_active": use_surrogate_ranking if surrogate.trained else False,
         })
 
         # ── Build next population ─────────────────────────────────────────────
         next_pop:  List[Tuple[str, str]] = []
         next_seen: set = set()
 
-        # Always keep the single best molecule this gen
         c = _canonical(gen_best["smiles"])
         if c and c not in next_seen:
             next_pop.append((c, "BestGen")); next_seen.add(c)
 
-        # Elite slots: cap at MAX_ELITE_PER_SCAFFOLD per Murcko scaffold
-        # so one scaffold can't monopolise all elite slots.
         elite_scaffold_counts: Dict[str, int] = {}
         MAX_ELITE_PER_SCAFFOLD = 2
-        for e in by_fitness[:ELITISM * 3]:  # scan wider to fill ELITISM slots
+        for e in by_fitness[:ELITISM * 3]:
             if len([x for x in next_pop if x[1] == "Elite"]) >= ELITISM:
                 break
             c = _canonical(e["smiles"])
@@ -1730,7 +1739,6 @@ def run_denovo_design(
             if c and c not in next_seen:
                 next_pop.append((c, "HoF")); next_seen.add(c)
 
-        # Diversity injection
         overcrowded = {sc for sc, cnt in scaffold_counts.items()
                        if cnt >= MAX_SAME_SCAFFOLD}
         if overcrowded or div < DIVERSITY_MIN:
@@ -1745,22 +1753,16 @@ def run_denovo_design(
                     if c and c not in next_seen and _murcko(c) not in overcrowded:
                         next_pop.append((c, "ScaffDiv")); next_seen.add(c); inj += 1
 
-        # Stagnation injection — use surrogate=None so molecules are NOT
-        # biased toward the scaffold the surrogate already thinks is best.
-        # High temperature (1.5) maximises chemical diversity.
         if stagnation_cnt >= STAGNATION_LIMIT:
             n_inj = POP_SIZE // 3
             log.info(f"  Stagnation {stagnation_cnt}: injecting {n_inj} unguided molecules")
             inj = 0
             for _ in range(n_inj * 25):
                 if inj >= n_inj: break
-                # Alternate between pure random and fqsar-biased (no surrogate)
                 if random.random() < 0.5:
-                    child = chem.build_denovo(surrogate=None, fqsar=None,
-                                              temperature=1.5)
+                    child = chem.build_denovo(surrogate=None, fqsar=None, temperature=1.5)
                 else:
-                    child = chem.build_denovo(surrogate=None, fqsar=fqsar,
-                                              temperature=1.5)
+                    child = chem.build_denovo(surrogate=None, fqsar=fqsar, temperature=1.5)
                 if child:
                     c = _canonical(child)
                     if c and c not in next_seen:
@@ -1770,17 +1772,12 @@ def run_denovo_design(
                             if _admet_prefilter(m, p):
                                 next_pop.append((c, "Injected")); next_seen.add(c); inj += 1
 
-        # Hard reset — when completely stuck, explore entirely new scaffolds.
-        # Do NOT grow from best_smi here: that just produces worse variants of
-        # the same scaffold, which then fail to beat best_score, and we loop.
-        # Instead: pick random TINY_SEEDS that are NOT the current best scaffold
-        # and build fresh molecules from them with high temperature (random).
         if stagnation_cnt >= STAGNATION_HARD:
             n_hard = int(POP_SIZE * 0.80)
             best_scaffold = _murcko(best_smi) if best_smi else ""
             log.info(f"  HARD RESET: exploring {n_hard} fresh scaffolds "
                      f"(ignoring {best_scaffold[:30]})")
-            # Collect seeds whose Murcko scaffold differs from the best
+
             fresh_seeds = [s for s in TINY_SEEDS
                            if _murcko(s) != best_scaffold
                            and Chem.MolFromSmiles(s) is not None]
@@ -1792,7 +1789,6 @@ def run_denovo_design(
                 seed = random.choice(fresh_seeds)
                 seed_mol = Chem.MolFromSmiles(seed)
                 if seed_mol is None: continue
-                # 2-4 growth steps for drug-like size, high temperature for diversity
                 n_steps = random.randint(2, 4)
                 mol = seed_mol
                 for _ in range(n_steps):
@@ -1808,9 +1804,14 @@ def run_denovo_design(
                             if _admet_prefilter(m, p):
                                 next_pop.append((c, "HardReset"))
                                 next_seen.add(c); inj += 1
-            stagnation_cnt = 1  # give full breathing room after hard reset
 
-        # Fill remainder — BUG-8 FIX: use docked_seen (not an ever-growing global)
+            # KEY FIX: disable the surrogate after a hard reset so it doesn't
+            # immediately re-rank the fresh scaffolds back out of the population.
+            # It retrains naturally on surrogate.update(full_history) next gen.
+            surrogate.trained = False
+            log.info(f"  Surrogate disabled for next gen — will retrain from full history")
+            stagnation_cnt = 1
+
         parent_pool = [r["smiles"] for r in by_fitness[:max(2, len(by_fitness)//2)]]
         remaining   = POP_SIZE - len(next_pop)
         if remaining > 0:
@@ -1819,13 +1820,12 @@ def run_denovo_design(
                 stagnation_cnt, temperature,
                 n_candidates=max(remaining * 4, SURROGATE_CANDIDATES),
                 n_dock=remaining,
-                dedup_seen=next_seen,  # only dedup within this generation's new pop
+                dedup_seen=next_seen,
             )
             for c in screened_fill:
                 if c not in next_seen:
                     next_pop.append((c, "Screened")); next_seen.add(c)
 
-        # Emergency fill — use docked_seen so truly new molecules can be generated
         eft = 0
         while len(next_pop) < POP_SIZE and eft < 200:
             eft += 1
@@ -1836,9 +1836,6 @@ def run_denovo_design(
                     next_pop.append((c, "EmergFill")); next_seen.add(c)
 
         population = next_pop[:POP_SIZE]
-        # NOTE: do NOT add population to docked_seen here.
-        # docked_seen is only updated AFTER actual docking (in the futures loop).
-        # Pre-adding candidates blocks them from being generated next gen.
 
         gen_time = time.time() - gen_start
         elapsed  = time.time() - total_start
@@ -1873,7 +1870,6 @@ def run_denovo_design(
         le         = round(-mean_score / ha, 4)
         admet_ok   = _admet_prefilter(mol, props) if mol else False
 
-        # BUG-5 FIX: guard CYP attribute access
         final_cyp = 1.0
         if CYP_AVAILABLE and _cyp_profile is not None:
             try:
@@ -1901,9 +1897,9 @@ def run_denovo_design(
             hba=props.get("hba", 0),
             heavy_atoms=ha,
             fitness=round(
-                _normalize_score(mean_score)            * W_BINDING_END / w_total
-                + _le_fitness(mean_score, ha, props.get("qed", 0.0)) * W_LE_END / w_total
-                + final_cyp                             * W_CYP_END    / w_total,
+                _normalize_score(mean_score)                          * W_BINDING_END / w_total
+                + _le_fitness(mean_score, ha, props.get("qed", 0.0)) * W_LE_END      / w_total
+                + final_cyp                                           * W_CYP_END     / w_total,
                 4
             ),
             novelty=round(novelty.score(smi), 3),
@@ -1934,7 +1930,7 @@ def run_denovo_design(
 
     result.to_json(out_path)
 
-    # ── Module 15: Selectivity Optimization ───────────────────────────────────
+    # ── Module 15: Selectivity Optimization ──────────────────────────────────
     if vina_path and result.top_candidates:
         try:
             from pipeline.selectivity_optimizer import run_selectivity_optimization
@@ -1955,8 +1951,15 @@ def run_denovo_design(
         except Exception as e:
             log.warning(f"  Module 15 skipped: {e}")
 
-    # BUG-4 FIX: return was indented inside the Module 15 if-block,
-    # causing the function to return None when Module 15 was skipped.
+    # ── Stage 2: Close feedback run + trigger pocket model refit ─────────────
+    try:
+        fb.end_run()
+        from pipeline.pocket_refit import refit_pocket_model
+        refit = refit_pocket_model(uniprot_id, feedback_store=fb)
+        log.info(refit.summary())
+    except Exception as e:
+        log.warning(f"  Pocket refit skipped: {e}")
+
     log.info(result.summary())
     log.info(f"\n  Results saved to: {out_path}")
     return result
@@ -2000,21 +2003,19 @@ def main(uniprot: str, vina: str, receptor: Optional[str],
     def _load(fname):
         p = inter_dir / fname
         return json.loads(p.read_text(encoding="utf-8")) if p.exists() else None
- 
+
     active_data     = _load(f"{uniprot}_active_sites.json")
     allosteric_data = _load(f"{uniprot}_allosteric.json")
     pocket_data     = _load(f"{uniprot}_binding_pockets.json")
     chem_env_data   = _load(f"{uniprot}_chemical_env.json")
- 
-    # Gap 2: load consensus context (Module 13 ranked pockets)
+
     from pipeline.denovo_design_context import load_consensus_context, load_md_context
     consensus_data = load_consensus_context(uniprot, inter_dir)
     if consensus_data and consensus_data.top_pocket:
         log.info(consensus_data.pocket_summary())
     else:
         log.info("  No consensus report — using raw module outputs for targeting")
- 
-    # Gap 3: load MD flexibility context (Module 14 RMSF)
+
     md_data = load_md_context(uniprot, inter_dir, pocket_data, active_data)
     if md_data.source != "none":
         log.info(
@@ -2038,17 +2039,17 @@ def main(uniprot: str, vina: str, receptor: Optional[str],
         log.info(f"  Loaded pocket data ({pocket_data.get('n_pockets', 0)} pockets)")
 
     result = run_denovo_design(
-       uniprot_id=uniprot,
-       pocket_data=pocket_data,
-       active_data=active_data,
-       allosteric_data=allosteric_data,
-       chem_env_data=chem_env_data,
-       vina_path=vina,
-       receptor_path=receptor,
-       n_generations=generations,
-       rng_seed=seed,
-       consensus_data=consensus_data,   # Gap 2
-       md_data=md_data,                 # Gap 3
+        uniprot_id=uniprot,
+        pocket_data=pocket_data,
+        active_data=active_data,
+        allosteric_data=allosteric_data,
+        chem_env_data=chem_env_data,
+        vina_path=vina,
+        receptor_path=receptor,
+        n_generations=generations,
+        rng_seed=seed,
+        consensus_data=consensus_data,
+        md_data=md_data,
     )
     click.echo(result.summary())
 
